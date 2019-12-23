@@ -60,13 +60,14 @@ function Generate() {
 					
 				:
 					<section>
+						<h3>Generate Calendar</h3>
 						<p>First, pick which F1 races, practices & qualifying sessions you would like to add to your calendar:</p>
 						
 						<form id="download_subscribe" onSubmit={handleOnSubmit}>
 							<div class="content">
 		
 								<div id="selection_advice">
-									<h2>Download the Calendar for Outlook, Calendar for OSX &amp; Google Calendar</h2>
+									<h4>Download the Calendar for Outlook, Calendar for OSX &amp; Google Calendar</h4>
 									<p>First, pick which F1 races, practices &amp; qualifying sessions you would like to add to your calendar:</p>
 								</div>
 		
