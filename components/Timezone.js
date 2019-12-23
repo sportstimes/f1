@@ -27,7 +27,7 @@ const Timezone = (props) => {
 					<div className="picker">
 						Pick a timezone...
 						
-						<select onChange={onChange}>
+						<select onChange={onChange} value={timezone}>
 							{timezoneItems}
 						</select>
 						
