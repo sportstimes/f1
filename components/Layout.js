@@ -14,7 +14,6 @@ const Layout = props => {
     	<div className="content-wrapper">
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-				<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossOrigin="anonymous" />
 			</Head>
 
 			<Header showOptions={props.showOptions} year={props.year} />
