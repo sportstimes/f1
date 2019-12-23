@@ -1,0 +1,334 @@
+{
+	"races": [
+    	{
+	    	"name": "Australia",
+	    	"location": "Melbourne",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 1,
+	    	"slug": "australian-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-03-15T01:00:00Z",
+				"fp2" : "2020-03-15T01:00:00Z",
+				"fp3" : "2020-03-15T01:00:00Z",
+				"qualifying" : "2020-03-15T01:00:00Z",
+				"race" : "2020-03-15T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Bahrain",
+	    	"location": "Sakhir",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 2,
+	    	"slug": "bahrain-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-03-22T01:00:00Z",
+				"fp2" : "2020-03-22T01:00:00Z",
+				"fp3" : "2020-03-22T01:00:00Z",
+				"qualifying" : "2020-03-22T01:00:00Z",
+				"race" : "2020-03-22T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Vietnam",
+	    	"location": "Hanoi",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 3,
+	    	"slug": "vietnam-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-04-05T01:00:00Z",
+				"fp2" : "2020-04-05T01:00:00Z",
+				"fp3" : "2020-04-05T01:00:00Z",
+				"qualifying" : "2020-04-05T01:00:00Z",
+				"race" : "2020-04-05T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "China",
+	    	"location": "Shanghai",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 4,
+	    	"slug": "china-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-04-19T01:00:00Z",
+				"fp2" : "2020-04-19T01:00:00Z",
+				"fp3" : "2020-04-19T01:00:00Z",
+				"qualifying" : "2020-04-19T01:00:00Z",
+				"race" : "2020-04-19T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Netherlands",
+	    	"location": "Zandvoort",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 5,
+	    	"slug": "netherlands-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-05-03T01:00:00Z",
+				"fp2" : "2020-05-03T01:00:00Z",
+				"fp3" : "2020-05-03T01:00:00Z",
+				"qualifying" : "2020-05-03T01:00:00Z",
+				"race" : "2020-05-03T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Spain",
+	    	"location": "Barcelona",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 6,
+	    	"slug": "spanish-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-05-10T01:00:00Z",
+				"fp2" : "2020-05-10T01:00:00Z",
+				"fp3" : "2020-05-10T01:00:00Z",
+				"qualifying" : "2020-05-10T01:00:00Z",
+				"race" : "2020-05-10T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Monaco",
+	    	"location": "Monte Carlo",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 7,
+	    	"slug": "monoco-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-05-24T01:00:00Z",
+				"fp2" : "2020-05-24T01:00:00Z",
+				"fp3" : "2020-05-24T01:00:00Z",
+				"qualifying" : "2020-05-24T01:00:00Z",
+				"race" : "2020-05-24T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Azerbaijan",
+	    	"location": "Baku",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 8,
+	    	"slug": "azerbaijan-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-06-07T01:00:00Z",
+				"fp2" : "2020-06-07T01:00:00Z",
+				"fp3" : "2020-06-07T01:00:00Z",
+				"qualifying" : "2020-06-07T01:00:00Z",
+				"race" : "2020-06-07T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Canada",
+	    	"location": "Montreal",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 9,
+	    	"slug": "canadian-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-06-14T01:00:00Z",
+				"fp2" : "2020-06-14T01:00:00Z",
+				"fp3" : "2020-06-14T01:00:00Z",
+				"qualifying" : "2020-06-14T01:00:00Z",
+				"race" : "2020-06-14T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "France",
+	    	"location": "Le Castellet",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 10,
+	    	"slug": "french-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-06-28T01:00:00Z",
+				"fp2" : "2020-06-28T01:00:00Z",
+				"fp3" : "2020-06-28T01:00:00Z",
+				"qualifying" : "2020-06-28T01:00:00Z",
+				"race" : "2020-06-28T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Austria",
+	    	"location": "Spielberg",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 11,
+	    	"slug": "austrian-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-07-05T01:00:00Z",
+				"fp2" : "2020-07-05T01:00:00Z",
+				"fp3" : "2020-07-05T01:00:00Z",
+				"qualifying" : "2020-07-05T01:00:00Z",
+				"race" : "2020-07-05T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Great Britain",
+	    	"location": "Silverstone",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 12,
+	    	"slug": "british-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-07-19T01:00:00Z",
+				"fp2" : "2020-07-19T01:00:00Z",
+				"fp3" : "2020-07-19T01:00:00Z",
+				"qualifying" : "2020-07-19T01:00:00Z",
+				"race" : "2020-07-19T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Hungary",
+	    	"location": "Budapest",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 13,
+	    	"slug": "hungary-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-08-02T01:00:00Z",
+				"fp2" : "2020-08-02T01:00:00Z",
+				"fp3" : "2020-08-02T01:00:00Z",
+				"qualifying" : "2020-08-02T01:00:00Z",
+				"race" : "2020-08-02T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Belguim",
+	    	"location": "Spa-Francorchamps",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 14,
+	    	"slug": "belgium-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-08-30T01:00:00Z",
+				"fp2" : "2020-08-30T01:00:00Z",
+				"fp3" : "2020-08-30T01:00:00Z",
+				"qualifying" : "2020-08-30T01:00:00Z",
+				"race" : "2020-08-30T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Italy",
+	    	"location": "Monza",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 15,
+	    	"slug": "italian-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-09-06T01:00:00Z",
+				"fp2" : "2020-09-06T01:00:00Z",
+				"fp3" : "2020-09-06T01:00:00Z",
+				"qualifying" : "2020-09-06T01:00:00Z",
+				"race" : "2020-09-06T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Singapore",
+	    	"location": "Singapore",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 16,
+	    	"slug": "singapore-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-09-20T01:00:00Z",
+				"fp2" : "2020-09-20T01:00:00Z",
+				"fp3" : "2020-09-20T01:00:00Z",
+				"qualifying" : "2020-09-20T01:00:00Z",
+				"race" : "2020-09-20T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Russia",
+	    	"location": "Sochi",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 17,
+	    	"slug": "russian-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-09-27T01:00:00Z",
+				"fp2" : "2020-09-27T01:00:00Z",
+				"fp3" : "2020-09-27T01:00:00Z",
+				"qualifying" : "2020-09-27T01:00:00Z",
+				"race" : "2020-09-27T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Japan",
+	    	"location": "Suzuka",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 18,
+	    	"slug": "japanese-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-10-11T01:00:00Z",
+				"fp2" : "2020-10-11T01:00:00Z",
+				"fp3" : "2020-10-11T01:00:00Z",
+				"qualifying" : "2020-10-11T01:00:00Z",
+				"race" : "2020-10-11T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "United States",
+	    	"location": "Austin",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 19,
+	    	"slug": "us-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-10-25T01:00:00Z",
+				"fp2" : "2020-10-25T01:00:00Z",
+				"fp3" : "2020-10-25T01:00:00Z",
+				"qualifying" : "2020-10-25T01:00:00Z",
+				"race" : "2020-10-25T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Mexico City",
+	    	"location": "Mexico City",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 20,
+	    	"slug": "mexico-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-11-01T01:00:00Z",
+				"fp2" : "2020-11-01T01:00:00Z",
+				"fp3" : "2020-11-01T01:00:00Z",
+				"qualifying" : "2020-11-01T01:00:00Z",
+				"race" : "2020-11-01T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Brazil",
+	    	"location": "Sao Paulo",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 21,
+	    	"slug": "brazillian-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-11-15T01:00:00Z",
+				"fp2" : "2020-11-15T01:00:00Z",
+				"fp3" : "2020-11-15T01:00:00Z",
+				"qualifying" : "2020-11-15T01:00:00Z",
+				"race" : "2020-11-15T01:00:00Z"
+	    	}
+    	},
+    	{
+	    	"name": "Abu Dhabi",
+	    	"location": "Yas Island",
+	    	"latitude": 0,
+	    	"longitude": 0,
+	    	"round": 22,
+	    	"slug": "abu-dhabi-grand-prix",
+	    	"sessions": {
+				"fp1" : "2020-11-29T01:00:00Z",
+				"fp2" : "2020-11-29T01:00:00Z",
+				"fp3" : "2020-11-29T01:00:00Z",
+				"qualifying" : "2020-11-29T01:00:00Z",
+				"race" : "2020-11-29T01:00:00Z"
+	    	}
+    	}
+	]
+}
