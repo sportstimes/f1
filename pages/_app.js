@@ -4,7 +4,7 @@ import Router from 'next/router';
 import UserContext from '../components/UserContext';
 const moment = require('moment-timezone')
 
-export default class MyApp extends App {	
+export default class F1App extends App {	
   state = {
     timezone: null
   };

@@ -25,9 +25,9 @@ const Timezone = (props) => {
 			<div className="bar">
 				{showPicker ?
 					<div className="picker">
-						Pick a timezone...
+						<label htmlFor="timezone" className="picker-label">Pick a timezone...</label>
 						
-						<select onChange={onChange} value={timezone}>
+						<select id="timezone" onChange={onChange} value={timezone}>
 							{timezoneItems}
 						</select>
 						
@@ -88,6 +88,21 @@ const Timezone = (props) => {
 						.calendar {
 							display:none;
 						}	
+						
+						.picker-label {
+							display:none;
+						}
+						
+						.picker {
+							margin: 0 auto;
+						}
+						
+						select {
+							width:calc(100% - 90px);
+						}
+						button {
+							width:80px;
+						}
 					}
 			    `}</style>
 			</div>

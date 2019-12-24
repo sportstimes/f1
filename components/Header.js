@@ -27,12 +27,6 @@ const Header = props => (
 	    }
     </div>
     <style jsx>{`
-	    @font-face{ 
-			font-family: 'LeagueSpartan';
-		    src: url('/fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
-		         url('/fonts/leaguespartan-bold-webfont.woff') format('woff');
-		}
-	    
 	    .header {
 		    background:#011612;
 		    color:#fff;
@@ -73,6 +67,7 @@ const Header = props => (
 			font-size: 11px;
 			font-family: 'LeagueSpartan';
 	    }
+	    
 	    
 	    @media screen and (max-width: 900px) {
 			.logomark {

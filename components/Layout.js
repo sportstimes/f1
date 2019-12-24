@@ -1,19 +1,16 @@
 import Head from 'next/head';
-import { useContext } from 'react';
-
-import UserContext from '../components/UserContext';
+import React from 'react';
 import Header from '../components/Header';
 import Share from '../components/Share';
 import Footer from '../components/Footer';
 
 const Layout = props => {
 	
-	const { timezone } = useContext(UserContext);
-	
 	return (
     	<div className="content-wrapper">
 			<Head>
-				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
 			</Head>
 
 			<Header showOptions={props.showOptions} year={props.year} />
@@ -23,6 +20,12 @@ const Layout = props => {
 	  
 	  
       <style jsx global>{`
+	    @font-face{ 
+			font-family: 'LeagueSpartan';
+		    src: url('/fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+		         url('/fonts/leaguespartan-bold-webfont.woff') format('woff');
+		}
+	      
         *,
         *::before,
         *::after {
@@ -45,6 +48,28 @@ const Layout = props => {
           text-rendering: optimizeLegibility;
           height: 100%;
         }
+        
+        
+	    h1 {
+		    font-size:16px;
+		    font-family: 'LeagueSpartan';
+		    text-transform:uppercase;
+		    letter-spacing: 3px;
+	    }
+	    
+	    h2 {
+			font-size:11px;
+			text-transform:uppercase;
+			letter-spacing: 2px;
+			font-size: 11px;
+			font-family: 'LeagueSpartan';
+	    }
+        
+	    h3 {
+		    font-size: 20px;
+		    text-transform:uppercase;
+			font-family: 'LeagueSpartan';
+	    }
 
         a {
           color: #353535;
