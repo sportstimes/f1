@@ -6,7 +6,7 @@ const moment = require('moment-timezone')
 
 export default class F1App extends App {	
   state = {
-    timezone: null
+    timezone: moment.tz.guess()
   };
 
   componentDidMount = () => {
@@ -25,14 +25,9 @@ export default class F1App extends App {
   setTimezone = (timezone) => {
     localStorage.setItem('timezone', timezone);
 
-    this.setState(
-      {
+    this.setState({
         timezone: timezone
-      },
-      () => {
-	      
-      }
-    );
+	});
   };
 
   render() {
