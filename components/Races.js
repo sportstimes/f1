@@ -10,7 +10,6 @@ const Races = (props) => {
 	
 	return (
 	<div className="Races">
-		{ timezone ? 
 		<table id="events-table">
 			<thead>
 				<tr className="table-head">
@@ -41,10 +40,7 @@ const Races = (props) => {
 				    display:none;
 				}
 		    `}</style>
-	    </table> 
-	    :
-	    <div>Loading</div>
-	    }
+	    </table>
 	</div>
 	);
 };
