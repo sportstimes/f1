@@ -6,13 +6,19 @@ export default class Race extends React.Component {
 	constructor(props) {
 	   super(props)
 	   this.state = {
-	       collapsed: true
+	       collapsed: false
 	   }
 	}
 	
 	handleRowClick() {
 		this.setState({
 			collapsed: !this.state.collapsed
+		})
+	}
+	
+	componentDidMount() {
+		this.setState({
+			collapsed: true
 		})
 	}
 	
