@@ -67,12 +67,10 @@ const Header = props => (
 			font-size: 11px;
 			font-family: 'LeagueSpartan';
 	    }
-	    
-	    
 	    @media screen and (max-width: 900px) {
 			.logomark {
+				margin: 0 auto 10px auto;
 				float:none;
-				margin: 0 auto;
 			}
 			
 			.headers {
@@ -82,13 +80,19 @@ const Header = props => (
 				
 			h1 {
 				text-align:center;
+				margin-bottom:16px;
 				font-size:14px;
 			}
 			
 			h2 {
 				text-align:center;
+				margin-bottom:0;
 				font-size:10px;
 			}
+			
+			.branding {
+			    padding: 25px 0 10px 0;
+		    }
 		}
 	    
 	    .clear {
