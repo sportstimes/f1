@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Races from '../components/Races';
 import { NextSeo } from 'next-seo';
+import Link from 'next/link';
 
 const Index = (props) => {				
 	return (
@@ -16,8 +17,34 @@ const Index = (props) => {
 					cardType: 'summary_large_image',
 				}}
 			/>
-		    <Layout showOptions='true' year={ props.year }>
+		    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
 				<Races year={ props.year } races={ props.races } />
+				
+				<section className="previous-years">
+					<p>
+						<Link href="/years"><a>Looking for previous years?</a></Link>
+					</p>
+				</section>
+				
+				<style jsx>{`
+					.previous-years {
+						margin: 60px 0;	
+						text-align:center;
+					}
+					.previous-years a {
+						background: #1a8b73;
+						margin-bottom: 25px;
+						-webkit-border-radius: 4px;
+						-moz-border-radius: 4px;
+						padding: 12px;
+						font-size:15px;
+						border:0;
+						color:#fff;
+						cursor: pointer;
+						margin: 0 auto;
+					}
+			    `}</style>
+				
 		    </Layout>
 	    </>
 	);
