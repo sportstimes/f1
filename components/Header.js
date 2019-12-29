@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Logo from "./Logo";
 import Link from 'next/link';
-import Timezone from "./Timezone";
+import OptionsBar from "./OptionsBar";
 
 const Header = props => (
   <header className="header">
@@ -27,7 +27,7 @@ const Header = props => (
 		</div>
 	    
 	    { props.showOptions &&
-	    <Timezone />
+	    <OptionsBar showCalendarExport={props.showCalendarExport} />
 	    }
     </div>
     <style jsx>{`

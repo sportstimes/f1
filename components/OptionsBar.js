@@ -3,7 +3,7 @@ import UserContext from '../components/UserContext';
 import Link from 'next/link';
 const moment = require('moment-timezone')
 
-class Timezone extends React.Component {
+class OptionsBar extends React.Component {
 	static contextType = UserContext
 	
 	constructor(props) {
@@ -63,11 +63,13 @@ class Timezone extends React.Component {
 									Showing times for <strong>{this.context.timezone && this.context.timezone.replace("_", " ")}</strong>.
 								</a>
 							</div>
+							{ this.props.showCalendarExport &&
 							<div className="calendar">
 								<Link href="/generate">
 									<a>Add these race dates & times to your mobile, calendar, Outlook or Google Calendar</a>
 								</Link>
 							</div>
+							}
 						</div>
 			        }	
 					<style jsx>{`
@@ -167,4 +169,4 @@ class Timezone extends React.Component {
 	}
 }
 
-export default Timezone
+export default OptionsBar
