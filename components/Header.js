@@ -12,12 +12,16 @@ const Header = props => (
 		  	</div>
 			<div className="headers">
 				<h1>
+					<Link href="/">
+					<a>
 					Formula One Race Calendar&nbsp;
 					{ props.year && 
 						<span>{ props.year }</span>
 					}
+					</a>
+					</Link>
 				</h1>
-		    	<h2>Races, Qualifying &amp; Practice Sessions</h2>
+		    	<h2><Link href="/"><a>Races, Qualifying &amp; Practice Sessions</a></Link></h2>
 	    	</div>
 		    <div className="clear"></div>
 		</div>
@@ -58,6 +62,9 @@ const Header = props => (
 		    text-transform:uppercase;
 		    letter-spacing: 3px;
 	    }
+	    h1 a {
+		    color:#ffffff;
+	    }
 	    h2 {
 			font-size:11px;   
 			color: #1a8b73;
@@ -67,6 +74,10 @@ const Header = props => (
 			font-size: 11px;
 			font-family: 'LeagueSpartan';
 	    }
+	    h2 a {
+		    color:#1a8b73;
+	    }
+	    
 	    @media screen and (max-width: 900px) {
 			.logomark {
 				margin: 0 auto 10px auto;
