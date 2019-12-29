@@ -5,7 +5,7 @@ const Footer = () => (
   	<p> A ‘KickOff’ Production · V2.0a</p>
 	<style jsx>{`
 		.footer {
-			margin: 20px 0 20px 0;
+			margin: 75px 0 20px 0;
 		}
 		p { color: #aaa; font-size:12px; text-align:center; }
 		p a { color: #ccc; text-decoration:none; }
