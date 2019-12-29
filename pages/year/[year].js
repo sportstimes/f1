@@ -17,8 +17,17 @@ const Year = (props) => {
 					cardType: 'summary_large_image',
 				}}
 			/>
-		    <Layout showOptions='true' year={ props.year }>
-				404
+		    <Layout year={ props.year }>
+			    <section>
+				    <h3>Oops, unfortunately we dont go back that far yet.</h3>
+				    <p>Want to add more historical dates to F1 Calendar? Contribute previous seasons via our <a href="https://github.com/sportstimes/f1">GitHub repository</a>.</p>
+			    </section>
+			    <style jsx>{`
+				section {
+					margin: 30px 0;
+					text-align:center;
+				}
+				`}</style>
 		    </Layout>
 	    </>
 	)
