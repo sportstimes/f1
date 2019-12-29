@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import moment from 'moment'
 
-export default class Race extends React.Component {
+class Race extends React.Component {
 		
 	constructor(props) {
 	   super(props)
@@ -91,3 +91,5 @@ export default class Race extends React.Component {
 		);
 	}
 }
+
+export default Race

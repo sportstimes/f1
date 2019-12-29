@@ -21,15 +21,17 @@ const Index = (props) => {
 		    </Layout>
 	    </>
 	);
-};
+}
 
-Index.getInitialProps = async ({ query }) => {
-	const data = await import(`../db/2019.json`)
+Index.getInitialProps = async () => {
+	const data = await import(`../db/2020.json`)
 	
 	return {
 	    year: "2020",
 	    races: data.races
 	}
 }
+
+
 
 export default Index;
