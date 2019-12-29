@@ -18,7 +18,9 @@ const Layout = props => {
 				<meta name="msapplication-TileColor" content="#000000"/>
 				<meta name="theme-color" content="#ffffff"/>
 			</Head>
-
+			<noscript>
+				<div className="noscript">F1 Calendar works best with Javascript Enabled.</div>
+			</noscript>
 			<Header showOptions={props.showOptions} year={props.year} />
 			<div className="main-content">{props.children}</div>
 			
@@ -98,6 +100,12 @@ const Layout = props => {
           border: 0;
           border-radius: 4px;
           cursor: pointer;
+        }
+        
+        .noscript {
+	     	padding: 5px 0;
+	     	text-align:center;   
+	     	background: #000000;
         }
 
         /* Layout */
