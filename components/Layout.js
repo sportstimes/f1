@@ -22,7 +22,7 @@ const Layout = props => {
 			<noscript>
 				<div className="noscript">F1 Calendar works best with Javascript Enabled.</div>
 			</noscript>
-			<Header showOptions={props.showOptions} year={props.year} />
+			<Header showOptions={props.showOptions} showCalendarExport={props.showCalendarExport} year={props.year} />
 			<div className="main-content">{props.children}</div>
 			
 			<Footer />
@@ -91,6 +91,13 @@ const Layout = props => {
 
         p {
           margin: 0 0 10px;
+        }
+        
+        p a {
+        	color: #1a7b60;
+        }
+        p a:hover {
+        	color: #31AD8B;
         }
 
         .btn {
