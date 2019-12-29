@@ -16,7 +16,7 @@ const Timezone = (props) => {
 	}, [true]);
 	
 
-	const currentYear = '2019';
+	const currentYear = '2020';
 				
 	return (
 		<>
@@ -31,19 +31,26 @@ const Timezone = (props) => {
 					cardType: 'summary_large_image',
 				}}
 			/>
-		    <Layout showOptions='true' year={ currentYear }>
-				<Races year={ currentYear } />
+		    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
+				<Races year={ props.year } races={ props.races } />
 		    </Layout>
 	    </>
 	);
 };
 
-Timezone.getInitialProps = ({ query }) => {
-	console.log(query);
-	
-	return {
-	    timezone: query.timezone
-	}
+Timezone.getInitialProps = async ({ query, res }) => {
+	try {
+		const data = await import(`../../db/2020.json`)
+			
+		return {
+		    year: "2020",
+		    races: data.races,
+		    timezone: query.timezone
+		}
+	} catch(err) {
+         res.statusCode = 404;
+         return {}
+	}	
 }
 
 export default Timezone;
