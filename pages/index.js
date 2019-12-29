@@ -22,7 +22,7 @@ const Index = (props) => {
 				
 				<section className="previous-years">
 					<p>
-						<Link href="/years"><a>Looking for previous years?</a></Link>
+						<Link href="years"><a>Looking for previous years?</a></Link>
 					</p>
 				</section>
 				
