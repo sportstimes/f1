@@ -8,6 +8,8 @@ const Races = (props) => {
 	
 	const { timezone } = useContext(UserContext)
 	
+	const races = props.races
+	
 	return (
 	<div className="Races">
 		<table id="events-table">
@@ -20,7 +22,7 @@ const Races = (props) => {
 				</tr>
 			</thead>
 			
-			{data.races && data.races.map((item, index) =>
+			{races && races.map((item, index) =>
 				<Race item={item} index={index} timezone={timezone} key={item.slug} />
 			)}    
 		    <style jsx>{`
