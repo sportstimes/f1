@@ -27,7 +27,9 @@ class Race extends React.Component {
 		return (
 			<tbody id={ this.props.item.slug } key={ this.props.item.slug } className={`${moment(this.props.item.sessions.race).isBefore() ? 'past' : 'future'} ${this.props.index % 2 === 0 ? 'even' : 'odd'}`}>			
 				<tr key={this.props.item.slug} className="race" onClick={() => this.handleRowClick()}>
-					<td className="icon-column"><i className="fal fa-flag-checkered"></i></td>
+					<td className="icon-column">
+						<i className={`${this.state.collapsed ? 'fal fa-caret-right fa-xs' : 'fal fa-caret-down fa-xs'}`}></i>
+					</td>
 					<td className="event-column">
 						{ this.props.item.name }
 					</td>
@@ -72,9 +74,27 @@ class Race extends React.Component {
 				    padding:16px;
 			    }
 			    
+			    .icon-column {
+					font-size:20px;
+					width:5%;
+					color:#fff;   
+			    }
+			    
+			    .event-column {
+				    width:50%;
+			    }
+			    
+			    .date-column {
+				    width:25%;
+			    }
+			    
+			    .time-column {
+				    width:20%;
+			    }
+			    
+			    
 			    .race { cursor: pointer; }
 			    
-			    .icon-column { width: 1px; }
 			    .date-column, .time-column { text-align:right; }
 				
 				.odd { background: #151515; }
