@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo';
 
 function Generate() {
 	
-	const currentYear = '2019';
+	const currentYear = '2020';
 	
 	const [status, setStatus] = useState({
 	    submitted: false,
@@ -45,111 +45,133 @@ function Generate() {
 			/>
 			<Layout>
 				{status.submitted ?
-					<section className="download">
-						<h3>Select Calendar Type</h3>						
-						<section id="download_option_ical">							
+					<>	
+						<h3>Select Calendar Type</h3>	
+										
+						<section className="card" id="download_option_ical">							
 							<h4>For Mobile or Desktop</h4>
 							<p>Automatically updating calendar for apps like Outlook and OS X Calendar.</p>
 							
+							<p>
 							<a href="webcal://www.f1calendar.com/download/f1-calendar_p1_p2_p3_q_gp.ics" className="button">
 								Get
 							</a>
+							</p>
 						</section>
 						
-						<hr />
-						
-						<section id="download_option_google">
+						<section className="card" id="download_option_google">
 							<h4>For Google Calendar</h4>
 							<p>To add this calendar, copy and paste this URL into Google Calendar (<a href="https://support.google.com/calendar/answer/37100?hl=en" target="_blank">detailed instructions</a>):</p>
-							<p >https://www.f1calendar.com/download/f1-calendar_p1_p2_p3_q_gp.ics?t=1576929539</p>
+							<p className="copyable">https://www.f1calendar.com/download/f1-calendar_p1_p2_p3_q_gp.ics?t=1576929539</p>
 						</section>
-						
-						<hr />
-						
-						<section id="download_option">
+												
+						<section className="card" id="download_option">
 							<h4>Download ICS File</h4>
-							<p>Non-updating calendar (.ics) for calendars that can’t handle updating subscriptions.</p>							
-							<a href="https://www.f1calendar.com/download/f1-calendar_p1_p2_p3_q_gp.ics" className="button">
-								Download
-							</a>
-
+							<p>Non-updating calendar (.ics) for calendars that can’t handle updating subscriptions.</p>		
+							<p>					
+								<a href="https://www.f1calendar.com/download/f1-calendar_p1_p2_p3_q_gp.ics" className="button">
+									Download
+								</a>
+							</p>
 						</section>
-					</section>
-				:
-					<section>
+					</>
+				:				
+					<>
 						<h3>Generate Calendar</h3>
-						<p>First, pick which F1 race weekend sessions you would like to add to your calendar:</p>
-						
-						<form id="download_subscribe" onSubmit={handleOnSubmit}>	
-							<fieldset>
-								<div class="field">
-									<input type="checkbox" name="p1" id="p1" value="on" checked="checked" />
-									<label for="p1">Practice 1</label>
-								</div>
-	
-								<div class="field">
-									<input type="checkbox" name="p2" id="p2" value="on" checked="checked" />
-									<label for="p2">Practice 2</label>
-								</div>
-	
-								<div class="field">
-									<input type="checkbox" name="p3" id="p3" value="on" checked="checked" />
-									<label for="p3">Practice 3</label>
-								</div>
-	
-								<div class="field">
-									<input type="checkbox" name="q" id="q" value="on" checked="checked" />
-									<label for="q">Qualifying</label>
-								</div>
-	
-								<div class="field">
-									<input type="checkbox" name="gp" id="gp" value="on" checked="checked" />
-									<label for="gp">Grand Prix</label>
-								</div>
-							</fieldset>
-	
-							<fieldset id="set_alarms">
-								<div class="field">
-									<input type="checkbox" name="alarm" id="alarm" value="on" />
-									<label for="alarm">Set a reminder</label> <input type="number" name="mins" id="alarm-mins" step="5" min="0" max="120" value="20" /><label for="alarms-before">minutes before each event in your season calendar</label>
-								</div>
-							</fieldset>
+						<section className="card">
+							<p>First, pick which F1 race weekend sessions you would like to add to your calendar:</p>
 							
-							<fieldset id="buttons">
-								<button type="submit" disabled={status.submitting}>
-						          {!status.submitting
-						            ? !status.submitted
-						              ? 'Get Calendar'
-						              : 'Submitted'
-						            : 'Submitting...'}
-						        </button>
-							</fieldset>
-						</form>
-					</section>
+							<form id="download_subscribe" onSubmit={handleOnSubmit}>	
+								<fieldset>
+									<div className="field">
+										<input type="checkbox" name="p1" id="p1" defaultValue="on" defaultChecked="checked" />
+										<label htmlFor="p1">Practice 1</label>
+									</div>
+		
+									<div className="field">
+										<input type="checkbox" name="p2" id="p2" defaultValue="on" defaultChecked="checked" />
+										<label htmlFor="p2">Practice 2</label>
+									</div>
+		
+									<div className="field">
+										<input type="checkbox" name="p3" id="p3" defaultValue="on" defaultChecked="checked" />
+										<label htmlFor="p3">Practice 3</label>
+									</div>
+		
+									<div className="field">
+										<input type="checkbox" name="q" id="q" defaultValue="on" defaultChecked="checked" />
+										<label htmlFor="q">Qualifying</label>
+									</div>
+		
+									<div className="field">
+										<input type="checkbox" name="gp" id="gp" defaultValue="on" defaultChecked="checked" />
+										<label htmlFor="gp">Grand Prix</label>
+									</div>
+								</fieldset>
+		
+								<fieldset id="set_alarms">
+									<div className="field">
+										<input type="checkbox" name="alarm" id="alarm" value="on" />
+										<label htmlFor="alarm">Set a reminder</label> <input type="number" name="mins" id="alarm-mins" step="5" min="0" max="120" defaultValue="20" /><label htmlFor="alarms-before">minutes before each event in your season calendar</label>
+									</div>
+								</fieldset>
+								
+								<fieldset id="buttons">
+									<button type="submit" disabled={status.submitting}>
+							          {!status.submitting
+							            ? !status.submitted
+							              ? 'Get Calendar'
+							              : 'Submitted'
+							            : 'Submitting...'}
+							        </button>
+								</fieldset>
+							</form>
+						</section>
+					</>
 				}
 				<style jsx>{`
+					.card {
+						background:#141414;
+						-webkit-border-radius: 15px;
+						-moz-border-radius: 15px;
+						padding:25px;
+						margin-bottom:16px;
+					}
+					.card h4 {
+						margin-top:0;	
+					}
+					.card p {
+						margin-bottom:15px;
+					}
+					
+					
 					form {
-						border: 1px solid #151515;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						border-radius: 4px;
-						vertical-align:middle;
 					}
 					fieldset {
-						border:0;	
+						border:0;
+						margin:0 0 15px 0;
+						padding:0;	
 					}
 					
 					p {
 						margin-bottom: 15px;	
 					}
 					
+					.copyable {
+						font-family:monospace;
+						color:#2a2a2a;
+						background:#FFF;
+						padding:.5em;
+						border-radius:4px;
+						margin-top:.5em;
+						width:100%;
+					}
+					
 					button {
 						background: #1a8b73;
-						margin-bottom: 25px;
 						-webkit-border-radius: 4px;
 						-moz-border-radius: 4px;
-						padding: 12px;
+						padding: 12px 15px;
 						font-size:15px;
 						border:0;
 						color:#fff;
@@ -158,10 +180,9 @@ function Generate() {
 					
 					.button {
 						background: #1a8b73;
-						margin-bottom: 25px;
 						-webkit-border-radius: 4px;
 						-moz-border-radius: 4px;
-						padding: 12px;
+						padding: 12px 15px;
 						font-size:15px;
 						border:0;
 						color:#fff;
