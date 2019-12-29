@@ -3,7 +3,7 @@ import UserContext from '../components/UserContext';
 import Link from 'next/link';
 const moment = require('moment-timezone')
 
-export default class Timezone extends React.Component {
+class Timezone extends React.Component {
 	static contextType = UserContext
 	
 	constructor(props) {
@@ -20,7 +20,6 @@ export default class Timezone extends React.Component {
 		})
 	}
 	
-    
     onChange = event => { 
 	    this.context.setTimezone(event.target.value);
 	}
@@ -47,13 +46,15 @@ export default class Timezone extends React.Component {
 				<div className="bar">
 					{this.state.pickerShowing ?
 						<div className="picker">
-							<label htmlFor="timezone" className="picker-label">Pick a timezone...</label>
-							
-							<select id="timezone" onChange={this.onChange} value={this.context.timezone}>
-								{timezoneItems}
-							</select>
-							
-							<button onClick={this.togglePicker} type="submit">Done</button>
+							<form action="/" method="GET">
+								<label htmlFor="timezone" className="picker-label">Pick a timezone...</label>
+								
+								<select id="timezone" onChange={this.onChange} name="timezone" value={this.context.timezone}>
+									{timezoneItems}
+								</select>
+								
+								<button onClick={this.togglePicker} type="submit">Done</button>
+							</form>
 						</div>	
 					:
 						<div className="options">
@@ -165,3 +166,5 @@ export default class Timezone extends React.Component {
 		);
 	}
 }
+
+export default Timezone
