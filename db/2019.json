@@ -303,8 +303,8 @@
     	{
 	    	"name": "Abu Dhabi",
 	    	"location": "Yas Marina",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 24.4821,
+	    	"longitude": 54.3482,
 	    	"round": 21,
 	    	"slug": "abu-dhabi-grand-prix",
 	    	"sessions": {

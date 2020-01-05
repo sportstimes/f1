@@ -1,10 +1,11 @@
 {
 	"races": [
     	{
-	    	"name": "Australia",
+	    	"name": "Australian",
 	    	"location": "Melbourne",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": -37.8373,
+	    	"longitude": 144.9666,
+	    	"tbc":true,
 	    	"round": 1,
 	    	"slug": "australian-grand-prix",
 	    	"sessions": {
@@ -18,8 +19,9 @@
     	{
 	    	"name": "Bahrain",
 	    	"location": "Sakhir",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 26.0370,
+	    	"longitude": 50.5112,
+	    	"tbc":true,
 	    	"round": 2,
 	    	"slug": "bahrain-grand-prix",
 	    	"sessions": {
@@ -31,12 +33,13 @@
 	    	}
     	},
     	{
-	    	"name": "Vietnam",
+	    	"name": "Vietnamese",
 	    	"location": "Hanoi",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 21.016597,
+	    	"longitude": 105.765736,
+	    	"tbc":true,
 	    	"round": 3,
-	    	"slug": "vietnam-grand-prix",
+	    	"slug": "vietnamese-grand-prix",
 	    	"sessions": {
 				"fp1" : "2020-04-05T01:00:00Z",
 				"fp2" : "2020-04-05T01:00:00Z",
@@ -46,10 +49,11 @@
 	    	}
     	},
     	{
-	    	"name": "China",
+	    	"name": "Chinese",
 	    	"location": "Shanghai",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 31.3807,
+	    	"longitude": 121.2498,
+	    	"tbc":true,
 	    	"round": 4,
 	    	"slug": "china-grand-prix",
 	    	"sessions": {
@@ -61,12 +65,13 @@
 	    	}
     	},
     	{
-	    	"name": "Netherlands",
+	    	"name": "Dutch",
 	    	"location": "Zandvoort",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 52.388408,
+	    	"longitude": 4.547122,
+	    	"tbc":true,
 	    	"round": 5,
-	    	"slug": "netherlands-grand-prix",
+	    	"slug": "dutch-grand-prix",
 	    	"sessions": {
 				"fp1" : "2020-05-03T01:00:00Z",
 				"fp2" : "2020-05-03T01:00:00Z",
@@ -76,10 +81,11 @@
 	    	}
     	},
     	{
-	    	"name": "Spain",
+	    	"name": "Spanish",
 	    	"location": "Barcelona",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 41.5638,
+	    	"longitude": 2.2585,
+	    	"tbc":true,
 	    	"round": 6,
 	    	"slug": "spanish-grand-prix",
 	    	"sessions": {
@@ -93,8 +99,9 @@
     	{
 	    	"name": "Monaco",
 	    	"location": "Monte Carlo",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 43.7338,
+	    	"longitude": 7.4215,
+	    	"tbc":true,
 	    	"round": 7,
 	    	"slug": "monoco-grand-prix",
 	    	"sessions": {
@@ -108,8 +115,9 @@
     	{
 	    	"name": "Azerbaijan",
 	    	"location": "Baku",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 40.3699,
+	    	"longitude": 49.8433,
+	    	"tbc":true,
 	    	"round": 8,
 	    	"slug": "azerbaijan-grand-prix",
 	    	"sessions": {
@@ -121,10 +129,11 @@
 	    	}
     	},
     	{
-	    	"name": "Canada",
+	    	"name": "Canadian",
 	    	"location": "Montreal",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 45.5034,
+	    	"longitude": -73.5267,
+	    	"tbc":true,
 	    	"round": 9,
 	    	"slug": "canadian-grand-prix",
 	    	"sessions": {
@@ -136,10 +145,11 @@
 	    	}
     	},
     	{
-	    	"name": "France",
-	    	"location": "Le Castellet",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"name": "French",
+	    	"location": "Paul Ricard",
+	    	"latitude": 43.2517,
+	    	"longitude": 5.7935,
+	    	"tbc":true,
 	    	"round": 10,
 	    	"slug": "french-grand-prix",
 	    	"sessions": {
@@ -151,10 +161,11 @@
 	    	}
     	},
     	{
-	    	"name": "Austria",
+	    	"name": "Austrian",
 	    	"location": "Spielberg",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 47.2225,
+	    	"longitude": 14.7607,
+	    	"tbc":true,
 	    	"round": 11,
 	    	"slug": "austrian-grand-prix",
 	    	"sessions": {
@@ -166,10 +177,11 @@
 	    	}
     	},
     	{
-	    	"name": "Great Britain",
+	    	"name": "British",
 	    	"location": "Silverstone",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 52.0706,
+	    	"longitude": -1.0174,
+	    	"tbc":true,
 	    	"round": 12,
 	    	"slug": "british-grand-prix",
 	    	"sessions": {
@@ -181,10 +193,11 @@
 	    	}
     	},
     	{
-	    	"name": "Hungary",
+	    	"name": "Hungarian",
 	    	"location": "Budapest",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 47.5830,
+	    	"longitude": 19.2526,
+	    	"tbc":true,
 	    	"round": 13,
 	    	"slug": "hungary-grand-prix",
 	    	"sessions": {
@@ -198,8 +211,9 @@
     	{
 	    	"name": "Belguim",
 	    	"location": "Spa-Francorchamps",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 50.4440,
+	    	"longitude": 5.9687,
+	    	"tbc":true,
 	    	"round": 14,
 	    	"slug": "belgium-grand-prix",
 	    	"sessions": {
@@ -211,10 +225,11 @@
 	    	}
     	},
     	{
-	    	"name": "Italy",
+	    	"name": "Italian",
 	    	"location": "Monza",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 45.6169,
+	    	"longitude": 9.2825,
+	    	"tbc":true,
 	    	"round": 15,
 	    	"slug": "italian-grand-prix",
 	    	"sessions": {
@@ -228,8 +243,9 @@
     	{
 	    	"name": "Singapore",
 	    	"location": "Singapore",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 1.2857,
+	    	"longitude": 103.8575,
+	    	"tbc":true,
 	    	"round": 16,
 	    	"slug": "singapore-grand-prix",
 	    	"sessions": {
@@ -241,10 +257,11 @@
 	    	}
     	},
     	{
-	    	"name": "Russia",
+	    	"name": "Russian",
 	    	"location": "Sochi",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 43.6203,
+	    	"longitude": 39.7120,
+	    	"tbc":true,
 	    	"round": 17,
 	    	"slug": "russian-grand-prix",
 	    	"sessions": {
@@ -256,10 +273,11 @@
 	    	}
     	},
     	{
-	    	"name": "Japan",
+	    	"name": "Japanese",
 	    	"location": "Suzuka",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 35.3689,
+	    	"longitude": 138.9256,
+	    	"tbc":true,
 	    	"round": 18,
 	    	"slug": "japanese-grand-prix",
 	    	"sessions": {
@@ -273,8 +291,9 @@
     	{
 	    	"name": "United States",
 	    	"location": "Austin",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 30.1328,
+	    	"longitude": -97.6411,
+	    	"tbc":true,
 	    	"round": 19,
 	    	"slug": "us-grand-prix",
 	    	"sessions": {
@@ -286,10 +305,11 @@
 	    	}
     	},
     	{
-	    	"name": "Mexico City",
+	    	"name": "Mexican",
 	    	"location": "Mexico City",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 19.4028,
+	    	"longitude": -99.0986,
+	    	"tbc":true,
 	    	"round": 20,
 	    	"slug": "mexico-grand-prix",
 	    	"sessions": {
@@ -301,10 +321,11 @@
 	    	}
     	},
     	{
-	    	"name": "Brazil",
+	    	"name": "Brazilian",
 	    	"location": "Sao Paulo",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": -23.7014,
+	    	"longitude": -46.6969,
+	    	"tbc":true,
 	    	"round": 21,
 	    	"slug": "brazillian-grand-prix",
 	    	"sessions": {
@@ -318,8 +339,9 @@
     	{
 	    	"name": "Abu Dhabi",
 	    	"location": "Yas Island",
-	    	"latitude": 0,
-	    	"longitude": 0,
+	    	"latitude": 24.4821,
+	    	"longitude": 54.3482,
+	    	"tbc":true,
 	    	"round": 22,
 	    	"slug": "abu-dhabi-grand-prix",
 	    	"sessions": {
