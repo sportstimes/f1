@@ -6,7 +6,7 @@ const moment = require('moment-timezone')
 
 function Years() {
     const yearItems = []
-	let supportedYears = ["2020", "2019"]
+	let supportedYears = ["2020", "2019", "2018"]
 	for (let year in supportedYears) {
 		yearItems.push(<li key={supportedYears[year]}><Link href={`year/${supportedYears[year]}`}><a>{supportedYears[year]}</a></Link></li>)
 	}
