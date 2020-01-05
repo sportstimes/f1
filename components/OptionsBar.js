@@ -33,14 +33,27 @@ class OptionsBar extends React.Component {
 	}
 	
 	
-	render() {
+	render() {	
 		// Picker Items
 	    const timezoneItems = []
-		let zoneslist = moment.tz.names()
-		for (let zone in zoneslist) {
-			timezoneItems.push(<option key={zoneslist[zone]}>{zoneslist[zone]}</option>)
-		}
+	    
+	    moment.tz.names().reduce((memo, tz) => {
+				memo.push({
+					name: tz,
+					offset: moment.tz(tz).utcOffset()
+				});
 		
+				return memo;
+			}, [])
+			.sort((a, b) => {
+				return a.offset - b.offset
+			})
+			.reduce((memo, tz) => {
+				const timezone = tz.offset ? moment.tz(tz.name).format('Z') : '';
+		
+				timezoneItems.push(<option value="{tz.name}">(GMT{timezone}) {tz.name}</option>);
+			}, "");
+			
 		return (
 			<div className="timezone">
 				<div className="bar">
