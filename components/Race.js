@@ -25,7 +25,7 @@ class Race extends React.Component {
 	
 	render() {
 		return (
-			<tbody id={ this.props.item.slug } key={ this.props.item.slug } className={`${moment(this.props.item.sessions.race).isBefore() ? 'past' : 'future'} ${this.props.index % 2 === 0 ? 'even' : 'odd'}`}>			
+			<tbody id={ this.props.item.slug } key={ this.props.item.slug } className={`${moment(this.props.item.sessions.race).isBefore() ? 'past' : 'future'} ${this.props.index % 2 === 0 ? 'even' : 'odd'} ${this.props.isNextRace ? 'next-event' : ''}`}>			
 				<tr key={this.props.item.slug} className="race" onClick={() => this.handleRowClick()}>
 					<td className="icon-column">
 						<i className={`${this.state.collapsed ? 'fas fa-caret-right fa-xs' : 'fas fa-caret-down fa-xs'}`}></i>
@@ -34,7 +34,12 @@ class Race extends React.Component {
 						{ this.props.item.tbc &&
 							<span className="tbc">TBC</span>
 						}
+						
 						{ this.props.item.name } Grand Prix
+						
+						{ this.props.isNextRace &&
+							<span className="next">NEXT</span>
+						}
 					</td>
 					<td className="date-column">{ moment(this.props.item.sessions.race).tz(this.props.timezone).format('D MMM') }</td>
 					<td className="time-column">{ moment(this.props.item.sessions.race).tz(this.props.timezone).format('HH:mm') }</td>
@@ -97,16 +102,39 @@ class Race extends React.Component {
 				    width:20%;
 			    }
 			    
+			    .next-event .race {
+				    color:#fff1aa;
+			    }
+			    
+			    .next {
+				    border-radius: 3px 3px 3px 3px;
+					-moz-border-radius: 3px 3px 3px 3px;
+					-webkit-border-radius: 3px 3px 3px 3px;
+					font-family: 'LeagueSpartan';
+					font-size:10px;
+					line-height:20px;
+					letter-spacing:1px;
+				    display:inline-block;
+				    background: #fff1aa;
+				    color: #000;
+				    padding: 0 3px;
+				    margin-left:12px;
+				    vertical-align:middle;
+			    }
+			    
+			    
 			    .tbc {
 				    border-radius: 3px 3px 3px 3px;
 					-moz-border-radius: 3px 3px 3px 3px;
 					-webkit-border-radius: 3px 3px 3px 3px;
-					font-size:9px;
-					font-weight:800;
+					font-family: 'LeagueSpartan';
+					font-size:10px;
+					line-height:20px;
+					letter-spacing:1px;
 				    display:inline-block;
 				    background: yellow;
 				    color: #000;
-				    padding: 1px 3px;
+				    padding: 0 3px;
 				    margin-right:12px;
 				    vertical-align:middle;
 			    }

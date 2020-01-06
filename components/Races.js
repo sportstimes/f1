@@ -10,6 +10,8 @@ const Races = (props) => {
 	
 	const races = props.races
 	
+	var nextRace
+	
 	return (
 	<div className="Races">
 		<table id="events-table">
@@ -22,9 +24,14 @@ const Races = (props) => {
 				</tr>
 			</thead>
 			
-			{races && races.map((item, index) =>
-				<Race item={item} index={index} timezone={timezone} key={item.slug} />
-			)}    
+			{races && races.map((item, index) => {
+				var isNextRace = false
+				if(moment(item.sessions.race).isAfter() && !nextRace){
+					isNextRace = true
+					nextRace = item
+				}
+				return (<Race item={item} index={index} timezone={timezone} key={item.slug} isNextRace={isNextRace} />)
+			})}   
 		    <style jsx>{`
 			    table {
 			    	width:100%;
