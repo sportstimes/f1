@@ -37,7 +37,7 @@ class Race extends React.Component {
 						
 						{ this.props.item.name } Grand Prix
 						
-						{ this.props.isNextRace &&
+						{ this.props.isNextRace && !this.props.item.tbc &&
 							<span className="next">NEXT</span>
 						}
 					</td>
@@ -87,19 +87,21 @@ class Race extends React.Component {
 				    text-align:center;
 					font-size:20px;
 					width:5%;
+					min-width:40px;
 					color:#fff;   
 			    }
 			    
 			    .event-column {
-				    width:50%;
+				    width:55%;
 			    }
 			    
 			    .date-column {
-				    width:25%;
+				    width:20%;
 			    }
 			    
 			    .time-column {
 				    width:20%;
+				    padding-right:15px;
 			    }
 			    
 			    .next-event .race {
