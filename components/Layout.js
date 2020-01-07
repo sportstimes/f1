@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Share from '../components/Share';
 import Footer from '../components/Footer';
+import CookieConsent from "react-cookie-consent";
 
 const Layout = props => {
 	
@@ -26,6 +27,17 @@ const Layout = props => {
 			<div className="main-content">{props.children}</div>
 			
 			<Footer />
+			
+			<CookieConsent
+			    location="bottom"
+			    buttonText="Great!"
+			    cookieName="f1cal"
+			    style={{ background: "#0E5143" }}
+			    buttonStyle={{ color: "white", background:"#1a8b73", fontSize: "13px" }}
+			    expires={150}
+			>
+			    This website uses cookies to enhance the user experience.
+			</CookieConsent>
 	  
 	  
       <style jsx global>{`
