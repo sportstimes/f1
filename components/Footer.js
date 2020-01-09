@@ -5,7 +5,7 @@ const Footer = () => (
   	<p>Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV.</p>
 	<style jsx>{`
 		.footer {
-			margin: 75px 0 20px 0;
+			margin: 75px 16px 20px 16px;
 		}
 		p { color: #aaa; font-size:12px; text-align:center; }
 		p a { color: #ccc; text-decoration:none; }
