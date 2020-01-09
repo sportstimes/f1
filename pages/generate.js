@@ -28,9 +28,9 @@ function Generate(props) {
 		setState({
 			...form, 
 			submitted: true, 
-			webcalURL:`webcal://www.f1calendar.com/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}.ics`, 
-			googleURL:`https://www.f1calendar.com/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}.ics?t=12345`,
-			downloadURL:`https://www.f1calendar.com/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}.ics` 
+			webcalURL:`webcal://www.f1calendar.com/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics`, 
+			googleURL:`https://www.f1calendar.com/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics?t=${ Date.now() }`,
+			downloadURL:`https://www.f1calendar.com/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics` 
 		})		
 	}
 	
@@ -115,8 +115,8 @@ function Generate(props) {
 		
 								<fieldset id="set_alarms">
 									<div className="field">
-										<input type="checkbox" name="alarm" id="alarm" value="off" onChange={event => setStatus(prevStatus => ({ ...form, alarm: event.target.checked }))} />
-										<label htmlFor="alarm">Set a reminder</label> <input type="number" name="mins" id="alarm-mins" step="5" min="0" max="120" defaultValue="20" onChange={event => setStatus(prevStatus => ({ ...prevStatus, mins: event.target.value }))} /><label htmlFor="alarms-before">minutes before each event in your season calendar</label>
+										<input type="checkbox" name="alarm" id="alarm" value="off" onChange={event => setState({...form, alarm: event.target.checked })} />
+										<label htmlFor="alarm">Set a reminder</label> <input type="number" name="mins" id="alarm-mins" step="5" min="0" max="120" defaultValue="20" onChange={event => setState({...form, mins: event.target.value })} /><label htmlFor="alarms-before">minutes before each event in your season calendar</label>
 									</div>
 								</fieldset>
 								
