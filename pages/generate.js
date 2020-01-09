@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import Share from "../components/Share";
 import { NextSeo } from 'next-seo';
 
-function Generate() {
+function Generate(props) {
 	
 	const currentYear = '2020';
 	
@@ -47,7 +47,7 @@ function Generate() {
 					cardType: 'summary_large_image',
 				}}
 			/>
-			<Layout>
+			<Layout year={ props.year }>
 				{form.submitted ?
 					<>	
 						<h3>Select Calendar Type</h3>	
@@ -205,6 +205,12 @@ function Generate() {
 			</Layout>
 		</>
 	);
+}
+
+Generate.getInitialProps = async () => {
+	return {
+	    year: "2020"
+	}
 }
 
 
