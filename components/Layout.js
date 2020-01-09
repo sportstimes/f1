@@ -139,6 +139,12 @@ const Layout = props => {
 	        margin: 0 auto;
 	        padding: 0 16px;
         }
+        
+        @media screen and (max-width: 500px) {
+			.main-content {
+				padding: 0 8px;
+			}
+		}
       `}</style>
     </div>
   );

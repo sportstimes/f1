@@ -151,6 +151,11 @@ class OptionsBar extends React.Component {
 								width:80px;
 							}
 						}
+						@media screen and (max-width: 500px) {
+							.currentTimezone {
+								font-size:11px;
+							}
+						}
 				    `}</style>
 				</div>
 				

@@ -154,6 +154,12 @@ class Race extends React.Component {
 					display:none;	
 				}
 				
+				@media screen and (max-width: 500px) {
+					.next {
+						display:none;
+					}
+				}
+				
 				`}</style>
 			</tbody>
 		);

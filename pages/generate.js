@@ -140,7 +140,9 @@ function Generate(props) {
 						margin-bottom:16px;
 					}
 					.card h4 {
-						margin-top:0;	
+						margin-top:0;
+						font-size:18px;
+						margin-bottom:8px;
 					}
 					.card p {
 						margin-bottom:15px;
