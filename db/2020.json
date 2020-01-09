@@ -209,7 +209,7 @@
 	    	}
     	},
     	{
-	    	"name": "Belguim",
+	    	"name": "Belgian",
 	    	"location": "Spa-Francorchamps",
 	    	"latitude": 50.4440,
 	    	"longitude": 5.9687,
@@ -305,7 +305,7 @@
 	    	}
     	},
     	{
-	    	"name": "Mexican",
+	    	"name": "Mexico City",
 	    	"location": "Mexico City",
 	    	"latitude": 19.4028,
 	    	"longitude": -99.0986,
