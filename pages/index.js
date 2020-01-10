@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Races from '../components/Races';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
+import RaceSchema from '../components/RaceSchema';
 
 const Index = (props) => {				
 	return (
@@ -19,6 +20,11 @@ const Index = (props) => {
 			/>
 		    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
 				<Races year={ props.year } races={ props.races } />
+				
+				{props.races && props.races.map((item, index) => {
+					return (<RaceSchema item={item} />)
+				})}
+				
 				
 				<section className="previous-years">
 					<p>

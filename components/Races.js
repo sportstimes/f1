@@ -1,6 +1,5 @@
 import { useState, useContext } from 'react';
 import UserContext from '../components/UserContext';
-import data from '../db/2019.json'
 import moment from 'moment'
 import Race from '../components/Race';
 
@@ -49,7 +48,7 @@ const Races = (props) => {
 				    display:none;
 				}
 		    `}</style>
-	    </table>
+	    </table>  
 	</div>
 	);
 };
