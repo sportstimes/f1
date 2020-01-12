@@ -6,16 +6,6 @@ import { NextSeo } from 'next-seo';
 
 const Timezone = (props) => {
 	
-	const { setTimezone } = useContext(UserContext)
-
-	useEffect(() => {
-		if(props.timezone){
-			const queryTimezone = props.timezone.replace("-", "/");	
-			setTimezone(queryTimezone);
-		}
-	}, [true]);
-	
-
 	const currentYear = '2020';
 				
 	return (
@@ -41,11 +31,10 @@ const Timezone = (props) => {
 Timezone.getInitialProps = async ({ query, res }) => {
 	try {
 		const data = await import(`../../db/2020.json`)
-			
+		
 		return {
 		    year: "2020",
 		    races: data.races,
-		    timezone: query.timezone
 		}
 	} catch(err) {
          res.statusCode = 404;

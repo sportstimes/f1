@@ -4,26 +4,36 @@ import Router from 'next/router';
 import UserContext from '../components/UserContext';
 const moment = require('moment-timezone')
 
-export default class F1App extends App {	
-	state = {
-		timezone: moment.tz.guess()
+export default class F1App extends App {
+	
+	constructor(props, context, query) {
+		super(props, context, query);
+
+		var timezone = moment.tz.guess()
+		if(props.router.query.timezone){
+			timezone = props.router.query.timezone.replace("-", "/")
+		}
+		
+		this.state = {
+			timezone: timezone
+		};
 	};
 	
-	componentDidMount = () => {
-		const timezone = localStorage.getItem('timezone');
-		if (timezone) {
-			this.setState({
-				timezone: timezone
-			});
-		} else {
-			this.setState({
-				timezone: moment.tz.guess()
-			});
+	componentDidMount = (props) => {
+		var timezone = moment.tz.guess()
+		if(localStorage.getItem('timezone')) {
+			timezone = localStorage.getItem('timezone');
 		}
+		
+		this.setState({
+			timezone: timezone
+		});
 	};
 	
 	setTimezone = (timezone) => {
-		localStorage.setItem('timezone', timezone);
+		if (typeof window !== 'undefined') {
+			localStorage.setItem('timezone', timezone);
+		}
 	
 		this.setState({
 			timezone: timezone
