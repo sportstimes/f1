@@ -1,3 +1,4 @@
+import Router from 'next/router'
 import Layout from '../components/Layout';
 import Races from '../components/Races';
 import { NextSeo } from 'next-seo';
@@ -56,8 +57,17 @@ const Index = (props) => {
 	);
 }
 
-Index.getInitialProps = async () => {
+Index.getInitialProps = async ({query: {timezone}, res}) => {
 	const data = await import(`../db/2020.json`)
+	
+	// Handle cases where we're not able to automatically switch dates/times (noscript)
+	if(timezone){
+		res.writeHead(302, {
+			Location: '/timezone/'+timezone.replace("/", "-")
+		})
+		res.end()
+		return;
+	}
 	
 	return {
 	    year: "2020",
