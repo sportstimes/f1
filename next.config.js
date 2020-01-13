@@ -7,9 +7,7 @@ const nextConfig = {
     return config;
   },
   target: 'serverless',
-  transformManifest: manifest => ['/'].concat(manifest), // add the homepage to the cache
-  // Trying to set NODE_ENV=production when running yarn dev causes a build-time error so we
-  // turn on the SW in dev mode so that we can actually test it
+  transformManifest: manifest => ['/'].concat(manifest),
   generateInDevMode: true,
   workboxOpts: {
     swDest: 'static/service-worker.js',
@@ -22,12 +20,20 @@ const nextConfig = {
           networkTimeoutSeconds: 15,
           expiration: {
             maxEntries: 150,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
+            maxAgeSeconds: 14 * 24 * 60 * 60, // 14 days
           },
           cacheableResponse: {
             statuses: [0, 200],
           },
         },
+      },
+      { // Cache the underlying font files with a cache-first strategy for 1 year.
+        urlPattern: /.*\.(?:woff|woff2)$/,
+        options: {
+          cacheName: 'fonts',
+          cacheableResponse: { statuses: [0, 200] },
+          expiration: { maxAgeSeconds: 60 * 60 * 24 * 365, maxEntries: 30 }
+        }
       },
     ],
   },
