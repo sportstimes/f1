@@ -37,7 +37,15 @@ class OptionsBar extends React.Component {
 		// Picker Items
 	    const timezoneItems = []
 	    
-	    moment.tz.names().reduce((memo, tz) => {
+	    const scrubbedPrefixes = ['Antarctica', 'Arctic', 'Canada', 'Chile', 'Etc', 'Mexico', 'US'];
+		const scrubbedSuffixes = ['ACT', 'East', 'Knox_IN', 'LHI', 'North', 'NSW', 'South', 'West'];
+
+		const tzNames = moment.tz.names()
+        .filter(name => name.indexOf('/') !== -1)
+        .filter(name => !scrubbedPrefixes.includes(name.split('/')[0]))
+        .filter(name => !scrubbedSuffixes.includes(name.split('/').slice(-1)[0]));
+	    
+	    tzNames.reduce((memo, tz) => {
 				memo.push({
 					name: tz,
 					offset: moment.tz(tz).utcOffset()
@@ -51,7 +59,7 @@ class OptionsBar extends React.Component {
 			.reduce((memo, tz) => {
 				const timezone = tz.offset ? moment.tz(tz.name).format('Z') : '';
 		
-				timezoneItems.push(<option value={tz.name}>(GMT{timezone}) {tz.name}</option>);
+				timezoneItems.push(<option value={tz.name}>(GMT{timezone}) {tz.name.replace("_", " ")}</option>);
 			}, "");
 			
 		return (
