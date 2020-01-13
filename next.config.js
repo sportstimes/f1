@@ -28,7 +28,7 @@ const nextConfig = {
         },
       },
       { // Cache the underlying font files with a cache-first strategy for 1 year.
-        urlPattern: /.*\.(?:woff|woff2)$/,
+        urlPattern: /.*\.(?:woff|woff2)$/, handler: 'CacheFirst',
         options: {
           cacheName: 'fonts',
           cacheableResponse: { statuses: [0, 200] },
