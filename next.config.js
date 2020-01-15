@@ -36,7 +36,7 @@ const nextConfig = {
         }
       },
     ],
-  },
+  }
 };
 
 module.exports = withOffline(withFonts(nextConfig));
