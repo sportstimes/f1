@@ -86,9 +86,7 @@ class OptionsBar extends React.Component {
 							</div>
 							{ this.props.showCalendarExport &&
 							<div className="calendar">
-								<Link href="/generate">
-									<a>Add these race dates & times to your mobile, calendar, Outlook or Google Calendar</a>
-								</Link>
+								<a href="/generate">Add these race dates & times to your mobile, calendar, Outlook or Google Calendar</a>
 							</div>
 							}
 						</div>
