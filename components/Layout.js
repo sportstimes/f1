@@ -7,6 +7,19 @@ import CookieConsent from "react-cookie-consent";
 
 const Layout = props => {
 	
+	function setGoogleTags() {
+	return {
+	__html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-91583-25', 'auto');
+		  ga('require', 'displayfeatures');
+		  ga('send', 'pageview');`
+	};
+	}
+	
 	return (
     	<div className="content-wrapper">
 			<Head>
@@ -19,6 +32,7 @@ const Layout = props => {
 				<meta name="msapplication-TileColor" content="#000000"/>
 				<meta name="theme-color" content="#ffffff"/>
 				<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossorigin="anonymous"/>
+				<script dangerouslySetInnerHTML={setGoogleTags()} />
 			</Head>
 			<noscript>
 				<div className="noscript">F1 Calendar works best with Javascript Enabled.</div>
