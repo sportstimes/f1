@@ -25,6 +25,11 @@ function Generate(props) {
 	const handleOnSubmit = async e => {
 		e.preventDefault()
 		
+		if(!form.p1 && !form.p2 && !form.p3 && !form.quali && !form.race){
+			alert("Please select at least one session for your calendar.")
+			return
+		}
+		
 		setState({
 			...form, 
 			submitted: true, 
