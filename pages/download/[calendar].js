@@ -5,9 +5,17 @@ import moment from 'moment'
 export default class Calendar extends React.Component {
 	static async getInitialProps({ res, query }) {
 		if (!res) {
+			res.statusCode = 500
+			res.end('Whoops. An error occured.')
 			return;
 		}
 		
+		if(!query){
+			res.statusCode = 400
+			res.end('Whoops. An error occured.')
+			return;
+		}
+			
 		let request = query.calendar.replace(".ics", "");
 		
 		var includeFP1, includeFP2, includeFP3, includeQuali, includeRace = false
@@ -37,6 +45,12 @@ export default class Calendar extends React.Component {
 		if(alarmEnabled){
 			let requestArray = request.split("-");
 			alarmOffset = requestArray.slice(-1)[0];
+		}
+		
+		if(!includeFP1 && !includeFP2 && !includeFP3 && !includeQuali && !includeRace){
+			res.statusCode = 404
+			res.end('Please select at least one session.')
+			return
 		}
     
 		const data = await import(`../../db/2020.json`)
@@ -117,7 +131,8 @@ export default class Calendar extends React.Component {
 		
 		ics.createEvents(events, (error, value) => {
 			if (error) {
-				console.log(error);
+				res.statusCode = 400
+				res.end('Error occured generating calendar.')
 				return
 			}
 			
