@@ -167,10 +167,7 @@ class OptionsBar extends React.Component {
 				
 				
 				<div className="mobile-calendar">
-					<Link href="/generate">
-						<a>Add these race dates & times to your mobile, calendar, Outlook or Google Calendar</a>
-					</Link>
-					
+					<a href="/generate">Add these race dates & times to your mobile, calendar, Outlook or Google Calendar</a>					
 					<style jsx>{`
 						.mobile-calendar {
 							display:none;
