@@ -5,20 +5,20 @@
       "src": "^/service-worker.js$",
       "dest": "/_next/static/service-worker.js",
       "headers": {
-        "cache-control": "public, max-age=43200, immutable",
+        "cache-control": "public, max-age=43210, immutable",
         "Service-Worker-Allowed": "/"
       }
     },
     {
       "src": "/download/(.*)",
       "headers": {
-        "cache-control": "public, max-age=43200, immutable"
+        "cache-control": "public, max-age=43210, immutable"
       }
     },
     {
       "src": "/(.*)",
       "headers": {
-        "cache-control": "public, max-age=43200, immutable"
+        "cache-control": "public, max-age=43210, immutable"
       }
     }
   ],
