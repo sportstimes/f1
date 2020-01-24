@@ -45,8 +45,8 @@ const Layout = props => {
 			<CookieConsent
 			    location="bottom"
 			    buttonText="Great!"
-			    cookieName="f1cal"
-			    style={{ background: "#0E5143" }}
+			    cookieName="f1cal1"
+			    style={{ background: "#0E5143", zIndex:999999, padding:"5px 0" }}
 			    buttonStyle={{ color: "white", background:"#1a8b73", fontSize: "13px" }}
 			    expires={150}
 			>
