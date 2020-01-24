@@ -43,6 +43,11 @@ class Race extends React.Component {
 					</td>
 					<td className="date-column">{ moment(this.props.item.sessions.race).tz(this.props.timezone).format('D MMM') }</td>
 					<td className="time-column">{ moment(this.props.item.sessions.race).tz(this.props.timezone).format('HH:mm') }</td>
+					<td>
+						{ this.props.item.affiliate && 
+							<a href={ this.props.item.affiliate } className="book">Tickets</a>
+						}
+					</td>
 				</tr>
 				<tr className={`free-practice-1 ${this.state.collapsed ? 'collapsed' : 'visible'}`}>
 					<td className="icon-column"></td>
@@ -51,6 +56,7 @@ class Race extends React.Component {
 					</td>
 					<td className="date-column">{ moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('D MMM') }</td>
 					<td className="time-column">{ moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('HH:mm') }</td>
+					<td></td>
 				</tr>
 				<tr className={`free-practice-2 ${this.state.collapsed ? 'collapsed' : 'visible'}`}>
 					<td className="icon-column"></td>
@@ -59,6 +65,7 @@ class Race extends React.Component {
 					</td>
 					<td className="date-column">{ moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('D MMM') }</td>
 					<td className="time-column">{ moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('HH:mm') }</td>
+					<td></td>
 				</tr>
 				<tr className={`free-practice-3 ${this.state.collapsed ? 'collapsed' : 'visible'}`}>
 					<td className="icon-column"></td>
@@ -67,6 +74,7 @@ class Race extends React.Component {
 					</td>
 					<td className="date-column">{ moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('D MMM') }</td>
 					<td className="time-column">{ moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('HH:mm') }</td>
+					<td></td>
 				</tr>
 				<tr className={`qualifying ${this.state.collapsed ? 'collapsed' : 'visible'}`}>
 					<td className="icon-column"></td>
@@ -75,6 +83,7 @@ class Race extends React.Component {
 					</td>
 					<td className="date-column">{ moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('D MMM') }</td>
 					<td className="time-column">{ moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('HH:mm') }</td>
+					<td></td>
 				</tr>
 				<style jsx>{`
 				
@@ -124,6 +133,20 @@ class Race extends React.Component {
 				    vertical-align:middle;
 			    }
 			    
+			    .book {
+				    border-radius: 3px 3px 3px 3px;
+					-moz-border-radius: 3px 3px 3px 3px;
+					-webkit-border-radius: 3px 3px 3px 3px;
+					font-size:12px;
+					line-height:20px;
+				    display:inline-block;
+				    background: #1a8b73;
+				    color: #fff;
+				    padding: 2px 5px;
+				    margin-left:12px;
+				    margin-right:12px;
+				    vertical-align:middle;
+			    }
 			    
 			    .tbc {
 				    border-radius: 3px 3px 3px 3px;
@@ -157,6 +180,11 @@ class Race extends React.Component {
 				@media screen and (max-width: 500px) {
 					.next {
 						display:none;
+					}
+					.book {
+						margin-left:0;
+					    margin-right:6px;
+					    font-size:10px;
 					}
 				}
 				
