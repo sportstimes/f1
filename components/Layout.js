@@ -52,6 +52,8 @@ const Layout = props => {
 			>
 			    This website uses cookies to enhance the user experience.
 			</CookieConsent>
+			
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e2a277b012976e8"></script>
 	  
 	  
       <style jsx global>{`
