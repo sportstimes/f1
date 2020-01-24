@@ -46,12 +46,14 @@ const Layout = props => {
 			    location="bottom"
 			    buttonText="Great!"
 			    cookieName="f1cal"
-			    style={{ background: "#0E5143" }}
+			    style={{ background: "#0E5143", zIndex:999999, padding:"5px 0" }}
 			    buttonStyle={{ color: "white", background:"#1a8b73", fontSize: "13px" }}
 			    expires={150}
 			>
 			    This website uses cookies to enhance the user experience.
 			</CookieConsent>
+			
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e2a277b012976e8"></script>
 	  
 	  
       <style jsx global>{`
