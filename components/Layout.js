@@ -37,7 +37,7 @@ const Layout = props => {
 			<noscript>
 				<div className="noscript">F1 Calendar works best with Javascript Enabled.</div>
 			</noscript>
-			<Header showOptions={props.showOptions} showCalendarExport={props.showCalendarExport} year={props.year} />
+			<Header showOptions={props.showOptions} showCalendarExport={props.showCalendarExport} year={props.year} showPreseason={props.showPreseason} />
 			<div className="main-content">{props.children}</div>
 			
 			<Footer />
