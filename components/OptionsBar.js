@@ -100,6 +100,9 @@ class OptionsBar extends React.Component {
 							line-height:50px;
 							vertical-align:middle;
 							margin:10px 0 15px 0;
+							border-radius: 3px 3px 3px 3px;
+							-moz-border-radius: 3px 3px 3px 3px;
+							-webkit-border-radius: 3px 3px 3px 3px;
 						}
 						.bar a {
 							color:#87f3dc;

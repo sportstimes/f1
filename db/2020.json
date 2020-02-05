@@ -1,4 +1,81 @@
 {
+	"launches": [
+		{
+			"team":"Ferrari",
+			"date":"11 Feb",
+			"location":"Reggio Emilia, Italy",
+			"tbc":false
+		},
+		
+		{
+			"team":"Red Bull",
+			"date":"12 Feb",
+			"location":"TBC",
+			"tbc":false
+		},
+		{
+			"team":"Renault",
+			"date":"12 Feb",
+			"location":"France",
+			"tbc":false
+		},
+		{
+			"team":"McLaren",
+			"date":"13 Feb",
+			"location":"Woking, UK",
+			"tbc":false
+		},
+		{
+			"team":"AlphaTauri",
+			"date":"14 Feb",
+			"location":"Salzburg, Austria",
+			"tbc":false
+		},
+		{
+			"team":"Mercedes",
+			"date":"14 Feb",
+			"location":"Silverstone, UK",
+			"tbc":false
+		},
+		{
+			"team":"Racing Point",
+			"date":"17 Feb",
+			"location":"Mondsee, Austria",
+			"tbc":false
+		},
+		{
+			"team":"Williams",
+			"date":"17 Feb",
+			"location":"Online",
+			"tbc":false
+		},
+		{
+			"team":"Haas",
+			"date":"19 Feb",
+			"location":"Barcelona, Spain",
+			"tbc":false
+		},
+		{
+			"team":"Alfa Romeo",
+			"date":"19 Feb",
+			"location":"Barcelona, Spain",
+			"tbc":false
+		}
+	],
+	"testing": [
+		{
+			"name": "Pre-Season Test 1",
+			"startDate": "19 Feb",
+			"endDate": "21 Feb",
+			"location":"Barcelona"
+		},
+		{
+			"name": "Pre-Season Test 2",
+			"startDate": "26 Feb",
+			"endDate": "28 Feb",
+			"location":"Barcelona"
+		}
+	],
 	"races": [
     	{
 	    	"name": "Australian",

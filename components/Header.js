@@ -25,6 +25,18 @@ const Header = props => (
 	    	</div>
 		    <div className="clear"></div>
 		</div>
+		
+		{ props.showPreseason &&
+			<Link href="/preseason">
+				<a className="preseason">
+					Get ready for { props.year } &#187;
+					<span>View Car Launch &amp; Pre-Season Testing</span>
+				</a>
+			</Link>
+		}
+	    
+	    
+	    <div className="clear"></div>
 	    
 	    { props.showOptions &&
 	    <OptionsBar showCalendarExport={props.showCalendarExport} />
@@ -39,7 +51,28 @@ const Header = props => (
 	    
 	    .branding {
 		    padding: 25px 0;
+		    float:left;
 	    }
+	    
+	    .preseason {
+		    float:right;
+		    background:#eb000f;
+		    padding:5px 10px 5px 10px;
+		    border-radius: 3px 3px 3px 3px;
+			-moz-border-radius: 3px 3px 3px 3px;
+			-webkit-border-radius: 3px 3px 3px 3px;
+		    color:#fff;
+		    margin-top:30px;
+	    }
+	    .preseason span {
+			display:block;
+			font-size:11px;
+	    }
+	    
+	    .clear {
+			clear:both;   
+	    }
+	    
 	    .container {
 		    max-width:1000px;
 		    padding: 8px 16px;
@@ -103,12 +136,15 @@ const Header = props => (
 			
 			.branding {
 			    padding: 25px 0 10px 0;
+			    float:none;
+		    }
+		    
+		    .preseason {
+			    margin: 16px 0;
+				float:none;
+				display:block;   
 		    }
 		}
-	    
-	    .clear {
-		    clear:both;
-	    }
     `}</style>
   </header>
 );
