@@ -30,7 +30,7 @@ const Header = props => (
 			<Link href="/preseason">
 				<a className="preseason">
 					Get ready for { props.year } &#187;
-					<span>View Car Launch &amp; Pre-Season Testing</span>
+					<span>View Car Launches &amp; Pre-Season Testing</span>
 				</a>
 			</Link>
 		}
