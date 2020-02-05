@@ -6,6 +6,13 @@
 			"location":"Reggio Emilia, Italy",
 			"tbc":false
 		},
+		
+		{
+			"team":"Red Bull",
+			"date":"12 Feb",
+			"location":"TBC",
+			"tbc":false
+		},
 		{
 			"team":"Renault",
 			"date":"12 Feb",
@@ -37,6 +44,12 @@
 			"tbc":false
 		},
 		{
+			"team":"Williams",
+			"date":"17 Feb",
+			"location":"Online",
+			"tbc":false
+		},
+		{
 			"team":"Haas",
 			"date":"19 Feb",
 			"location":"Barcelona, Spain",
@@ -47,18 +60,6 @@
 			"date":"19 Feb",
 			"location":"Barcelona, Spain",
 			"tbc":false
-		},
-		{
-			"team":"Williams",
-			"date":"",
-			"location":"",
-			"tbc":true
-		},
-		{
-			"team":"Red Bull",
-			"date":"",
-			"location":"",
-			"tbc":true
 		}
 	],
 	"testing": [
