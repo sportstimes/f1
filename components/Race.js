@@ -25,7 +25,7 @@ class Race extends React.Component {
 	
 	render() {
 		return (
-			<tbody id={ this.props.item.slug } key={ this.props.item.slug } className={`${moment(this.props.item.sessions.race).isBefore() ? 'past' : 'future'} ${this.props.index % 2 === 0 ? 'even' : 'odd'} ${this.props.isNextRace ? 'next-event' : ''}`}>			
+			<tbody id={ this.props.item.slug } key={ this.props.item.slug } className={`${moment(this.props.item.sessions.race).isBefore() ? 'past' : 'future'} ${this.props.index % 2 === 0 ? 'even' : 'odd'} ${this.props.isNextRace ? 'next-event' : ''} ${this.props.item.canceled ? 'canceled-weekend' : ''}`}>			
 				<tr key={this.props.item.slug} className="race" onClick={() => this.handleRowClick()}>
 					<td className="icon-column">
 						<i className={`${this.state.collapsed ? 'fas fa-caret-right fa-xs' : 'fas fa-caret-down fa-xs'}`}></i>
@@ -37,8 +37,12 @@ class Race extends React.Component {
 						
 						{ this.props.item.name } Grand Prix
 						
-						{ this.props.isNextRace && !this.props.item.tbc &&
+						{ this.props.isNextRace && !this.props.item.tbc && !this.props.item.canceled &&
 							<span className="next">NEXT</span>
+						}
+						
+						{ this.props.item.canceled &&
+							<span className="canceled">CANCELED</span>
 						}
 					</td>
 					<td className="date-column">{ moment(this.props.item.sessions.race).tz(this.props.timezone).format('D MMM') }</td>
@@ -164,13 +168,34 @@ class Race extends React.Component {
 				    vertical-align:middle;
 			    }
 			    
+			    .canceled {
+				    border-radius: 3px 3px 3px 3px;
+					-moz-border-radius: 3px 3px 3px 3px;
+					-webkit-border-radius: 3px 3px 3px 3px;
+					font-family: 'LeagueSpartan';
+					font-size:10px;
+					line-height:20px;
+					letter-spacing:1px;
+				    display:inline-block;
+				    background: #e30010;
+				    color: #000;
+				    padding: 0 3px;
+				    margin-left:12px;
+				    vertical-align:middle;
+			    }
+			    
 			    .race { cursor: pointer; }
 			    
 			    .date-column, .time-column { text-align:right; }
 				
 				.odd { background: #151515; }
+				
 				.past {
 					color: #aaa;
+				}
+				
+				.canceled-weekend {
+					color: #999;
 				}
 					
 				.collapsed {

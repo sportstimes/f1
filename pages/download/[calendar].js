@@ -97,7 +97,7 @@ export default class Calendar extends React.Component {
 					category = "Qualifying Session";
 					sessionLength = 60;
 				}
-			
+							
 				let alarms = []
 				
 				if(alarmEnabled){
@@ -113,6 +113,20 @@ export default class Calendar extends React.Component {
 				let start = moment(session).format('YYYY-M-D-H-m').split("-")
 				let end = moment(session).add(sessionLength, 'minutes').format('YYYY-M-D-H-m').split("-")
 				
+				
+				
+				var status = "CONFIRMED";
+				if(race.tbc){
+					status = "TENTATIVE";
+					title = "(TBC) " + title;
+				}
+				
+				if(race.canceled){
+					status = "CANCELLED";
+					title = "(CANCELED) " + title;
+				}
+
+				
 				let event = {
 					title: title,
 					location: race.location,
@@ -123,7 +137,8 @@ export default class Calendar extends React.Component {
 					end: end,
 					geo: { lat: race.latitude, lon: race.longitude },
 					sequence: "2020",
-					alarms: alarms
+					alarms: alarms,
+					status: status
 				}
 				events.push(event)
 			}
