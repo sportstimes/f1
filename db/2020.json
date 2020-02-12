@@ -135,6 +135,7 @@
 	    	"longitude": 121.2498,
 	    	"affiliate": "http://www.bookf1.com/f1-china/tickets.htm?af=165390",
 	    	"tbc":false,
+	    	"canceled":true,
 	    	"round": 4,
 	    	"slug": "china-grand-prix",
 	    	"sessions": {
