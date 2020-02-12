@@ -134,7 +134,7 @@
 	    	"latitude": 31.3807,
 	    	"longitude": 121.2498,
 	    	"affiliate": "http://www.bookf1.com/f1-china/tickets.htm?af=165390",
-	    	"tbc":false,
+	    	"tbc":true,
 	    	"round": 4,
 	    	"slug": "china-grand-prix",
 	    	"sessions": {
