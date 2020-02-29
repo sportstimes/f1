@@ -33,7 +33,7 @@ const Index = (props) => {
 			        ]
 				}}
 			/>
-		    <Layout showOptions='true' showPreseason='true' showCalendarExport='true' year={ props.year }>
+		    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
 		
 				<Races year={ props.year } races={ props.races } /> 
 				
