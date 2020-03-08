@@ -22,35 +22,150 @@ class Race extends React.Component {
 			collapsed: true
 		})
 	}
-	
+		
 	render() {
+  	
+  	function ticketColumnLayout(props) {
+      if(props.item.tbc){
+        return (
+          <>
+          <span className="tbc">TBC</span>
+          <style jsx>{`
+			    .tbc {
+				    border-radius: 3px 3px 3px 3px;
+					-moz-border-radius: 3px 3px 3px 3px;
+					-webkit-border-radius: 3px 3px 3px 3px;
+					font-size:12px;
+					line-height:20px;
+				    display:inline-block;
+				    background: #999;
+				    color: #000;
+				    padding: 2px 5px;
+				    margin-left:12px;
+				    margin-right:12px;
+				    vertical-align:middle;
+			    }
+			    `}</style>
+			    </>
+        );
+      } else if(props.item.canceled){
+        return (
+          <>
+          <span className="canceled">Canceled</span>
+          <style jsx>{`
+			    .canceled {
+				    border-radius: 3px 3px 3px 3px;
+					-moz-border-radius: 3px 3px 3px 3px;
+					-webkit-border-radius: 3px 3px 3px 3px;
+					font-family: 'LeagueSpartan';
+					font-size:10px;
+					line-height:20px;
+					letter-spacing:1px;
+				    display:inline-block;
+				    background: #e30010;
+				    color: #000;
+				    padding: 0 3px;
+				    margin-left:12px;
+				    vertical-align:middle;
+			    }
+			    `}</style>
+			    </>
+        );
+      } else if(props.item.affiliate) {
+        if(moment(props.item.sessions.race).isBefore()){
+          return (
+            <>
+            <a className="book">Tickets</a>
+            <style jsx>{`
+			    .book {
+				    border-radius: 3px 3px 3px 3px;
+					-moz-border-radius: 3px 3px 3px 3px;
+					-webkit-border-radius: 3px 3px 3px 3px;
+					font-size:12px;
+					line-height:20px;
+				    display:inline-block;
+				    background: #333;
+				    color: #fff;
+				    padding: 2px 5px;
+				    margin-left:12px;
+				    margin-right:12px;
+				    vertical-align:middle;
+				    cursor: not-allowed;
+				    opacity:0.5;
+			    }
+			    `}</style>
+			    </>
+          );
+        } else {
+          return (
+             <>
+            <a href={ props.item.affiliate } className="book">Tickets</a>
+            <style jsx>{`
+			    .book {
+				    border-radius: 3px 3px 3px 3px;
+					-moz-border-radius: 3px 3px 3px 3px;
+					-webkit-border-radius: 3px 3px 3px 3px;
+					font-size:12px;
+					line-height:20px;
+				    display:inline-block;
+				    background: #1a8b73;
+				    color: #fff;
+				    padding: 2px 5px;
+				    margin-left:12px;
+				    margin-right:12px;
+				    vertical-align:middle;
+			    }
+			    `}</style>
+			    </>
+          );
+        }
+      } else {
+        return (
+             <>
+            <a href={ props.item.affiliate } className="book">Tickets</a>
+            <style jsx>{`
+			    .book {
+				    border-radius: 3px 3px 3px 3px;
+					-moz-border-radius: 3px 3px 3px 3px;
+					-webkit-border-radius: 3px 3px 3px 3px;
+					font-size:12px;
+					line-height:20px;
+				    display:inline-block;
+				    background: #333;
+				    color: #fff;
+				    padding: 2px 5px;
+				    margin-left:12px;
+				    margin-right:12px;
+				    vertical-align:middle;
+				    cursor: not-allowed;
+				    opacity:0.5;
+			    }
+			    `}</style>
+			    </>
+        );
+      }
+    }
+
+  	
 		return (
-			<tbody id={ this.props.item.slug } key={ this.props.item.slug } className={`${moment(this.props.item.sessions.race).isBefore() ? 'past' : 'future'} ${this.props.index % 2 === 0 ? 'even' : 'odd'} ${this.props.isNextRace ? 'next-event' : ''} ${this.props.item.canceled ? 'canceled-weekend' : ''}`}>			
+			<tbody id={ this.props.item.slug } key={ this.props.item.slug } className={`${moment(this.props.item.sessions.race).add(2, 'hours').isBefore() ? 'past' : 'future'} ${this.props.index % 2 === 0 ? 'even' : 'odd'} ${this.props.isNextRace ? 'next-event' : ''} ${this.props.item.canceled ? 'canceled-weekend' : ''} ${this.props.item.tbc ? 'tbc-weekend' : ''}`}>			
 				<tr key={this.props.item.slug} className="race" onClick={() => this.handleRowClick()}>
 					<td className="icon-column">
 						<i className={`${this.state.collapsed ? 'fas fa-caret-right fa-xs' : 'fas fa-caret-down fa-xs'}`}></i>
 					</td>
 					<td className="event-column">
-						{ this.props.item.tbc &&
-							<span className="tbc">TBC</span>
-						}
-						
-						{ this.props.item.name } Grand Prix
+						<span className={`${!this.props.item.tbc && !this.props.item.canceled && moment(this.props.item.sessions.race).isAfter() ? 'confirmed' : 'unconfirmed'}`}>
+						  { this.props.item.name } Grand Prix
+						</span>
 						
 						{ this.props.isNextRace && !this.props.item.tbc && !this.props.item.canceled &&
 							<span className="next">NEXT</span>
 						}
-						
-						{ this.props.item.canceled &&
-							<span className="canceled">CANCELED</span>
-						}
 					</td>
 					<td className="date-column">{ moment(this.props.item.sessions.race).tz(this.props.timezone).format('D MMM') }</td>
 					<td className="time-column">{ moment(this.props.item.sessions.race).tz(this.props.timezone).format('HH:mm') }</td>
-					<td>
-						{ this.props.item.affiliate && 
-							<a href={ this.props.item.affiliate } className="book">Tickets</a>
-						}
+					<td className="ticket-column">
+					  { ticketColumnLayout(this.props) }
 					</td>
 				</tr>
 				<tr className={`free-practice-1 ${this.state.collapsed ? 'collapsed' : 'visible'}`}>
@@ -107,6 +222,9 @@ class Race extends React.Component {
 			    .event-column {
 				    width:55%;
 			    }
+			    .event-column .confirmed {
+  			    font-weight:bold; 
+			    }
 			    
 			    .date-column {
 				    width:20%;
@@ -117,8 +235,12 @@ class Race extends React.Component {
 				    padding-right:15px;
 			    }
 			    
+			    .ticket-column {
+  			    text-align:center; 
+			    }
+			    
 			    .next-event .race {
-				    color:#fff1aa;
+				    color:#f87639;
 			    }
 			    
 			    .next {
@@ -130,54 +252,7 @@ class Race extends React.Component {
 					line-height:20px;
 					letter-spacing:1px;
 				    display:inline-block;
-				    background: #fff1aa;
-				    color: #000;
-				    padding: 0 3px;
-				    margin-left:12px;
-				    vertical-align:middle;
-			    }
-			    
-			    .book {
-				    border-radius: 3px 3px 3px 3px;
-					-moz-border-radius: 3px 3px 3px 3px;
-					-webkit-border-radius: 3px 3px 3px 3px;
-					font-size:12px;
-					line-height:20px;
-				    display:inline-block;
-				    background: #1a8b73;
-				    color: #fff;
-				    padding: 2px 5px;
-				    margin-left:12px;
-				    margin-right:12px;
-				    vertical-align:middle;
-			    }
-			    
-			    .tbc {
-				    border-radius: 3px 3px 3px 3px;
-					-moz-border-radius: 3px 3px 3px 3px;
-					-webkit-border-radius: 3px 3px 3px 3px;
-					font-family: 'LeagueSpartan';
-					font-size:10px;
-					line-height:20px;
-					letter-spacing:1px;
-				    display:inline-block;
-				    background: yellow;
-				    color: #000;
-				    padding: 0 3px;
-				    margin-right:12px;
-				    vertical-align:middle;
-			    }
-			    
-			    .canceled {
-				    border-radius: 3px 3px 3px 3px;
-					-moz-border-radius: 3px 3px 3px 3px;
-					-webkit-border-radius: 3px 3px 3px 3px;
-					font-family: 'LeagueSpartan';
-					font-size:10px;
-					line-height:20px;
-					letter-spacing:1px;
-				    display:inline-block;
-				    background: #e30010;
+				    background: #f87639;
 				    color: #000;
 				    padding: 0 3px;
 				    margin-left:12px;
@@ -192,6 +267,11 @@ class Race extends React.Component {
 				
 				.past {
 					color: #aaa;
+					text-decoration:line-through;
+				}
+				
+				.tbc-weekend {
+					color: #999;
 				}
 				
 				.canceled-weekend {
