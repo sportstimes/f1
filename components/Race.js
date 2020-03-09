@@ -207,61 +207,61 @@ class Race extends React.Component {
 				<style jsx>{`
 				
 				td, th {
-				    padding:16px 0;
-			    }
-			    
-			    .icon-column {
-				    padding:0;
-				    text-align:center;
-					font-size:20px;
-					width:5%;
-					min-width:40px;
-					color:#fff;   
-			    }
-			    
-			    .event-column {
-				    width:55%;
-			    }
-			    .event-column .confirmed {
-  			    font-weight:bold; 
-			    }
-			    
-			    .date-column {
-				    width:20%;
-			    }
-			    
-			    .time-column {
-				    width:20%;
-				    padding-right:15px;
-			    }
-			    
-			    .ticket-column {
-  			    text-align:center; 
-			    }
-			    
-			    .next-event .race {
-				    color:#f87639;
-			    }
-			    
-			    .next {
-				    border-radius: 3px 3px 3px 3px;
-					-moz-border-radius: 3px 3px 3px 3px;
-					-webkit-border-radius: 3px 3px 3px 3px;
-					font-family: 'LeagueSpartan';
-					font-size:10px;
-					line-height:20px;
-					letter-spacing:1px;
-				    display:inline-block;
-				    background: #f87639;
-				    color: #000;
-				    padding: 0 3px;
-				    margin-left:12px;
-				    vertical-align:middle;
-			    }
-			    
-			    .race { cursor: pointer; }
-			    
-			    .date-column, .time-column { text-align:right; }
+			    padding:16px 0;
+		    }
+		    
+		    .icon-column {
+			    padding:0;
+			    text-align:center;
+  				font-size:20px;
+  				width:5%;
+  				min-width:40px;
+  				color:#fff;   
+		    }
+		    
+		    .event-column {
+			    width:55%;
+		    }
+		    .event-column .confirmed {
+			    font-weight:bold; 
+		    }
+		    
+		    .date-column {
+			    width:20%;
+		    }
+		    
+		    .time-column {
+			    width:20%;
+			    padding-right:15px;
+		    }
+		    
+		    .ticket-column {
+			    text-align:center; 
+		    }
+		    
+		    .next-event .race {
+			    color:#f87639;
+		    }
+		    
+		    .next {
+          border-radius: 3px 3px 3px 3px;
+          -moz-border-radius: 3px 3px 3px 3px;
+          -webkit-border-radius: 3px 3px 3px 3px;
+          font-family: 'LeagueSpartan';
+          font-size:10px;
+          line-height:20px;
+          letter-spacing:1px;
+			    display:inline-block;
+			    background: #f87639;
+			    color: #000;
+			    padding: 0 3px;
+			    margin-left:12px;
+			    vertical-align:middle;
+		    }
+		    
+		    .race { cursor: pointer; }
+		    
+		    .date-column, .time-column { text-align:right; }
 				
 				.odd { background: #151515; }
 				
@@ -288,9 +288,12 @@ class Race extends React.Component {
 					}
 					.book {
 						margin-left:0;
-					    margin-right:6px;
-					    font-size:10px;
+				    margin-right:6px;
+				    font-size:10px;
 					}
+					.event-column .confirmed {
+  			    font-weight:normal !important; 
+			    }
 				}
 				
 				`}</style>
