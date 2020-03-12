@@ -82,8 +82,8 @@
 	    	"location": "Melbourne",
 	    	"latitude": -37.8373,
 	    	"longitude": 144.9666,
-	    	"affiliate": "http://www.bookf1.com/f1-australia/tickets.htm?af=165390",
 	    	"tbc":false,
+				"canceled":true,
 	    	"round": 1,
 	    	"slug": "australian-grand-prix",
 	    	"sessions": {
