@@ -57,15 +57,13 @@ class Race extends React.Component {
 				    border-radius: 3px 3px 3px 3px;
 					-moz-border-radius: 3px 3px 3px 3px;
 					-webkit-border-radius: 3px 3px 3px 3px;
-					font-family: 'LeagueSpartan';
-					font-size:10px;
+					font-family: 'LeagueSpartan';					font-size:10px;
 					line-height:20px;
 					letter-spacing:1px;
 				    display:inline-block;
 				    background: #e30010;
 				    color: #000;
 				    padding: 0 3px;
-				    margin-left:12px;
 				    vertical-align:middle;
 			    }
 			    `}</style>
@@ -266,6 +264,11 @@ class Race extends React.Component {
 				.odd { background: #151515; }
 				
 				.past {
+					color: #aaa;
+					text-decoration:line-through;
+				}
+				
+				.canceled {
 					color: #aaa;
 					text-decoration:line-through;
 				}
