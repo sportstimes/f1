@@ -31,7 +31,7 @@ const Layout = props => {
 				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#eb000f"/>
 				<meta name="msapplication-TileColor" content="#000000"/>
 				<meta name="theme-color" content="#ffffff"/>
-				<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossorigin="anonymous"/>
+				<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossOrigin="anonymous"/>
 				<script dangerouslySetInnerHTML={setGoogleTags()} />
 			</Head>
 			<noscript>
