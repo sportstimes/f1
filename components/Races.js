@@ -24,8 +24,9 @@ const Races = (props) => {
 			</thead>
 			
 			{races && races.map((item, index) => {
+  			// TODO Improve this isNextRace logic
 				var isNextRace = false
-				if(moment(item.sessions.race).isAfter() && !nextRace && !item.canceled && !item.tbc){
+				if(item.sessions && moment(item.sessions.race).isAfter() && !nextRace && !item.canceled && !item.tbc){
 					isNextRace = true
 					nextRace = item
 				}

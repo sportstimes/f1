@@ -122,12 +122,12 @@ class Race extends React.Component {
              <>
             <a href={ props.item.affiliate } className="book">Tickets</a>
             <style jsx>{`
-			    .book {
+              .book {
 				    border-radius: 3px 3px 3px 3px;
-					-moz-border-radius: 3px 3px 3px 3px;
-					-webkit-border-radius: 3px 3px 3px 3px;
-					font-size:12px;
-					line-height:20px;
+  					-moz-border-radius: 3px 3px 3px 3px;
+  					-webkit-border-radius: 3px 3px 3px 3px;
+  					font-size:12px;
+  					line-height:20px;
 				    display:inline-block;
 				    background: #333;
 				    color: #fff;
@@ -142,6 +142,98 @@ class Race extends React.Component {
 			    </>
         );
       }
+    }
+
+    if(this.props.item.sessions == null){
+      return (
+        <tbody id={ this.props.item.slug } key={ this.props.item.slug } className={`${this.props.index % 2 === 0 ? 'even' : 'odd'} ${this.props.item.canceled ? 'canceled-weekend' : ''} ${this.props.item.tbc ? 'tbc-weekend' : ''}`}>			
+				<tr key={this.props.item.slug} className="race">
+					<td className="icon-column">
+						<i class="fas fa-question fa-xs"></i>
+					</td>
+					<td className="event-column">
+						<span className="unconfirmed">
+						  { this.props.item.name } Grand Prix
+						</span>
+					</td>
+					<td className="date-column"></td>
+					<td className="time-column"></td>
+					<td className="ticket-column">
+					  { ticketColumnLayout(this.props) }
+					</td>
+				</tr>
+				<style jsx>{`        
+        td, th {
+          padding:16px 0;
+        }
+        
+        .icon-column {
+          padding:0;
+          text-align:center;
+          font-size:20px;
+          width:5%;
+          min-width:40px;
+          color:#fff;   
+        }
+        
+        .event-column {
+          width:55%;
+        }
+        .event-column .confirmed {
+          font-weight:bold; 
+        }
+        
+        .date-column {
+          width:20%;
+        }
+        
+        .time-column {
+          width:20%;
+          padding-right:15px;
+        }
+        
+        .ticket-column {
+          text-align:center; 
+        }
+        
+        .race { cursor: pointer; }
+        
+        .date-column, .time-column { text-align:right; }
+        
+        .odd { background: #151515; }
+        
+        .canceled {
+          color: #aaa;
+          text-decoration:line-through;
+        }
+        
+        .tbc-weekend {
+          color: #999;
+        }
+        
+        .canceled-weekend {
+          color: #999;
+          text-decoration:line-through;
+        }
+        
+        .collapsed {
+          display:none;	
+        }
+        
+        @media screen and (max-width: 500px) {
+          .book {
+            margin-left:0;
+            margin-right:6px;
+            font-size:10px;
+          }
+          .event-column .confirmed {
+            font-weight:normal !important; 
+          }
+        }
+        
+        `}</style>
+        </tbody>
+      );
     }
 
   	
@@ -279,6 +371,7 @@ class Race extends React.Component {
 				
 				.canceled-weekend {
 					color: #999;
+					text-decoration:line-through;
 				}
 					
 				.collapsed {
@@ -298,7 +391,6 @@ class Race extends React.Component {
   			    font-weight:normal !important; 
 			    }
 				}
-				
 				`}</style>
 			</tbody>
 		);

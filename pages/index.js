@@ -38,7 +38,9 @@ const Index = (props) => {
 				<Races year={ props.year } races={ props.races } /> 
 				
 				{props.races && props.races.map((item, index) => {
-					return (<RaceSchema item={item} key={item.name} />)
+					if(item.sessions){
+  					return (<RaceSchema item={item} key={item.name} />)
+					}
 				})}
 				
 				<section className="previous-years">
