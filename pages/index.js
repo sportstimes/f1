@@ -43,7 +43,13 @@ const Index = (props) => {
 					}
 				})}
 				
-				<section className="previous-years">
+		    </Layout>
+	    </>
+	);
+}
+
+/*
+  <section className="previous-years">
 					<p>
 						<Link href="years"><a>Looking for previous years?</a></Link>
 					</p>
@@ -67,11 +73,7 @@ const Index = (props) => {
 						margin: 0 auto;
 					}
 			    `}</style>
-				
-		    </Layout>
-	    </>
-	);
-}
+			    */
 
 Index.getInitialProps = async ({query: {timezone}, res}) => {
 	const data = await import(`../db/2020.json`)
