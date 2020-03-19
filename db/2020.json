@@ -95,57 +95,6 @@
 	    	}
     	},
     	{
-	    	"name": "Dutch",
-	    	"location": "Zandvoort",
-	    	"latitude": 52.388408,
-	    	"longitude": 4.547122,
-	    	"affiliate": "https://www.bookf1.com/f1-netherlands/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 5,
-	    	"slug": "dutch-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-05-01T09:00:00Z",
-				"fp2" : "2020-05-01T13:00:00Z",
-				"fp3" : "2020-05-02T10:00:00Z",
-				"qualifying" : "2020-05-02T13:00:00Z",
-				"race" : "2020-05-03T13:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Spanish",
-	    	"location": "Barcelona",
-	    	"latitude": 41.5638,
-	    	"longitude": 2.2585,
-	    	"affiliate": "http://www.bookf1.com/f1-spain/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 6,
-	    	"slug": "spanish-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-05-08T09:00:00Z",
-				"fp2" : "2020-05-08T13:00:00Z",
-				"fp3" : "2020-05-09T10:00:00Z",
-				"qualifying" : "2020-05-09T13:00:00Z",
-				"race" : "2020-05-10T13:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Monaco",
-	    	"location": "Monte Carlo",
-	    	"latitude": 43.7338,
-	    	"longitude": 7.4215,
-	    	"affiliate": "http://www.bookf1.com/f1-monaco/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 7,
-	    	"slug": "monoco-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-05-21T09:00:00Z",
-				"fp2" : "2020-05-21T13:00:00Z",
-				"fp3" : "2020-05-23T10:00:00Z",
-				"qualifying" : "2020-05-23T13:00:00Z",
-				"race" : "2020-05-24T13:10:00Z"
-	    	}
-    	},
-    	{
 	    	"name": "Azerbaijan",
 	    	"location": "Baku",
 	    	"latitude": 40.3699,
@@ -427,6 +376,36 @@
 	    	"tbc":true,
 	    	"round": 4,
 	    	"slug": "china-grand-prix"
+    	},
+    	{
+	    	"name": "Dutch",
+	    	"location": "Zandvoort",
+	    	"latitude": 52.388408,
+	    	"longitude": 4.547122,
+	    	"affiliate": "https://www.bookf1.com/f1-netherlands/tickets.htm?af=165390",
+	    	"tbc":true,
+	    	"round": 5,
+	    	"slug": "dutch-grand-prix"
+    	},
+    	{
+	    	"name": "Spanish",
+	    	"location": "Barcelona",
+	    	"latitude": 41.5638,
+	    	"longitude": 2.2585,
+	    	"affiliate": "http://www.bookf1.com/f1-spain/tickets.htm?af=165390",
+	    	"tbc":true,
+	    	"round": 6,
+	    	"slug": "spanish-grand-prix"
+    	},
+    	{
+	    	"name": "Monaco",
+	    	"location": "Monte Carlo",
+	    	"latitude": 43.7338,
+	    	"longitude": 7.4215,
+	    	"affiliate": "http://www.bookf1.com/f1-monaco/tickets.htm?af=165390",
+	    	"tbc":true,
+	    	"round": 7,
+	    	"slug": "monoco-grand-prix"
     	}
 	]
 }
