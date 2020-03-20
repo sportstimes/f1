@@ -1,5 +1,6 @@
 import Router from 'next/router'
 import Layout from '../components/Layout';
+import VirtualRaces from '../components/VirtualRaces';
 import Races from '../components/Races';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
@@ -34,14 +35,16 @@ const Index = (props) => {
 				}}
 			/>
 		    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
-		
-				<Races year={ props.year } races={ props.races } /> 
-				
-				{props.races && props.races.map((item, index) => {
-					if(item.sessions){
-  					return (<RaceSchema item={item} key={item.name} />)
-					}
-				})}
+  		
+          <VirtualRaces year={ props.year } races={ props.virtual } />
+  		
+  				<Races year={ props.year } races={ props.races } /> 
+  				
+  				{props.races && props.races.map((item, index) => {
+  					if(item.sessions){
+    					return (<RaceSchema item={item} key={item.name} />)
+  					}
+  				})}
 				
 		    </Layout>
 	    </>
@@ -89,7 +92,8 @@ Index.getInitialProps = async ({query: {timezone}, res}) => {
 	
 	return {
 	    year: "2020",
-	    races: data.races
+	    races: data.races,
+	    virtual: data.virtual
 	}
 }
 

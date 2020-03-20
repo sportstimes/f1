@@ -101,6 +101,12 @@ const Layout = props => {
 			font-size: 11px;
 			font-family: 'LeagueSpartan';
 	    }
+	    
+	    h2.heading {
+	      margin-top:30px;
+	      font-size:18px;
+	      margin-bottom:10px;
+	    }
         
 	    h3 {
 		    font-size: 20px;

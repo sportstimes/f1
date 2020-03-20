@@ -1,9 +1,9 @@
 import { useState, useContext } from 'react';
 import UserContext from '../components/UserContext';
 import moment from 'moment'
-import Race from '../components/Race';
+import VirtualRace from '../components/VirtualRace';
 
-const Races = (props) => {
+const VirtualRaces = (props) => {
 	
 	const { timezone } = useContext(UserContext)
 	
@@ -12,8 +12,8 @@ const Races = (props) => {
 	var nextRace
 	
 	return (
-	<div className="Races">
-	  <h2 className="heading">F1 Schedule 2020</h2>
+	<div className="VirtualRaces">
+	  <h2 className="heading">Virtual Grand Prix Series</h2>
 		<table id="events-table">
 			<thead>
 				<tr className="table-head">
@@ -31,7 +31,7 @@ const Races = (props) => {
 					isNextRace = true
 					nextRace = item
 				}
-				return (<Race item={item} index={index} timezone={timezone} key={item.slug} isNextRace={isNextRace} />)
+				return (<VirtualRace item={item} index={index} timezone={timezone} key={item.slug} isNextRace={isNextRace} />)
 			})}   
 		    <style jsx>{`
 			    table {
@@ -39,7 +39,7 @@ const Races = (props) => {
 			    	border-collapse: collapse;
 			    }
 			    tr {
-				}
+  				}
 			    td, th {
 				    padding:16px;
 			    }
@@ -48,11 +48,11 @@ const Races = (props) => {
 			    }
 			    .table-head {
 				    display:none;
-				}
+  				}
 		    `}</style>
 	    </table>  
 	</div>
 	);
 };
 
-export default Races;
+export default VirtualRaces;
