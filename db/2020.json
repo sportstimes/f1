@@ -76,6 +76,19 @@
 			"location":"Barcelona"
 		}
 	],
+	"virtual": [
+    {
+	    	"name": "Bahrain",
+	    	"location": "Sakhir",
+	    	"latitude": 26.0370,
+	    	"longitude": 50.5112,
+	    	"round": 1,
+	    	"slug": "bahrain-grand-prix",
+	    	"sessions": {
+  				"race" : "2020-03-22T20:00:00Z"
+	    	}
+  	}	
+	],
 	"races": [
     	{
 	    	"name": "Australian",
