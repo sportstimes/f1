@@ -166,6 +166,10 @@ const Layout = props => {
 			.main-content {
 				padding: 0 8px;
 			}
+			
+			h2.heading { 
+  		  font-size:16px;	
+			}
 		}
       `}</style>
     </div>

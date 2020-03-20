@@ -13,6 +13,7 @@ function Generate(props) {
 	    p3: true,
 	    quali: true,
 	    race: true,
+	    virtual: false,
 	    alarm: false,
 	    mins: 20,
 	    submitted: false,
@@ -25,7 +26,7 @@ function Generate(props) {
 	const handleOnSubmit = async e => {
 		e.preventDefault()
 		
-		if(!form.p1 && !form.p2 && !form.p3 && !form.quali && !form.race){
+		if(!form.p1 && !form.p2 && !form.p3 && !form.quali && !form.race && !form.virtual){
 			alert("Please select at least one session for your calendar.")
 			return
 		}
@@ -33,9 +34,9 @@ function Generate(props) {
 		setState({
 			...form, 
 			submitted: true, 
-			webcalURL:`webcal://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics`, 
-			googleURL:`https://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics?t=${ Date.now() }`,
-			downloadURL:`https://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics` 
+			webcalURL:`webcal://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics`, 
+			googleURL:`https://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics?t=${ Date.now() }`,
+			downloadURL:`https://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics` 
 		})		
 	}
 	
@@ -118,6 +119,12 @@ function Generate(props) {
 									</div>
 								</fieldset>
 		
+                
+								<fieldset id="virtualRaces">
+								  <input type="checkbox" name="virtual" id="virtual" onChange={event => setState({...form, virtual: event.target.checked })} />
+									<label htmlFor="gp">Include Virtual Grand Prix Series <a href="https://www.formula1.com/en/latest/article.formula-1-launches-virtual-grand-prix-series-to-replace-postponed-races.1znLAbPzBbCQPj1IDMeiOi.html" target="_blank">(What's this?)</a></label>
+								</fieldset>
+		
 								<fieldset id="set_alarms">
 									<div className="field">
 										<input type="checkbox" name="alarm" id="alarm" value="off" onChange={event => setState({...form, alarm: event.target.checked })} />
@@ -141,7 +148,7 @@ function Generate(props) {
 						background:#141414;
 						-webkit-border-radius: 15px;
 						-moz-border-radius: 15px;
-						padding:25px;
+						padding:25px 25px 10px 25px;
 						margin-bottom:16px;
 					}
 					.card h4 {
@@ -158,8 +165,16 @@ function Generate(props) {
 					}
 					fieldset {
 						border:0;
-						margin:0 0 15px 0;
+						margin:0 0 20px 0;
 						padding:0;	
+  					vertical-align:middle;
+					}
+					
+					fieldset label {
+  					padding-left:5px;
+					}
+					fieldset label a {
+  				  	color: #1a8b73;
 					}
 					
 					p {
