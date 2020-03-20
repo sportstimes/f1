@@ -97,7 +97,7 @@ class VirtualRace extends React.Component {
         } else {
           return (
              <>
-            <a href={ props.item.affiliate } className="watch">Tickets</a>
+            <a href={ props.item.link } className="watch">Watch</a>
             <style jsx>{`
 			    .watch {
 				    border-radius: 3px 3px 3px 3px;
