@@ -206,7 +206,8 @@ export default class Calendar extends React.Component {
   					geo: { lat: virtualRace.latitude, lon: virtualRace.longitude },
   					sequence: "2020",
   					alarms: alarms,
-  					status: status
+  					status: status,
+  					url: virtualRace.link
   				}
   				events.push(event)
     		}
