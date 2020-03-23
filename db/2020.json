@@ -126,23 +126,6 @@
 	    	}
     	},
     	{
-	    	"name": "Azerbaijan",
-	    	"location": "Baku",
-	    	"latitude": 40.3699,
-	    	"longitude": 49.8433,
-	    	"affiliate": "http://www.bookf1.com/f1-azerbaijan/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 8,
-	    	"slug": "azerbaijan-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-06-05T09:00:00Z",
-				"fp2" : "2020-06-05T13:00:00Z",
-				"fp3" : "2020-06-06T10:00:00Z",
-				"qualifying" : "2020-06-06T13:00:00Z",
-				"race" : "2020-06-07T12:10:00Z"
-	    	}
-    	},
-    	{
 	    	"name": "Canadian",
 	    	"location": "Montreal",
 	    	"latitude": 45.5034,
@@ -427,6 +410,16 @@
 	    	"tbc":true,
 	    	"round": 6,
 	    	"slug": "spanish-grand-prix"
+    	},
+    	{
+	    	"name": "Azerbaijan",
+	    	"location": "Baku",
+	    	"latitude": 40.3699,
+	    	"longitude": 49.8433,
+	    	"affiliate": "http://www.bookf1.com/f1-azerbaijan/tickets.htm?af=165390",
+	    	"tbc":true,
+	    	"round": 8,
+	    	"slug": "azerbaijan-grand-prix"
     	}
 	]
 }
