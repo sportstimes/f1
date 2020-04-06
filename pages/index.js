@@ -25,29 +25,25 @@ const Index = (props) => {
 					description: "Formula One Calendar for 2020 season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
 					site_name: "F1 Calendar 2020",
 					images: [
-			          {
-			            url: 'https://www.f1calendar.com/share.png',
-			            width: 1200,
-			            height: 628,
-			            alt: 'F1 Calendar 2020',
-			          },
-			        ]
+	          {
+	            url: 'https://www.f1calendar.com/share.png',
+	            width: 1200,
+	            height: 628,
+	            alt: 'F1 Calendar 2020',
+	          },
+	        ]
 				}}
 			/>
-		    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
-  		
-          <VirtualRaces year={ props.year } races={ props.virtual } />
-  		
-  				<Races year={ props.year } races={ props.races } /> 
-  				
-  				{props.races && props.races.map((item, index) => {
-  					if(item.sessions){
-    					return (<RaceSchema item={item} key={item.name} />)
-  					}
-  				})}
-				
-		    </Layout>
-	    </>
+	    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
+        <VirtualRaces year={ props.year } races={ props.virtual } />
+				<Races year={ props.year } races={ props.races } />
+				{props.races && props.races.map((item, index) => {
+					if(item.sessions){
+  					return (<RaceSchema item={item} key={item.name} />)
+					}
+				})}
+	    </Layout>
+    </>
 	);
 }
 

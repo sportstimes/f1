@@ -1,0 +1,16 @@
+.races {
+  table {
+  	width:100%;
+  	border-collapse: collapse;
+  	
+    td, th {
+	    padding:16px;
+    }
+    caption {
+      text-indent:-9999px;
+    }
+    .table-head {
+	    display:none;
+		}
+	}
+}

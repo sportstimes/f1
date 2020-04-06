@@ -2,18 +2,20 @@ import { useState, useContext } from 'react';
 import UserContext from '../components/UserContext';
 import moment from 'moment'
 import Race from '../components/Race';
+import styles from './Races.module.scss'
+import layoutStyles from '../components/Layout.module.scss';
 
 const Races = (props) => {
-	
 	const { timezone } = useContext(UserContext)
-	
 	const races = props.races
 	
-	var nextRace
+	// TODO Improve this isNextRace logic
+	var isNextRace = false
+	var nextRace = null
 	
 	return (
-	<div className="Races">
-	  <h2 className="heading">F1 Schedule 2020</h2>
+	<div className={styles.races}>
+	  <h2 className={layoutStyles.heading}>F1 Schedule 2020</h2>
 		<table id="events-table">
 			<thead>
 				<tr className="table-head">
@@ -24,32 +26,14 @@ const Races = (props) => {
 				</tr>
 			</thead>
 			
-			{races && races.map((item, index) => {
-  			// TODO Improve this isNextRace logic
-				var isNextRace = false
+			{races.map((item, index) => {
+  			isNextRace = false
 				if(item.sessions && moment(item.sessions.race).isAfter() && !nextRace && !item.canceled && !item.tbc){
 					isNextRace = true
 					nextRace = item
-				}
+				} 
 				return (<Race item={item} index={index} timezone={timezone} key={item.slug} isNextRace={isNextRace} />)
 			})}   
-		    <style jsx>{`
-			    table {
-			    	width:100%;
-			    	border-collapse: collapse;
-			    }
-			    tr {
-				}
-			    td, th {
-				    padding:16px;
-			    }
-			    table caption {
-				    text-indent:-9999px;
-			    }
-			    .table-head {
-				    display:none;
-				}
-		    `}</style>
 	    </table>  
 	</div>
 	);

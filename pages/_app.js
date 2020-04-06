@@ -3,6 +3,7 @@ import App from 'next/app';
 import Router from 'next/router';
 import UserContext from '../components/UserContext';
 const moment = require('moment-timezone')
+import s from './style.scss'
 
 export default class F1App extends App {
 	
