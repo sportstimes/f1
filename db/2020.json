@@ -138,23 +138,6 @@
 	    	}
     	},
     	{
-	    	"name": "Canadian",
-	    	"location": "Montreal",
-	    	"latitude": 45.5034,
-	    	"longitude": -73.5267,
-	    	"affiliate": "http://www.bookf1.com/f1-canada/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 9,
-	    	"slug": "canadian-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-06-12T15:00:00Z",
-				"fp2" : "2020-06-12T19:00:00Z",
-				"fp3" : "2020-06-13T15:00:00Z",
-				"qualifying" : "2020-06-13T18:00:00Z",
-				"race" : "2020-06-14T18:10:00Z"
-	    	}
-    	},
-    	{
 	    	"name": "French",
 	    	"location": "Paul Ricard",
 	    	"latitude": 43.2517,
@@ -432,6 +415,16 @@
 	    	"tbc":true,
 	    	"round": 8,
 	    	"slug": "azerbaijan-grand-prix"
+    	},
+    	{
+	    	"name": "Canadian",
+	    	"location": "Montreal",
+	    	"latitude": 45.5034,
+	    	"longitude": -73.5267,
+	    	"affiliate": "http://www.bookf1.com/f1-canada/tickets.htm?af=165390",
+	    	"tbc":true,
+	    	"round": 9,
+	    	"slug": "canadian-grand-prix"
     	}
 	]
 }
