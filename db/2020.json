@@ -100,6 +100,18 @@
 	    	"sessions": {
   				"race" : "2020-04-05T19:00:00Z"
 	    	}
+  	},
+  	{
+    	"name": "Chinese",
+    	"location": "Shanghai",
+    	"latitude": 31.3807,
+    	"longitude": 121.2498,
+    	"link": "https://www.twitch.tv/formula1",
+    	"round": 3,
+    	"slug": "china-grand-prix",
+    	"sessions": {
+				"race" : "2020-04-19T19:00:00Z"
+    	}
   	}	
 	],
 	"races": [
