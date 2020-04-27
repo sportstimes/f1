@@ -100,6 +100,18 @@
 	    	"sessions": {
   				"race" : "2020-04-05T19:00:00Z"
 	    	}
+  	},
+  	{
+    	"name": "Chinese",
+    	"location": "Shanghai",
+    	"latitude": 31.3807,
+    	"longitude": 121.2498,
+    	"link": "https://www.twitch.tv/formula1",
+    	"round": 3,
+    	"slug": "china-grand-prix",
+    	"sessions": {
+				"race" : "2020-04-19T17:00:00Z"
+    	}
   	}	
 	],
 	"races": [
@@ -135,23 +147,6 @@
 				"fp3" : "2020-05-23T10:00:00Z",
 				"qualifying" : "2020-05-23T13:00:00Z",
 				"race" : "2020-05-24T13:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Canadian",
-	    	"location": "Montreal",
-	    	"latitude": 45.5034,
-	    	"longitude": -73.5267,
-	    	"affiliate": "http://www.bookf1.com/f1-canada/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 9,
-	    	"slug": "canadian-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-06-12T15:00:00Z",
-				"fp2" : "2020-06-12T19:00:00Z",
-				"fp3" : "2020-06-13T15:00:00Z",
-				"qualifying" : "2020-06-13T18:00:00Z",
-				"race" : "2020-06-14T18:10:00Z"
 	    	}
     	},
     	{
@@ -432,6 +427,16 @@
 	    	"tbc":true,
 	    	"round": 8,
 	    	"slug": "azerbaijan-grand-prix"
+    	},
+    	{
+	    	"name": "Canadian",
+	    	"location": "Montreal",
+	    	"latitude": 45.5034,
+	    	"longitude": -73.5267,
+	    	"affiliate": "http://www.bookf1.com/f1-canada/tickets.htm?af=165390",
+	    	"tbc":true,
+	    	"round": 9,
+	    	"slug": "canadian-grand-prix"
     	}
 	]
 }
