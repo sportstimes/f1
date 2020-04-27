@@ -14,6 +14,11 @@ const Races = (props) => {
 	return (
 	<div className="Races">
 	  <h2 className="heading">F1 Schedule 2020</h2>
+	  
+	  <div className="notice">
+	    Dates below are likely to change once a revised 2020 calendar is confirmed. <a href="https://www.formula1.com/en/latest/article.statement-from-f1-ceo-chase-carey-target-is-to-begin-season-in-austria.5zn2chyMjrqC8n0BkEt9e.html" target="_blank">Latest News</a>.
+    </div>
+	  
 		<table id="events-table">
 			<thead>
 				<tr className="table-head">
@@ -33,24 +38,33 @@ const Races = (props) => {
 				}
 				return (<Race item={item} index={index} timezone={timezone} key={item.slug} isNextRace={isNextRace} />)
 			})}   
-		    <style jsx>{`
-			    table {
-			    	width:100%;
-			    	border-collapse: collapse;
-			    }
-			    tr {
+	    </table>
+	    <style jsx>{`
+		    .notice {
+  		    background:#f87639;
+  		    padding: 10px 25px;
+  		    margin-bottom: 16px;
+  		    border-radius: 3px 3px 3px 3px;
+					-moz-border-radius: 3px 3px 3px 3px;
+					-webkit-border-radius: 3px 3px 3px 3px;
+		    }
+		    
+		    table {
+		    	width:100%;
+		    	border-collapse: collapse;
+		    }
+		    tr {
 				}
-			    td, th {
-				    padding:16px;
-			    }
-			    table caption {
-				    text-indent:-9999px;
-			    }
-			    .table-head {
-				    display:none;
-				}
-		    `}</style>
-	    </table>  
+		    td, th {
+			    padding:16px;
+		    }
+		    table caption {
+			    text-indent:-9999px;
+		    }
+		    .table-head {
+			    display:none;
+			}
+	    `}</style>  
 	</div>
 	);
 };
