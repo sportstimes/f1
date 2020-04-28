@@ -150,23 +150,6 @@
 	    	}
     	},
     	{
-	    	"name": "French",
-	    	"location": "Paul Ricard",
-	    	"latitude": 43.2517,
-	    	"longitude": 5.7935,
-	    	"affiliate": "http://www.bookf1.com/f1-france/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 10,
-	    	"slug": "french-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-06-26T09:00:00Z",
-				"fp2" : "2020-06-26T13:00:00Z",
-				"fp3" : "2020-06-27T10:00:00Z",
-				"qualifying" : "2020-06-27T13:00:00Z",
-				"race" : "2020-06-28T13:10:00Z"
-	    	}
-    	},
-    	{
 	    	"name": "Austrian",
 	    	"location": "Spielberg",
 	    	"latitude": 47.2225,
@@ -188,7 +171,6 @@
 	    	"location": "Silverstone",
 	    	"latitude": 52.0706,
 	    	"longitude": -1.0174,
-	    	"affiliate": "http://www.bookf1.com/f1-britain/tickets.htm?af=165390",
 	    	"tbc":false,
 	    	"round": 12,
 	    	"slug": "british-grand-prix",
@@ -437,6 +419,16 @@
 	    	"tbc":true,
 	    	"round": 9,
 	    	"slug": "canadian-grand-prix"
+    	},
+    	{
+	    	"name": "French",
+	    	"location": "Paul Ricard",
+	    	"latitude": 43.2517,
+	    	"longitude": 5.7935,
+	    	"affiliate": "http://www.bookf1.com/f1-france/tickets.htm?af=165390",
+	    	"tbc":true,
+	    	"round": 10,
+	    	"slug": "french-grand-prix"
     	}
 	]
 }
