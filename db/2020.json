@@ -112,7 +112,31 @@
     	"sessions": {
 				"race" : "2020-04-19T17:00:00Z"
     	}
-  	}	
+  	},
+  	{
+    	"name": "Brazilian",
+    	"location": "Sao Paulo",
+    	"latitude": -23.7014,
+    	"longitude": -46.6969,
+    	"link": "https://www.twitch.tv/formula1",
+    	"round": 4,
+    	"slug": "brazillian-grand-prix",
+    	"sessions": {
+				"race" : "2020-05-03T17:00:00Z"
+    	}
+  	},
+  	{
+    	"name": "Spanish",
+    	"location": "Barcelona",
+    	"latitude": 41.5638,
+    	"longitude": 2.2585,
+    	"link": "https://www.twitch.tv/formula1",
+    	"round": 5,
+    	"slug": "spanish-grand-prix",
+    	"sessions": {
+				"race" : "2020-05-10T17:00:00Z"
+    	}	    	
+  	}
 	],
 	"races": [
     	{
