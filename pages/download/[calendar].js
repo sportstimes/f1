@@ -227,6 +227,7 @@ export default class Calendar extends React.Component {
 			}
 			
 			res.setHeader("Content-Type", "text/calendar");
+			res.setHeader('Cache-Control', 'public,max-age=86400');
 			res.write(value);
 			res.end();
 		});
