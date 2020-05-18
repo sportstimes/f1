@@ -16,9 +16,14 @@ const Races = (props) => {
 	return (
 	<div className={styles.races}>
 	  <h2 className={layoutStyles.heading}>F1 Schedule 2020</h2>
+	  
+	  <div className={styles.notice}>
+	    Dates below are likely to change once a revised 2020 calendar is confirmed. <a href="https://www.formula1.com/en/latest/article.f1-schedule-2020-latest-information.3P0b3hJYdFDm9xFieAYqCS.html" target="_blank">Latest News</a>.
+    </div>
+	  
 		<table id="events-table">
 			<thead>
-				<tr className="table-head">
+				<tr className={styles.tableHead}>
 					<th scope="col" className="icon-column"></th>
 					<th scope="col" className="event-column">Formula 1 Grand Prix Events {props.year}</th>
 					<th scope="col" className="date-column">Date</th>
@@ -34,7 +39,7 @@ const Races = (props) => {
 				} 
 				return (<Race item={item} index={index} timezone={timezone} key={item.slug} isNextRace={isNextRace} />)
 			})}   
-	    </table>  
+	    </table>
 	</div>
 	);
 };

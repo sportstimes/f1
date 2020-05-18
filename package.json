@@ -30,6 +30,7 @@
     "next-fonts": "^0.19.0",
     "next-offline": "^5.0.0",
     "next-seo": "^4.4.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.0",
     "react-cookie-consent": "^3.0.0",
     "react-dom": "^16.13.0",
