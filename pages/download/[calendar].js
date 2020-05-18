@@ -15,7 +15,17 @@ export default class Calendar extends React.Component {
 			res.end('Whoops. An error occured.')
 			return;
 		}
-			
+		
+		
+		// If we have a t query param then redirect the user to the main file. Let's see if we hear issues from Google Calendar users.
+		if(query.t != null){
+      res.writeHead(301, {
+        Location: query.calendar
+      });
+      res.end();
+      return;
+		}
+		
 		let request = query.calendar.replace(".ics", "");
 		
 		var includeFP1, includeFP2, includeFP3, includeQuali, includeRace, includeVirtual = false
