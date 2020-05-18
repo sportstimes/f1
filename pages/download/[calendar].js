@@ -51,10 +51,13 @@ export default class Calendar extends React.Component {
 			alarmOffset = requestArray.slice(-1)[0];
 		}
 		
+		// No params set so lets just default to what makes sense...
 		if(!includeFP1 && !includeFP2 && !includeFP3 && !includeQuali && !includeRace && !includeVirtual){
-			res.statusCode = 404
-			res.end('Please select at least one session.')
-			return
+  		includeFP1 = true
+  		includeFP2 = true
+  		includeFP3 = true
+  		includeQuali = true
+  		includeRace = true
 		}
     
 		const data = await import(`../../db/2020.json`)
@@ -224,6 +227,7 @@ export default class Calendar extends React.Component {
 			}
 			
 			res.setHeader("Content-Type", "text/calendar");
+			res.setHeader('Cache-Control', 'public,s-maxage=604800');
 			res.write(value);
 			res.end();
 		});

@@ -1,0 +1,26 @@
+.races {
+  table {
+  	width:100%;
+  	border-collapse: collapse;
+  	
+    td, th {
+	    padding:16px;
+    }
+    caption {
+      text-indent:-9999px;
+    }
+    .tableHead {
+	    display:none;
+		}
+	}
+	
+	.notice {
+    background:#f87639;
+    padding: 10px 25px;
+    margin-bottom: 16px;
+    border-radius: 3px 3px 3px 3px;
+		-moz-border-radius: 3px 3px 3px 3px;
+		-webkit-border-radius: 3px 3px 3px 3px;
+  }
+  
+}

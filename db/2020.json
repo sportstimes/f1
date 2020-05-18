@@ -136,6 +136,18 @@
     	"sessions": {
 				"race" : "2020-05-10T17:00:00Z"
     	}	    	
+  	},
+  	{
+	    	"name": "Monaco",
+	    	"location": "Monte Carlo",
+	    	"latitude": 43.7338,
+	    	"longitude": 7.4215,
+	    	"link": "https://www.twitch.tv/formula1",
+	    	"round": 6,
+	    	"slug": "monoco-grand-prix",
+	    	"sessions": {
+  				"race" : "2020-05-24T17:00:00Z"
+      	}	
   	}
 	],
 	"races": [

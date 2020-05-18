@@ -1,6 +1,5 @@
 import {useState} from 'react'
 import Layout from "../components/Layout";
-import Share from "../components/Share";
 import { NextSeo } from 'next-seo';
 
 function Generate(props) {

@@ -2,6 +2,7 @@ import { useState, useContext } from 'react';
 import UserContext from '../components/UserContext';
 import moment from 'moment'
 import VirtualRace from '../components/VirtualRace';
+import styles from '../components/Layout.module.scss';
 
 const VirtualRaces = (props) => {
 	
@@ -13,7 +14,7 @@ const VirtualRaces = (props) => {
 	
 	return (
 	<div className="VirtualRaces">
-	  <h2 className="heading">Virtual Grand Prix Series</h2>
+	  <h2 className={styles.heading}>Virtual Grand Prix Series</h2>
 		<table id="events-table">
 			<thead>
 				<tr className="table-head">
