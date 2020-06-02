@@ -146,325 +146,292 @@
 	    	"round": 6,
 	    	"slug": "monoco-grand-prix",
 	    	"sessions": {
-  				"race" : "2020-05-24T17:00:00Z"
-      	}	
-  	}
+					"race" : "2020-05-24T17:00:00Z"
+				}
+		}
 	],
-	"races": [
-    	{
-	    	"name": "Australian",
-	    	"location": "Melbourne",
-	    	"latitude": -37.8373,
-	    	"longitude": 144.9666,
-	    	"tbc":false,
-				"canceled":true,
-	    	"round": 1,
-	    	"slug": "australian-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-03-13T01:00:00Z",
-				"fp2" : "2020-03-13T05:00:00Z",
-				"fp3" : "2020-03-14T03:00:00Z",
-				"qualifying" : "2020-03-14T06:00:00Z",
-				"race" : "2020-03-15T05:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Monaco",
-	    	"location": "Monte Carlo",
-	    	"latitude": 43.7338,
-	    	"longitude": 7.4215,
-	    	"tbc":false,
-	    	"canceled":true,
-	    	"round": 7,
-	    	"slug": "monoco-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-05-21T09:00:00Z",
-				"fp2" : "2020-05-21T13:00:00Z",
-				"fp3" : "2020-05-23T10:00:00Z",
-				"qualifying" : "2020-05-23T13:00:00Z",
-				"race" : "2020-05-24T13:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Austrian",
-	    	"location": "Spielberg",
-	    	"latitude": 47.2225,
-	    	"longitude": 14.7607,
-	    	"affiliate": "http://www.bookf1.com/f1-austria/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 11,
-	    	"slug": "austrian-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-07-03T09:00:00Z",
-				"fp2" : "2020-07-03T13:00:00Z",
-				"fp3" : "2020-07-04T10:00:00Z",
-				"qualifying" : "2020-07-04T13:00:00Z",
-				"race" : "2020-07-05T13:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "British",
-	    	"location": "Silverstone",
-	    	"latitude": 52.0706,
-	    	"longitude": -1.0174,
-	    	"tbc":false,
-	    	"round": 12,
-	    	"slug": "british-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-07-17T10:00:00Z",
-				"fp2" : "2020-07-17T14:00:00Z",
-				"fp3" : "2020-07-18T11:00:00Z",
-				"qualifying" : "2020-07-18T14:00:00Z",
-				"race" : "2020-07-19T14:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Hungarian",
-	    	"location": "Budapest",
-	    	"latitude": 47.5830,
-	    	"longitude": 19.2526,
-	    	"affiliate": "http://www.bookf1.com/f1-hungary/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 13,
-	    	"slug": "hungary-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-07-31T09:00:00Z",
-				"fp2" : "2020-07-31T13:00:00Z",
-				"fp3" : "2020-08-01T10:00:00Z",
-				"qualifying" : "2020-08-01T13:00:00Z",
-				"race" : "2020-08-02T13:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Belgian",
-	    	"location": "Spa-Francorchamps",
-	    	"latitude": 50.4440,
-	    	"longitude": 5.9687,
-	    	"affiliate": "http://www.bookf1.com/f1-belgium/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 14,
-	    	"slug": "belgium-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-08-28T09:00:00Z",
-				"fp2" : "2020-08-28T13:00:00Z",
-				"fp3" : "2020-08-29T10:00:00Z",
-				"qualifying" : "2020-08-29T13:00:00Z",
-				"race" : "2020-08-30T13:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Italian",
-	    	"location": "Monza",
-	    	"latitude": 45.6169,
-	    	"longitude": 9.2825,
-	    	"affiliate": "http://www.bookf1.com/f1-italy/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 15,
-	    	"slug": "italian-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-09-04T09:00:00Z",
-				"fp2" : "2020-09-04T13:00:00Z",
-				"fp3" : "2020-09-05T10:00:00Z",
-				"qualifying" : "2020-09-05T13:00:00Z",
-				"race" : "2020-09-06T13:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Singapore",
-	    	"location": "Singapore",
-	    	"latitude": 1.2857,
-	    	"longitude": 103.8575,
-	    	"affiliate": "http://www.bookf1.com/f1-singapore/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 16,
-	    	"slug": "singapore-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-09-18T08:30:00Z",
-				"fp2" : "2020-09-18T12:30:00Z",
-				"fp3" : "2020-09-19T10:00:00Z",
-				"qualifying" : "2020-09-19T13:00:00Z",
-				"race" : "2020-09-20T12:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Russian",
-	    	"location": "Sochi",
-	    	"latitude": 43.6203,
-	    	"longitude": 39.7120,
-	    	"affiliate": "http://www.bookf1.com/f1-russia/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 17,
-	    	"slug": "russian-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-09-25T08:00:00Z",
-				"fp2" : "2020-09-25T12:00:00Z",
-				"fp3" : "2020-09-26T09:00:00Z",
-				"qualifying" : "2020-09-26T12:00:00Z",
-				"race" : "2020-09-27T11:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Japanese",
-	    	"location": "Suzuka",
-	    	"latitude": 35.3689,
-	    	"longitude": 138.9256,
-	    	"affiliate": "http://www.bookf1.com/f1-japan/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 18,
-	    	"slug": "japanese-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-10-09T02:00:00Z",
-				"fp2" : "2020-10-09T06:00:00Z",
-				"fp3" : "2020-10-10T03:00:00Z",
-				"qualifying" : "2020-10-10T06:00:00Z",
-				"race" : "2020-10-11T04:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "United States",
-	    	"location": "Austin",
-	    	"latitude": 30.1328,
-	    	"longitude": -97.6411,
-	    	"affiliate": "http://www.bookf1.com/f1-usa/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 19,
-	    	"slug": "us-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-10-23T16:00:00Z",
-				"fp2" : "2020-10-23T20:00:00Z",
-				"fp3" : "2020-10-24T18:00:00Z",
-				"qualifying" : "2020-10-24T21:00:00Z",
-				"race" : "2020-10-25T19:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Mexico City",
-	    	"location": "Mexico City",
-	    	"latitude": 19.4028,
-	    	"longitude": -99.0986,
-	    	"affiliate": "http://www.bookf1.com/f1-mexico/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 20,
-	    	"slug": "mexico-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-10-30T17:00:00Z",
-				"fp2" : "2020-10-30T21:00:00Z",
-				"fp3" : "2020-10-31T16:00:00Z",
-				"qualifying" : "2020-10-31T19:00:00Z",
-				"race" : "2020-11-01T19:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Brazilian",
-	    	"location": "Sao Paulo",
-	    	"latitude": -23.7014,
-	    	"longitude": -46.6969,
-	    	"affiliate": "http://www.bookf1.com/f1-brazil/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 21,
-	    	"slug": "brazillian-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-11-13T14:00:00Z",
-				"fp2" : "2020-11-13T18:00:00Z",
-				"fp3" : "2020-11-14T15:00:00Z",
-				"qualifying" : "2020-11-14T18:00:00Z",
-				"race" : "2020-11-15T17:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Abu Dhabi",
-	    	"location": "Yas Island",
-	    	"latitude": 24.4821,
-	    	"longitude": 54.3482,
-	    	"affiliate": "http://www.bookf1.com/f1-abu-dhabi/tickets.htm?af=165390",
-	    	"tbc":false,
-	    	"round": 22,
-	    	"slug": "abu-dhabi-grand-prix",
-	    	"sessions": {
-				"fp1" : "2020-11-27T09:00:00Z",
-				"fp2" : "2020-11-27T13:00:00Z",
-				"fp3" : "2020-11-28T10:00:00Z",
-				"qualifying" : "2020-11-28T13:00:00Z",
-				"race" : "2020-11-29T13:10:00Z"
-	    	}
-    	},
-    	{
-	    	"name": "Bahrain",
-	    	"location": "Sakhir",
-	    	"latitude": 26.0370,
-	    	"longitude": 50.5112,
-	    	"tbc":true,
-	    	"round": 2,
-	    	"slug": "bahrain-grand-prix"
-    	},
-    	{
-	    	"name": "Vietnamese",
-	    	"location": "Hanoi",
-	    	"latitude": 21.016597,
-	    	"longitude": 105.765736,
-	    	"affiliate": "http://www.bookf1.com/f1-vietnam/tickets.htm?af=165390",
-	    	"tbc":true,
-	    	"round": 3,
-	    	"slug": "vietnamese-grand-prix"
-    	},
-    	{
-	    	"name": "Chinese",
-	    	"location": "Shanghai",
-	    	"latitude": 31.3807,
-	    	"longitude": 121.2498,
-	    	"tbc":true,
-	    	"round": 4,
-	    	"slug": "china-grand-prix"
-    	},
-    	{
-	    	"name": "Dutch",
-	    	"location": "Zandvoort",
-	    	"latitude": 52.388408,
-	    	"longitude": 4.547122,
-	    	"affiliate": "https://www.bookf1.com/f1-netherlands/tickets.htm?af=165390",
-	    	"tbc":true,
-	    	"round": 5,
-	    	"slug": "dutch-grand-prix"
-    	},
-    	{
-	    	"name": "Spanish",
-	    	"location": "Barcelona",
-	    	"latitude": 41.5638,
-	    	"longitude": 2.2585,
-	    	"affiliate": "http://www.bookf1.com/f1-spain/tickets.htm?af=165390",
-	    	"tbc":true,
-	    	"round": 6,
-	    	"slug": "spanish-grand-prix"
-    	},
-    	{
-	    	"name": "Azerbaijan",
-	    	"location": "Baku",
-	    	"latitude": 40.3699,
-	    	"longitude": 49.8433,
-	    	"affiliate": "http://www.bookf1.com/f1-azerbaijan/tickets.htm?af=165390",
-	    	"tbc":true,
-	    	"round": 8,
-	    	"slug": "azerbaijan-grand-prix"
-    	},
-    	{
-	    	"name": "Canadian",
-	    	"location": "Montreal",
-	    	"latitude": 45.5034,
-	    	"longitude": -73.5267,
-	    	"affiliate": "http://www.bookf1.com/f1-canada/tickets.htm?af=165390",
-	    	"tbc":true,
-	    	"round": 9,
-	    	"slug": "canadian-grand-prix"
-    	},
-    	{
-	    	"name": "French",
-	    	"location": "Paul Ricard",
-	    	"latitude": 43.2517,
-	    	"longitude": 5.7935,
-	    	"affiliate": "http://www.bookf1.com/f1-france/tickets.htm?af=165390",
-	    	"tbc":true,
-	    	"round": 10,
-	    	"slug": "french-grand-prix"
-    	}
-	]
+  "races": [
+    {
+      "name": "Austrian 1",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "affiliate": "http://www.bookf1.com/f1-austria/tickets.htm?af=165390",
+      "tbc": false,
+      "round": 1,
+      "slug": "austrian-grand-prix",
+      "sessions": {
+        "fp1": "2020-07-03T09:00:00Z",
+        "fp2": "2020-07-03T13:00:00Z",
+        "fp3": "2020-07-04T10:00:00Z",
+        "qualifying": "2020-07-04T13:00:00Z",
+        "race": "2020-07-05T13:10:00Z"
+      }
+    },
+    {
+      "name": "Austrian 2",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "affiliate": "http://www.bookf1.com/f1-austria/tickets.htm?af=165390",
+      "tbc": false,
+      "round": 2,
+      "slug": "austrian-grand-prix",
+      "sessions": {
+        "fp1": "2020-07-10T09:00:00Z",
+        "fp2": "2020-07-10T13:00:00Z",
+        "fp3": "2020-07-11T10:00:00Z",
+        "qualifying": "2020-07-11T13:00:00Z",
+        "race": "2020-07-12T13:10:00Z"
+      }
+    },
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "affiliate": "http://www.bookf1.com/f1-hungary/tickets.htm?af=165390",
+      "tbc": false,
+      "round": 3,
+      "slug": "hungary-grand-prix",
+      "sessions": {
+        "fp1": "2020-07-17T09:00:00Z",
+        "fp2": "2020-07-17T13:00:00Z",
+        "fp3": "2020-07-18T10:00:00Z",
+        "qualifying": "2020-07-18T13:00:00Z",
+        "race": "2020-07-19T13:10:00Z"
+      }
+    },
+    {
+      "name": "British 1",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "tbc": false,
+      "round": 4,
+      "slug": "british-grand-prix",
+      "sessions": {
+        "fp1": "2020-07-31T10:00:00Z",
+        "fp2": "2020-07-31T14:00:00Z",
+        "fp3": "2020-08-01T11:00:00Z",
+        "qualifying": "2020-08-01T14:00:00Z",
+        "race": "2020-08-02T14:10:00Z"
+      }
+    },
+    {
+      "name": "British 2",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "tbc": false,
+      "round": 5,
+      "slug": "british-grand-prix",
+      "sessions": {
+        "fp1": "2020-08-07T10:00:00Z",
+        "fp2": "2020-08-07T14:00:00Z",
+        "fp3": "2020-08-08T11:00:00Z",
+        "qualifying": "2020-08-08T14:00:00Z",
+        "race": "2020-08-09T14:10:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Barcelona",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "affiliate": "http://www.bookf1.com/f1-spain/tickets.htm?af=165390",
+      "tbc": false,
+      "round": 6,
+      "slug": "spanish-grand-prix",
+      "sessions": {
+        "fp1": "2020-08-14T10:00:00Z",
+        "fp2": "2020-08-14T14:00:00Z",
+        "fp3": "2020-08-15T11:00:00Z",
+        "qualifying": "2020-08-15T14:00:00Z",
+        "race": "2020-08-16T14:10:00Z"
+      }
+    },
+    {
+      "name": "Belgian",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.444,
+      "longitude": 5.9687,
+      "affiliate": "http://www.bookf1.com/f1-belgium/tickets.htm?af=165390",
+      "tbc": false,
+      "round": 7,
+      "slug": "belgium-grand-prix",
+      "sessions": {
+        "fp1": "2020-08-28T09:00:00Z",
+        "fp2": "2020-08-28T13:00:00Z",
+        "fp3": "2020-08-29T10:00:00Z",
+        "qualifying": "2020-08-29T13:00:00Z",
+        "race": "2020-08-30T13:10:00Z"
+      }
+    },
+    {
+      "name": "Italian",
+      "location": "Monza",
+      "latitude": 45.6169,
+      "longitude": 9.2825,
+      "affiliate": "http://www.bookf1.com/f1-italy/tickets.htm?af=165390",
+      "tbc": false,
+      "round": 8,
+      "slug": "italian-grand-prix",
+      "sessions": {
+        "fp1": "2020-09-04T09:00:00Z",
+        "fp2": "2020-09-04T13:00:00Z",
+        "fp3": "2020-09-05T10:00:00Z",
+        "qualifying": "2020-09-05T13:00:00Z",
+        "race": "2020-09-06T13:10:00Z"
+      }
+    },
+    {
+      "name": "Singapore",
+      "location": "Singapore",
+      "latitude": 1.2857,
+      "longitude": 103.8575,
+      "affiliate": "http://www.bookf1.com/f1-singapore/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 16,
+      "slug": "singapore-grand-prix"
+    },
+    {
+      "name": "Russian",
+      "location": "Sochi",
+      "latitude": 43.6203,
+      "longitude": 39.712,
+      "affiliate": "http://www.bookf1.com/f1-russia/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 17,
+      "slug": "russian-grand-prix"
+    },
+    {
+      "name": "Japanese",
+      "location": "Suzuka",
+      "latitude": 35.3689,
+      "longitude": 138.9256,
+      "affiliate": "http://www.bookf1.com/f1-japan/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 18,
+      "slug": "japanese-grand-prix"
+    },
+    {
+      "name": "United States",
+      "location": "Austin",
+      "latitude": 30.1328,
+      "longitude": -97.6411,
+      "affiliate": "http://www.bookf1.com/f1-usa/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 19,
+      "slug": "us-grand-prix"
+    },
+    {
+      "name": "Mexico City",
+      "location": "Mexico City",
+      "latitude": 19.4028,
+      "longitude": -99.0986,
+      "affiliate": "http://www.bookf1.com/f1-mexico/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 20,
+      "slug": "mexico-grand-prix"
+    },
+    {
+      "name": "Brazilian",
+      "location": "Sao Paulo",
+      "latitude": -23.7014,
+      "longitude": -46.6969,
+      "affiliate": "http://www.bookf1.com/f1-brazil/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 21,
+      "slug": "brazillian-grand-prix"
+    },
+    {
+      "name": "Abu Dhabi",
+      "location": "Yas Island",
+      "latitude": 24.4821,
+      "longitude": 54.3482,
+      "affiliate": "http://www.bookf1.com/f1-abu-dhabi/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 22,
+      "slug": "abu-dhabi-grand-prix"
+    },
+    {
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "tbc": true,
+      "round": 2,
+      "slug": "bahrain-grand-prix"
+    },
+    {
+      "name": "Vietnamese",
+      "location": "Hanoi",
+      "latitude": 21.016597,
+      "longitude": 105.765736,
+      "affiliate": "http://www.bookf1.com/f1-vietnam/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 3,
+      "slug": "vietnamese-grand-prix"
+    },
+    {
+      "name": "Chinese",
+      "location": "Shanghai",
+      "latitude": 31.3807,
+      "longitude": 121.2498,
+      "tbc": true,
+      "round": 4,
+      "slug": "china-grand-prix"
+    },
+    {
+      "name": "Dutch",
+      "location": "Zandvoort",
+      "latitude": 52.388408,
+      "longitude": 4.547122,
+      "affiliate": "https://www.bookf1.com/f1-netherlands/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 5,
+      "slug": "dutch-grand-prix"
+    },
+    {
+      "name": "Spanish",
+      "location": "Barcelona",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "affiliate": "http://www.bookf1.com/f1-spain/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 6,
+      "slug": "spanish-grand-prix"
+    },
+    {
+      "name": "Azerbaijan",
+      "location": "Baku",
+      "latitude": 40.3699,
+      "longitude": 49.8433,
+      "affiliate": "http://www.bookf1.com/f1-azerbaijan/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 8,
+      "slug": "azerbaijan-grand-prix"
+    },
+    {
+      "name": "Canadian",
+      "location": "Montreal",
+      "latitude": 45.5034,
+      "longitude": -73.5267,
+      "affiliate": "http://www.bookf1.com/f1-canada/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 9,
+      "slug": "canadian-grand-prix"
+    },
+    {
+      "name": "French",
+      "location": "Paul Ricard",
+      "latitude": 43.2517,
+      "longitude": 5.7935,
+      "affiliate": "http://www.bookf1.com/f1-france/tickets.htm?af=165390",
+      "tbc": true,
+      "round": 10,
+      "slug": "french-grand-prix"
+    }
+  ]
 }
