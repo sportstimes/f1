@@ -394,16 +394,6 @@
       "slug": "dutch-grand-prix"
     },
     {
-      "name": "Spanish",
-      "location": "Barcelona",
-      "latitude": 41.5638,
-      "longitude": 2.2585,
-      "affiliate": "http://www.bookf1.com/f1-spain/tickets.htm?af=165390",
-      "tbc": true,
-      "round": 6,
-      "slug": "spanish-grand-prix"
-    },
-    {
       "name": "Azerbaijan",
       "location": "Baku",
       "latitude": 40.3699,
