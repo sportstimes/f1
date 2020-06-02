@@ -18,7 +18,7 @@ const Races = (props) => {
 	  <h2 className={layoutStyles.heading}>F1 Schedule 2020</h2>
 	  
 	  <div className={styles.notice}>
-	    Dates below are likely to change once a revised 2020 calendar is confirmed. <a href="https://www.formula1.com/en/latest/article.f1-schedule-2020-latest-information.3P0b3hJYdFDm9xFieAYqCS.html" target="_blank">Latest News</a>.
+	    First 8 races of the revised calendar below. Times are TBC along with additional races. <a href="https://www.formula1.com/en/latest/article.f1-schedule-2020-latest-information.3P0b3hJYdFDm9xFieAYqCS.html" target="_blank">Latest News</a>.
     </div>
 	  
 		<table id="events-table">
