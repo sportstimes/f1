@@ -35,7 +35,6 @@ const Index = (props) => {
 				}}
 			/>
 	    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
-        <VirtualRaces year={ props.year } races={ props.virtual } />
 				<Races year={ props.year } races={ props.races } />
 				{props.races && props.races.map((item, index) => {
 					if(item.sessions){
@@ -48,6 +47,9 @@ const Index = (props) => {
 }
 
 /*
+  
+  <VirtualRaces year={ props.year } races={ props.virtual } />
+  
   <section className="previous-years">
 					<p>
 						<Link href="years"><a>Looking for previous years?</a></Link>
