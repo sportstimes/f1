@@ -304,8 +304,8 @@ class Race extends React.Component {
 			    padding:0;
 			    text-align:center;
   				font-size:20px;
-  				width:5%;
-  				min-width:40px;
+  				width:3%;
+  				min-width:30px;
   				color:#fff;   
 		    }
 		    
@@ -322,7 +322,7 @@ class Race extends React.Component {
 		    
 		    .time-column {
 			    width:20%;
-			    padding-right:15px;
+			    padding-right:10px;
 		    }
 		    
 		    .ticket-column {

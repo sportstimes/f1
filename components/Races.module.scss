@@ -12,6 +12,36 @@
     .tableHead {
 	    display:none;
 		}
+		
+		.icon_column {
+      padding:0;
+      text-align:center;
+      font-size:20px;
+      width:5%;
+      min-width:40px;
+      color:#fff;   
+    }
+    
+    .event_column {
+      width:55%;
+    }
+    .event_column .confirmed {
+      font-weight:bold; 
+    }
+    
+    .date_column {
+      width:20%;
+    }
+    
+    .time_column {
+      width:20%;
+      padding-right:15px;
+    }
+    
+    .ticket_column {
+      text-align:center; 
+    }
+		
 	}
 	
 	.notice {

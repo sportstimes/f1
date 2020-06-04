@@ -40,7 +40,7 @@ const Layout = props => {
   			</noscript>
   			
   			<Header showOptions={props.showOptions} showCalendarExport={props.showCalendarExport} year={props.year} showPreseason={props.showPreseason} />
-  			<div className="main-content">{props.children}</div>
+  			<div className={styles.main_content}>{props.children}</div>
   			<Footer />
   			
   			<CookieConsent
