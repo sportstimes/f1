@@ -24,10 +24,10 @@ const Races = (props) => {
 		<table id="events-table">
 			<thead>
 				<tr className={styles.tableHead}>
-					<th scope="col" className="icon-column"></th>
-					<th scope="col" className="event-column">Formula 1 Grand Prix Events {props.year}</th>
-					<th scope="col" className="date-column">Date</th>
-					<th scope="col" className="time-column">Time</th>
+					<th scope="col" className={styles.icon_column}></th>
+					<th scope="col" className={styles.event_column}>Formula 1 Grand Prix Events {props.year}</th>
+					<th scope="col" className={styles.date_column}>Date</th>
+					<th scope="col" className={styles.time_column}>Time</th>
 				</tr>
 			</thead>
 			
