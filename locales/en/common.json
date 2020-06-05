@@ -1,0 +1,29 @@
+{
+  "title": "F1 Calendar",
+  "subtitle": "Races, Qualifying & Practice Sessions",
+  "options": {
+    "calendar": "Add these race dates & times to your mobile, calendar, Outlook or Google Calendar",
+    "timezonePicker": {
+      "showing": "Showing times for",
+      "pick": "Pick a timezone...",
+      "button": "Done"
+    }
+  },
+  "cookies": {
+    "title": "This website uses cookies to enhance the user experience.",
+    "button": "Great!"
+  },
+  "javascript": "F1 Calendar works best with Javascript Enabled.",
+  "footer": {
+    "coffee": "Support F1 Calendar, buy us a coffee.",
+    "twitter": "We’re on Twitter",
+    "github": "Open Sourced on GitHub",
+    "issue": "Spotted an issue? Report",
+    "links": {
+      "wereOn": "We're on",
+      "openSourcedOn": "Open Sourced on",
+      "spottedIssue": "Spotted an issue?",
+      "spottedReport": "Report"
+    }
+  }
+}
