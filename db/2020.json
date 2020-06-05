@@ -1,14 +1,14 @@
 {
   "races": [
     {
-      "name": "Austrian",
+      "name": "Austrian Grand Prix",
       "location": "Spielberg",
       "latitude": 47.2225,
       "longitude": 14.7607,
-      "affiliate": "http://www.bookf1.com/f1-austria/tickets.htm?af=165390",
       "tbc": true,
       "round": 1,
       "slug": "austrian-grand-prix",
+      "localeKey": "austrian-grand-prix",
       "sessions": {
         "fp1": "2020-07-03T09:00:00Z",
         "fp2": "2020-07-03T13:00:00Z",
@@ -18,14 +18,14 @@
       }
     },
     {
-      "name": "Steiermark (Austrian)",
+      "name": "Steiermark (Austrian) Grand Prix",
       "location": "Spielberg",
       "latitude": 47.2225,
       "longitude": 14.7607,
-      "affiliate": "http://www.bookf1.com/f1-austria/tickets.htm?af=165390",
       "tbc": true,
       "round": 2,
       "slug": "steiermark-grand-prix",
+      "localeKey": "steiermark-grand-prix",
       "sessions": {
         "fp1": "2020-07-10T09:00:00Z",
         "fp2": "2020-07-10T13:00:00Z",
@@ -35,14 +35,14 @@
       }
     },
     {
-      "name": "Hungarian",
+      "name": "Hungaria Grand Prix",
       "location": "Budapest",
       "latitude": 47.583,
       "longitude": 19.2526,
-      "affiliate": "http://www.bookf1.com/f1-hungary/tickets.htm?af=165390",
       "tbc": true,
       "round": 3,
       "slug": "hungary-grand-prix",
+      "localeKey": "hungary-grand-prix",
       "sessions": {
         "fp1": "2020-07-17T09:00:00Z",
         "fp2": "2020-07-17T13:00:00Z",
@@ -52,13 +52,14 @@
       }
     },
     {
-      "name": "British",
+      "name": "British Grand Prix",
       "location": "Silverstone",
       "latitude": 52.0706,
       "longitude": -1.0174,
       "tbc": true,
       "round": 4,
       "slug": "british-grand-prix",
+      "localeKey": "british-grand-prix",
       "sessions": {
         "fp1": "2020-07-31T10:00:00Z",
         "fp2": "2020-07-31T14:00:00Z",
@@ -68,13 +69,14 @@
       }
     },
     {
-      "name": "70th Anniversary (British)",
+      "name": "70th Anniversary (British) Grand Prix",
       "location": "Silverstone",
       "latitude": 52.0706,
       "longitude": -1.0174,
       "tbc": true,
       "round": 5,
       "slug": "anniversary-british-grand-prix",
+      "localeKey": "anniversary-british-grand-prix",
       "sessions": {
         "fp1": "2020-08-07T10:00:00Z",
         "fp2": "2020-08-07T14:00:00Z",
@@ -84,14 +86,14 @@
       }
     },
     {
-      "name": "Spanish",
+      "name": "Spanish Grand Prix",
       "location": "Barcelona",
       "latitude": 41.5638,
       "longitude": 2.2585,
-      "affiliate": "http://www.bookf1.com/f1-spain/tickets.htm?af=165390",
       "tbc": true,
       "round": 6,
       "slug": "spanish-grand-prix",
+      "localeKey": "spanish-grand-prix",
       "sessions": {
         "fp1": "2020-08-14T10:00:00Z",
         "fp2": "2020-08-14T14:00:00Z",
@@ -101,14 +103,14 @@
       }
     },
     {
-      "name": "Belgian",
+      "name": "Belgian Grand Prix",
       "location": "Spa-Francorchamps",
       "latitude": 50.444,
       "longitude": 5.9687,
-      "affiliate": "http://www.bookf1.com/f1-belgium/tickets.htm?af=165390",
       "tbc": true,
       "round": 7,
-      "slug": "belgium-grand-prix",
+      "slug": "belgian-grand-prix",
+      "localeKey": "belgian-grand-prix",
       "sessions": {
         "fp1": "2020-08-28T09:00:00Z",
         "fp2": "2020-08-28T13:00:00Z",
@@ -118,14 +120,14 @@
       }
     },
     {
-      "name": "Italian",
+      "name": "Italian Grand Prix",
       "location": "Monza",
       "latitude": 45.6169,
       "longitude": 9.2825,
-      "affiliate": "http://www.bookf1.com/f1-italy/tickets.htm?af=165390",
       "tbc": true,
       "round": 8,
       "slug": "italian-grand-prix",
+      "localeKey": "italian-grand-prix",
       "sessions": {
         "fp1": "2020-09-04T09:00:00Z",
         "fp2": "2020-09-04T13:00:00Z",
