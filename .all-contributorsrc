@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Russ-K",
+      "name": "Russell K",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4568306?v=4",
+      "profile": "https://github.com/Russ-K",
+      "contributions": [
+        "content"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "f1",
+  "projectOwner": "sportstimes",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
