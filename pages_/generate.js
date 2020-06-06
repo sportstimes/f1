@@ -24,8 +24,6 @@ function Generate(props) {
 	    googleURL: '',
 	    downloadURL: ''
 	})
-	
-	console.log(lang);
 		
 	const handleOnSubmit = async e => {
 		e.preventDefault()

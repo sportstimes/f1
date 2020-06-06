@@ -42,7 +42,7 @@ class Race extends React.Component {
           return (<a href={ props.item.affiliate } className={styles.ticketsOver}>{ t('calendar:badges.tickets') }</a>);
         }
       } else {
-        return (<a href={ props.item.affiliate } className={styles.ticketsOver}>{ t('calendar:tickets') }</a>);
+        return (<a href={ props.item.affiliate } className={styles.ticketsOver}>{ t('calendar:badges.tickets') }</a>);
       }
     }
 

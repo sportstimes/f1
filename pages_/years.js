@@ -3,9 +3,14 @@ import Layout from "../components/Layout";
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 const moment = require('moment-timezone')
+import useTranslation from 'next-translate/useTranslation'
 
 function Years() {
-    const yearItems = []
+  const { t, lang } = useTranslation()
+  const title = t('common:title')
+  const subtitle = t('common:subtitle')
+  
+  const yearItems = []
 	let supportedYears = ["2020", "2019", "2018"]
 	for (let year in supportedYears) {
 		yearItems.push(<li key={supportedYears[year]}><Link href={`year/${supportedYears[year]}`}><a>{supportedYears[year]}</a></Link></li>)
@@ -27,7 +32,7 @@ function Years() {
 			<Layout>
 				
 				<section>
-					<h4>Pick a year...</h4>
+					<h4>{ t('years:title') }</h4>
 				
 					<p>
 					<ul>
