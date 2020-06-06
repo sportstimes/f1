@@ -41,3 +41,12 @@ jspm_packages
 
 # Build Pages
 /pages
+/pages/_app.js
+/pages/download/\[calendar\].js
+/pages/generate.js
+/pages/index.js
+/pages/style.scss
+/pages/timezone/\[timezone\].js
+/pages/timezones.js
+/pages/year/\[year\].js
+/pages/years.js

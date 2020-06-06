@@ -3,12 +3,16 @@ import UserContext from '../components/UserContext';
 import Link from 'next/link';
 const moment = require('moment-timezone')
 import styles from './OptionsBar.module.scss'
+import withTranslation from 'next-translate/withTranslation'
+import fixHref from 'next-translate/fixHref'
 
 class OptionsBar extends React.Component {
 	static contextType = UserContext
 	
 	constructor(props) {
 	   super(props)
+	   
+	   console.log(props);
 	   
 	   this.state = {
 	       pickerShowing: true
@@ -34,7 +38,9 @@ class OptionsBar extends React.Component {
 	}
 	
 	
-	render() {	
+	render() {
+	  const { t, lang } = this.props.i18n
+
 		// Picker Items
 		const timezoneItems = []
 	    
@@ -69,13 +75,13 @@ class OptionsBar extends React.Component {
 					{this.state.pickerShowing ?
 						<div className={styles.picker}>
 							<form action="/" method="GET">
-								<label htmlFor="timezone" className={styles.pickerLabel}>Pick a timezone...</label>
+								<label htmlFor="timezone" className={styles.pickerLabel}>{ t('common:options.timezonePicker.pick') }</label>
 								
 								<select id="timezone" onChange={this.onChange} name="timezone" value={this.context.timezone}>
 									{timezoneItems}
 								</select>
 								
-								<button onClick={this.togglePicker} type="submit">Done</button>
+								<button onClick={this.togglePicker} type="submit">{ t('common:options.timezonePicker.button') }</button>
 							</form>
 						</div>	
 					:
@@ -87,7 +93,7 @@ class OptionsBar extends React.Component {
 							</div>
 							{ this.props.showCalendarExport &&
 							<div className={styles.calendarLink}>
-								<a href="/generate">Add these race dates & times to your mobile, calendar, Outlook or Google Calendar</a>
+								<a href={fixHref('/generate', lang)}>{ t('common:options.calendar') }</a>
 							</div>
 							}
 						</div>
@@ -96,11 +102,11 @@ class OptionsBar extends React.Component {
 				
 				
 				<div className={styles.mobileCalendarLink}>
-					<a href="/generate">Add these race dates & times to your mobile, calendar, Outlook or Google Calendar</a>
+					<a href="/generate">{ t('common:options.calendar') }</a>
 				</div>
 			</div>
 		);
 	}
 }
 
-export default OptionsBar
+export default withTranslation(OptionsBar)

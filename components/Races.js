@@ -4,8 +4,12 @@ import moment from 'moment'
 import Race from '../components/Race';
 import styles from './Races.module.scss'
 import layoutStyles from '../components/Layout.module.scss';
+import useTranslation from 'next-translate/useTranslation'
 
 const Races = (props) => {
+    const { t, lang } = useTranslation()
+
+
 	const { timezone } = useContext(UserContext)
 	const races = props.races
 	
@@ -15,19 +19,22 @@ const Races = (props) => {
 	
 	return (
 	<div className={styles.races}>
-	  <h2 className={layoutStyles.heading}>F1 Schedule 2020</h2>
 	  
 	  <div className={styles.notice}>
-	    First 8 races of the revised calendar below. Times are TBC along with additional races. <a href="https://www.formula1.com/en/latest/article.f1-schedule-2020-latest-information.3P0b3hJYdFDm9xFieAYqCS.html" target="_blank">Latest News</a>.
+	    <p>{ t('calendar:notice.text') }</p>
+	    <a href="https://www.formula1.com/en/latest/article.f1-schedule-2020-latest-information.3P0b3hJYdFDm9xFieAYqCS.html" target="_blank" className={styles.link}>
+	      { t('calendar:notice.link') }
+      </a>
+      <div className={styles.clear}></div>
     </div>
 	  
 		<table id="events-table">
 			<thead>
 				<tr className={styles.tableHead}>
 					<th scope="col" className={styles.icon_column}></th>
-					<th scope="col" className={styles.event_column}>Formula 1 Grand Prix Events {props.year}</th>
-					<th scope="col" className={styles.date_column}>Date</th>
-					<th scope="col" className={styles.time_column}>Time</th>
+					<th scope="col" className={styles.event_column}>{ t('calendar:event') } {props.year}</th>
+					<th scope="col" className={styles.date_column}>{ t('calendar:date') }</th>
+					<th scope="col" className={styles.time_column}>{ t('calendar:time') }</th>
 				</tr>
 			</thead>
 			

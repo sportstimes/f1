@@ -3,8 +3,13 @@ import Layout from "../components/Layout";
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 const moment = require('moment-timezone')
+import useTranslation from 'next-translate/useTranslation'
 
 function Timezones() {
+  const { t, lang } = useTranslation()
+  const title = t('common:title')
+  const subtitle = t('common:subtitle')
+  
 	const currentYear = '2020';
 	
 	// Picker Items
@@ -17,7 +22,7 @@ function Timezones() {
 	return (
 		<>
 			<NextSeo
-				title={`F1 Calendar ${currentYear}  - Formula One Race Times and Dates`}
+				title={`${title} ${currentYear} - ${subtitle}`}
 				description={`Formula One Calendar for ${currentYear} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
 				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${currentYear}, London, Europe`}
 				canonical="https://www.f1calendar.com/"
@@ -28,9 +33,8 @@ function Timezones() {
 				}}
 			/>
 			<Layout>
-				
 				<section>
-					<h4>Pick a timezone...</h4>
+					<h4>{ t('timezones:title') }</h4>
 					
 					<p>
 						<ul>

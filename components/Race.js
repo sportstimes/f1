@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import moment from 'moment'
 import styles from './Race.module.scss'
+import withTranslation from 'next-translate/withTranslation'
 
 class Race extends React.Component {
 		
@@ -25,19 +26,23 @@ class Race extends React.Component {
 	}
 		
 	render() {
+	  const { t } = this.props.i18n
+    const localeKey = 'calendar:races.' + this.props.item.localeKey;
+
+
   	function badgeColumnLayout(props) {
       if(props.item.tbc){
-        return (<span className={styles.tbc}>TBC</span>);
+        return (<span className={styles.tbc}>{ t('calendar:badges.tbc') }</span>);
       } else if(props.item.canceled){
-        return (<span className={styles.canceled}>Canceled</span>);
+        return (<span className={styles.canceled}>{ t('calendar:badges.canceled') }</span>);
       } else if(props.item.affiliate) {
         if(moment(props.item.sessions.race).isBefore()){
-          return (<a className={styles.tickets}>Tickets</a>);
+          return (<a className={styles.tickets}>{ t('calendar:badges.tickets') }</a>);
         } else {
-          return (<a href={ props.item.affiliate } className={styles.ticketsOver}>Tickets</a>);
+          return (<a href={ props.item.affiliate } className={styles.ticketsOver}>{ t('calendar:badges.tickets') }</a>);
         }
       } else {
-        return (<a href={ props.item.affiliate } className={styles.ticketsOver}>Tickets</a>);
+        return (<a href={ props.item.affiliate } className={styles.ticketsOver}>{ t('calendar:tickets') }</a>);
       }
     }
 
@@ -50,7 +55,12 @@ class Race extends React.Component {
 					</td>
 					<td className={styles.eventColumn}>
 						<span>
-						  { this.props.item.name } Grand Prix
+						  { t(`calendar:races.${this.props.item.localeKey}`) != localeKey ? ( 
+    						  t(`calendar:races.${this.props.item.localeKey}`)
+  						  ) : (
+    						  this.props.item.name
+  						  )
+						  }
 						</span>
 					</td>
 					<td className={styles.dateColumn}></td>
@@ -63,7 +73,6 @@ class Race extends React.Component {
       );
     }
 
-  	
 		return (
 			<tbody id={ this.props.item.slug } key={ this.props.item.slug } className={`${moment(this.props.item.sessions.race).add(2, 'hours').isBefore() ? styles.past : ''} ${this.props.index % 2 === 0 ? 'even' : styles.odd } ${this.props.isNextRace ? styles.nextEvent : ''} ${this.props.item.canceled ? styles.canceledWeekend : ''} ${this.props.item.tbc ? styles.tbcWeekend : ''}`}>			
 				<tr key={this.props.item.slug} className={styles.race} onClick={() => this.handleRowClick()}>
@@ -72,11 +81,18 @@ class Race extends React.Component {
 					</td>
 					<td className={styles.eventColumn}>
 						<span className={`${!this.props.item.tbc && !this.props.item.canceled && moment(this.props.item.sessions.race).isAfter() ? styles.confirmedWeekend : ''}`}>
-						  { this.props.item.name } Grand Prix
+						  
+						  { t(`calendar:races.${this.props.item.localeKey}`) != localeKey ? ( 
+    						  t(`calendar:races.${this.props.item.localeKey}`)
+  						  ) : (
+    						  this.props.item.name
+  						  )
+						  }
+						  
 						</span>
 						
 						{ this.props.isNextRace && !this.props.item.tbc && !this.props.item.canceled &&
-							<span className={styles.next}>NEXT</span>
+							<span className={styles.next}>{ t(`calendar:badges.next`) }</span>
 						}
 					</td>
 					<td className={styles.dateColumn}>{ moment(this.props.item.sessions.race).tz(this.props.timezone).format('D MMM') }</td>
@@ -88,7 +104,7 @@ class Race extends React.Component {
 				<tr className={`free-practice-1 ${this.state.collapsed ? styles.collapsed : styles.visible }`}>
 					<td className={styles.iconColumn}></td>
 					<td className={styles.eventColumn}>
-						Free Practice 1
+						{ t('calendar:schedule.fp1') }
 					</td>
 					<td className={styles.dateColumn}>{ moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('D MMM') }</td>
 					<td className={styles.timeColumn}>{ moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('HH:mm') }</td>
@@ -97,7 +113,7 @@ class Race extends React.Component {
 				<tr className={`free-practice-2 ${this.state.collapsed ? styles.collapsed : styles.visible }`}>
 					<td className={styles.iconColumn}></td>
 					<td className={styles.eventColumn}>
-						Free Practice 2
+						{ t('calendar:schedule.fp2') }
 					</td>
 					<td className={styles.dateColumn}>{ moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('D MMM') }</td>
 					<td className={styles.timeColumn}>{ moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('HH:mm') }</td>
@@ -106,7 +122,7 @@ class Race extends React.Component {
 				<tr className={`free-practice-3 ${this.state.collapsed ? styles.collapsed : styles.visible }`}>
 					<td className={styles.iconColumn}></td>
 					<td className={styles.eventColumn}>
-						Free Practice 3
+						{ t('calendar:schedule.fp3') }
 					</td>
 					<td className={styles.dateColumn}>{ moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('D MMM') }</td>
 					<td className={styles.timeColumn}>{ moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('HH:mm') }</td>
@@ -115,7 +131,7 @@ class Race extends React.Component {
 				<tr className={`qualifying ${this.state.collapsed ? styles.collapsed : styles.visible }`}>
 					<td className={styles.iconColumn}></td>
 					<td className={styles.eventColumn}>
-						Qualifying
+						{ t('calendar:schedule.qualifying') }
 					</td>
 					<td className={styles.dateColumn}>{ moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('D MMM') }</td>
 					<td className={styles.timeColumn}>{ moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('HH:mm') }</td>
@@ -126,4 +142,4 @@ class Race extends React.Component {
 	}
 }
 
-export default Race
+export default withTranslation(Race)

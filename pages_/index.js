@@ -1,16 +1,20 @@
 import Router from 'next/router'
 import Layout from '../components/Layout';
-import VirtualRaces from '../components/VirtualRaces';
 import Races from '../components/Races';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import RaceSchema from '../components/RaceSchema';
+import useTranslation from 'next-translate/useTranslation'
 
 const Index = (props) => {				
+  const { t, lang } = useTranslation()
+  const title = t('common:title')
+  const subtitle = t('common:subtitle')
+  
 	return (
 		<>
 			<NextSeo
-				title={`F1 Calendar ${props.year} - Formula One Race Times and Dates`}
+				title={`${title} ${props.year} - ${subtitle}`}
 				description={`Formula One Calendar for ${props.year} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
 				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${props.year}, London, Europe`}
 				canonical="https://www.f1calendar.com/"
@@ -45,36 +49,6 @@ const Index = (props) => {
     </>
 	);
 }
-
-/*
-  
-  <VirtualRaces year={ props.year } races={ props.virtual } />
-  
-  <section className="previous-years">
-					<p>
-						<Link href="years"><a>Looking for previous years?</a></Link>
-					</p>
-				</section>
-				
-				<style jsx>{`
-					.previous-years {
-						margin: 60px 0;	
-						text-align:center;
-					}
-					.previous-years a {
-						background: #1a8b73;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px;
-						font-size:15px;
-						border:0;
-						color:#fff;
-						cursor: pointer;
-						margin: 0 auto;
-					}
-			    `}</style>
-			    */
 
 Index.getInitialProps = async ({query: {timezone}, res}) => {
 	const data = await import(`../db/2020.json`)

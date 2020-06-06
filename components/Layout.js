@@ -4,9 +4,11 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CookieConsent from "react-cookie-consent";
 import styles from './Layout.module.scss'
+import useTranslation from 'next-translate/useTranslation'
 
 const Layout = props => {
-	
+  const { t, lang } = useTranslation()
+
 	function setGoogleTags() {
   	return {
     	__html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,22 +38,24 @@ const Layout = props => {
   			</Head>
   			
   			<noscript>
-  				<div className="noscript">F1 Calendar works best with Javascript Enabled.</div>
+  				<div className="noscript">{ t('common:javascript') }</div>
   			</noscript>
   			
   			<Header showOptions={props.showOptions} showCalendarExport={props.showCalendarExport} year={props.year} showPreseason={props.showPreseason} />
+  			
   			<div className={styles.main_content}>{props.children}</div>
+  			
   			<Footer />
   			
   			<CookieConsent
   			    location="bottom"
-  			    buttonText="Great!"
+  			    buttonText={t('common:cookies.button')}
   			    cookieName="f1cal"
   			    style={{ background: "#0E5143", zIndex:999999, padding:"5px 0" }}
   			    buttonStyle={{ color: "white", background:"#1a8b73", fontSize: "13px" }}
   			    expires={150}
   			>
-  			    This website uses cookies to enhance the user experience.
+  			    { t('common:cookies:title') }
   			</CookieConsent>
   			
   			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e2a277b012976e8"></script>

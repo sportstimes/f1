@@ -1,9 +1,13 @@
 import {useState} from 'react'
 import Layout from "../components/Layout";
 import { NextSeo } from 'next-seo';
+import useTranslation from 'next-translate/useTranslation'
 
 function Generate(props) {
-	
+  const { t, lang } = useTranslation()
+  const title = t('common:title')
+  const subtitle = t('common:subtitle')
+  
 	const currentYear = '2020';
 	
 	const [form, setState] = useState({
@@ -21,28 +25,41 @@ function Generate(props) {
 	    downloadURL: ''
 	})
 	
+	console.log(lang);
 		
 	const handleOnSubmit = async e => {
 		e.preventDefault()
 		
 		if(!form.p1 && !form.p2 && !form.p3 && !form.quali && !form.race && !form.virtual){
-			alert("Please select at least one session for your calendar.")
+			alert(t('generate:form.nonOptionsSelected'))
 			return
 		}
 		
-		setState({
-			...form, 
-			submitted: true, 
-			webcalURL:`webcal://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics`, 
-			googleURL:`https://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics?t=${ Date.now() }`,
-			downloadURL:`https://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics` 
-		})		
+/*
+		if(lang != "en"){
+  		setState({
+  			...form, 
+  			submitted: true, 
+  			webcalURL:`webcal://${props.domain}/${lang}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics`, 
+  			googleURL:`https://${props.domain}/${lang}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics?t=${ Date.now() }`,
+  			downloadURL:`https://${props.domain}/${lang}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics` 
+  		})
+		} else {
+*/
+  		setState({
+  			...form, 
+  			submitted: true, 
+  			webcalURL:`webcal://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics`, 
+  			googleURL:`https://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics?t=${ Date.now() }`,
+  			downloadURL:`https://${props.domain}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics` 
+  		})
+		//}
 	}
 	
 	return (
 		<>
 			<NextSeo
-				title={`F1 Calendar ${currentYear}  - Formula One Race Times and Dates`}
+				title={`${title} ${currentYear}  - ${subtitle}`}
 				description={`Formula One Calendar for ${currentYear} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
 				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${currentYear}, London, Europe`}
 				canonical={`https://${props.domain}/`}
@@ -55,87 +72,81 @@ function Generate(props) {
 			<Layout year={ props.year }>
 				{form.submitted ?
 					<>	
-						<h3>Select Calendar Type</h3>	
+						<h3>{ t('generate:download.title') }</h3>	
 										
 						<section className="card" id="download_option_ical">							
-							<h4>For Mobile or Desktop</h4>
-							<p>Automatically updating calendar for apps like Outlook and macOS Calendar.</p>
+							<h4>{ t('generate:download.webcalTitle') }</h4>
+							<p>{ t('generate:download.webcalDescription') }</p>
 							
 							<p>
 								<a href={form.webcalURL} className="button">
-									Get
+									{ t('generate:download.webcalButton') }
 								</a>
 							</p>
 						</section>
 						
 						<section className="card" id="download_option_google">
-							<h4>For Google Calendar</h4>
-							<p>To add this calendar, copy and paste this URL into Google Calendar (<a href="https://support.google.com/calendar/answer/37100?hl=en" target="_blank">detailed instructions</a>):</p>
+							<h4>{ t('generate:download.gcalTitle') }</h4>
+							<p>{ t('generate:download.gcalDescription') } (<a href="https://support.google.com/calendar/answer/37100?hl=en" target="_blank">{ t('generate:download.gcalDescriptionLink') }</a>):</p>
 							<p className="copyable">{form.googleURL}</p>
 						</section>
 												
 						<section className="card" id="download_option">
-							<h4>Download ICS File</h4>
-							<p>Non-updating calendar (.ics) for calendars that can’t handle updating subscriptions.</p>		
+							<h4>{ t('generate:download.icsTitle') }</h4>
+							<p>{ t('generate:download.icsDescription') }</p>		
 							<p>					
 								<a href={form.downloadURL} className="button">
-									Download
+									{ t('generate:download.icsButton') }
 								</a>
 							</p>
 						</section>
 					</>
 				:				
 					<>
-						<h3>Generate Calendar</h3>
+						<h3>{ t('generate:form.title') }</h3>
 						<section className="card">
-							<p>First, pick which F1 race weekend sessions you would like to add to your calendar:</p>
+							<p>{ t('generate:form.description') }</p>
 							
 							<form id="download_subscribe" onSubmit={handleOnSubmit}>	
 								<fieldset>
 									<div className="field">
 										<input type="checkbox" name="p1" id="p1" defaultValue="on" defaultChecked="checked" onChange={event => setState({...form, p1: event.target.checked })} />
-										<label htmlFor="p1">Practice 1</label>
+										<label htmlFor="p1">{ t('generate:form.fp1') }</label>
 									</div>
 		
 									<div className="field">
 										<input type="checkbox" name="p2" id="p2" defaultValue="on" defaultChecked="checked" onChange={event => setState({...form, p2: event.target.checked })} />
-										<label htmlFor="p2">Practice 2</label>
+										<label htmlFor="p2">{ t('generate:form.fp2') }</label>
 									</div>
 		
 									<div className="field">
 										<input type="checkbox" name="p3" id="p3" defaultValue="on" defaultChecked="checked" onChange={event => setState({...form, p3: event.target.checked })} />
-										<label htmlFor="p3">Practice 3</label>
+										<label htmlFor="p3">{ t('generate:form.fp3') }</label>
 									</div>
 		
 									<div className="field">
 										<input type="checkbox" name="q" id="q" defaultValue="on" defaultChecked="checked" onChange={event => setState({...form, quali: event.target.checked })} />
-										<label htmlFor="q">Qualifying</label>
+										<label htmlFor="q">{ t('generate:form.qualifying') }</label>
 									</div>
 		
 									<div className="field">
 										<input type="checkbox" name="gp" id="gp" defaultValue="on" defaultChecked="checked" onChange={event => setState({...form, race: event.target.checked })} />
-										<label htmlFor="gp">Grand Prix</label>
+										<label htmlFor="gp">{ t('generate:form.grandPrix') }</label>
 									</div>
-								</fieldset>
-		
-                
-								<fieldset id="virtualRaces">
-								  <input type="checkbox" name="virtual" id="virtual" onChange={event => setState({...form, virtual: event.target.checked })} />
-									<label htmlFor="gp">Include Virtual Grand Prix Series <a href="https://www.formula1.com/en/latest/article.formula-1-launches-virtual-grand-prix-series-to-replace-postponed-races.1znLAbPzBbCQPj1IDMeiOi.html" target="_blank">(What's this?)</a></label>
 								</fieldset>
 		
 								<fieldset id="set_alarms">
 									<div className="field">
 										<input type="checkbox" name="alarm" id="alarm" value="off" onChange={event => setState({...form, alarm: event.target.checked })} />
-										<label htmlFor="alarm">Set a reminder</label> <input type="number" name="mins" id="alarm-mins" step="5" min="0" max="120" defaultValue="20" onChange={event => setState({...form, mins: event.target.value })} /><label htmlFor="alarms-before">minutes before each event in your season calendar</label>
+										<label htmlFor="alarm">{ t('generate:form.reminder') }</label> <input type="number" name="mins" id="alarm-mins" step="5" min="0" max="120" defaultValue="20" onChange={event => setState({...form, mins: event.target.value })} /><label htmlFor="alarms-before">{ t('generate:form.reminderContinued') }</label>
 									</div>
 								</fieldset>
 								
 								<fieldset id="buttons">
 									<button type="submit">
 							          {!form.submitted
-							              ? 'Get Calendar'
-							              : 'Submitted'}
+							              ? t('generate:form.button')
+							              : t('generate:form.buttonSubmitted')}
 							        </button>
 								</fieldset>
 							</form>

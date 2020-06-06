@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import Logo from "./Logo";
-import Link from 'next/link';
 import OptionsBar from "./OptionsBar";
 import styles from './Header.module.scss'
+import useTranslation from 'next-translate/useTranslation'
+import Link from 'next-translate/Link'
 
 export function Header(props) {
+  const { t, lang } = useTranslation()
+  const title = t('common:title')
+  
   return (
     <header className={styles.header}>
     	<div className={styles.container}>
@@ -16,14 +20,19 @@ export function Header(props) {
     				<h1>
     					<Link href="/">
       					<a>
-        					Formula One Race Calendar&nbsp;
+        					{ title }&nbsp;
         					{ props.year && 
         						<span>{ props.year }</span>
         					}
+        					
+        					{ lang != "en" &&
+          					 <span> | {lang.toUpperCase()}</span>
+        					}
+        					
       					</a>
     					</Link>
     				</h1>
-  		    	<h2><Link href="/"><a>Races, Qualifying &amp; Practice Sessions</a></Link></h2>
+  		    	<h2><Link href="/"><a>{ t('common:subtitle') }</a></Link></h2>
   	    	</div>
   		    <div className={styles.clear}></div>
     		</div>
