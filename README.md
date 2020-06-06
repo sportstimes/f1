@@ -1,15 +1,19 @@
 <p align="center">
-    <img src="https://f1calendar.com/share.png" width="600" alt="F1 Calendar" />
+    <a href="https://f1calendar.com"><img src="https://f1calendar.com/share.png" width="600" alt="F1 Calendar" /></a>
 </p>
+
+_The second edition of [f1calendar.com](https://f1calendar.com)_
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 
 ## Running Locally
 
 ```
 npm run dev
 ```
-
-When editing pages, edit the page within pages_, the contents of pages is automatically built to handle the various locales supported by F1 Calendar.
-
 
 ## Localization
 
@@ -24,8 +28,23 @@ Go through each of the json files and translate the English to your chosen langu
 
 Once completed feel free to submit a PR, we will be happy to configure the rest of the app to make use of the new strings.
 
-
-## Contributors
-Coming Soon
+## Contributors ✨
 
 Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajhiggs](https://twitter.com/aajhiggs) and [@si](https://twitter.com/si).
+
+Thanks goes to these wonderful people who have also contributed. ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Russ-K"><img src="https://avatars3.githubusercontent.com/u/4568306?v=4" width="100px;" alt=""/><br /><sub><b>Russell K</b></sub></a><br /><a href="#content-Russ-K" title="Content">🖋</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
