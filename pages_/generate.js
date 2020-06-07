@@ -9,7 +9,9 @@ function Generate(props) {
   const title = t('common:title')
   const subtitle = t('common:subtitle')
   
-	const currentYear = '2020';
+  const currentYear = '2020';
+  const metaDescription = t('common:meta.description', { year: currentYear })
+  const metaKeywords = t('common:meta.keywords', { year: currentYear })
 	
 	const [form, setState] = useState({
 	    p1: true,
@@ -59,8 +61,8 @@ function Generate(props) {
 		<>
 			<NextSeo
 				title={`${title} ${currentYear}  - ${subtitle}`}
-				description={`Formula One Calendar for ${currentYear} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${currentYear}, London, Europe`}
+				description={metaDescription}
+				keywords={metaKeywords}
 			/>
 			<Layout year={ props.year }>
 				{form.submitted ?

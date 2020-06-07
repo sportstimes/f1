@@ -11,7 +11,9 @@ function Timezones() {
   const subtitle = t('common:subtitle')
   
 	const currentYear = '2020';
-	
+  const metaDescription = t('common:meta.description', { year: currentYear })
+  const metaKeywords = t('common:meta.keywords', { year: currentYear })
+  	
 	// Picker Items
     const timezoneItems = []
 	let zoneslist = moment.tz.names()
@@ -23,8 +25,8 @@ function Timezones() {
 		<>
 			<NextSeo
 				title={`${title} ${currentYear} - ${subtitle}`}
-				description={`Formula One Calendar for ${currentYear} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${currentYear}, London, Europe`}
+				description={metaDescription}
+				keywords={metaKeywords}
 			/>
 			<Layout>
 				<section>

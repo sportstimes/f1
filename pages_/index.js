@@ -11,12 +11,16 @@ const Index = (props) => {
   const title = t('common:title')
   const subtitle = t('common:subtitle')
   
+  const currentYear = '2020';
+  const metaDescription = t('common:meta.description', { year: currentYear })
+  const metaKeywords = t('common:meta.keywords', { year: currentYear })
+  
 	return (
 		<>
 			<NextSeo
 				title={`${title} ${props.year} - ${subtitle}`}
-				description={`Formula One Calendar for ${props.year} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${props.year}, London, Europe`}
+				description={metaDescription}
+				keywords={metaKeywords}
 			/>
 	    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
 				<Races year={ props.year } races={ props.races } />
@@ -31,7 +35,9 @@ const Index = (props) => {
 }
 
 Index.getInitialProps = async ({query: {timezone}, res}) => {
-	const data = await import(`../db/2020.json`)
+  const currentYear = '2020';
+
+	const data = await import(`../db/`+currentYear+`.json`)
 	
 	// Handle cases where we're not able to automatically switch dates/times (noscript)
 	if(timezone){
@@ -43,7 +49,7 @@ Index.getInitialProps = async ({query: {timezone}, res}) => {
 	}
 	
 	return {
-	    year: "2020",
+	    year: currentYear,
 	    races: data.races,
 	    virtual: data.virtual
 	}
