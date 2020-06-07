@@ -23,18 +23,17 @@ class OptionsBar extends React.Component {
 		})
 	}
 	
-    onChange = event => { 
-	    this.context.setTimezone(event.target.value);
+  onChange = event => { 
+    this.context.setTimezone(event.target.value);
 	}
     
-    togglePicker = event => { 
-	    event.preventDefault()
+  togglePicker = event => { 
+    event.preventDefault()
 	    
-	    this.setState({
+    this.setState({
 			pickerShowing: !this.state.pickerShowing
 		})
 	}
-	
 	
 	render() {
 	  const { t, lang } = this.props.i18n

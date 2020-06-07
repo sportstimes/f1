@@ -2,6 +2,7 @@ import {useState} from 'react'
 import Layout from "../components/Layout";
 import { NextSeo } from 'next-seo';
 import useTranslation from 'next-translate/useTranslation'
+import Router from 'next-translate/Router'
 
 function Generate(props) {
   const { t, lang } = useTranslation()
@@ -233,8 +234,8 @@ function Generate(props) {
 
 Generate.getInitialProps = async ({ req }) => {
 	return {
-		domain: req.headers.host,
-	    year: "2020"
+		domain: req ? req.headers["x-forwarded-host"] || req.headers["host"] : window.location.host,
+    year: "2020"
 	}
 }
 
