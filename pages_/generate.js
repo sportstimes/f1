@@ -60,12 +60,6 @@ function Generate(props) {
 				title={`${title} ${currentYear}  - ${subtitle}`}
 				description={`Formula One Calendar for ${currentYear} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
 				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${currentYear}, London, Europe`}
-				canonical={`https://${props.domain}/`}
-				twitter={{
-					handle: '@f1cal',
-					site: '@f1cal',
-					cardType: 'summary_large_image',
-				}}
 			/>
 			<Layout year={ props.year }>
 				{form.submitted ?

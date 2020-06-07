@@ -17,26 +17,6 @@ const Index = (props) => {
 				title={`${title} ${props.year} - ${subtitle}`}
 				description={`Formula One Calendar for ${props.year} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
 				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${props.year}, London, Europe`}
-				canonical="https://www.f1calendar.com/"
-				twitter={{
-					handle: '@f1cal',
-					site: '@f1cal',
-					cardType: 'summary_large_image',
-				}}
-				openGraph={{
-					url: "https://www.f1calendar.com/",
-					title: "F1 Calendar 2020 - Formula One Race Times and Dates",
-					description: "Formula One Calendar for 2020 season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-					site_name: "F1 Calendar 2020",
-					images: [
-	          {
-	            url: 'https://www.f1calendar.com/share.png',
-	            width: 1200,
-	            height: 628,
-	            alt: 'F1 Calendar 2020',
-	          },
-	        ]
-				}}
 			/>
 	    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
 				<Races year={ props.year } races={ props.races } />
