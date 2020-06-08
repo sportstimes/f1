@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "build:calendars": "node ./utils/generate-calendars.js",
     "start": "next start"
   },
   "repository": {
