@@ -28,7 +28,7 @@ export default class Calendar extends React.Component {
 		
 		let request = query.calendar.replace(".ics", "");
 		
-		var includeFP1, includeFP2, includeFP3, includeQuali, includeRace, includeVirtual = false
+		var includeFP1, includeFP2, includeFP3, includeQuali, includeRace = false
 		var alarmEnabled = false
 
 		if(request.includes("p1")){
@@ -47,10 +47,6 @@ export default class Calendar extends React.Component {
 			includeRace = true
 		}
 		
-		if(request.includes("virtual")){
-			includeVirtual = true
-		}
-		
 		if(request.includes("alarm")){
 			alarmEnabled = true
 		}
@@ -62,7 +58,7 @@ export default class Calendar extends React.Component {
 		}
 		
 		// No params set so lets just default to what makes sense...
-		if(!includeFP1 && !includeFP2 && !includeFP3 && !includeQuali && !includeRace && !includeVirtual){
+		if(!includeFP1 && !includeFP2 && !includeFP3 && !includeQuali && !includeRace){
   		includeFP1 = true
   		includeFP2 = true
   		includeFP3 = true
@@ -164,71 +160,7 @@ export default class Calendar extends React.Component {
   		}
 		}
 		
-		
-		// Virtual Races
-		if(includeVirtual){
-  		const virtualRaces = data.virtual;
-  		
-  		var i = 0;
-  		for (i = 0; i < virtualRaces.length; i++) { 
-  			let virtualRace = virtualRaces[i]
-  			
-  			// Check we have sessions as we'll keep them out of TBC races unless we have tentative dates.			
-  			if(virtualRace.sessions != null){
-    			
-    			var title = virtualRace.name + " Virtual Grand Prix";
-    			var category = "Virtual Grand Prix";
-    			var session = virtualRace.sessions["race"]
-    			var sessionKey = virtualRace.name + "_virtualgp";
-    			
-    			let alarms = []
-    				
-  				if(alarmEnabled){
-  					var alarmDescription = title + " starts in "+alarmOffset+" minutes"
-  					alarms.push({
-  						action: 'display',
-  						description: alarmDescription,
-  						trigger: {minutes:alarmOffset, before:true},
-  						repeat: 0,
-  					})
-  				}
-  				
-  				let start = moment(session).format('YYYY-M-D-H-m').split("-")
-  				let end = moment(session).add(90, 'minutes').format('YYYY-M-D-H-m').split("-")
-  				
-  				var status = "CONFIRMED";
-  				if(virtualRace.tbc){
-  					status = "TENTATIVE";
-  					title = "(TBC) " + title;
-  				}
-  				
-  				if(virtualRace.canceled){
-  					status = "CANCELLED";
-  					title = "(CANCELED) " + title;
-  				}
-  
-  				
-  				let event = {
-  					title: title,
-  					location: virtualRace.location,
-  					productId:"f1calendar.com",
-  					uid: "http://2020.f1calendar.com/#GP"+i+"_2020_"+sessionKey,
-  					categories: [category],
-  					start: start,
-  					end: end,
-  					geo: { lat: virtualRace.latitude, lon: virtualRace.longitude },
-  					sequence: "2020",
-  					alarms: alarms,
-  					status: status,
-  					url: virtualRace.link
-  				}
-  				events.push(event)
-    		}
-  			
-  		}
-    }
-		
-		
+				
 		ics.createEvents(events, (error, value) => {
 			if (error) {
 				res.statusCode = 400
