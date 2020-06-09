@@ -117,13 +117,7 @@ function Generate(props) {
 										<label htmlFor="gp">Grand Prix</label>
 									</div>
 								</fieldset>
-		
-                
-								<fieldset id="virtualRaces">
-								  <input type="checkbox" name="virtual" id="virtual" onChange={event => setState({...form, virtual: event.target.checked })} />
-									<label htmlFor="gp">Include Virtual Grand Prix Series <a href="https://www.formula1.com/en/latest/article.formula-1-launches-virtual-grand-prix-series-to-replace-postponed-races.1znLAbPzBbCQPj1IDMeiOi.html" target="_blank">(What's this?)</a></label>
-								</fieldset>
-		
+				
 								<fieldset id="set_alarms">
 									<div className="field">
 										<input type="checkbox" name="alarm" id="alarm" value="off" onChange={event => setState({...form, alarm: event.target.checked })} />
