@@ -55,7 +55,7 @@ const Layout = props => {
   			    buttonStyle={{ color: "white", background:"#1a8b73", fontSize: "13px" }}
   			    expires={150}
   			>
-  			    { t('common:cookies:title') }
+  			    { t('common:cookies.title') }
   			</CookieConsent>
   			
   			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e2a277b012976e8"></script>
