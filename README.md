@@ -1,15 +1,32 @@
-# F1 Calendar 🏎️
+<p align="center">
+    <a href="https://f1calendar.com"><img src="https://f1calendar.com/share.png" width="600" alt="F1 Calendar" /></a>
+</p>
+
+_The second edition of [f1calendar.com](https://f1calendar.com)_
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-_The second edition of [f1calendar.com](https://f1calendar.com)_
 
 ## Running Locally
 
 ```
 npm run dev
 ```
+
+## Localization
+
+F1 Calendar can now be localized. Localization files live within the locales directory. We rely on community contributions to add additional languages to the calendar. 
+
+
+### Adding a new language
+
+In the locales folder copy the "en" directory and create a new directory with the two letter code for the new locale you want to add.
+
+Go through each of the json files and translate the English to your chosen language. Feel free to create an issue if you require more context for a string.
+
+Once completed feel free to submit a PR, we will be happy to configure the rest of the app to make use of the new strings.
 
 ## Contributors ✨
 

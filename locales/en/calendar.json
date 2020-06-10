@@ -1,0 +1,48 @@
+{
+  "date": "Date",
+  "time": "Time",
+  "event": "Formula 1 Grand Prix Events",
+  "notice": {
+    "text": "First 8 races of the revised calendar below. Times are TBC along with additional races.",
+    "link": "Read more"
+  },
+  "badges": {
+    "tbc": "TBC",
+    "tickets": "Tickets",
+    "canceled": "Canceled",
+    "next": "NEXT"
+  },
+  "schedule": {
+    "fp1": "Free Practice 1",
+    "fp2": "Free Practice 2",
+    "fp3": "Free Practice 3",
+    "qualifying": "Qualifying",
+    "race": "Race"
+  },
+  "races": {
+    "austrian-grand-prix": "Austrian Grand Prix",
+    "steiermark-grand-prix": "Steiermark (Austrian) Grand Prix",
+    "hungary-grand-prix": "Hungaria Grand Prix",
+    "british-grand-prix": "British Grand Prix",
+    "anniversary-british-grand-prix": "70th Anniversary (British) Grand Prix",
+    "spanish-grand-prix": "Spanish Grand Prix",
+    "belgian-grand-prix": "Belgian Grand Prix",
+    "italian-grand-prix": "Italian Grand Prix",
+    "australian-grand-prix": "Australian Grand Prix",
+    "bahrain-grand-prix": "Bahrain Grand Prix",
+    "vietnamese-grand-prix": "Vietnamese Grand Prix",
+    "china-grand-prix": "Chinese Grand Prix",
+    "dutch-grand-prix": "Dutch Grand Prix",
+    "monoco-grand-prix": "Monaco Grand Prix",
+    "azerbaijan-grand-prix": "Azerbaijan Grand Prix",
+    "canadian-grand-prix": "Canadian Grand Prix",
+    "french-grand-prix": "French Grand Prix",
+    "singapore-grand-prix": "Singapore Grand Prix",
+    "russian-grand-prix": "Russian Grand Prix",
+    "japanese-grand-prix": "Japanese Grand Prix",
+    "us-grand-prix": "United States Grand Prix",
+    "mexico-grand-prix": "Mexico City Grand Prix",
+    "brazilian-grand-prix": "Brazilian Grand Prix",
+    "abu-dhabi-grand-prix": "Abu Dhabi Grand Prix"
+  }
+}

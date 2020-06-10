@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Generate Calendar",
+    "description": "First, pick which F1 race weekend sessions you would like to add to your calendar:",
+    "fp1": "Free Practice 1",
+    "fp2": "Free Practice 2",
+    "fp3": "Free Practice 3",
+    "qualifying": "Qualifying",
+    "grandPrix": "Grand Prix",
+    "reminder": "Set a reminder",
+    "reminderContinued": "minutes before each event in your season calendar.",
+    "button": "Get Calendar",
+    "buttonSubmitted": "Submitted",
+    "nonOptionsSelected": "Please select at least one session for your calendar."
+  },
+  "download": {
+    "title": "Select Calendar Type",
+    "webcalTitle": "For Mobile or Desktop",
+    "webcalDescription": "Automatically updating calendar for apps like Outlook and macOS Calendar.",
+    "webcalButton": "Get",
+    "gcalTitle": "For Google Calendar",
+    "gcalDescription": "To add this calendar, copy and paste this URL into Google Calendar",
+    "gcalDescriptionLink": "detailed instructions",
+    "icsTitle": "Download ICS File",
+    "icsDescription": "Non-updating calendar (.ics) for calendars that can’t handle updating subscriptions.",
+    "icsButton": "Download"
+  }
+}

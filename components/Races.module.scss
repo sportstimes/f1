@@ -16,16 +16,43 @@
 	
 	.notice {
     background:#f87639;
-    padding: 10px 25px;
+    height:46px;
     margin-bottom: 16px;
     border-radius: 3px 3px 3px 3px;
 		-moz-border-radius: 3px 3px 3px 3px;
 		-webkit-border-radius: 3px 3px 3px 3px;
+		padding: 0 16px;
+		
+		p {
+  		float:left;
+  		line-height: 45px;
+		}
+		
+		.link {
+  		float: right;
+  		line-height: 45px;
+		}
+		
+		.clear {
+  		clear: both;
+		}
   }
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
 		.notice {
       padding: 10px 12px;
+      height: auto;
+      
+      p {
+    		float:none;
+    		line-height: normal;
+  		}
+  		
+  		.link {
+    		float: none;
+    		line-height: normal;
+  		}
+      
 		}
 	}
   

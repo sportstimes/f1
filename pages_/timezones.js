@@ -3,38 +3,40 @@ import Layout from "../components/Layout";
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 const moment = require('moment-timezone')
+import useTranslation from 'next-translate/useTranslation'
 
-function Years() {
-    const yearItems = []
-	let supportedYears = ["2020", "2019", "2018"]
-	for (let year in supportedYears) {
-		yearItems.push(<li key={supportedYears[year]}><Link href={`year/${supportedYears[year]}`}><a>{supportedYears[year]}</a></Link></li>)
+function Timezones() {
+  const { t, lang } = useTranslation()
+  const title = t('common:title')
+  const subtitle = t('common:subtitle')
+  
+	const currentYear = '2020';
+  const metaDescription = t('common:meta.description', { year: currentYear })
+  const metaKeywords = t('common:meta.keywords', { year: currentYear })
+  	
+	// Picker Items
+    const timezoneItems = []
+	let zoneslist = moment.tz.names()
+	for (let zone in zoneslist) {
+		timezoneItems.push(<li key={zoneslist[zone]}><Link href={`timezone/${zoneslist[zone]}`}><a>{zoneslist[zone]}</a></Link></li>)
 	}
 	
 	return (
 		<>
 			<NextSeo
-				title={`F1 Calendar Archive  - Formula One Race Times and Dates`}
-				description={`Formula One Calendar Archive with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe`}
-				canonical="https://www.f1calendar.com/"
-				twitter={{
-					handle: '@f1cal',
-					site: '@f1cal',
-					cardType: 'summary_large_image',
-				}}
+				title={`${title} ${currentYear} - ${subtitle}`}
+				description={metaDescription}
+				keywords={metaKeywords}
 			/>
 			<Layout>
-				
 				<section>
-					<h4>Pick a year...</h4>
-				
+					<h4>{ t('timezones:title') }</h4>
+					
 					<p>
-					<ul>
-						{yearItems}
-					</ul>
+						<ul>
+							{timezoneItems}
+						</ul>
 					</p>
-				
 				</section>
 				
 				
@@ -96,4 +98,4 @@ function Years() {
 }
 
 
-export default Years;
+export default Timezones;

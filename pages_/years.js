@@ -3,23 +3,25 @@ import Layout from "../components/Layout";
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 const moment = require('moment-timezone')
+import useTranslation from 'next-translate/useTranslation'
 
-function Timezones() {
-	const currentYear = '2020';
-	
-	// Picker Items
-    const timezoneItems = []
-	let zoneslist = moment.tz.names()
-	for (let zone in zoneslist) {
-		timezoneItems.push(<li key={zoneslist[zone]}><Link href={`timezone/${zoneslist[zone]}`}><a>{zoneslist[zone]}</a></Link></li>)
+function Years() {
+  const { t, lang } = useTranslation()
+  const title = t('common:title')
+  const subtitle = t('common:subtitle')
+  
+  const yearItems = []
+	let supportedYears = ["2020", "2019", "2018"]
+	for (let year in supportedYears) {
+		yearItems.push(<li key={supportedYears[year]}><Link href={`year/${supportedYears[year]}`}><a>{supportedYears[year]}</a></Link></li>)
 	}
 	
 	return (
 		<>
 			<NextSeo
-				title={`F1 Calendar ${currentYear}  - Formula One Race Times and Dates`}
-				description={`Formula One Calendar for ${currentYear} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${currentYear}, London, Europe`}
+				title={`F1 Calendar Archive  - Formula One Race Times and Dates`}
+				description={`Formula One Calendar Archive with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
+				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe`}
 				canonical="https://www.f1calendar.com/"
 				twitter={{
 					handle: '@f1cal',
@@ -30,13 +32,14 @@ function Timezones() {
 			<Layout>
 				
 				<section>
-					<h4>Pick a timezone...</h4>
-					
+					<h4>{ t('years:title') }</h4>
+				
 					<p>
-						<ul>
-							{timezoneItems}
-						</ul>
+					<ul>
+						{yearItems}
+					</ul>
 					</p>
+				
 				</section>
 				
 				
@@ -98,4 +101,4 @@ function Timezones() {
 }
 
 
-export default Timezones;
+export default Years;
