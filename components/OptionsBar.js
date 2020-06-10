@@ -90,7 +90,7 @@ class OptionsBar extends React.Component {
                         <div className={styles.options}>
                             <div className={styles.currentTimezone}>
                                 <a onClick={this.togglePicker}>
-                                    {t('common:options.timezonePicker.showing')} for <strong>{this.context.timezone && this.context.timezone.replace("_", " ")}</strong>.
+                                    {t('common:options.timezonePicker.showing')} <strong>{this.context.timezone && this.context.timezone.replace("_", " ")}</strong>.
                                 </a>
                             </div>
                             {this.props.showCalendarExport &&
