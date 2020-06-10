@@ -11,7 +11,7 @@ import fixHref from 'next-translate/fixHref'
 class Header extends React.Component {
     onChange = event => {
         if(event.target.value === "add"){
-            document.location.href = 'https://github.com/sportstimes/f1';
+            document.location.href = 'https://github.com/sportstimes/f1/tree/master/locales';
             return;
         }
 
@@ -40,7 +40,7 @@ class Header extends React.Component {
             languageItems.push(<option value={lng} key={lng}>{lng.toUpperCase()}</option>);
         })
 
-        languageItems.push(<option value="add" key="Add">Contribute +</option>);
+        languageItems.push(<option value="add" key="Add">{ t('common:contribute') } +</option>);
 
         return (
             <header className={styles.header}>
