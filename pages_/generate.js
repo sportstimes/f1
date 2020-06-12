@@ -234,12 +234,16 @@ function Generate(props) {
 	);
 }
 
-Generate.getInitialProps = async ({ req }) => {
-	return {
-		domain: req ? req.headers["x-forwarded-host"] || req.headers["host"] : window.location.host,
-    year: "2020"
-	}
-}
-
-
 export default Generate;
+
+export const getStaticProps = async ({ params }) => {
+
+	const url = process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}` : 'f1calendar.com'
+
+	return {
+		props: {
+			domain: url,
+			year: "2020"
+		}
+	}
+};
