@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Kalender Generieren",
+    "description": "Wähle welche Sitzungen in deinem Kalender erscheinen sollen:",
+    "fp1": "Freies Training 1",
+    "fp2": "Freies Training 2",
+    "fp3": "Freies Training 3",
+    "qualifying": "Qualifying",
+    "grandPrix": "Großer Preis",
+    "reminder": "Erinnerung",
+    "reminderContinued": "Minuten vor einem Event im Kalender",
+    "button": "Kalender herunterladen",
+    "buttonSubmitted": "Übertragen",
+    "nonOptionsSelected": "Bitte mindestens eine Sitzung auswählen."
+  },
+  "download": {
+    "title": "Kalender-Typ wählen",
+    "webcalTitle": "Für Handy oder Computer",
+    "webcalDescription": "Kalender mit automatischen Updates für Outlook oder macOS Kalender.",
+    "webcalButton": "Holen",
+    "gcalTitle": "Für Google Kalender",
+    "gcalDescription": "Um den Kalender hinzuzufügen bitte diese URL in Google Kalender einfügen",
+    "gcalDescriptionLink": "Detaillierte Anleitung",
+    "icsTitle": "ICS-Datei herunterladen",
+    "icsDescription": "Fester Kalender (.ics) für Anwendungen die keine Aktualisierungen unterstützen.",
+    "icsButton": "Download"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "F1 Kalender",
+  "subtitle": "Rennen, Qualifying & Freies Training",
+  "meta":{
+    "description": "Formel 1 Kalender für die Saison {{year}}. Alle Rennen, Traningssizungen und Qualifyings. Mit Benachrichtigungen für alle Zeitzonen. Zum herunterladen oder abonnieren.",
+    "keywords": "F1, formel 1, rennzeiten, rennen, erinnerung, benachrichtigungen, großer preis, kalender, daten, startzeiten, qualifying, training, Berlin, Europe, {{year}}"
+  },
+  "options": {
+    "calendar": "Füge die Daten deinem Handy, Kalender (Outlook oder Google) hinzu.",
+    "timezonePicker": {
+      "showing": "Zeige Zeiten für",
+      "pick": "Wähle eine Zeitzone...",
+      "button": "Fertig"
+    }
+  },
+  "contribute": "Beitragen",
+  "cookies": {
+    "title": "Diese Webseite nutzt Cookies um das Benutzererlebnis zu verbessern",
+    "button": "Super!"
+  },
+  "javascript": "F1 Kalender funktioniert am besten mit aktiviertem Javascript!",
+  "footer": {
+    "coffee": "Ünterstütze F1 Kalender. Kaufe uns einen Kaffe.",
+    "twitter": "Wir sind auf Twitter",
+    "github": "Offener Quellcode auf GitHub",
+    "issue": "Fehler gefunden? Melden",
+    "links": {
+      "wereOn": "Wir sind auf",
+      "openSourcedOn": "Offener Quellcode auf",
+      "spottedIssue": "Fehler gefunden?",
+      "spottedReport": "Melden"
+    }
+  }
+}
