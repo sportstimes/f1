@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Kalender generieren",
+    "description": "Zuerst, wähle welche F1 Sessions du zu deinem Kalender hinzufügen willst:",
+    "fp1": "Freies Training 1",
+    "fp2": "Freies Training 2",
+    "fp3": "Freies Training 3",
+    "qualifying": "Qualifikation",
+    "grandPrix": "Großer Preis",
+    "reminder": "Erinnerung aktivieren",
+    "reminderContinued": "Minuten vor einem Event in deinem Saisonkalender.",
+    "button": "Kalender beziehen",
+    "buttonSubmitted": "Bestätigen",
+    "nonOptionsSelected": "Bitte wähle mindestens eine Session für deinen Kalender aus."
+  },
+  "download": {
+    "title": "Wähle den Kalendertyp",
+    "webcalTitle": "Für Mobil oder Desktop",
+    "webcalDescription": "Automatisch aktualisierender Kalender für Apps wie Outlook und macOS Kalender.",
+    "webcalButton": "Hinzufügen",
+    "gcalTitle": "Für Google Calendar",
+    "gcalDescription": "Um diesen Kalender hinzuzufügen, kopiere diese URL und füge sie im Google Kalender ein.",
+    "gcalDescriptionLink": "Genaue Anweisungen",
+    "icsTitle": "ICS Datei herunterladen",
+    "icsDescription": "Nicht-aktualisierende Kalenderdatei (.ics) für Kalender, die nicht mit externen Aktualisierungen umgehen können.",
+    "icsButton": "Herunterladen"
+  }
+}
