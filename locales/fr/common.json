@@ -6,7 +6,7 @@
     "keywords": "F1, formule un, horaires des courses, courses, rappel, alertes, grands prix, grand prix, calendrier, dates, heures de départ, qualifications, essais, Londres, Europe, {{year}}"
   },
   "options": {
-    "calendar": "Ajouter ces dates et horaires de Grand Prix à votre mobile, calendrier Outlook ou Google Calendar.",
+    "calendar": "Ajouter ces dates et horaires de grand Prix à votre calendrier.",
     "timezonePicker": {
       "showing": "Montrer les horaires pour",
       "pick": "Choisissez un fuseau horaire...",
