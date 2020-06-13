@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Génerer un calendrier",
+    "description": "Choisissez quelles séances des weekends de Grand Prix vous souhaitez ajouter à votre calendrier&nbsp:",
+    "fp1": "Essais libres 1",
+    "fp2": "Essais libres 2",
+    "fp3": "Essais libres 3",
+    "qualifying": "Qualifications",
+    "grandPrix": "Grand Prix",
+    "reminder": "Créer un rappel",
+    "reminderContinued": "minutes avant chaque évènement de votre calendrier de la saison.",
+    "button": "Obtenir le calendrier",
+    "buttonSubmitted": "Envoyé",
+    "nonOptionsSelected": "Veuillez sélectionner au moins une séance pour votre calendrier."
+  },
+  "download": {
+    "title": "Selectionnez le type de calendrier",
+    "webcalTitle": "Pour Mobile ou Desktop",
+    "webcalDescription": "Mettre automatiquement à jour le calendrier pour des applications telles que Outlook et macOS Calendar.",
+    "webcalButton": "Obtenir",
+    "gcalTitle": "Pour Google Calendar",
+    "gcalDescription": "Pour ajouter le calendrier, copiez-collez ce lien dans Google Calendar",
+    "gcalDescriptionLink": "Instructions détaillées",
+    "icsTitle": "Télécharger le fichier ICS",
+    "icsDescription": "Calendrier hors connexion (.ics) pour les calendriers qui ne supportent pas les mises à jour.",
+    "icsButton": "Télécharger"
+  }
+}

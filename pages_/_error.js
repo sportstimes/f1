@@ -2,19 +2,12 @@ import {useState} from 'react'
 import Layout from "../components/Layout";
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
-const moment = require('moment-timezone')
 
-function Years() {
-    const yearItems = []
-	let supportedYears = ["2020", "2019", "2018"]
-	for (let year in supportedYears) {
-		yearItems.push(<li key={supportedYears[year]}><Link href={`year/${supportedYears[year]}`}><a>{supportedYears[year]}</a></Link></li>)
-	}
-	
-	return (
-		<>
+function CustomError({ statusCode }) {
+  return (
+    <>
 			<NextSeo
-				title={`F1 Calendar Archive  - Formula One Race Times and Dates`}
+				title={`F1 Calendar  - Formula One Race Times and Dates`}
 				description={`Formula One Calendar Archive with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
 				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe`}
 				canonical="https://www.f1calendar.com/"
@@ -26,33 +19,28 @@ function Years() {
 			/>
 			<Layout>
 				
-				<section>
-					<h4>Pick a year...</h4>
-				
-					<p>
-					<ul>
-						{yearItems}
-					</ul>
-					</p>
-				
+				<h3>Whoops - Error {statusCode}</h3>
+				<section className="card">
+					<p>We bumped into a wall on the circuit...</p>
+					<p>Help us into the pits, by letting us know on <a href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue...">Twitter</a>.</p>	
 				</section>
 				
 				
 				<style jsx>{`
-					form {
-						border: 1px solid #151515;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						border-radius: 4px;
-						vertical-align:middle;
+					.card {
+						background:#141414;
+						-webkit-border-radius: 15px;
+						-moz-border-radius: 15px;
+						padding:25px 25px 10px 25px;
+						margin-bottom:16px;
 					}
-					fieldset {
-						border:0;	
+					.card h4 {
+						margin-top:0;
+						font-size:18px;
+						margin-bottom:8px;
 					}
-					
-					p {
-						margin-bottom: 15px;	
+					.card p {
+						margin-bottom:15px;
 					}
 					
 					button {
@@ -92,8 +80,27 @@ function Years() {
 			    `}</style>
 			</Layout>
 		</>
-	);
+  );
 }
 
+function getInitialProps({ res, err }) {
+  let statusCode;
+  // If the res variable is defined it means nextjs
+  // is in server side
+  if (res) {
+    statusCode = res.statusCode;
+  } else if (err) {
+    // if there is any error in the app it should
+    // return the status code from here
+    statusCode = err.statusCode;
+  } else {
+    // Something really bad/weird happen and status code
+    // cannot be determined.
+    statusCode = null;
+  }
+  return { statusCode };
+}
 
-export default Years;
+CustomError.getInitialProps = getInitialProps;
+
+export default CustomError;

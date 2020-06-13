@@ -13,6 +13,60 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "carronol",
+      "name": "Olivier CARRON",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/36953864?v=4",
+      "profile": "https://github.com/carronol",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Alen13ASC",
+      "name": "Alen13ASC",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/66845425?v=4",
+      "profile": "https://github.com/Alen13ASC",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "DeadEye0112",
+      "name": "Eric Ly",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11258498?v=4",
+      "profile": "https://www.agence-fractale.fr",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "vkall",
+      "name": "Viktor",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5497520?v=4",
+      "profile": "http://www.viktorkall.fi",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "matguabec",
+      "name": "matguabec",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/66858597?v=4",
+      "profile": "https://github.com/matguabec",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "slopezm",
+      "name": "Sergio Lopez M.",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1976604?v=4",
+      "profile": "https://github.com/slopezm",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,

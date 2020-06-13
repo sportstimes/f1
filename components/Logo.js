@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from 'next-translate/Link'
 
 const Logo = () => (
 	<Link href="/">
