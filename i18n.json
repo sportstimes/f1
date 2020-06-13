@@ -2,8 +2,10 @@
   "allLanguages": [
     "de",
     "en",
+    "es",
     "fr",
-    "rs"
+    "rs",
+    "sv"
   ],
   "defaultLanguage": "en",
   "currentPagesDir": "pages_",

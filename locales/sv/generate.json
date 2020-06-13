@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Generera Kalender",
+    "description": "Välj först vilka F1 sessioner du vill lägga till din kalender:",
+    "fp1": "Fri Träning 1",
+    "fp2": "Fri Träning 2",
+    "fp3": "Fri Träning 3",
+    "qualifying": "Kvalificering",
+    "grandPrix": "Grand Prix",
+    "reminder": "Sätt en påminnelse",
+    "reminderContinued": "mintuer innan varje session i din säsongskalender.",
+    "button": "Skapa Kalender",
+    "buttonSubmitted": "Inlämnad",
+    "nonOptionsSelected": "Välj minst en session till din kalender."
+  },
+  "download": {
+    "title": "Välj Kalender Typ",
+    "webcalTitle": "För mobil eller dator",
+    "webcalDescription": "Automatiskt uppdaterad kalender för program som Outlook och macOS Calendar.",
+    "webcalButton": "Hämta",
+    "gcalTitle": "För Google Calendar",
+    "gcalDescription": "För att lägga till den här kalendern, klipp och klistra länken nedan till din Google Calendar",
+    "gcalDescriptionLink": "detaljerade instruktioner",
+    "icsTitle": "Ladda ner ICS fil",
+    "icsDescription": "Statisk kalender (.ics) som inte uppdateras automatiskt.",
+    "icsButton": "Ladda ner"
+  }
+}
