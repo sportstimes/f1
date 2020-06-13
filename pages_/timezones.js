@@ -18,8 +18,8 @@ function Timezones() {
     const timezoneItems = []
     let zoneslist = moment.tz.names()
     for (let zone in zoneslist) {
-        let timezoneSlug = zoneslist[zone].replace(/\//g, "-");
-        timezoneItems.push(<li key={zoneslist[zone]}><Link href={`timezone/${timezoneSlug}`}><a>{zoneslist[zone]}</a></Link></li>)
+        timezoneItems.push(<li key={zoneslist[zone]}><Link href={`timezone/${zoneslist[zone]}`}><a>{zoneslist[zone]}</a></Link>
+        </li>)
     }
 
     return (

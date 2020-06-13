@@ -9,13 +9,8 @@ import useTranslation from 'next-translate/useTranslation'
 const Races = (props) => {
     const {t, lang} = useTranslation()
 
-    let {timezone} = useContext(UserContext)
+    const {timezone} = useContext(UserContext)
     const races = props.races
-
-    // Override timezone if its been passed as a prop (timezones/[timezone].js)
-    if(props.timezone){
-        timezone = props.timezone;
-    }
 
     // TODO Improve this isNextRace logic
     let isNextRace = false
