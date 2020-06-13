@@ -13,6 +13,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "carronol",
+      "name": "Olivier CARRON",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/36953864?v=4",
+      "profile": "https://github.com/carronol",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
