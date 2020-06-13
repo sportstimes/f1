@@ -13,6 +13,24 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "carronol",
+      "name": "Olivier CARRON",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/36953864?v=4",
+      "profile": "https://github.com/carronol",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Alen13ASC",
+      "name": "Alen13ASC",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/66845425?v=4",
+      "profile": "https://github.com/Alen13ASC",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,

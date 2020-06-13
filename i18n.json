@@ -1,12 +1,12 @@
 {
-  "allLanguages": ["en"],
+  "allLanguages": ["en", "fr", "rs"],
   "defaultLanguage": "en",
   "currentPagesDir": "pages_",
   "finalPagesDir": "pages",
   "localesPath": "locales",
   "pages": {
     "*": ["common", "calendar"],
-    "/": ["index", "calendar"],
+    "/": ["calendar"],
     "/generate": ["generate"],
     "/timezones": ["timezones"],
     "/years": ["years", "calendar"]

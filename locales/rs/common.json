@@ -1,0 +1,34 @@
+{
+  "title": "F1 Kalendar",
+  "subtitle": "Trke, Kvalifikacije i Slobodni Treninzi",
+  "meta":{
+    "description": "Formula 1 kalendar za {{year}} sezonu sa svim sesijama Velike Nagrade. Opcijama za podsetnike. Sve vremenske zone. Preuzmi ili se preplati.",
+    "keywords": "F1, formula jedan, vreme trka, trke, podsetnik, upozorenja, velike nagrade, velika nagrada, kalendar, datumi, vreme početka, kvalifikacije, trening, Beograd, Evropa, {{year}}"
+  },
+  "options": {
+    "calendar": "Dodajte ove datume trka na vaš kalendar",
+    "timezonePicker": {
+      "showing": "Pokazujemo vremensku zonu za",
+      "pick": "Izaberi vremensku zonu...",
+      "button": "Urađeno"
+    }
+  },
+  "contribute": "Doprinesi",
+  "cookies": {
+    "title": "Ova stranica koristi kolačiće da vam poboljša rad na njoj.",
+    "button": "Odlično!"
+  },
+  "javascript": "F1 Kalendar bolje radi kada se omogući Java Skripta.",
+  "footer": {
+    "coffee": "Podržite F1 Kalendar, kupite nam kafu.",
+    "twitter": "Mi smo na Twitteru",
+    "github": "Open-sorsovano na GitHubu",
+    "issue": "Primetili ste grešku? Prijavite",
+    "links": {
+      "wereOn": "Mi smo na",
+      "openSourcedOn": "Open-sorsovano na",
+      "spottedIssue": "Primetili ste grešku?",
+      "spottedReport": "Prijavite"
+    }
+  }
+}

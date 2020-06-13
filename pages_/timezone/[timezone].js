@@ -28,18 +28,21 @@ const Timezone = (props) => {
 	);
 };
 
-Timezone.getInitialProps = async ({ query, res }) => {
-	try {
-		const data = await import(`../../db/2020.json`)
-		
-		return {
-		    year: "2020",
-		    races: data.races,
-		}
-	} catch(err) {
-         res.statusCode = 404;
-         return {}
-	}	
+export default Timezone;
+
+
+export const getStaticPaths = async () => {
+	return ({
+		paths: [],
+		fallback: false,
+	})
 }
 
-export default Timezone;
+export const getStaticProps = async ({ params }) => {
+	const data = await import(`../../db/2020.json`)
+
+	return {
+		year: "2020",
+		races: data.races,
+	}
+};
