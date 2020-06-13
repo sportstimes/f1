@@ -1,0 +1,48 @@
+{
+  "date": "Datum",
+  "time": "Vreme",
+  "event": "F1 Velike Nagrade",
+  "notice": {
+    "text": "Prvih 8. trka izmenjenog kalendara su ispod. Vremena su unutar TBC uz dodatne trke.",
+    "link": "Pročitajte više"
+  },
+  "badges": {
+    "tbc": "TBC",
+    "tickets": "Ulaznice",
+    "canceled": "Otkazano",
+    "next": "SLEDEĆE"
+  },
+  "schedule": {
+    "fp1": "1. Slobodni Trening",
+    "fp2": "2. Slobodni Trening",
+    "fp3": "3. Slobodni Trening",
+    "qualifying": "Kvalifikacije",
+    "race": "Trka"
+  },
+  "races": {
+    "austrian-grand-prix": "Velika Nagrada Austrija",
+    "steiermark-grand-prix": "Velika Nagrada Štajerske (Austrija)",
+    "hungary-grand-prix": "Velika Nagrada Mađarske",
+    "british-grand-prix": "Velika Nagrada Velike Britanije",
+    "anniversary-british-grand-prix": "Velika Nagrada 70. Godišnjice F1 (Velika Britanija)",
+    "spanish-grand-prix": "Velika Nagrada Španije",
+    "belgian-grand-prix": "Velika Nagrada Belgije",
+    "italian-grand-prix": "Velika Nagrada Italije",
+    "australian-grand-prix": "Velika Nagrada Australije",
+    "bahrain-grand-prix": "Velika Nagrada Bahreina",
+    "vietnamese-grand-prix": "Velika Nagrada Vijetnama",
+    "china-grand-prix": "Velika Nagrada Kine",
+    "dutch-grand-prix": "Velika Nagrada Holandije",
+    "monoco-grand-prix": "Velika Nagrada Monaka",
+    "azerbaijan-grand-prix": "Velika Nagrada Azerbejdžana",
+    "canadian-grand-prix": "Velika Nagrada Kanade",
+    "french-grand-prix": "Velika Nagrada Francuske",
+    "singapore-grand-prix": "Velika Nagrada Singapura",
+    "russian-grand-prix": "Velika Nagrada Rusije",
+    "japanese-grand-prix": "Velika Nagrada Japana",
+    "us-grand-prix": "Velika Nagrada Sjedinjenih Država",
+    "mexico-grand-prix": "Velika Nagrada Meksiko Sitija",
+    "brazilian-grand-prix": "Velika Nagrada Brazila",
+    "abu-dhabi-grand-prix": "Velika Nagrada Abu Dabija"
+  }
+}
