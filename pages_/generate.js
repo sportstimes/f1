@@ -82,7 +82,7 @@ function Generate(props) {
 						
 						<section className="card" id="download_option_google">
 							<h4>{ t('generate:download.gcalTitle') }</h4>
-							<p>{ t('generate:download.gcalDescription') } (<a href="https://support.google.com/calendar/answer/37100?hl=en" target="_blank">{ t('generate:download.gcalDescriptionLink') }</a>):</p>
+							<p>{ t('generate:download.gcalDescription') } (<a href="https://support.google.com/calendar/answer/37100" target="_blank">{ t('generate:download.gcalDescriptionLink') }</a>):</p>
 							<p className="copyable">{form.googleURL}</p>
 						</section>
 												

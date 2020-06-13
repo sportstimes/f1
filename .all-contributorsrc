@@ -31,6 +31,24 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "DeadEye0112",
+      "name": "Eric Ly",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11258498?v=4",
+      "profile": "https://www.agence-fractale.fr",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "vkall",
+      "name": "Viktor",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5497520?v=4",
+      "profile": "http://www.viktorkall.fi",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
