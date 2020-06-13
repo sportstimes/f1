@@ -40,6 +40,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "vkall",
+      "name": "Viktor",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5497520?v=4",
+      "profile": "http://www.viktorkall.fi",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
