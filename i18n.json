@@ -1,9 +1,10 @@
 {
-  "allLanguages": ["en", "fr", "rs", "sv"],
+  "allLanguages": ["en", "es", "fr", "rs", "sv"],
   "defaultLanguage": "en",
   "currentPagesDir": "pages_",
   "finalPagesDir": "pages",
   "localesPath": "locales",
+  "ignoreRoutes": ["/download/"],
   "pages": {
     "*": ["common", "calendar"],
     "/": ["calendar"],
