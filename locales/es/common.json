@@ -1,12 +1,12 @@
 {
   "title": "F1 Calendar",
   "subtitle": "Carreras, sesiones de Práctica y Clasificación",
-  "meta":{
+  "meta": {
     "description": "Calendario de la temporada {{year}} de la Fórmula 1 con todos los Grandes Premios, sesiones de práctica &amp; clasificación. Opción para configurar recordatorios. Todas las zonas horarias. Descarga o subscribe.",
     "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
   },
   "options": {
-    "calendar": "Agrega estas fechas y horas de cada carrera a tu móvil, calendario, Outlook o Google Calendar",
+    "calendar": "Agregar las fechas y horarios de estas carreras a tu calendario.",
     "timezonePicker": {
       "showing": "Mostrando horarios para",
       "pick": "Elige una zona horaria...",
@@ -31,3 +31,4 @@
       "spottedReport": "Reportar"
     }
   }
+}
