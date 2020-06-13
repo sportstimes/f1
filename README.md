@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -49,6 +49,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
   </tr>
   <tr>
     <td align="center"><a href="https://lshallo.eu"><img src="https://avatars0.githubusercontent.com/u/22171518?v=4" width="100px;" alt=""/><br /><sub><b>LsHallo</b></sub></a><br /><a href="#translation-LsHallo" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/schoenpat"><img src="https://avatars2.githubusercontent.com/u/49246677?v=4" width="100px;" alt=""/><br /><sub><b>schoenpat</b></sub></a><br /><a href="#translation-schoenpat" title="Translation">🌍</a></td>
   </tr>
 </table>
 
