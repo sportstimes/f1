@@ -6,7 +6,7 @@
     "keywords": "F1, Formel 1, Rennzeiten, Rennen, Erinnerungen, Alarme, Große Preise, Großer Preis, Kalender, Daten, Startzeiten, Qualifikation, Training, London, Europa, {{year}}"
   },
   "options": {
-    "calendar": "Füge diese Renndaten - und Zeiten zu deinem Handy, Kalender, Outlook oder Google Kalender hinzu",
+    "calendar": "Füge diese Renndaten - und Zeiten deinem Kalender hinzu",
     "timezonePicker": {
       "showing": "Zeige die Zeiten für",
       "pick": "Wähle eine Zeitzone...",
