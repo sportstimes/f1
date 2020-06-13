@@ -2,8 +2,12 @@ const withFonts = require('next-fonts');
 const withOffline = require('next-offline');
 
 const nextConfig = {
-  webpack(config, options) {
-	config.node = { net: 'empty' }
+  webpack(config, {isServer}) {
+    // Generate the ICS files at build time.
+    if (isServer) {
+      require('./utils/generate-calendars');
+    } 
+  	config.node = { net: 'empty' }
     return config;
   },
   target: 'serverless',
