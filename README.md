@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -41,6 +41,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
   <tr>
     <td align="center"><a href="https://github.com/Russ-K"><img src="https://avatars3.githubusercontent.com/u/4568306?v=4" width="100px;" alt=""/><br /><sub><b>Russell K</b></sub></a><br /><a href="#content-Russ-K" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/carronol"><img src="https://avatars3.githubusercontent.com/u/36953864?v=4" width="100px;" alt=""/><br /><sub><b>Olivier CARRON</b></sub></a><br /><a href="#translation-carronol" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/Alen13ASC"><img src="https://avatars3.githubusercontent.com/u/66845425?v=4" width="100px;" alt=""/><br /><sub><b>Alen13ASC</b></sub></a><br /><a href="#translation-Alen13ASC" title="Translation">🌍</a></td>
   </tr>
 </table>
 
