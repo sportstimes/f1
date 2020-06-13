@@ -52,18 +52,27 @@ const Year = (props) => {
 	);
 };
 
-Year.getInitialProps = async ({ query, res }) => {
-	try {
-		const data = await import(`../../db/${query.year}.json`)
-			
-		return {
-		    year: query.year,
-		    races: data.races
-		}
-	} catch(err) {
-         res.statusCode = 404;
-         return {}
-	}	
+export default Year;
+
+export const getStaticPaths = async () => {
+	// TODO: Make this dynamic later
+	return ({
+		paths: [
+			{ params: { year: '2020' } },
+			{ params: { year: '2019' } },
+			{ params: { year: '2018' } }
+		],
+		fallback: false,
+	})
 }
 
-export default Year;
+export const getStaticProps = async ({ params }) => {
+	const data = await import(`../../db/${params.year}.json`)
+
+	return {
+		props: {
+			year: params.year,
+			races: data.races
+		}
+	}
+};
