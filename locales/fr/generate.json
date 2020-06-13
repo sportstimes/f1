@@ -1,7 +1,7 @@
 {
   "form": {
     "title": "Génerer un calendrier",
-    "description": "Choisissez quelles séances des weekends de Grand Prix vous souhaitez ajouter à votre calendrier:",
+    "description": "Choisissez quelles séances des weekends de Grand Prix vous souhaitez ajouter à votre calendrier :",
     "fp1": "Essais libres 1",
     "fp2": "Essais libres 2",
     "fp3": "Essais libres 3",
@@ -22,7 +22,7 @@
     "gcalDescription": "Pour ajouter le calendrier, copiez-collez ce lien dans Google Calendar",
     "gcalDescriptionLink": "Instructions détaillées",
     "icsTitle": "Télécharger le fichier ICS",
-    "icsDescription": "Calendrier hors connection (.ics) pour les calendriers qui ne supportent pas les mises à jour.",
+    "icsDescription": "Calendrier hors connexion (.ics) pour les calendriers qui ne supportent pas les mises à jour.",
     "icsButton": "Télécharger"
   }
 }
