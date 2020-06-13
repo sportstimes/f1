@@ -67,6 +67,24 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "LsHallo",
+      "name": "LsHallo",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/22171518?v=4",
+      "profile": "https://lshallo.eu",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "schoenpat",
+      "name": "schoenpat",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/49246677?v=4",
+      "profile": "https://github.com/schoenpat",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
