@@ -4,6 +4,7 @@
   "currentPagesDir": "pages_",
   "finalPagesDir": "pages",
   "localesPath": "locales",
+  "ignoreRoutes": ["/download/"],
   "pages": {
     "*": ["common", "calendar"],
     "/": ["calendar"],
