@@ -1,0 +1,48 @@
+{
+  "date": "Fecha",
+  "time": "Hora",
+  "event": "Eventos del Gran Premio de Formula 1",
+  "notice": {
+    "text": "Se muestran las primeras 8 carreras del calendario rectificado. Los horarios, al igual que las carreras adicionales, están por confirmar (TBC).",
+    "link": "Ver más"
+  },
+  "badges": {
+    "tbc": "TBC",
+    "tickets": "Boletos",
+    "canceled": "Cancelado",
+    "next": "SIGUIENTE"
+  },
+  "schedule": {
+    "fp1": "Práctica Libre 1",
+    "fp2": "Práctica Libre 2",
+    "fp3": "Práctica Libre 3",
+    "qualifying": "Calificación",
+    "race": "Carrera"
+  },
+  "races": {
+    "austrian-grand-prix": "Gran Premio de Austria",
+    "steiermark-grand-prix": "Gran Premio de Estiria (Austria)",
+    "hungary-grand-prix": "Gran Premio de Hungría",
+    "british-grand-prix": "Gran Premio de la Gran Bretañá",
+    "anniversary-british-grand-prix": "Gran Premio del 70º Aniversario (Gran Bretaña)",
+    "spanish-grand-prix": "Gran Premio de España",
+    "belgian-grand-prix": "Gran Premio de Bélgica",
+    "italian-grand-prix": "Gran Premio de Italia",
+    "australian-grand-prix": "Gran Premio de Australia",
+    "bahrain-grand-prix": "Gran Premio de Bahréin",
+    "vietnamese-grand-prix": "Gran Premio de Vietnam",
+    "china-grand-prix": "Gran Premio de China",
+    "dutch-grand-prix": "Gran Premio de Holanda",
+    "monoco-grand-prix": "Gran Premio de Monaco",
+    "azerbaijan-grand-prix": "Gran Premio de Azerbaiyán",
+    "canadian-grand-prix": "Gran Premio de Canada",
+    "french-grand-prix": "Gran Premio de Francia",
+    "singapore-grand-prix": "Gran Premio de Singapur",
+    "russian-grand-prix": "Gran Premio de Rusia",
+    "japanese-grand-prix": "Gran Premio de Japón",
+    "us-grand-prix": "Gran Premio de los Estados Unidos",
+    "mexico-grand-prix": "Gran Premio de la Ciudad de México",
+    "brazilian-grand-prix": "Gran Premio de Brasil",
+    "abu-dhabi-grand-prix": "Gran Premio de Abu Dhabi"
+  }
+}

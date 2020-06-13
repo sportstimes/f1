@@ -1,0 +1,34 @@
+{
+  "title": "Calendario F1",
+  "subtitle": "Carreras, Sesiones de Calificación y Práctica",
+  "meta":{
+    "description": "Calendario de la Fórmula Uno para la temporada {{year}} con todos los grandes premios, sesiones de práctica y calificación. Capacidad de establecer recordatorios. Todas las zonas horarias. Para descarga o suscripción.",
+    "keywords": "F1, formula uno, horarios de carrera, carreras, recordatorios, alertas, grandes premios, gran premio, calendario, fechas, hora de inicio, calificación, práctica, Londres, Europa, {{year}}"
+  },
+  "options": {
+    "calendar": "Agregar las fechas y horarios de estas carreras a tu calendario.",
+    "timezonePicker": {
+      "showing": "Mostrando horarios para",
+      "pick": "Selecciona una zona horaria...",
+      "button": "Listo"
+    }
+  },
+  "contribute": "Contribuir",
+  "cookies": {
+    "title": "Este sitio utiliza cookies para mejorar la experiencia de uso.",
+    "button": "¡Genial!"
+  },
+  "javascript": "El Calendario F1 funciona mejor con Javascript habilitado.",
+  "footer": {
+    "coffee": "Apoya a el Calendario F1, cómpranos un café.",
+    "twitter": "Estamos en Twitter",
+    "github": "Código Abierto en GitHub",
+    "issue": "¿Encontraste un error? Repórtalo",
+    "links": {
+      "wereOn": "Encuéntranos en",
+      "openSourcedOn": "Código Abierto en",
+      "spottedIssue": "¿Encontraste un error?",
+      "spottedReport": "Repórtalo"
+    }
+  }
+}

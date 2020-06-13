@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Generar Calendario",
+    "description": "Primero, selecciona que sesiones del fin de semana de F1 te gustaría agregar a tu calendario:",
+    "fp1": "Práctica Libre 1",
+    "fp2": "Práctica Libre 2",
+    "fp3": "Práctica Libre 3",
+    "qualifying": "Calificación",
+    "grandPrix": "Gran Premio",
+    "reminder": "Establecer recordatorio",
+    "reminderContinued": "minutos antes de cada evento en tu calendario.",
+    "button": "Obtener Calendario",
+    "buttonSubmitted": "Enviado",
+    "nonOptionsSelected": "Por favor selecciona por lo menos una sesión para tu calendario."
+  },
+  "download": {
+    "title": "Selecciona el Tipo de Calendario",
+    "webcalTitle": "Para dispositivos móviles o de escritorio.",
+    "webcalDescription": "Calendario actualizado automáticamente para aplicaciones como Outlook o el Calendario de macOS.",
+    "webcalButton": "Obtener",
+    "gcalTitle": "Para Google Calendar",
+    "gcalDescription": "Para agregar el calendario, copia y pega este URL en Google Calendar",
+    "gcalDescriptionLink": "Instrucciones detalladas",
+    "icsTitle": "Descargar Archivo ICS",
+    "icsDescription": "Calendario sin actualizaciones automáticas (.ics) para aquellos calendarios o aplicaciones que no soportan suscripciones.",
+    "icsButton": "Descargar"
+  }
+}
