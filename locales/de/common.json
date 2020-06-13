@@ -1,19 +1,19 @@
 {
   "title": "F1 Kalender",
-  "subtitle": "Rennen, Qualifikation & Trainings",
+  "subtitle": "Rennen, Qualifying & Trainings",
   "meta":{
     "description": "Formel 1 Kalender für die Saison {{year}} mit allen Großen Preisen der Formel 1, Trainings &amp; Qualifikationen. Funktion für Erinnerungen. Alle Zeitzonen. Herunterladen oder abonnieren.",
     "keywords": "F1, Formel 1, Rennzeiten, Rennen, Erinnerungen, Alarme, Große Preise, Großer Preis, Kalender, Daten, Startzeiten, Qualifikation, Training, London, Europa, {{year}}"
   },
   "options": {
-    "calendar": "Füge diese Renndaten - und Zeiten zu deinem Handy, Kalender, Outlook oder Google Calendar hinzu",
+    "calendar": "Füge diese Renndaten - und Zeiten zu deinem Handy, Kalender, Outlook oder Google Kalender hinzu",
     "timezonePicker": {
       "showing": "Zeige die Zeiten für",
       "pick": "Wähle eine Zeitzone...",
       "button": "Erledigt"
     }
   },
-  "contribute": "Leiste einen Beitrag",
+  "contribute": "Beitragen",
   "cookies": {
     "title": "Diese Webseite nutzt Cookies um die Benutzererfahrung zu verbessern.",
     "button": "Großartig!"

@@ -3,12 +3,12 @@
   "time": "Uhrzeit",
   "event": "Formel 1 Grand Prix Veranstaltungen",
   "notice": {
-    "text": "Die ersten acht Rennen des revidierten Kalenders unten. Times are TBC along with additional races.",
+    "text": "Die ersten 8 Rennen des neuen Kalenders sind unten aufgelistet. Die Startzeiten und weitere Rennen müssen erst noch bestätigt werden.",
     "link": "Mehr lesen"
   },
   "badges": {
     "tbc": "Unbestätigt",
-    "tickets": "Karten",
+    "tickets": "Tickets",
     "canceled": "Abgesagt",
     "next": "NÄCHSTER"
   },
@@ -16,15 +16,15 @@
     "fp1": "Freies Training 1",
     "fp2": "Freies Training 2",
     "fp3": "Freies Training 3",
-    "qualifying": "Qualifikation",
+    "qualifying": "Qualifying",
     "race": "Rennen"
   },
   "races": {
     "austrian-grand-prix": "Großer Preis von Österreich",
-    "steiermark-grand-prix": "Großer Preis der Steiermark",
+    "steiermark-grand-prix": "Großer Preis der Steiermark (Österreich)",
     "hungary-grand-prix": "Großer Preis von Ungarn",
     "british-grand-prix": "Großer Preis von Großbritannien",
-    "anniversary-british-grand-prix": "70er Geburtstags - Grand Prix (Großbritannien)",
+    "anniversary-british-grand-prix": "Großer Preis zum 70-Jährigen Jubiläum (Großbritannien)",
     "spanish-grand-prix": "Großer Preis von Spanien",
     "belgian-grand-prix": "Großer Preis von Belgien",
     "italian-grand-prix": "Großer Preis von Italien",
@@ -43,6 +43,6 @@
     "us-grand-prix": "Großer Preis der USA",
     "mexico-grand-prix": "Großer Preis von Mexiko-Stadt",
     "brazilian-grand-prix": "Großer Preis von Brasilien",
-    "abu-dhabi-grand-prix": "Großer Preis von Abu-Dhabi"
+    "abu-dhabi-grand-prix": "Großer Preis von Abu Dhabi"
   }
 }
