@@ -21,8 +21,8 @@ export default function Footer() {
     	  <a href="http://abitgone.co.uk/" rel="author">Ant Williams</a> 2020
   	  </p>
     	<p>
-    	  { t('common:footer.links.wereOn') } <a href="https://twitter.com/f1cal" className="twitter">Twitter</a> ·
-    	  { t('common:footer.links.openSourcedOn') } <a href="https://github.com/sportstimes/f1">GitHub</a> · 
+    	  { t('common:footer.links.wereOn') } <a href="https://twitter.com/f1cal" className="twitter">Twitter</a> ·&nbsp;
+    	  { t('common:footer.links.openSourcedOn') } <a href="https://github.com/sportstimes/f1">GitHub</a> · &nbsp;
     	  { t('common:footer.links.spottedIssue') } <a href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue...">{ t('common:footer.links.spottedReport') }</a>
   	  </p>
     	<p>Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV.</p>
