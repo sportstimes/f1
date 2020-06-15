@@ -186,9 +186,9 @@ for (request of fileNames) {
   ics.createEvents(events, (error, value) => {
   	if (error) {
   		// TODO: Handle an error...
-  	}
-  	
-  	const path = 'public/download/f1-calendar_'+request+'.ics'
-    fs.writeFileSync(path, value);    
+  	} else {
+		const path = 'public/download/f1-calendar_' + request + '.ics'
+		fs.writeFileSync(path, value);
+	}
   });
 }
