@@ -39,7 +39,7 @@ const Timezone = (props) => {
 					<>
 						<div>Loading...</div>
 						<noscript>
-							<meta http-equiv="refresh" content="10" />
+							<meta httpEquiv="refresh" content="10" />
 						</noscript>
 					</>
 					:
