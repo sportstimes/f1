@@ -42,56 +42,9 @@ function Timezones() {
 
 
                 <style jsx>{`
-					form {
-						border: 1px solid #151515;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						border-radius: 4px;
-						vertical-align:middle;
+					a {
+						color:#1a8b73;
 					}
-					fieldset {
-						border:0;	
-					}
-					
-					p {
-						margin-bottom: 15px;	
-					}
-					
-					button {
-						background: #1a8b73;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px;
-						font-size:15px;
-						border:0;
-						color:#fff;
-						cursor: pointer;
-					}
-					
-					.button {
-						background: #1a8b73;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px;
-						font-size:15px;
-						border:0;
-						color:#fff;
-						cursor: pointer;
-					}
-					
-					section {
-						
-					}
-					
-					hr {
-						border: 1px solid #151515;
-						width: 25%;
-						margin: 15px auto;		
-					}
-					
 			    `}</style>
             </Layout>
         </>
