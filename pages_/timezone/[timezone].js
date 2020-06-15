@@ -18,6 +18,7 @@ const Timezone = (props) => {
 	const subtitle = t('common:subtitle')
 
 	const currentYear = '2020';
+
 	const metaDescription = t('common:meta.description', {year: currentYear})
 	const metaKeywords = t('common:meta.keywords', {year: currentYear})
 
@@ -26,7 +27,7 @@ const Timezone = (props) => {
 	return (
 		<>
 			<NextSeo
-				title={`${title} ${props.year} - ${subtitle}`}
+				title={`${title} ${currentYear} - ${subtitle}`}
 				description={metaDescription}
 				keywords={metaKeywords}
 			/>
@@ -44,11 +45,13 @@ const Timezone = (props) => {
 					:
 					<>
 
-					<Races year={props.year} races={props.races} timezone={timezone}/>
+						{props.races &&
+						<Races year={props.year} races={props.races} timezone={timezone}/>
+						}
 
 					{props.races && props.races.map((item, index) => {
 						if (item.sessions) {
-						return (<RaceSchema item={item} key={item.name}/>)
+							return (<RaceSchema item={item} key={item.name}/>)
 						}
 					})}
 					</>
@@ -71,18 +74,20 @@ export const getStaticProps = async ({params}) => {
 	const currentYear = '2020';
 
 	try {
-		const res = await fetch('/api/' + currentYear + '');
+		const res = await fetch('/api/year/' + currentYear + '');
 		const data = await res.json();
 
 		return {
 			props: {
-				year: currentYear,
 				races: data.races,
 				timezone: params.timezone
 			}
 		}
 	} catch (error) {
-		console.error(error);
-		return { props: {} };
+		return {
+			props: {
+				year: currentYear
+			}
+		};
 	}
 }
