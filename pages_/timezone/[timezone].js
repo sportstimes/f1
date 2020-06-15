@@ -24,6 +24,9 @@ const Timezone = (props) => {
 
 	const timezone = props.timezone ? props.timezone.replace("-", "/") : "";
 
+
+	console.log(props);
+
 	return (
 		<>
 			<NextSeo
@@ -74,7 +77,7 @@ export const getStaticProps = async ({params}) => {
 	const currentYear = '2020';
 
 	try {
-		const res = await fetch('/api/year/' + currentYear + '');
+		const res = await fetch('https://f1calendar.com/api/year/' + currentYear + '');
 		const data = await res.json();
 
 		return {
