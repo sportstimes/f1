@@ -66,14 +66,14 @@ const Timezone = (props) => {
 
 export default Timezone;
 
-export const getStaticPaths = async () => {
+export async function getStaticPaths() {
 	return ({
 		paths: [],
 		fallback: true
 	})
 }
 
-export const getStaticProps = async ({params}) => {
+export async function getStaticProps({ params }) {
 	const currentYear = '2020';
 
 	try {
