@@ -25,8 +25,6 @@ const Timezone = (props) => {
 	const timezone = props.timezone ? props.timezone.replace("-", "/") : "";
 
 
-	console.log(props);
-
 	return (
 		<>
 			<NextSeo
