@@ -1,0 +1,48 @@
+{
+  "date": "Дата",
+  "time": "Время",
+  "event": "Мероприятия Гран-при Формулы 1",
+  "notice": {
+    "text": "Первые 8 гонок предварительного календаря. Время начала событий и гонок не подтверждено.",
+    "link": "Читать далее"
+  },
+  "badges": {
+    "tbc": "Неподтвержден",
+    "tickets": "Билеты",
+    "canceled": "Отменён",
+    "next": "Далее"
+  },
+  "schedule": {
+    "fp1": "1-я тренировка",
+    "fp2": "2-я тренировка",
+    "fp3": "3-я тренировка",
+    "qualifying": "Квалификация",
+    "race": "Гонка"
+  },
+  "races": {
+    "austrian-grand-prix": "Гран-при Австрии",
+    "steiermark-grand-prix": "Гран-при Штирии (Австрии)",
+    "hungary-grand-prix": "Гран-при Венгрии",
+    "british-grand-prix": "Гран-при Великобритании",
+    "anniversary-british-grand-prix": "Гран-при 70-летия (Великобритании)",
+    "spanish-grand-prix": "Гран-при Испании",
+    "belgian-grand-prix": "Гран-при Бельгии",
+    "italian-grand-prix": "Гран-при Италии",
+    "australian-grand-prix": "Гран-при Австралии",
+    "bahrain-grand-prix": "Гран-при Бахрейна",
+    "vietnamese-grand-prix": "Гран-при Вьетнама",
+    "china-grand-prix": "Гран-при Китая",
+    "dutch-grand-prix": "Гран-при Нидерландов",
+    "monoco-grand-prix": "Гран-при Монако",
+    "azerbaijan-grand-prix": "Гран-при Азербайджана",
+    "canadian-grand-prix": "Гран-при Канады",
+    "french-grand-prix": "Гран-при Франции",
+    "singapore-grand-prix": "Гран-при Сингапура",
+    "russian-grand-prix": "Гран-при России",
+    "japanese-grand-prix": "Гран-при Японии",
+    "us-grand-prix": "Гран-при США",
+    "mexico-grand-prix": "Гран-при Мексики",
+    "brazilian-grand-prix": "Гран-при Бразилии",
+    "abu-dhabi-grand-prix": "Гран-при Абу-Даби"
+  }
+}
