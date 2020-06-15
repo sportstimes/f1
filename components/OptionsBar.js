@@ -104,7 +104,7 @@ class OptionsBar extends React.Component {
 
 
                 <div className={styles.mobileCalendarLink}>
-                    <a href="/generate">{t('common:options.calendar')}</a>
+                    <a href={fixHref('/generate', lang)}>{t('common:options.calendar')}</a>
                 </div>
             </div>
         );
