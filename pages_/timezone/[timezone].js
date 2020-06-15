@@ -35,9 +35,15 @@ const Timezone = (props) => {
 				<p><Link href="/timezones"><a>{t('common:options.timezonePicker.pick')}</a></Link><br /><br /></p>
 
 				{router.isFallback ?
-					<div>Loading...</div>
+					<>
+						<div>Loading...</div>
+						<noscript>
+							<meta http-equiv="refresh" content="10" />
+						</noscript>
+					</>
 					:
 					<>
+
 					<Races year={props.year} races={props.races} timezone={timezone}/>
 
 					{props.races && props.races.map((item, index) => {
