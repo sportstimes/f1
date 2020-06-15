@@ -25,6 +25,10 @@ class Header extends React.Component {
             adjustedURL = "/";
         }
 
+        if(adjustedURL.includes("[timezone]")){
+            adjustedURL = "/timezones/"
+        }
+
         Router.pushI18n({url: adjustedURL, options: {lang: event.target.value}})
     }
 
