@@ -70,13 +70,19 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({params}) => {
 	const currentYear = '2020';
 
-	const data = await import(`../../db/` + currentYear + `.json`)
+	try {
+		const res = await fetch('/api/' + currentYear + '');
+		const data = await res.json();
 
-	return {
-		props: {
-			year: currentYear,
-			races: data.races,
-			timezone: params.timezone
+		return {
+			props: {
+				year: currentYear,
+				races: data.races,
+				timezone: params.timezone
+			}
 		}
+	} catch (error) {
+		console.error(error);
+		return { props: {} };
 	}
 }
