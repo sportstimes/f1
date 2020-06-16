@@ -70,10 +70,11 @@ class Header extends React.Component {
                     </div>
 
                     <div className={styles.languageSelector}>
-                        <label htmlFor="language" className={styles.languageSelectorLabel}>{ t('common:languageSelector') }</label>
-                        <select id="language" name="language" value={lang} onChange={this.onChange}>
-                            {languageItems}
-                        </select>
+                        <label htmlFor="language" className={styles.languageSelectorLabel}>{ t('common:languageSelector') }
+                            <select id="language" name="language" value={lang} onChange={this.onChange}>
+                                {languageItems}
+                            </select>
+                        </label>
                     </div>
 
                     <div className={styles.clear}></div>
