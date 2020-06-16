@@ -1,8 +1,6 @@
-import Router from 'next/router'
 import Layout from '../components/Layout';
 import Races from '../components/Races';
 import { NextSeo } from 'next-seo';
-import Link from 'next/link';
 import RaceSchema from '../components/RaceSchema';
 import useTranslation from 'next-translate/useTranslation'
 
