@@ -6,7 +6,6 @@ import withTranslation from 'next-translate/withTranslation'
 import Link from 'next-translate/Link'
 import i18nConfig from '../i18n.json'
 import Router from 'next-translate/Router'
-import fixHref from 'next-translate/fixHref'
 
 class Header extends React.Component {
     onChange = event => {
@@ -68,13 +67,13 @@ class Header extends React.Component {
                                     </a>
                                 </Link>
                             </h1>
-                            <h2><Link href="/" name={title}><a>{t('common:subtitle')}</a></Link></h2>
+                            <h2><Link href="/"><a name={title}>{t('common:subtitle')}</a></Link></h2>
                         </div>
                         <div className={styles.clear}></div>
                     </div>
 
                     <div className={styles.languageSelector}>
-                        <label htmlFor="language" className={styles.languageSelectorLabel}>{ t('common:languageSelector') }
+                        <label htmlFor="language"><span>{ t('common:languageSelector') }</span>
                             <select id="language" name="language" value={lang} onChange={this.onChange}>
                                 {languageItems}
                             </select>
