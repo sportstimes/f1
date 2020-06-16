@@ -1,8 +1,8 @@
 {
   "title": "Calendrier F1",
-  "subtitle": "Courses, Qualifications &amp; Essais Libres",
+  "subtitle": "Courses, Qualifications & Essais Libres",
   "meta": {
-    "description": "Calendrier Formule 1 pour la saison {{year}} avec tous les Grands Prix, essais libres &amp; qualificatifs. Activer les rappels. Tous les fuseaux horaires. Télécharger ou s'abonner.",
+    "description": "Calendrier Formule 1 pour la saison {{year}} avec tous les Grands Prix, essais libres & qualificatifs. Activer les rappels. Tous les fuseaux horaires. Télécharger ou s'abonner.",
     "keywords": "F1, formule 1, horaires des courses, courses, rappel, alertes, grands prix, grand prix, calendrier, dates, heures de départ, qualifications, essais, Londres, Europe, {{year}}"
   },
   "options": {
@@ -16,18 +16,19 @@
   "contribute": "Contribuer",
   "cookies": {
     "title": "Ce site utilise des cookies pour améliorer l'expérience utilisateur.",
-    "button": "Super&nbsp!"
+    "button": "Super !"
   },
+  "languageSelector": "Select Language",
   "javascript": "F1 Calendar fonctionne mieux lorsque Javascript est activé.",
   "footer": {
     "coffee": "Supportez F1 Calendar, offrez-nous un café.",
     "twitter": "Nous sommes sur Twitter.",
     "github": "Logiciel libre en accès sur GitHub.",
-    "issue": "Vous avez trouvé une erreur&nbsp? Dites-le nous.",
+    "issue": "Vous avez trouvé une erreur ? Dites-le nous.",
     "links": {
       "wereOn": "Nous sommes sur",
       "openSourcedOn": "Logiciel libre sur",
-      "spottedIssue": "Vous avez trouvé une erreur&nbsp?",
+      "spottedIssue": "Vous avez trouvé une erreur ?",
       "spottedReport": "Dites-le nous."
     }
   }

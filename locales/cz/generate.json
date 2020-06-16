@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Generovat Kalendář",
+    "description": "První vyberte, které relace závodního víkendu chcete přidat do svého kalendáře:",
+    "fp1": "Volný Trénink 1",
+    "fp2": "Volný Trénink 2",
+    "fp3": "Volný Trénink 3",
+    "qualifying": "Kvalifikace",
+    "grandPrix": "Velká cena",
+    "reminder": "Nastavit připomínku",
+    "reminderContinued": "Minuty před každou událostí ve vašem kalendáři sezóny.",
+    "button": "Získejte kalendář",
+    "buttonSubmitted": "Odesláno",
+    "nonOptionsSelected": "Vyberte prosím alespoň jednu relaci pro váš kalendář."
+  },
+  "download": {
+    "title": "Vyberte typ kalendáře",
+    "webcalTitle": "Pro telefon nebo počítač",
+    "webcalDescription": "Automatická aktualizace kalendáře pro aplikace jako Outlook a MacOS Calendar.",
+    "webcalButton": "Získat",
+    "gcalTitle": "Pro Google Kalendář",
+    "gcalDescription": "Pro přidání tohoto kalendáře zkopírujte a vložte adresu do Google Kalendáře",
+    "gcalDescriptionLink": "podrobné pokyny",
+    "icsTitle": "Stáhněte soubor ICS",
+    "icsDescription": "Neaktualizovaný kalendář (.ics) pro kalendáře, které neumí aktualizovat odběry.",
+    "icsButton": "Stáhnout"
+  }
+}

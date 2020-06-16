@@ -4,7 +4,6 @@ import useTranslation from 'next-translate/useTranslation'
 export default function Footer() {
     const { t } = useTranslation()
 
-
     return <>
         <footer className={styles.footer}>
             <p className={styles.support}>
