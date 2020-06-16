@@ -106,7 +106,7 @@ class Race extends React.Component {
                     {badgeColumnLayout(this.props)}
                 </td>
             </tr>
-            <tr className={`free-practice-1 ${this.state.collapsed ? styles.collapsed : styles.visible}`}>
+            <tr className={`free-practice-1 ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
                     {t('calendar:schedule.fp1')}
@@ -115,7 +115,7 @@ class Race extends React.Component {
                 <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('HH:mm')}</td>
                 <td></td>
             </tr>
-            <tr className={`free-practice-2 ${this.state.collapsed ? styles.collapsed : styles.visible}`}>
+            <tr className={`free-practice-2 ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
                     {t('calendar:schedule.fp2')}
@@ -124,7 +124,7 @@ class Race extends React.Component {
                 <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('HH:mm')}</td>
                 <td></td>
             </tr>
-            <tr className={`free-practice-3 ${this.state.collapsed ? styles.collapsed : styles.visible}`}>
+            <tr className={`free-practice-3 ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
                     {t('calendar:schedule.fp3')}
@@ -133,7 +133,7 @@ class Race extends React.Component {
                 <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('HH:mm')}</td>
                 <td></td>
             </tr>
-            <tr className={`qualifying ${this.state.collapsed ? styles.collapsed : styles.visible}`}>
+            <tr className={`qualifying ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
                     {t('calendar:schedule.qualifying')}

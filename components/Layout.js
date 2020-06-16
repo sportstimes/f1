@@ -33,9 +33,13 @@ const Layout = props => {
                 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#eb000f"/>
                 <meta name="msapplication-TileColor" content="#000000"/>
                 <meta name="theme-color" content="#ffffff"/>
-                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
-                      integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz"
-                      crossOrigin="anonymous" rel="preload"/>
+                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/solid.css"
+                      integrity="sha384-9mSry5MRUHIfL5zghm8hV6FRKJIMfpofq3NWCyo+Kko5c16y0um8WfF5lB2EGIHJ"
+                      crossOrigin="anonymous"/>
+                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/fontawesome.css"
+                      integrity="sha384-tSxOKkJ+YPQOZg1RZd01upxL2FeeFVkHtkL0+04oWgcm9jnvH+EQNLxhpaNYblG2"
+                      crossOrigin="anonymous"/>
+
                 <script dangerouslySetInnerHTML={setGoogleTags()}/>
             </Head>
 
@@ -61,7 +65,7 @@ const Layout = props => {
             </CookieConsent>
 
             <script type="text/javascript"
-                    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e2a277b012976e8" defer></script>
+                    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e2a277b012976e8" async="async"></script>
         </div>
     );
 };
