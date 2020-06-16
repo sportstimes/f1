@@ -52,7 +52,7 @@ class Header extends React.Component {
                         <div className={styles.brandingText}>
                             <h1>
                                 <Link href="/">
-                                    <a>
+                                    <a name={title}>
                                         {title}&nbsp;
                                         {this.props.year &&
                                         <span>{this.props.year}</span>
@@ -64,7 +64,7 @@ class Header extends React.Component {
                                     </a>
                                 </Link>
                             </h1>
-                            <h2><Link href="/"><a>{t('common:subtitle')}</a></Link></h2>
+                            <h2><Link href="/" name={title}><a>{t('common:subtitle')}</a></Link></h2>
                         </div>
                         <div className={styles.clear}></div>
                     </div>

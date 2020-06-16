@@ -35,7 +35,7 @@ const Layout = props => {
                 <meta name="theme-color" content="#ffffff"/>
                 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
                       integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz"
-                      crossOrigin="anonymous"/>
+                      crossOrigin="anonymous" rel="preload"/>
                 <script dangerouslySetInnerHTML={setGoogleTags()}/>
             </Head>
 
@@ -61,7 +61,7 @@ const Layout = props => {
             </CookieConsent>
 
             <script type="text/javascript"
-                    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e2a277b012976e8"></script>
+                    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e2a277b012976e8" defer></script>
         </div>
     );
 };

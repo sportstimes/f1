@@ -8,7 +8,7 @@ export default function Footer() {
   return <>
     <footer className={styles.footer}>
       <p className={styles.support}>
-        <a target="_blank" href="https://www.buymeacoffee.com/f1cal">
+        <a target="_blank" href="https://www.buymeacoffee.com/f1cal" rel="noopener">
           <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="{ t('common:footer.coffee') }" height="25" />
           <span>{ t('common:footer.coffee') }</span>
         </a>
