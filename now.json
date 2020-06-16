@@ -8,18 +8,6 @@
         "cache-control": "public, max-age=43210, immutable",
         "Service-Worker-Allowed": "/"
       }
-    },
-    {
-      "src": "/download/(.*)",
-      "headers": {
-        "cache-control": "public, max-age=43210, immutable"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "headers": {
-        "cache-control": "public, max-age=43210, immutable"
-      }
     }
   ],
   "builds": [

@@ -7,6 +7,7 @@ export default async (req, res) => {
     const data = await import(`../../../db/`+year+`.json`)  
     res.statusCode = 200
     res.setHeader('Content-Type', 'application/json')
+    res.setHeader('Cache-Control', 's-maxage=80000, stale-while-revalidate');
     res.json(data["default"])
   } catch (err) { 
     res.statusCode = 404
