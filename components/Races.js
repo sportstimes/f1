@@ -7,7 +7,7 @@ import layoutStyles from '../components/Layout.module.scss';
 import useTranslation from 'next-translate/useTranslation'
 
 const Races = (props) => {
-    const {t, lang} = useTranslation()
+    const {t} = useTranslation()
 
     let {timezone} = useContext(UserContext)
     const races = props.races
