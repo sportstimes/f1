@@ -20,7 +20,7 @@
       "headers": {
         "cache-control": "public, max-age=43210, immutable"
       }
-    },
+    }
   ],
   "builds": [
     {
