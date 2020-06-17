@@ -8,7 +8,19 @@
         "cache-control": "public, max-age=43210, immutable",
         "Service-Worker-Allowed": "/"
       }
-    }
+    },
+    {
+      "src": "/timezones/(.*)",
+      "headers": {
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "headers": {
+        "cache-control": "public, max-age=43210, immutable"
+      }
+    },
   ],
   "builds": [
     {
