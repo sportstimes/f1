@@ -14,8 +14,8 @@
 		text-align: right;
 	}
 
-	.languageSelector span {
-		display:none;
+	.languageSelector label {
+		padding-right: 5px;
 	}
 
 	.clear {
@@ -49,7 +49,7 @@
 	}
 	h2 {
 		font-size: 11px;
-		color: #1a8b73;
+		color: #33a789;
 		text-transform: uppercase;
 		margin: 0;
 		letter-spacing: 2px;
@@ -57,7 +57,7 @@
 		font-family: "LeagueSpartan";
 	}
 	h2 a {
-		color: #1a8b73;
+		color: #33a789;
 	}
 
 	@media screen and (max-width: 900px) {
