@@ -26,9 +26,10 @@ class Race extends React.Component {
     }
 
     render() {
-        const {t} = this.props.i18n
+        const {t, lang} = this.props.i18n
         const localeKey = 'calendar:races.' + this.props.item.localeKey;
 
+        moment.locale(lang);
 
         function badgeColumnLayout(props) {
             if (props.item.tbc) {
@@ -108,7 +109,7 @@ class Race extends React.Component {
                     }
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.race).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.race).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.race).tz(this.props.timezone).format('LT')}</td>
                 <td className={styles.badgeColumn}>
                     {badgeColumnLayout(this.props)}
                 </td>
@@ -119,7 +120,7 @@ class Race extends React.Component {
                     {t('calendar:schedule.fp1')}
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
             <tr className={`free-practice-2 ${this.state.collapsed ? styles.collapsed : ''}`}>
@@ -128,7 +129,7 @@ class Race extends React.Component {
                     {t('calendar:schedule.fp2')}
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
             <tr className={`free-practice-3 ${this.state.collapsed ? styles.collapsed : ''}`}>
@@ -137,7 +138,7 @@ class Race extends React.Component {
                     {t('calendar:schedule.fp3')}
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
             <tr className={`qualifying ${this.state.collapsed ? styles.collapsed : ''}`}>
@@ -146,7 +147,7 @@ class Race extends React.Component {
                     {t('calendar:schedule.qualifying')}
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
             </tbody>
