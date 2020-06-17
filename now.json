@@ -12,7 +12,13 @@
     {
       "src": "/timezone/(.*)",
       "headers": {
-        "cache-control": "public, max-age=0, must-revalidate"
+        "cache-control": "no-cache"
+      }
+    },
+    {
+      "src": "/(_next/static/.*)",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
       }
     },
     {
