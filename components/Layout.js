@@ -52,7 +52,7 @@ const Layout = props => {
                 buttonText={t('common:cookies.button')}
                 cookieName="f1cal"
                 style={{background: "#0E5143", zIndex: 999999, padding: "5px 0"}}
-                buttonStyle={{color: "white", background: "#1a8b73", fontSize: "13px"}}
+                buttonStyle={{color: "#000000", background: "#ffffff", fontSize: "13px"}}
                 expires={150}
             >
                 {t('common:cookies.title')}
