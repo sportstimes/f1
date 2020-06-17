@@ -181,14 +181,14 @@ for (language of i18n.allLanguages) {
                         status = "TENTATIVE";
 
                         let tbcString = localizedStrings.badges.tbc ? localizedStrings.badges.tbc : "TBC";
-                        title = `(${tbcString} ${title})`;
+                        title = `(${tbcString}) ${title}`;
                     }
 
                     if (race.canceled) {
                         status = "CANCELLED";
 
                         let cancelledString = localizedStrings.badges.canceled ? localizedStrings.badges.canceled : "CANCELED";
-                        title = `(${cancelledString} ${title})`;
+                        title = `(${cancelledString}) ${title}`;
                     }
 
 
