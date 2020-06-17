@@ -79,9 +79,6 @@ for (language of i18n.allLanguages) {
 	let i18nStrings = fs.readFileSync(`locales/${language}/calendar.json`);
 	let localizedStrings = JSON.parse(i18nStrings);
 
-	console.log(localizedStrings);
-	console.log(data);
-
 	let sessionFP1 = "First Practice Session";
 	let sessionFP2 = "Second Practice Session";
 	let sessionFP3 = "Third Practice Session";
@@ -99,7 +96,6 @@ for (language of i18n.allLanguages) {
 	if(localizedStrings.schedule.qualifying){
 		sessionQuali = localizedStrings.schedule.qualifying;
 	}
-
 
     for (request of fileNames) {
         let includeFP1, includeFP2, includeFP3, includeQuali, includeRace = false
