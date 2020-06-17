@@ -6,7 +6,7 @@
   }
   
   .main_content {
-	  max-width:1000px;
+    max-width:1000px;
     margin: 0 auto;
     padding: 0 16px;
   }
@@ -14,6 +14,6 @@
   @media screen and (max-width: 500px) {
   	.main_content {
   		padding: 0 8px;
-		}
-	}  
+    }
+  }
 }
