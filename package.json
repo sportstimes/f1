@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "next-translate && next dev",
     "build": "next-translate && next build",
-    "start": "next start"
+    "start": "next start",
+    "generateCalendars": "node utils/generate-calendars.js"
   },
   "repository": {
     "type": "git",
