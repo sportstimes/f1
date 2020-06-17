@@ -6,7 +6,7 @@
     "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
   },
   "options": {
-    "calendar": "Add these race dates & times to your mobile, calendar, Outlook or Google Calendar",
+    "calendar": "Add these race dates & times to your Calendar",
     "timezonePicker": {
       "showing": "Showing times for",
       "pick": "Pick a timezone...",
