@@ -17,17 +17,9 @@ npm run dev
 
 ## Localization
 
-F1 Calendar can now be localized. Localization files live within the locales directory. We rely on community contributions to add additional languages to the calendar. 
+If there is a language you'd like to see F1 Calendar localized to but we haven't got around to it yet, and you have some git-fu, feel free to submit a pull request to the repository.
 
-
-### Adding a new language
-
-In the locales folder copy the "en" directory and create a new directory with the two letter code for the new locale you want to add.
-
-Go through each of the json files and translate the English to your chosen language. Feel free to create an issue if you require more context for a string.
-
-Once completed feel free to submit a PR, we will be happy to configure the rest of the app to make use of the new strings.
-
+Read more about localizing [here](https://github.com/sportstimes/f1/tree/master/locales).
 ## Contributors ✨
 
 Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajhiggs](https://twitter.com/aajhiggs) and [@si](https://twitter.com/si).
