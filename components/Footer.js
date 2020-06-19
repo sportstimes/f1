@@ -1,13 +1,14 @@
 import styles from './Footer.module.scss'
 import useTranslation from 'next-translate/useTranslation'
+import {lang} from "moment";
 
 export default function Footer() {
-    const { t } = useTranslation()
+    const { t, lang } = useTranslation()
 
     return <>
         <footer className={styles.footer}>
 
-            <p className={styles.support}>
+            <p className={`${styles.support} ${lang === "ru" ? styles.supportFontFallback : ''}`}>
                 <a target="_blank" href="https://www.buymeacoffee.com/f1cal" rel="noopener">
                     <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="{ t('common:footer.coffee') }" height="25" />
                     <span>{ t('common:footer.coffee') }</span>

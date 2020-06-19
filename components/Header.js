@@ -53,7 +53,7 @@ class Header extends React.Component {
                         <div className={styles.logomark}>
                             <Logo/>
                         </div>
-                        <div className={styles.brandingText}>
+                        <div className={ lang == "ru" ? styles.brandingTextFallback : styles.brandingText}>
                             <h1>
                                 <Link href="/">
                                     <a name={title}>

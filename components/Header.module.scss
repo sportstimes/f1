@@ -35,29 +35,64 @@
 	}
 	.brandingText {
 		float: left;
+
+		h1 {
+			font-size: 16px;
+			margin: 0;
+			padding-top: 8px;
+			font-family: "LeagueSpartan";
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+
+		h1 a {
+			color: #ffffff;
+		}
+
+		h2 {
+			font-size: 11px;
+			color: #33a789;
+			text-transform: uppercase;
+			margin: 0;
+			letter-spacing: 2px;
+			font-size: 11px;
+			font-family: "LeagueSpartan";
+		}
+
+		h2 a {
+			color: #33a789;
+		}
 	}
-	h1 {
-		font-size: 16px;
-		margin: 0;
-		padding-top: 8px;
-		font-family: "LeagueSpartan";
-		text-transform: uppercase;
-		letter-spacing: 3px;
-	}
-	h1 a {
-		color: #ffffff;
-	}
-	h2 {
-		font-size: 11px;
-		color: #33a789;
-		text-transform: uppercase;
-		margin: 0;
-		letter-spacing: 2px;
-		font-size: 11px;
-		font-family: "LeagueSpartan";
-	}
-	h2 a {
-		color: #33a789;
+
+	.brandingTextFallback {
+		float: left;
+
+		h1 {
+			font-size: 16px;
+			margin: 0;
+			padding-top: 8px;
+			font-family: "Arial Black";
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+
+		h1 a {
+			color: #ffffff;
+		}
+
+		h2 {
+			font-size: 11px;
+			color: #33a789;
+			text-transform: uppercase;
+			margin: 0;
+			letter-spacing: 2px;
+			font-size: 11px;
+			font-family: "Arial Black";
+		}
+
+		h2 a {
+			color: #33a789;
+		}
 	}
 
 	@media screen and (max-width: 900px) {
