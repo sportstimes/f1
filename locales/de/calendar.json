@@ -8,6 +8,7 @@
   },
   "badges": {
     "tbc": "Unbestätigt",
+    "tbc_title": "Unbestätigt",
     "tickets": "Tickets",
     "canceled": "Abgesagt",
     "next": "NÄCHSTER"
