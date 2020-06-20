@@ -1,58 +1,88 @@
-import Layout from "../components/Layout";
-import { NextSeo } from 'next-seo';
+import Trans from "next-translate/Trans";
+import DynamicNamespaces from "next-translate/DynamicNamespaces";
+import Logo from "../components/Logo";
+import React from "react";
+import styles from "../components/Header.module.scss";
+import Link from "next-translate/Link";
+import ISO6391 from "iso-639-1";
 
-function Error404() {
-  return (
-    <>
-			<NextSeo
-				title={`F1 Calendar  - Formula One Race Times and Dates`}
-				description={`Formula One Calendar Archive with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe`}
-				canonical="https://www.f1calendar.com/"
-				twitter={{
-					handle: '@f1cal',
-					site: '@f1cal',
-					cardType: 'summary_large_image',
-				}}
-			/>
-			<Layout>
-				
-				<h3>Whoops - Error 404</h3>
-				<section className="card">
-					<p>We bumped into a wall on the circuit...</p>
-					<p>Help us into the pits, by letting us know on <a href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue...">Twitter</a>.</p>	
-				</section>
-				
-				
-				<style jsx>{`
-					.card {
-						background:#141414;
-						-webkit-border-radius: 15px;
-						-moz-border-radius: 15px;
-						padding:25px 25px 10px 25px;
-						margin-bottom:16px;
-					}
-					.card h4 {
-						margin-top:0;
-						font-size:18px;
-						margin-bottom:8px;
-					}
-					.card p {
-						margin-bottom:15px;
-					}
-					
-					button {
-						background: #1a8b73;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px;
-						font-size:15px;
-						border:0;
-						color:#fff;
-						cursor: pointer;
-					}
-					
+const Custom404 = () => (
+    <DynamicNamespaces
+        dynamic={(lang, ns) => {
+            let folder = (lang != "") ? lang : "en";
+            return import(`../locales/${folder}/${ns}.json`).then((m) => m.default);
+        }}
+        namespaces={["common"]}
+        fallback="Loading..."
+    >
+        <div className="error">
+
+            <div className="header">
+                <Logo/>
+                <h1>
+                    <Link href="/">
+                        <a>
+                            <Trans i18nKey="common:title"/>
+                        </a>
+                    </Link>
+                </h1>
+                <h2><Link href="/"><a><Trans i18nKey="common:subtitle"/></a></Link></h2>
+            </div>
+
+            <div className="content">
+            <h3>Whoops - Error 404</h3>
+            <section>
+                <p>We bumped into a wall on the circuit...</p>
+                <p>Help us into the pits, by letting us know on <a
+                    href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue...">Twitter</a>.</p>
+                <p><Link href="/"><a>Return to our homepage</a></Link></p>
+            </section>
+            </div>
+        </div>
+
+        <style jsx>{`
+            
+            .error {
+            	text-align:center;
+            	padding:50px 0;
+            }
+            
+            .header {
+                margin: 50px 0;
+            }
+            
+            .content {
+                margin:45px 0;
+            }
+          
+
+h1 {
+font-size: 16px;
+margin: 0;
+padding-top: 8px;
+font-family: "LeagueSpartan";
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+h1 a {
+color: #ffffff;
+}
+
+h2 {
+font-size: 11px;
+color: #33a789;
+text-transform: uppercase;
+margin: 0;
+letter-spacing: 2px;
+font-size: 11px;
+font-family: "LeagueSpartan";
+}
+
+h2 a {
+color: #33a789;
+}
+            
 					.button {
 						background: #1a8b73;
 						margin-bottom: 25px;
@@ -64,21 +94,8 @@ function Error404() {
 						color:#fff;
 						cursor: pointer;
 					}
-					
-					section {
-						
-					}
-					
-					hr {
-						border: 1px solid #151515;
-						width: 25%;
-						margin: 15px auto;		
-					}
-					
 			    `}</style>
-			</Layout>
-		</>
-  );
-}
+    </DynamicNamespaces>
+);
 
-export default Error404;
+export default Custom404;
