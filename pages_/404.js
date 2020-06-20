@@ -35,6 +35,7 @@ const Custom404 = () => (
                 <p>We bumped into a wall on the circuit...</p>
                 <p>Help us into the pits, by letting us know on <a
                     href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue...">Twitter</a>.</p>
+                <p><Link href="/"><a>Return to our homepage</a></Link></p>
             </section>
             </div>
         </div>
@@ -43,10 +44,11 @@ const Custom404 = () => (
             
             .error {
             	text-align:center;
+            	padding:50px 0;
             }
             
             .header {
-            margin: 50px 0;
+                margin: 50px 0;
             }
             
             .content {
