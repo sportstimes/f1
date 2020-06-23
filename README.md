@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -45,6 +45,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://github.com/adamhoustava"><img src="https://avatars0.githubusercontent.com/u/32132975?v=4" width="100px;" alt=""/><br /><sub><b>Adam Houšťava</b></sub></a><br /><a href="#translation-adamhoustava" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/HarDX"><img src="https://avatars1.githubusercontent.com/u/5231223?v=4" width="100px;" alt=""/><br /><sub><b>Konstantin Krasavin</b></sub></a><br /><a href="#translation-HarDX" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/ffaamm"><img src="https://avatars2.githubusercontent.com/u/1625759?v=4" width="100px;" alt=""/><br /><sub><b>ffaamm</b></sub></a><br /><a href="#translation-ffaamm" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/stijndp"><img src="https://avatars3.githubusercontent.com/u/29801608?v=4" width="100px;" alt=""/><br /><sub><b>stijndp</b></sub></a><br /><a href="#translation-stijndp" title="Translation">🌍</a></td>
   </tr>
 </table>
 
