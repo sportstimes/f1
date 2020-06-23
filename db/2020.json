@@ -56,7 +56,7 @@
       "location": "Silverstone",
       "latitude": 52.0706,
       "longitude": -1.0174,
-      "tbc": true,
+      "tbc": false,
       "round": 4,
       "slug": "british-grand-prix",
       "localeKey": "british-grand-prix",
