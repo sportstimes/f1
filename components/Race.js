@@ -58,7 +58,7 @@ class Race extends React.Component {
                         <i class="fas fa-question fa-xs"></i>
                     </td>
                     <td className={styles.eventColumn}>
-                    <Tooltip content={<img src={`/location/${this.props.item.location}.png`} alt={this.props.item.location}></img>} direction="up" forceDirection="true" tagName="span" background="#117465">
+                    <Tooltip content={<img src={`/location/${this.props.item.location}.png`} alt={this.props.item.location}></img>} direction="up" forceDirection tagName="span" background="#117465">
 						<span>
 						  {t(`calendar:races.${this.props.item.localeKey}`) != localeKey ? (
                               t(`calendar:races.${this.props.item.localeKey}`)
@@ -94,7 +94,7 @@ class Race extends React.Component {
                     <i aria-hidden className={`${this.state.collapsed ? 'fas fa-caret-right fa-xs' : 'fas fa-caret-down fa-xs'}`}></i>
                 </td>
                 <td className={styles.eventColumn}>
-                <Tooltip content={<img src={`/location/${this.props.item.location}.png`} alt={this.props.item.location}></img>} direction="up" forceDirection="true" tagName="span" background="#117465">
+                <Tooltip content={<img src={`/location/${this.props.item.location}.png`} alt={this.props.item.location}></img>} direction="up" forceDirection tagName="span" background="#117465">
 						<span
                             className={`${!this.props.item.tbc && !this.props.item.canceled && moment(this.props.item.sessions.race).isAfter() ? styles.confirmedWeekend : ''}`}>
 						  
