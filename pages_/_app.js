@@ -4,6 +4,7 @@ import UserContext from '../components/UserContext';
 const moment = require('moment-timezone')
 import { DefaultSeo } from 'next-seo';
 import '../styles/style.scss'
+import 'react-tippy/dist/tippy.css'
 
 export default class F1App extends App {
 	

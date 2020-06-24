@@ -2,6 +2,7 @@ import {useState} from 'react';
 import moment from 'moment'
 import styles from './Race.module.scss'
 import withTranslation from 'next-translate/withTranslation'
+import {Tooltip} from 'react-tippy';
 
 class Race extends React.Component {
 
@@ -57,6 +58,11 @@ class Race extends React.Component {
                         <i class="fas fa-question fa-xs"></i>
                     </td>
                     <td className={styles.eventColumn}>
+                    <Tooltip
+                    html={<img src={`/location/${this.props.item.location}.png`} alt={this.props.item.location}></img>}
+                    position="right"
+                    theme="f1"
+                    >
 						<span>
 						  {t(`calendar:races.${this.props.item.localeKey}`) != localeKey ? (
                               t(`calendar:races.${this.props.item.localeKey}`)
@@ -65,6 +71,7 @@ class Race extends React.Component {
                           )
                           }
 						</span>
+                    </Tooltip>
                     </td>
                     <td className={styles.dateColumn}></td>
                     <td className={styles.timeColumn}></td>
@@ -91,6 +98,11 @@ class Race extends React.Component {
                     <i aria-hidden className={`${this.state.collapsed ? 'fas fa-caret-right fa-xs' : 'fas fa-caret-down fa-xs'}`}></i>
                 </td>
                 <td className={styles.eventColumn}>
+                <Tooltip
+                    html={<img src={`/location/${this.props.item.location}.png`} alt={this.props.item.location}></img>}
+                    position="right"
+                    theme="f1"
+                >
 						<span
                             className={`${!this.props.item.tbc && !this.props.item.canceled && moment(this.props.item.sessions.race).isAfter() ? styles.confirmedWeekend : ''}`}>
 						  
@@ -103,6 +115,7 @@ class Race extends React.Component {
 						  
 						</span>
 
+                </Tooltip>
                     {this.props.isNextRace && !this.props.item.tbc && !this.props.item.canceled &&
                     <span className={styles.next}>{t(`calendar:badges.next`)}</span>
                     }
