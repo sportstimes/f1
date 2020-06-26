@@ -68,6 +68,7 @@
   @extend %badge;
   background: #999;
   color: #000;
+  width: max-content;
 }
 
 .tickets {
