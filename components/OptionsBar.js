@@ -96,18 +96,8 @@ class OptionsBar extends React.Component {
                                     {t('common:options.timezonePicker.showing')} <strong>{this.context.timezone && this.context.timezone.replace("_", " ")}</strong>.
                                 </a>
                             </div>
-                            {this.props.showCalendarExport &&
-                            <div className={styles.calendarLink}>
-                                <a href={fixHref('/generate', lang)}>{t('common:options.calendar')}</a>
-                            </div>
-                            }
                         </div>
                     }
-                </div>
-
-
-                <div className={styles.mobileCalendarLink}>
-                    <a href={fixHref('/generate', lang)}>{t('common:options.calendar')}</a>
                 </div>
             </div>
         );

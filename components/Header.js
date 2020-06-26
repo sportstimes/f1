@@ -7,6 +7,8 @@ import Link from 'next-translate/Link'
 import i18nConfig from '../i18n.json'
 import Router from 'next-translate/Router'
 import ISO6391 from 'iso-639-1'
+import fixHref from "next-translate/fixHref";
+import CTABar from "./CTABar";
 
 class Header extends React.Component {
     onChange = event => {
@@ -81,9 +83,11 @@ class Header extends React.Component {
                     </div>
 
                     <div className={styles.clear}></div>
-                    {this.props.showOptions &&
-                    	<OptionsBar showCalendarExport={this.props.showCalendarExport}/>
+
+                    { this.props.showCTABar &&
+                        <CTABar />
                     }
+
                 </div>
             </header>
         )

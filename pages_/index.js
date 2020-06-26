@@ -4,6 +4,8 @@ import { NextSeo } from 'next-seo';
 import RaceSchema from '../components/RaceSchema';
 import useTranslation from 'next-translate/useTranslation'
 import Subscribe from "../components/Subscribe";
+import OptionsBar from "../components/OptionsBar";
+import React from "react";
 
 const Index = (props) => {
 	const { t, lang } = useTranslation()
@@ -21,14 +23,14 @@ const Index = (props) => {
 				description={metaDescription}
 				keywords={metaKeywords}
 			/>
-			<Layout showOptions='true' showCalendarExport='true' year={ props.year }>
+			<Layout showCTABar='true' year={ props.year }>
+				<OptionsBar />
 				<Races year={ props.year } races={ props.races } />
 				{props.races && props.races.map((item, index) => {
 					if(item.sessions){
 						return (<RaceSchema item={item} key={item.name} />)
 					}
 				})}
-				<Subscribe />
 			</Layout>
 		</>
 	);

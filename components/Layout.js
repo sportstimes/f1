@@ -42,7 +42,7 @@ const Layout = props => {
                 <div className="noscript">{t('common:javascript')}</div>
             </noscript>
 
-            <Header showOptions={props.showOptions} showCalendarExport={props.showCalendarExport} year={props.year}/>
+            <Header showCTABar={props.showCTABar} year={props.year}/>
 
             <div className={styles.main_content}>{props.children}</div>
 

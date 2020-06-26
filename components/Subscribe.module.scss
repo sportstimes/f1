@@ -1,6 +1,5 @@
 .subscribe {
   background: #151515;
-  max-width: 500px;
   margin: 50px auto 0 auto;
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
@@ -51,5 +50,18 @@
     -webkit-border-radius: 3px 3px 3px 3px;
     padding: 10px 25px;
     margin-bottom: 15px;
+    cursor: pointer;
   }
+
+  .button:hover {
+    background: #0a5f53;
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .button {
+      width: 100%;
+    }
+  }
+
 }
