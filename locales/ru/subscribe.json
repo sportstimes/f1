@@ -1,6 +1,6 @@
 {
-  "title": "Subscribe",
-  "description": "Receive an email reminder ahead of each race weekend.",
-  "label": "Email Address",
-  "button": "Subscribe"
+  "title": "Подписаться",
+  "description": "Напоминания по электронной почте перед каждым этапом Формулы 1.",
+  "label": "Адрес электронной почты",
+  "button": "Подписаться"
 }
