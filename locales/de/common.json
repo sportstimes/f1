@@ -7,7 +7,7 @@
   },
   "options": {
     "calendar": "Füge diese Renndaten - und Zeiten deinem Kalender hinzu",
-    "email": "Receive email reminders",
+    "email": "Erhalte Erinnerungen per E-Mail",
     "timezonePicker": {
       "showing": "Zeige die Zeiten für",
       "pick": "Wähle eine Zeitzone...",

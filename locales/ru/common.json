@@ -7,7 +7,7 @@
   },
   "options": {
     "calendar": "Добавить расписание гонок в Календарь",
-    "email": "Receive email reminders",
+    "email": "Напоминания по электронной почте",
     "timezonePicker": {
       "showing": "Время показано для",
       "pick": "Выберите часовой пояс...",
