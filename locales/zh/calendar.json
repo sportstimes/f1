@@ -1,0 +1,49 @@
+{
+  "date": "日期",
+  "time": "时间",
+  "event": "一级方程式大奖赛",
+  "notice": {
+    "text": "以下是首8场比赛的日程",
+    "link": "了解更多"
+  },
+  "badges": {
+    "tbc": "TBC",
+    "tbc_title": "待确认",
+    "tickets": "门票",
+    "canceled": "已取消",
+    "next": "即将开始"
+  },
+  "schedule": {
+    "fp1": "第1次练习赛",
+    "fp2": "第2次练习赛",
+    "fp3": "第3次练习赛",
+    "qualifying": "排位赛",
+    "race": "正赛"
+  },
+  "races": {
+    "austrian-grand-prix": "奥地利大奖赛",
+    "steiermark-grand-prix": "施泰尔马克 (奥地利) 大奖赛",
+    "hungary-grand-prix": "匈牙利大奖赛",
+    "british-grand-prix": "英国大奖赛",
+    "anniversary-british-grand-prix": "七十周年纪念 (英国) 大奖赛",
+    "spanish-grand-prix": "西班牙大奖赛",
+    "belgian-grand-prix": "比利时大奖赛",
+    "italian-grand-prix": "意大利大奖赛",
+    "australian-grand-prix": "澳大利亚大奖赛",
+    "bahrain-grand-prix": "巴林大奖赛",
+    "vietnamese-grand-prix": "越南大奖赛",
+    "china-grand-prix": "中国大奖赛",
+    "dutch-grand-prix": "荷兰大奖赛",
+    "monaco-grand-prix": "摩纳哥大奖赛",
+    "azerbaijan-grand-prix": "阿塞拜疆大奖赛",
+    "canadian-grand-prix": "加拿大大奖赛",
+    "french-grand-prix": "法国大奖赛",
+    "singapore-grand-prix": "新加坡大奖赛",
+    "russian-grand-prix": "俄罗斯大奖赛",
+    "japanese-grand-prix": "日本大奖赛",
+    "us-grand-prix": "美国大奖赛",
+    "mexico-grand-prix": "墨西哥大奖赛",
+    "brazilian-grand-prix": "巴西大奖赛",
+    "abu-dhabi-grand-prix": "阿布扎比大奖赛"
+  }
+}
