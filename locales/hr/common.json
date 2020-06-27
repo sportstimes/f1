@@ -7,6 +7,7 @@
   },
   "options": {
     "calendar": "Dodajte ove datume trka na vaš kalendar",
+    "email": "Receive email reminders",
     "timezonePicker": {
       "showing": "Pokazujemo vremensku zonu za",
       "pick": "Izaberi vremensku zonu...",
