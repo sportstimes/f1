@@ -7,10 +7,14 @@ import layoutStyles from '../components/Layout.module.scss';
 import useTranslation from 'next-translate/useTranslation'
 
 const Races = (props) => {
-    const {t, lang} = useTranslation()
+    const {t} = useTranslation()
 
-    const {timezone} = useContext(UserContext)
+    let {timezone} = useContext(UserContext)
     const races = props.races
+
+    if(props.timezone){
+        timezone = props.timezone;
+    }
 
     // TODO Improve this isNextRace logic
     let isNextRace = false
@@ -19,14 +23,14 @@ const Races = (props) => {
     return (
         <div className={styles.races}>
 
-            <div className={styles.notice}>
-                <p>{t('calendar:notice.text')}</p>
-                <a href="https://www.formula1.com/en/latest/article.f1-schedule-2020-latest-information.3P0b3hJYdFDm9xFieAYqCS.html"
-                   target="_blank" className={styles.link}>
-                    {t('calendar:notice.link')}
-                </a>
-                <div className={styles.clear}></div>
-            </div>
+            {/*<div className={styles.notice}>*/}
+            {/*    <p>{t('calendar:notice.text')}</p>*/}
+            {/*    <a href="https://www.formula1.com/en/latest/article.f1-schedule-2020-latest-information.3P0b3hJYdFDm9xFieAYqCS.html" rel="noopener"*/}
+            {/*       target="_blank" className={styles.link}>*/}
+            {/*        {t('calendar:notice.link')}*/}
+            {/*    </a>*/}
+            {/*    <div className={styles.clear}></div>*/}
+            {/*</div>*/}
 
             <table id="events-table">
                 <thead>

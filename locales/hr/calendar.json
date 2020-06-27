@@ -3,11 +3,12 @@
   "time": "Vreme",
   "event": "F1 Velike Nagrade",
   "notice": {
-    "text": "Prvih 8. trka izmenjenog kalendara su ispod. Vremena su unutar TBC uz dodatne trke.",
+    "text": "Prvih 8. trka izmenjenog kalendara su ispod.",
     "link": "Pročitajte više"
   },
   "badges": {
     "tbc": "TBC",
+    "tbc_title": "To be confirmed",
     "tickets": "Ulaznice",
     "canceled": "Otkazano",
     "next": "SLEDEĆE"

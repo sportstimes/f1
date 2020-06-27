@@ -1,6 +1,5 @@
 import React from 'react';
 import App from 'next/app';
-import Router from 'next/router';
 import UserContext from '../components/UserContext';
 const moment = require('moment-timezone')
 import { DefaultSeo } from 'next-seo';
@@ -9,9 +8,9 @@ import '../styles/style.scss'
 export default class F1App extends App {
 	
 	constructor(props, context, query) {
-		super(props, context, query);
+		super();
 
-		var timezone = moment.tz.guess()
+		let timezone = moment.tz.guess()
 		if(props.router.query.timezone){
 			timezone = props.router.query.timezone.replace("-", "/")
 		}
@@ -22,7 +21,7 @@ export default class F1App extends App {
 	};
 	
 	componentDidMount = (props) => {
-		var timezone = moment.tz.guess()
+		let timezone = moment.tz.guess()
 		if(localStorage.getItem('timezone')) {
 			timezone = localStorage.getItem('timezone');
 		}

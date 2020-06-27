@@ -25,17 +25,16 @@ const Layout = props => {
     return (
         <div className={styles.content}>
             <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
                 <link rel="manifest" href="/site.webmanifest"/>
                 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#eb000f"/>
+                <link rel="preload" as="script" href="//www.google-analytics.com/analytics.js"/>
                 <meta name="msapplication-TileColor" content="#000000"/>
                 <meta name="theme-color" content="#ffffff"/>
-                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
-                      integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz"
-                      crossOrigin="anonymous"/>
+
                 <script dangerouslySetInnerHTML={setGoogleTags()}/>
             </Head>
 
@@ -43,7 +42,7 @@ const Layout = props => {
                 <div className="noscript">{t('common:javascript')}</div>
             </noscript>
 
-            <Header showOptions={props.showOptions} showCalendarExport={props.showCalendarExport} year={props.year}/>
+            <Header showCTABar={props.showCTABar} year={props.year}/>
 
             <div className={styles.main_content}>{props.children}</div>
 
@@ -54,14 +53,11 @@ const Layout = props => {
                 buttonText={t('common:cookies.button')}
                 cookieName="f1cal"
                 style={{background: "#0E5143", zIndex: 999999, padding: "5px 0"}}
-                buttonStyle={{color: "white", background: "#1a8b73", fontSize: "13px"}}
+                buttonStyle={{color: "#000000", background: "#ffffff", fontSize: "13px"}}
                 expires={150}
             >
                 {t('common:cookies.title')}
             </CookieConsent>
-
-            <script type="text/javascript"
-                    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e2a277b012976e8"></script>
         </div>
     );
 };

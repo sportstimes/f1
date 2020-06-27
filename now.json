@@ -10,9 +10,15 @@
       }
     },
     {
-      "src": "/download/(.*)",
+      "src": "/timezone/(.*)",
       "headers": {
-        "cache-control": "public, max-age=43210, immutable"
+        "cache-control": "no-cache"
+      }
+    },
+    {
+      "src": "/(_next/static/.*)",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
       }
     },
     {

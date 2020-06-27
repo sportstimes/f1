@@ -1,15 +1,11 @@
-import {useState} from 'react'
 import Layout from "../components/Layout";
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
-const moment = require('moment-timezone')
 import useTranslation from 'next-translate/useTranslation'
 
 function Years() {
-  const { t, lang } = useTranslation()
-  const title = t('common:title')
-  const subtitle = t('common:subtitle')
-  
+  const { t } = useTranslation()
+
   const yearItems = []
 	let supportedYears = ["2020", "2019", "2018"]
 	for (let year in supportedYears) {

@@ -26,13 +26,14 @@ class Race extends React.Component {
     }
 
     render() {
-        const {t} = this.props.i18n
+        const {t, lang} = this.props.i18n
         const localeKey = 'calendar:races.' + this.props.item.localeKey;
 
+        moment.locale(lang);
 
         function badgeColumnLayout(props) {
             if (props.item.tbc) {
-                return (<span className={styles.tbc}>{t('calendar:badges.tbc')}</span>);
+                return (<span title={t('calendar:badges.tbc_title')} className={styles.tbc}>{t('calendar:badges.tbc')}</span>);
             } else if (props.item.canceled) {
                 return (<span className={styles.canceled}>{t('calendar:badges.canceled')}</span>);
             } else if (props.item.affiliate) {
@@ -43,8 +44,7 @@ class Race extends React.Component {
                                className={styles.ticketsOver}>{t('calendar:badges.tickets')}</a>);
                 }
             } else {
-                return (
-                    <a href={props.item.affiliate} className={styles.ticketsOver}>{t('calendar:badges.tickets')}</a>);
+                return (``);
             }
         }
 
@@ -81,7 +81,14 @@ class Race extends React.Component {
                    className={`${moment(this.props.item.sessions.race).add(2, 'hours').isBefore() ? styles.past : ''} ${this.props.index % 2 === 0 ? 'even' : styles.odd} ${this.props.isNextRace ? styles.nextEvent : ''} ${this.props.item.canceled ? styles.canceledWeekend : ''} ${this.props.item.tbc ? styles.tbcWeekend : ''}`}>
             <tr key={this.props.item.slug} className={styles.race} onClick={() => this.handleRowClick()}>
                 <td className={styles.iconColumn}>
-                    <i className={`${this.state.collapsed ? 'fas fa-caret-right fa-xs' : 'fas fa-caret-down fa-xs'}`}></i>
+                    {this.state.collapsed ?
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 448"><path fill="white" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
+                    :
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"/></svg>
+                    }
+
+
+                    <i aria-hidden className={`${this.state.collapsed ? 'fas fa-caret-right fa-xs' : 'fas fa-caret-down fa-xs'}`}></i>
                 </td>
                 <td className={styles.eventColumn}>
 						<span
@@ -101,45 +108,45 @@ class Race extends React.Component {
                     }
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.race).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.race).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.race).tz(this.props.timezone).format('LT')}</td>
                 <td className={styles.badgeColumn}>
                     {badgeColumnLayout(this.props)}
                 </td>
             </tr>
-            <tr className={`free-practice-1 ${this.state.collapsed ? styles.collapsed : styles.visible}`}>
+            <tr className={`free-practice-1 ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
                     {t('calendar:schedule.fp1')}
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
-            <tr className={`free-practice-2 ${this.state.collapsed ? styles.collapsed : styles.visible}`}>
+            <tr className={`free-practice-2 ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
                     {t('calendar:schedule.fp2')}
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
-            <tr className={`free-practice-3 ${this.state.collapsed ? styles.collapsed : styles.visible}`}>
+            <tr className={`free-practice-3 ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
                     {t('calendar:schedule.fp3')}
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
-            <tr className={`qualifying ${this.state.collapsed ? styles.collapsed : styles.visible}`}>
+            <tr className={`qualifying ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
                     {t('calendar:schedule.qualifying')}
                 </td>
                 <td className={styles.dateColumn}>{moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('D MMM')}</td>
-                <td className={styles.timeColumn}>{moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('HH:mm')}</td>
+                <td className={styles.timeColumn}>{moment(this.props.item.sessions.qualifying).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
             </tbody>

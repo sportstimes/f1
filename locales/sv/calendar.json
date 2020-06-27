@@ -1,0 +1,49 @@
+{
+  "date": "Datum",
+  "time": "Tid",
+  "event": "Formel 1 Grand Prix",
+  "notice": {
+    "text": "Första 8 racen i den uppdaterade kalendern nedan.",
+    "link": "Läs mer"
+  },
+  "badges": {
+    "tbc": "TBC",
+    "tbc_title": "To be confirmed",
+    "tickets": "Biljetter",
+    "canceled": "Inställd",
+    "next": "NÄSTA"
+  },
+  "schedule": {
+    "fp1": "Fri Träning 1",
+    "fp2": "Fri Träning 2",
+    "fp3": "Fri Träning 3",
+    "qualifying": "Kvalificering",
+    "race": "Race"
+  },
+  "races": {
+    "austrian-grand-prix": "Österrikes Grand Prix",
+    "steiermark-grand-prix": "Steiermarks (Österrikes) Grand Prix",
+    "hungary-grand-prix": "Ungerns Grand Prix",
+    "british-grand-prix": "Storbritanniens Grand Prix",
+    "anniversary-british-grand-prix": "70-årsjubileum (Storbritanniens) Grand Prix",
+    "spanish-grand-prix": "Spaniens Grand Prix",
+    "belgian-grand-prix": "Belgiens Grand Prix",
+    "italian-grand-prix": "Italiens Grand Prix",
+    "australian-grand-prix": "Australiens Grand Prix",
+    "bahrain-grand-prix": "Bahrains Grand Prix",
+    "vietnamese-grand-prix": "Vietnams Grand Prix",
+    "china-grand-prix": "Kinas Grand Prix",
+    "dutch-grand-prix": "Nederländernas Grand Prix",
+    "monoco-grand-prix": "Monacos Grand Prix",
+    "azerbaijan-grand-prix": "Azerbaijans Grand Prix",
+    "canadian-grand-prix": "Kanadas Grand Prix",
+    "french-grand-prix": "Frankrikes Grand Prix",
+    "singapore-grand-prix": "Singapores Grand Prix",
+    "russian-grand-prix": "Rysslands Grand Prix",
+    "japanese-grand-prix": "Japans Grand Prix",
+    "us-grand-prix": "USA:s Grand Prix",
+    "mexico-grand-prix": "Mexikos Grand Prix",
+    "brazilian-grand-prix": "Brasiliens Grand Prix",
+    "abu-dhabi-grand-prix": "Abu Dhabis Grand Prix"
+  }
+}

@@ -3,11 +3,12 @@
   "time": "Time",
   "event": "Formula 1 Grand Prix Events",
   "notice": {
-    "text": "First 8 races of the revised calendar below. Times are TBC along with additional races.",
+    "text": "First 8 races of the revised calendar below.",
     "link": "Read more"
   },
   "badges": {
     "tbc": "TBC",
+    "tbc_title": "To be confirmed",
     "tickets": "Tickets",
     "canceled": "Canceled",
     "next": "NEXT"

@@ -1,5 +1,16 @@
 {
-  "allLanguages": ["en", "fr", "rs"],
+  "allLanguages": [
+    "cs",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hr",
+    "it",
+    "nl",
+    "ru",
+    "sv"
+  ],
   "defaultLanguage": "en",
   "currentPagesDir": "pages_",
   "finalPagesDir": "pages",
@@ -7,6 +18,7 @@
   "pages": {
     "*": ["common", "calendar"],
     "/": ["calendar"],
+    "/subscribe": ["subscribe"],
     "/generate": ["generate"],
     "/timezones": ["timezones"],
     "/years": ["years", "calendar"]

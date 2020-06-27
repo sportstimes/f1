@@ -2,7 +2,6 @@ import {useState} from 'react'
 import Layout from "../components/Layout";
 import { NextSeo } from 'next-seo';
 import useTranslation from 'next-translate/useTranslation'
-import Router from 'next-translate/Router'
 
 function Generate(props) {
   const { t, lang } = useTranslation()
@@ -82,7 +81,7 @@ function Generate(props) {
 						
 						<section className="card" id="download_option_google">
 							<h4>{ t('generate:download.gcalTitle') }</h4>
-							<p>{ t('generate:download.gcalDescription') } (<a href="https://support.google.com/calendar/answer/37100?hl=en" target="_blank">{ t('generate:download.gcalDescriptionLink') }</a>):</p>
+							<p>{ t('generate:download.gcalDescription') } (<a href="https://support.google.com/calendar/answer/37100" target="_blank">{ t('generate:download.gcalDescriptionLink') }</a>):</p>
 							<p className="copyable">{form.googleURL}</p>
 						</section>
 												

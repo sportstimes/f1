@@ -6,7 +6,8 @@
     "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
   },
   "options": {
-    "calendar": "Add these race dates & times to your mobile, calendar, Outlook or Google Calendar",
+    "calendar": "Add these race dates & times to your Calendar",
+    "email": "Receive email reminders",
     "timezonePicker": {
       "showing": "Showing times for",
       "pick": "Pick a timezone...",
@@ -18,6 +19,7 @@
     "title": "This website uses cookies to enhance the user experience.",
     "button": "Great!"
   },
+  "languageSelector": "Select Language",
   "javascript": "F1 Calendar works best with Javascript Enabled.",
   "footer": {
     "coffee": "Support F1 Calendar, buy us a coffee.",

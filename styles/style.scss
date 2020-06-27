@@ -2,6 +2,7 @@
 	font-family: "LeagueSpartan";
 	src: url("/fonts/leaguespartan-bold-webfont.woff2") format("woff2"),
 		url("/fonts/leaguespartan-bold-webfont.woff") format("woff");
+	font-display: swap;
 }
 
 *,
@@ -44,6 +45,12 @@ h2 {
 
 h3 {
 	font-size: 20px;
+	text-transform: uppercase;
+	font-family: "LeagueSpartan";
+}
+
+h4 {
+	font-size: 16px;
 	text-transform: uppercase;
 	font-family: "LeagueSpartan";
 }

@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import Layout from "../components/Layout";
 import {NextSeo} from 'next-seo';
 import Link from 'next/link';
@@ -18,8 +17,8 @@ function Timezones() {
     const timezoneItems = []
     let zoneslist = moment.tz.names()
     for (let zone in zoneslist) {
-        timezoneItems.push(<li key={zoneslist[zone]}><Link href={`timezone/${zoneslist[zone]}`}><a>{zoneslist[zone]}</a></Link>
-        </li>)
+        let timezoneSlug = zoneslist[zone].replace(/\//g, "-");
+        timezoneItems.push(<li key={zoneslist[zone]}><Link href={`timezone/${timezoneSlug}`}><a>{zoneslist[zone]}</a></Link></li>)
     }
 
     return (
@@ -30,9 +29,8 @@ function Timezones() {
                 keywords={metaKeywords}
             />
             <Layout>
-                <section>
-                    <h4>{t('timezones:title')}</h4>
-
+                    <h3>{t('timezones:title')}</h3>
+                <section className="card">
                     <p>
                         <ul>
                             {timezoneItems}
@@ -40,56 +38,27 @@ function Timezones() {
                     </p>
                 </section>
 
-
                 <style jsx>{`
-					form {
-						border: 1px solid #151515;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						border-radius: 4px;
-						vertical-align:middle;
-					}
-					fieldset {
-						border:0;	
+					a {
+						color:#1a8b73;
 					}
 					
-					p {
-						margin-bottom: 15px;	
+					.card {
+						background:#141414;
+						-webkit-border-radius: 15px;
+						-moz-border-radius: 15px;
+						padding:25px 25px 10px 25px;
+						margin-bottom:16px;
 					}
 					
-					button {
-						background: #1a8b73;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px;
-						font-size:15px;
-						border:0;
-						color:#fff;
-						cursor: pointer;
+					.card ul {
+					    list-style:none;
+					    margin:0;
+					    padding: 0;
 					}
 					
-					.button {
-						background: #1a8b73;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px;
-						font-size:15px;
-						border:0;
-						color:#fff;
-						cursor: pointer;
-					}
-					
-					section {
-						
-					}
-					
-					hr {
-						border: 1px solid #151515;
-						width: 25%;
-						margin: 15px auto;		
+					.card p {
+						margin-bottom:15px;
 					}
 					
 			    `}</style>

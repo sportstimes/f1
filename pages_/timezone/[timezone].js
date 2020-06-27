@@ -1,48 +1,94 @@
-import { useState, useContext, useEffect } from 'react';
+import {useState, useContext, useEffect} from 'react';
 import UserContext from '../../components/UserContext';
 import Layout from '../../components/Layout';
 import Races from '../../components/Races';
-import { NextSeo } from 'next-seo';
+import {NextSeo} from 'next-seo';
+import useTranslation from "next-translate/useTranslation";
+import RaceSchema from "../../components/RaceSchema";
+import Link from "next/link";
+import { useRouter } from 'next/router'
+
+const moment = require('moment-timezone')
 
 const Timezone = (props) => {
-	
+	const router = useRouter()
+
+	const {t, lang} = useTranslation()
+	const title = t('common:title')
+	const subtitle = t('common:subtitle')
+
 	const currentYear = '2020';
-				
+
+	const metaDescription = t('common:meta.description', {year: currentYear})
+	const metaKeywords = t('common:meta.keywords', {year: currentYear})
+
+	const timezone = props.timezone ? props.timezone.replace("-", "/") : "";
+
+
 	return (
 		<>
 			<NextSeo
-				title={`F1 Calendar ${currentYear}  - Formula One Race Times and Dates`}
-				description={`Formula One Calendar for ${currentYear} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${currentYear}, London, Europe`}
-				canonical="https://www.f1calendar.com/"
-				twitter={{
-					handle: '@f1cal',
-					site: '@f1cal',
-					cardType: 'summary_large_image',
-				}}
+				title={`${title} ${currentYear} - ${subtitle}`}
+				description={metaDescription}
+				keywords={metaKeywords}
 			/>
-		    <Layout showOptions='true' showCalendarExport='true' year={ props.year }>
-				<Races year={ props.year } races={ props.races } />
-		    </Layout>
-	    </>
+			<Layout showCalendarExport='true' year={props.year} timezone={timezone}>
+				<h3>{timezone}</h3>
+				<p><Link href="/timezones"><a>{t('common:options.timezonePicker.pick')}</a></Link><br /><br /></p>
+
+				{router.isFallback ?
+					<>
+						<div>Loading...</div>
+						<noscript>
+							<meta httpEquiv="refresh" content="5" />
+						</noscript>
+					</>
+					:
+					<>
+
+						{props.races &&
+						<Races year={props.year} races={props.races} timezone={timezone}/>
+						}
+
+					{props.races && props.races.map((item, index) => {
+						if (item.sessions) {
+							return (<RaceSchema item={item} key={item.name}/>)
+						}
+					})}
+					</>
+				}
+			</Layout>
+		</>
 	);
-};
+}
 
 export default Timezone;
 
-
-export const getStaticPaths = async () => {
+export async function getStaticPaths() {
 	return ({
 		paths: [],
-		fallback: false,
+		fallback: true
 	})
 }
 
-export const getStaticProps = async ({ params }) => {
-	const data = await import(`../../db/2020.json`)
+export async function getStaticProps({ params }) {
+	const currentYear = '2020';
 
-	return {
-		year: "2020",
-		races: data.races,
+	try {
+		const res = await fetch('https://f1calendar.com/api/year/' + currentYear + '');
+		const data = await res.json();
+
+		return {
+			props: {
+				races: data.races,
+				timezone: params.timezone
+			}
+		}
+	} catch (error) {
+		return {
+			props: {
+				year: currentYear
+			}
+		};
 	}
-};
+}

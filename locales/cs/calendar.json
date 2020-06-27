@@ -3,11 +3,12 @@
   "time": "Čas",
   "event": "Velké ceny Formule 1",
   "notice": {
-    "text": "Prvních 8 závodů nového kalendáře níže. Časy a další závody budou ještě potvrzeny.",
+    "text": "Prvních 8 závodů nového kalendáře níže.",
     "link": "Přečtěte si více"
   },
   "badges": {
     "tbc": "Bude potvrzeno",
+    "tbc_title": "Bude potvrzeno",
     "tickets": "Vstupenky",
     "canceled": "Zrušeno",
     "next": "DÁLE"

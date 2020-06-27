@@ -5,13 +5,13 @@
   p { color: #aaa; font-size:12px; text-align:center; }
 	p a { color: #fff; text-decoration:none; }
 	
-	
+
 	.support {
-	  	margin: 0 16px 25px 16px;
+	  	margin: 0 16px 30px 16px;
 	  	
 	  	a {
     		padding:13px 15px;
-    		background:#f87639;
+    		background: #e52727;
     		-webkit-border-radius: 4px;
   			-moz-border-radius: 4px;
   			font-family: 'LeagueSpartan';
@@ -28,5 +28,9 @@
     	  padding-bottom:1px;
     	  vertical-align:middle;
   		}
+	}
+
+	.supportFontFallback a {
+		font-family: 'Arial Black';
 	}
 }	

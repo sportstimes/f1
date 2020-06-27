@@ -1,9 +1,9 @@
 .options {
 
   .bar {
-  	background: #1a8b73;
-  	color: #87f3dc;
-  	padding: 0 25px;
+  	background: #e52727;
+  	color: #ffffff;
+  	padding: 0 16px;
   	height: 50px;
   	line-height: 50px;
   	vertical-align: middle;
@@ -13,24 +13,16 @@
   	-webkit-border-radius: 3px 3px 3px 3px;
   
   	.bar a {
-  		color: #87f3dc;
+  		color: #c0f5e4;
   	}
   	.currentTimezone {
   		cursor: pointer;
   		float: left;
   	}
   	.currentTimezone a {
-  		color: #87f3dc;
+  		color: #ffffff;
   	}
-  	
-  	
-  	.calendarLink {
-  		float: right;
-  	}
-  	.calendarLink a {
-  		color: #fff;
-  		text-decoration: underline;
-  	}
+
   	strong {
   		color: #fff;
   		text-decoration: underline;
@@ -40,7 +32,7 @@
   	}
   	button {
   		background: #fff;
-  		color: #1a8b73;
+  		color: #e52727;
   		padding: 3px;
   		border: 0;
   		-webkit-border-radius: 3px;
@@ -53,11 +45,7 @@
   			float: none;
   			text-align: center;
   		}
-  
-  		.calendarLink {
-  			display: none;
-  		}
-  
+
   		.pickerLabel {
   			display: none;
   		}
@@ -72,27 +60,6 @@
   		button {
   			width: 80px;
   		}
-  	}
-  	@media screen and (max-width: 500px) {
-  		.currentTimezone {
-  			font-size: 11px;
-  		}
-  	}
-  }
-  
-  
-  .mobileCalendarLink {
-  	display:none;
-  }
-  @media screen and (max-width: 900px) {
-  	.mobileCalendarLink {
-  		display:block;
-  		text-align:center;
-  		padding-bottom:12px;
-  	}	
-  	.mobileCalendarLink a {
-  		color: #fff;
-  		text-decoration:underline;
   	}
   }
 
