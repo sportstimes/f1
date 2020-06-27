@@ -18,6 +18,7 @@
   "pages": {
     "*": ["common", "calendar"],
     "/": ["calendar"],
+    "/subscribe": ["subscribe"],
     "/generate": ["generate"],
     "/timezones": ["timezones"],
     "/years": ["years", "calendar"]
