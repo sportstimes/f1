@@ -1,28 +1,28 @@
 {
   "form": {
     "title": "Napravi kalendar",
-    "description": "Prvo ćete morati odabrati sesije iz trkačkog vikenda koje mislite dodati na kalendar:",
-    "fp1": "1. Slobodni Trening",
-    "fp2": "2. Slobodni Trening",
-    "fp3": "3. Slobodni Trening",
+    "description": "Prvo ćete morati odabrati sesije koje mislite dodati u kalendar:",
+    "fp1": "1. slobodni trening",
+    "fp2": "2. slobodni trening",
+    "fp3": "3. slobodni trening",
     "qualifying": "Kvalifikacije",
-    "grandPrix": "Velika Nagrada",
-    "reminder": "Namestite podsetnik",
-    "reminderContinued": "minuta pre početka svake sesije u vašem kalendaru.",
+    "grandPrix": "Velika nagrada",
+    "reminder": "Namjestite podsjetnik",
+    "reminderContinued": "minuta prije početka svake sesije u vašem kalendaru.",
     "button": "Preuzmi kalendar",
     "buttonSubmitted": "Ispunjeno",
-    "nonOptionsSelected": "Molimo vas da izaberete makar jednu sesiju za vaš kalendar."
+    "nonOptionsSelected": "Molimo vas da odaberete najmanje jednu sesiju za vaš kalendar."
   },
   "download": {
-    "title": "Izaberite Vrstu Kalendara",
-    "webcalTitle": "Za Mobilni Telefon ili Desktop",
-    "webcalDescription": "Automatski ažurirajte kalendar za aplikacije kao što su Outlook i MacOS Kalendar.",
+    "title": "Odaberite vrstu kalendara",
+    "webcalTitle": "Za mobilni uređaj ili računalo",
+    "webcalDescription": "Automatski ažuriraj kalendar za aplikacije kao što su Outlook i MacOS Kalendar.",
     "webcalButton": "Preuzmite",
-    "gcalTitle": "Za Google Kalendar",
-    "gcalDescription": "Da bi ste dodali ovaj kalendar, kopirajte i nalepite ovu adresu na Google Kalendar",
+    "gcalTitle": "za Google Kalendar",
+    "gcalDescription": "Da bi ste dodali ovaj kalendar, kopirajte i zalijepite ovu adresu na Google Kalendar",
     "gcalDescriptionLink": "detaljna uputstva",
-    "icsTitle": "Preutmite ICS Fajl",
-    "icsDescription": "Za kalendare koji ne mogu upravljati ažuriranja morate preuzeti ovaj fajl.",
+    "icsTitle": "Preuzmite ICS datoteku",
+    "icsDescription": "Kalendar koji se ne ažurira za kalendare koji ne podržavaju automatska ažuriranja.",
     "icsButton": "Preuzmi"
   }
 }
