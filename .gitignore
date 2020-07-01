@@ -46,3 +46,6 @@ jspm_packages
 # ICS Files Generated at Build Time
 /public/download/*.ics
 /public/download/*/*.ics
+
+.idea
+.idea/*
