@@ -35,7 +35,7 @@
     "next-translate": "^0.17.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
-    "react-cookie-consent": "^3.0.0",
+    "react-cookie-consent": "^5.1.2",
     "react-dom": "^16.13.1",
     "react-grid-system": "^7.0.3",
     "sass": "^1.26.3"
