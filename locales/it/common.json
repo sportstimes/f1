@@ -1,5 +1,5 @@
 {
-  "title": "F1 Calendar",
+  "title": "Calendario F1",
   "subtitle": "Gare, Qualifiche e Sessioni di prova",
   "meta":{
     "description": "Calendari di Formula 1 per {{year}} stagioni con tutti i Gran Premi, le sessioni di prova e di qualifica. Si possono impostare promemoria. Tutti i fusi orari del mondo. Scarica o iscriviti.",
@@ -7,16 +7,17 @@
   },
   "options": {
     "calendar": "Aggiungi queste date e orari di gara al tuo calendario",
+    "email": "Ricevi promemoria via email",
     "timezonePicker": {
       "showing": "Mostra gli orari per",
       "pick": "Scegli un fuso orario...",
-      "button": "Fatto"
+      "button": "Conferma"
     }
   },
   "contribute": "Contribuisci",
   "cookies": {
     "title": "Questo sito web utilizza i cookie per migliorare l'esperienza utente.",
-    "button": "Ottimo!"
+    "button": "Capito!"
   },
   "languageSelector": "Scegli una lingua",
   "javascript": "F1 Calendar funziona meglio con Javascript attivato.",
