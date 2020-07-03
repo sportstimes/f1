@@ -3,11 +3,12 @@
   "time": "Čas",
   "event": "Velké ceny Formule 1",
   "notice": {
-    "text": "Prvních 8 závodů nového kalendáře níže. Časy a další závody budou ještě potvrzeny.",
+    "text": "Prvních 8 závodů nového kalendáře níže.",
     "link": "Přečtěte si více"
   },
   "badges": {
     "tbc": "Bude potvrzeno",
+    "tbc_title": "Bude potvrzeno",
     "tickets": "Vstupenky",
     "canceled": "Zrušeno",
     "next": "DÁLE"
@@ -33,7 +34,7 @@
     "vietnamese-grand-prix": "Velká cena Vietnamu",
     "china-grand-prix": "Velká cena Číny",
     "dutch-grand-prix": "Velká cena Nizozemska",
-    "monoco-grand-prix": "Velká cena Monaka",
+    "monaco-grand-prix": "Velká cena Monaka",
     "azerbaijan-grand-prix": "Velká cena Azerbajdžánu",
     "canadian-grand-prix": "Velká cena Kanady",
     "french-grand-prix": "Velká cena Francie",

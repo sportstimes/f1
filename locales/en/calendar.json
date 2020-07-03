@@ -3,11 +3,12 @@
   "time": "Time",
   "event": "Formula 1 Grand Prix Events",
   "notice": {
-    "text": "First 8 races of the revised calendar below. Times are TBC along with additional races.",
+    "text": "First 8 races of the revised calendar below.",
     "link": "Read more"
   },
   "badges": {
     "tbc": "TBC",
+    "tbc_title": "To be confirmed",
     "tickets": "Tickets",
     "canceled": "Canceled",
     "next": "NEXT"
@@ -33,7 +34,7 @@
     "vietnamese-grand-prix": "Vietnamese Grand Prix",
     "china-grand-prix": "Chinese Grand Prix",
     "dutch-grand-prix": "Dutch Grand Prix",
-    "monoco-grand-prix": "Monaco Grand Prix",
+    "monaco-grand-prix": "Monaco Grand Prix",
     "azerbaijan-grand-prix": "Azerbaijan Grand Prix",
     "canadian-grand-prix": "Canadian Grand Prix",
     "french-grand-prix": "French Grand Prix",

@@ -34,7 +34,7 @@ const Layout = props => {
                 <link rel="preload" as="script" href="//www.google-analytics.com/analytics.js"/>
                 <meta name="msapplication-TileColor" content="#000000"/>
                 <meta name="theme-color" content="#ffffff"/>
-
+                <meta name="google-site-verification" content="tMVNkyoK26Mb76mN4Fka9NrVjh214rH-2Usv7ktKfSU" />
                 <script dangerouslySetInnerHTML={setGoogleTags()}/>
             </Head>
 
@@ -42,7 +42,7 @@ const Layout = props => {
                 <div className="noscript">{t('common:javascript')}</div>
             </noscript>
 
-            <Header showOptions={props.showOptions} showCalendarExport={props.showCalendarExport} year={props.year}/>
+            <Header showCTABar={props.showCTABar} year={props.year}/>
 
             <div className={styles.main_content}>{props.children}</div>
 

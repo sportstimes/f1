@@ -1,0 +1,36 @@
+{
+  "title": "F1 Kalender",
+  "subtitle": "Race, Kwalificatie & Vrije Training Sessies",
+  "meta":{
+    "description": "Formule 1 Kalender voor seizoen {{year}} met alle F1 race-, kwalificatie- en vrije training sessies. Stel herinneringen in. Alle tijdzones. Download of abonneer.",
+    "keywords": "F1, formule 1, formule één, race tijden, races, herinnering, alarm, waarschuwing, grote prijzen, grote prijs, kalender, datums, starttijden, kwalificatie, oefening, vrije training, Londen, Europa, {{year}}"
+  },
+  "options": {
+    "calendar": "Voeg deze race datums en starttijden toe aan je kalender",
+    "email": "Receive email reminders",
+    "timezonePicker": {
+      "showing": "Starttijden voor",
+      "pick": "Kies een tijdzone...",
+      "button": "Gedaan"
+    }
+  },
+  "contribute": "Help ons",
+  "cookies": {
+    "title": "Deze website maakt gebruik van cookies om de gebruikerservaring te verbeteren.",
+    "button": "Geweldig!"
+  },
+  "languageSelector": "Kies uw taal",
+  "javascript": "De F1 kalender website werkt het best met Javascript ingeschakeld.",
+  "footer": {
+    "coffee": "Steun F1 kalender, trakteer ons op een biertje.",
+    "twitter": "Vind ons op Twitter",
+    "github": "Open Source op GitHub",
+    "issue": "Een probleem gevonden? Rapporteer het",
+    "links": {
+      "wereOn": "Vind ons op",
+      "openSourcedOn": "Open Source op",
+      "spottedIssue": "Een probleem gevonden?",
+      "spottedReport": "Rapporteer"
+    }
+  }
+}

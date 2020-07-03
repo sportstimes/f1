@@ -1,16 +1,17 @@
 {
-  "title": "F1 Kalendar",
-  "subtitle": "Trke, Kvalifikacije i Slobodni Treninzi",
+  "title": "F1 kalendar",
+  "subtitle": "Utrke, kvalifikacije i slobodni treninzi",
   "meta":{
-    "description": "Formula 1 kalendar za {{year}} sezonu sa svim sesijama Velike Nagrade. Opcijama za podsetnike. Sve vremenske zone. Preuzmi ili se preplati.",
-    "keywords": "F1, formula jedan, vreme trka, trke, podsetnik, upozorenja, velike nagrade, velika nagrada, kalendar, datumi, vreme početka, kvalifikacije, trening, Beograd, Evropa, {{year}}"
+    "description": "Formula 1 kalendar za {{year}} sezonu sa svim sesijama Velike nagrade. Mogućnosti podsjetnika. Sve vremenske zone. Preuzmi ili se preplati.",
+    "keywords": "F1, formula jedan, vrijeme utrka, utrke, podsjetnik, upozorenja, velike nagrade, velika nagrada, kalendar, datumi, vrijeme početka, kvalifikacije, trening, {{year}}"
   },
   "options": {
-    "calendar": "Dodajte ove datume trka na vaš kalendar",
+    "calendar": "Dodajte ove datume utrka na vaš kalendar",
+    "email": "Primi e-mail podsjetnik",
     "timezonePicker": {
       "showing": "Pokazujemo vremensku zonu za",
-      "pick": "Izaberi vremensku zonu...",
-      "button": "Urađeno"
+      "pick": "Odaberite vremensku zonu...",
+      "button": "Spremi"
     }
   },
   "contribute": "Doprinesi",
@@ -18,17 +19,17 @@
     "title": "Ova stranica koristi kolačiće da vam poboljša rad na njoj.",
     "button": "Odlično!"
   },
-  "languageSelector": "Select Language",
-  "javascript": "F1 Kalendar bolje radi kada se omogući Java Skripta.",
+  "languageSelector": "Odaberite jezik",
+  "javascript": "F1 kalendar bolje radi kada se u pregledniku omogući JavaScript.",
   "footer": {
-    "coffee": "Podržite F1 Kalendar, kupite nam kafu.",
+    "coffee": "Podržite F1 kalendar, kupite nam kavu.",
     "twitter": "Mi smo na Twitteru",
-    "github": "Open-sorsovano na GitHubu",
-    "issue": "Primetili ste grešku? Prijavite",
+    "github": "Otvorenog koda na GitHubu",
+    "issue": "Primjetili ste pogrešku? Prijavite",
     "links": {
       "wereOn": "Mi smo na",
-      "openSourcedOn": "Open-sorsovano na",
-      "spottedIssue": "Primetili ste grešku?",
+      "openSourcedOn": "Otvorenog koda na",
+      "spottedIssue": "Primjetili ste grešku?",
       "spottedReport": "Prijavite"
     }
   }

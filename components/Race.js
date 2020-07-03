@@ -33,7 +33,7 @@ class Race extends React.Component {
 
         function badgeColumnLayout(props) {
             if (props.item.tbc) {
-                return (<span className={styles.tbc}>{t('calendar:badges.tbc')}</span>);
+                return (<span title={t('calendar:badges.tbc_title')} className={styles.tbc}>{t('calendar:badges.tbc')}</span>);
             } else if (props.item.canceled) {
                 return (<span className={styles.canceled}>{t('calendar:badges.canceled')}</span>);
             } else if (props.item.affiliate) {
@@ -44,8 +44,7 @@ class Race extends React.Component {
                                className={styles.ticketsOver}>{t('calendar:badges.tickets')}</a>);
                 }
             } else {
-                return (
-                    <a href={props.item.affiliate} className={styles.ticketsOver}>{t('calendar:badges.tickets')}</a>);
+                return (``);
             }
         }
 

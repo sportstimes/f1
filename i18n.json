@@ -6,8 +6,11 @@
     "es",
     "fr",
     "hr",
+    "it",
+    "nl",
     "ru",
-    "sv"
+    "sv",
+    "zh"
   ],
   "defaultLanguage": "en",
   "currentPagesDir": "pages_",
@@ -16,6 +19,7 @@
   "pages": {
     "*": ["common", "calendar"],
     "/": ["calendar"],
+    "/subscribe": ["subscribe"],
     "/generate": ["generate"],
     "/timezones": ["timezones"],
     "/years": ["years", "calendar"]

@@ -3,11 +3,12 @@
   "time": "Tid",
   "event": "Formel 1 Grand Prix",
   "notice": {
-    "text": "Första 8 racen i den uppdaterade kalendern nedan. Tider och ytterligare race meddelas senare.",
+    "text": "Första 8 racen i den uppdaterade kalendern nedan.",
     "link": "Läs mer"
   },
   "badges": {
     "tbc": "TBC",
+    "tbc_title": "To be confirmed",
     "tickets": "Biljetter",
     "canceled": "Inställd",
     "next": "NÄSTA"
@@ -33,7 +34,7 @@
     "vietnamese-grand-prix": "Vietnams Grand Prix",
     "china-grand-prix": "Kinas Grand Prix",
     "dutch-grand-prix": "Nederländernas Grand Prix",
-    "monoco-grand-prix": "Monacos Grand Prix",
+    "monaco-grand-prix": "Monacos Grand Prix",
     "azerbaijan-grand-prix": "Azerbaijans Grand Prix",
     "canadian-grand-prix": "Kanadas Grand Prix",
     "french-grand-prix": "Frankrikes Grand Prix",

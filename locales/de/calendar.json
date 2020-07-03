@@ -3,11 +3,12 @@
   "time": "Uhrzeit",
   "event": "Formel 1 Grand Prix Veranstaltungen",
   "notice": {
-    "text": "Die ersten 8 Rennen des neuen Kalenders sind unten aufgelistet. Weitere Rennen müssen erst noch bestätigt werden.",
+    "text": "Die ersten 8 Rennen des neuen Kalenders sind unten aufgelistet.",
     "link": "Mehr lesen"
   },
   "badges": {
     "tbc": "Unbestätigt",
+    "tbc_title": "Unbestätigt",
     "tickets": "Tickets",
     "canceled": "Abgesagt",
     "next": "NÄCHSTER"
@@ -33,7 +34,7 @@
     "vietnamese-grand-prix": "Großer Preis von Vietnam",
     "china-grand-prix": "Großer Preis von China",
     "dutch-grand-prix": "Großer Preis der Niederlande",
-    "monoco-grand-prix": "Großer Preis von Monaco",
+    "monaco-grand-prix": "Großer Preis von Monaco",
     "azerbaijan-grand-prix": "Großer Preis von Aserbaidschan",
     "canadian-grand-prix": "Großer Preis von Kanada",
     "french-grand-prix": "Großer Preis von Frankreich",

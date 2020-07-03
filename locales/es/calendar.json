@@ -3,11 +3,12 @@
   "time": "Hora",
   "event": "Grandes Premios de Fórmula 1",
   "notice": {
-    "text": "Abajo se encuentran los primeros 8 eventos del calendario reagendado. Horarios y carreras adicionales serán previamente anunciados.",
+    "text": "Abajo se encuentran los primeros 8 eventos del calendario reagendado.",
     "link": "Leer más"
   },
   "badges": {
     "tbc": "TBC",
+    "tbc_title": "Pendiente de confirmación",
     "tickets": "Entradas",
     "canceled": "Cancelado",
     "next": "SIGUIENTE"

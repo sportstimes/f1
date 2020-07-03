@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "生成日历",
+    "description": "首先, 选择你在比赛日中所关注的某个赛程",
+    "fp1": "第1次练习赛",
+    "fp2": "第2次练习赛",
+    "fp3": "第3次练习赛",
+    "qualifying": "排位赛",
+    "grandPrix": "大奖赛",
+    "reminder": "设置",
+    "reminderContinued": "分钟前提醒",
+    "button": "确认",
+    "buttonSubmitted": "已提交",
+    "nonOptionsSelected": "请至少选择一个赛程信息."
+  },
+  "download": {
+    "title": "选择日历的类型",
+    "webcalTitle": "手机端或电脑端",
+    "webcalDescription": "像Outlook和macOS日历这样的程序或者App，会自动更新日历",
+    "webcalButton": "获取",
+    "gcalTitle": "Google Calendar",
+    "gcalDescription": "复制并粘贴到Google Calendar中",
+    "gcalDescriptionLink": "详细指导",
+    "icsTitle": "下载ICS文件",
+    "icsDescription": "某些方式（如.ic），无法自动获取更新信息",
+    "icsButton": "下载"
+  }
+}

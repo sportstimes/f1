@@ -7,6 +7,7 @@
   },
   "options": {
     "calendar": "Add these race dates & times to your Calendar",
+    "email": "Receive email reminders",
     "timezonePicker": {
       "showing": "Showing times for",
       "pick": "Pick a timezone...",

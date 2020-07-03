@@ -7,6 +7,7 @@
   },
   "options": {
     "calendar": "Ajouter ces dates et horaires de Grand Prix à votre calendrier.",
+    "email": "Recevoir des e-mails de rappel",
     "timezonePicker": {
       "showing": "Montrer les horaires pour",
       "pick": "Choisissez un fuseau horaire...",
