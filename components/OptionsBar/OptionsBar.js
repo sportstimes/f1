@@ -1,11 +1,7 @@
-import {useState, useContext} from 'react';
-import UserContext from '../components/UserContext';
-import Link from 'next/link';
-
+import UserContext from '../../components/UserContext'
 const moment = require('moment-timezone')
-import styles from './OptionsBar.module.scss'
 import withTranslation from 'next-translate/withTranslation'
-import fixHref from 'next-translate/fixHref'
+import {Bar} from './style'
 
 class OptionsBar extends React.Component {
     static contextType = UserContext
@@ -69,13 +65,12 @@ class OptionsBar extends React.Component {
             }, "");
 
         return (
-            <div className={styles.options}>
-                <div className={styles.bar}>
+                <Bar>
                     {this.state.pickerShowing ?
-                        <div className={styles.picker}>
+                        <>
                             <form action="/" method="GET" id="timezone-picker">
                                 <label htmlFor="timezone"
-                                       className={styles.pickerLabel}>{t('common:options.timezonePicker.pick')}</label>
+                                       className="pickerLabel">{t('common:options.timezonePicker.pick')}</label>
                                 <select id="timezone" onChange={this.onChange} name="timezone"
                                         value={this.context.timezone}>
                                     {timezoneItems}
@@ -83,25 +78,25 @@ class OptionsBar extends React.Component {
 
                                 <button onClick={this.togglePicker}
                                         type="submit">{t('common:options.timezonePicker.button')}</button>
-                                <noscript><style>{`#timezone-picker { display:none; } `}</style></noscript>
+                                <noscript>
+                                    <style>{`#timezone-picker { display:none; } `}</style>
+                                </noscript>
                             </form>
                             <noscript>
                                 <a href="/timezones">{t('common:options.timezonePicker.pick')}</a>
                             </noscript>
-                        </div>
+                        </>
                         :
-                        <div className={styles.options}>
-                            <div className={styles.currentTimezone}>
-                                <a onClick={this.togglePicker}>
-                                    {t('common:options.timezonePicker.showing')} <strong>{this.context.timezone && this.context.timezone.replace("_", " ")}</strong>.
-                                </a>
-                            </div>
-                        </div>
+                        <>
+                            <a onClick={this.togglePicker}>
+                                {t('common:options.timezonePicker.showing')} <strong>{this.context.timezone && this.context.timezone.replace("_", " ")}</strong>.
+                            </a>
+                        </>
                     }
-                </div>
-            </div>
+                </Bar>
         );
     }
 }
 
 export default withTranslation(OptionsBar)
+

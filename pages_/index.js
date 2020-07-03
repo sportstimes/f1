@@ -1,10 +1,9 @@
-import Layout from '../components/Layout';
-import Races from '../components/Races';
+import Layout from '../components/Layout/Layout';
+import Races from '../components/Races/Races';
 import { NextSeo } from 'next-seo';
-import RaceSchema from '../components/RaceSchema';
+import RaceSchema from '../components/RaceSchema/RaceSchema';
 import useTranslation from 'next-translate/useTranslation'
-import Subscribe from "../components/Subscribe";
-import OptionsBar from "../components/OptionsBar";
+import OptionsBar from "../components/OptionsBar/OptionsBar";
 import React from "react";
 
 const Index = (props) => {

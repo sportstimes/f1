@@ -1,8 +1,8 @@
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation'
-import styles from "../components/Subscribe.module.scss";
+import { Card } from "../components/Card/Card";
 
 function Subscribe() {
     const { t } = useTranslation()
@@ -16,7 +16,7 @@ function Subscribe() {
     return (
         <>
             <NextSeo
-                title={`F1 Calendar Subscribe  - Formula One Race Times and Dates`}
+                title={`F1 Calendar Subscribe - Formula One Race Times and Dates`}
                 description={`Formula One Calendar Archive with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
                 keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe`}
                 canonical="https://www.f1calendar.com/"
@@ -26,10 +26,9 @@ function Subscribe() {
                     cardType: 'summary_large_image',
                 }}
             />
-            <Layout year='2020'>
-
-                <section className={styles.subscribe}>
-                    <h3>{ t('subscribe:title') }</h3>
+            <Layout year={process.env.NEXT_PUBLIC_CURRENT_YEAR}>
+                <h3>{ t('subscribe:title') }</h3>
+                <Card>
                     <p>{ t('subscribe:description') }</p>
                     <form
                         action="https://f1calendar.us10.list-manage.com/subscribe/post?u=e11245c4d3fecdad90cb66908&amp;id=f7a8a5001f"
@@ -37,24 +36,23 @@ function Subscribe() {
                         className="validate"
                         target="_blank" noValidate>
 
-                        <div className={styles.row}>
+                        <div className="row">
                             <label htmlFor="mce-EMAIL">{ t('subscribe:label') }</label>
                             <input type="email" name="EMAIL" className="required email" id="mce-EMAIL"/>
                         </div>
 
-                        <div className={styles.hidden}>
+                        <div className="hidden">
                             <input type="text" name="b_e11245c4d3fecdad90cb66908_f7a8a5001f" tabIndex="-1" defaultValue=""/>
                         </div>
 
                         <input type="submit" value={ t('subscribe:button') } name="subscribe" id="mc-embedded-subscribe"
-                               className={styles.button}/>
+                               className="button"/>
 
                     </form>
-                </section>
+                </Card>
             </Layout>
         </>
     );
 }
-
 
 export default Subscribe;

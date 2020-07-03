@@ -1,7 +1,8 @@
 import {useState} from 'react'
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import { NextSeo } from 'next-seo';
 import useTranslation from 'next-translate/useTranslation'
+import { Card } from "../components/Card/Card";
 
 function Generate(props) {
   const { t } = useTranslation()
@@ -68,7 +69,7 @@ function Generate(props) {
 					<>	
 						<h3>{ t('generate:download.title') }</h3>	
 										
-						<section className="card" id="download_option_ical">							
+						<Card id="download_option_ical">
 							<h4>{ t('generate:download.webcalTitle') }</h4>
 							<p>{ t('generate:download.webcalDescription') }</p>
 							
@@ -77,15 +78,15 @@ function Generate(props) {
 									{ t('generate:download.webcalButton') }
 								</a>
 							</p>
-						</section>
+						</Card>
 						
-						<section className="card" id="download_option_google">
+						<Card id="download_option_google">
 							<h4>{ t('generate:download.gcalTitle') }</h4>
 							<p>{ t('generate:download.gcalDescription') } (<a href="https://support.google.com/calendar/answer/37100" target="_blank">{ t('generate:download.gcalDescriptionLink') }</a>):</p>
 							<p className="copyable">{form.googleURL}</p>
-						</section>
+						</Card>
 												
-						<section className="card" id="download_option">
+						<Card id="download_option">
 							<h4>{ t('generate:download.icsTitle') }</h4>
 							<p>{ t('generate:download.icsDescription') }</p>		
 							<p>					
@@ -93,12 +94,12 @@ function Generate(props) {
 									{ t('generate:download.icsButton') }
 								</a>
 							</p>
-						</section>
+						</Card>
 					</>
 				:				
 					<>
 						<h3>{ t('generate:form.title') }</h3>
-						<section className="card">
+						<Card>
 							<p>{ t('generate:form.description') }</p>
 							
 							<form id="download_subscribe" onSubmit={handleOnSubmit}>	
@@ -137,96 +138,16 @@ function Generate(props) {
 								</fieldset>
 								
 								<fieldset id="buttons">
-									<button type="submit">
+									<button type="submit" className="button">
 							          {!form.submitted
 							              ? t('generate:form.button')
 							              : t('generate:form.buttonSubmitted')}
 							        </button>
 								</fieldset>
 							</form>
-						</section>
+						</Card>
 					</>
 				}
-				<style jsx>{`
-					.card {
-						background:#141414;
-						-webkit-border-radius: 15px;
-						-moz-border-radius: 15px;
-						padding:25px 25px 10px 25px;
-						margin-bottom:16px;
-					}
-					.card h4 {
-						margin-top:0;
-						font-size:18px;
-						margin-bottom:8px;
-					}
-					.card p {
-						margin-bottom:15px;
-					}
-					
-					
-					form {
-					}
-					fieldset {
-						border:0;
-						margin:0 0 20px 0;
-						padding:0;	
-  					vertical-align:middle;
-					}
-					
-					fieldset label {
-  					padding-left:5px;
-					}
-					fieldset label a {
-  				  	color: #1a8b73;
-					}
-					
-					p {
-						margin-bottom: 15px;	
-					}
-					
-					.copyable {
-						font-family:monospace;
-						color:#2a2a2a;
-						background:#FFF;
-						padding:.5em;
-						border-radius:4px;
-						margin-top:.5em;
-						width:100%;
-					}
-					
-					button {
-						background: #1a8b73;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px 15px;
-						font-size:15px;
-						border:0;
-						color:#fff;
-						cursor: pointer;
-					}
-					
-					.button {
-						background: #1a8b73;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px 15px;
-						font-size:15px;
-						border:0;
-						color:#fff;
-						cursor: pointer;
-					}
-					
-					section {
-						
-					}
-					
-					hr {
-						border: 1px solid #151515;
-						width: 25%;
-						margin: 15px auto;		
-					}
-			    `}</style>
 			</Layout>
 		</>
 	);

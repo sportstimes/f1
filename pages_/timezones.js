@@ -1,6 +1,7 @@
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import {NextSeo} from 'next-seo';
 import Link from 'next/link';
+import {Card} from "../components/Card/Card";
 
 const moment = require('moment-timezone')
 import useTranslation from 'next-translate/useTranslation'
@@ -29,39 +30,14 @@ function Timezones() {
                 keywords={metaKeywords}
             />
             <Layout>
-                    <h3>{t('timezones:title')}</h3>
-                <section className="card">
+                <h3>{t('timezones:title')}</h3>
+                <Card>
                     <p>
                         <ul>
                             {timezoneItems}
                         </ul>
                     </p>
-                </section>
-
-                <style jsx>{`
-					a {
-						color:#1a8b73;
-					}
-					
-					.card {
-						background:#141414;
-						-webkit-border-radius: 15px;
-						-moz-border-radius: 15px;
-						padding:25px 25px 10px 25px;
-						margin-bottom:16px;
-					}
-					
-					.card ul {
-					    list-style:none;
-					    margin:0;
-					    padding: 0;
-					}
-					
-					.card p {
-						margin-bottom:15px;
-					}
-					
-			    `}</style>
+                </Card>
             </Layout>
         </>
     );

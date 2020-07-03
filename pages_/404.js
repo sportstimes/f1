@@ -1,8 +1,7 @@
 import Trans from "next-translate/Trans";
 import DynamicNamespaces from "next-translate/DynamicNamespaces";
-import Logo from "../components/Logo";
+import Logo from "../components/Logo/Logo";
 import React from "react";
-import styles from "../components/Header.module.scss";
 import Link from "next-translate/Link";
 import ISO6391 from "iso-639-1";
 
