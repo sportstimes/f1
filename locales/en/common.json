@@ -5,6 +5,12 @@
     "description": "Formula One Calendar for {{year}} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
     "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
   },
+  "header": {
+    "logoLinkTitle": "Return to the F1 Calendar Homepage",
+    "contribute": "Contribute",
+    "languageSelector": "Select Language",
+    "javascript": "F1 Calendar works best with Javascript Enabled."
+  },
   "options": {
     "calendar": "Add these race dates & times to your Calendar",
     "email": "Receive email reminders",
@@ -14,13 +20,10 @@
       "button": "Done"
     }
   },
-  "contribute": "Contribute",
   "cookies": {
     "title": "This website uses cookies to enhance the user experience.",
     "button": "Great!"
   },
-  "languageSelector": "Select Language",
-  "javascript": "F1 Calendar works best with Javascript Enabled.",
   "footer": {
     "coffee": "Support F1 Calendar, buy us a coffee.",
     "twitter": "We’re on Twitter",

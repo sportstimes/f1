@@ -12,7 +12,7 @@ const Index = (props) => {
 	const title = t('common:title')
 	const subtitle = t('common:subtitle')
 
-	const currentYear = '2020';
+	const currentYear = props.year;
 	const metaDescription = t('common:meta.description', { year: currentYear })
 	const metaKeywords = t('common:meta.keywords', { year: currentYear })
 
@@ -37,14 +37,13 @@ const Index = (props) => {
 }
 
 Index.getInitialProps = async ({query: {timezone}, res}) => {
-	const currentYear = '2020';
+	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
-	const data = await import(`../db/`+currentYear+`.json`)
+	const data = await import(`../db/`+process.env.NEXT_PUBLIC_DB_FOLDER+`/`+currentYear+`.json`)
 
 	return {
 		year: currentYear,
-		races: data.races,
-		virtual: data.virtual
+		races: data.races
 	}
 }
 

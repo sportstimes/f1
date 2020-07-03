@@ -18,7 +18,10 @@
     "fp2": "Free Practice 2",
     "fp3": "Free Practice 3",
     "qualifying": "Qualifying",
-    "race": "Race"
+    "race": "Race",
+    "sprintRace": "Sprint Race",
+    "featureRace": "Feature Race",
+    "practice": "Practice"
   },
   "races": {
     "austrian-grand-prix": "Austrian Grand Prix",

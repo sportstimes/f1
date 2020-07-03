@@ -4,7 +4,7 @@ export default async (req, res) => {
   } = req
   
   try {
-    const data = await import(`../../../db/`+year+`.json`)  
+    const data = await import(`../../../db/`+process.env.DB_FOLDER+`/`+year+`.json`)
     res.statusCode = 200
     res.setHeader('Content-Type', 'application/json')
     res.setHeader('Cache-Control', 's-maxage=80000, stale-while-revalidate');

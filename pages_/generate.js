@@ -4,7 +4,7 @@ import { NextSeo } from 'next-seo';
 import useTranslation from 'next-translate/useTranslation'
 
 function Generate(props) {
-  const { t, lang } = useTranslation()
+  const { t } = useTranslation()
   const title = t('common:title')
   const subtitle = t('common:subtitle')
   
@@ -226,7 +226,6 @@ function Generate(props) {
 						width: 25%;
 						margin: 15px auto;		
 					}
-					
 			    `}</style>
 			</Layout>
 		</>
@@ -242,7 +241,7 @@ export const getStaticProps = async ({ params }) => {
 	return {
 		props: {
 			domain: url,
-			year: "2020"
+			year: process.env.NEXT_PUBLIC_CURRENT_YEAR
 		}
 	}
 };

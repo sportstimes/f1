@@ -6,76 +6,76 @@ import {NextSeo} from 'next-seo';
 import useTranslation from "next-translate/useTranslation";
 import RaceSchema from "../../components/RaceSchema";
 import Link from "next/link";
-import { useRouter } from 'next/router'
+import {useRouter} from 'next/router'
 
 const moment = require('moment-timezone')
 
 const Timezone = (props) => {
-	const router = useRouter()
+    const router = useRouter()
 
-	const {t, lang} = useTranslation()
-	const title = t('common:title')
-	const subtitle = t('common:subtitle')
+    const {t, lang} = useTranslation()
+    const title = t('common:title')
+    const subtitle = t('common:subtitle')
 
-	const currentYear = '2020';
+    const currentYear = process.env.CURRENT_YEAR;
 
-	const metaDescription = t('common:meta.description', {year: currentYear})
-	const metaKeywords = t('common:meta.keywords', {year: currentYear})
+    const metaDescription = t('common:meta.description', {year: currentYear})
+    const metaKeywords = t('common:meta.keywords', {year: currentYear})
 
-	const timezone = props.timezone ? props.timezone.replace("-", "/") : "";
+    const timezone = props.timezone ? props.timezone.replace("-", "/") : "";
 
 
-	return (
-		<>
-			<NextSeo
-				title={`${title} ${currentYear} - ${subtitle}`}
-				description={metaDescription}
-				keywords={metaKeywords}
-			/>
-			<Layout showCalendarExport='true' year={props.year} timezone={timezone}>
-				<h3>{timezone}</h3>
-				<p><Link href="/timezones"><a>{t('common:options.timezonePicker.pick')}</a></Link><br /><br /></p>
+    return (
+        <>
+            <NextSeo
+                title={`${title} ${currentYear} - ${subtitle}`}
+                description={metaDescription}
+                keywords={metaKeywords}
+            />
+            <Layout showCalendarExport='true' year={props.year} timezone={timezone}>
+                <h3>{timezone}</h3>
+                <p><Link href="/timezones"><a>{t('common:options.timezonePicker.pick')}</a></Link><br/><br/></p>
 
-				{router.isFallback ?
-					<>
-						<div>Loading...</div>
-						<noscript>
-							<meta httpEquiv="refresh" content="5" />
-						</noscript>
-					</>
-					:
-					<>
+                {router.isFallback ?
+                    <>
+                        <div>Loading...</div>
+                        <noscript>
+                            <meta httpEquiv="refresh" content="5"/>
+                        </noscript>
+                    </>
+                    :
+                    <>
 
-						{props.races &&
-						<Races year={props.year} races={props.races} timezone={timezone}/>
-						}
+                        {props.races &&
+                        <Races year={props.year} races={props.races} timezone={timezone}/>
+                        }
 
-					{props.races && props.races.map((item, index) => {
-						if (item.sessions) {
-							return (<RaceSchema item={item} key={item.name}/>)
-						}
-					})}
-					</>
-				}
-			</Layout>
-		</>
-	);
+                        {props.races && props.races.map((item, index) => {
+                            if (item.sessions) {
+                                return (<RaceSchema item={item} key={item.name}/>)
+                            }
+                        })}
+                    </>
+                }
+            </Layout>
+        </>
+    );
 }
 
 export default Timezone;
 
 export async function getStaticPaths() {
-	return ({
-		paths: [],
-		fallback: true
-	})
+    return ({
+        paths: [],
+        fallback: true
+    })
 }
 
-export async function getStaticProps({ params }) {
-	const currentYear = '2020';
+export async function getStaticProps({params}) {
+    const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
-	try {
-		const res = await fetch('https://f1calendar.com/api/year/' + currentYear + '');
+    try {
+        const res = await fetch(`https://` + process.env.VERCEL_URL + `/api/year/` + currentYear + ``);
 		const data = await res.json();
 
 		return {

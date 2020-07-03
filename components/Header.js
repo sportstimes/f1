@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import Logo from "./Logo";
-import OptionsBar from "./OptionsBar";
 import styles from './Header.module.scss'
 import withTranslation from 'next-translate/withTranslation'
 import Link from 'next-translate/Link'
 import i18nConfig from '../i18n.json'
 import Router from 'next-translate/Router'
 import ISO6391 from 'iso-639-1'
-import fixHref from "next-translate/fixHref";
 import CTABar from "./CTABar";
 
 class Header extends React.Component {
@@ -36,7 +34,7 @@ class Header extends React.Component {
 
     render() {
         const {t, lang} = this.props.i18n
-        const title = t('common:title')
+        const title = t(process.env.NEXT_PUBLIC_LOCALE_PREFIX + `:title`)
         const {allLanguages} = i18nConfig
 
         // Picker Items
@@ -46,7 +44,7 @@ class Header extends React.Component {
             languageItems.push(<option value={lng} key={lng}>{ISO6391.getNativeName(lng)}</option>);
         })
 
-        languageItems.push(<option value="add" key="Add">{ t('common:contribute') } +</option>);
+        languageItems.push(<option value="add" key="Add">{ t('common:header.contribute') } +</option>);
 
         return (
             <header className={styles.header}>
@@ -76,7 +74,7 @@ class Header extends React.Component {
                     </div>
 
                     <div className={styles.languageSelector}>
-                        <label htmlFor="languageSelector">{ t('common:languageSelector') }</label>
+                        <label htmlFor="languageSelector">{ t('common:header.languageSelector') }</label>
                         <select id="languageSelector" name="language" value={lang} onChange={this.onChange}>
                             {languageItems}
                         </select>

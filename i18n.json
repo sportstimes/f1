@@ -17,7 +17,7 @@
   "finalPagesDir": "pages",
   "localesPath": "locales",
   "pages": {
-    "*": ["common", "calendar"],
+    "*": ["common", "calendar", "f1", "f2", "f3"],
     "/": ["calendar"],
     "/subscribe": ["subscribe"],
     "/generate": ["generate"],
