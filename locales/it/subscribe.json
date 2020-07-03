@@ -1,6 +1,7 @@
 {
-  "title": "Subscribe",
-  "description": "Receive an email reminder ahead of each race weekend.",
-  "label": "Email Address",
-  "button": "Subscribe"
+  "title": "Iscriviti",
+  "description": "Ricevi un promemoria via email prima di ogni fine settimana di gara.",
+  "label": "Indirizzo email",
+  "button": "Iscriviti"
 }
+
