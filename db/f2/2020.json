@@ -10,8 +10,8 @@
       "slug": "austrian-grand-prix",
       "localeKey": "austrian-grand-prix",
       "sessions": {
-        "fp": "2020-07-03T09:00:00Z",
-        "q": "2020-07-03T13:00:00Z",
+        "practice": "2020-07-03T09:00:00Z",
+        "qualifying": "2020-07-03T13:00:00Z",
         "feature": "2020-07-04T10:00:00Z",
         "sprint": "2020-07-04T13:00:00Z"
       }
@@ -26,9 +26,9 @@
       "slug": "steiermark-grand-prix",
       "localeKey": "steiermark-grand-prix",
       "sessions": {
-        "fp": "2020-07-10T09:00:00Z",
-        "q": "2020-07-10T13:00:00Z",
-        "fp3": "2020-07-11T10:00:00Z",
+        "practice": "2020-07-10T09:00:00Z",
+        "qualifying": "2020-07-10T13:00:00Z",
+        "feature": "2020-07-11T10:00:00Z",
         "sprint": "2020-07-11T13:00:00Z"
       }
     },
@@ -42,9 +42,9 @@
       "slug": "hungary-grand-prix",
       "localeKey": "hungary-grand-prix",
       "sessions": {
-        "fp": "2020-07-17T09:00:00Z",
-        "q": "2020-07-17T13:00:00Z",
-        "fp3": "2020-07-18T10:00:00Z",
+        "practice": "2020-07-17T09:00:00Z",
+        "qualifying": "2020-07-17T13:00:00Z",
+        "feature": "2020-07-18T10:00:00Z",
         "sprint": "2020-07-18T13:00:00Z"
       }
     },
@@ -58,8 +58,8 @@
       "slug": "british-grand-prix",
       "localeKey": "british-grand-prix",
       "sessions": {
-        "fp": "2020-07-31T10:00:00Z",
-        "q": "2020-07-31T14:00:00Z",
+        "practice": "2020-07-31T10:00:00Z",
+        "qualifying": "2020-07-31T14:00:00Z",
         "feature": "2020-08-01T10:00:00Z",
         "sprint": "2020-08-01T13:00:00Z"
       }
@@ -74,8 +74,8 @@
       "slug": "anniversary-british-grand-prix",
       "localeKey": "anniversary-british-grand-prix",
       "sessions": {
-        "fp": "2020-08-07T10:00:00Z",
-        "q": "2020-08-07T14:00:00Z",
+        "practice": "2020-08-07T10:00:00Z",
+        "qualifying": "2020-08-07T14:00:00Z",
         "feature": "2020-08-08T11:00:00Z",
         "sprint": "2020-08-08T14:00:00Z"
       }
@@ -90,8 +90,8 @@
       "slug": "spanish-grand-prix",
       "localeKey": "spanish-grand-prix",
       "sessions": {
-        "fp": "2020-08-14T09:00:00Z",
-        "q": "2020-08-14T13:00:00Z",
+        "practice": "2020-08-14T09:00:00Z",
+        "qualifying": "2020-08-14T13:00:00Z",
         "feature": "2020-08-15T10:00:00Z",
         "sprint": "2020-08-15T13:00:00Z"
       }
@@ -106,8 +106,8 @@
       "slug": "belgian-grand-prix",
       "localeKey": "belgian-grand-prix",
       "sessions": {
-        "fp": "2020-08-28T09:00:00Z",
-        "q": "2020-08-28T13:00:00Z",
+        "practice": "2020-08-28T09:00:00Z",
+        "qualifying": "2020-08-28T13:00:00Z",
         "feature": "2020-08-29T10:00:00Z",
         "sprint": "2020-08-29T13:00:00Z"
       }
@@ -122,8 +122,8 @@
       "slug": "italian-grand-prix",
       "localeKey": "italian-grand-prix",
       "sessions": {
-        "fp": "2020-09-04T09:00:00Z",
-        "q": "2020-09-04T13:00:00Z",
+        "practice": "2020-09-04T09:00:00Z",
+        "qualifying": "2020-09-04T13:00:00Z",
         "feature": "2020-09-05T10:00:00Z",
         "sprint": "2020-09-05T13:00:00Z"
       }

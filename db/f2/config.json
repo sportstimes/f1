@@ -1,0 +1,5 @@
+{
+  "sessions": ["practice", "qualifying", "feature", "sprint"],
+  "featuredSessions": ["feature", "sprint"],
+  "collapsedSessions": ["practice", "qualifying"]
+}

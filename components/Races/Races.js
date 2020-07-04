@@ -1,10 +1,10 @@
 import {useContext} from 'react';
-import UserContext from '../../components/UserContext';
+import UserContext from '../../components/UserContext'
 import moment from 'moment'
-import Race from '../../components/Race/Race';
-import SupportRace from '../../components/SupportRace/SupportRace';
+import Race from '../../components/Race/Race'
 import styles from './Races.module.scss'
 import useTranslation from 'next-translate/useTranslation'
+const config = require(`../../db/${process.env.NEXT_PUBLIC_LOCALE_PREFIX}/config.json`)
 
 const Races = (props) => {
     const {t} = useTranslation()
@@ -20,10 +20,12 @@ const Races = (props) => {
     let isNextRace = false
     let nextRace = null
 
+    console.log(config.featuredSessions.length);
+
     return (
         <div className={styles.races}>
             <table id="events-table">
-                {process.env.NEXT_PUBLIC_LOCALE_PREFIX == "f1" ?
+                {config.featuredSessions.length === 1 ?
                     <thead>
                     <tr className={styles.tableHead}>
                         <th scope="col" className={styles.icon_column}></th>
@@ -32,7 +34,7 @@ const Races = (props) => {
                         <th scope="col" className={styles.time_column}>{t('calendar:time')}</th>
                     </tr>
                     </thead>
-                    : process.env.NEXT_PUBLIC_LOCALE_PREFIX == "f2" ?
+                    :
                     <thead>
                     <tr>
                         <th scope="col" className={styles.icon_column}></th>
@@ -41,15 +43,6 @@ const Races = (props) => {
                         <th scope="col" className={styles.time_column}></th>
                     </tr>
                     </thead>
-                        :
-                        <thead>
-                        <tr>
-                            <th scope="col" className={styles.icon_column}></th>
-                            <th scope="col" className={styles.event_column}></th>
-                            <th scope="col" className={styles.date_column}></th>
-                            <th scope="col" className={styles.time_column}></th>
-                        </tr>
-                        </thead>
                 }
 
                 {races.map((item, index) => {
@@ -58,14 +51,7 @@ const Races = (props) => {
                         isNextRace = true
                         nextRace = item
                     }
-
-                    if(process.env.NEXT_PUBLIC_LOCALE_PREFIX == "f1") {
-                        return (<Race item={item} index={index} timezone={timezone} key={item.slug}
-                                      isNextRace={isNextRace}/>)
-                    } else {
-                        return (<SupportRace item={item} index={index} timezone={timezone} key={item.slug}
-                                      isNextRace={isNextRace}/>)
-                    }
+                    return (<Race item={item} index={index} timezone={timezone} key={item.slug} isNextRace={isNextRace}/>)
                 })}
             </table>
         </div>

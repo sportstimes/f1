@@ -1,3 +1,4 @@
 {
-  "sessions": [ "fp", "q", "race1", "race2" ]
+  "sessions": [ "practice", "qualifying", "race1", "race2" ],
+  "featuredSessions": ["race1", "race2"]
 }
