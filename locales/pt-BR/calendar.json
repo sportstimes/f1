@@ -1,0 +1,49 @@
+{
+  "date": "Data",
+  "time": "Horário",
+  "event": "Eventos do Grande Prêmio de Fórmula 1",
+  "notice": {
+    "text": "Primeiras 8 corridas do calendário revisado abaixo.",
+    "link": "Leia mais"
+  },
+  "badges": {
+    "tbc": "TBC",
+    "tbc_title": "A confirmar",
+    "tickets": "Ingressos",
+    "canceled": "Cancelado",
+    "next": "PRÓXIMO"
+  },
+  "schedule": {
+    "fp1": "1° Treino Livre",
+    "fp2": "2° Treino Livre",
+    "fp3": "3° Treino Livre",
+    "qualifying": "Classificação",
+    "race": "Corrida"
+  },
+  "races": {
+    "austrian-grand-prix": "GP da Áustria",
+    "steiermark-grand-prix": "GP da Estíria (Áustria)",
+    "hungary-grand-prix": "GP da Hungria",
+    "british-grand-prix": "GP da Inglaterra",
+    "anniversary-british-grand-prix": "GP 70° Aniversário (Inglaterra)",
+    "spanish-grand-prix": "GP da Espanha",
+    "belgian-grand-prix": "GP da Bélgica",
+    "italian-grand-prix": "GP da Itália",
+    "australian-grand-prix": "GP da Austrália",
+    "bahrain-grand-prix": "GP do Barein",
+    "vietnamese-grand-prix": "GP do Vietnã",
+    "china-grand-prix": "GP da China",
+    "dutch-grand-prix": "GP da Holanda",
+    "monaco-grand-prix": "GP de Mônaco",
+    "azerbaijan-grand-prix": "GP do Azerbaijão",
+    "canadian-grand-prix": "GP do Canadá",
+    "french-grand-prix": "GP da França",
+    "singapore-grand-prix": "GP de Singapura",
+    "russian-grand-prix": "GP da Rússia",
+    "japanese-grand-prix": "GP do Japão",
+    "us-grand-prix": "GP dos Estados Unidos",
+    "mexico-grand-prix": "GP da México",
+    "brazilian-grand-prix": "GP da Brasil",
+    "abu-dhabi-grand-prix": "GP de Abu Dhabi"
+  }
+}
