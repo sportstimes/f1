@@ -40,7 +40,10 @@ const Races = (props) => {
                         <th scope="col" className={styles.icon_column}></th>
                         <th scope="col" className={styles.event_column}></th>
                         <th scope="col" className={styles.date_column}></th>
-                        <th scope="col" className={styles.time_column}></th>
+                        {config.featuredSessions.map((item, index) => {
+                            return (<th scope="col" className={styles.date_column}></th>)
+                        })}
+                        <th scope="col" className={styles.badge_column}></th>
                     </tr>
                     </thead>
                 }

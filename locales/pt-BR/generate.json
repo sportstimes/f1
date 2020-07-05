@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Criar Calendário",
+    "description": "Primeiro, escolha quais sessões de final de semana de corrida de F1 você gostaria de adicionar ao seu calendário:",
+    "fp1": "1° Treino Livre",
+    "fp2": "2° Treino Livre",
+    "fp3": "3° Treino Livre",
+    "qualifying": "Classificaçāo",
+    "grandPrix": "Grande Prêmio",
+    "reminder": "Definir um aviso",
+    "reminderContinued": "minutos andes de cada evento em seu caledário da temporada.",
+    "button": "Obter Calendário",
+    "buttonSubmitted": "Submetido",
+    "nonOptionsSelected": "Selecione pelo menos uma temporada para o seu calendário."
+  },
+  "download": {
+    "title": "Selecione Tipo do Calendário",
+    "webcalTitle": "Para Celular ou Computador",
+    "webcalDescription": "Atualização automática do calendário para aplicativos como o Outlook e o calendário do macOS.",
+    "webcalButton": "Obter",
+    "gcalTitle": "Para Google Agenda",
+    "gcalDescription": "Para adicionar este calendário, copie e cole este URL no Google Agenda",
+    "gcalDescriptionLink": "detailed instructions",
+    "icsTitle": "Baixar arquio ICS",
+    "icsDescription": "Calendário sem atualizaçāo (.ics) para calendários que não conseguem lidar com atualizações de assinaturas.",
+    "icsButton": "Baixar"
+  }
+}

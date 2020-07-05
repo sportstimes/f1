@@ -3,7 +3,6 @@ import DynamicNamespaces from "next-translate/DynamicNamespaces";
 import Logo from "../components/Logo/Logo";
 import React from "react";
 import Link from "next-translate/Link";
-import ISO6391 from "iso-639-1";
 
 const Custom404 = () => (
     <DynamicNamespaces

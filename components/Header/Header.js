@@ -1,10 +1,10 @@
+import React, {Component} from 'react';
 import Logo from "../Logo/Logo";
 import withTranslation from 'next-translate/withTranslation'
-import Link from 'next-translate/Link'
 import i18nConfig from '../../i18n.json'
 import Router from 'next-translate/Router'
-import ISO6391 from 'iso-639-1'
-import CTABar from "../CTABar/CTABar"
+import CTABar from '../CTABar/CTABar'
+import Link from 'next-translate/Link'
 import {HeaderBar, Branding} from "./HeaderStyles";
 
 class Header extends React.Component {
@@ -34,14 +34,15 @@ class Header extends React.Component {
     render() {
         const {t, lang} = this.props.i18n
         const title = t(process.env.NEXT_PUBLIC_LOCALE_PREFIX + `:title`)
-        const {allLanguages} = i18nConfig
+
+        const {languageNames} = i18nConfig
 
         // Picker Items
         const languageItems = []
 
-        allLanguages.map((lng) => {
-            languageItems.push(<option value={lng} key={lng}>{ISO6391.getNativeName(lng)}</option>);
-        })
+        for (const language in languageNames) {
+            languageItems.push(<option value={language} key={language}>{languageNames[language]}</option>);
+        }
 
         languageItems.push(<option value="add" key="Add">{ t('common:header.contribute') } +</option>);
 
@@ -62,7 +63,7 @@ class Header extends React.Component {
                                         }
 
                                         {lang != "en" &&
-                                        <span> | {ISO6391.getNativeName(lang)}</span>
+                                        <span> | {languageNames[lang]}</span>
                                         }
                                     </a>
                                 </Link>
