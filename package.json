@@ -37,6 +37,6 @@
     "react-cookie-consent": "^5.1.2",
     "react-dom": "^16.13.1",
     "react-grid-system": "^7.0.3",
-    "sass": "^1.26.9"
+    "sass": "^1.26.10"
   }
 }
