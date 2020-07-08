@@ -29,7 +29,11 @@ class Race extends React.Component {
         const {t, lang} = this.props.i18n
         const localeKey = 'calendar:races.' + this.props.item.localeKey;
 
-        moment.locale(lang);
+        if (lang === "en") {
+            moment.locale(this.props.locale);
+        } else {
+            moment.locale(lang);
+        }
 
         function badgeColumnLayout(props) {
             if (props.item.tbc) {

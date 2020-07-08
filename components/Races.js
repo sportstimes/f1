@@ -1,19 +1,22 @@
-import {useState, useContext} from 'react';
+import {useContext} from 'react';
 import UserContext from '../components/UserContext';
 import moment from 'moment'
 import Race from '../components/Race';
 import styles from './Races.module.scss'
-import layoutStyles from '../components/Layout.module.scss';
 import useTranslation from 'next-translate/useTranslation'
 
 const Races = (props) => {
     const {t} = useTranslation()
 
-    let {timezone} = useContext(UserContext)
+    let {timezone, locale} = useContext(UserContext)
     const races = props.races
 
     if(props.timezone){
         timezone = props.timezone;
+    }
+
+    if(props.locale){
+        locale = props.locale;
     }
 
     // TODO Improve this isNextRace logic
@@ -49,7 +52,7 @@ const Races = (props) => {
                         nextRace = item
                     }
                     return (
-                        <Race item={item} index={index} timezone={timezone} key={item.slug} isNextRace={isNextRace}/>)
+                        <Race item={item} index={index} timezone={timezone} locale={locale} key={item.slug} isNextRace={isNextRace}/>)
                 })}
             </table>
         </div>
