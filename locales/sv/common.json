@@ -7,7 +7,7 @@
   },
   "options": {
     "calendar": "Lägg till race tider och datum till din kalender",
-    "email": "Receive email reminders",
+    "email": "Få e-postpåminnelser",
     "timezonePicker": {
       "showing": "Visar tider för",
       "pick": "Välj en tidszon...",
@@ -19,11 +19,11 @@
     "title": "Den här sidan använder cookies för att förbättra användarvänligheten.",
     "button": "Bra!"
   },
-  "languageSelector": "Select Language",
+  "languageSelector": "Välj Språk",
   "javascript": "F1 Kalender fungerar bäst om Javascript är tillåten.",
   "footer": {
     "coffee": "Understöd F1 Kalender, köp oss en kaffe.",
-    "twitter": "Vi finns på Titter",
+    "twitter": "Vi finns på Twitter",
     "github": "Öppen källkod på GitHub",
     "issue": "Hittade du ett problem? Rapportera",
     "links": {
