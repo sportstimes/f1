@@ -135,6 +135,40 @@
         "qualifying": "2020-09-05T13:00:00Z",
         "race": "2020-09-06T13:10:00Z"
       }
+    },
+    {
+      "name": "Tuscan Grand Prix",
+      "location": "Mugello",
+      "latitude": 43.997896,
+      "longitude": 11.371913,
+      "tbc": true,
+      "round": 9,
+      "slug": "tuscan-grand-prix",
+      "localeKey": "tuscan-grand-prix",
+      "sessions": {
+        "fp1": "2020-09-11T09:00:00Z",
+        "fp2": "2020-09-11T13:00:00Z",
+        "fp3": "2020-09-12T10:00:00Z",
+        "qualifying": "2020-09-12T13:00:00Z",
+        "race": "2020-09-13T13:10:00Z"
+      }
+    },
+    {
+      "name": "Russian",
+      "location": "Sochi",
+      "latitude": 43.6203,
+      "longitude": 39.7120,
+      "tbc":true,
+      "round": 10,
+      "slug": "russian-grand-prix",
+      "localeKey": "russian-grand-prix",
+      "sessions": {
+        "fp1" : "2020-09-25T08:00:00Z",
+        "fp2" : "2020-09-25T12:00:00Z",
+        "fp3" : "2020-09-26T09:00:00Z",
+        "qualifying" : "2020-09-26T12:00:00Z",
+        "race" : "2020-09-27T11:10:00Z"
+      }
     }
   ]
 }
