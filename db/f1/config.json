@@ -1,4 +1,5 @@
 {
   "sessions": [ "fp1", "fp2", "fp3", "qualifying", "gp" ],
-  "featuredSessions": ["gp"]
+  "featuredSessions": ["gp"],
+  "collapsedSessions": ["fp1", "fp2", "fp3", "qualifying"]
 }

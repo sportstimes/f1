@@ -23,7 +23,8 @@
     display: inline-block;
     padding: 1px 3px;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 10px;
+    font-weight: bold;
     background: red;
     margin-right: 10px;
     color: #fff;
@@ -93,12 +94,14 @@
 .tickets {
   @extend %badge;
   background: #1a8b73;
+  cursor: pointer;
   color: #fff;
 }
 
 .ticketsOver {
   @extend %badge;
   background: #333;
+  cursor: not-allowed;
   color: #fff;
 }
 
