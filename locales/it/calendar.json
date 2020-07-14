@@ -11,7 +11,7 @@
     "tbc_title": "Da confermare",
     "tickets": "Biglietti",
     "canceled": "Cancellato",
-    "next": "Più info..."
+    "next": "Più informazioni"
   },
   "schedule": {
     "fp1": "Prove libere 1",
@@ -45,6 +45,6 @@
     "mexico-grand-prix": "Gran Premio del Messico",
     "brazilian-grand-prix": "Gran Premio del Brasile",
     "abu-dhabi-grand-prix": "Gran Premio di Abu Dhabi",
-    "tuscan-grand-prix": "Tuscan Grand Prix"
+    "tuscan-grand-prix": "Gran Premio della Toscana"
   }
 }
