@@ -166,6 +166,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "mkauha",
+      "name": "Miko Kauhanen",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/47188352?v=4",
+      "profile": "https://github.com/mkauha",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
