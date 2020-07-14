@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Generuj Kalendarz",
+    "description": "Najpierw, wybierz sesję, który chcesz dodac do Twojego kalendarza:",
+    "fp1": "Trening 1",
+    "fp2": "Trening 2",
+    "fp3": "Trening 3",
+    "qualifying": "Kwalifikacje",
+    "grandPrix": "Wyścig",
+    "reminder": "Ustaw przypomnienie",
+    "reminderContinued": "minut przed wydarzeniem.",
+    "button": "Pobierz kalnedarz",
+    "buttonSubmitted": "Pobierz",
+    "nonOptionsSelected": "Wybierz przynajmniej jedną sesję dla swojego kalendarza."
+  },
+  "download": {
+    "title": "Wybierz typ kalendarza",
+    "webcalTitle": "Wersja mobilna lub klasyczna",
+    "webcalDescription": "Automatyczne aktualizowanie kalendarza dla aplikacji takich jak Outlook i macOS Calendar.",
+    "webcalButton": "Pobierz",
+    "gcalTitle": "Dla Google Calendar",
+    "gcalDescription": "Aby dodać ten kalendarz, skopiuj i wklej ten adres do Google Calendar",
+    "gcalDescriptionLink": "szczegółowe instrukcje",
+    "icsTitle": "Pobierz plik ICS",
+    "icsDescription": "Nie samoaktualizacujący się kalendarz (.ics) dla kalendarzy, które nie obsługują aktualizacji subskrypcji.",
+    "icsButton": "Pobierz"
+  }
+}
