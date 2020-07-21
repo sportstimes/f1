@@ -11,7 +11,7 @@
     "timezonePicker": {
       "showing": "Mostrando horários para",
       "pick": "Escolha um fuso horário...",
-      "button": "Completo"
+      "button": "Finalizar"
     }
   },
   "contribute": "Colaborar",
@@ -27,8 +27,8 @@
     "github": "Código aberto no GitHub",
     "issue": "Detectou um problema? Reporte",
     "links": {
-      "wereOn": "Estamos em",
-      "openSourcedOn": "Código aberto em",
+      "wereOn": "Estamos no",
+      "openSourcedOn": "Código aberto no",
       "spottedIssue": "Detectou um problema?",
       "spottedReport": "Reporte"
     }
