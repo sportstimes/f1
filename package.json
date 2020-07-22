@@ -29,7 +29,7 @@
     "moment-timezone": "^0.5.31",
     "next": "^9.4.4",
     "next-fonts": "^1.4.0",
-    "next-pwa": "^3.0.3",
+    "next-pwa": "^3.1.0",
     "next-seo": "^4.7.3",
     "next-translate": "^0.17.1",
     "node-sass": "^4.14.1",
