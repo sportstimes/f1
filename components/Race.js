@@ -117,6 +117,8 @@ class Race extends React.Component {
                     {badgeColumnLayout(this.props)}
                 </td>
             </tr>
+
+            {this.props.item.sessions.fp1 &&
             <tr className={`free-practice-1 ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
@@ -126,6 +128,9 @@ class Race extends React.Component {
                 <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp1).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
+            }
+
+            {this.props.item.sessions.fp2 &&
             <tr className={`free-practice-2 ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
@@ -135,6 +140,9 @@ class Race extends React.Component {
                 <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp2).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
+            }
+
+            {this.props.item.sessions.fp3 &&
             <tr className={`free-practice-3 ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>
@@ -144,6 +152,8 @@ class Race extends React.Component {
                 <td className={styles.timeColumn}>{moment(this.props.item.sessions.fp3).tz(this.props.timezone).format('LT')}</td>
                 <td></td>
             </tr>
+            }
+
             <tr className={`qualifying ${this.state.collapsed ? styles.collapsed : ''}`}>
                 <td className={styles.iconColumn}></td>
                 <td className={styles.eventColumn}>

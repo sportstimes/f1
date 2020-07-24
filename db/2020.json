@@ -214,9 +214,7 @@
       "slug": "emilia-romaga-grand-prix",
       "localeKey": "emilia-romaga-grand-prix",
       "sessions": {
-        "fp1": "2020-10-30T09:00:00Z",
-        "fp2": "2020-10-30T13:00:00Z",
-        "fp3": "2020-10-31T10:00:00Z",
+        "fp1": "2020-10-31T09:00:00Z",
         "qualifying": "2020-10-31T13:00:00Z",
         "race": "2020-11-01T13:10:00Z"
       }
