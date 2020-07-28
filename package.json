@@ -27,7 +27,7 @@
     "ics": "^2.22.1",
     "moment": "^2.27.0",
     "moment-timezone": "^0.5.31",
-    "next": "^9.4.4",
+    "next": "^9.5.0",
     "next-fonts": "^1.4.0",
     "next-pwa": "^3.1.0",
     "next-seo": "^4.7.3",
