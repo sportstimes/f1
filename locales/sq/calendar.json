@@ -1,0 +1,53 @@
+{
+  "date": "Data",
+  "time": "Koha",
+  "event": "Çmimet e mëdha të Formula 1",
+  "notice": {
+    "text": "Tetë garat e para të kalendarit të ndryshuar gjenden më poshtë.",
+    "link": "Lexo më shumë"
+  },
+  "badges": {
+    "tbc": "TBC",
+    "tbc_title": "Pritet konfirmimi",
+    "tickets": "Biletat",
+    "canceled": "Anuluar",
+    "next": "NË RRADHË"
+  },
+  "schedule": {
+    "fp1": "Praktika e lirë 1",
+    "fp2": "Praktika e lirë 2",
+    "fp3": "Praktika e lirë 3",
+    "qualifying": "Kualifikimet",
+    "race": "Gara"
+  },
+  "races": {
+    "austrian-grand-prix": "Çmimi i Madhë i Austrisë",
+    "steiermark-grand-prix": "Çmimi i Madhë i Steiermark (Austri)",
+    "hungary-grand-prix": "Çmimi i Madhë i Hungarisë",
+    "british-grand-prix": "Çmimi i Madhë i Anglisë",
+    "anniversary-british-grand-prix": "Çmimi i Madhë i përvjetorit të 70-të (Angli)",
+    "spanish-grand-prix": "Çmimi i Madhë i Spanjës",
+    "belgian-grand-prix": "Çmimi i Madhë i Belgjikës",
+    "italian-grand-prix": "Çmimi i Madhë i Italisë",
+    "australian-grand-prix": "Çmimi i Madhë i Australisë",
+    "bahrain-grand-prix": "Çmimi i Madhë i Bahrain",
+    "vietnamese-grand-prix": "Çmimi i Madhë i Vietnamit",
+    "china-grand-prix": "Çmimi i Madhë i Kinës",
+    "dutch-grand-prix": "Çmimi i Madhë i Holandës",
+    "monaco-grand-prix": "Çmimi i Madhë i Monakos",
+    "azerbaijan-grand-prix": "Çmimi i Madhë i Azerbajxhanit",
+    "canadian-grand-prix": "Çmimi i Madhë i Kanadës",
+    "french-grand-prix": "Çmimi i Madhë i Francës",
+    "singapore-grand-prix": "Çmimi i Madhë i Singaporit",
+    "russian-grand-prix": "Çmimi i Madhë i Rusisë",
+    "japanese-grand-prix": "Çmimi i Madhë i Japonisë",
+    "us-grand-prix": "Çmimi i Madhë i Shteteve të Bashkuara",
+    "mexico-grand-prix": "Çmimi i Madhë i Mexico City",
+    "brazilian-grand-prix": "Çmimi i Madhë i Brazilit",
+    "abu-dhabi-grand-prix": "Çmimi i Madhë i Abu Dhabi",
+    "tuscan-grand-prix": "Çmimi i Madhë i Toskanës",
+    "eifel-grand-prix": "Çmimi i Madhë i Eifel",
+    "portuguese-grand-prix": "Çmimi i Madhë i Portugalisë",
+    "emilia-romagna-grand-prix": "Çmimi i Madhë i Emilia Romagna"
+  }
+}
