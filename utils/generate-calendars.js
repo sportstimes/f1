@@ -2,6 +2,8 @@ const fs = require('fs')
 const ics = require('ics')
 const moment = require('moment')
 
+return;
+
 // Grab the calendar...
 let rawdata = fs.readFileSync('db/2020.json');
 let data = JSON.parse(rawdata);
