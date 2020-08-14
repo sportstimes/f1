@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-17-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -52,6 +52,10 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://github.com/Marko-HR"><img src="https://avatars3.githubusercontent.com/u/7421544?v=4" width="100px;" alt=""/><br /><sub><b>Marko-HR</b></sub></a><br /><a href="#translation-Marko-HR" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/charley-egmose"><img src="https://avatars1.githubusercontent.com/u/28342845?v=4" width="100px;" alt=""/><br /><sub><b>charley-egmose</b></sub></a><br /><a href="#translation-charley-egmose" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/JefersonMolinari"><img src="https://avatars3.githubusercontent.com/u/28161243?v=4" width="100px;" alt=""/><br /><sub><b>Jeferson Luis Molinari</b></sub></a><br /><a href="#translation-JefersonMolinari" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://tobymelin.com/"><img src="https://avatars2.githubusercontent.com/u/12884408?v=4" width="100px;" alt=""/><br /><sub><b>Toby M.</b></sub></a><br /><a href="#translation-tobymelin" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/mkauha"><img src="https://avatars1.githubusercontent.com/u/47188352?v=4" width="100px;" alt=""/><br /><sub><b>Miko Kauhanen</b></sub></a><br /><a href="#translation-mkauha" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/raider87"><img src="https://avatars1.githubusercontent.com/u/25852486?v=4" width="100px;" alt=""/><br /><sub><b>raider87</b></sub></a><br /><a href="#translation-raider87" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/lumbytyci"><img src="https://avatars1.githubusercontent.com/u/17204788?v=4" width="100px;" alt=""/><br /><sub><b>Lumi Bytyçi</b></sub></a><br /><a href="#translation-lumbytyci" title="Translation">🌍</a></td>
   </tr>
 </table>
 

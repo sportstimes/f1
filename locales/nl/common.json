@@ -7,7 +7,7 @@
   },
   "options": {
     "calendar": "Voeg deze race datums en starttijden toe aan je kalender",
-    "email": "Receive email reminders",
+    "email": "Ontvang herinneringen via email",
     "timezonePicker": {
       "showing": "Starttijden voor",
       "pick": "Kies een tijdzone...",

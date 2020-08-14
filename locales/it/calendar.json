@@ -11,7 +11,7 @@
     "tbc_title": "Da confermare",
     "tickets": "Biglietti",
     "canceled": "Cancellato",
-    "next": "Più info..."
+    "next": "Più informazioni"
   },
   "schedule": {
     "fp1": "Prove libere 1",
@@ -34,7 +34,7 @@
     "vietnamese-grand-prix": "Gran Premio del Vietnam",
     "china-grand-prix": "Gran Premio di Cina",
     "dutch-grand-prix": "Gran Premio d'Olanda",
-    "monoco-grand-prix": "Gran Premio di Monaco",
+    "monaco-grand-prix": "Gran Premio di Monaco",
     "azerbaijan-grand-prix": "Gran Premio d'Azerbaijan",
     "canadian-grand-prix": "Gran Premio del Canada",
     "french-grand-prix": "Gran Premio di Francia",
@@ -42,9 +42,12 @@
     "russian-grand-prix": "Gran Premio di Russia",
     "japanese-grand-prix": "Gran Premio del Giappone",
     "us-grand-prix": "Gran Premio degli Stati Uniti d'America",
-    "mexico-grand-prix": "Gran Premio del Messico",
+    "mexico-grand-prix": "Gran Premio di Città del Messico",
     "brazilian-grand-prix": "Gran Premio del Brasile",
     "abu-dhabi-grand-prix": "Gran Premio di Abu Dhabi",
-    "tuscan-grand-prix": "Tuscan Grand Prix"
+    "tuscan-grand-prix": "Gran Premio della Toscana",
+    "eifel-grand-prix": "Gran Premio dell'Eifel",
+    "portuguese-grand-prix": "Gran Premio del Portogallo",
+    "emilia-romagna-grand-prix": "Gran Premio dell'Emilia Romagna"
   }
 }

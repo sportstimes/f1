@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Luo kalenteri",
+    "description": "Valitse kisaviikonlopun tapahtumista ne, jotka haluat lisätä kalenteriisi:",
+    "fp1": "1. vapaat harjoitukset",
+    "fp2": "2. vapaat harjoitukset",
+    "fp3": "3. vapaat harjoitukset",
+    "qualifying": "Aika-ajot",
+    "grandPrix": "Kisa",
+    "reminder": "Aseta muistutus",
+    "reminderContinued": "minuuttia ennen jokaista kalenterissasi olevaa kisaviikonlopun tapahtumaa.",
+    "button": "Luo kalenteri",
+    "buttonSubmitted": "Luotu",
+    "nonOptionsSelected": "Valitse vähintään yksi tapahtuma."
+  },
+  "download": {
+    "title": "Valitse kalenterityyppi",
+    "webcalTitle": "Puhelimelle ja työpöytäkoneelle",
+    "webcalDescription": "Automaattisesti päivittyvä kalenteri sovelluksille kuten Outlook ja macOS-kalenteri.",
+    "webcalButton": "Luo",
+    "gcalTitle": "Google-kalenterille",
+    "gcalDescription": "Lisätäksesi tämän kalenterin, kopioi ja liitä tämä URL Google-kalenteriisi",
+    "gcalDescriptionLink": "tarkemmat ohjeet",
+    "icsTitle": "Lataa ICS -tiedosto",
+    "icsDescription": "Ei-päivittyvä kalenteri (.ics) sovelluksille, joissa ei ole automaattista päivitystä.",
+    "icsButton": "Lataa"
+  }
+}

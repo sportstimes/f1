@@ -7,7 +7,7 @@
     "link": "Leia mais"
   },
   "badges": {
-    "tbc": "TBC",
+    "tbc": "A confirmar",
     "tbc_title": "A confirmar",
     "tickets": "Ingressos",
     "canceled": "Cancelado",
@@ -45,6 +45,9 @@
     "mexico-grand-prix": "GP da México",
     "brazilian-grand-prix": "GP da Brasil",
     "abu-dhabi-grand-prix": "GP de Abu Dhabi",
-    "tuscan-grand-prix": "Tuscan Grand Prix"
+    "tuscan-grand-prix": "GP da Toscana Ferrari 1000",
+    "eifel-grand-prix": "GP do Eifel",
+    "portuguese-grand-prix": "GP de Portugal",
+    "emilia-romagna-grand-prix": "GP da Emilia Romagna"
   }
 }
