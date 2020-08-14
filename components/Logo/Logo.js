@@ -6,7 +6,7 @@ export default function Logo() {
 
     return <>
         <Link href="/">
-            <a aria-label={t('logoLinkTitle')} R>
+            <a aria-label={t('logoLinkTitle')}>
                 {process.env.NEXT_PUBLIC_DB_FOLDER === "f1" &&
                 <svg width="60" height="60" viewBox="0 0 1808 1808" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd"

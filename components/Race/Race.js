@@ -154,11 +154,12 @@ class Race extends React.Component {
             }
 
             {config.collapsedSessions.map((item, index) => {
-                console.log(item);
-                return (<RaceTR date={this.props.item.sessions[item]} title={item} timezone={this.props.timezone}
-                                i18n={this.props.i18n} localeKey={this.props.item.localeKey}
-                                collapsed={this.state.collapsed}
-                                hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}/>);
+                if(this.props.item.sessions[item]) {
+                    return (<RaceTR date={this.props.item.sessions[item]} title={item} timezone={this.props.timezone}
+                                    i18n={this.props.i18n} localeKey={this.props.item.localeKey}
+                                    collapsed={this.state.collapsed}
+                                    hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}/>);
+                }
             })}
 
             </tbody>
