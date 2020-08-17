@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/sportstimes/f1#readme",
   "dependencies": {
-    "ics": "^2.22.1",
+    "ics": "^2.23.0",
     "moment": "^2.27.0",
     "moment-timezone": "^0.5.31",
     "next": "^9.5.1",
