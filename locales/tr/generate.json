@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Takvim oluştur",
+    "description": "Öncelikle takvimde F1 yarış haftalarının hangi seanslarını görmek istediğinizi seçin:",
+    "fp1": "Birinci antrenman",
+    "fp2": "İkinci antrenman",
+    "fp3": "Üçüncü antrenman",
+    "qualifying": "Sıralama turları",
+    "grandPrix": "Yarış",
+    "reminder": "Yarışa",
+    "reminderContinued": "dakika kala hatırlatma gelsin.",
+    "button": "Takvimi oluştur",
+    "buttonSubmitted": "İşlem tamamlandı",
+    "nonOptionsSelected": "Lütfen listeden en az bir seans seçin."
+  },
+  "download": {
+    "title": "Takvim Türünü Seçin",
+    "webcalTitle": "Cep Telefonu veya Bilgisayar İçin",
+    "webcalDescription": "Outlook ve macOS Takvim gibi uygulamalar için kendiliğinden güncellenen takvim.",
+    "webcalButton": "Takvimi ekleyin",
+    "gcalTitle": "Google Takvim için",
+    "gcalDescription": "Bu takvimi eklemek için aşağıdaki adresi kopyalayıp Google Takvim'e yapıştırın",
+    "gcalDescriptionLink": "Diğer takvimler -> Takvime abone ol", "_comment": "I took the liberty to put a small explainer here, because many Turkish users would back away from the linked English page instead of scrolling down to find the language selector"
+    "icsTitle": "ICS Dosyası İndirin",
+    "icsDescription": "Güncellemelere abone olunamayan takvimler için kendini güncelleştirmeyen takvim dosyası (.ics).",
+    "icsButton": "İndirin"
+  }
+}
