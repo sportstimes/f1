@@ -218,6 +218,74 @@
         "qualifying": "2020-10-31T13:00:00Z",
         "race": "2020-11-01T12:10:00Z"
       }
+    },
+    {
+      "name": "Turkish Grand Prix",
+      "location": "Istanbul",
+      "latitude": 40.957914,
+      "longitude": 29.411675,
+      "tbc": true,
+      "round": 14,
+      "slug": "turkish-grand-prix",
+      "localeKey": "turkish-grand-prix",
+      "sessions": {
+        "fp1" : "2020-11-13T11:00:00Z",
+        "fp2" : "2020-11-13T15:00:00Z",
+        "fp3" : "2020-11-14T12:00:00Z",
+        "qualifying" : "2020-11-14:00:00Z",
+        "race" : "2020-11-15T15:10:00Z"
+      }
+    },
+    {
+      "name": "Bahrain Grand Prix",
+      "location": "Sakhir",
+      "latitude": 26.0370,
+      "longitude": 50.5112,
+      "tbc": true,
+      "round": 15,
+      "slug": "bahrain-grand-prix",
+      "localeKey": "bahrain-grand-prix",
+      "sessions": {
+        "fp1" : "2020-11-27T11:00:00Z",
+        "fp2" : "2020-11-27T15:00:00Z",
+        "fp3" : "2020-11-28T12:00:00Z",
+        "qualifying" : "2020-11-28:00:00Z",
+        "race" : "2020-11-29T15:10:00Z"
+      }
+    },
+    {
+      "name": "Sakhir Grand Prix (Bahrain)",
+      "location": "Sakhir",
+      "latitude": 26.0370,
+      "longitude": 50.5112,
+      "tbc": true,
+      "round": 16,
+      "slug": "sakhir-grand-prix",
+      "localeKey": "sakhir-grand-prix",
+      "sessions": {
+        "fp1" : "2020-12-04T11:00:00Z",
+        "fp2" : "2020-12-04T15:00:00Z",
+        "fp3" : "2020-12-05T12:00:00Z",
+        "qualifying" : "2020-12-05T15:00:00Z",
+        "race" : "2020-12-06T15:10:00Z"
+      }
+    },
+    {
+      "name": "Abu Dhabi Grand Prix",
+      "location": "Imola",
+      "latitude": 44.344576,
+      "longitude": 11.713808,
+      "tbc": true,
+      "round": 15,
+      "slug": "abu-dhabi-grand-prix",
+      "localeKey": "abu-dhabi-grand-prix",
+      "sessions": {
+        "fp1" : "2020-12-11T09:00:00Z",
+        "fp2" : "2020-12-11T13:00:00Z",
+        "fp3" : "2020-12-12T10:00:00Z",
+        "qualifying" : "2020-12-12T13:00:00Z",
+        "race" : "2020-12-13T13:10:00Z"
+      }
     }
   ]
 }
