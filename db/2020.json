@@ -272,9 +272,9 @@
     },
     {
       "name": "Abu Dhabi Grand Prix",
-      "location": "Imola",
-      "latitude": 44.344576,
-      "longitude": 11.713808,
+      "location": "Yas Marina",
+      "latitude": 24.4821,
+      "longitude": 54.3482,
       "tbc": true,
       "round": 15,
       "slug": "abu-dhabi-grand-prix",
