@@ -15,6 +15,7 @@
     "ru",
     "sq",
     "sv",
+    "tr",
     "zh"
   ],
   "languageNames": {
@@ -33,6 +34,7 @@
     "ru": "Русский",
     "sq": "Shqip",
     "sv": "Svenska",
+    "tr": "Türkçe",
     "zh": "中文"
   },
   "defaultLanguage": "en",
