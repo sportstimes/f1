@@ -22,12 +22,12 @@
   },
   "races": {
     "austrian-grand-prix": "Avusturya Grand Prix'si",
-    "steiermark-grand-prix": "Steiermark (Avusturya) Grand Prix'si",
+    "steiermark-grand-prix": "Steiermark Grand Prix'si",
     "hungary-grand-prix": "Macaristan Grand Prix'si",
     "british-grand-prix": "Britanya Grand Prix'si",
-    "anniversary-british-grand-prix": "70. Yıldönümü (Britanya) Grand Prix'si",
+    "anniversary-british-grand-prix": "70. Yıldönümü Grand Prix'si",
     "spanish-grand-prix": "İspanya Grand Prix'si",
-    "belgian-grand-prix": "Balçika Grand Prix'si",
+    "belgian-grand-prix": "Belçika Grand Prix'si",
     "italian-grand-prix": "İtalya Grand Prix'si",
     "australian-grand-prix": "Avustralya Grand Prix'si",
     "bahrain-grand-prix": "Bahreyn Grand Prix'si",
@@ -45,9 +45,9 @@
     "mexico-grand-prix": "Mexico City Grand Prix'si",
     "brazilian-grand-prix": "Brezilya Grand Prix'si",
     "abu-dhabi-grand-prix": "Abu Dhabi Grand Prix'si",
-    "tuscan-grand-prix": "Toskana (İtalya) Grand Prix'si",
-    "eifel-grand-prix": "Eifel (Almanya) Grand Prix'si",
+    "tuscan-grand-prix": "Toskana Grand Prix'si",
+    "eifel-grand-prix": "Eifel Grand Prix'si",
     "portuguese-grand-prix": "Portekiz Grand Prix'si",
-    "emilia-romagna-grand-prix": "Emilia Romagna (İtalya) Grand Prix'si"
+    "emilia-romagna-grand-prix": "Emilia Romagna Grand Prix'si"
   }
 }
