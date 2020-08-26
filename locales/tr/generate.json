@@ -1,7 +1,7 @@
 {
   "form": {
     "title": "Takvim oluşturun",
-    "description": "Öncelikle takvimde F1 yarış haftalarının hangi seanslarını görmek istediğinizi seçin:",
+    "description": "Öncelikle takviminizde F1 yarış haftalarının hangi seanslarını görmek istediğinizi seçin:",
     "fp1": "Birinci antrenman",
     "fp2": "İkinci antrenman",
     "fp3": "Üçüncü antrenman",
