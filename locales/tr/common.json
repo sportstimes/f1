@@ -6,7 +6,7 @@
     "keywords": "F1, formula bir, yarış saatleri, yarışlar, hatırlatıcı, alarm, grands prix, grand prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, Londra, Avrupa, {{year}}"
   },
   "options": {
-    "calendar": "Bu yarış tarihlerini ve saatlerini kendi takviminize ekleyin",
+    "calendar": "Yarış programını kendi takviminize ekleyin",
     "email": "E-posta ile hatırlatma alın",
     "timezonePicker": {
       "showing": "Seçili saat dilimi",
