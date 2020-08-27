@@ -49,3 +49,5 @@ jspm_packages
 
 .idea
 .idea/*
+/.env.local
+/.env
