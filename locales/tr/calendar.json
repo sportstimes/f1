@@ -8,7 +8,7 @@
   },
   "badges": {
     "tbc": "Belirsiz",
-    "tbc_title": "Henüz kesinleşmedi",
+    "tbc_title": "Henüz netleşmedi",
     "tickets": "Biletler",
     "canceled": "İptal",
     "next": "SIRADAKİ"
@@ -49,7 +49,7 @@
     "eifel-grand-prix": "Eifel Grand Prix'si",
     "portuguese-grand-prix": "Portekiz Grand Prix'si",
     "emilia-romagna-grand-prix": "Emilia Romagna Grand Prix'si",
-    "sakhir-grand-prix": "Sakhir (Bahrain) Grand Prix",
-    "turkish-grand-prix": "Turkish Grand Prix"
+    "sakhir-grand-prix": "Sakhir Grand Prix'si",
+    "turkish-grand-prix": "Türkiye Grand Prix'si"
   }
 }
