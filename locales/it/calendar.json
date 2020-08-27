@@ -3,7 +3,7 @@
   "time": "Ora",
   "event": "Gran Premi di Formula 1",
   "notice": {
-    "text": "Qui sotto le 8 gare del calendario modificato. Gli orari sono da confermare, assieme a eventuali gare aggiuntive.",
+    "text": "Qui sotto le 17 gare del calendario modificato. Gli orari sono da confermare, assieme a eventuali gare aggiuntive.",
     "link": "Più informazioni"
   },
   "badges": {
@@ -30,7 +30,7 @@
     "belgian-grand-prix": "Gran Premio del Belgio",
     "italian-grand-prix": "Gran Premio d'Italia",
     "australian-grand-prix": "Gran Premio d'Australia",
-    "bahrain-grand-prix": "Gran Premio del Bahrain",
+    "bahrain-grand-prix": "Gran Premio del Bahrein",
     "vietnamese-grand-prix": "Gran Premio del Vietnam",
     "china-grand-prix": "Gran Premio di Cina",
     "dutch-grand-prix": "Gran Premio d'Olanda",
@@ -48,6 +48,8 @@
     "tuscan-grand-prix": "Gran Premio della Toscana",
     "eifel-grand-prix": "Gran Premio dell'Eifel",
     "portuguese-grand-prix": "Gran Premio del Portogallo",
-    "emilia-romagna-grand-prix": "Gran Premio dell'Emilia Romagna"
+    "emilia-romagna-grand-prix": "Gran Premio dell'Emilia Romagna",
+    "sakhir-grand-prix": "Gran Premio di Sakhir",
+    "turkish-grand-prix": "Gran Premio di Turchia"
   }
 }

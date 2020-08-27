@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-22-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -56,6 +56,9 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://github.com/mkauha"><img src="https://avatars1.githubusercontent.com/u/47188352?v=4" width="100px;" alt=""/><br /><sub><b>Miko Kauhanen</b></sub></a><br /><a href="#translation-mkauha" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/raider87"><img src="https://avatars1.githubusercontent.com/u/25852486?v=4" width="100px;" alt=""/><br /><sub><b>raider87</b></sub></a><br /><a href="#translation-raider87" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/lumbytyci"><img src="https://avatars1.githubusercontent.com/u/17204788?v=4" width="100px;" alt=""/><br /><sub><b>Lumi Bytyçi</b></sub></a><br /><a href="#translation-lumbytyci" title="Translation">🌍</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/asimovitsch"><img src="https://avatars3.githubusercontent.com/u/51007339?v=4" width="100px;" alt=""/><br /><sub><b>Asım Barış Çiçek</b></sub></a><br /><a href="#translation-asimovitsch" title="Translation">🌍</a></td>
   </tr>
 </table>
 
