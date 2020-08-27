@@ -1,5 +1,5 @@
-import Layout from '../../components/Layout';
-import Races from '../../components/Races';
+import Layout from 'components/Layout/Layout';
+import Races from 'components/Races/Races';
 import { NextSeo } from 'next-seo';
 
 const Year = (props) => {
@@ -67,7 +67,9 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-	const data = await import(`../../db/${params.year}.json`)
+	const year = params.year;
+
+	const data = await import(`db/`+process.env.NEXT_PUBLIC_DB_FOLDER+`/`+year+`.json`)
 
 	return {
 		props: {

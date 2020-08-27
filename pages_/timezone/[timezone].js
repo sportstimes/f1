@@ -1,10 +1,10 @@
 import {useState, useContext, useEffect} from 'react';
-import UserContext from '../../components/UserContext';
-import Layout from '../../components/Layout';
-import Races from '../../components/Races';
+import UserContext from 'components/UserContext';
+import Layout from 'components/Layout/Layout'
+import Races from 'components/Race/Race';
 import {NextSeo} from 'next-seo';
 import useTranslation from "next-translate/useTranslation";
-import RaceSchema from "../../components/RaceSchema";
+import RaceSchema from "components/RaceSchema/RaceSchema";
 import Link from "next/link";
 import {useRouter} from 'next/router'
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import App from 'next/app';
-import UserContext from '../components/UserContext';
+import UserContext from 'components/UserContext';
 const moment = require('moment-timezone')
 import { DefaultSeo } from 'next-seo';
 import '../styles/style.scss'

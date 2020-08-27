@@ -1,7 +1,7 @@
-import Layout from "../components/Layout/Layout";
+import Layout from "components/Layout/Layout";
 import {NextSeo} from 'next-seo';
 import Link from 'next/link';
-import {Card} from "../components/Card/Card";
+import {Card} from "components/Card/Card";
 
 const moment = require('moment-timezone')
 import useTranslation from 'next-translate/useTranslation'
