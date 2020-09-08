@@ -275,7 +275,7 @@
       "location": "Yas Marina",
       "latitude": 24.4821,
       "longitude": 54.3482,
-      "tbc": true,
+      "tbc": false,
       "round": 17,
       "slug": "abu-dhabi-grand-prix",
       "localeKey": "abu-dhabi-grand-prix",
