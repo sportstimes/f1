@@ -241,7 +241,7 @@
       "location": "Sakhir",
       "latitude": 26.0370,
       "longitude": 50.5112,
-      "tbc": true,
+      "tbc": false,
       "round": 15,
       "slug": "bahrain-grand-prix",
       "localeKey": "bahrain-grand-prix",
