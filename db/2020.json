@@ -224,16 +224,16 @@
       "location": "Istanbul",
       "latitude": 40.957914,
       "longitude": 29.411675,
-      "tbc": true,
+      "tbc": false,
       "round": 14,
       "slug": "turkish-grand-prix",
       "localeKey": "turkish-grand-prix",
       "sessions": {
-        "fp1" : "2020-11-13T11:00:00Z",
-        "fp2" : "2020-11-13T15:00:00Z",
-        "fp3" : "2020-11-14T12:00:00Z",
-        "qualifying" : "2020-11-14T15:00:00Z",
-        "race" : "2020-11-15T15:10:00Z"
+        "fp1" : "2020-11-13T08:00:00Z",
+        "fp2" : "2020-11-13T12:00:00Z",
+        "fp3" : "2020-11-14T09:00:00Z",
+        "qualifying" : "2020-11-14T12:00:00Z",
+        "race" : "2020-11-14T10:10:00Z"
       }
     },
     {
@@ -241,7 +241,7 @@
       "location": "Sakhir",
       "latitude": 26.0370,
       "longitude": 50.5112,
-      "tbc": true,
+      "tbc": false,
       "round": 15,
       "slug": "bahrain-grand-prix",
       "localeKey": "bahrain-grand-prix",
@@ -258,16 +258,16 @@
       "location": "Sakhir",
       "latitude": 26.0370,
       "longitude": 50.5112,
-      "tbc": true,
+      "tbc": false,
       "round": 16,
       "slug": "sakhir-grand-prix",
       "localeKey": "sakhir-grand-prix",
       "sessions": {
-        "fp1" : "2020-12-04T11:00:00Z",
-        "fp2" : "2020-12-04T15:00:00Z",
-        "fp3" : "2020-12-05T12:00:00Z",
-        "qualifying" : "2020-12-05T15:00:00Z",
-        "race" : "2020-12-06T15:10:00Z"
+        "fp1" : "2020-12-04T13:30:00Z",
+        "fp2" : "2020-12-04T17:30:00Z",
+        "fp3" : "2020-12-05T15:00:00Z",
+        "qualifying" : "2020-12-05T18:00:00Z",
+        "race" : "2020-12-06T17:10:00Z"
       }
     },
     {
@@ -275,7 +275,7 @@
       "location": "Yas Marina",
       "latitude": 24.4821,
       "longitude": 54.3482,
-      "tbc": true,
+      "tbc": false,
       "round": 17,
       "slug": "abu-dhabi-grand-prix",
       "localeKey": "abu-dhabi-grand-prix",
