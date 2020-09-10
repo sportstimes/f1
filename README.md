@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -60,6 +60,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
   <tr>
     <td align="center"><a href="https://github.com/asimovitsch"><img src="https://avatars3.githubusercontent.com/u/51007339?v=4" width="100px;" alt=""/><br /><sub><b>Asım Barış Çiçek</b></sub></a><br /><a href="#translation-asimovitsch" title="Translation">🌍</a></td>
     <td align="center"><a href="https://twitter.com/petosorus"><img src="https://avatars0.githubusercontent.com/u/4728156?v=4" width="100px;" alt=""/><br /><sub><b>petosorus</b></sub></a><br /><a href="#translation-petosorus" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/sigito"><img src="https://avatars1.githubusercontent.com/u/1129082?v=4" width="100px;" alt=""/><br /><sub><b>Yura Samsoniuk</b></sub></a><br /><a href="#translation-sigito" title="Translation">🌍</a></td>
   </tr>
 </table>
 
