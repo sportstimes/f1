@@ -20,7 +20,7 @@ function Generate(props) {
 	    race: true,
 	    virtual: false,
 	    alarm: false,
-	    mins: 20,
+	    mins: 30,
 	    submitted: false,
 	    webcalURL: '',
 	    googleURL: '',
@@ -132,7 +132,7 @@ function Generate(props) {
 								<fieldset id="set_alarms">
 									<div className="field">
 										<input type="checkbox" name="alarm" id="alarm" value="off" onChange={event => setState({...form, alarm: event.target.checked })} />
-										<label htmlFor="alarm">{ t('generate:form.reminder') }</label> <input type="number" name="mins" id="alarm-mins" step="5" min="0" max="120" defaultValue="20" onChange={event => setState({...form, mins: event.target.value })} /><label htmlFor="alarms-before">{ t('generate:form.reminderContinued') }</label>
+										<label htmlFor="alarm">{ t('generate:form.reminder') }</label> <input type="number" name="mins" id="alarm-mins" step="30" min="0" max="120" defaultValue="30" onChange={event => setState({...form, mins: event.target.value })} /><label htmlFor="alarms-before">{ t('generate:form.reminderContinued') }</label>
 									</div>
 								</fieldset>
 								
