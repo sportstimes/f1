@@ -13,7 +13,7 @@ let i18n = JSON.parse(i18nConfig);
 
 // Define which options we have for calendar generation...
 // Old unused options which are left just to avoid 404 errors: virtual
-const calendarOptions = ['p1', 'p2', 'p3', 'q', 'gp', /*'virtual',*/ 'alarm']
+const calendarOptions = ['p1', 'p2', 'p3', 'q', 'gp', 'alarm']
 
 function getPermutations(array, size) {
     function p(t, i) {
@@ -44,10 +44,11 @@ optionPermutations.push(...getPermutations(calendarOptions, 5));
 optionPermutations.push(...getPermutations(calendarOptions, 6));
 
 let fileNames = [];
-let deprecatedFilenames = [];
+let localizedFilenames = [];
 
 // TODO: Reduce the number of options here someday.
-const alarmOptions = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120];
+const legacyAlarmOptions = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120];
+const alarmOptions = [0, 30, 60, 90, 120];
 
 // Generate Filenames
 for (permutation of optionPermutations) {
@@ -56,18 +57,15 @@ for (permutation of optionPermutations) {
     // If the filename contains alarm then add each of the alarm permutations.
     if (filename != "alarm") {
         fileNames.push(filename);
+        localizedFilenames.push(filename);
 
         if (filename.includes("alarm")) {
-            for (alarmOption of alarmOptions) {
+            for (alarmOption of legacyAlarmOptions) {
                 fileNames.push(filename + "-" + alarmOption);
-
-                if (filename.includes("virtual")) {
-                    deprecatedFilenames.push(filename + "-" + alarmOption);
-                }
             }
-        } else {
-            if (filename.includes("virtual")) {
-                deprecatedFilenames.push(filename);
+
+            for (alarmOption of alarmOptions) {
+                localizedFilenames.push(filename + "-" + alarmOption);
             }
         }
     }
@@ -97,7 +95,9 @@ for (language of i18n.allLanguages) {
 		sessionQuali = localizedStrings.schedule.qualifying;
 	}
 
-    for (request of fileNames) {
+	var languageFilesnames = language == "en" ? fileNames : localizedFilenames;
+
+    for (request of languageFilesnames) {
         let includeFP1, includeFP2, includeFP3, includeQuali, includeRace = false
         let alarmEnabled = false
 
@@ -108,7 +108,7 @@ for (language of i18n.allLanguages) {
 		includeRace = request.includes("gp")
 		alarmEnabled = request.includes("alarm")
 
-        let alarmOffset = 20;
+        let alarmOffset = 30;
         if (alarmEnabled) {
             let requestArray = request.split("-");
             alarmOffset = requestArray.slice(-1)[0];
