@@ -1,6 +1,5 @@
 import styles from './Footer.module.scss'
 import useTranslation from 'next-translate/useTranslation'
-import {lang} from "moment";
 
 export default function Footer() {
     const { t, lang } = useTranslation()

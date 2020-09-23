@@ -1,7 +1,9 @@
 import React from 'react';
 import App from 'next/app';
 import UserContext from '../components/UserContext';
-const moment = require('moment-timezone')
+import dayjs from 'dayjs';
+import dayjsutc from 'dayjs/plugin/utc';
+import dayjstimezone from 'dayjs/plugin/timezone';
 import { DefaultSeo } from 'next-seo';
 import '../styles/style.scss'
 
@@ -10,7 +12,10 @@ export default class F1App extends App {
 	constructor(props, context, query) {
 		super();
 
-		let timezone = moment.tz.guess()
+		dayjs.extend(dayjsutc)
+		dayjs.extend(dayjstimezone)
+
+		let timezone =  dayjs.tz.guess()
 		if(props.router.query.timezone){
 			timezone = props.router.query.timezone.replace("-", "/")
 		}
@@ -24,7 +29,7 @@ export default class F1App extends App {
 	};
 	
 	componentDidMount = (props) => {
-		let timezone = moment.tz.guess()
+		let timezone =  dayjs.tz.guess()
 		if(localStorage.getItem('timezone')) {
 			timezone = localStorage.getItem('timezone');
 		}
