@@ -1,4 +1,4 @@
-import {useState, useContext} from 'react';
+import React, {useState, useContext} from 'react';
 import Link from 'next-translate/Link'
 import styles from './CTABar.module.scss'
 import withTranslation from 'next-translate/withTranslation'

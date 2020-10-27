@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React, {useState} from 'react';
 import moment from 'moment'
 import styles from './Race.module.scss'
 import withTranslation from 'next-translate/withTranslation'
