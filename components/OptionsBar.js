@@ -14,7 +14,7 @@ class OptionsBar extends React.Component {
         super(props)
 
         this.state = {
-            pickerShowing: true
+            pickerShowing: false
         }
     }
 
