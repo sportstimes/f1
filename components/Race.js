@@ -9,7 +9,7 @@ class Race extends React.Component {
         super(props)
 
         this.state = {
-            collapsed: false
+            collapsed: true
         }
     }
 
