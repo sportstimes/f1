@@ -6,7 +6,7 @@
     "keywords": "F1, formula 1, kisa-aikataulu, kisat, muistutus, hälytykset, osakilpailut, GP, kalenteri, päivämäärät, aikataulut, aika-ajot, vapaat harjoitukset, Lontoo, Eurooppa, {{year}}"
   },
   "options": {
-    "calendar": "Lisää osakilpailujen aikataulut kalenteriisi",
+    "calendar": "Lisää osakilpailujen aikataulut kalenteriin",
     "email": "Vastaanota muistutuksia sähköpostiin",
     "timezonePicker": {
       "showing": "Näytetään aikataulut",
