@@ -1,4 +1,4 @@
-import {useState, useContext} from 'react';
+import React from 'react';
 import UserContext from '../components/UserContext';
 import Link from 'next/link';
 import dayjs from 'dayjs';
@@ -18,7 +18,7 @@ class OptionsBar extends React.Component {
         dayjs.extend(dayjstimezone)
 
         this.state = {
-            pickerShowing: true
+            pickerShowing: false
         }
     }
 

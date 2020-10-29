@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React, {useState} from 'react';
 import styles from './Race.module.scss'
 import withTranslation from 'next-translate/withTranslation'
 import dayjs from 'dayjs'
@@ -16,7 +16,7 @@ class Race extends React.Component {
         dayjs.extend(dayjslocalized)
 
         this.state = {
-            collapsed: false
+            collapsed: true
         }
     }
 
