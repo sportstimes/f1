@@ -4,9 +4,10 @@ import Link from 'next/link';
 import dayjs from 'dayjs';
 import dayjsutc from 'dayjs/plugin/utc';
 import dayjstimezone from 'dayjs/plugin/timezone';
-import styles from './OptionsBar.module.scss'
-import withTranslation from 'next-translate/withTranslation'
-import fixHref from 'next-translate/fixHref'
+import styles from './OptionsBar.module.scss';
+import withTranslation from 'next-translate/withTranslation';
+import fixHref from 'next-translate/fixHref';
+import ct from 'countries-and-timezones';
 
 class OptionsBar extends React.Component {
     static contextType = UserContext
@@ -43,24 +44,24 @@ class OptionsBar extends React.Component {
     render() {
         const {t, lang} = this.props.i18n
 
-        // Picker Items
-        const timezoneItems = []
 
+        // Picker Items
         const scrubbedPrefixes = ['Antarctica', 'Arctic', 'Canada', 'Chile', 'Etc', 'Mexico', 'US'];
         const scrubbedSuffixes = ['ACT', 'East', 'Knox_IN', 'LHI', 'North', 'NSW', 'South', 'West'];
 
-        const tzNames = [];
+        const allTimezones = ct.getAllTimezones();
+        let timezoneNames = Object.keys(ct.getAllTimezones());
+        const timezoneItems = []
 
-        /*
-        moment.tz.names()
-            .filter(name => name.indexOf('/') !== -1)
+        timezoneNames = timezoneNames.filter(name => name.indexOf('/') !== -1)
             .filter(name => !scrubbedPrefixes.includes(name.split('/')[0]))
             .filter(name => !scrubbedSuffixes.includes(name.split('/').slice(-1)[0]));
 
-        tzNames.reduce((memo, tz) => {
+        timezoneNames.reduce((memo, tz) => {
             memo.push({
                 name: tz,
-                offset: moment.tz(tz).utcOffset()
+                offset: allTimezones[tz].utcOffset,
+                offsetString: allTimezones[tz].utcOffsetStr
             });
 
             return memo;
@@ -69,12 +70,10 @@ class OptionsBar extends React.Component {
                 return a.offset - b.offset
             })
             .reduce((memo, tz) => {
-                const timezone = tz.offset ? moment.tz(tz.name).format('Z') : '';
-
                 timezoneItems.push(<option value={tz.name}
-                                           key={tz.name}>(GMT{timezone}) {tz.name.replace("_", " ")}</option>);
+                                           key={tz.name}>(GMT{tz.offsetString}) {tz.name.replace("_", " ")}</option>);
             }, "");
-        */
+
         return (
             <div className={styles.options}>
                 <div className={styles.bar}>
@@ -90,7 +89,9 @@ class OptionsBar extends React.Component {
 
                                 <button onClick={this.togglePicker}
                                         type="submit">{t('common:options.timezonePicker.button')}</button>
-                                <noscript><style>{`#timezone-picker { display:none; } `}</style></noscript>
+                                <noscript>
+                                    <style>{`#timezone-picker { display:none; } `}</style>
+                                </noscript>
                             </form>
                             <noscript>
                                 <a href="/timezones">{t('common:options.timezonePicker.pick')}</a>
