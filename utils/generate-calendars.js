@@ -1,6 +1,6 @@
 const fs = require('fs')
 const ics = require('ics')
-const moment = require('moment')
+const dayjs = require('dayjs')
 
 // Grab the calendar...
 let rawdata = fs.readFileSync('db/2020.json');
@@ -173,8 +173,8 @@ for (language of i18n.allLanguages) {
                         })
                     }
 
-                    let start = moment(session).format('YYYY-M-D-H-m').split("-")
-                    let end = moment(session).add(sessionLength, 'minutes').format('YYYY-M-D-H-m').split("-")
+                    let start = dayjs(session).format('YYYY-M-D-H-m').split("-")
+                    let end = dayjs(session).add(sessionLength, 'minutes').format('YYYY-M-D-H-m').split("-")
 
                     let status = "CONFIRMED";
                     if (race.tbc) {
