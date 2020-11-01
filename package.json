@@ -30,7 +30,7 @@
     "next": "^10.0.0",
     "next-fonts": "^1.4.0",
     "next-pwa": "^3.1.5",
-    "next-translate": "^0.17.3",
+    "next-translate": "^0.19.2",
     "next-seo": "^4.14.1",
     "react": "^17.0.1",
     "react-cookie-consent": "^5.2.0",
