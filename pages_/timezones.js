@@ -1,8 +1,8 @@
 import Layout from "../components/Layout";
 import {NextSeo} from 'next-seo';
 import Link from 'next/link';
+import ct from 'countries-and-timezones';
 
-const moment = require('moment-timezone')
 import useTranslation from 'next-translate/useTranslation'
 
 function Timezones() {
@@ -15,7 +15,9 @@ function Timezones() {
 
     // Picker Items
     const timezoneItems = []
-    let zoneslist = moment.tz.names()
+
+    let zoneslist = Object.keys(ct.getAllTimezones());
+
     for (let zone in zoneslist) {
         let timezoneSlug = zoneslist[zone].replace(/\//g, "-");
         timezoneItems.push(<li key={zoneslist[zone]}><Link href={`timezone/${timezoneSlug}`}><a>{zoneslist[zone]}</a></Link></li>)

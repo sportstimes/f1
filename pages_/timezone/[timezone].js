@@ -8,8 +8,6 @@ import RaceSchema from "../../components/RaceSchema";
 import Link from "next/link";
 import { useRouter } from 'next/router'
 
-const moment = require('moment-timezone')
-
 const Timezone = (props) => {
 	const router = useRouter()
 
@@ -23,7 +21,6 @@ const Timezone = (props) => {
 	const metaKeywords = t('common:meta.keywords', {year: currentYear})
 
 	const timezone = props.timezone ? props.timezone.replace("-", "/") : "";
-
 
 	return (
 		<>
