@@ -1,6 +1,6 @@
 import {useContext} from 'react';
 import UserContext from '../components/UserContext';
-import moment from 'moment'
+import dayjs from 'dayjs'
 import Race from '../components/Race';
 import styles from './Races.module.scss'
 import useTranslation from 'next-translate/useTranslation'
@@ -47,7 +47,7 @@ const Races = (props) => {
 
                 {races.map((item, index) => {
                     isNextRace = false
-                    if (item.sessions && moment(item.sessions.race).isAfter() && !nextRace && !item.canceled && !item.tbc) {
+                    if (item.sessions && dayjs(item.sessions.race).isAfter() && !nextRace && !item.canceled && !item.tbc) {
                         isNextRace = true
                         nextRace = item
                     }
