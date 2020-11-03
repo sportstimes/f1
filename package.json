@@ -33,7 +33,7 @@
     "next-translate": "^0.17.3",
     "next-seo": "^4.14.1",
     "react": "^17.0.1",
-    "react-cookie-consent": "^5.2.0",
+    "react-cookie-consent": "^6.0.0",
     "react-dom": "^17.0.1",
     "react-grid-system": "^7.1.1",
     "sass": "^1.28.0"
