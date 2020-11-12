@@ -1,8 +1,8 @@
 import {useContext} from 'react';
-import UserContext from 'components/UserContext'
-import moment from 'moment'
-import Race from 'components/Race/Race'
-import styles from './Races.module.scss'
+import UserContext from 'components/UserContext';
+import dayjs from 'dayjs'
+import Race from 'components/Race/Race';
+import styles from './Races.module.scss';
 import useTranslation from 'next-translate/useTranslation'
 const config = require(`../../db/${process.env.NEXT_PUBLIC_LOCALE_PREFIX}/config.json`)
 
@@ -14,6 +14,10 @@ const Races = (props) => {
 
     if(props.timezone){
         timezone = props.timezone;
+    }
+    
+    if(props.locale){
+        locale = props.locale;
     }
 
     // TODO Improve this isNextRace logic
@@ -50,7 +54,7 @@ const Races = (props) => {
 
                 {races.map((item, index) => {
                     isNextRace = false
-                    if (item.sessions && moment(item.sessions.race).isAfter() && !nextRace && !item.canceled && !item.tbc) {
+                    if (item.sessions && dayjs(item.sessions.race).isAfter() && !nextRace && !item.canceled && !item.tbc) {
                         isNextRace = true
                         nextRace = item
                     }

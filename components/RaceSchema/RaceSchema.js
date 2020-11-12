@@ -1,5 +1,5 @@
-import {useState} from 'react';
-import moment from 'moment'
+import React, {useState} from 'react';
+import dayjs from 'dayjs'
 import withTranslation from 'next-translate/withTranslation'
 
 class RaceSchema extends React.Component {
@@ -23,8 +23,8 @@ class RaceSchema extends React.Component {
 				"@type": "Event",
 				"name": "${name} - ${t('calendar:schedule.fp1')}",
 				"description": "${name} - ${t('calendar:schedule.fp1')}",
-				"startdate": "${moment(this.props.item.sessions.fp1).toJSON()}",
-				"enddate": "${moment(this.props.item.sessions.fp1).add(1.5, 'hours').toJSON()}",
+				"startdate": "${dayjs(this.props.item.sessions.fp1).toJSON()}",
+				"enddate": "${dayjs(this.props.item.sessions.fp1).add(1.5, 'hours').toJSON()}",
 				"location": {
 					"@type": "Place",
 					"name": "${this.props.item.location}",
@@ -38,8 +38,8 @@ class RaceSchema extends React.Component {
 				"@type": "Event",
 				"name": "${name} - ${t('calendar:schedule.fp2')}",
 				"description": "${name} - ${t('calendar:schedule.fp2')}",
-				"startdate": "${moment(this.props.item.sessions.fp2).toJSON()}",
-				"enddate": "${moment(this.props.item.sessions.fp2).add(1.5, 'hours').toJSON()}",
+				"startdate": "${dayjs(this.props.item.sessions.fp2).toJSON()}",
+				"enddate": "${dayjs(this.props.item.sessions.fp2).add(1.5, 'hours').toJSON()}",
 				"location": {
 					"@type": "Place",
 					"name": "${this.props.item.location}",
@@ -53,8 +53,8 @@ class RaceSchema extends React.Component {
 				"@type": "Event",
 				"name": "${name} - ${t('calendar:schedule.fp3')}",
 				"description": "${name} - ${t('calendar:schedule.fp3')}",
-				"startdate": "${moment(this.props.item.sessions.fp3).add(1, 'hours').toJSON()}",
-				"enddate": "${moment(this.props.item.sessions.fp3).add(1, 'hours').toJSON()}",
+				"startdate": "${dayjs(this.props.item.sessions.fp3).add(1, 'hours').toJSON()}",
+				"enddate": "${dayjs(this.props.item.sessions.fp3).add(1, 'hours').toJSON()}",
 				"location": {
 					"@type": "Place",
 					"name": "${this.props.item.location}",
@@ -68,8 +68,8 @@ class RaceSchema extends React.Component {
 				"@type": "Event",
 				"name": "${name} - ${t('calendar:schedule.qualifying')}",
 				"description": "{name} - ${t('calendar:schedule.qualifying')}",
-				"startdate": "${moment(this.props.item.sessions.qualifying).add(1, 'hours').toJSON()}",
-				"enddate": "${moment(this.props.item.sessions.qualifying).add(1, 'hours').toJSON()}",
+				"startdate": "${dayjs(this.props.item.sessions.qualifying).add(1, 'hours').toJSON()}",
+				"enddate": "${dayjs(this.props.item.sessions.qualifying).add(1, 'hours').toJSON()}",
 				"location": {
 					"@type": "Place",
 					"name": "${this.props.item.location}",
@@ -83,8 +83,8 @@ class RaceSchema extends React.Component {
 				"@type": "Event",
 				"name": "${name} - ${t('calendar:schedule.race')}",
 				"description": "${name} - ${t('calendar:schedule.race')}",
-				"startdate": "${moment(this.props.item.sessions.race).toJSON()}",
-				"enddate": "${moment(this.props.item.sessions.race).add(2, 'hours').toJSON()}",
+				"startdate": "${dayjs(this.props.item.sessions.race).toJSON()}",
+				"enddate": "${dayjs(this.props.item.sessions.race).add(2, 'hours').toJSON()}",
 				"location": {
 					"@type": "Place",
 					"name": "${this.props.item.location}",

@@ -1,3 +1,4 @@
+import React, {useState, useContext} from 'react';
 import Link from 'next-translate/Link'
 import withTranslation from 'next-translate/withTranslation'
 import {Col, Row} from "react-grid-system"

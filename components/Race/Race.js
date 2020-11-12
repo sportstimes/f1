@@ -1,13 +1,22 @@
-import moment from 'moment'
-import styles from './Race.module.scss'
+import React, {useState} from 'react';
+import styles from './Race.module.scss';
 import withTranslation from 'next-translate/withTranslation'
+import dayjs from 'dayjs'
+import dayjsutc from "dayjs/plugin/utc";
+import dayjstimezone from "dayjs/plugin/timezone";
+import dayjslocalized from "dayjs/plugin/localizedFormat";
 
 const config = require(`../../db/${process.env.NEXT_PUBLIC_LOCALE_PREFIX}/config.json`)
 
 class RaceTR extends React.Component {
     render() {
         const {t, lang} = this.props.i18n
-        moment.locale(lang);
+
+        if (lang === "en") {
+            dayjs.locale(this.props.locale);
+        } else {
+            dayjs.locale(lang);
+        }
 
         const hasMultipleFeaturedEvents = this.props.hasMultipleFeaturedEvents;
         const titleKey = "calendar:schedule." + this.props.title;
@@ -22,7 +31,7 @@ class RaceTR extends React.Component {
                         </td>
 
                         <td/>
-                        <td className={styles.dateColumn}>{moment(this.props.date).tz(this.props.timezone).format('D MMM LT')}</td>
+                        <td className={styles.dateColumn}>{dayjs(this.props.date).tz(this.props.timezone).format('D MMM LT')}</td>
                         <td/>
                     </>
                     :
@@ -31,8 +40,8 @@ class RaceTR extends React.Component {
                         <td className={styles.eventColumn}>
                             {t(titleKey)}
                         </td>
-                        <td className={styles.dateColumn}>{moment(this.props.date).tz(this.props.timezone).format('D MMM')}</td>
-                        <td className={styles.timeColumn}>{moment(this.props.date).tz(this.props.timezone).format('LT')}</td>
+                        <td className={styles.dateColumn}>{dayjs(this.props.date).tz(this.props.timezone).format('D MMM')}</td>
+                        <td className={styles.timeColumn}>{dayjs(this.props.date).tz(this.props.timezone).format('LT')}</td>
                         <td/>
                     </>
                 }
@@ -45,8 +54,12 @@ class Race extends React.Component {
     constructor(props) {
         super(props)
 
+        dayjs.extend(dayjsutc)
+        dayjs.extend(dayjstimezone)
+        dayjs.extend(dayjslocalized)
+
         this.state = {
-            collapsed: false
+            collapsed: true
         }
     }
 
@@ -65,10 +78,14 @@ class Race extends React.Component {
     render() {
         const {t, lang} = this.props.i18n
         const localeKey = 'calendar:races.' + this.props.item.localeKey;
-        moment.locale(lang);
+        
+        if (lang === "en") {
+            dayjs.locale(this.props.locale);
+        } else {
+            dayjs.locale(lang);
+        }
 
         const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
-
 
         function badgeColumnLayout(props) {
             if (props.item.tbc) {
@@ -77,7 +94,7 @@ class Race extends React.Component {
             } else if (props.item.canceled) {
                 return (<span className={styles.canceled}>{t('calendar:badges.canceled')}</span>);
             } else if (props.item.affiliate) {
-                if (moment(props.item.sessions.race).isBefore()) {
+                if (dayjs(props.item.sessions.race).isBefore()) {
                     return (<a className={styles.tickets}>{t('calendar:badges.tickets')}</a>);
                 } else {
                     return (<a href={props.item.affiliate}
@@ -91,7 +108,7 @@ class Race extends React.Component {
 
         return (
             <tbody id={this.props.item.slug} key={this.props.item.slug}
-                   className={`${moment(this.props.item.sessions.race).add(2, 'hours').isBefore() && styles.past} ${this.props.index % 2 === 0 ? 'even' : styles.odd} ${this.props.isNextRace && styles.nextEvent} ${this.props.item.canceled && styles.canceledWeekend} ${this.props.item.tbc && styles.tbcWeekend}`}>
+                   className={`${dayjs(this.props.item.sessions.race).add(2, 'hours').isBefore() && styles.past} ${this.props.index % 2 === 0 ? 'even' : styles.odd} ${this.props.isNextRace && styles.nextEvent} ${this.props.item.canceled && styles.canceledWeekend} ${this.props.item.tbc && styles.tbcWeekend}`}>
 
             {!hasMultipleFeaturedEvents ?
                 <tr key={this.props.item.slug} className={styles.race} onClick={() => this.handleRowClick()}>
@@ -116,8 +133,8 @@ class Race extends React.Component {
                         <span className={styles.next}>{t(`calendar:badges.next`)}</span>
                         }
                     </td>
-                    <td className={styles.dateColumn}>{moment(this.props.item.sessions.race).tz(this.props.timezone).format('D MMM')}</td>
-                    <td className={styles.timeColumn}>{moment(this.props.item.sessions.race).tz(this.props.timezone).format('LT')}</td>
+                    <td className={styles.dateColumn}>{dayjs(this.props.item.sessions.race).tz(this.props.timezone).format('D MMM')}</td>
+                    <td className={styles.timeColumn}>{dayjs(this.props.item.sessions.race).tz(this.props.timezone).format('LT')}</td>
                     <td className={styles.badgeColumn}>{badgeColumnLayout(this.props)}</td>
                 </tr>
                 :
@@ -146,7 +163,7 @@ class Race extends React.Component {
                     {config.featuredSessions.map((item, index) => {
                         return (<td className={styles.featuredSessionsColumn}>
                             <span>{item}</span>
-                            {moment(this.props.item.sessions[item]).tz(this.props.timezone).format('D MMM LT')}
+                            {dayjs(this.props.item.sessions[item]).tz(this.props.timezone).format('D MMM LT')}
                         </td>)
                     })}
                     <td className={styles.badgeColumn}>{badgeColumnLayout(this.props)}</td>
@@ -168,51 +185,3 @@ class Race extends React.Component {
 }
 
 export default withTranslation(Race)
-
-
-/*
-
-function badgeColumnLayout(props) {
-if (props.item.tbc) {
-return (<span title={t('calendar:badges.tbc_title')} className={styles.tbc}>{t('calendar:badges.tbc')}</span>);
-} else if (props.item.canceled) {
-return (<span className={styles.canceled}>{t('calendar:badges.canceled')}</span>);
-} else if (props.item.affiliate) {
-if (moment(props.item.sessions.race).isBefore()) {
-return (<a className={styles.tickets}>{t('calendar:badges.tickets')}</a>);
-} else {
-return (<a href={props.item.affiliate} className={styles.ticketsOver}>{t('calendar:badges.tickets')}</a>);
-}
-} else {
-return (``);
-}
-}
-
-if (this.props.item.sessions == null) {
-return (
-<tbody id={this.props.item.slug} key={this.props.item.slug}
-className={`${this.props.index % 2 === 0 ? 'even' : 'odd'} ${this.props.item.canceled ? styles.canceledWeekend : ''} ${this.props.item.tbc ? styles.tbcWeekend : ''}`}>
-<tr key={this.props.item.slug} className={styles.race}>
-<td className={styles.iconColumn}>
-<i class="fas fa-question fa-xs"></i>
-</td>
-<td className={styles.eventColumn}>
-<span>
-{t(`calendar:races.${this.props.item.localeKey}`) != localeKey ? (
-    t(`calendar:races.${this.props.item.localeKey}`)
-) : (
-    this.props.item.name
-)
-}
-</span>
-</td>
-<td className={styles.dateColumn}></td>
-<td className={styles.timeColumn}></td>
-<td className={styles.badgeColumn}>
-{ticketColumnLayout(this.props)}
-</td>
-</tr>
-</tbody>
-);
-}
-*/

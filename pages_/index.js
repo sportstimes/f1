@@ -14,7 +14,7 @@ const Index = (props) => {
 	const currentYear = props.year;
 	const metaDescription = t('common:meta.description', { year: currentYear })
 	const metaKeywords = t('common:meta.keywords', { year: currentYear })
-
+	
 	return (
 		<>
 			<NextSeo
