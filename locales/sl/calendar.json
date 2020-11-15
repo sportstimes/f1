@@ -1,0 +1,56 @@
+{
+  "date": "Datum",
+  "time": "Čas",
+  "event": "Dogodki VN F1",
+  "notice": {
+    "text": "Prvih 8 dirk spremenjenega koledarja spodaj",
+    "link": "Preveri več"
+  },
+  "badges": {
+    "tbc": "TBC",
+    "tbc_title": "Čaka na potrditev",
+    "tickets": "Vstopnice",
+    "canceled": "Odpovedano",
+    "next": "NASLEDNJI"
+  },
+  "schedule": {
+    "fp1": "Prvi prosti trening",
+    "fp2": "Drugi prosti trening",
+    "fp3": "Tretji prosti trening",
+    "qualifying": "Kvalifikacije",
+    "race": "Dirka"
+  },
+  "races": {
+    "austrian-grand-prix": "VN Avstrije",
+    "steiermark-grand-prix": "VN Štajerske",
+    "hungary-grand-prix": "VN Madžarske",
+    "british-grand-prix": "VN Velike Britanije",
+    "anniversary-british-grand-prix": "VN ob 70. obletnici F1",
+    "spanish-grand-prix": "VN Španije",
+    "belgian-grand-prix": "VN Belgije",
+    "italian-grand-prix": "VN Italije",
+    "australian-grand-prix": "VN Avstralije",
+    "bahrain-grand-prix": "VN Bahraina",
+    "vietnamese-grand-prix": "VN Vietnama",
+    "china-grand-prix": "VN Kitajske",
+    "dutch-grand-prix": "VN Nizozemske",
+    "monaco-grand-prix": "VN Monaka",
+    "azerbaijan-grand-prix": "VN Azerbajdžana",
+    "canadian-grand-prix": "VN Kanade",
+    "french-grand-prix": "VN Francije",
+    "singapore-grand-prix": "VN Singapura",
+    "russian-grand-prix": "VN Rusije",
+    "japanese-grand-prix": "VN Japonske",
+    "us-grand-prix": "VN ZDA",
+    "mexico-grand-prix": "VN Mehike",
+    "brazilian-grand-prix": "VN Brazilije",
+    "abu-dhabi-grand-prix": "VN Abu Dhabija",
+    "tuscan-grand-prix": "VN Toskane",
+    "eifel-grand-prix": "VN Eifla",
+    "portuguese-grand-prix": "VN Portugalske",
+    "emilia-romagna-grand-prix": "VN Emilije-Romanje",
+    "sakhir-grand-prix": "VN Sahirja",
+    "turkish-grand-prix": "VN Turčije",
+    "saudi-arabia-grand-prix": "VN Savdske Arabije"
+  }
+}
