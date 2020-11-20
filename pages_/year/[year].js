@@ -58,6 +58,7 @@ export const getStaticPaths = async () => {
 	// TODO: Make this dynamic later
 	return ({
 		paths: [
+			{ params: { year: '2021' } },
 			{ params: { year: '2020' } },
 			{ params: { year: '2019' } },
 			{ params: { year: '2018' } }
