@@ -1,0 +1,28 @@
+{
+  "form": {
+    "title": "Generiraj koledar",
+    "description": "Najprej izberi F1 dogodke, ki jih želiš dodati v svoj koledar:",
+    "fp1": "Prvi prosti trening",
+    "fp2": "Drugi prosti trening",
+    "fp3": "Tretji prosti trening",
+    "qualifying": "Kvalifikacije",
+    "grandPrix": "Velika nagrada",
+    "reminder": "Nastavi opomnik",
+    "reminderContinued": "minut pred vsakim dogodkom v koledarju.",
+    "button": "Prenesi koledar",
+    "buttonSubmitted": "Preneseno",
+    "nonOptionsSelected": "Izberi vsaj en dogodek za svoj koledar."
+  },
+  "download": {
+    "title": "Izberi tip koledarja",
+    "webcalTitle": "Za osebni računalnik ali mobilne naprave",
+    "webcalDescription": "Samodejno posodobljen koledar za aplikacije kot sta Outlook in macOS Calendar",
+    "webcalButton": "Prenesi",
+    "gcalTitle": "Za Google Calendar",
+    "gcalDescription": "Kopiraj in prilepi ta URL naslov v Google Calendar",
+    "gcalDescriptionLink": "podrobna navodila",
+    "icsTitle": "Prenesi ICS datoteko",
+    "icsDescription": "Ročno posodobljen koledar (.ics) za koledarje, ki ne podpirajo samodejnih posodobitev",
+    "icsButton": "Prenesi"
+  }
+}

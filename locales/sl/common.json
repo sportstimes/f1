@@ -1,0 +1,36 @@
+{
+  "title": "F1 Koledar",
+  "subtitle": "Dirke, kvalifikacije in prosti treningi",
+  "meta":{
+    "description": "F1 koledar za sezono {{year}} z vsemi dirkami, kvalifikacijami in prostimi treningi. Možnost nastavljanja opomnikov. Vsi časovni pasi. Prenesi ali se naroči.",
+    "keywords": "F1, formula ena, časi dirk, dirke, opomniki, obvestila, velike nagrade, velika nagrada, koledar, datumi, štartni časi, kvalifikacije, trening, London, Evropa, {{year}}"
+  },
+  "options": {
+    "calendar": "Dodaj te datume in čase dirk v svoj koledar",
+    "email": "Prejmi e-mail opomnike",
+    "timezonePicker": {
+      "showing": "Prikazujem čase za",
+      "pick": "Izberi časovni pas...",
+      "button": "Zaključi"
+    }
+  },
+  "contribute": "Prispevaj",
+  "cookies": {
+    "title": "Ta spletna stran uporablja piškotke za izboljšanje uporabniške izkušnje.",
+    "button": "Super!"
+  },
+  "languageSelector": "Izberi jezik",
+  "javascript": "F1 Koledar deluje najbolje z vključenim JavaScript",
+  "footer": {
+    "coffee": "Podpri F1 Koledar, kupi nam kavo.",
+    "twitter": "Smo na Twitter omrežju",
+    "github": "Odprta koda na GitHub",
+    "issue": "Opaziš napako? Prijavi",
+    "links": {
+      "wereOn": "Smo na",
+      "openSourcedOn": "Odprta koda na",
+      "spottedIssue": "Opaziš napako?",
+      "spottedReport": "Prijavi"
+    }
+  }
+}
