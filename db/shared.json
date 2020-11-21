@@ -1,0 +1,34 @@
+{
+  "sites": [
+    {
+      "name": "Motorsport Calendars",
+      "url": "https://motorsportcalendars.com",
+      "siteKey": "motorsportcalendars"
+    },
+    {
+      "name": "F1",
+      "url": "https://f1calendar.com",
+      "siteKey": "f1cal"
+    },
+    {
+      "name": "F2",
+      "url": "https://f2cal.com",
+      "siteKey": "f2cal"
+    },
+    {
+      "name": "F3",
+      "url": "https://f3calendar.com",
+      "siteKey": "f3cal"
+    },
+    {
+      "name": "Formula E",
+      "url": "https://formulaecal.com",
+      "siteKey": "formulaecal"
+    },
+    {
+      "name": "W Series",
+      "url": "https://wseriescal.com",
+      "siteKey": "wseries"
+    }
+  ]
+}

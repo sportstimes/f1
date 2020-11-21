@@ -1,5 +1,7 @@
 {
+  "siteKey": "f1cal",
   "sessions": [ "fp1", "fp2", "fp3", "qualifying", "gp" ],
   "featuredSessions": ["gp"],
-  "collapsedSessions": ["fp1", "fp2", "fp3", "qualifying"]
+  "collapsedSessions": ["fp1", "fp2", "fp3", "qualifying"],
+  "supportsEmailReminders": true
 }

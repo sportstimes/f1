@@ -1,5 +1,7 @@
 {
+  "siteKey": "f2cal",
   "sessions": ["practice", "qualifying", "feature", "sprint"],
   "featuredSessions": ["feature", "sprint"],
-  "collapsedSessions": ["practice", "qualifying"]
+  "collapsedSessions": ["practice", "qualifying"],
+  "supportsEmailReminders": false
 }

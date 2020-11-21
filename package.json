@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/sportstimes/f1#readme",
   "dependencies": {
+    "@babel/core": "^7.12.3",
     "countries-and-timezones": "^2.3.1",
     "dayjs": "^1.9.6",
     "ics": "^2.26.1",

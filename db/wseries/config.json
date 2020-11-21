@@ -1,0 +1,7 @@
+{
+  "siteKey": "wseries",
+  "sessions": [ "practice1", "practice2", "qualifying", "race" ],
+  "featuredSessions": ["race"],
+  "collapsedSessions": ["practice1", "practice2", "qualifying"],
+  "supportsEmailReminders": false
+}

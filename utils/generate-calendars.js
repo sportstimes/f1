@@ -5,7 +5,7 @@ const dayjs = require('dayjs')
 return;
 
 // Grab the calendar...
-let rawdata = fs.readFileSync('db/2020.json');
+let rawdata = fs.readFileSync('db/2021.json');
 let data = JSON.parse(rawdata);
 
 // Grab the current i18n config

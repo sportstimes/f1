@@ -1,5 +1,7 @@
 {
+  "siteKey": "f3cal",
   "sessions": [ "practice", "qualifying", "race1", "race2" ],
   "featuredSessions": ["race1", "race2"],
-  "collapsedSessions": ["practice", "qualifying"]
+  "collapsedSessions": ["practice", "qualifying"],
+  "supportsEmailReminders": true
 }
