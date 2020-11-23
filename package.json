@@ -31,7 +31,7 @@
     "next-fonts": "^1.4.0",
     "next-pwa": "^3.1.5",
     "next-seo": "^4.17.0",
-    "next-translate": "^0.17.3",
+    "next-translate": "^0.20.2",
     "react": "^17.0.1",
     "react-cookie-consent": "^6.1.0",
     "react-dom": "^17.0.1",
