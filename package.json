@@ -26,7 +26,7 @@
   "dependencies": {
     "countries-and-timezones": "^2.3.1",
     "dayjs": "^1.9.6",
-    "ics": "^2.26.1",
+    "ics": "^2.26.2",
     "next": "^10.0.1",
     "next-fonts": "^1.4.0",
     "next-pwa": "^3.1.5",
