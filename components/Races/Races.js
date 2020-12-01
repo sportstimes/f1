@@ -1,68 +1,116 @@
-import {useContext} from 'react';
-import UserContext from 'components/UserContext';
-import dayjs from 'dayjs'
-import Race from 'components/Race/Race';
-import styles from './Races.module.scss';
-import useTranslation from 'next-translate/useTranslation'
-const config = require(`../../db/${process.env.NEXT_PUBLIC_LOCALE_PREFIX}/config.json`)
+import {useContext} from "react";
+import UserContext from "components/UserContext";
+import dayjs from "dayjs";
+import Race from "components/Race/Race";
+import useTranslation from "next-translate/useTranslation";
+const config = require(`../../db/${process.env.NEXT_PUBLIC_LOCALE_PREFIX}/config.json`);
 
 const Races = (props) => {
-    const {t} = useTranslation()
+	const {t} = useTranslation();
 
-    let {timezone} = useContext(UserContext)
-    const races = props.races
+	let {timezone} = useContext(UserContext);
+	const races = props.races;
 
-    if(props.timezone){
-        timezone = props.timezone;
-    }
-    
-    if(props.locale){
-        locale = props.locale;
-    }
+	if (props.timezone) {
+		timezone = props.timezone;
+	}
 
-    // TODO Improve this isNextRace logic
-    let isNextRace = false
-    let nextRace = null
+	if (props.locale) {
+		locale = props.locale;
+	}
 
-    console.log(config.featuredSessions.length);
+	// TODO Improve this isNextRace logic
+	let isNextRace = false;
+	let nextRace = null;
 
-    return (
-        <div className={styles.races}>
-            <table id="events-table">
-                {config.featuredSessions.length === 1 ?
-                    <thead>
-                    <tr className={styles.tableHead}>
-                        <th scope="col" className={styles.icon_column}></th>
-                        <th scope="col" className={styles.event_column}>{t('calendar:event')} {props.year}</th>
-                        <th scope="col" className={styles.date_column}>{t('calendar:date')}</th>
-                        <th scope="col" className={styles.time_column}>{t('calendar:time')}</th>
-                    </tr>
-                    </thead>
-                    :
-                    <thead>
-                    <tr>
-                        <th scope="col" className={styles.icon_column}></th>
-                        <th scope="col" className={styles.event_column}></th>
-                        <th scope="col" className={styles.date_column}></th>
-                        {config.featuredSessions.map((item, index) => {
-                            return (<th scope="col" className={styles.date_column}></th>)
-                        })}
-                        <th scope="col" className={styles.badge_column}></th>
-                    </tr>
-                    </thead>
-                }
+	console.log(config.featuredSessions.length);
 
-                {races.map((item, index) => {
-                    isNextRace = false
-                    if (item.sessions && dayjs(item.sessions.race).isAfter() && !nextRace && !item.canceled && !item.tbc) {
-                        isNextRace = true
-                        nextRace = item
-                    }
-                    return (<Race item={item} index={index} timezone={timezone} key={item.slug} isNextRace={isNextRace}/>)
+	/*
+    {config.featuredSessions.length === 1 ? (
+        <thead className="hidden">
+            <tr>
+                <th scope="col" className="w-1/8"></th>
+                <th scope="col" className="w-1/2">
+                    {t("calendar:event")} {props.year}
+                </th>
+                <th scope="col" className="w-1/3">
+                    {t("calendar:date")}
+                </th>
+            </tr>
+        </thead>
+    ) : (
+        <thead>
+            <tr>
+                <th scope="col" className=""></th>
+                <th scope="col" className=""></th>
+                <th scope="col" className=""></th>
+                {config.featuredSessions.map((item, index) => {
+                    return <th scope="col" className=""></th>;
                 })}
-            </table>
-        </div>
-    );
+                <th scope="col" className=""></th>
+            </tr>
+        </thead>
+    )}
+    */
+
+	return (
+		<div>
+			<table id="events-table" className="table-fixed w-full">
+				{config.featuredSessions.length === 1 ? (
+					<thead className="hidden">
+						<tr>
+							<th scope="col" className="w-1/8"></th>
+							<th scope="col" className="w-1/2">
+								{t("calendar:event")} {props.year}
+							</th>
+							<th scope="col" className="w-1/6">
+								{t("calendar:date")}
+							</th>
+							<th scope="col" className="w-1/6">
+								{t("calendar:time")}
+							</th>
+						</tr>
+					</thead>
+				) : (
+					<thead>
+						<tr>
+							<th scope="col" className=""></th>
+							<th scope="col" className=""></th>
+							<th scope="col" className="">
+								1
+							</th>
+							{config.featuredSessions.map((item, index) => {
+								return <th scope="col" className=""></th>;
+							})}
+							<th scope="col" className=""></th>
+						</tr>
+					</thead>
+				)}
+				{races.map((item, index) => {
+					isNextRace = false;
+					if (
+						item.sessions &&
+						dayjs(item.sessions.race).isAfter() &&
+						!nextRace &&
+						!item.canceled &&
+						!item.tbc
+					) {
+						isNextRace = true;
+						nextRace = item;
+					}
+					return (
+						<Race
+							item={item}
+							index={index}
+							timezone={timezone}
+							key={item.slug}
+							isNextRace={isNextRace}
+						/>
+					);
+				})}
+			</table>
+		</div>
+	);
 };
 
 export default Races;

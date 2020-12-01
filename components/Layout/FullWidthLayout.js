@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/Footer";
 import CookieConsent from "react-cookie-consent";
 import useTranslation from "next-translate/useTranslation";
 
-const Layout = (props) => {
+const FullWidthLayout = (props) => {
 	const {t, lang} = useTranslation();
 
 	function setGoogleTags() {
@@ -74,9 +74,7 @@ const Layout = (props) => {
 
 			<Header showCTABar={props.showCTABar} year={props.year} />
 
-			<div className="max-w-screen-lg mx-auto font-sans px-4 md:px-6">
-				{props.children}
-			</div>
+			{props.children}
 
 			<Footer />
 
@@ -98,4 +96,4 @@ const Layout = (props) => {
 	);
 };
 
-export default Layout;
+export default FullWidthLayout;
