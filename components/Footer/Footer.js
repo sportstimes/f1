@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 
 export default function Footer() {
 	const {t, lang} = useTranslation();
@@ -41,6 +42,10 @@ export default function Footer() {
 								/>
 							</svg>
 						</a>
+					</div>
+
+					<div class="mt-1 mb-4 flex justify-center space-x-6">
+						<LanguageSelector />
 					</div>
 
 					<p class="mt-8 text-center text-base text-gray-400">
