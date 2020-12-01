@@ -2,6 +2,7 @@ import Layout from "components/Layout/Layout";
 import {NextSeo} from "next-seo";
 import Link from "next/link";
 import ct from "countries-and-timezones";
+import Card from "components/Card/Card";
 
 import useTranslation from "next-translate/useTranslation";
 
