@@ -3,17 +3,19 @@ import {NextSeo} from "next-seo";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import Card from "components/Card/Card";
+const config = require(`../db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 function Years() {
 	const {t} = useTranslation();
 
+	let availableYears = config.availableYears;
+
 	const yearItems = [];
-	let supportedYears = ["2021", "2020", "2019", "2018"];
-	for (let year in supportedYears) {
+	for (let year in availableYears) {
 		yearItems.push(
-			<li key={supportedYears[year]}>
-				<Link href={`year/${supportedYears[year]}`}>
-					<a>{supportedYears[year]}</a>
+			<li key={availableYears[year]}>
+				<Link href={`year/${config.availableYears[year]}`}>
+					<a>{availableYears[year]}</a>
 				</Link>
 			</li>
 		);

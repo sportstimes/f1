@@ -34,7 +34,7 @@ class LanguageSelector extends React.Component {
 
 	render() {
 		const {t, lang} = this.props.i18n;
-		const title = t(process.env.NEXT_PUBLIC_LOCALE_PREFIX + `:title`);
+		const title = t(process.env.NEXT_PUBLIC_SITE_KEY + `:title`);
 
 		const {languageNames} = i18nConfig;
 

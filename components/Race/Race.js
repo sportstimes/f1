@@ -5,7 +5,7 @@ import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
 import dayjslocalized from "dayjs/plugin/localizedFormat";
 
-const config = require(`../../db/${process.env.NEXT_PUBLIC_LOCALE_PREFIX}/config.json`);
+const config = require(`../../db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 class Race extends React.Component {
 	constructor(props) {

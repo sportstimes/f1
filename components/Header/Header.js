@@ -5,12 +5,11 @@ import i18nConfig from "../../i18n.json";
 import Router from "next-translate/Router";
 import CTABar from "../CTABar/CTABar";
 import Link from "next-translate/Link";
-import SiteSwitcher from "@/f1/components/SiteSwitcher/SiteSwitcher";
 
 class Header extends React.Component {
 	render() {
 		const {t, lang} = this.props.i18n;
-		const title = t(process.env.NEXT_PUBLIC_LOCALE_PREFIX + `:title`);
+		const title = t(process.env.NEXT_PUBLIC_SITE_KEY + `:title`);
 
 		const {languageNames} = i18nConfig;
 

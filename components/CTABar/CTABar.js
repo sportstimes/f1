@@ -2,7 +2,7 @@ import React, {useState, useContext} from "react";
 import Link from "next-translate/Link";
 import withTranslation from "next-translate/withTranslation";
 
-const config = require(`../../db/${process.env.NEXT_PUBLIC_LOCALE_PREFIX}/config.json`);
+const config = require(`../../db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 class CTABar extends React.Component {
 	render() {

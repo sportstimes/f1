@@ -48,7 +48,7 @@ Index.getInitialProps = async ({query: {timezone}, res}) => {
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
 	const data = await import(
-		`../db/` + process.env.NEXT_PUBLIC_DB_FOLDER + `/` + currentYear + `.json`
+		`../db/` + process.env.NEXT_PUBLIC_SITE_KEY + `/` + currentYear + `.json`
 	);
 
 	return {

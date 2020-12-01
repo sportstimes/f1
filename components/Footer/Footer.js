@@ -84,7 +84,7 @@ export default function Footer() {
 						2020
 					</p>
 					<p class="mb-10 text-center text-base text-gray-400">
-						{t(process.env.NEXT_PUBLIC_LOCALE_PREFIX + `:footnote`)}
+						{t(process.env.NEXT_PUBLIC_SITE_KEY + `:footnote`)}
 					</p>
 
 					<p className="text-center mt-8">
