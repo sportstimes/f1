@@ -2,9 +2,9 @@ import React, {Component} from "react";
 import Logo from "../Logo/Logo";
 import withTranslation from "next-translate/withTranslation";
 import i18nConfig from "../../i18n.json";
-import Router from "next-translate/Router";
+import Router from "next/router";
 import CTABar from "../CTABar/CTABar";
-import Link from "next-translate/Link";
+import Link from "next/link";
 
 class Header extends React.Component {
 	render() {

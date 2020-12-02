@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import withTranslation from "next-translate/withTranslation";
 import i18nConfig from "../../i18n.json";
-import Router from "next-translate/Router";
-import Link from "next-translate/Link";
+import Router from "next/router";
+import Link from "next/link";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 
 class TopBar extends React.Component {

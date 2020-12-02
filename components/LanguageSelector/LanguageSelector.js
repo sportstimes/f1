@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import withTranslation from "next-translate/withTranslation";
 import i18nConfig from "../../i18n.json";
-import Router from "next-translate/Router";
+import Router from "next/router";
 
 class LanguageSelector extends React.Component {
 	onChange = (event) => {
@@ -29,7 +29,7 @@ class LanguageSelector extends React.Component {
 			adjustedURL = "/timezones/";
 		}
 
-		Router.pushI18n({url: adjustedURL, options: {lang: event.target.value}});
+		Router.push(adjustedURL, adjustedURL, {locale: event.target.value});
 	};
 
 	render() {

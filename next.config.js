@@ -1,5 +1,6 @@
 const withFonts = require('next-fonts')
 const withPWA = require("next-pwa")
+const nextTranslate = require('next-translate')
 
 const {
   PHASE_DEVELOPMENT_SERVER,
@@ -12,18 +13,19 @@ module.exports = (phase) => {
   const isStaging =
       phase === PHASE_PRODUCTION_BUILD && process.env.STAGING === '1'
 
-  return withPWA(withFonts({
-    webpack(config, {isServer}) {
-      // Generate the ICS files at build time.
-      if (isServer && (isProd || isStaging)) {
-        require('./utils/generate-calendars');
-      }
-      config.node = { net: 'empty' }
-      return config;
-    },
+  return withPWA(nextTranslate(withFonts({
     pwa: {
       disable: !isProd,
       dest: "public"
     }
-  }))
+  })))
 }
+ 
+// webpack(config, {isServer}) {
+//   // Generate the ICS files at build time.
+//   if (isServer && (isProd || isStaging)) {
+//     require('./utils/generate-calendars');
+//   }
+//   config.node = { net: 'empty' }
+//   return config;
+// },

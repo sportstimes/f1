@@ -1,5 +1,5 @@
 {
-  "allLanguages": [
+  "locales": [
     "cs",
     "da",
     "de",
@@ -41,10 +41,8 @@
     "uk": "Українська",
     "zh": "中文"
   },
-  "defaultLanguage": "en",
-  "currentPagesDir": "pages_",
-  "finalPagesDir": "pages",
-  "localesPath": "locales",
+  "defaultLocale": "en",
+  "loadLocaleFrom": "locales",
   "pages": {
     "*": ["common", "calendar", "f1", "f2", "f3"],
     "/": ["calendar"],

@@ -1,11 +1,10 @@
 import React from "react";
-import UserContext from "../UserContext";
+import { UserContext } from "components/UserContext";
 import Link from "next/link";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
 import withTranslation from "next-translate/withTranslation";
-import fixHref from "next-translate/fixHref";
 import ct from "countries-and-timezones";
 
 class OptionsBar extends React.Component {
@@ -29,7 +28,7 @@ class OptionsBar extends React.Component {
 	}
 
 	onChange = (event) => {
-		this.context.setTimezone(event.target.value);
+		this.context.updateTimezone(event.target.value);
 	};
 
 	togglePicker = (event) => {
