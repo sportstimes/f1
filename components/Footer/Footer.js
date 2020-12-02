@@ -6,16 +6,16 @@ export default function Footer() {
 
 	return (
 		<>
-			<footer class="mt-2 md:mt-6">
-				<div class="max-w-7xl mx-auto py-6 md:py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-					<div class="mt-1 mb-8 flex justify-center space-x-6">
+			<footer className"mt-2 md:mt-6">
+				<div className"max-w-7xl mx-auto py-6 md:py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+					<div className"mt-1 mb-8 flex justify-center space-x-6">
 						<a
 							href="https://twitter.com/f1cal"
-							class="text-gray-400 hover:text-gray-500"
+							className"text-gray-400 hover:text-gray-500"
 						>
-							<span class="sr-only">Twitter</span>
+							<span className"sr-only">Twitter</span>
 							<svg
-								class="h-6 w-6"
+								className"h-6 w-6"
 								fill="currentColor"
 								viewBox="0 0 24 24"
 								aria-hidden="true"
@@ -26,11 +26,11 @@ export default function Footer() {
 
 						<a
 							href="http://github.com/sportstimes/f1"
-							class="text-gray-400 hover:text-gray-500"
+							className"text-gray-400 hover:text-gray-500"
 						>
-							<span class="sr-only">GitHub</span>
+							<span className"sr-only">GitHub</span>
 							<svg
-								class="h-6 w-6"
+								className"h-6 w-6"
 								fill="currentColor"
 								viewBox="0 0 24 24"
 								aria-hidden="true"
@@ -44,11 +44,11 @@ export default function Footer() {
 						</a>
 					</div>
 
-					<div class="mt-1 mb-4 flex justify-center space-x-6">
+					<div className"mt-1 mb-4 flex justify-center space-x-6">
 						<LanguageSelector />
 					</div>
 
-					<p class="mt-8 text-center text-base text-gray-400">
+					<p className"mt-8 text-center text-base text-gray-400">
 						&copy;{" "}
 						<a
 							href="https://andydev.co.uk"
@@ -83,7 +83,7 @@ export default function Footer() {
 						</a>{" "}
 						2020
 					</p>
-					<p class="mb-10 text-center text-base text-gray-400">
+					<p className"mb-10 text-center text-base text-gray-400">
 						{t(process.env.NEXT_PUBLIC_SITE_KEY + `:footnote`)}
 					</p>
 
