@@ -1,0 +1,56 @@
+{
+    "date": "Dato",
+    "time": "Tidspunkt",
+    "event": "Formel 1 Grand Prix løpshelger",
+    "notice": {
+      "text": "De første 8 løpene av den reviderte kalenderen under",
+      "link": "Les mer"
+    },
+    "badges": {
+      "tbc": "Ikke kjent",
+      "tbc_title": "Ikke kjent",
+      "tickets": "Billetter",
+      "canceled": "Kansellert",
+      "next": "NESTE"
+    },
+    "schedule": {
+      "fp1": "Trening 1",
+      "fp2": "Trening 2",
+      "fp3": "Trening 3",
+      "qualifying": "Kvalifisering",
+      "race": "Race"
+    },
+    "races": {
+      "austrian-grand-prix": "Østerrikes Grand Prix",
+      "steiermark-grand-prix": "Steiermarks Grand Prix",
+      "hungary-grand-prix": "Ungarns Grand Prix",
+      "british-grand-prix": "Storbritannias Grand Prix",
+      "anniversary-british-grand-prix": "70 års juibileum (Storbritannias) Grand Prix",
+      "spanish-grand-prix": "Spanias Grand Prix",
+      "belgian-grand-prix": "Belgias Grand Prix",
+      "italian-grand-prix": "Italias Grand Prix",
+      "australian-grand-prix": "Australias Grand Prix",
+      "bahrain-grand-prix": "Bahrains Grand Prix",
+      "vietnamese-grand-prix": "Vietnams Grand Prix",
+      "china-grand-prix": "Kinas Grand Prix",
+      "dutch-grand-prix": "Nederlands Grand Prix",
+      "monaco-grand-prix": "Monacos Grand Prix",
+      "azerbaijan-grand-prix": "Aserbadsjans Grand Prix",
+      "canadian-grand-prix": "Canadsan Grand Prix",
+      "french-grand-prix": "Frankrikes Grand Prix",
+      "singapore-grand-prix": "Singapores Grand Prix",
+      "russian-grand-prix": "Russlands Grand Prix",
+      "japanese-grand-prix": "Japans Grand Prix",
+      "us-grand-prix": "USAs Grand Prix",
+      "mexico-grand-prix": "Mexico City Grand Prix",
+      "brazilian-grand-prix": "Brasils Grand Prix",
+      "abu-dhabi-grand-prix": "Abu Dhabis Grand Prix",
+      "tuscan-grand-prix": "Toscanas Grand Prix",
+      "eifel-grand-prix": "Eifel Grand Prix",
+      "portuguese-grand-prix": "Portugals Grand Prix",
+      "emilia-romagna-grand-prix": "Emilia Romagna Grand Prix",
+      "sakhir-grand-prix": "Sakhirs (Bahrain) Grand Prix",
+      "turkish-grand-prix": "Tyrkias Grand Prix"
+    }
+  }
+  
