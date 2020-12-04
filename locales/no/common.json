@@ -1,0 +1,36 @@
+{
+    "title": "F1 kalender ",
+    "subtitle": "Race, kvalifisering & treninger",
+    "meta":{
+      "description": "Formel 1 kalender for {{year}}-sesongen med alle F1 grand prix racene, treningene &amp; kvalifiseringene. Lag påminnelser. Alle verdens tidssoner. Last ned eller abonner.",
+      "keywords": "F1, formel 1, race tider, race, påminnelser, varslinger, grands prix, grand prix, kalender, datoer, start-tidspunkt, kvalifisering, trening, London, Europa, {{year}}"
+    },
+    "options": {
+      "calendar": "Legg til disse race-datoene og tidspunkt til din kalender",
+      "email": "Motta epost påminnelser",
+      "timezonePicker": {
+        "showing": "Viser tider for",
+        "pick": "Velg en tidssone...",
+        "button": "Ferdig"
+      }
+    },
+    "contribute": "Bidra",
+    "cookies": {
+      "title": "Dette nettstedet bruker informasjonskapsler for å forbedre opplevelsen.",
+      "button": "Bra!"
+    },
+    "languageSelector": "Velg språk",
+    "javascript": "F1 kalender virker best med JavaScript aktivert.",
+    "footer": {
+      "coffee": "Støtt F1 kalender, kjøp en kaffe til oss.",
+      "twitter": "Vi er på Twitter",
+      "github": "Åpen kildekode på GitHub",
+      "issue": "Oppdaget en feil? Rapporter",
+      "links": {
+        "wereOn": "Vi er på",
+        "openSourcedOn": "Åpen kildekode på",
+        "spottedIssue": "Oppdaget en feil?",
+        "spottedReport": "Rapporter"
+      }
+    }
+  }

@@ -1,0 +1,29 @@
+  
+{
+    "form": {
+      "title": "Generer kalender",
+      "description": "Først, velg hvilke F1 race-helg økter du vil legge til i din kalender:",
+      "fp1": "Trening 1",
+      "fp2": "Trening 2",
+      "fp3": "Trening 3",
+      "qualifying": "Kvalifisering",
+      "grandPrix": "Race",
+      "reminder": "lag påminnelse",
+      "reminderContinued": "minutter før hver hendelse i din kalender.",
+      "button": "Få kalender",
+      "buttonSubmitted": "Sendt inn",
+      "nonOptionsSelected": "Vennligst velg minst økt å legge til i din kalender."
+    },
+    "download": {
+      "title": "Velg kalender-type",
+      "webcalTitle": "For mobil eller pc",
+      "webcalDescription": "Kalender blir automatisk oppdatert for kalendere som Outlook og macOS Calendar.",
+      "webcalButton": "Få",
+      "gcalTitle": "For Google Calendar",
+      "gcalDescription": "For å legge til denne kalenderen, kopier og lim inn denne linken til Google Calendar",
+      "gcalDescriptionLink": "detaljerte instruksjoner",
+      "icsTitle": "Last ned ICS fil",
+      "icsDescription": "Statisk kalender (.ics) for kalendere som ikke kan oppdatere kalender-abonnenter automatisk .",
+      "icsButton": "Last ned"
+    }
+  }
