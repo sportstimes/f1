@@ -66,4 +66,8 @@ body {
 	.btn {
 		@apply flex items-center justify-center px-4 py-2 space-x-2 text-sm font-medium transition-shadow bg-green-900 rounded shadow-sm hover:bg-green-800 cursor-pointer focus:outline-none;
 	}
+
+	.support-btn {
+		@apply flex items-center justify-center px-2 py-2 space-x-2 text-sm font-medium transition-shadow bg-red-600 rounded shadow-sm hover:bg-red-700 cursor-pointer focus:outline-none;
+	}
 }
