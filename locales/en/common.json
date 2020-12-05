@@ -1,39 +1,44 @@
 {
-  "title": "F1 Calendar",
-  "subtitle": "Races, Qualifying & Practice Sessions",
-  "meta":{
-    "description": "Formula One Calendar for {{year}} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-    "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
-  },
-  "header": {
-    "logoLinkTitle": "Return to the F1 Calendar Homepage",
-    "contribute": "Contribute",
-    "languageSelector": "Select Language",
-    "javascript": "F1 Calendar works best with Javascript Enabled."
-  },
-  "options": {
-    "calendar": "Add race dates & times to your Calendar",
-    "email": "Receive email reminders",
-    "timezonePicker": {
-      "showing": "Showing times for",
-      "pick": "Pick a timezone...",
-      "button": "Done"
-    }
-  },
-  "cookies": {
-    "title": "This website uses cookies to enhance the user experience.",
-    "button": "Great!"
-  },
-  "footer": {
-    "coffee": "Support F1 Calendar, buy us a coffee.",
-    "twitter": "We’re on Twitter",
-    "github": "Open Sourced on GitHub",
-    "issue": "Spotted an issue? Report",
-    "links": {
-      "wereOn": "We're on",
-      "openSourcedOn": "Open Sourced on",
-      "spottedIssue": "Spotted an issue?",
-      "spottedReport": "Report"
-    }
-  }
+	"title": "F1 Calendar",
+	"subtitle": "Races, Qualifying & Practice Sessions",
+	"meta": {
+		"description": "Formula One Calendar for {{year}} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+		"keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+	},
+	"header": {
+		"logoLinkTitle": "Return to the F1 Calendar Homepage",
+		"contribute": "Contribute",
+		"languageSelector": "Select Language",
+		"javascript": "F1 Calendar works best with Javascript Enabled."
+	},
+	"options": {
+		"calendar": "Add race dates & times to your Calendar",
+		"email": "Receive email reminders",
+		"timezonePicker": {
+			"showing": "Showing times for",
+			"pick": "Pick a timezone..."
+		},
+		"formatPicker": {
+			"title": "Time Format",
+			"12hr": "12-Hour Time",
+			"24hr": "24-Hour Time"
+		},
+		"button": "Done"
+	},
+	"cookies": {
+		"title": "This website uses cookies to enhance the user experience.",
+		"button": "Great!"
+	},
+	"footer": {
+		"coffee": "Support F1 Calendar, buy us a coffee.",
+		"twitter": "We’re on Twitter",
+		"github": "Open Sourced on GitHub",
+		"issue": "Spotted an issue? Report",
+		"links": {
+			"wereOn": "We're on",
+			"openSourcedOn": "Open Sourced on",
+			"spottedIssue": "Spotted an issue?",
+			"spottedReport": "Report"
+		}
+	}
 }

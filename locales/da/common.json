@@ -1,36 +1,41 @@
 {
-  "title": "F1 Kalender",
-  "subtitle": "Løb, Kvalifikation & Trænings Sessioner",
-  "meta":{
-    "description": "Formet 1 Kalender for {{year}} sæsonen med alle F1 grand prix løb, træning &amp; kvalifikations sessioner. Muligheder for at sætte påmindelse. Alle tidszoner. Download eller abonnér.",
-    "keywords": "F1, formet 1, løbs tider, løb, påmindelse, advarsler, grand prix'er, grand prix, kalender, datoer, start tider, kvalifikation, træning, London, Europa, {{year}}"
-  },
-  "options": {
-    "calendar": "Tilføj disse løbs datoer & tider til din kalender",
-    "email": "Modtag email påmindelser",
-    "timezonePicker": {
-      "showing": "Vis tider for",
-      "pick": "Vælg end tidszone...",
-      "button": "Udført"
-    }
-  },
-  "contribute": "Donér",
-  "cookies": {
-    "title": "Dette website bruger cookies for at forbedre brugeroplevelsen.",
-    "button": "Fint!"
-  },
-  "languageSelector": "Vælg sprog",
-  "javascript": "F1 Calendar virker bedst med Javascript aktiveret.",
-  "footer": {
-    "coffee": "Støt F1 Calendar, giv en kop kaffe.",
-    "twitter": "Vi er på Twitter",
-    "github": "Open Source på GitHub",
-    "issue": "Fandt du et problem? Rapportér",
-    "links": {
-      "wereOn": "Vi er på",
-      "openSourcedOn": "Open Source på",
-      "spottedIssue": "Fand du et problem?",
-      "spottedReport": "Rapportér"
-    }
-  }
+	"title": "F1 Kalender",
+	"subtitle": "Løb, Kvalifikation & Trænings Sessioner",
+	"meta": {
+		"description": "Formet 1 Kalender for {{year}} sæsonen med alle F1 grand prix løb, træning &amp; kvalifikations sessioner. Muligheder for at sætte påmindelse. Alle tidszoner. Download eller abonnér.",
+		"keywords": "F1, formet 1, løbs tider, løb, påmindelse, advarsler, grand prix'er, grand prix, kalender, datoer, start tider, kvalifikation, træning, London, Europa, {{year}}"
+	},
+	"options": {
+		"calendar": "Tilføj disse løbs datoer & tider til din kalender",
+		"email": "Modtag email påmindelser",
+		"timezonePicker": {
+			"showing": "Vis tider for",
+			"pick": "Vælg end tidszone..."
+		},
+		"formatPicker": {
+			"title": "Time Format",
+			"12hr": "12-Hour Time",
+			"24hr": "24-Hour Time"
+		},
+		"button": "Udført"
+	},
+	"contribute": "Donér",
+	"cookies": {
+		"title": "Dette website bruger cookies for at forbedre brugeroplevelsen.",
+		"button": "Fint!"
+	},
+	"languageSelector": "Vælg sprog",
+	"javascript": "F1 Calendar virker bedst med Javascript aktiveret.",
+	"footer": {
+		"coffee": "Støt F1 Calendar, giv en kop kaffe.",
+		"twitter": "Vi er på Twitter",
+		"github": "Open Source på GitHub",
+		"issue": "Fandt du et problem? Rapportér",
+		"links": {
+			"wereOn": "Vi er på",
+			"openSourcedOn": "Open Source på",
+			"spottedIssue": "Fand du et problem?",
+			"spottedReport": "Rapportér"
+		}
+	}
 }

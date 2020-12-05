@@ -1,22 +1,23 @@
 import {useContext} from "react";
-import { UserContext } from "components/UserContext";
+import {UserContext} from "components/UserContext";
 import dayjs from "dayjs";
 import Race from "components/Race/Race";
 import useTranslation from "next-translate/useTranslation";
 const config = require(`../../db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 const Races = (props) => {
-	const { t } = useTranslation();
+	const {t} = useTranslation();
 
-	const { timezone } = useContext(UserContext);
-	
-	
-	console.log("timezone123 " + timezone);
-	
+	const {timezone, timeFormat} = useContext(UserContext);
+
 	const races = props.races;
 
 	if (props.timezone) {
 		timezone = props.timezone;
+	}
+
+	if (props.timeFormat) {
+		timeFormat = props.timeFormat;
 	}
 
 	if (props.locale) {
@@ -107,6 +108,7 @@ const Races = (props) => {
 							item={item}
 							index={index}
 							timezone={timezone}
+							timeFormat={timeFormat}
 							key={item.slug}
 							isNextRace={isNextRace}
 						/>

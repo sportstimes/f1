@@ -1,36 +1,41 @@
 {
-  "title": "Calendrier F1",
-  "subtitle": "Courses, Qualifications & Essais Libres",
-  "meta": {
-    "description": "Calendrier Formule 1 pour la saison {{year}} avec tous les Grands Prix, essais libres & qualificatifs. Activer les rappels. Tous les fuseaux horaires. Télécharger ou s'abonner.",
-    "keywords": "F1, formule 1, horaires des courses, courses, rappel, alertes, grands prix, grand prix, calendrier, dates, heures de départ, qualifications, essais, Londres, Europe, {{year}}"
-  },
-  "options": {
-    "calendar": "Ajouter ces dates et horaires de Grand Prix à votre calendrier.",
-    "email": "Recevoir des e-mails de rappel",
-    "timezonePicker": {
-      "showing": "Montrer les horaires pour",
-      "pick": "Choisissez un fuseau horaire...",
-      "button": "Choisir"
-    }
-  },
-  "contribute": "Contribuer",
-  "cookies": {
-    "title": "Ce site utilise des cookies pour améliorer l'expérience utilisateur.",
-    "button": "Super !"
-  },
-  "languageSelector": "Select Language",
-  "javascript": "F1 Calendar fonctionne mieux lorsque Javascript est activé.",
-  "footer": {
-    "coffee": "Supportez F1 Calendar, offrez-nous un café.",
-    "twitter": "Nous sommes sur Twitter.",
-    "github": "Logiciel libre en accès sur GitHub.",
-    "issue": "Vous avez trouvé une erreur ? Dites-le nous.",
-    "links": {
-      "wereOn": "Nous sommes sur",
-      "openSourcedOn": "Logiciel libre sur",
-      "spottedIssue": "Vous avez trouvé une erreur ?",
-      "spottedReport": "Dites-le nous."
-    }
-  }
+	"title": "Calendrier F1",
+	"subtitle": "Courses, Qualifications & Essais Libres",
+	"meta": {
+		"description": "Calendrier Formule 1 pour la saison {{year}} avec tous les Grands Prix, essais libres & qualificatifs. Activer les rappels. Tous les fuseaux horaires. Télécharger ou s'abonner.",
+		"keywords": "F1, formule 1, horaires des courses, courses, rappel, alertes, grands prix, grand prix, calendrier, dates, heures de départ, qualifications, essais, Londres, Europe, {{year}}"
+	},
+	"options": {
+		"calendar": "Ajouter ces dates et horaires de Grand Prix à votre calendrier.",
+		"email": "Recevoir des e-mails de rappel",
+		"timezonePicker": {
+			"showing": "Montrer les horaires pour",
+			"pick": "Choisissez un fuseau horaire..."
+		},
+		"formatPicker": {
+			"title": "Time Format",
+			"12hr": "12-Hour Time",
+			"24hr": "24-Hour Time"
+		},
+		"button": "Choisir"
+	},
+	"contribute": "Contribuer",
+	"cookies": {
+		"title": "Ce site utilise des cookies pour améliorer l'expérience utilisateur.",
+		"button": "Super !"
+	},
+	"languageSelector": "Select Language",
+	"javascript": "F1 Calendar fonctionne mieux lorsque Javascript est activé.",
+	"footer": {
+		"coffee": "Supportez F1 Calendar, offrez-nous un café.",
+		"twitter": "Nous sommes sur Twitter.",
+		"github": "Logiciel libre en accès sur GitHub.",
+		"issue": "Vous avez trouvé une erreur ? Dites-le nous.",
+		"links": {
+			"wereOn": "Nous sommes sur",
+			"openSourcedOn": "Logiciel libre sur",
+			"spottedIssue": "Vous avez trouvé une erreur ?",
+			"spottedReport": "Dites-le nous."
+		}
+	}
 }

@@ -1,36 +1,41 @@
 {
-  "title": "Kalendarz F1",
-  "subtitle": "Wyścigi, kwalifikacje i sesje treningowe.",
-  "meta":{
-    "description": "Kalendarz Formuły 1 na sezon  {{year}}  z wszystkimi wyścigami, treningami oraz kwalifikacjami. Ustaw przypomnienia. Wszystkie strefy czasowe. Pobierz lub zasubskrybuj.",
-    "keywords": "F1, formula one, formuła 1, godziny wyścigów, wyścigi, przypomnienia, powiadomienia, grands prix, grand prix, kalendarz, daty, godziny startów, kwalifikacje, treningi, London, Europe, {{year}}"
-  },
-  "options": {
-    "calendar": "Dodaj daty wyścigów do Twojego Kalendarza",
-    "email": "Otrzymuj powiadomienia email",
-    "timezonePicker": {
-      "showing": "Wyświetlaj w strefie czasowej",
-      "pick": "Wybierz strefę czasową...",
-      "button": "Ustaw"
-    }
-  },
-  "contribute": "Wnieś wkład",
-  "cookies": {
-    "title": "Ta strona korzysta z plików cookie, aby zwiększyć komfort użytkowania.",
-    "button": "Super!"
-  },
-  "languageSelector": "Wybierz język",
-  "javascript": "Kalendarz F1 działa lepiej z włączoną obsługą Javascript.",
-  "footer": {
-    "coffee": "Wesprzyj Kalendarz F1 i kup nam kawę.",
-    "twitter": "We’re on Twitter",
-    "github": "Open Sourced na GitHub",
-    "issue": "Znalazłeś błąd? Zgłoś",
-    "links": {
-      "wereOn": "Jesteśmy na",
-      "openSourcedOn": "Open Sourced na",
-      "spottedIssue": "Znalazłeś błąd?",
-      "spottedReport": "Zgłoś"
-    }
-  }
+	"title": "Kalendarz F1",
+	"subtitle": "Wyścigi, kwalifikacje i sesje treningowe.",
+	"meta": {
+		"description": "Kalendarz Formuły 1 na sezon  {{year}}  z wszystkimi wyścigami, treningami oraz kwalifikacjami. Ustaw przypomnienia. Wszystkie strefy czasowe. Pobierz lub zasubskrybuj.",
+		"keywords": "F1, formula one, formuła 1, godziny wyścigów, wyścigi, przypomnienia, powiadomienia, grands prix, grand prix, kalendarz, daty, godziny startów, kwalifikacje, treningi, London, Europe, {{year}}"
+	},
+	"options": {
+		"calendar": "Dodaj daty wyścigów do Twojego Kalendarza",
+		"email": "Otrzymuj powiadomienia email",
+		"timezonePicker": {
+			"showing": "Wyświetlaj w strefie czasowej",
+			"pick": "Wybierz strefę czasową..."
+		},
+		"formatPicker": {
+			"title": "Time Format",
+			"12hr": "12-Hour Time",
+			"24hr": "24-Hour Time"
+		},
+		"button": "Ustaw"
+	},
+	"contribute": "Wnieś wkład",
+	"cookies": {
+		"title": "Ta strona korzysta z plików cookie, aby zwiększyć komfort użytkowania.",
+		"button": "Super!"
+	},
+	"languageSelector": "Wybierz język",
+	"javascript": "Kalendarz F1 działa lepiej z włączoną obsługą Javascript.",
+	"footer": {
+		"coffee": "Wesprzyj Kalendarz F1 i kup nam kawę.",
+		"twitter": "We’re on Twitter",
+		"github": "Open Sourced na GitHub",
+		"issue": "Znalazłeś błąd? Zgłoś",
+		"links": {
+			"wereOn": "Jesteśmy na",
+			"openSourcedOn": "Open Sourced na",
+			"spottedIssue": "Znalazłeś błąd?",
+			"spottedReport": "Zgłoś"
+		}
+	}
 }

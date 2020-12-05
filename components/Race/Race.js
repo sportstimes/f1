@@ -3,7 +3,6 @@ import withTranslation from "next-translate/withTranslation";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
-import dayjslocalized from "dayjs/plugin/localizedFormat";
 
 const config = require(`../../db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
@@ -13,7 +12,6 @@ class Race extends React.Component {
 
 		dayjs.extend(dayjsutc);
 		dayjs.extend(dayjstimezone);
-		dayjs.extend(dayjslocalized);
 
 		this.state = {
 			collapsed: true
@@ -35,12 +33,6 @@ class Race extends React.Component {
 	render() {
 		const {t, lang} = this.props.i18n;
 		const localeKey = "calendar:races." + this.props.item.localeKey;
-
-		if (lang === "en") {
-			dayjs.locale(this.props.locale);
-		} else {
-			dayjs.locale(lang);
-		}
 
 		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
 
@@ -183,7 +175,9 @@ class Race extends React.Component {
 						<td className="w-1/6">
 							{dayjs(this.props.item.sessions.race)
 								.tz(this.props.timezone)
-								.format("LT")}
+								.format(
+									this.props.timeFormat == "12" ? "h:mm A" : "HH:mm"
+								)}
 						</td>
 						<td className="text-right pr-6">
 							{badgeColumnLayout(this.props)}
@@ -244,7 +238,11 @@ class Race extends React.Component {
 									<span>{item}</span>
 									{dayjs(this.props.item.sessions[item])
 										.tz(this.props.timezone)
-										.format("D MMM LT")}
+										.format(
+											this.props.timeFormat == "12"
+												? "D MMM h:mm A"
+												: "D MMM HH:mm"
+										)}
 								</td>
 							);
 						})}
@@ -295,7 +293,11 @@ class RaceTR extends React.Component {
 					<td className="w-1/3">
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
-							.format("D MMM LT")}
+							.format(
+								this.props.timeFormat == "12"
+									? "D MMM h:mm A"
+									: "D MMM HH:mm"
+							)}
 					</td>
 					<td />
 				</tr>
@@ -311,7 +313,11 @@ class RaceTR extends React.Component {
 							.format("D MMM")}
 					</td>
 					<td className="w-1/6">
-						{dayjs(this.props.date).tz(this.props.timezone).format("LT")}
+						{dayjs(this.props.date)
+							.tz(this.props.timezone)
+							.format(
+								this.props.timeFormat == "12" ? "h:mm A" : "HH:mm"
+							)}
 					</td>
 					<td />
 				</tr>
