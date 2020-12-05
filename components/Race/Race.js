@@ -38,28 +38,48 @@ class Race extends React.Component {
 
 		function badgeColumnLayout(props) {
 			if (props.item.tbc) {
-				return (
-					<span
-						title={t("calendar:badges.tbc_title")}
-						className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xs text-black font-bold"
-					>
-						{t("calendar:badges.tbc")}
-					</span>
-				);
+				if (
+					props.item.affiliate &&
+					!dayjs(props.item.sessions.race).isBefore()
+				) {
+					return (
+						<>
+							<span
+								title={t("calendar:badges.tbc_title")}
+								className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xs text-black font-bold"
+							>
+								{t("calendar:badges.tbc")}
+							</span>
+
+							<a
+								href={props.item.affiliate}
+								className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-white font-bold uppercase hidden md:inline ml-2"
+							>
+								{t("calendar:badges.tickets")}
+							</a>
+						</>
+					);
+				} else {
+					return (
+						<span
+							title={t("calendar:badges.tbc_title")}
+							className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xs text-black font-bold"
+						>
+							{t("calendar:badges.tbc")}
+						</span>
+					);
+				}
 			} else if (props.item.canceled) {
 				return (
 					<span className="bg-red-600 rounded px-1 md:px-2 py-1 text-xs text-white font-bold uppercase">
 						{t("calendar:badges.canceled")}
 					</span>
 				);
-			} else if (props.item.affiliate) {
-				if (dayjs(props.item.sessions.race).isBefore()) {
-					return (
-						<a className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-white font-bold uppercase hidden md:inline">
-							{t("calendar:badges.tickets")}
-						</a>
-					);
-				} else {
+			} else {
+				if (
+					props.item.affiliate &&
+					!dayjs(props.item.sessions.race).isBefore()
+				) {
 					return (
 						<a
 							href={props.item.affiliate}
@@ -69,7 +89,6 @@ class Race extends React.Component {
 						</a>
 					);
 				}
-			} else {
 				return ``;
 			}
 		}
@@ -176,10 +195,10 @@ class Race extends React.Component {
 							{dayjs(this.props.item.sessions.race)
 								.tz(this.props.timezone)
 								.format(
-									this.props.timeFormat == "12" ? "h:mm A" : "HH:mm"
+									this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
 								)}
 						</td>
-						<td className="text-right pr-6">
+						<td className="text-right pr-4">
 							{badgeColumnLayout(this.props)}
 						</td>
 					</tr>
@@ -239,7 +258,7 @@ class Race extends React.Component {
 									{dayjs(this.props.item.sessions[item])
 										.tz(this.props.timezone)
 										.format(
-											this.props.timeFormat == "12"
+											this.props.timeFormat == 12
 												? "D MMM h:mm A"
 												: "D MMM HH:mm"
 										)}
@@ -294,7 +313,7 @@ class RaceTR extends React.Component {
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
 							.format(
-								this.props.timeFormat == "12"
+								this.props.timeFormat == 12
 									? "D MMM h:mm A"
 									: "D MMM HH:mm"
 							)}
@@ -315,9 +334,7 @@ class RaceTR extends React.Component {
 					<td className="w-1/6">
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
-							.format(
-								this.props.timeFormat == "12" ? "h:mm A" : "HH:mm"
-							)}
+							.format(this.props.timeFormat == 12 ? "h:mm A" : "HH:mm")}
 					</td>
 					<td />
 				</tr>
