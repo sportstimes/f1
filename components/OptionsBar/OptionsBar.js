@@ -1,5 +1,5 @@
 import React from "react";
-import { UserContext } from "components/UserContext";
+import {UserContext} from "components/UserContext";
 import Link from "next/link";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
@@ -116,7 +116,7 @@ class OptionsBar extends React.Component {
 							<button
 								onClick={this.togglePicker}
 								type="submit"
-								className="btn inline-block py-0.5"
+								className="inline-block py-0.5"
 							>
 								{t("common:options.timezonePicker.button")}
 							</button>

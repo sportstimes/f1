@@ -39,10 +39,6 @@ jspm_packages
 
 .DS_Store
 
-# Build Pages
-/pages
-/page/*
-
 # ICS Files Generated at Build Time
 /public/download/*.ics
 /public/download/*/*.ics

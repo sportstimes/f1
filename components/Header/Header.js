@@ -15,9 +15,12 @@ class Header extends React.Component {
 
 		return (
 			<div className="w-full bg-dark-green mb-4">
-				<header className="max-w-screen-lg mx-auto font-sans px-4 py-4">
+				<header className="max-w-screen-lg mx-auto font-sans px-2 py-4">
 					<div className="md:flex md:justify-start mb-4">
-						<div className="mx-auto md:m-0 md:w-auto mb-4 md:mb-0" style={{width: '60px'}}>
+						<div
+							className="mx-auto md:m-0 md:w-auto mb-4 md:mb-0"
+							style={{width: "60px"}}
+						>
 							<Link href="/">
 								<a name={title}>
 									<Logo />

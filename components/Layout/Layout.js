@@ -74,7 +74,7 @@ const Layout = (props) => {
 
 			<Header showCTABar={props.showCTABar} year={props.year} />
 
-			<div className="max-w-screen-lg mx-auto font-sans px-4">
+			<div className="max-w-screen-lg mx-auto font-sans px-2">
 				{props.children}
 			</div>
 
