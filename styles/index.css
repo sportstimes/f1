@@ -32,7 +32,7 @@ body {
 	ul,
 	ol,
 	li {
-		@apply text-gray-900 dark:text-gray-50;
+		@apply text-white;
 	}
 
 	a {
@@ -40,27 +40,27 @@ body {
 	}
 
 	h6 {
-		@apply text-base font-bold font-title text-gray-900 dark:text-gray-50;
+		@apply text-base font-bold font-title text-white;
 	}
 
 	h5 {
-		@apply text-lg font-bold font-title text-gray-900 dark:text-gray-50;
+		@apply text-lg font-bold font-title text-white;
 	}
 
 	h4 {
-		@apply text-xl font-bold font-title text-gray-900 dark:text-gray-50;
+		@apply text-xl font-bold font-title text-white;
 	}
 
 	h3 {
-		@apply text-2xl font-bold font-title text-gray-900 dark:text-gray-50 uppercase;
+		@apply text-2xl font-bold font-title text-white uppercase;
 	}
 
 	h2 {
-		@apply text-3xl font-bold tracking-normal font-title text-gray-900 dark:text-gray-50 uppercase;
+		@apply text-3xl font-bold tracking-normal font-title text-white uppercase;
 	}
 
 	h1 {
-		@apply text-4xl font-bold tracking-normal font-title text-gray-900 dark:text-gray-50 uppercase;
+		@apply text-4xl font-bold tracking-normal font-title text-white uppercase;
 	}
 
 	.btn {
