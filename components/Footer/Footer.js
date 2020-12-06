@@ -8,7 +8,26 @@ export default function Footer() {
 		<>
 			<footer className="mt-2 md:mt-6">
 				<div className="max-w-7xl mx-auto py-6 md:py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-					<div className="mt-1 mb-8 flex justify-center space-x-6">
+					<div className="mt-1 mb-6 flex justify-center space-x-6">
+						<LanguageSelector />
+					</div>
+
+					<div className="mb-10 flex justify-center space-x-6">
+						<a
+							href="https://www.buymeacoffee.com/f1cal"
+							className="support-btn mt-3"
+						>
+							<img
+								src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+								width="15"
+								height="15"
+								className="mr-2"
+							/>
+							Support us, buy us a coffee
+						</a>
+					</div>
+
+					<div className="mb-8 flex justify-center space-x-6">
 						<a
 							href="https://twitter.com/f1cal"
 							className="text-gray-400 hover:text-gray-500"
@@ -42,10 +61,6 @@ export default function Footer() {
 								/>
 							</svg>
 						</a>
-					</div>
-
-					<div className="mt-1 mb-4 flex justify-center space-x-6">
-						<LanguageSelector />
 					</div>
 
 					<p className="mt-8 text-center text-base text-gray-400">
