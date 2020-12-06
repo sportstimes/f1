@@ -9,7 +9,7 @@ const year = require(`../db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NE
 
 const Index = (props) => {
 	const {t, lang} = useTranslation();
-	const title = t("common:title");
+	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:title`);
 	const subtitle = t("common:subtitle");
 
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;

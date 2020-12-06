@@ -24,39 +24,8 @@ const Races = (props) => {
 		locale = props.locale;
 	}
 
-	// TODO Improve this isNextRace logic
 	let isNextRace = false;
 	let nextRace = null;
-
-	console.log(config.featuredSessions.length);
-
-	/*
-    {config.featuredSessions.length === 1 ? (
-        <thead className="hidden">
-            <tr>
-                <th scope="col" className="w-1/8"></th>
-                <th scope="col" className="w-1/2">
-                    {t("calendar:event")} {props.year}
-                </th>
-                <th scope="col" className="w-1/3">
-                    {t("calendar:date")}
-                </th>
-            </tr>
-        </thead>
-    ) : (
-        <thead>
-            <tr>
-                <th scope="col" className=""></th>
-                <th scope="col" className=""></th>
-                <th scope="col" className=""></th>
-                {config.featuredSessions.map((item, index) => {
-                    return <th scope="col" className=""></th>;
-                })}
-                <th scope="col" className=""></th>
-            </tr>
-        </thead>
-    )}
-    */
 
 	return (
 		<div>
@@ -78,16 +47,14 @@ const Races = (props) => {
 					</thead>
 				) : (
 					<thead>
-						<tr>
-							<th scope="col" className=""></th>
-							<th scope="col" className=""></th>
-							<th scope="col" className="">
-								1
+						<tr className="hidden">
+							<th scope="col" className="w-8"></th>
+							<th scope="col" className="w-1/2">
+								{t("calendar:event")} {props.year}
 							</th>
 							{config.featuredSessions.map((item, index) => {
-								return <th scope="col" className=""></th>;
+								return <th scope="col" className="w-1/6"></th>;
 							})}
-							<th scope="col" className=""></th>
 						</tr>
 					</thead>
 				)}

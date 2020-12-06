@@ -81,14 +81,17 @@ class CTABar extends React.Component {
 			);
 		} else {
 			return (
-				<Row gutterWidth={0} justify={"between"} spacing={1}>
-					<Col md={12}>
+				<div className="grid grid-cols-1 pt-2">
+					<div className="h-12">
 						<Link href="/generate">
-							<CTA>
+							<a className="bg-green-900 rounded-md shadow hover:bg-green-800 hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative">
 								<svg
 									className="icon"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 448 512"
+									width="20"
+									height="20"
+									className="absolute left-3"
 								>
 									<path
 										fill="white"
@@ -97,19 +100,21 @@ class CTABar extends React.Component {
 								</svg>
 								{t("common:options.calendar")}
 								<svg
-									className="arrow"
+									className="absolute right-3 top-4"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 512 448"
+									width="15"
+									height="15"
 								>
 									<path
 										fill="white"
 										d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
 									/>
 								</svg>
-							</CTA>
+							</a>
 						</Link>
-					</Col>
-				</Row>
+					</div>
+				</div>
 			);
 		}
 	}

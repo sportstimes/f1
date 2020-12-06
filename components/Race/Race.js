@@ -205,14 +205,16 @@ class Race extends React.Component {
 				) : (
 					<tr
 						key={this.props.item.slug}
-						className=""
+						className={`cursor-pointer ${titleRowClasses}`}
 						onClick={() => this.handleRowClick()}
 					>
-						<td className="">
+						<td className="w-6 md:w-8 py-5 pl-2 md:pl-3">
 							{this.state.collapsed ? (
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 512 448"
+									width="10"
+									height="10"
 								>
 									<path
 										fill="white"
@@ -223,6 +225,8 @@ class Race extends React.Component {
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 448 512"
+									width="10"
+									height="10"
 								>
 									<path
 										fill="white"
@@ -238,7 +242,7 @@ class Race extends React.Component {
 								}`}
 							/>
 						</td>
-						<td className="">
+						<td className="w-1/2">
 							{t(`calendar:races.${this.props.item.localeKey}`) !==
 							localeKey
 								? t(`calendar:races.${this.props.item.localeKey}`)
@@ -253,8 +257,10 @@ class Race extends React.Component {
 						</td>
 						{config.featuredSessions.map((item, index) => {
 							return (
-								<td className="">
-									<span>{item}</span>
+								<td className="w-1/2">
+									<span className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xs text-black font-bold capitalize mr-2">
+										{item}
+									</span>
 									{dayjs(this.props.item.sessions[item])
 										.tz(this.props.timezone)
 										.format(
@@ -265,7 +271,6 @@ class Race extends React.Component {
 								</td>
 							);
 						})}
-						<td className="">{badgeColumnLayout(this.props)}</td>
 					</tr>
 				)}
 
@@ -276,6 +281,7 @@ class Race extends React.Component {
 								date={this.props.item.sessions[item]}
 								title={item}
 								timezone={this.props.timezone}
+								timeFormat={this.props.timeFormat}
 								i18n={this.props.i18n}
 								localeKey={this.props.item.localeKey}
 								collapsed={this.state.collapsed}
@@ -288,6 +294,9 @@ class Race extends React.Component {
 		);
 	}
 }
+
+//
+// <td className="">{badgeColumnLayout(this.props)}</td>
 
 class RaceTR extends React.Component {
 	render() {
@@ -307,8 +316,9 @@ class RaceTR extends React.Component {
 		if (hasMultipleFeaturedEvents) {
 			return (
 				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
-					<td className="w-1/8 py-4"></td>
-					<td className="w-1/2">{t(titleKey)}</td>
+					<td className="w-1/8"></td>
+					<td className="w-1/2 py-4">{t(titleKey)}</td>
+					<td />
 					<td className="w-1/3">
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
@@ -318,7 +328,6 @@ class RaceTR extends React.Component {
 									: "D MMM HH:mm"
 							)}
 					</td>
-					<td />
 				</tr>
 			);
 		} else {

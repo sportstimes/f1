@@ -33,7 +33,7 @@ class TopBar extends React.Component {
 							</div>
 							<LanguageSelector />
 						</div>
-						<div className="mt-8 md:mt-0 md:order-1">Motor</div>
+						<div className="mt-8 md:mt-0 md:order-1"></div>
 					</div>
 				</div>
 			</>
@@ -42,13 +42,55 @@ class TopBar extends React.Component {
 }
 
 /*
-<ul className="grid grid-flow-col gap-3">
-<li>Motorsport Calendars</li>
-<li>F1</li>
-<li>F2</li>
-<li>F3</li>
-<li>FE</li>
-<li>W Series</li>
+<ul className="flex flex-wrap space-x-2">
+<li>
+	<a
+		href=""
+		className="text-gray-400 hover:text-gray-200"
+	>
+		Motorsport Calendars
+	</a>
+</li>
+<li>
+	<a
+		href=""
+		className="text-gray-400 hover:text-gray-200"
+	>
+		F1
+	</a>
+</li>
+<li>
+	<a
+		href=""
+		className="text-gray-400 hover:text-gray-200"
+	>
+		F2
+	</a>
+</li>
+<li>
+	<a
+		href=""
+		className="text-gray-400 hover:text-gray-200"
+	>
+		F3
+	</a>
+</li>
+<li>
+	<a
+		href=""
+		className="text-gray-400 hover:text-gray-200"
+	>
+		FE
+	</a>
+</li>
+<li>
+	<a
+		href=""
+		className="text-gray-400 hover:text-gray-200"
+	>
+		W Series
+	</a>
+</li>
 </ul>
 */
 
