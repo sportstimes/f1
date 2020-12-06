@@ -1,46 +1,46 @@
 {
-  "name": "f1",
-  "version": "1.0.0",
-  "engines": {
-    "node": "12.x"
-  },
-  "description": "_The second edition of [f1calendar.com](https://f1calendar.com)_",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "generateCalendars": "node utils/generate-calendars.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://ay8s@github.com/sportstimes/f1.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sportstimes/f1/issues"
-  },
-  "homepage": "https://github.com/sportstimes/f1#readme",
-  "dependencies": {
-    "@babel/core": "^7.12.9",
-    "countries-and-timezones": "^2.3.1",
-    "dayjs": "^1.9.6",
-    "ics": "^2.26.2",
-    "next": "^10.0.3",
-    "next-fonts": "^1.5.1",
-    "next-pwa": "^3.1.5",
-    "next-seo": "^4.17.0",
-    "next-translate": "^1.0.0-experimental.20",
-    "react": "^17.0.1",
-    "react-cookie-consent": "^6.1.0",
-    "react-dom": "^17.0.1"
-  },
-  "devDependencies": {
-    "@tailwindcss/forms": "^0.2.1",
-    "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.14",
-    "tailwindcss": "^2.0.1"
-  }
+	"name": "f1",
+	"version": "1.0.0",
+	"engines": {
+		"node": "12.x"
+	},
+	"description": "_The second edition of [f1calendar.com](https://f1calendar.com)_",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"generateCalendars": "node utils/generate-calendars.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://ay8s@github.com/sportstimes/f1.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sportstimes/f1/issues"
+	},
+	"homepage": "https://github.com/sportstimes/f1#readme",
+	"dependencies": {
+		"@babel/core": "^7.12.9",
+		"countries-and-timezones": "^2.3.1",
+		"dayjs": "^1.9.6",
+		"ics": "^2.26.2",
+		"next": "^10.0.3",
+		"next-fonts": "^1.5.1",
+		"next-pwa": "^3.1.5",
+		"next-seo": "^4.17.0",
+		"next-translate": "^1.0.0-canary.6",
+		"react": "^17.0.1",
+		"react-cookie-consent": "^6.1.0",
+		"react-dom": "^17.0.1"
+	},
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.2.1",
+		"autoprefixer": "^10.0.4",
+		"postcss": "^8.1.14",
+		"tailwindcss": "^2.0.1"
+	}
 }

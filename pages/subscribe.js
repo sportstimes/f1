@@ -23,7 +23,7 @@ function Subscribe() {
 			<Layout year={process.env.NEXT_PUBLIC_CURRENT_YEAR}>
 				<h3 className="text-xl mb-4">{t("subscribe:title")}</h3>
 				<Card>
-					<p class="pl-px pb-5">{t("subscribe:description")}</p>
+					<p className="pl-px pb-5">{t("subscribe:description")}</p>
 					<form
 						action="https://f1calendar.us10.list-manage.com/subscribe/post?u=e11245c4d3fecdad90cb66908&amp;id=f7a8a5001f"
 						method="post"
