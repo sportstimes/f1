@@ -1,4 +1,9 @@
 {
 	"title": "F3 Calendar",
+	"seo": {
+		"title": "F3 Calendar {{year}} - Formula Three Race Times and Dates",
+		"description": "Formula Three Calendar for {{year}} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+		"keywords": "placeholder"
+	},
 	"footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
 }

@@ -9,20 +9,25 @@ const year = require(`../db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NE
 
 const Index = (props) => {
 	const {t, lang} = useTranslation();
-	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:title`);
-	const subtitle = t("common:subtitle");
 
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
-	const metaDescription = t("common:meta.description", {year: currentYear});
-	const metaKeywords = t("common:meta.keywords", {year: currentYear});
+
+	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+		year: currentYear
+	});
+	const description = t(
+		`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`,
+		{
+			year: currentYear
+		}
+	);
+	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+		year: currentYear
+	});
 
 	return (
 		<>
-			<NextSeo
-				title={`${title} ${currentYear} - ${subtitle}`}
-				description={metaDescription}
-				keywords={metaKeywords}
-			/>
+			<NextSeo title={title} description={description} keywords={keywords} />
 			<FullWidthLayout showCTABar="true" year={currentYear}>
 				<div className="max-w-screen-lg mx-auto font-sans">
 					<div className="px-2">

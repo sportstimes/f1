@@ -4,9 +4,9 @@ import useTranslation from "next-translate/useTranslation";
 export default function Logo() {
 	const {t} = useTranslation();
 
-	return (
-		<>
-			{process.env.NEXT_PUBLIC_SITE_KEY === "f1" && (
+	switch (process.env.NEXT_PUBLIC_SITE_KEY) {
+		case "f1":
+			return (
 				<svg
 					width="60"
 					height="60"
@@ -37,9 +37,9 @@ export default function Logo() {
 						strokeWidth="32.63"
 					/>
 				</svg>
-			)}
-
-			{process.env.NEXT_PUBLIC_SITE_KEY === "f2" && (
+			);
+		case "f2":
+			return (
 				<svg
 					width="60"
 					height="60"
@@ -83,9 +83,9 @@ export default function Logo() {
 						strokeWidth="32.63"
 					/>
 				</svg>
-			)}
-
-			{process.env.NEXT_PUBLIC_SITE_KEY === "f3" && (
+			);
+		case "f3":
+			return (
 				<svg
 					width="60"
 					height="60"
@@ -122,9 +122,9 @@ export default function Logo() {
 						strokeWidth="32.63"
 					/>
 				</svg>
-			)}
-
-			{process.env.NEXT_PUBLIC_SITE_KEY === "fe" && (
+			);
+		case "fe":
+			return (
 				<svg
 					width="60"
 					height="60"
@@ -161,9 +161,9 @@ export default function Logo() {
 						stroke-width="32.63"
 					/>
 				</svg>
-			)}
-
-			{process.env.NEXT_PUBLIC_SITE_KEY === "wseries" && (
+			);
+		case "wseries":
+			return (
 				<svg
 					width="60"
 					height="60"
@@ -194,7 +194,8 @@ export default function Logo() {
 						fill="#ffffff"
 					/>
 				</svg>
-			)}
-		</>
-	);
+			);
+		default:
+			return <div></div>;
+	}
 }

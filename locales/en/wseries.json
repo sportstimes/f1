@@ -1,4 +1,9 @@
 {
 	"title": "W Series Calendar",
+	"seo": {
+		"title": "W Series Calendar {{year}} - Race Times and Dates",
+		"description": "W Series Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+		"keywords": "placeholder"
+	},
 	"footnote": "W Series Calendar is not affiliated with W Series."
 }

@@ -1,4 +1,9 @@
 {
 	"title": "Formula E Calendar",
+	"seo": {
+		"title": "Formula E Calendar {{year}} - Race Times and Dates",
+		"description": "Formula E Calendar for {{year}} season with all Formula E e-prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+		"keywords": "placeholder"
+	},
 	"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
 }

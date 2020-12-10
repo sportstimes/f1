@@ -67,8 +67,9 @@ class Header extends React.Component {
 									width="15"
 									height="15"
 									className="mr-2"
+									alt="buymeacoffee"
 								/>
-								Support us, buy us a coffee
+								{t("common:footer.coffee")}
 							</a>
 						</div>
 					</div>
