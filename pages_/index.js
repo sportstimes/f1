@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Races from '../components/Races';
 import { NextSeo } from 'next-seo';
+import Notice from '../components/Notice';
 import RaceSchema from '../components/RaceSchema';
 import useTranslation from 'next-translate/useTranslation'
 import OptionsBar from "../components/OptionsBar";
@@ -22,6 +23,7 @@ const Index = (props) => {
 				keywords={metaKeywords}
 			/>
 			<Layout showCTABar='true' year={ props.year }>
+				<Notice />
 				<OptionsBar />
 				<Races year={ props.year } races={ props.races } />
 				{props.races && props.races.map((item, index) => {
