@@ -7,7 +7,8 @@ export default function Notice() {
 
 	return <>
 		<section className={styles.notice}>
-			<p>Thanks for joining us for the 2020 F1 Season. <Link href="/next-year"><a>Read about our plans for 2021</a></Link>.</p>
+			<p>Thanks for joining us for the 2020 F1 Season. <Link href="/next-year"><a>Read about our plans for 2021...</a></Link></p>
+			<div className="clear"></div>
 		</section>
 	</>
 }
