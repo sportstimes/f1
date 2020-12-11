@@ -1,0 +1,33 @@
+.notice {
+	background: #222;
+	color: #fff;
+	text-indent: 16px;
+	min-height: 50px;
+	line-height: 51px;
+	vertical-align: middle;
+	margin: 15px 0 20px 0;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	font-size: 13px;
+	position: relative;
+	
+	a {
+		color:#fff;
+		font-weight: bold;
+		text-decoration: underline;
+		float:right;
+		margin-right:16px;
+	}
+	
+	.clear {
+		clear:both;
+	}
+	
+	@media screen and (max-width: 900px) {
+		a {
+			float:none;
+			display:block;
+		}
+	}
+}	
