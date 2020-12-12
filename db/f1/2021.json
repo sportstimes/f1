@@ -206,7 +206,7 @@
 			"tbc": true,
 			"round": 12,
 			"slug": "hungarian-grand-prix",
-			"localeKey": "dutch-grand-prix",
+			"localeKey": "hungarian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/hungary/tickets?af=165390",
 			"sessions": {
 				"fp1": "2021-07-30T09:00:00Z",

@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -63,6 +63,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://github.com/sigito"><img src="https://avatars1.githubusercontent.com/u/1129082?v=4" width="100px;" alt=""/><br /><sub><b>Yura Samsoniuk</b></sub></a><br /><a href="#translation-sigito" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/FileGo"><img src="https://avatars3.githubusercontent.com/u/8854002?v=4" width="100px;" alt=""/><br /><sub><b>Emil Novak</b></sub></a><br /><a href="#translation-FileGo" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/gro-kmp"><img src="https://avatars1.githubusercontent.com/u/59517998?v=4" width="100px;" alt=""/><br /><sub><b>gro-kmp</b></sub></a><br /><a href="#translation-gro-kmp" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/Bman425"><img src="https://avatars1.githubusercontent.com/u/7978888?v=4" width="100px;" alt=""/><br /><sub><b>Bman425</b></sub></a><br /><a href="#content-Bman425" title="Content">🖋</a></td>
   </tr>
 </table>
 
