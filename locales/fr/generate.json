@@ -2,11 +2,6 @@
   "form": {
     "title": "Génerer un calendrier",
     "description": "Choisissez quelles séances des weekends de Grand Prix vous souhaitez ajouter à votre calendrier :",
-    "fp1": "Essais libres 1",
-    "fp2": "Essais libres 2",
-    "fp3": "Essais libres 3",
-    "qualifying": "Qualifications",
-    "grandPrix": "Grand Prix",
     "reminder": "Créer un rappel",
     "reminderContinued": "minutes avant chaque évènement de votre calendrier de la saison.",
     "button": "Obtenir le calendrier",

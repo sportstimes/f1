@@ -2,11 +2,6 @@
   "form": {
     "title": "Generar Calendario",
     "description": "Primero, elige las sesiones del fin de semana de F1 para agregar a tu calendario:",
-    "fp1": "1ra Práctica Libre",
-    "fp2": "2da Práctica Libre",
-    "fp3": "3ra P´ractica Libre",
-    "qualifying": "Clasificatoria",
-    "grandPrix": "Gran Premio",
     "reminder": "Fijar un recordatorio",
     "reminderContinued": "minutos antes de cada evento en tu calendario de temporada.",
     "button": "Obtener Calendario",

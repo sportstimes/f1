@@ -2,11 +2,6 @@
   "form": {
     "title": "Generovat Kalendář",
     "description": "První vyberte, které relace závodního víkendu chcete přidat do svého kalendáře:",
-    "fp1": "Volný Trénink 1",
-    "fp2": "Volný Trénink 2",
-    "fp3": "Volný Trénink 3",
-    "qualifying": "Kvalifikace",
-    "grandPrix": "Velká cena",
     "reminder": "Nastavit připomínku",
     "reminderContinued": "minut před každou událostí ve vašem kalendáři sezóny.",
     "button": "Získejte kalendář",

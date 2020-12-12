@@ -1,7 +1,7 @@
 {
   "form": {
     "title": "Generate Calendar",
-    "description": "First, pick which F1 race weekend sessions you would like to add to your calendar:",
+    "description": "First, pick which sessions you would like to add to your calendar:",
     "fp1": "Free Practice 1",
     "fp2": "Free Practice 2",
     "fp3": "Free Practice 3",

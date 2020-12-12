@@ -2,11 +2,6 @@
   "form": {
     "title": "Napravi kalendar",
     "description": "Prvo ćete morati odabrati sesije koje mislite dodati u kalendar:",
-    "fp1": "1. slobodni trening",
-    "fp2": "2. slobodni trening",
-    "fp3": "3. slobodni trening",
-    "qualifying": "Kvalifikacije",
-    "grandPrix": "Velika nagrada",
     "reminder": "Namjestite podsjetnik",
     "reminderContinued": "minuta prije početka svake sesije u vašem kalendaru.",
     "button": "Preuzmi kalendar",

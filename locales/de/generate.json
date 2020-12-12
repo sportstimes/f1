@@ -2,11 +2,6 @@
   "form": {
     "title": "Kalender generieren",
     "description": "Wähle zuerst, welche F1 Sessions du zu deinem Kalender hinzufügen willst:",
-    "fp1": "Freies Training 1",
-    "fp2": "Freies Training 2",
-    "fp3": "Freies Training 3",
-    "qualifying": "Qualifying",
-    "grandPrix": "Großer Preis",
     "reminder": "Erinnerung aktivieren",
     "reminderContinued": "Minuten vor einem Event in deinem Saisonkalender.",
     "button": "Kalender beziehen",

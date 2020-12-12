@@ -2,11 +2,6 @@
   "form": {
     "title": "Generiraj koledar",
     "description": "Najprej izberi F1 dogodke, ki jih želiš dodati v svoj koledar:",
-    "fp1": "Prvi prosti trening",
-    "fp2": "Drugi prosti trening",
-    "fp3": "Tretji prosti trening",
-    "qualifying": "Kvalifikacije",
-    "grandPrix": "Velika nagrada",
     "reminder": "Nastavi opomnik",
     "reminderContinued": "minut pred vsakim dogodkom v koledarju.",
     "button": "Prenesi koledar",

@@ -2,11 +2,6 @@
   "form": {
     "title": "Luo kalenteri",
     "description": "Valitse kisaviikonlopun tapahtumat jotka haluat lisätä kalenteriin:",
-    "fp1": "1. vapaat harjoitukset",
-    "fp2": "2. vapaat harjoitukset",
-    "fp3": "3. vapaat harjoitukset",
-    "qualifying": "Aika-ajot",
-    "grandPrix": "Kisa",
     "reminder": "Aseta muistutus",
     "reminderContinued": "minuuttia ennen jokaista tapahtumaa.",
     "button": "Luo kalenteri",

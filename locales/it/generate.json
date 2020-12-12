@@ -2,11 +2,6 @@
   "form": {
     "title": "Genera un calendario",
     "description": "Per prima cosa scegli quale tipo di sessione del fine settimana della gara di F1 vorresti aggiungere al tuo calendario:",
-    "fp1": "Prove Libere 1",
-    "fp2": "Prove Libere 2",
-    "fp3": "Prove Libere 3",
-    "qualifying": "Qualifiche",
-    "grandPrix": "Gran Premio",
     "reminder": "Imposta un promemoria",
     "reminderContinued": "minuti prima di ciascun evento nel tuo calendario della stagione.",
     "button": "Ottieni il calendario",
