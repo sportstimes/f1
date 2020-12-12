@@ -196,7 +196,7 @@
       "tbc": true,
       "round": 12,
       "slug": "hungarian-grand-prix",
-      "localeKey": "dutch-grand-prix",
+      "localeKey": "hungarian-grand-prix",
       "sessions": {
         "fp1" : "2021-07-30T09:00:00Z",
         "fp2" : "2021-07-30T13:00:00Z",
