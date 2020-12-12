@@ -49,7 +49,7 @@
 		"*": ["common", "calendar", "f1", "f2", "f3", "fe", "wseries"],
 		"/": ["calendar"],
 		"/subscribe": ["subscribe"],
-		"/generate": ["generate"],
+		"/generate": ["generate", "calendar"],
 		"/timezones": ["timezones"],
 		"/years": ["years", "calendar"]
 	}

@@ -1,8 +1,15 @@
 {
 	"siteKey": "f1cal",
+	"availableYears": [2018, 2019, 2020, 2021],
 	"sessions": ["fp1", "fp2", "fp3", "qualifying", "gp"],
 	"featuredSessions": ["gp"],
 	"collapsedSessions": ["fp1", "fp2", "fp3", "qualifying"],
-	"availableYears": [2018, 2019, 2020, 2021],
+	"sessionMap": {
+		"fp1":"p1",
+		"fp2":"p2",
+		"fp3":"p3",
+		"qualifying":"q",
+		"gp":"gp"
+	},
 	"supportsEmailReminders": true
 }

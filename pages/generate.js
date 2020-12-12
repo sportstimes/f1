@@ -5,86 +5,88 @@ import useTranslation from "next-translate/useTranslation";
 import Card from "components/Card/Card";
 
 function Generate(props) {
-	const {t} = useTranslation();
+	const {t, lang} = useTranslation();
 	const currentYear = process.env.CURRENT_YEAR;
 
-	const title = t(`${process.env.SITE_KEY}:seo.title`, {
+	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
 		year: currentYear
 	});
-	const description = t(`${process.env.SITE_KEY}:seo.description`, {
+	const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
 		year: currentYear
 	});
-	const keywords = t(`${process.env.SITE_KEY}:seo.keywords`, {
+	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
 		year: currentYear
 	});
+	
+	const config = require(`../db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
-	const [form, setState] = useState({
-		p1: true,
-		p2: true,
-		p3: true,
-		quali: true,
-		race: true,
-		virtual: false,
+	const sessions = config.sessions;
+
+	// Default form values...
+	var defaults = {
 		alarm: false,
 		mins: 30,
 		submitted: false,
 		webcalURL: "",
 		googleURL: "",
 		downloadURL: ""
+	};
+	
+	// Add sessions from config...
+	sessions.forEach(function (session, index) {
+		defaults[session] = true;
 	});
+
+	const [form, setState] = useState(defaults);
 
 	const handleOnSubmit = async (e) => {
 		e.preventDefault();
 
-		if (
-			!form.p1 &&
-			!form.p2 &&
-			!form.p3 &&
-			!form.quali &&
-			!form.race &&
-			!form.virtual
-		) {
+		const sessions = config.sessions;
+		const sessionMap = config.sessionMap;
+
+		// Check if non of the sessions are selected...
+		let sessionSelected = false;
+		sessions.forEach(function (session, index) {
+			if(form[session]){
+				sessionSelected = true;
+			}
+		})
+		
+		if (!sessionSelected) {
 			alert(t("generate:form.nonOptionsSelected"));
 			return;
 		}
-
-		/*
-    if(lang != "en"){
-      setState({
-        ...form, 
-        submitted: true, 
-        webcalURL:`webcal://${props.domain}/${lang}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics`, 
-        googleURL:`https://${props.domain}/${lang}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics?t=${ Date.now() }`,
-        downloadURL:`https://${props.domain}/${lang}/download/f1-calendar${form.p1 ? '_p1' : ''}${form.p2 ? '_p2' : ''}${form.p3 ? '_p3' : ''}${form.quali ? '_q' : ''}${form.race ? '_gp' : ''}${form.virtual ? '_virtual' : ''}${form.alarm ? '_alarm' : ''}${form.alarm ? '-'+form.mins : ''}.ics` 
-      })
-    } else {
-*/
-		setState({
-			...form,
-			submitted: true,
-			webcalURL: `webcal://${props.domain}/download/f1-calendar${
-				form.p1 ? "_p1" : ""
-			}${form.p2 ? "_p2" : ""}${form.p3 ? "_p3" : ""}${
-				form.quali ? "_q" : ""
-			}${form.race ? "_gp" : ""}${form.virtual ? "_virtual" : ""}${
-				form.alarm ? "_alarm" : ""
-			}${form.alarm ? "-" + form.mins : ""}.ics`,
-			googleURL: `https://${props.domain}/download/f1-calendar${
-				form.p1 ? "_p1" : ""
-			}${form.p2 ? "_p2" : ""}${form.p3 ? "_p3" : ""}${
-				form.quali ? "_q" : ""
-			}${form.race ? "_gp" : ""}${form.virtual ? "_virtual" : ""}${
-				form.alarm ? "_alarm" : ""
-			}${form.alarm ? "-" + form.mins : ""}.ics?t=${Date.now()}`,
-			downloadURL: `https://${props.domain}/download/f1-calendar${
-				form.p1 ? "_p1" : ""
-			}${form.p2 ? "_p2" : ""}${form.p3 ? "_p3" : ""}${
-				form.quali ? "_q" : ""
-			}${form.race ? "_gp" : ""}${form.virtual ? "_virtual" : ""}${
-				form.alarm ? "_alarm" : ""
-			}${form.alarm ? "-" + form.mins : ""}.ics`
+		
+		
+		let calendarSuffix = "";
+		sessions.forEach(function (session, index) {
+			if(form[session]){
+				calendarSuffix += `_${sessionMap[session]}`;
+			}
 		});
-		//}
+		
+		if(form.alarm){
+			calendarSuffix += `-${form.mins}`;
+		}
+		
+		if(lang != "en"){
+			setState({
+				...form,
+				submitted: true,
+				webcalURL: `webcal://${props.domain}/${lang}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${props.domain}/${lang}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
+				downloadURL: `https://${props.domain}/${lang}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+			});
+		} else {
+			setState({
+				...form,
+				submitted: true,
+				webcalURL: `webcal://${props.domain}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${props.domain}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
+				downloadURL: `https://${props.domain}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+			});
+		}
 	};
 
 	return (
@@ -97,40 +99,37 @@ function Generate(props) {
 							{t("generate:download.title")}
 						</h3>
 
-						<Card id="download_option_ical">
-							<h4>{t("generate:download.webcalTitle")}</h4>
-							<p>{t("generate:download.webcalDescription")}</p>
+						<Card id="download_option_ical" className="mb-6">
+							<h4 className="uppercase mb-4">{t("generate:download.webcalTitle")}</h4>
+							<p className="mb-4">{t("generate:download.webcalDescription")}</p>
 
-							<p>
-								<a href={form.webcalURL} className="button">
-									{t("generate:download.webcalButton")}
-								</a>
-							</p>
+							<a href={form.webcalURL} className="btn">
+								{t("generate:download.webcalButton")}
+							</a>
 						</Card>
 
-						<Card id="download_option_google">
-							<h4>{t("generate:download.gcalTitle")}</h4>
-							<p>
+						<Card id="download_option_google" className="mb-6">
+							<h4 className="uppercase mb-4">{t("generate:download.gcalTitle")}</h4>
+							<p className="mb-4">
 								{t("generate:download.gcalDescription")} (
 								<a
 									href="https://support.google.com/calendar/answer/37100"
 									target="_blank"
+									className="text-green-100"
 								>
 									{t("generate:download.gcalDescriptionLink")}
 								</a>
 								):
 							</p>
-							<p className="copyable">{form.googleURL}</p>
+							<p className="copyable bg-black p-2">{form.googleURL}</p>
 						</Card>
 
 						<Card id="download_option">
-							<h4>{t("generate:download.icsTitle")}</h4>
-							<p>{t("generate:download.icsDescription")}</p>
-							<p>
-								<a href={form.downloadURL} className="button">
-									{t("generate:download.icsButton")}
-								</a>
-							</p>
+							<h4 className="uppercase mb-4">{t("generate:download.icsTitle")}</h4>
+							<p className="mb-4">{t("generate:download.icsDescription")}</p>
+							<a href={form.downloadURL} className="btn">
+								{t("generate:download.icsButton")}
+							</a>
 						</Card>
 					</>
 				) : (
@@ -140,121 +139,37 @@ function Generate(props) {
 							<p className="mb-4">{t("generate:form.description")}</p>
 
 							<form id="download_subscribe" onSubmit={handleOnSubmit}>
-								<fieldset>
-									<div className="mb-4">
-										<input
-											type="checkbox"
-											className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
-											name="p1"
-											id="p1"
-											defaultValue="on"
-											defaultChecked="checked"
-											onChange={(event) =>
-												setState({
-													...form,
-													p1: event.target.checked
-												})
-											}
-										/>
-										<label
-											htmlFor="p1"
-											className="inline-block align-middle text-base"
-										>
-											{t("generate:form.fp1")}
-										</label>
-									</div>
-
-									<div className="mb-4">
-										<input
-											type="checkbox"
-											className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
-											name="p2"
-											id="p2"
-											defaultValue="on"
-											defaultChecked="checked"
-											onChange={(event) =>
-												setState({
-													...form,
-													p2: event.target.checked
-												})
-											}
-										/>
-										<label
-											htmlFor="p2"
-											className="inline-block align-middle text-base"
-										>
-											{t("generate:form.fp2")}
-										</label>
-									</div>
-
-									<div className="mb-4">
-										<input
-											type="checkbox"
-											className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
-											name="p3"
-											id="p3"
-											defaultValue="on"
-											defaultChecked="checked"
-											onChange={(event) =>
-												setState({
-													...form,
-													p3: event.target.checked
-												})
-											}
-										/>
-										<label
-											htmlFor="p3"
-											className="inline-block align-middle text-base"
-										>
-											{t("generate:form.fp3")}
-										</label>
-									</div>
-
-									<div className="mb-4">
-										<input
-											type="checkbox"
-											className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
-											name="q"
-											id="q"
-											defaultValue="on"
-											defaultChecked="checked"
-											onChange={(event) =>
-												setState({
-													...form,
-													quali: event.target.checked
-												})
-											}
-										/>
-										<label
-											htmlFor="q"
-											className="inline-block align-middle text-base"
-										>
-											{t("generate:form.qualifying")}
-										</label>
-									</div>
-
-									<div className="mb-10">
-										<input
-											type="checkbox"
-											className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
-											name="gp"
-											id="gp"
-											defaultValue="on"
-											defaultChecked="checked"
-											onChange={(event) =>
-												setState({
-													...form,
-													race: event.target.checked
-												})
-											}
-										/>
-										<label
-											htmlFor="gp"
-											className="inline-block align-middle text-base"
-										>
-											{t("generate:form.grandPrix")}
-										</label>
-									</div>
+								<fieldset className="mb-6">
+									{sessions.map((item, index) => {
+										return (
+											<div className="mb-4">
+												<input
+													type="checkbox"
+													className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
+													name={item}
+													id={item}
+													defaultValue="on"
+													defaultChecked="checked"
+													onChange={(event) =>
+														setState({
+															...form,
+															item: event.target.checked
+														})
+													}
+												/>
+												<label
+													htmlFor={item}
+													className="inline-block align-middle text-base"
+												>
+													{t(`calendar:schedule.${item}`)}	
+												</label>
+											</div>
+										);
+										
+										
+										//{t("generate:form.fp2")}
+										
+									})}
 								</fieldset>
 
 								<fieldset id="set_alarms">
@@ -278,22 +193,26 @@ function Generate(props) {
 										>
 											{t("generate:form.reminder")}
 										</label>{" "}
-										<input
-											type="number"
-											className="mr-2 text-black text-center"
-											name="mins"
-											id="alarm-mins"
-											step="30"
-											min="0"
-											max="120"
-											defaultValue="30"
-											onChange={(event) =>
-												setState({
-													...form,
-													mins: event.target.value
-												})
-											}
-										/>
+										
+										<select
+										name="mins"
+										id="alarm-mins"
+										className="mx-2 text-gray-900 pl-3 pr-10 py-0 text-base
+										border-gray-300 focus:outline-none focus:ring-indigo-500
+										focus:border-indigo-500 sm:text-sm rounded-md"
+										onChange={(event) =>
+											setState({
+												...form,
+												mins: event.target.value
+											})
+										}>
+											<option value="0">0</option>
+											<option selected="selected" value="30">30</option>
+											<option value="60">60</option>
+											<option value="90">90</option>
+											<option value="120">120</option>
+										</select>
+										
 										<label
 											htmlFor="alarms-before"
 											className="inline-block align-middle text-base"
