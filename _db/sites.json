@@ -8,22 +8,22 @@
     {
       "name": "F1",
       "url": "https://f1calendar.com",
-      "siteKey": "f1cal"
+      "siteKey": "f1"
     },
     {
       "name": "F2",
       "url": "https://f2cal.com",
-      "siteKey": "f2cal"
+      "siteKey": "f2"
     },
     {
       "name": "F3",
       "url": "https://f3calendar.com",
-      "siteKey": "f3cal"
+      "siteKey": "f3"
     },
     {
       "name": "Formula E",
       "url": "https://formulaecal.com",
-      "siteKey": "formulaecal"
+      "siteKey": "fe"
     },
     {
       "name": "W Series",

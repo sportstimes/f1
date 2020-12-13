@@ -7,7 +7,7 @@ import Card from "components/Card/Card";
 function Years() {
 	const {t} = useTranslation();
 
-	const config = require(`../db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 	let availableYears = config.availableYears;
 

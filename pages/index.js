@@ -5,7 +5,7 @@ import {NextSeo} from "next-seo";
 import RaceSchema from "components/RaceSchema/RaceSchema";
 import useTranslation from "next-translate/useTranslation";
 import OptionsBar from "components/OptionsBar/OptionsBar";
-const year = require(`../db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NEXT_PUBLIC_CURRENT_YEAR}.json`);
+const year = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NEXT_PUBLIC_CURRENT_YEAR}.json`);
 
 const Index = (props) => {
 	const {t, lang} = useTranslation();

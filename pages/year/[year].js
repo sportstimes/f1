@@ -87,7 +87,7 @@ export const getStaticProps = async ({params}) => {
 	const year = params.year;
 
 	const data = await import(
-		`db/` + process.env.NEXT_PUBLIC_SITE_KEY + `/` + year + `.json`
+		`_db/` + process.env.NEXT_PUBLIC_SITE_KEY + `/` + year + `.json`
 	);
 
 	return {

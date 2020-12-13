@@ -8,7 +8,7 @@ import NextError from 'next/error'
 function Subscribe() {
 	const {t} = useTranslation();
 
-	const config = require(`../db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 	if(!config.supportsEmailReminders){
 		return <NextError statusCode={404} />
