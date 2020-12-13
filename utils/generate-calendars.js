@@ -2,12 +2,8 @@ const fs = require("fs");
 const ics = require("ics");
 const dayjs = require("dayjs");
 
-return;
-
 // Grab the calendar...
-let rawdata = fs.readFileSync(
-	`db/${process.env.SITE_KEY}/${process.env.CURRENT_YEAR}.json`
-);
+let rawdata = fs.readFileSync(`_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NEXT_PUBLIC_CURRENT_YEAR}.json`);
 let data = JSON.parse(rawdata);
 
 // Grab the current i18n config
@@ -100,8 +96,22 @@ for (permutation of optionPermutations) {
 	}
 }
 
+// Make the download folder...
+let downloadDir = `public/download`;
+if (!fs.existsSync(downloadDir)){
+	fs.mkdirSync(downloadDir);
+}
+
+
 // For each filename, create a ics file.
-for (language of i18n.allLanguages) {
+for (language of i18n.locales) {
+	// Create the folder in public...
+	let dir = `public/download/${language}`;
+	if (!fs.existsSync(dir)){
+		fs.mkdirSync(dir);
+	}
+	
+	
 	let i18nStrings = fs.readFileSync(`locales/${language}/calendar.json`);
 	let localizedStrings = JSON.parse(i18nStrings);
 
