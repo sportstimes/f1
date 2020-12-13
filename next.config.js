@@ -13,6 +13,14 @@ module.exports = (phase) => {
   const isStaging =
       phase === PHASE_PRODUCTION_BUILD && process.env.STAGING === '1'
 
+  // Move _public/:site_key to public
+  require('./utils/public-assets');
+
+  // Generate the ICS files at build time.
+  if (isProd || isStaging) {
+    require('./utils/generate-calendars');
+  }
+
   return withPWA(nextTranslate(withFonts({
     pwa: {
       disable: !isProd,
