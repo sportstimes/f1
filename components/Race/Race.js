@@ -123,7 +123,8 @@ class Race extends React.Component {
 		}
 
 		// Bold upcoming races
-		if (!dayjs(this.props.item.sessions.race).add(2, "hours").isBefore()) {
+		let lastEventSessionKey = Object.keys(this.props.item.sessions)[Object.keys(this.props.item.sessions).length-1];
+		if (!dayjs(this.props.item.sessions[lastEventSessionKey]).add(2, "hours").isBefore()) {
 			titleRowClasses += "font-semibold ";
 		}
 
@@ -187,16 +188,20 @@ class Race extends React.Component {
 								)}
 						</td>
 						<td className="w-1/6">
-							{dayjs(this.props.item.sessions.race)
-								.tz(this.props.timezone)
-								.format("D MMM")}
+							{ this.props.item.sessions[config.featuredSessions[0]] &&
+								dayjs(this.props.item.sessions[config.featuredSessions[0]])
+									.tz(this.props.timezone)
+									.format("D MMM")
+							}
 						</td>
 						<td className="w-1/6">
-							{dayjs(this.props.item.sessions.race)
+							{ this.props.item.sessions[config.featuredSessions[0]] &&
+								dayjs(this.props.item.sessions[config.featuredSessions[0]])
 								.tz(this.props.timezone)
 								.format(
 									this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
-								)}
+								)
+							}
 						</td>
 						<td className="text-right pr-4">
 							{badgeColumnLayout(this.props)}

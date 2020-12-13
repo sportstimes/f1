@@ -1,7 +1,15 @@
 {
-  "siteKey": "f2cal",
+  "siteKey": "f2",
+  "availableYears": [2021],
   "sessions": ["practice", "qualifying", "feature", "sprint"],
   "featuredSessions": ["feature", "sprint"],
   "collapsedSessions": ["practice", "qualifying"],
-  "supportsEmailReminders": false
+  "sessionMap": {
+    "practice":"p",
+    "qualifying":"q",
+    "feature":"feature",
+    "sprint":"spring"
+  },
+  "supportsEmailReminders": false,
+  "comingSoon": true
 }

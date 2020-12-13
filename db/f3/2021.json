@@ -1,131 +1,139 @@
 {
   "races": [
     {
-      "name": "Austrian Grand Prix",
-      "location": "Spielberg",
-      "latitude": 47.2225,
-      "longitude": 14.7607,
-      "tbc": false,
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "tbc": true,
       "round": 1,
-      "slug": "austrian-grand-prix",
-      "localeKey": "austrian-grand-prix",
+      "slug": "bahrain-grand-prix",
+      "localeKey": "bahrain-grand-prix",
+      "affiliate": "https://motorsporttickets.com/en-gb/f1/bahrain/tickets?af=165390",
       "sessions": {
-        "practice": "2020-07-04T10:00:00Z",
-        "qualifying": "2020-07-04T13:00:00Z",
-        "race1": "2020-07-05T13:10:00Z",
-        "race2": "2020-07-05T13:10:00Z"
+        "p": "2021-03-26T11:00:00Z",
+        "q": "2021-03-26T15:00:00Z",
+        "sprint": "2021-03-27T11:00:00Z",
+        "feature": "2021-03-28T14:00:00Z"
       }
     },
     {
-      "name": "Steiermark (Austrian) Grand Prix",
-      "location": "Spielberg",
-      "latitude": 47.2225,
-      "longitude": 14.7607,
-      "tbc": false,
+      "name": "Monaco",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "tbc": true,
       "round": 2,
-      "slug": "steiermark-grand-prix",
-      "localeKey": "steiermark-grand-prix",
+      "slug": "monaco-grand-prix",
+      "localeKey": "monaco-grand-prix",
+      "affiliate": "https://motorsporttickets.com/en-gb/f1/monaco/tickets?af=165390",
       "sessions": {
-        "practice": "2020-07-04T10:00:00Z",
-        "qualifying": "2020-07-04T13:00:00Z",
-        "race1": "2020-07-05T13:10:00Z",
-        "race2": "2020-07-05T13:10:00Z"
+        "p": "2021-05-21T09:00:00Z",
+        "q": "2021-05-21T13:00:00Z",
+        "sprint": "2021-05-22T10:00:00Z",
+        "feature": "2021-05-23T13:00:00Z"
       }
     },
     {
-      "name": "Hungaria Grand Prix",
-      "location": "Budapest",
-      "latitude": 47.583,
-      "longitude": 19.2526,
-      "tbc": false,
+      "name": "Azerbaijan",
+      "location": "Baku",
+      "latitude": 40.3699,
+      "longitude": 49.8433,
+      "tbc": true,
       "round": 3,
-      "slug": "hungary-grand-prix",
-      "localeKey": "hungary-grand-prix",
+      "slug": "azerbaijan-grand-prix",
+      "localeKey": "azerbaijan-grand-prix",
+      "affiliate": "https://motorsporttickets.com/en-gb/f1/azerbaijan/tickets?af=165390",
       "sessions": {
-        "practice": "2020-07-04T10:00:00Z",
-        "qualifying": "2020-07-04T13:00:00Z",
-        "race1": "2020-07-05T13:10:00Z",
-        "race2": "2020-07-05T13:10:00Z"
+        "p": "2021-06-04T09:00:00Z",
+        "q": "2021-06-04T13:00:00Z",
+        "sprint": "2021-06-05T10:00:00Z",
+        "feature": "2021-06-06T13:00:00Z"
       }
     },
     {
-      "name": "British Grand Prix",
+      "name": "British",
       "location": "Silverstone",
       "latitude": 52.0706,
       "longitude": -1.0174,
-      "tbc": false,
+      "tbc": true,
       "round": 4,
       "slug": "british-grand-prix",
       "localeKey": "british-grand-prix",
+      "affiliate": "https://motorsporttickets.com/en-gb/f1/britain/tickets?af=165390",
       "sessions": {
-        "practice": "2020-07-04T10:00:00Z",
-        "qualifying": "2020-07-04T13:00:00Z",
-        "race1": "2020-07-05T13:10:00Z",
-        "race2": "2020-07-05T13:10:00Z"
+        "p": "2021-07-16T09:00:00Z",
+        "q": "2021-07-16T13:00:00Z",
+        "sprint": "2021-07-17T10:00:00Z",
+        "feature": "2021-07-18T13:00:00Z"
       }
     },
     {
-      "name": "70th Anniversary (British) Grand Prix",
-      "location": "Silverstone",
-      "latitude": 52.0706,
-      "longitude": -1.0174,
-      "tbc": false,
-      "round": 5,
-      "slug": "anniversary-british-grand-prix",
-      "localeKey": "anniversary-british-grand-prix",
-      "sessions": {
-        "practice": "2020-07-04T10:00:00Z",
-        "qualifying": "2020-07-04T13:00:00Z",
-        "race1": "2020-07-05T13:10:00Z",
-        "race2": "2020-07-05T13:10:00Z"
-      }
-    },
-    {
-      "name": "Spanish Grand Prix",
-      "location": "Barcelona",
-      "latitude": 41.5638,
-      "longitude": 2.2585,
-      "tbc": false,
-      "round": 6,
-      "slug": "spanish-grand-prix",
-      "localeKey": "spanish-grand-prix",
-      "sessions": {
-        "practice": "2020-07-04T10:00:00Z",
-        "qualifying": "2020-07-04T13:00:00Z",
-        "race1": "2020-07-05T13:10:00Z",
-        "race2": "2020-07-05T13:10:00Z"
-      }
-    },
-    {
-      "name": "Belgian Grand Prix",
-      "location": "Spa-Francorchamps",
-      "latitude": 50.444,
-      "longitude": 5.9687,
-      "tbc": false,
-      "round": 7,
-      "slug": "belgian-grand-prix",
-      "localeKey": "belgian-grand-prix",
-      "sessions": {
-        "practice": "2020-07-04T10:00:00Z",
-        "qualifying": "2020-07-04T13:00:00Z",
-        "race1": "2020-07-05T13:10:00Z",
-        "race2": "2020-07-05T13:10:00Z"
-      }
-    },
-    {
-      "name": "Italian Grand Prix",
+      "name": "Italian",
       "location": "Monza",
       "latitude": 45.6169,
       "longitude": 9.2825,
-      "tbc": false,
-      "round": 8,
+      "tbc": true,
+      "round": 5,
       "slug": "italian-grand-prix",
       "localeKey": "italian-grand-prix",
+      "affiliate": "https://motorsporttickets.com/en-gb/f1/italy/tickets?af=165390",
       "sessions": {
-        "practice": "2020-07-04T10:00:00Z",
-        "qualifying": "2020-07-04T13:00:00Z",
-        "race1": "2020-07-05T13:10:00Z",
-        "race2": "2020-07-05T13:10:00Z"
+        "p": "2021-09-10T09:00:00Z",
+        "q": "2021-09-10T13:00:00Z",
+        "sprint": "2021-09-11T10:00:00Z",
+        "feature": "2021-09-12T13:00:00Z"
+      }
+    },
+    {
+      "name": "Russian",
+      "location": "Sochi",
+      "latitude": 43.6203,
+      "longitude": 39.712,
+      "tbc": true,
+      "round": 6,
+      "slug": "russian-grand-prix",
+      "localeKey": "russian-grand-prix",
+      "affiliate": "https://motorsporttickets.com/en-gb/f1/russia/tickets?af=165390",
+      "sessions": {
+        "p": "2021-09-24T08:00:00Z",
+        "q": "2021-09-24T12:00:00Z",
+        "sprint": "2021-09-25T09:00:00Z",
+        "feature": "2021-09-26T12:00:00Z"
+      }
+    },
+    {
+      "name": "Saudi Arabian",
+      "location": "Jeddah",
+      "latitude": 21.485811,
+      "longitude": 39.192505,
+      "tbc": true,
+      "round": 7,
+      "slug": "saudi-arabia-grand-prix",
+      "localeKey": "saudi-arabia-grand-prix",
+      "affiliate": "",
+      "sessions": {
+        "p": "2021-11-26T09:00:00Z",
+        "q": "2021-11-26T13:00:00Z",
+        "sprint": "2021-11-27T10:00:00Z",
+        "feature": "2021-11-28T13:00:00Z"
+      }
+    },
+    {
+      "name": "Abu Dhabi",
+      "location": "Yas Marina",
+      "latitude": 24.4821,
+      "longitude": 54.3482,
+      "tbc": true,
+      "round": 8,
+      "slug": "abu-dhabi-grand-prix",
+      "localeKey": "abu-dhabi-grand-prix",
+      "affiliate": "https://motorsporttickets.com/en-gb/f1/abu-dhabi/tickets?af=165390",
+      "sessions": {
+        "p": "2021-12-03T09:00:00Z",
+        "q": "2021-12-03T13:00:00Z",
+        "sprint": "2021-12-04T10:00:00Z",
+        "feature": "2021-12-05T13:00:00Z"
       }
     }
   ]

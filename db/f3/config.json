@@ -1,7 +1,15 @@
 {
-  "siteKey": "f3cal",
-  "sessions": [ "practice", "qualifying", "race1", "race2" ],
-  "featuredSessions": ["race1", "race2"],
+  "siteKey": "f3",
+  "availableYears": [2021],
+  "sessions": [ "practice", "qualifying", "sprint", "feature" ],
+  "featuredSessions": ["sprint", "feature"],
   "collapsedSessions": ["practice", "qualifying"],
-  "supportsEmailReminders": true
+  "sessionMap": {
+    "practice":"p",
+    "qualifying":"q",
+    "sprint":"sprint",
+    "feature":"feature"
+  },
+  "supportsEmailReminders": true,
+  "comingSoon": true
 }

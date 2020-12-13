@@ -1,5 +1,5 @@
 {
-	"siteKey": "f1cal",
+	"siteKey": "f1",
 	"availableYears": [2018, 2019, 2020, 2021],
 	"sessions": ["fp1", "fp2", "fp3", "qualifying", "gp"],
 	"featuredSessions": ["gp"],
