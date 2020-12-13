@@ -3,9 +3,16 @@ import {NextSeo} from "next-seo";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import Card from "components/Card/Card";
+import NextError from 'next/error'
 
 function Subscribe() {
 	const {t} = useTranslation();
+
+	const config = require(`../db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+
+	if(!config.supportsEmailReminders){
+		return <NextError statusCode={404} />
+	}
 
 	return (
 		<>
