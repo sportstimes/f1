@@ -14,11 +14,11 @@ module.exports = (phase) => {
       phase === PHASE_PRODUCTION_BUILD && process.env.STAGING === '1'
 
   // Move _public/:site_key to public
-  require('./utils/public-assets');
+  require('./build/public-assets');
 
   // Generate the ICS files at build time.
   if (isProd || isStaging) {
-    require('./utils/generate-calendars');
+    require('./build/generate-calendars');
   }
 
   return withPWA(nextTranslate(withFonts({
@@ -28,12 +28,3 @@ module.exports = (phase) => {
     }
   })))
 }
- 
-// webpack(config, {isServer}) {
-//   // Generate the ICS files at build time.
-//   if (isServer && (isProd || isStaging)) {
-//     require('./utils/generate-calendars');
-//   }
-//   config.node = { net: 'empty' }
-//   return config;
-// },
