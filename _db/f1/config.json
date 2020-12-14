@@ -1,5 +1,6 @@
 {
 	"siteKey": "f1",
+	"url": "f1calendar.com",
 	"availableYears": [2018, 2019, 2020, 2021],
 	"sessions": ["fp1", "fp2", "fp3", "qualifying", "gp"],
 	"featuredSessions": ["gp"],
