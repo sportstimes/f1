@@ -6,7 +6,7 @@ import Card from "components/Card/Card";
 
 function Generate(props) {
 	const {t, lang} = useTranslation();
-	const currentYear = process.env.CURRENT_YEAR;
+	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
 	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
 		year: currentYear

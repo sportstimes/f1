@@ -15,7 +15,7 @@ const Timezone = (props) => {
   const title = t('common:title')
   const subtitle = t('common:subtitle')
   
-  const currentYear = process.env.CURRENT_YEAR;
+  const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
   
   const metaDescription = t('common:meta.description', {year: currentYear})
   const metaKeywords = t('common:meta.keywords', {year: currentYear})
