@@ -10,6 +10,5 @@
     "qualifying":"q",
     "race":"race"
   },
-  "supportsEmailReminders": false,
-  "comingSoon": true
+  "supportsEmailReminders": false
 }

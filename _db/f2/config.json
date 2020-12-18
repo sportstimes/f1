@@ -10,6 +10,5 @@
     "feature":"feature",
     "sprint":"sprint"
   },
-  "supportsEmailReminders": false,
-  "comingSoon": true
+  "supportsEmailReminders": false
 }
