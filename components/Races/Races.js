@@ -33,14 +33,14 @@ const Races = (props) => {
 				{config.featuredSessions.length === 1 ? (
 					<thead className="hidden">
 						<tr>
-							<th scope="col" className="w-1/8"></th>
-							<th scope="col" className="w-1/2">
+							<th scope="col" className="w-6"></th>
+							<th scope="col" className="w-4/12">
 								{t("calendar:event")} {props.year}
 							</th>
-							<th scope="col" className="w-1/6">
+							<th scope="col" className="w-2/12">
 								{t("calendar:date")}
 							</th>
-							<th scope="col" className="w-1/6">
+							<th scope="col" className="w-3/12">
 								{t("calendar:time")}
 							</th>
 						</tr>

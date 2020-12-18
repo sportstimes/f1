@@ -52,14 +52,6 @@ class Race extends React.Component {
 							</span>
 
 							<a
-							href={props.item.affiliate}
-							className="bg-green-600 rounded px-1 pt-1 pb-1 inline md:hidden md:inline ml-2 hover:bg-green-700"
-							title={t("calendar:badges.tickets")}
-							>
-								<svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="ticket" width="20" height="18" className="inline" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><g class="fa-group"><path class="fa-secondary" fill="#ffffff" d="M576 208v-96a48 48 0 0 0-48-48H48a48 48 0 0 0-48 48v96a48 48 0 0 1 0 96v96a48 48 0 0 0 48 48h480a48 48 0 0 0 48-48v-96a48 48 0 0 1 0-96zM400 400a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm0-64a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm0-64a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm0-64a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm0-64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z" opacity="0.6"></path><path class="fa-primary" fill="#000000" d="M400 304a16 16 0 1 0 16 16 16 16 0 0 0-16-16zm0 64a16 16 0 1 0 16 16 16 16 0 0 0-16-16zm0-224a16 16 0 1 0-16-16 16 16 0 0 0 16 16zm0 96a16 16 0 1 0 16 16 16 16 0 0 0-16-16zm0-64a16 16 0 1 0 16 16 16 16 0 0 0-16-16z"></path></g></svg>
-							</a>
-
-							<a
 								href={props.item.affiliate}
 								className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline ml-2 hover:bg-green-700"
 								title={t("calendar:badges.tickets")}
@@ -150,7 +142,7 @@ class Race extends React.Component {
 						className={`cursor-pointer ${titleRowClasses}`}
 						onClick={() => this.handleRowClick()}
 					>
-						<td className="w-6 md:w-8 py-5 pl-2 md:pl-3">
+						<td className="py-5 pl-2 md:pl-3 w-6">
 							{this.state.collapsed ? (
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +176,7 @@ class Race extends React.Component {
 								}`}
 							/>
 						</td>
-						<td className="w-1/2">
+						<td className="w-5/12">
 							{t(`calendar:races.${this.props.item.localeKey}`) !=
 							localeKey
 								? t(`calendar:races.${this.props.item.localeKey}`)
@@ -197,14 +189,14 @@ class Race extends React.Component {
 									</span>
 								)}
 						</td>
-						<td className="w-1/6">
+						<td className="w-2/12">
 							{ this.props.item.sessions[config.featuredSessions[0]] &&
 								dayjs(this.props.item.sessions[config.featuredSessions[0]])
 									.tz(this.props.timezone)
 									.format("D MMM")
 							}
 						</td>
-						<td className="w-1/6">
+						<td className="w-2/12">
 							{ this.props.item.sessions[config.featuredSessions[0]] &&
 								dayjs(this.props.item.sessions[config.featuredSessions[0]])
 								.tz(this.props.timezone)
@@ -213,7 +205,7 @@ class Race extends React.Component {
 								)
 							}
 						</td>
-						<td className="text-right pr-4">
+						<td className="text-right w-3/12 pr-2">
 							{badgeColumnLayout(this.props)}
 						</td>
 					</tr>
