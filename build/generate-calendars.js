@@ -67,6 +67,10 @@ for (permutation of optionPermutations) {
 
 	// If the filename contains alarm then add each of the alarm permutations.
 	if (filename != "alarm") {
+		// Add the filenames pre-alarm options
+		fileNames.push(filename);
+		localizedFilenames.push(filename);
+		
 		if (filename.includes("alarm")) {
 			for (alarmOption of alarmOptions) {
 				fileNames.push(filename + "-" + alarmOption);
