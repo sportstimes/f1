@@ -74,9 +74,9 @@ function Generate(props) {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${props.domain}/${lang}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${props.domain}/${lang}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${props.domain}/${lang}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				webcalURL: `webcal://${props.domain}/download//${lang}${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${props.domain}/download/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
+				downloadURL: `https://${props.domain}/download/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		} else {
 			setState({
