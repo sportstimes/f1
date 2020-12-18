@@ -7,7 +7,19 @@ import Card from "components/Card/Card";
 function Years() {
 	const {t} = useTranslation();
 
+	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
+
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+	
+	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+		year: currentYear
+	});
+	const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+		year: currentYear
+	});
+	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+		year: currentYear
+	});
 
 	let availableYears = config.availableYears;
 
@@ -25,15 +37,9 @@ function Years() {
 	return (
 		<>
 			<NextSeo
-				title={`F1 Calendar Archive  - Formula One Race Times and Dates`}
-				description={`Formula One Calendar Archive with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe`}
-				canonical="https://www.f1calendar.com/"
-				twitter={{
-					handle: "@f1cal",
-					site: "@f1cal",
-					cardType: "summary_large_image"
-				}}
+				title={title}
+				description={description}
+				keywords={keywords}
 			/>
 			<Layout>
 				<h3 className="text-xl mb-4">{t("years:title")}</h3>

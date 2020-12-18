@@ -1,22 +1,29 @@
 import FullWidthLayout from "components/Layout/FullWidthLayout";
 import Races from "components/Races/Races";
 import {NextSeo} from "next-seo";
+import useTranslation from "next-translate/useTranslation";
 import OptionsBar from "components/OptionsBar/OptionsBar";
 
 const Year = (props) => {
+	const {t} = useTranslation();
+	
+	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+		year: props.year
+	});
+	const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+		year: props.year
+	});
+	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+		year: props.year
+	});
+	
 	if (!props.races)
 		return (
 			<>
 				<NextSeo
-					title={`F1 Calendar  - Formula One Race Times and Dates`}
-					description={`Formula One Calendar for ${props.year} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-					keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${props.year}, London, Europe`}
-					canonical="https://www.f1calendar.com/"
-					twitter={{
-						handle: "@f1cal",
-						site: "@f1cal",
-						cardType: "summary_large_image"
-					}}
+					title={title}
+					description={description}
+					keywords={keywords}
 				/>
 				<Layout year={props.year}>
 					<section>
@@ -43,15 +50,9 @@ const Year = (props) => {
 	return (
 		<>
 			<NextSeo
-				title={`F1 Calendar ${props.year}  - Formula One Race Times and Dates`}
-				description={`Formula One Calendar for ${props.year} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, ${props.year}, London, Europe`}
-				canonical="https://www.f1calendar.com/"
-				twitter={{
-					handle: "@f1cal",
-					site: "@f1cal",
-					cardType: "summary_large_image"
-				}}
+				title={title}
+				description={description}
+				keywords={keywords}
 			/>
 			<FullWidthLayout showOptions="true" year={props.year}>
 				<div className="max-w-screen-lg mx-auto font-sans">
