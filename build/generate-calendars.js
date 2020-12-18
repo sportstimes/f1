@@ -59,6 +59,7 @@ for (let length = 1; length < calendarOptions.length; length++) {
 let fileNames = [];
 let localizedFilenames = [];
 
+const legacyAlarmOptions = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120];
 const alarmOptions = [0, 30, 60, 90, 120];
 
 // Generate Filenames
@@ -72,8 +73,19 @@ for (permutation of optionPermutations) {
 		localizedFilenames.push(filename);
 		
 		if (filename.includes("alarm")) {
+			
+			// If it's F1 Calendar generate all the legacy options....
+			if(siteKey == "f1"){
+				for (alarmOption of legacyAlarmOptions) {
+					fileNames.push(filename + "-" + alarmOption);
+				}
+			}
+			
 			for (alarmOption of alarmOptions) {
-				fileNames.push(filename + "-" + alarmOption);
+				// If the site isn't F1 Calendar then generate the usual alarm options.
+				if(siteKey != "f1"){
+					fileNames.push(filename + "-" + alarmOption);
+				}
 				localizedFilenames.push(filename + "-" + alarmOption);
 			}
 		}
