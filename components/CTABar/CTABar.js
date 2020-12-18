@@ -10,7 +10,7 @@ class CTABar extends React.Component {
 
 		if (config.supportsEmailReminders) {
 			return (
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-2">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4">
 					<div className="h-12">
 						<Link href="/generate">
 							<a className="bg-green-900 rounded-md shadow hover:bg-green-800 hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative">
@@ -81,7 +81,7 @@ class CTABar extends React.Component {
 			);
 		} else {
 			return (
-				<div className="grid grid-cols-1 pt-2">
+				<div className="grid grid-cols-1 pt-4">
 					<div className="h-12">
 						<Link href="/generate">
 							<a className="bg-green-900 rounded-md shadow hover:bg-green-800 hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative">
