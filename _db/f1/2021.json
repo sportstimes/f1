@@ -243,7 +243,7 @@
 			"round": 14,
 			"slug": "dutch-grand-prix",
 			"localeKey": "dutch-grand-prix",
-			"affiliate": "",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/dutch/tickets?af=165390",
 			"sessions": {
 				"fp1": "2021-09-03T09:00:00Z",
 				"fp2": "2021-09-03T13:00:00Z",
@@ -387,7 +387,7 @@
 			"round": 22,
 			"slug": "saudi-arabia-grand-prix",
 			"localeKey": "saudi-arabia-grand-prix",
-			"affiliate": "",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/saudi-arabia/tickets?af=165390",
 			"sessions": {
 				"fp1": "2021-11-26T09:00:00Z",
 				"fp2": "2021-11-26T13:00:00Z",
