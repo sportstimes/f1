@@ -67,6 +67,10 @@ const Layout = (props) => {
 				{ process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS &&
 					<script dangerouslySetInnerHTML={setGoogleTags()} />
 				}
+				
+				{ process.env.NEXT_PUBLIC_PLAUSIBLE_KEY &&
+					<script async defer data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_KEY} src="https://plausible.io/js/plausible.js"></script>
+				}
 			</Head>
 
 			<noscript>
