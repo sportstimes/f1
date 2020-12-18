@@ -52,7 +52,7 @@ function getPermutations(array, size) {
 // Figure out all the permutations of the calendar...
 let optionPermutations = [];
 
-for (let length = 1; length < calendarOptions.length; length++) {
+for (let length = 1; length < calendarOptions.length+1; length++) {
 	optionPermutations.push(...getPermutations(calendarOptions, length));
 }
 
