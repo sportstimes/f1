@@ -16,7 +16,7 @@ const FullWidthLayout = (props) => {
     		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     		
-    		  ga('create', 'UA-91583-25', 'auto');
+			  ga('create', "${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}", 'auto');
     		  ga('require', 'displayfeatures');
     		  ga('send', 'pageview');`
 		};
@@ -59,11 +59,14 @@ const FullWidthLayout = (props) => {
 				/>
 				<meta name="msapplication-TileColor" content="#000000" />
 				<meta name="theme-color" content="#ffffff" />
-				<meta
-					name="google-site-verification"
-					content="tMVNkyoK26Mb76mN4Fka9NrVjh214rH-2Usv7ktKfSU"
-				/>
-				<script dangerouslySetInnerHTML={setGoogleTags()} />
+				
+				{ process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION &&
+					<meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION} />
+				}
+				
+				{ process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS &&
+					<script dangerouslySetInnerHTML={setGoogleTags()} />
+				}
 			</Head>
 
 			<noscript>

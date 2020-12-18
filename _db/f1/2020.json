@@ -41,8 +41,8 @@
       "longitude": 19.2526,
       "tbc": false,
       "round": 3,
-      "slug": "hungary-grand-prix",
-      "localeKey": "hungary-grand-prix",
+      "slug": "hungarian-grand-prix",
+      "localeKey": "hungarian-grand-prix",
       "sessions": {
         "fp1": "2020-07-17T09:00:00Z",
         "fp2": "2020-07-17T13:00:00Z",

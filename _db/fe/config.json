@@ -1,7 +1,15 @@
 {
-  "siteKey": "formulaecal",
+  "siteKey": "fe",
   "sessions": [ "practice1", "practice2", "practice3", "qualifying", "race" ],
   "featuredSessions": ["race"],
   "collapsedSessions": ["practice1", "practice2", "practice3", "qualifying"],
-  "supportsEmailReminders": false
+  "sessionMap": {
+    "practice1":"p1",
+    "practice2":"p2,
+    "practice3":"p3"
+    "qualifying":"qualifying",
+    "race":"race"
+  },
+  "supportsEmailReminders": false,
+  "comingSoon": true
 }

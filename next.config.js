@@ -25,6 +25,44 @@ module.exports = (phase) => {
     pwa: {
       disable: !isProd,
       dest: "public"
+    },
+    redirects: async function redirects() {
+      if(process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"){
+        return [
+            {
+              source: "/generate",
+              destination: "/maintenance",
+              permanent: false,
+            },
+            {
+              source: "/timezones",
+              destination: "/maintenance",
+              permanent: false,
+            },
+            {
+              source: "/timezone/:slug*",
+              destination: "/maintenance",
+              permanent: false,
+            },
+            {
+              source: "/years",
+              destination: "/maintenance",
+              permanent: false,
+            },
+            {
+              source: "/year/:slug*",
+              destination: "/maintenance",
+              permanent: false,
+            },
+            {
+              source: "/subscribe",
+              destination: "/maintenance",
+              permanent: false,
+            },
+        ]
+      } else {
+        return [];
+      }
     }
   })))
 }

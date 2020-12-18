@@ -12,6 +12,12 @@ export const UserContextProvider = ({children}) => {
 	const [timeFormat, setTimeFormat] = useState(24);
 
 	useEffect(() => {
+		const {pathname} = Router
+		if(pathname == '/' && process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"){
+			Router.push('/maintenance')
+			return
+		}  
+		
 		const storedTimezone = localStorage.getItem("timezone");
 
 		if (storedTimezone) {

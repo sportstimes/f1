@@ -9,7 +9,7 @@ import useTranslation from "next-translate/useTranslation";
 function MyApp({Component, pageProps}) {
 	const {t, lang} = useTranslation();
 
-	const currentYear = process.env.CURRENT_YEAR;
+	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
 	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:title`);
 	const description = t(
