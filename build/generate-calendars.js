@@ -2,8 +2,8 @@ const fs = require("fs");
 const ics = require("ics");
 const dayjs = require("dayjs");
 
-const siteKey = ${process.env.NEXT_PUBLIC_SITE_KEY};
-const year = ${process.env.NEXT_PUBLIC_CURRENT_YEAR};
+const siteKey = process.env.NEXT_PUBLIC_SITE_KEY;
+const year = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
 // const siteKey = "f1";
 // const year = "2021";
