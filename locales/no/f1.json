@@ -1,4 +1,10 @@
 {
-  "title": "F1 Calendar",
+  "title": "F1 kalender",
+  "subtitle": "Race, kvalifisering & treninger",
+  "seo": {
+    "title": "F1 kalender {{year}} -Race, kvalifisering & treninger",
+    "description": "Formel 1 kalender for {{year}}-sesongen med alle F1 grand prix racene, treningene &amp; kvalifiseringene. Lag påminnelser. Alle verdens tidssoner. Last ned eller abonner.",
+    "keywords": "F1, formel 1, race tider, race, påminnelser, varslinger, grands prix, grand prix, kalender, datoer, start-tidspunkt, kvalifisering, trening, London, Europa, {{year}}"
+  },
   "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
 }

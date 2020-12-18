@@ -8,11 +8,18 @@ import useTranslation from "next-translate/useTranslation";
 
 function Timezones() {
   const {t, lang} = useTranslation();
-  const title = t("common:title");
-  const subtitle = t("common:subtitle");
-  const currentYear = "2020";
-  const metaDescription = t("common:meta.description", {year: currentYear});
-  const metaKeywords = t("common:meta.keywords", {year: currentYear});
+  
+  const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
+
+  const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+    year: currentYear
+  });
+  const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+    year: currentYear
+  });
+  const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+    year: currentYear
+  });
 
   // Picker Items
   const timezoneItems = [];
@@ -33,9 +40,9 @@ function Timezones() {
   return (
     <>
       <NextSeo
-        title={`${title} ${currentYear} - ${subtitle}`}
-        description={metaDescription}
-        keywords={metaKeywords}
+        title={title}
+        description={description}
+        keywords={keywords}
       />
       <Layout>
         <h3 className="text-xl mb-4">{t("timezones:title")}</h3>

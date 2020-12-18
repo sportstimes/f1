@@ -1,10 +1,4 @@
 {
-	"title": "Kalendari i F1",
-	"subtitle": "Garat, Kualifikimet & Sesionet e Praktikës",
-	"meta": {
-		"description": "Kalendari i Formula Një për sezonën {{year}} me të gjitha çmimet e mëdha të garave të F1, sesionet e praktikës &amp; kualifikimeve. Mundësohet vendosja e lajmërimeve. Përfshihen të gjitha zonat kohore. Mund ta shkarkosh ose të abonohesh.",
-		"keywords": "F1, formula nje, orari i garave, garat, perkujtime, lajmerime, cmimet e medha, cmimi i madh, kalendari, datat, orari i fillimit, kualifikimet, praktika, Londer, Europe, {{year}}"
-	},
 	"options": {
 		"calendar": "Shtoni oraret e këtyre garave në kalendarin tuaj",
 		"email": "Prano përkujtime përmes email",

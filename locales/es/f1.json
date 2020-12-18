@@ -1,4 +1,10 @@
 {
   "title": "F1 Calendar",
+  "subtitle": "Carreras, sesiones de Práctica y Clasificación",
+  "seo": {
+    "title": "F1 Calendar {{year}} - Carreras, sesiones de Práctica y Clasificación",
+    "description": "Calendario de la temporada {{year}} de la Fórmula 1 con todos los Grandes Premios, sesiones de práctica &amp; clasificación. Opción para configurar recordatorios. Todas las zonas horarias. Descarga o subscribe.",
+    "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+  },
   "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
 }

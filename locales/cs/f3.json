@@ -1,4 +1,10 @@
 {
-  "title": "F3 Calendar",
-  "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+  "title": "F3 Kalendář",
+  "subtitle": "Závody, Kvalifikace & Tréninky",
+  "seo": {
+    "title": "F3 Kalendář {{year}} - Závody, Kvalifikace & Tréninky",
+    "description": "Kalendář Formule 3 pro sezónu {{year}} se všemi Velkými cenami Formule 3, tréninky &amp; Kvalifikacemi. Funkce připomenutí. Všechna časová pásma. Stáhněte si nebo odebírejte.",
+    "keywords": "F3, formule 3, časy závodů, závody, připomínky, upozornění, velké ceny, velká cena, kalendář, termíny, časy startů, kvalifikace, trénink, Londýn, Evropa, {{year}}"
+  },
+  "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
 }

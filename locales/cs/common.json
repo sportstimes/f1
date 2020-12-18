@@ -1,10 +1,4 @@
 {
-	"title": "F1 Kalendář",
-	"subtitle": "Závody, Kvalifikace & Tréninky",
-	"meta": {
-		"description": "Kalendář Formule 1 pro sezónu {{year}} se všemi Velkými cenami Formule 1, tréninky &amp; Kvalifikacemi. Funkce připomenutí. Všechna časová pásma. Stáhněte si nebo odebírejte.",
-		"keywords": "F1, formule 1, časy závodů, závody, připomínky, upozornění, velké ceny, velká cena, kalendář, termíny, časy startů, kvalifikace, trénink, Londýn, Evropa, {{year}}"
-	},
 	"options": {
 		"calendar": "Přidejte si termíny a časy závodů do svého kalendáře.",
 		"email": "Dostávejte připomínky na email",

@@ -10,7 +10,8 @@ class Header extends React.Component {
 	render() {
 		const {t, lang} = this.props.i18n;
 		const title = t(process.env.NEXT_PUBLIC_SITE_KEY + `:title`);
-
+		const subtitle = t(process.env.NEXT_PUBLIC_SITE_KEY + `:subtitle`);
+		
 		const {languageNames} = i18nConfig;
 
 		return (
@@ -51,7 +52,7 @@ class Header extends React.Component {
 											name={title}
 											className="text-light-green hover:text-light-green"
 										>
-											{t("common:subtitle")}
+											{subtitle}
 										</a>
 									</Link>
 								</h2>

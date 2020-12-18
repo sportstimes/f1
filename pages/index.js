@@ -15,12 +15,9 @@ const Index = (props) => {
 	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
 		year: currentYear
 	});
-	const description = t(
-		`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`,
-		{
-			year: currentYear
-		}
-	);
+	const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+		year: currentYear
+	});
 	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
 		year: currentYear
 	});

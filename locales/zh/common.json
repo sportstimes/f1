@@ -1,10 +1,4 @@
 {
-	"title": "F1赛程",
-	"subtitle": "正赛，排位赛和练习赛",
-	"meta": {
-		"description": "Formula One Calendar for {{year}} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-		"keywords": "F1, 一级方程式, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
-	},
 	"options": {
 		"calendar": "在你的日历App中添加赛程信息",
 		"email": "接受邮件提醒",

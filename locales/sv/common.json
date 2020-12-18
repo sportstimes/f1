@@ -1,10 +1,4 @@
 {
-	"title": "F1 Kalender",
-	"subtitle": "Race, Kval & Träningar",
-	"meta": {
-		"description": "Formel 1 kalender för {{year}} säsongen med alla F1 race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller .",
-		"keywords": "F1, formel 1, race tider, race, påminnelse, varningar, grands prix, grand prix, kalender, datum, start tider, kval, träning, London, Europa, {{year}}"
-	},
 	"options": {
 		"calendar": "Lägg till race tider och datum till din kalender",
 		"email": "Få e-postpåminnelser",

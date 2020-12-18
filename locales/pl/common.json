@@ -1,10 +1,4 @@
 {
-	"title": "Kalendarz F1",
-	"subtitle": "Wyścigi, kwalifikacje i sesje treningowe.",
-	"meta": {
-		"description": "Kalendarz Formuły 1 na sezon  {{year}}  z wszystkimi wyścigami, treningami oraz kwalifikacjami. Ustaw przypomnienia. Wszystkie strefy czasowe. Pobierz lub zasubskrybuj.",
-		"keywords": "F1, formula one, formuła 1, godziny wyścigów, wyścigi, przypomnienia, powiadomienia, grands prix, grand prix, kalendarz, daty, godziny startów, kwalifikacje, treningi, London, Europe, {{year}}"
-	},
 	"options": {
 		"calendar": "Dodaj daty wyścigów do Twojego Kalendarza",
 		"email": "Otrzymuj powiadomienia email",

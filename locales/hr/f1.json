@@ -1,4 +1,10 @@
 {
-  "title": "F1 Calendar",
+  "title": "F1 kalendar",
+  "subtitle": "Utrke, kvalifikacije i slobodni treninzi",
+  "seo": {
+    "title": "F1 kalendar {{year}} - Utrke, kvalifikacije i slobodni treninzi",
+    "description": "Formula 1 kalendar za {{year}} sezonu sa svim sesijama Velike nagrade. Mogućnosti podsjetnika. Sve vremenske zone. Preuzmi ili se preplati.",
+    "keywords": "F1, formula jedan, vrijeme utrka, utrke, podsjetnik, upozorenja, velike nagrade, velika nagrada, kalendar, datumi, vrijeme početka, kvalifikacije, trening, {{year}}"
+  },
   "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
 }

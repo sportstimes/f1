@@ -1,10 +1,4 @@
 {
-	"title": "Calendario F1",
-	"subtitle": "Gare, Qualifiche e Sessioni di prova",
-	"meta": {
-		"description": "Calendari di Formula 1 per {{year}} stagioni con tutti i Gran Premi, le sessioni di prova e di qualifica. Si possono impostare promemoria. Tutti i fusi orari del mondo. Scarica o iscriviti.",
-		"keywords": "F1, formula uno, tempi di gara, corse, promemoria, avvisi, grand premi, grand prix, calendario, date, orari di partenza, qualifiche, prove, Londra, Europa, {{year}}"
-	},
 	"options": {
 		"calendar": "Aggiungi queste date e orari di gara al tuo calendario",
 		"email": "Ricevi promemoria via email",

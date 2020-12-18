@@ -1,4 +1,10 @@
 {
-  "title": "F1 Calendar",
+  "title": "F1 Kalender",
+  "subtitle": "Race, Kval & Träningar",
+  "seo": {
+    "title": "F1 Kalender {{year}} - Race, Kval & Träningar",
+    "description": "Formel 1 kalender för {{year}} säsongen med alla F1 race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller .",
+    "keywords": "F1, formel 1, race tider, race, påminnelse, varningar, grands prix, grand prix, kalender, datum, start tider, kval, träning, London, Europa, {{year}}"
+  },
   "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
 }

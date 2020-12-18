@@ -8,6 +8,18 @@ import NextError from 'next/error'
 function Subscribe() {
 	const {t} = useTranslation();
 
+	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
+
+	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+		year: currentYear
+	});
+	const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+		year: currentYear
+	});
+	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+		year: currentYear
+	});
+
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 	if(!config.supportsEmailReminders){
@@ -16,17 +28,7 @@ function Subscribe() {
 
 	return (
 		<>
-			<NextSeo
-				title={`F1 Calendar Subscribe - Formula One Race Times and Dates`}
-				description={`Formula One Calendar Archive with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.`}
-				keywords={`F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe`}
-				canonical="https://www.f1calendar.com/"
-				twitter={{
-					handle: "@f1cal",
-					site: "@f1cal",
-					cardType: "summary_large_image"
-				}}
-			/>
+			<NextSeo title={title} description={description} keywords={keywords} />
 			<Layout year={process.env.NEXT_PUBLIC_CURRENT_YEAR}>
 				<h3 className="text-xl mb-4">{t("subscribe:title")}</h3>
 				<Card>
