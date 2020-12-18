@@ -67,7 +67,7 @@ function Generate(props) {
 		});
 		
 		if(form.alarm){
-			calendarSuffix += `-${form.mins}`;
+			calendarSuffix += `_alarm-${form.mins}`;
 		}
 		
 		if(lang != "en"){
