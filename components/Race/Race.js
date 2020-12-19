@@ -85,7 +85,7 @@ class Race extends React.Component {
 					return (
 						<a
 							href={props.item.affiliate}
-							className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-white font-bold uppercase hidden md:inline"
+							className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs opacity-50 text-black font-bold uppercase hidden md:inline hover:bg-green-700"
 						>
 							{t("calendar:badges.tickets")}
 						</a>
