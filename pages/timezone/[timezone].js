@@ -75,10 +75,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({params}) {
-    const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
+  const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
-    try {
-        const res = await fetch(`https://` + process.env.VERCEL_URL + `/api/year/` + currentYear + ``);
+  try {
+    const res = await fetch(`https://` + process.env.VERCEL_URL + `/api/year/` + currentYear + ``);
     const data = await res.json();
 
     return {

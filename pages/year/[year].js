@@ -71,17 +71,17 @@ const Year = (props) => {
 
 export default Year;
 
-export const getStaticPaths = async () => {
-	// TODO: Make this dynamic later
-	return {
-		paths: [
-			{params: {year: "2021"}},
-			{params: {year: "2020"}},
-			{params: {year: "2019"}},
-			{params: {year: "2018"}}
-		],
-		fallback: false
-	};
+export const getStaticPaths = async () => {	
+	const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+	
+	var paths = [];
+	config.availableYears.forEach(function (year, index) {
+		paths.push({params: {"year": `${year}`}});
+	});
+	
+	console.log(paths);
+	
+	return { paths: paths, fallback: false };
 };
 
 export const getStaticProps = async ({params}) => {
