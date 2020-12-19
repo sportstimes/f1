@@ -79,8 +79,6 @@ export const getStaticPaths = async () => {
 		paths.push({params: {"year": `${year}`}});
 	});
 	
-	console.log(paths);
-	
 	return { paths: paths, fallback: false };
 };
 

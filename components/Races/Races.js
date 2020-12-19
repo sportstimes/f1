@@ -60,9 +60,20 @@ const Races = (props) => {
 				)}
 				{races.map((item, index) => {
 					isNextRace = false;
+					
+					const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
+
+					var sessionDate = dayjs();
+					if(hasMultipleFeaturedEvents){
+						let lastEventSessionKey = Object.keys(item.sessions)[Object.keys(item.sessions).length-1];
+						sessionDate = dayjs(item.sessions[lastEventSessionKey]);
+					} else {
+						sessionDate = dayjs(item.sessions[config.featuredSessions[0]]);
+					}
+					
 					if (
 						item.sessions &&
-						dayjs(item.sessions.race).isAfter() &&
+						sessionDate.isAfter(dayjs()) &&
 						!nextRace &&
 						!item.canceled &&
 						!item.tbc
