@@ -198,12 +198,7 @@
 			"round": 8,
 			"slug": "sanya-eprix",
 			"localeKey": "sanya-eprix",
-			"sessions": {
-				"practice1": null,
-				"practice2": null,
-				"qualifying": null,
-				"race": null
-			}
+			"sessions": null
 		},
 		{
 			"name": "Mexico City ePrix",
@@ -214,12 +209,7 @@
 			"round": 8,
 			"slug": "mexico-eprix",
 			"localeKey": "mexico-eprix",
-			"sessions": {
-				"practice1": null,
-				"practice2": null,
-				"qualifying": null,
-				"race": null
-			}
+			"sessions": null
 		}
 	]
 }
