@@ -12,5 +12,6 @@
 		"qualifying":"q",
 		"gp":"gp"
 	},
-	"supportsEmailReminders": true
+	"supportsEmailReminders": true,
+	"notice": "All Dates & Times are TBC. Calendar will be updated once details are confirmed."
 }

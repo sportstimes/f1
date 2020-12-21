@@ -1,14 +1,16 @@
 {
   "siteKey": "f3",
   "availableYears": [2021],
-  "sessions": [ "practice", "qualifying", "sprint", "feature" ],
-  "featuredSessions": ["sprint", "feature"],
+  "sessions": [ "practice", "qualifying", "race1", "race2", "race3" ],
+  "featuredSessions": ["race1", "race2", "race3"],
   "collapsedSessions": ["practice", "qualifying"],
   "sessionMap": {
     "practice":"p",
     "qualifying":"q",
-    "sprint":"sprint",
-    "feature":"feature"
+    "race1":"race1",
+    "race2":"race2",
+    "race3":"race3"
   },
-  "supportsEmailReminders": true
+  "supportsEmailReminders": true,
+  "notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
 }

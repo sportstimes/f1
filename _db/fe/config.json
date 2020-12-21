@@ -11,5 +11,6 @@
     "qualifying":"qualifying",
     "race":"race"
   },
-  "supportsEmailReminders": false
+  "supportsEmailReminders": false,
+  "notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
 }
