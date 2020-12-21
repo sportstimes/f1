@@ -1,10 +1,4 @@
 {
-	"header": {
-		"logoLinkTitle": "Return to the F1 Calendar Homepage",
-		"contribute": "Contribute",
-		"languageSelector": "Select Language",
-		"javascript": "F1 Calendar works best with Javascript Enabled."
-	},
 	"options": {
 		"calendar": "Add race dates & times to your Calendar",
 		"email": "Receive email reminders",
@@ -19,10 +13,9 @@
 		},
 		"button": "Done"
 	},
-	"cookies": {
-		"title": "This website uses cookies to enhance the user experience.",
-		"button": "Great!"
-	},
+	"contribute": "Contribute",
+	"languageSelector": "Select Language",
+	"javascript": "F1 Calendar works best with Javascript Enabled.",
 	"footer": {
 		"coffee": "Support us, buy us a coffee.",
 		"twitter": "We’re on Twitter",

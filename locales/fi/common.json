@@ -14,10 +14,6 @@
 		"button": "Valmis"
 	},
 	"contribute": "Osallistu",
-	"cookies": {
-		"title": "Tämä verkkosivusto käyttää evästeitä käyttäjäkokemuksen parantamiseen.",
-		"button": "Selvä!"
-	},
 	"languageSelector": "Valitse kieli",
 	"javascript": "F1 Kalenteri toimii parhaiten Javascriptin kanssa.",
 	"footer": {
