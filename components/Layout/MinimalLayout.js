@@ -3,7 +3,6 @@ import React from "react";
 import TopBar from "../../components/TopBar/TopBar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import CookieConsent from "react-cookie-consent";
 import useTranslation from "next-translate/useTranslation";
 import Logo from "../Logo/Logo";
 import Link from "next/link";
