@@ -265,7 +265,7 @@ class Race extends React.Component {
 								}`}
 							/>
 						</td>
-						<td className="w-1/2">
+						<td className="w-1/2 pl-2">
 							{t(`calendar:races.${this.props.item.localeKey}`) !==
 							localeKey
 								? t(`calendar:races.${this.props.item.localeKey}`)
@@ -335,11 +335,16 @@ class RaceTR extends React.Component {
 		//{`${this.props.collapsed ? styles.collapsed : ""}`}
 
 		if (hasMultipleFeaturedEvents) {
+			
+			var blankColumnCount = config.featuredSessions.length - 1;
+			
 			return (
 				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
 					<td className="w-1/8"></td>
 					<td className="w-1/2 py-4 pl-2">{t(titleKey)}</td>
-					<td />
+					{[...Array(blankColumnCount)].map((x, i) =>
+						<td></td>
+					)}
 					<td className="w-1/3">
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
