@@ -241,8 +241,8 @@ function Generate(props) {
 export default Generate;
 
 export const getStaticProps = async ({params}) => {
-	const url = process.env.NEXT_PUBLIC_API_URL
-		? `${process.env.NEXT_PUBLIC_API_URL}`
+	const url = process.env.VERCEL_URL
+		? `${process.env.VERCEL_URL}`
 		: "f1calendar.com";
 
 	return {
