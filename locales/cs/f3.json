@@ -1,10 +1,10 @@
 {
-  "title": "F3 Kalendář",
-  "subtitle": "Závody, Kvalifikace & Tréninky",
+  "title": "F3 Calendar",
+  "subtitle": "Races, Qualifying & Practice Sessions",
   "seo": {
-    "title": "F3 Kalendář {{year}} - Závody, Kvalifikace & Tréninky",
-    "description": "Kalendář Formule 3 pro sezónu {{year}} se všemi Velkými cenami Formule 3, tréninky &amp; Kvalifikacemi. Funkce připomenutí. Všechna časová pásma. Stáhněte si nebo odebírejte.",
-    "keywords": "F3, formule 3, časy závodů, závody, připomínky, upozornění, velké ceny, velká cena, kalendář, termíny, časy startů, kvalifikace, trénink, Londýn, Evropa, {{year}}"
+    "title": "F3 Calendar {{year}} - Formula Three Race Times and Dates",
+    "description": "Formula Three Calendar for {{year}} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+    "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
   },
   "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
 }
