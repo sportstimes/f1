@@ -139,7 +139,7 @@ function Generate(props) {
 							<p className="mb-4">{t("generate:form.description")}</p>
 
 							<form id="download_subscribe" onSubmit={handleOnSubmit}>
-								<fieldset className="mb-6">
+								<fieldset className="mb-6"  key="options">
 									{sessions.map((item, index) => {
 										return (
 											<div className="mb-4">
@@ -172,7 +172,7 @@ function Generate(props) {
 									})}
 								</fieldset>
 
-								<fieldset id="set_alarms">
+								<fieldset id="set_alarms" key="alarms">
 									<div className="mb-10">
 										<input
 											type="checkbox"
@@ -222,7 +222,7 @@ function Generate(props) {
 									</div>
 								</fieldset>
 
-								<fieldset id="buttons">
+								<fieldset id="buttons" key="buttons">
 									<button type="submit" className="btn">
 										{!form.submitted
 											? t("generate:form.button")
