@@ -1,6 +1,7 @@
 import React from "react";
 import FullWidthLayout from "components/Layout/FullWidthLayout";
 import Races from "components/Races/Races";
+import Notice from "components/Notice/Notice";
 import {NextSeo} from "next-seo";
 import RaceSchema from "components/RaceSchema/RaceSchema";
 import useTranslation from "next-translate/useTranslation";
@@ -21,6 +22,8 @@ const Index = (props) => {
 	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
 		year: currentYear
 	});
+	
+	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 	return (
 		<>
@@ -30,6 +33,10 @@ const Index = (props) => {
 					<div className="px-2">
 						<OptionsBar />
 					</div>
+
+					{ config.notice != null &&
+						<Notice />
+					}
 
 					<div className="px-0 md:px-2">
 						<Races year={currentYear} races={year.races} />
