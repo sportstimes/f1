@@ -64,11 +64,13 @@ const Races = (props) => {
 					const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
 
 					var sessionDate = dayjs();
-					if(hasMultipleFeaturedEvents){
-						let lastEventSessionKey = Object.keys(item.sessions)[Object.keys(item.sessions).length-1];
-						sessionDate = dayjs(item.sessions[lastEventSessionKey]);
-					} else {
-						sessionDate = dayjs(item.sessions[config.featuredSessions[0]]);
+					if(item.sessions != null){
+						if(hasMultipleFeaturedEvents){
+							let lastEventSessionKey = Object.keys(item.sessions)[Object.keys(item.sessions).length-1];
+							sessionDate = dayjs(item.sessions[lastEventSessionKey]);
+						} else {
+							sessionDate = dayjs(item.sessions[config.featuredSessions[0]]);
+						}
 					}
 					
 					if (
