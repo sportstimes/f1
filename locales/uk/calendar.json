@@ -27,8 +27,9 @@
 		"race2": "Гонка 2",
 		"race3": "Гонка 3",
 		"gp": "Гонка",
-		"sprintRace": "Sprint Race",
-		"featureRace": "Feature Race"
+		"sprint1": "Sprint 1",
+		"sprint2": "Sprint 2",
+		"feature": "Feature"
 	},
 	"races": {
 		"austrian-grand-prix": "Гран-прі Австрії",

@@ -27,8 +27,9 @@
 		"race2": "Course 2",
 		"race3": "Course 3",
 		"gp": "Grand Prix",
-		"sprintRace": "Sprint Race",
-		"featureRace": "Feature Race"
+		"sprint1": "Sprint 1",
+		"sprint2": "Sprint 2",
+		"feature": "Feature"
 	},
 	"races": {
 		"austrian-grand-prix": "Grand Prix d'Autriche",

@@ -27,8 +27,9 @@
 		"race2": "正赛 2",
 		"race3": "正赛 3",
 		"gp": "大奖赛",
-		"sprintRace": "Sprint Race",
-		"featureRace": "Feature Race"
+		"sprint1": "Sprint 1",
+		"sprint2": "Sprint 2",
+		"feature": "Feature"
 	},
 	"races": {
 		"austrian-grand-prix": "奥地利大奖赛",

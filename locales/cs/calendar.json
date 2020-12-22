@@ -27,8 +27,9 @@
 		"race2": "Závod 2",
 		"race3": "Závod 3",
 		"gp": "Velká cena",
-		"sprintRace": "Sprint Race",
-		"featureRace": "Feature Race"
+		"sprint1": "Sprint 1",
+		"sprint2": "Sprint 2",
+		"feature": "Feature"
 	},
 	"races": {
 		"austrian-grand-prix": "Velká cena Rakouska",
