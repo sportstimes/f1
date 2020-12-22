@@ -1,16 +1,17 @@
 {
-  "siteKey": "f3",
-  "availableYears": [2021],
-  "sessions": [ "practice", "qualifying", "race1", "race2", "race3" ],
-  "featuredSessions": ["race1", "race2", "race3"],
-  "collapsedSessions": ["practice", "qualifying", "race1", "race2", "race3"],
-  "sessionMap": {
-    "practice":"p",
-    "qualifying":"q",
-    "race1":"race1",
-    "race2":"race2",
-    "race3":"race3"
-  },
-  "supportsEmailReminders": true,
-  "notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
+	"siteKey": "f3",
+	"url": "f3calendar.com",
+	"availableYears": [2021],
+	"sessions": ["practice", "qualifying", "race1", "race2", "race3"],
+	"featuredSessions": ["race1", "race2", "race3"],
+	"collapsedSessions": ["practice", "qualifying", "race1", "race2", "race3"],
+	"sessionMap": {
+		"practice": "p",
+		"qualifying": "q",
+		"race1": "race1",
+		"race2": "race2",
+		"race3": "race3"
+	},
+	"supportsEmailReminders": true,
+	"notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
 }

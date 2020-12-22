@@ -1,5 +1,6 @@
 {
 	"siteKey": "f2",
+	"url": "f2cal.com",
 	"availableYears": [2021],
 	"sessions": ["practice", "qualifying", "sprint1", "sprint2", "feature"],
 	"featuredSessions": ["sprint1", "sprint2", "feature"],

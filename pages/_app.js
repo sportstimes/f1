@@ -22,23 +22,25 @@ function MyApp({Component, pageProps}) {
 		year: currentYear
 	});
 
+	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+
 	return (
 		<UserContextProvider>
 			<DefaultSeo
-				canonical="https://www.f1calendar.com/"
+				canonical={`https://www.${config.url}/`}
 				twitter={{
 					handle: "@f1cal",
 					site: "@f1cal",
 					cardType: "summary_large_image"
 				}}
 				openGraph={{
-					url: "https://www.f1calendar.com/",
+					url: `https://www.${config.url}/`,
 					title: `${title}`,
 					description: `${description}`,
 					site_name: `${title}`,
 					images: [
 						{
-							url: "https://www.f1calendar.com/share.png",
+							url: `https://www.${config.url}/share.png`,
 							width: 1200,
 							height: 628,
 							alt: `${title}`
