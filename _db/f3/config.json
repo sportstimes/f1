@@ -12,6 +12,6 @@
 		"race2": "race2",
 		"race3": "race3"
 	},
-	"supportsEmailReminders": true,
+	"supportsEmailReminders": false,
 	"notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
 }
