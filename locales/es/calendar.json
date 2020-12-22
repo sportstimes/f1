@@ -23,6 +23,9 @@
 		"practice": "Practice",
 		"qualifying": "Clasificatoria",
 		"race": "Carrera",
+		"race1": "Carrera 1",
+		"race2": "Carrera 2",
+		"race3": "Carrera 3",
 		"gp": "Gran Premio",
 		"sprintRace": "Sprint Race",
 		"featureRace": "Feature Race"

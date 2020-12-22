@@ -23,6 +23,9 @@
 		"practice": "Practice",
 		"qualifying": "Qualifications",
 		"race": "Course",
+		"race1": "Course 1",
+		"race2": "Course 2",
+		"race3": "Course 3",
 		"gp": "Grand Prix",
 		"sprintRace": "Sprint Race",
 		"featureRace": "Feature Race"
