@@ -287,12 +287,15 @@ class Race extends React.Component {
 									</span>
 								)}
 						</td>
-						<td className="text-right pr-2">
+						<td className="text-right">
 							{ this.props.item.sessions && dayjs(this.props.item.sessions[firstEventSessionKey]).tz(this.props.timezone).format("D MMM") != dayjs(this.props.item.sessions[lastEventSessionKey]).tz(this.props.timezone).format("D MMM") ?
 								(`${dayjs(this.props.item.sessions[firstEventSessionKey]).tz(this.props.timezone).format("D MMM")} - ${dayjs(this.props.item.sessions[lastEventSessionKey]).tz(this.props.timezone).format("D MMM")}`)
 							:
 								(`${dayjs(this.props.item.sessions[lastEventSessionKey]).tz(this.props.timezone).format("D MMM")}`)
 							}
+						</td>
+						<td className="text-right w-3/12 pr-2">
+							{badgeColumnLayout(this.props)}
 						</td>
 					</tr>
 				)}
@@ -339,7 +342,7 @@ class RaceTR extends React.Component {
 				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
 					<td className="w-1/8"></td>
 					<td className="w-1/2 py-4 pl-2">{t(titleKey)}</td>
-					<td className="w-1/3 text-right pr-2">
+					<td className="w-1/3 text-right">
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
 							.format(
@@ -348,6 +351,7 @@ class RaceTR extends React.Component {
 									: "D MMM HH:mm"
 							)}
 					</td>
+					<td />
 				</tr>
 			);
 		} else {
