@@ -1,14 +1,15 @@
 {
   "siteKey": "f2",
   "availableYears": [2021],
-  "sessions": ["practice", "qualifying", "feature", "sprint"],
-  "featuredSessions": ["feature", "sprint"],
-  "collapsedSessions": ["practice", "qualifying"],
+  "sessions": ["practice", "qualifying", "sprint1", "sprint2" "feature"],
+  "featuredSessions": ["sprint1", "sprint2" "feature"],
+  "collapsedSessions": ["practice", "qualifying", "sprint1", "sprint2" "feature",
   "sessionMap": {
     "practice":"p",
     "qualifying":"q",
-    "feature":"feature",
-    "sprint":"sprint"
+    "sprint1":"sprint1",
+    "sprint1":"sprint2",
+    "feature":"feature"
   },
   "supportsEmailReminders": false
   "notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."

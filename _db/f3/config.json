@@ -3,7 +3,7 @@
   "availableYears": [2021],
   "sessions": [ "practice", "qualifying", "race1", "race2", "race3" ],
   "featuredSessions": ["race1", "race2", "race3"],
-  "collapsedSessions": ["practice", "qualifying"],
+  "collapsedSessions": ["practice", "qualifying", "race1", "race2", "race3"],
   "sessionMap": {
     "practice":"p",
     "qualifying":"q",

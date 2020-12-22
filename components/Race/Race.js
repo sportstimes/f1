@@ -130,8 +130,13 @@ class Race extends React.Component {
 		}
 
 		// Bold upcoming races
+		let firstEventSessionKey = "";
+		let lastEventSessionKey = "";
+		
 		if(this.props.item.sessions != null){
-			let lastEventSessionKey = Object.keys(this.props.item.sessions)[Object.keys(this.props.item.sessions).length-1];
+			firstEventSessionKey = Object.keys(this.props.item.sessions)[0];
+			
+			lastEventSessionKey = Object.keys(this.props.item.sessions)[Object.keys(this.props.item.sessions).length-1];
 			if (!dayjs(this.props.item.sessions[lastEventSessionKey]).add(2, "hours").isBefore() && !this.props.item.canceled) {
 				titleRowClasses += "font-semibold ";
 			}
@@ -145,6 +150,10 @@ class Race extends React.Component {
 		} else {
 			classes += "text-white ";
 		}
+		
+		
+		
+		
 
 		return (
 			<tbody
@@ -278,23 +287,13 @@ class Race extends React.Component {
 									</span>
 								)}
 						</td>
-						{config.featuredSessions.map((item, index) => {
-							return (
-								<td className="w-1/2">
-									<span className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xs text-black font-bold capitalize mr-2">
-										{item}
-									</span>
-									{ this.props.item.sessions != null  && 
-										dayjs(this.props.item.sessions[item])
-										.tz(this.props.timezone)
-										.format(
-											this.props.timeFormat == 12
-												? "D MMM h:mm A"
-												: "D MMM HH:mm"
-										)}
-								</td>
-							);
-						})}
+						<td className="text-right pr-2">
+							{ this.props.item.sessions && dayjs(this.props.item.sessions[firstEventSessionKey]).tz(this.props.timezone).format("D MMM") != dayjs(this.props.item.sessions[lastEventSessionKey]).tz(this.props.timezone).format("D MMM") ?
+								(`${dayjs(this.props.item.sessions[firstEventSessionKey]).tz(this.props.timezone).format("D MMM")} - ${dayjs(this.props.item.sessions[lastEventSessionKey]).tz(this.props.timezone).format("D MMM")}`)
+							:
+								(`${dayjs(this.props.item.sessions[lastEventSessionKey]).tz(this.props.timezone).format("D MMM")}`)
+							}
+						</td>
 					</tr>
 				)}
 
@@ -332,8 +331,6 @@ class RaceTR extends React.Component {
 		const hasMultipleFeaturedEvents = this.props.hasMultipleFeaturedEvents;
 		const titleKey = "calendar:schedule." + this.props.title;
 
-		//{`${this.props.collapsed ? styles.collapsed : ""}`}
-
 		if (hasMultipleFeaturedEvents) {
 			
 			var blankColumnCount = config.featuredSessions.length - 1;
@@ -342,10 +339,7 @@ class RaceTR extends React.Component {
 				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
 					<td className="w-1/8"></td>
 					<td className="w-1/2 py-4 pl-2">{t(titleKey)}</td>
-					{[...Array(blankColumnCount)].map((x, i) =>
-						<td></td>
-					)}
-					<td className="w-1/3">
+					<td className="w-1/3 text-right pr-2">
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
 							.format(
