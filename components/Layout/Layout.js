@@ -45,14 +45,13 @@ const Layout = (props) => {
 				/>
 				<meta name="msapplication-TileColor" content="#000000" />
 				<meta name="theme-color" content="#ffffff" />
-				
-				{ process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION &&
-					<meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION} />
-				}
-				
-				{ process.env.NEXT_PUBLIC_PLAUSIBLE_KEY &&
-					<script async defer data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_KEY} src="https://plausible.io/js/plausible.js"></script>
-				}
+
+				{process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION && (
+					<meta
+						name="google-site-verification"
+						content={process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION}
+					/>
+				)}
 			</Head>
 
 			<noscript>

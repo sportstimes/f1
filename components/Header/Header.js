@@ -5,13 +5,16 @@ import i18nConfig from "../../i18n.json";
 import Router from "next/router";
 import CTABar from "../CTABar/CTABar";
 import Link from "next/link";
+import {usePlausible} from "next-plausible";
 
 class Header extends React.Component {
 	render() {
+		const plausible = usePlausible();
+
 		const {t, lang} = this.props.i18n;
 		const title = t(process.env.NEXT_PUBLIC_SITE_KEY + `:title`);
 		const subtitle = t(process.env.NEXT_PUBLIC_SITE_KEY + `:subtitle`);
-		
+
 		const {languageNames} = i18nConfig;
 
 		return (
@@ -62,6 +65,13 @@ class Header extends React.Component {
 							<a
 								href="https://www.buymeacoffee.com/f1cal"
 								className="support-btn mt-3"
+								onClick={() =>
+									plausible("Support", {
+										props: {
+											buttonId: "header"
+										}
+									})
+								}
 							>
 								<img
 									src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"

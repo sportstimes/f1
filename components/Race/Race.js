@@ -3,6 +3,7 @@ import withTranslation from "next-translate/withTranslation";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
+import {usePlausible} from "next-plausible";
 
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
@@ -19,7 +20,15 @@ class Race extends React.Component {
 	}
 
 	handleRowClick() {
-		if(this.props.item.sessions != null){
+		if (this.props.item.sessions != null) {
+			const plausible = usePlausible();
+
+			plausible(!this.state.collapsed ? "Closed Event" : "Opened Event", {
+				props: {
+					event: this.props.item.slug
+				}
+			});
+
 			this.setState({
 				collapsed: !this.state.collapsed
 			});
@@ -37,12 +46,11 @@ class Race extends React.Component {
 		const localeKey = "calendar:races." + this.props.item.localeKey;
 
 		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
-		
+
 		function badgeColumnLayout(props) {
-			
 			var badges = [];
-			
-			if(props.item.tbc){
+
+			if (props.item.tbc) {
 				badges.push(
 					<span
 						title={t("calendar:badges.tbc_title")}
@@ -52,44 +60,48 @@ class Race extends React.Component {
 					</span>
 				);
 			}
-			
-			if(props.item.canceled){
+
+			if (props.item.canceled) {
 				badges.push(
 					<span className="bg-red-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase ml-2e">
 						{t("calendar:badges.canceled")}
 					</span>
 				);
 			}
-			
+
 			var sessionDate = dayjs();
-			if(props.item.sessions != null){
-				if(hasMultipleFeaturedEvents){
-					let lastEventSessionKey = Object.keys(props.item.sessions)[Object.keys(props.item.sessions).length-1];
+			if (props.item.sessions != null) {
+				if (hasMultipleFeaturedEvents) {
+					let lastEventSessionKey = Object.keys(props.item.sessions)[
+						Object.keys(props.item.sessions).length - 1
+					];
 					sessionDate = dayjs(props.item.sessions[lastEventSessionKey]);
 				} else {
-					sessionDate = dayjs(props.item.sessions[config.featuredSessions[0]]);
+					sessionDate = dayjs(
+						props.item.sessions[config.featuredSessions[0]]
+					);
 				}
 			}
-			
-			if(props.item.affiliate){
-				if(props.item.tbc){
+
+			if (props.item.affiliate) {
+				if (props.item.tbc) {
 					badges.push(
 						<a
 							href={props.item.affiliate}
 							className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase md:inline hidden md:inline hover:bg-green-700 ml-2"
 						>
 							{t("calendar:badges.tickets")}
-						</a>	
+						</a>
 					);
 				} else {
-					if(sessionDate.isAfter(dayjs())){
+					if (sessionDate.isAfter(dayjs())) {
 						badges.push(
 							<a
 								href={props.item.affiliate}
 								className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase md:inline hover:bg-green-700 ml-2"
 							>
 								{t("calendar:badges.tickets")}
-							</a>	
+							</a>
 						);
 					} else {
 						badges.push(
@@ -98,12 +110,12 @@ class Race extends React.Component {
 								className="opacity-50 bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase md:inline hover:bg-green-700 ml-2"
 							>
 								{t("calendar:badges.tickets")}
-							</a>	
+							</a>
 						);
 					}
 				}
 			}
-			
+
 			return badges;
 		}
 
@@ -123,7 +135,7 @@ class Race extends React.Component {
 		if (this.props.isNextRace) {
 			titleRowClasses += "text-yellow-600 ";
 		}
-		
+
 		// Strike out cancelled races
 		if (this.props.item.canceled) {
 			titleRowClasses += "line-through text-gray-300 ";
@@ -132,17 +144,28 @@ class Race extends React.Component {
 		// Bold upcoming races
 		let firstEventSessionKey = "";
 		let lastEventSessionKey = "";
-		
-		if(this.props.item.sessions != null){
+
+		if (this.props.item.sessions != null) {
 			firstEventSessionKey = Object.keys(this.props.item.sessions)[0];
-			
-			lastEventSessionKey = Object.keys(this.props.item.sessions)[Object.keys(this.props.item.sessions).length-1];
-			if (!dayjs(this.props.item.sessions[lastEventSessionKey]).add(2, "hours").isBefore() && !this.props.item.canceled) {
+
+			lastEventSessionKey = Object.keys(this.props.item.sessions)[
+				Object.keys(this.props.item.sessions).length - 1
+			];
+			if (
+				!dayjs(this.props.item.sessions[lastEventSessionKey])
+					.add(2, "hours")
+					.isBefore() &&
+				!this.props.item.canceled
+			) {
 				titleRowClasses += "font-semibold ";
 			}
-			
+
 			// Strikethrough past races
-			if (dayjs(this.props.item.sessions[lastEventSessionKey]).add(2, "hours").isBefore(dayjs())) {
+			if (
+				dayjs(this.props.item.sessions[lastEventSessionKey])
+					.add(2, "hours")
+					.isBefore(dayjs())
+			) {
 				classes += "line-through text-gray-400 ";
 			} else {
 				classes += "text-white ";
@@ -150,10 +173,6 @@ class Race extends React.Component {
 		} else {
 			classes += "text-white ";
 		}
-		
-		
-		
-		
 
 		return (
 			<tbody
@@ -215,20 +234,24 @@ class Race extends React.Component {
 								)}
 						</td>
 						<td className={`w-2/12 ${titleRowClasses}`}>
-							{ this.props.item.sessions && this.props.item.sessions[config.featuredSessions[0]] &&
-								dayjs(this.props.item.sessions[config.featuredSessions[0]])
+							{this.props.item.sessions &&
+								this.props.item.sessions[config.featuredSessions[0]] &&
+								dayjs(
+									this.props.item.sessions[config.featuredSessions[0]]
+								)
 									.tz(this.props.timezone)
-									.format("D MMM")
-							}
+									.format("D MMM")}
 						</td>
 						<td className={`w-2/12 ${titleRowClasses}`}>
-							{ this.props.item.sessions && this.props.item.sessions[config.featuredSessions[0]] &&
-								dayjs(this.props.item.sessions[config.featuredSessions[0]])
-								.tz(this.props.timezone)
-								.format(
-									this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
+							{this.props.item.sessions &&
+								this.props.item.sessions[config.featuredSessions[0]] &&
+								dayjs(
+									this.props.item.sessions[config.featuredSessions[0]]
 								)
-							}
+									.tz(this.props.timezone)
+									.format(
+										this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
+									)}
 						</td>
 						<td className="text-right w-3/12 pr-2">
 							{badgeColumnLayout(this.props)}
@@ -288,11 +311,27 @@ class Race extends React.Component {
 								)}
 						</td>
 						<td className="text-right">
-							{ this.props.item.sessions && dayjs(this.props.item.sessions[firstEventSessionKey]).tz(this.props.timezone).format("D MMM") != dayjs(this.props.item.sessions[lastEventSessionKey]).tz(this.props.timezone).format("D MMM") ?
-								(`${dayjs(this.props.item.sessions[firstEventSessionKey]).tz(this.props.timezone).format("D MMM")} - ${dayjs(this.props.item.sessions[lastEventSessionKey]).tz(this.props.timezone).format("D MMM")}`)
-							:
-								(`${dayjs(this.props.item.sessions[lastEventSessionKey]).tz(this.props.timezone).format("D MMM")}`)
-							}
+							{this.props.item.sessions &&
+							dayjs(this.props.item.sessions[firstEventSessionKey])
+								.tz(this.props.timezone)
+								.format("D MMM") !=
+								dayjs(this.props.item.sessions[lastEventSessionKey])
+									.tz(this.props.timezone)
+									.format("D MMM")
+								? `${dayjs(
+										this.props.item.sessions[firstEventSessionKey]
+								  )
+										.tz(this.props.timezone)
+										.format("D MMM")} - ${dayjs(
+										this.props.item.sessions[lastEventSessionKey]
+								  )
+										.tz(this.props.timezone)
+										.format("D MMM")}`
+								: `${dayjs(
+										this.props.item.sessions[lastEventSessionKey]
+								  )
+										.tz(this.props.timezone)
+										.format("D MMM")}`}
 						</td>
 						<td className="text-right w-3/12 pr-2">
 							{badgeColumnLayout(this.props)}
@@ -301,7 +340,10 @@ class Race extends React.Component {
 				)}
 
 				{config.collapsedSessions.map((item, index) => {
-					if (this.props.item.sessions != null && this.props.item.sessions[item]) {
+					if (
+						this.props.item.sessions != null &&
+						this.props.item.sessions[item]
+					) {
 						return (
 							<RaceTR
 								date={this.props.item.sessions[item]}
@@ -335,9 +377,8 @@ class RaceTR extends React.Component {
 		const titleKey = "calendar:schedule." + this.props.title;
 
 		if (hasMultipleFeaturedEvents) {
-			
 			var blankColumnCount = config.featuredSessions.length - 1;
-			
+
 			return (
 				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
 					<td className="w-1/8"></td>

@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import withTranslation from "next-translate/withTranslation";
 import i18nConfig from "../../i18n.json";
 import Router from "next/router";
+import {usePlausible} from "next-plausible";
 
 class LanguageSelector extends React.Component {
 	onChange = (event) => {
@@ -30,6 +31,14 @@ class LanguageSelector extends React.Component {
 		}
 
 		Router.push(adjustedURL, adjustedURL, {locale: event.target.value});
+
+		const plausible = usePlausible();
+
+		plausible("Changed Language", {
+			props: {
+				language: event.target.value
+			}
+		});
 	};
 
 	render() {

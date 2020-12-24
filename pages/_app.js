@@ -5,6 +5,7 @@ import "../styles/tailwind.css";
 import "../styles/tailwind-utils.css";
 import "../styles/index.css";
 import useTranslation from "next-translate/useTranslation";
+import PlausibleProvider from "next-plausible";
 
 function MyApp({Component, pageProps}) {
 	const {t, lang} = useTranslation();
@@ -26,29 +27,31 @@ function MyApp({Component, pageProps}) {
 
 	return (
 		<UserContextProvider>
-			<DefaultSeo
-				canonical={`https://www.${config.url}/`}
-				twitter={{
-					handle: "@f1cal",
-					site: "@f1cal",
-					cardType: "summary_large_image"
-				}}
-				openGraph={{
-					url: `https://www.${config.url}/`,
-					title: `${title}`,
-					description: `${description}`,
-					site_name: `${title}`,
-					images: [
-						{
-							url: `https://www.${config.url}/share.png`,
-							width: 1200,
-							height: 628,
-							alt: `${title}`
-						}
-					]
-				}}
-			/>
-			<Component {...pageProps} />
+			<PlausibleProvider domain={process.env.NEXT_PUBLIC_PLAUSIBLE_KEY}>
+				<DefaultSeo
+					canonical={`https://www.${config.url}/`}
+					twitter={{
+						handle: "@f1cal",
+						site: "@f1cal",
+						cardType: "summary_large_image"
+					}}
+					openGraph={{
+						url: `https://www.${config.url}/`,
+						title: `${title}`,
+						description: `${description}`,
+						site_name: `${title}`,
+						images: [
+							{
+								url: `https://www.${config.url}/share.png`,
+								width: 1200,
+								height: 628,
+								alt: `${title}`
+							}
+						]
+					}}
+				/>
+				<Component {...pageProps} />
+			</PlausibleProvider>
 		</UserContextProvider>
 	);
 }

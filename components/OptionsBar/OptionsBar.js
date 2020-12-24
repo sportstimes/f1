@@ -6,6 +6,7 @@ import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
 import withTranslation from "next-translate/withTranslation";
 import ct from "countries-and-timezones";
+import {usePlausible} from "next-plausible";
 
 class OptionsBar extends React.Component {
 	static contextType = UserContext;
@@ -29,10 +30,26 @@ class OptionsBar extends React.Component {
 
 	onTimezoneChange = (event) => {
 		this.context.updateTimezone(event.target.value);
+
+		const plausible = usePlausible();
+
+		plausible("Changed Timezone", {
+			props: {
+				timezone: event.target.value
+			}
+		});
 	};
 
 	onFormatChange = (event) => {
 		this.context.updateTimeFormat(event.target.value);
+
+		const plausible = usePlausible();
+
+		plausible("Changed Time Format", {
+			props: {
+				format: event.target.value
+			}
+		});
 	};
 
 	togglePicker = (event) => {

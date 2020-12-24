@@ -1,8 +1,10 @@
 import useTranslation from "next-translate/useTranslation";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
+import {usePlausible} from "next-plausible";
 
 export default function Footer() {
 	const {t, lang} = useTranslation();
+	const plausible = usePlausible();
 
 	return (
 		<>
@@ -16,6 +18,13 @@ export default function Footer() {
 						<a
 							href="https://www.buymeacoffee.com/f1cal"
 							className="support-btn mt-3"
+							onClick={() =>
+								plausible("Support", {
+									props: {
+										buttonId: "footer"
+									}
+								})
+							}
 						>
 							<img
 								src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
@@ -97,14 +106,17 @@ export default function Footer() {
 						>
 							Ant Williams
 						</a>{" "}
-						2020
+						{new Date().getFullYear()}
 					</p>
 					<p className="mb-10 text-center text-base text-gray-400">
 						{t(process.env.NEXT_PUBLIC_SITE_KEY + `:footnote`)}
 					</p>
 
 					<p className="text-center mt-8">
-						<a href="https://vercel.com?utm_source=sportstimes">
+						<a
+							href="https://vercel.com?utm_source=sportstimes"
+							onClick={() => plausible("Visit Vercel")}
+						>
 							<svg
 								className="inline"
 								fill="none"
