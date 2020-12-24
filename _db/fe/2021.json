@@ -9,12 +9,7 @@
 			"round": 1,
 			"slug": "santiago-eprix",
 			"localeKey": "santiago-eprix",
-			"sessions": {
-				"practice1": "2021-01-16T11:00:00Z",
-				"practice2": "2021-01-16T13:15:00Z",
-				"qualifying": "2021-01-16T15:00:00Z",
-				"race": "2021-01-16T19:00:00Z"
-			}
+			"sessions": null
 		},
 		{
 			"name": "Santiago ePrix",
@@ -25,16 +20,12 @@
 			"round": 2,
 			"slug": "santiago-eprix",
 			"localeKey": "santiago-eprix",
-			"sessions": {
-				"practice3": "2021-01-17T13:15:00Z",
-				"qualifying": "2021-01-17T13:15:00Z",
-				"race": "2021-01-17T19:00:00Z"
-			}
+			"sessions": null
 		},
 		{
 			"name": "Diriyah ePrix",
 			"location": "Diriyah",
-			"latitude": 25.313190,
+			"latitude": 25.31319,
 			"longitude": 55.512081,
 			"tbc": true,
 			"round": 3,
@@ -50,7 +41,7 @@
 		{
 			"name": "Diriyah ePrix",
 			"location": "Diriyah",
-			"latitude": 25.313190,
+			"latitude": 25.31319,
 			"longitude": 55.512081,
 			"tbc": true,
 			"round": 4,
@@ -67,7 +58,7 @@
 			"location": "Rome",
 			"latitude": 41.901983,
 			"longitude": 12.494953,
-				"tbc": true,
+			"tbc": true,
 			"round": 3,
 			"slug": "rome-eprix",
 			"localeKey": "rome-eprix",
