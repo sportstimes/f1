@@ -1,36 +1,31 @@
 {
-  "title": "F1 Kalenteri",
-  "subtitle": "Kisat, Aika-ajot ja Vapaat harjoitukset", 
-  "meta":{
-    "description": "Formula 1 Kalenteri kaudelle {{year}}. Kaikkien osakilpailujen kisat, aika-ajot ja vapaat-harjoitukset. Muistutustoiminto ja kaikki aikavyöhykkeet. Lataa tai tilaa.",
-    "keywords": "F1, formula 1, kisa-aikataulu, kisat, muistutus, hälytykset, osakilpailut, GP, kalenteri, päivämäärät, aikataulut, aika-ajot, vapaat harjoitukset, Lontoo, Eurooppa, {{year}}"
-  },
-  "options": {
-    "calendar": "Lisää osakilpailujen aikataulut kalenteriin",
-    "email": "Vastaanota muistutuksia sähköpostiin",
-    "timezonePicker": {
-      "showing": "Näytetään aikataulut",
-      "pick": "Valitse aikavyöhyke...",
-      "button": "Valmis"
-    }
-  },
-  "contribute": "Osallistu",
-  "cookies": {
-    "title": "Tämä verkkosivusto käyttää evästeitä käyttäjäkokemuksen parantamiseen.",
-    "button": "Selvä!"
-  },
-  "languageSelector": "Valitse kieli",
-  "javascript": "F1 Kalenteri toimii parhaiten Javascriptin kanssa.",
-  "footer": {
-    "coffee": "Tue F1 Kalenteria, osta meille kahvi.",
-    "twitter": "Löydät meidät Twitteristä",
-    "github": "Avoin lähdekoodi GitHubissa",
-    "issue": "Ongelmia? Raportoi",
-    "links": {
-      "wereOn": "Löydät meidät",
-      "openSourcedOn": "Avoin lähdekoodi",
-      "spottedIssue": "Ongelmia?",
-      "spottedReport": "Raportoi"
-    }
-  }
+	"options": {
+		"calendar": "Lisää osakilpailujen aikataulut kalenteriin",
+		"email": "Vastaanota muistutuksia sähköpostiin",
+		"timezonePicker": {
+			"showing": "Näytetään aikataulut",
+			"pick": "Valitse aikavyöhyke..."
+		},
+		"formatPicker": {
+			"title": "Time Format",
+			"12hr": "12-Hour Time",
+			"24hr": "24-Hour Time"
+		},
+		"button": "Valmis"
+	},
+	"contribute": "Osallistu",
+	"languageSelector": "Valitse kieli",
+	"javascript": "F1 Kalenteri toimii parhaiten Javascriptin kanssa.",
+	"footer": {
+		"coffee": "Tue F1 Kalenteria, osta meille kahvi.",
+		"twitter": "Löydät meidät Twitteristä",
+		"github": "Avoin lähdekoodi GitHubissa",
+		"issue": "Ongelmia? Raportoi",
+		"links": {
+			"wereOn": "Löydät meidät",
+			"openSourcedOn": "Avoin lähdekoodi",
+			"spottedIssue": "Ongelmia?",
+			"spottedReport": "Raportoi"
+		}
+	}
 }

@@ -1,0 +1,10 @@
+{
+  "title": "Kalendarz F1",
+  "subtitle": "Wyścigi, kwalifikacje i sesje treningowe.",
+  "seo": {
+    "title": "Kalendarz F1 {{year}} - Formula One Race Times and Dates",
+    "description": "Kalendarz Formuły 1 na sezon  {{year}}  z wszystkimi wyścigami, treningami oraz kwalifikacjami. Ustaw przypomnienia. Wszystkie strefy czasowe. Pobierz lub zasubskrybuj.",
+    "keywords": "F1, formula one, formuła 1, godziny wyścigów, wyścigi, przypomnienia, powiadomienia, grands prix, grand prix, kalendarz, daty, godziny startów, kwalifikacje, treningi, London, Europe, {{year}}"
+  },
+  "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+}

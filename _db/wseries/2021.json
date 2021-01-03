@@ -1,0 +1,132 @@
+{
+	"races": [
+		{
+			"name": "French",
+			"location": "Paul Ricard",
+			"latitude": 43.2517,
+			"longitude": 5.7935,
+			"tbc": true,
+			"round": 1,
+			"slug": "french",
+			"localeKey": "french",
+			"sessions": {
+				"practice1": "2021-06-25T09:00:00Z",
+				"practice2": "2021-06-25T13:00:00Z",
+				"qualifying": "2021-06-26T13:00:00Z",
+				"race": "2021-06-26T13:10:00Z"
+			}
+		},
+		{
+			"name": "Austrian",
+			"location": "Spielberg",
+			"latitude": 47.2225,
+			"longitude": 14.7607,
+			"tbc": true,
+			"round": 2,
+			"slug": "austrian",
+			"localeKey": "austrian",
+			"sessions": {
+				"practice1": "2021-07-02T09:00:00Z",
+				"practice2": "2021-07-02T13:00:00Z",
+				"qualifying": "2021-07-03T13:00:00Z",
+				"race": "2021-07-03T13:10:00Z"
+			}
+		},
+		{
+			"name": "British",
+			"location": "Silverstone",
+			"latitude": 52.0706,
+			"longitude": -1.0174,
+			"tbc": true,
+			"round": 3,
+			"slug": "british",
+			"localeKey": "british",
+			"sessions": {
+				"practice1": "2021-07-16T09:00:00Z",
+				"practice2": "2021-07-16T13:00:00Z",
+				"qualifying": "2021-07-17T13:00:00Z",
+				"race": "2021-07-17T13:10:00Z"
+			}
+		},
+		{
+			"name": "Hungarian",
+			"location": "Budapest",
+			"latitude": 47.583,
+			"longitude": 19.2526,
+			"tbc": true,
+			"round": 4,
+			"slug": "hungarian",
+			"localeKey": "dutch",
+			"sessions": {
+				"practice1": "2021-07-30T09:00:00Z",
+				"practice2": "2021-07-30T13:00:00Z",
+				"qualifying": "2021-07-31T13:00:00Z",
+				"race": "2021-07-31T13:10:00Z"
+			}
+		},
+		{
+			"name": "Belgian",
+			"location": "Spa-Francorchamps",
+			"latitude": 50.444,
+			"longitude": 5.9687,
+			"tbc": true,
+			"round": 5,
+			"slug": "belgian",
+			"localeKey": "belgian",
+			"sessions": {
+				"practice1": "2021-08-27T09:00:00Z",
+				"practice2": "2021-08-27T13:00:00Z",
+				"qualifying": "2021-08-28T13:00:00Z",
+				"race": "2021-08-28T13:10:00Z"
+			}
+		},
+		{
+			"name": "Dutch",
+			"location": "Zandvoort",
+			"latitude": 52.388408,
+			"longitude": 4.547122,
+			"tbc": true,
+			"round": 6,
+			"slug": "dutch",
+			"localeKey": "dutch",
+			"sessions": {
+				"practice1": "2021-09-03T09:00:00Z",
+				"practice2": "2021-09-03T13:00:00Z",
+				"qualifying": "2021-09-04T13:00:00Z",
+				"race": "2021-09-04T13:10:00Z"
+			}
+		},
+		{
+			"name": "United States",
+			"location": "Austin",
+			"latitude": 30.1328,
+			"longitude": -97.6411,
+			"tbc": true,
+			"round": 7,
+			"slug": "us",
+			"localeKey": "us",
+			"sessions": {
+				"practice1": "2021-10-22T16:00:00Z",
+				"practice2": "2021-10-22T20:00:00Z",
+				"qualifying": "2021-10-23T21:00:00Z",
+				"race": "2021-10-23T19:10:00Z"
+			}
+		},
+		{
+			"name": "Mexican",
+			"location": "Mexico City",
+			"latitude": 19.4028,
+			"longitude": -99.0986,
+			"tbc": true,
+			"round": 8,
+			"slug": "mexican",
+			"localeKey": "mexico",
+			"sessions": {
+				"practice1": "2021-10-29T15:00:00Z",
+				"practice2": "2021-10-29T19:00:00Z",
+				"qualifying": "2021-10-30T18:00:00Z",
+				"race": "2021-10-30T19:10:00Z"
+			}
+		}
+	]
+}

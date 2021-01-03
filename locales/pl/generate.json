@@ -2,11 +2,6 @@
   "form": {
     "title": "Generuj Kalendarz",
     "description": "Najpierw, wybierz sesję, który chcesz dodac do Twojego kalendarza:",
-    "fp1": "Trening 1",
-    "fp2": "Trening 2",
-    "fp3": "Trening 3",
-    "qualifying": "Kwalifikacje",
-    "grandPrix": "Wyścig",
     "reminder": "Ustaw przypomnienie",
     "reminderContinued": "minut przed wydarzeniem.",
     "button": "Pobierz kalendarz",

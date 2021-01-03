@@ -3,11 +3,6 @@
     "form": {
       "title": "Generer kalender",
       "description": "Først, velg hvilke F1 race-helg økter du vil legge til i din kalender:",
-      "fp1": "Trening 1",
-      "fp2": "Trening 2",
-      "fp3": "Trening 3",
-      "qualifying": "Kvalifisering",
-      "grandPrix": "Race",
       "reminder": "lag påminnelse",
       "reminderContinued": "minutter før hver hendelse i din kalender.",
       "button": "Få kalender",

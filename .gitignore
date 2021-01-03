@@ -39,13 +39,26 @@ jspm_packages
 
 .DS_Store
 
-# Build Pages
-/pages
-/page/*
-
 # ICS Files Generated at Build Time
 /public/download/*.ics
 /public/download/*/*.ics
 
 .idea
 .idea/*
+/.env.local
+/.env
+/public/android-chrome-192x192.png
+/public/android-chrome-512x512.png
+/public/apple-touch-icon.png
+/public/browserconfig.xml
+/public/favicon-16x16.png
+/public/favicon-32x32.png
+/public/favicon.ico
+/public/mstile-144x144.png
+/public/mstile-150x150.png
+/public/mstile-310x150.png
+/public/mstile-310x310.png
+/public/mstile-70x70.png
+/public/safari-pinned-tab.svg
+/public/share.png
+/public/site.webmanifest

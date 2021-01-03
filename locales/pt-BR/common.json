@@ -1,36 +1,31 @@
 {
-  "title": "Calendário da F1",
-  "subtitle": "Corridas, Classificaçāo e Treinos Livres",
-  "meta":{
-    "description": "Calendārio da Fórmula 1 Calendar para temporada de {{year}} com todos as corridas, treinos livres e classificaçāo da F1. Recurso para definir lembretes. Todos os fuseos horários do mundo. Baixe ou assine.",
-    "keywords": "F1, fórmula 1, horário das corridas, corridas, avisos, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {{year}}"
-  },
-  "options": {
-    "calendar": "Adicione essas datas e horários da corrida ao seu Calendário",
-    "email": "Receba avisos por e-mail",
-    "timezonePicker": {
-      "showing": "Mostrando horários para",
-      "pick": "Escolha um fuso horário...",
-      "button": "Finalizar"
-    }
-  },
-  "contribute": "Colaborar",
-  "cookies": {
-    "title": "Este site usa cookies para melhorar a experiência do usuário.",
-    "button": "Ótimo!"
-  },
-  "languageSelector": "Selecione o Idioma",
-  "javascript": "O calendário F1 funciona melhor com Javascript ativado.",
-  "footer": {
-    "coffee": "Apoie Calendário F1, nos pague um café.",
-    "twitter": "Estamos no Twitter",
-    "github": "Código aberto no GitHub",
-    "issue": "Detectou um problema? Reporte",
-    "links": {
-      "wereOn": "Estamos no",
-      "openSourcedOn": "Código aberto no",
-      "spottedIssue": "Detectou um problema?",
-      "spottedReport": "Reporte"
-    }
-  }
+	"options": {
+		"calendar": "Adicione essas datas e horários da corrida ao seu Calendário",
+		"email": "Receba avisos por e-mail",
+		"timezonePicker": {
+			"showing": "Mostrando horários para",
+			"pick": "Escolha um fuso horário..."
+		},
+		"formatPicker": {
+			"title": "Time Format",
+			"12hr": "12-Hour Time",
+			"24hr": "24-Hour Time"
+		},
+		"button": "Finalizar"
+	},
+	"contribute": "Colaborar",
+	"languageSelector": "Selecione o Idioma",
+	"javascript": "O calendário F1 funciona melhor com Javascript ativado.",
+	"footer": {
+		"coffee": "Apoie Calendário F1, nos pague um café.",
+		"twitter": "Estamos no Twitter",
+		"github": "Código aberto no GitHub",
+		"issue": "Detectou um problema? Reporte",
+		"links": {
+			"wereOn": "Estamos no",
+			"openSourcedOn": "Código aberto no",
+			"spottedIssue": "Detectou um problema?",
+			"spottedReport": "Reporte"
+		}
+	}
 }

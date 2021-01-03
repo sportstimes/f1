@@ -1,0 +1,167 @@
+{
+	"races": [
+		{
+			"name": "Santiago ePrix",
+			"location": "Santiago",
+			"latitude": -33.611778,
+			"longitude": -70.518898,
+			"tbc": true,
+			"round": 1,
+			"slug": "santiago-eprix",
+			"localeKey": "santiago-eprix",
+			"sessions": null
+		},
+		{
+			"name": "Santiago ePrix",
+			"location": "Santiago",
+			"latitude": -33.611778,
+			"longitude": -70.518898,
+			"tbc": true,
+			"round": 2,
+			"slug": "santiago-eprix",
+			"localeKey": "santiago-eprix",
+			"sessions": null
+		},
+		{
+			"name": "Diriyah ePrix",
+			"location": "Diriyah",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"tbc": true,
+			"round": 3,
+			"slug": "diriyah-eprix",
+			"localeKey": "diriyah-eprix",
+			"sessions": {
+				"practice1": "2021-02-26T11:00:00Z",
+				"practice2": "2021-02-26T13:15:00Z",
+				"qualifying": "2021-02-26T15:00:00Z",
+				"race": "2021-02-26T19:00:00Z"
+			}
+		},
+		{
+			"name": "Diriyah ePrix",
+			"location": "Diriyah",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"tbc": true,
+			"round": 4,
+			"slug": "diriyah-eprix",
+			"localeKey": "diriyah-eprix",
+			"sessions": {
+				"practice3": "2021-02-27T10:00:00Z",
+				"qualifying": "2021-02-27T13:00:00Z",
+				"race": "2021-02-27T13:00:00Z"
+			}
+		},
+		{
+			"name": "Rome ePrix",
+			"location": "Rome",
+			"latitude": 41.901983,
+			"longitude": 12.494953,
+			"tbc": true,
+			"round": 3,
+			"slug": "rome-eprix",
+			"localeKey": "rome-eprix",
+			"sessions": null
+		},
+		{
+			"name": "Paris ePrix",
+			"location": "Paris",
+			"latitude": 52.0706,
+			"longitude": -1.0174,
+			"tbc": true,
+			"round": 4,
+			"slug": "paris-eprix",
+			"localeKey": "paris-eprix",
+			"sessions": null
+		},
+		{
+			"name": "Monaco ePrix",
+			"location": "Monte Carlo",
+			"latitude": 43.7338,
+			"longitude": 7.4215,
+			"tbc": true,
+			"round": 5,
+			"slug": "monaco-eprix",
+			"localeKey": "monaco-eprix",
+			"sessions": null
+		},
+		{
+			"name": "Seoul ePrix",
+			"location": "Seoul",
+			"latitude": 37.547895,
+			"longitude": 126.941893,
+			"tbc": true,
+			"round": 6,
+			"slug": "seoul-eprix",
+			"localeKey": "seoul-eprix",
+			"sessions": null
+		},
+		{
+			"name": "Berlin ePrix",
+			"location": "Berlin",
+			"latitude": 52.477327,
+			"longitude": 13.385712,
+			"tbc": true,
+			"round": 7,
+			"slug": "berlin-eprix",
+			"localeKey": "berlin-eprix",
+			"sessions": null
+		},
+		{
+			"name": "New York City ePrix",
+			"location": "New York City",
+			"latitude": 40.681454,
+			"longitude": -74.011048,
+			"tbc": true,
+			"round": 8,
+			"slug": "nyc-eprix",
+			"localeKey": "nyc-eprix",
+			"sessions": null
+		},
+		{
+			"name": "London ePrix",
+			"location": "London",
+			"latitude": 51.508075,
+			"longitude": 0.029848,
+			"tbc": true,
+			"round": 8,
+			"slug": "london-eprix",
+			"localeKey": "london-eprix",
+			"sessions": null
+		},
+		{
+			"name": "London ePrix",
+			"location": "London",
+			"latitude": 51.508075,
+			"longitude": 0.029848,
+			"tbc": true,
+			"round": 8,
+			"slug": "london-eprix",
+			"localeKey": "london-eprix",
+			"sessions": null
+		},
+		{
+			"name": "Sanya ePrix",
+			"location": "Sanya",
+			"latitude": 18.355,
+			"longitude": 109.736944,
+			"tbc": true,
+			"round": 8,
+			"slug": "sanya-eprix",
+			"localeKey": "sanya-eprix",
+			"sessions": null
+		},
+		{
+			"name": "Mexico City ePrix",
+			"location": "Mexico",
+			"latitude": 19.402847,
+			"longitude": -99.087201,
+			"tbc": true,
+			"round": 8,
+			"slug": "mexico-eprix",
+			"localeKey": "mexico-eprix",
+			"sessions": null
+		}
+	]
+}

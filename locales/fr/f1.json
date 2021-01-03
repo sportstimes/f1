@@ -1,0 +1,10 @@
+{
+  "title": "Calendrier F1",
+  "subtitle": "Courses, Qualifications & Essais Libres",
+  "seo": {
+    "title": "Calendrier F1 {{year}} - Formula One Race Times and Dates",
+    "description": "Calendrier Formule 1 pour la saison {{year}} avec tous les Grands Prix, essais libres & qualificatifs. Activer les rappels. Tous les fuseaux horaires. Télécharger ou s'abonner.",
+    "keywords": "F1, formule 1, horaires des courses, courses, rappel, alertes, grands prix, grand prix, calendrier, dates, heures de départ, qualifications, essais, Londres, Europe, {{year}}"
+  },
+  "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+}

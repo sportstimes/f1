@@ -2,11 +2,6 @@
   "form": {
     "title": "生成日历",
     "description": "首先, 选择你在比赛日中所关注的某个赛程",
-    "fp1": "第1次练习赛",
-    "fp2": "第2次练习赛",
-    "fp3": "第3次练习赛",
-    "qualifying": "排位赛",
-    "grandPrix": "大奖赛",
     "reminder": "设置",
     "reminderContinued": "分钟前提醒",
     "button": "确认",

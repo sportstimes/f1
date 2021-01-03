@@ -1,36 +1,31 @@
 {
-  "title": "F1 Takvimi",
-  "subtitle": "Yarışlar, Sıralama ve Antrenman Turları",
-  "meta":{
-    "description": "{{year}} sezonu için tüm F1 Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Formula 1 takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
-    "keywords": "F1, formula bir, yarış saatleri, yarışlar, hatırlatıcı, alarm, grands prix, grand prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, Londra, Avrupa, {{year}}"
-  },
-  "options": {
-    "calendar": "Yarış programını kendi takviminize ekleyin",
-    "email": "E-posta ile hatırlatma alın",
-    "timezonePicker": {
-      "showing": "Seçili saat dilimi",
-      "pick": "Saat diliminizi seçin...",
-      "button": "Tamam"
-    }
-  },
-  "contribute": "Katkıda bulunun",
-  "cookies": {
-    "title": "Bu site, kullanıcı deneyimini iyileştirmek için çerez kullanır.",
-    "button": "Ne güzel!"
-  },
-  "languageSelector": "Dil Seçimi",
-  "javascript": "F1 Takvimi sorunsuz çalışmak için Javascript'e ihtiyaç duyar.",
-  "footer": {
-    "coffee": "Bir kahve ısmarlayarak F1 Takvimi'ne destek olabilirsiniz.",
-    "twitter": "Sosyal medyada Twitter",
-    "github": "Kaynak kodumuz için GitHub",
-    "issue": "Sorun mu gördünüz? Bildirin",
-    "links": {
-      "wereOn": "Sosyal medyada",
-      "openSourcedOn": "Kaynak kodumuz için",
-      "spottedIssue": "Sorun mu gördünüz?",
-      "spottedReport": "Bildirin"
-    }
-  }
+	"options": {
+		"calendar": "Yarış programını kendi takviminize ekleyin",
+		"email": "E-posta ile hatırlatma alın",
+		"timezonePicker": {
+			"showing": "Seçili saat dilimi",
+			"pick": "Saat diliminizi seçin..."
+		},
+		"formatPicker": {
+			"title": "Time Format",
+			"12hr": "12-Hour Time",
+			"24hr": "24-Hour Time"
+		},
+		"button": "Tamam"
+	},
+	"contribute": "Katkıda bulunun",
+	"languageSelector": "Dil Seçimi",
+	"javascript": "F1 Takvimi sorunsuz çalışmak için Javascript'e ihtiyaç duyar.",
+	"footer": {
+		"coffee": "Bir kahve ısmarlayarak F1 Takvimi'ne destek olabilirsiniz.",
+		"twitter": "Sosyal medyada Twitter",
+		"github": "Kaynak kodumuz için GitHub",
+		"issue": "Sorun mu gördünüz? Bildirin",
+		"links": {
+			"wereOn": "Sosyal medyada",
+			"openSourcedOn": "Kaynak kodumuz için",
+			"spottedIssue": "Sorun mu gördünüz?",
+			"spottedReport": "Bildirin"
+		}
+	}
 }

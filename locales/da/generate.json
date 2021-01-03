@@ -2,11 +2,6 @@
   "form": {
     "title": "Generer kalender",
     "description": "Først, vælg hvilken F1 løbsweekends sessioner du vil tilføje til din kalender:",
-    "fp1": "Fri Træning 1",
-    "fp2": "Fri Træning 2",
-    "fp3": "Fri Træning 3",
-    "qualifying": "Kvalifikation",
-    "grandPrix": "Grand Prix",
     "reminder": "Sæt en påmindelse",
     "reminderContinued": "minutter for hver session i din sæson kalender.",
     "button": "Hent kalendar",

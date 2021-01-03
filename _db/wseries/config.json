@@ -1,0 +1,16 @@
+{
+	"siteKey": "wseries",
+	"url": "wseriescalendar.com",
+	"availableYears": [2021],
+	"sessions": ["practice1", "practice2", "qualifying", "race"],
+	"featuredSessions": ["race"],
+	"collapsedSessions": ["practice1", "practice2", "qualifying"],
+	"sessionMap": {
+		"practice1": "p1",
+		"practice2": "p2",
+		"qualifying": "q",
+		"race": "race"
+	},
+	"supportsEmailReminders": false,
+	"notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
+}

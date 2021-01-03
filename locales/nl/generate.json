@@ -2,11 +2,6 @@
   "form": {
     "title": "Genereer Kalender",
     "description": "Eerst, kies welke F1 race weekend sessies je wilt toevoegen aan je kalender:",
-    "fp1": "Vrije Training 1",
-    "fp2": "Vrije Training 2",
-    "fp3": "Vrije Training 3",
-    "qualifying": "Kwalificatie",
-    "grandPrix": "Grote Prijs Race",
     "reminder": "Stel een herinnering in",
     "reminderContinued": "enkele minuten voor elk evenement in je seizoenskalender.",
     "button": "Haal de kalender op",

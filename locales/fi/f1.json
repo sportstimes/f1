@@ -1,0 +1,10 @@
+{
+  "title": "F1 Kalenteri",
+  "subtitle": "Kisat, Aika-ajot ja Vapaat harjoitukset",
+  "seo": {
+    "title": "F1 Kalenteri {{year}} - Formula One Race Times and Dates",
+    "description": "Formula 1 Kalenteri kaudelle {{year}}. Kaikkien osakilpailujen kisat, aika-ajot ja vapaat-harjoitukset. Muistutustoiminto ja kaikki aikavyöhykkeet. Lataa tai tilaa.",
+    "keywords": "F1, formula 1, kisa-aikataulu, kisat, muistutus, hälytykset, osakilpailut, GP, kalenteri, päivämäärät, aikataulut, aika-ajot, vapaat harjoitukset, Lontoo, Eurooppa, {{year}}"
+  },
+  "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+}

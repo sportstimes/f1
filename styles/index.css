@@ -1,0 +1,73 @@
+@font-face {
+	font-family: "LeagueSpartan";
+	src: url("/fonts/leaguespartan-bold-webfont.woff2") format("woff2"),
+		url("/fonts/leaguespartan-bold-webfont.woff") format("woff");
+	font-display: swap;
+}
+
+body {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.7;
+	font-weight: 400;
+	background: #000;
+	color: #fff;
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
+		"Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif;
+	text-rendering: optimizeLegibility;
+	height: 100%;
+}
+
+.form-tick:checked {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
+	border-color: transparent;
+	background-color: currentColor;
+	background-size: 100% 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+@layer components {
+	p,
+	ul,
+	ol,
+	li {
+		@apply text-white;
+	}
+
+	a {
+		@apply font-semibold;
+	}
+
+	h6 {
+		@apply text-base font-bold font-title text-white;
+	}
+
+	h5 {
+		@apply text-lg font-bold font-title text-white;
+	}
+
+	h4 {
+		@apply text-xl font-bold font-title text-white;
+	}
+
+	h3 {
+		@apply text-2xl font-bold font-title text-white uppercase;
+	}
+
+	h2 {
+		@apply text-3xl font-bold tracking-normal font-title text-white uppercase;
+	}
+
+	h1 {
+		@apply text-4xl font-bold tracking-normal font-title text-white uppercase;
+	}
+
+	.btn {
+		@apply items-center justify-center px-4 py-2 space-x-2 text-sm font-medium transition-shadow bg-green-900 rounded shadow-sm hover:bg-green-800 cursor-pointer focus:outline-none;
+	}
+
+	.support-btn {
+		@apply flex items-center justify-center px-2 py-2 space-x-2 text-sm font-medium transition-shadow bg-red-600 rounded shadow-sm hover:bg-red-700 cursor-pointer focus:outline-none;
+	}
+}

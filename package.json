@@ -1,41 +1,48 @@
 {
-  "name": "f1",
-  "version": "1.0.0",
-  "engines": {
-    "node": "12.x"
-  },
-  "description": "_The second edition of [f1calendar.com](https://f1calendar.com)_",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next-translate && next dev",
-    "build": "next-translate && next build",
-    "start": "next start",
-    "generateCalendars": "node utils/generate-calendars.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://ay8s@github.com/sportstimes/f1.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sportstimes/f1/issues"
-  },
-  "homepage": "https://github.com/sportstimes/f1#readme",
-  "dependencies": {
-    "countries-and-timezones": "^2.3.1",
-    "dayjs": "^1.9.7",
-    "ics": "^2.26.2",
-    "next": "^10.0.1",
-    "next-fonts": "^1.5.1",
-    "next-pwa": "^3.1.5",
-    "next-seo": "^4.17.0",
-    "next-translate": "^0.17.3",
-    "react": "^17.0.1",
-    "react-cookie-consent": "^6.2.1",
-    "react-dom": "^17.0.1",
-    "react-grid-system": "^7.1.1",
-    "sass": "^1.30.0"
-  }
+	"name": "f1",
+	"version": "1.0.0",
+	"engines": {
+		"node": "12.x"
+	},
+	"description": "_The second edition of [f1calendar.com](https://f1calendar.com)_",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"setPublicAssets": "node build/public-assets.js",
+		"generateCalendars": "node build/generate-calendars.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://ay8s@github.com/sportstimes/f1.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sportstimes/f1/issues"
+	},
+	"homepage": "https://github.com/sportstimes/f1#readme",
+	"dependencies": {
+		"@babel/core": "^7.12.10",
+		"countries-and-timezones": "^2.3.1",
+		"dayjs": "^1.10.1",
+		"ics": "^2.26.2",
+		"next": "^10.0.4",
+		"next-fonts": "^1.5.1",
+		"next-plausible": "^1.2.0",
+		"next-pwa": "^5.0.2",
+		"next-seo": "^4.17.0",
+		"next-translate": "^1.0.1",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1"
+	},
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.2.1",
+		"@tailwindcss/typography": "^0.3.1",
+		"autoprefixer": "^10.1.0",
+		"postcss": "^8.2.2",
+		"tailwindcss": "^2.0.2"
+	}
 }

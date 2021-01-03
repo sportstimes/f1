@@ -2,11 +2,6 @@
   "form": {
     "title": "Takvim oluşturun",
     "description": "Öncelikle takviminizde F1 yarış haftalarının hangi seanslarını görmek istediğinizi seçin:",
-    "fp1": "Birinci antrenman",
-    "fp2": "İkinci antrenman",
-    "fp3": "Üçüncü antrenman",
-    "qualifying": "Sıralama turları",
-    "grandPrix": "Yarış",
     "reminder": "Seçili etkinliklere",
     "reminderContinued": "dakika kala hatırlatma gelsin.",
     "button": "Takvimi oluştur",

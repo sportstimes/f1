@@ -2,11 +2,6 @@
   "form": {
     "title": "Generera Kalender",
     "description": "Välj först vilka F1 sessioner du vill lägga till din kalender:",
-    "fp1": "Fri Träning 1",
-    "fp2": "Fri Träning 2",
-    "fp3": "Fri Träning 3",
-    "qualifying": "Kvalificering",
-    "grandPrix": "Grand Prix",
     "reminder": "Sätt en påminnelse",
     "reminderContinued": "minuter innan varje session i din säsongskalender.",
     "button": "Skapa Kalender",

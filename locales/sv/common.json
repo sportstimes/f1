@@ -1,36 +1,31 @@
 {
-  "title": "F1 Kalender",
-  "subtitle": "Race, Kval & Träningar",
-  "meta":{
-    "description": "Formel 1 kalender för {{year}} säsongen med alla F1 race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller .",
-    "keywords": "F1, formel 1, race tider, race, påminnelse, varningar, grands prix, grand prix, kalender, datum, start tider, kval, träning, London, Europa, {{year}}"
-  },
-  "options": {
-    "calendar": "Lägg till race tider och datum till din kalender",
-    "email": "Få e-postpåminnelser",
-    "timezonePicker": {
-      "showing": "Visar tider för",
-      "pick": "Välj en tidszon...",
-      "button": "Klar"
-    }
-  },
-  "contribute": "Bidra",
-  "cookies": {
-    "title": "Den här sidan använder cookies för att förbättra användarvänligheten.",
-    "button": "Bra!"
-  },
-  "languageSelector": "Välj Språk",
-  "javascript": "F1 Kalender fungerar bäst om Javascript är tillåten.",
-  "footer": {
-    "coffee": "Understöd F1 Kalender, köp oss en kaffe.",
-    "twitter": "Vi finns på Twitter",
-    "github": "Öppen källkod på GitHub",
-    "issue": "Hittade du ett problem? Rapportera",
-    "links": {
-      "wereOn": "Vi finns på",
-      "openSourcedOn": "Öppen källkod på",
-      "spottedIssue": "Hittade du ett problem?",
-      "spottedReport": "Rapportera"
-    }
-  }
+	"options": {
+		"calendar": "Lägg till race tider och datum till din kalender",
+		"email": "Få e-postpåminnelser",
+		"timezonePicker": {
+			"showing": "Visar tider för",
+			"pick": "Välj en tidszon..."
+		},
+		"formatPicker": {
+			"title": "Time Format",
+			"12hr": "12-Hour Time",
+			"24hr": "24-Hour Time"
+		},
+		"button": "Klar"
+	},
+	"contribute": "Bidra",
+	"languageSelector": "Välj Språk",
+	"javascript": "F1 Kalender fungerar bäst om Javascript är tillåten.",
+	"footer": {
+		"coffee": "Understöd F1 Kalender, köp oss en kaffe.",
+		"twitter": "Vi finns på Twitter",
+		"github": "Öppen källkod på GitHub",
+		"issue": "Hittade du ett problem? Rapportera",
+		"links": {
+			"wereOn": "Vi finns på",
+			"openSourcedOn": "Öppen källkod på",
+			"spottedIssue": "Hittade du ett problem?",
+			"spottedReport": "Rapportera"
+		}
+	}
 }
