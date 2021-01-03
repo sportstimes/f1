@@ -44,7 +44,7 @@ function Timezones() {
         description={description}
         keywords={keywords}
       />
-      <Layout>
+      <Layout year={currentYear}>
         <h3 className="text-xl mb-4">{t("timezones:title")}</h3>
         <Card>
           <p>

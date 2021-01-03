@@ -49,8 +49,9 @@ function Subscribe() {
 							<input
 								type="email"
 								name="EMAIL"
-								className="required email w-full px-1 py-2 text-black bg-gray-100 shadow-inner rounded-md border border-gray-400 focus:outline-none mt-2 mb-4"
+								className="required px-2 email w-full py-2 text-black bg-gray-100 shadow-inner rounded-md border border-gray-400 focus:outline-none mt-2 mb-4"
 								id="mce-EMAIL"
+								placeholder="your@email.com"
 							/>
 						</div>
 

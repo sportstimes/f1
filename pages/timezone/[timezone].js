@@ -36,7 +36,7 @@ const Timezone = (props) => {
         keywords={keywords}
       />
       <Layout showCalendarExport='true' year={props.year} timezone={timezone}>
-        <h3>{timezone}</h3>
+        <h3 className="text-xl mb-4">{timezone}</h3>
         <p><Link href="/timezones"><a>{t('common:options.timezonePicker.pick')}</a></Link><br/><br/></p>
   
         {router.isFallback ?
