@@ -1,12 +1,13 @@
 import {useState, useContext, useEffect} from 'react';
 import UserContext from 'components/UserContext';
 import Layout from 'components/Layout/Layout'
-import Races from 'components/Race/Race';
+import Races from 'components/Races/Races';
 import {NextSeo} from 'next-seo';
 import useTranslation from "next-translate/useTranslation";
 import RaceSchema from "components/RaceSchema/RaceSchema";
 import Link from "next/link";
 import {useRouter} from 'next/router'
+import Notice from "components/Notice/Notice";
 
 const Timezone = (props) => {
   const router = useRouter()
@@ -27,6 +28,7 @@ const Timezone = (props) => {
   
   const timezone = props.timezone ? props.timezone.replace("-", "/") : "";
   
+  const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
   
   return (
     <>
@@ -37,8 +39,7 @@ const Timezone = (props) => {
       />
       <Layout showCalendarExport='true' year={props.year} timezone={timezone}>
         <h3 className="text-xl mb-4">{timezone}</h3>
-        <p><Link href="/timezones"><a>{t('common:options.timezonePicker.pick')}</a></Link><br/><br/></p>
-  
+        
         {router.isFallback ?
           <>
             <div>Loading...</div>
@@ -48,9 +49,15 @@ const Timezone = (props) => {
           </>
           :
           <>
-  
+            
+            <p><Link href="/timezones"><a>{t('common:options.timezonePicker.pick')}</a></Link><br/><br/></p>
+            
+            { config.notice != null &&
+              <Notice />
+            }
+            
             {props.races &&
-            <Races year={props.year} races={props.races} timezone={timezone}/>
+            <Races year={currentYear} races={props.races} timezone={timezone}/>
             }
   
             {props.races && props.races.map((item, index) => {
@@ -78,7 +85,7 @@ export async function getStaticProps({params}) {
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
   try {
-    const res = await fetch(`https://` + process.env.VERCEL_URL + `/api/year/` + currentYear + ``);
+    const res = await fetch(`https://f1calendar.com/api/year/` + currentYear + ``);
     const data = await res.json();
 
     return {

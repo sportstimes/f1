@@ -8,7 +8,7 @@ const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.jso
 const Races = (props) => {
 	const {t} = useTranslation();
 
-	const {timezone, timeFormat} = useContext(UserContext);
+	let {timezone, timeFormat} = useContext(UserContext);
 
 	const races = props.races;
 
