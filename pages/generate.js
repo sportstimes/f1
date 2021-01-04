@@ -92,21 +92,21 @@ function Generate(props) {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${props.domain}/download//${lang}${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${props.domain}/download/${lang}/${
+				webcalURL: `webcal://${config.url}/download//${lang}${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${config.url}/download/${lang}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${props.domain}/download/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${config.url}/download/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		} else {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${props.domain}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${props.domain}/download/${
+				webcalURL: `webcal://${config.url}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${config.url}/download/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${props.domain}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${config.url}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		}
 	};
@@ -301,16 +301,3 @@ function Generate(props) {
 }
 
 export default Generate;
-
-export const getStaticProps = async ({params}) => {
-	const url = process.env.VERCEL_URL
-		? `${process.env.VERCEL_URL}`
-		: "f1calendar.com";
-
-	return {
-		props: {
-			domain: url,
-			year: process.env.NEXT_PUBLIC_CURRENT_YEAR
-		}
-	};
-};
