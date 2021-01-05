@@ -213,12 +213,12 @@ function Generate(props) {
 													id={item}
 													defaultValue="on"
 													defaultChecked="checked"
-													onChange={(event) =>
+													onChange={async event => {
 														setState({
 															...form,
-															item: event.target.checked
+															[item]: event.target.checked
 														})
-													}
+													}}
 												/>
 												<label
 													htmlFor={item}
