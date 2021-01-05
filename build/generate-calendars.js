@@ -138,7 +138,7 @@ for (language of i18n.locales) {
 					let session = race.sessions[sessionKey];
 
 					// Skip
-					// if(!request.includes(sessionMap[sessionKey])) continue;
+					if(!request.includes(sessionMap[sessionKey])) continue;
 					
 					let title = race.name;
 					if (localizedStrings.races[race.localeKey]) {
