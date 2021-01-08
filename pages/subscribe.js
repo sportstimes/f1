@@ -4,9 +4,11 @@ import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import Card from "components/Card/Card";
 import NextError from 'next/error'
+import {usePlausible} from "next-plausible";
 
 function Subscribe() {
 	const {t} = useTranslation();
+	const plausible = usePlausible();
 
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
@@ -41,6 +43,9 @@ function Subscribe() {
 						className="validate"
 						target="_blank"
 						noValidate
+						onSubmit={async e => {
+							plausible("Subscribed to Email Alerts");
+						}}
 					>
 						<div className="row">
 							<label htmlFor="mce-EMAIL" className="font-bold text-lg">
