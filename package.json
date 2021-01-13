@@ -27,12 +27,12 @@
 	"dependencies": {
 		"@babel/core": "^7.12.10",
 		"countries-and-timezones": "^2.3.1",
-		"dayjs": "^1.10.2",
+		"dayjs": "^1.10.3",
 		"ics": "^2.26.2",
 		"next": "^10.0.5",
 		"next-fonts": "^1.5.1",
 		"next-plausible": "^1.2.0",
-		"next-pwa": "^5.0.2",
+		"next-pwa": "^5.0.3",
 		"next-seo": "^4.17.0",
 		"next-translate": "^1.0.1",
 		"react": "^17.0.1",
@@ -42,7 +42,7 @@
 		"@tailwindcss/forms": "^0.2.1",
 		"@tailwindcss/typography": "^0.3.1",
 		"autoprefixer": "^10.2.1",
-		"postcss": "^8.2.3",
+		"postcss": "^8.2.4",
 		"tailwindcss": "^2.0.2"
 	}
 }
