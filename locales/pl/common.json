@@ -7,9 +7,9 @@
 			"pick": "Wybierz strefę czasową..."
 		},
 		"formatPicker": {
-			"title": "Time Format",
-			"12hr": "12-Hour Time",
-			"24hr": "24-Hour Time"
+			"title": "Format czasy",
+			"12hr": "12-godzinny czas",
+			"24hr": "24-godzinny czas"
 		},
 		"button": "Ustaw"
 	},
