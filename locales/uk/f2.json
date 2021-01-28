@@ -1,10 +1,10 @@
 {
-  "title": "F2 Calendar",
-  "subtitle": "Races, Qualifying & Practice Sessions",
+  "title": "Календар Ф2",
+  "subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
   "seo": {
-    "title": "F2 Calendar {{year}} - Formula Two Race Times and Dates",
-    "description": "Formula Two Calendar for {{year}} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+    "title": "Календар Ф2 {{year}} - Час та Дати Гонок Формули-2",
+    "description": "Календар Формули-2 на сезон {{year}} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадуваннь. Всі часові пояси. Скачати чи підписатися.",
     "keywords": "placeholder"
   },
-  "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+  "footnote": "Чемпіонат ФІА Формула-2, ФІА Формула-2, Формула-2 та Ф2 є торговими марками ФІА."
 }

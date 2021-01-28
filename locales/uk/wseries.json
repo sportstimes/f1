@@ -1,10 +1,10 @@
 {
-	"title": "W Series Calendar",
-	"subtitle": "Races, Qualifying & Practice Sessions",
+	"title": "Календар W Series",
+	"subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
 	"seo": {
-		"title": "W Series Calendar {{year}} - Race Times and Dates",
-		"description": "W Seroes Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-		"keywords": "wseries, w-series, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		"title": "Календар W Series {{year}} - Час та Дати Гонок Формули-3",
+		"description": "Календар W Series на сезон {{year}} року зі всіма W Series гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадуваннь. Всі часові пояси. Скачати чи підписатися.",
+		"keywords": "wseries, w-series, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {{year}}"
 	},
-	"footnote": "W Series Calendar is not affiliated with W Series."
+	"footnote": "Календар W Series не пов’язаний із W Series."
 }
