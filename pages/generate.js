@@ -114,7 +114,7 @@ function Generate(props) {
 	return (
 		<>
 			<NextSeo title={title} description={description} keywords={keywords} />
-			<Layout year={props.year}>
+			<Layout year={currentYear}>
 				{form.submitted ? (
 					<>
 						<h3 className="text-xl mb-4">
