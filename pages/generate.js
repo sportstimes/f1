@@ -228,8 +228,6 @@ function Generate(props) {
 												</label>
 											</div>
 										);
-
-										//{t("generate:form.fp2")}
 									})}
 								</fieldset>
 
