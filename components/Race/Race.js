@@ -397,7 +397,7 @@ class RaceTR extends React.Component {
 			);
 		} else {
 			return (
-				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
+				<tr className={`${this.props.collapsed ? "hidden" : ""}`} key={this.props.localeKey}>
 					<td className="w-1/8"></td>
 					<td className="w-1/2 py-4 pl-2">{t(titleKey)}</td>
 					<td className="w-1/6">
