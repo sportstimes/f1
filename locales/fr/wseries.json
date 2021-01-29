@@ -3,8 +3,8 @@
 	"subtitle": "Races, Qualifying & Practice Sessions",
 	"seo": {
 		"title": "W Series Calendar {{year}} - Race Times and Dates",
-		"description": "W Seroes Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-		"keywords": "wseries, w-series, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		"description": "W Series Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+		"keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
 	},
 	"footnote": "W Series Calendar is not affiliated with W Series."
 }
