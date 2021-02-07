@@ -11,11 +11,11 @@
 			"localeKey": "bahrain-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/bahrain/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-03-26T11:00:00Z",
+				"fp1": "2021-03-26T11:30:00Z",
 				"fp2": "2021-03-26T15:00:00Z",
-				"fp3": "2021-03-27T11:00:00Z",
-				"qualifying": "2021-03-27T14:00:00Z",
-				"gp": "2021-03-28T14:10:00Z"
+				"fp3": "2021-03-27T12:00:00Z",
+				"qualifying": "2021-03-27T15:00:00Z",
+				"gp": "2021-03-28T15:00:00Z"
 			}
 		},
 		{
@@ -30,10 +30,10 @@
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/imola/tickets?af=165390",
 			"sessions": {
 				"fp1": "2021-04-16T09:00:00Z",
-				"fp2": "2021-04-16T12:00:00Z",
-				"fp3": "2021-04-17T09:00:00Z",
+				"fp2": "2021-04-16T13:00:00Z",
+				"fp3": "2021-04-17T10:00:00Z",
 				"qualifying": "2021-04-17T13:00:00Z",
-				"gp": "2021-04-18T12:10:00Z"
+				"gp": "2021-04-18T13:00:00Z"
 			}
 		},
 		{
@@ -50,7 +50,7 @@
 				"fp2": "2021-04-30T06:00:00Z",
 				"fp3": "2021-05-01T03:00:00Z",
 				"qualifying": "2021-05-01T06:00:00Z",
-				"gp": "2021-05-02T06:10:00Z"
+				"gp": "2021-05-02T06:00:00Z"
 			}
 		},
 		{
@@ -64,11 +64,11 @@
 			"localeKey": "spanish-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/spain/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-05-07T09:00:00Z",
+				"fp1": "2021-05-07T09:30:00Z",
 				"fp2": "2021-05-07T13:00:00Z",
 				"fp3": "2021-05-08T10:00:00Z",
 				"qualifying": "2021-05-08T13:00:00Z",
-				"gp": "2021-05-09T13:10:00Z"
+				"gp": "2021-05-09T13:00:00Z"
 			}
 		},
 		{
@@ -82,11 +82,11 @@
 			"localeKey": "monaco-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/monaco/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-05-21T09:00:00Z",
+				"fp1": "2021-05-21T09:30:00Z",
 				"fp2": "2021-05-21T13:00:00Z",
 				"fp3": "2021-05-22T10:00:00Z",
 				"qualifying": "2021-05-22T13:00:00Z",
-				"gp": "2021-05-23T13:10:00Z"
+				"gp": "2021-05-23T13:00:00Z"
 			}
 		},
 		{
@@ -100,11 +100,11 @@
 			"localeKey": "azerbaijan-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/azerbaijan/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-06-04T09:00:00Z",
+				"fp1": "2021-06-04T09:30:00Z",
 				"fp2": "2021-06-04T13:00:00Z",
 				"fp3": "2021-06-05T10:00:00Z",
 				"qualifying": "2021-06-05T13:00:00Z",
-				"gp": "2021-06-06T12:10:00Z"
+				"gp": "2021-06-06T12:00:00Z"
 			}
 		},
 		{
@@ -118,11 +118,11 @@
 			"localeKey": "canadian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/canada/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-06-11T15:00:00Z",
+				"fp1": "2021-06-11T15:30:00Z",
 				"fp2": "2021-06-11T19:00:00Z",
-				"fp3": "2021-06-12T16:00:00Z",
-				"qualifying": "2021-06-12T19:00:00Z",
-				"gp": "2021-06-13T19:10:00Z"
+				"fp3": "2021-06-12T15:00:00Z",
+				"qualifying": "2021-06-12T18:00:00Z",
+				"gp": "2021-06-13T18:00:00Z"
 			}
 		},
 		{
@@ -136,11 +136,11 @@
 			"localeKey": "french-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/france/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-06-25T09:00:00Z",
+				"fp1": "2021-06-25T09:30:00Z",
 				"fp2": "2021-06-25T13:00:00Z",
 				"fp3": "2021-06-26T10:00:00Z",
 				"qualifying": "2021-06-26T13:00:00Z",
-				"gp": "2021-06-27T13:10:00Z"
+				"gp": "2021-06-27T13:00:00Z"
 			}
 		},
 		{
@@ -154,11 +154,11 @@
 			"localeKey": "austrian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/austria/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-07-02T09:00:00Z",
+				"fp1": "2021-07-02T09:30:00Z",
 				"fp2": "2021-07-02T13:00:00Z",
 				"fp3": "2021-07-03T10:00:00Z",
 				"qualifying": "2021-07-03T13:00:00Z",
-				"gp": "2021-07-04T13:10:00Z"
+				"gp": "2021-07-04T13:00:00Z"
 			}
 		},
 		{
@@ -172,11 +172,11 @@
 			"localeKey": "british-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/britain/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-07-16T09:00:00Z",
-				"fp2": "2021-07-16T13:00:00Z",
-				"fp3": "2021-07-17T10:00:00Z",
-				"qualifying": "2021-07-17T13:00:00Z",
-				"gp": "2021-07-18T13:10:00Z"
+				"fp1": "2021-07-16T10:30:00Z",
+				"fp2": "2021-07-16T14:00:00Z",
+				"fp3": "2021-07-17T11:00:00Z",
+				"qualifying": "2021-07-17T14:00:00Z",
+				"gp": "2021-07-18T14:00:00Z"
 			}
 		},
 		{
@@ -190,11 +190,11 @@
 			"localeKey": "hungarian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/hungary/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-07-30T09:00:00Z",
+				"fp1": "2021-07-30T09:30:00Z",
 				"fp2": "2021-07-30T13:00:00Z",
 				"fp3": "2021-07-31T10:00:00Z",
 				"qualifying": "2021-07-31T13:00:00Z",
-				"gp": "2021-08-01T13:10:00Z"
+				"gp": "2021-08-01T13:00:00Z"
 			}
 		},
 		{
@@ -208,11 +208,11 @@
 			"localeKey": "belgian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/belgium/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-08-27T09:00:00Z",
+				"fp1": "2021-08-27T09:30:00Z",
 				"fp2": "2021-08-27T13:00:00Z",
 				"fp3": "2021-08-28T10:00:00Z",
 				"qualifying": "2021-08-28T13:00:00Z",
-				"gp": "2021-08-29T13:10:00Z"
+				"gp": "2021-08-29T13:00:00Z"
 			}
 		},
 		{
@@ -226,11 +226,11 @@
 			"localeKey": "dutch-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/dutch/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-09-03T09:00:00Z",
+				"fp1": "2021-09-03T09:30:00Z",
 				"fp2": "2021-09-03T13:00:00Z",
 				"fp3": "2021-09-04T10:00:00Z",
 				"qualifying": "2021-09-04T13:00:00Z",
-				"gp": "2021-09-05T13:10:00Z"
+				"gp": "2021-09-05T13:00:00Z"
 			}
 		},
 		{
@@ -244,11 +244,11 @@
 			"localeKey": "italian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/italy/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-09-10T09:00:00Z",
+				"fp1": "2021-09-10T09:30:00Z",
 				"fp2": "2021-09-10T13:00:00Z",
 				"fp3": "2021-09-11T10:00:00Z",
 				"qualifying": "2021-09-11T13:00:00Z",
-				"gp": "2021-09-12T13:10:00Z"
+				"gp": "2021-09-12T13:00:00Z"
 			}
 		},
 		{
@@ -262,11 +262,11 @@
 			"localeKey": "russian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/russia/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-09-24T08:00:00Z",
+				"fp1": "2021-09-24T08:30:00Z",
 				"fp2": "2021-09-24T12:00:00Z",
 				"fp3": "2021-09-25T09:00:00Z",
 				"qualifying": "2021-09-25T12:00:00Z",
-				"gp": "2021-09-26T11:10:00Z"
+				"gp": "2021-09-26T12:00:00Z"
 			}
 		},
 		{
@@ -280,11 +280,11 @@
 			"localeKey": "singapore-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/singapore/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-10-01T08:30:00Z",
+				"fp1": "2021-10-01T09:00:00Z",
 				"fp2": "2021-10-01T12:30:00Z",
 				"fp3": "2021-10-02T10:00:00Z",
 				"qualifying": "2021-10-02T13:00:00Z",
-				"gp": "2021-10-03T12:10:00Z"
+				"gp": "2021-10-03T12:00:00Z"
 			}
 		},
 		{
@@ -298,11 +298,11 @@
 			"localeKey": "japanese-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/japan/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-10-08T01:00:00Z",
-				"fp2": "2021-10-08T05:00:00Z",
+				"fp1": "2021-10-08T02:30:00Z",
+				"fp2": "2021-10-08T06:00:00Z",
 				"fp3": "2021-10-09T03:00:00Z",
 				"qualifying": "2021-10-09T06:00:00Z",
-				"gp": "2021-10-10T05:10:00Z"
+				"gp": "2021-10-10T05:00:00Z"
 			}
 		},
 		{
@@ -316,11 +316,11 @@
 			"localeKey": "us-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/united-states/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-10-22T16:00:00Z",
+				"fp1": "2021-10-22T16:30:00Z",
 				"fp2": "2021-10-22T20:00:00Z",
 				"fp3": "2021-10-23T18:00:00Z",
 				"qualifying": "2021-10-23T21:00:00Z",
-				"gp": "2021-10-24T19:10:00Z"
+				"gp": "2021-10-24T19:00:00Z"
 			}
 		},
 		{
@@ -334,11 +334,11 @@
 			"localeKey": "mexico-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/mexico/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-10-29T15:00:00Z",
-				"fp2": "2021-10-29T19:00:00Z",
-				"fp3": "2021-10-30T15:00:00Z",
-				"qualifying": "2021-10-30T18:00:00Z",
-				"gp": "2021-10-31T19:10:00Z"
+				"fp1": "2021-10-29T16:30:00Z",
+				"fp2": "2021-10-29T20:00:00Z",
+				"fp3": "2021-10-30T16:00:00Z",
+				"qualifying": "2021-10-30T19:00:00Z",
+				"gp": "2021-10-31T19:00:00Z"
 			}
 		},
 		{
@@ -352,11 +352,11 @@
 			"localeKey": "brazilian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/brazil/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-11-05T14:00:00Z",
+				"fp1": "2021-11-05T14:30:00Z",
 				"fp2": "2021-11-05T18:00:00Z",
 				"fp3": "2021-11-06T15:00:00Z",
 				"qualifying": "2021-11-06T18:00:00Z",
-				"gp": "2021-11-07T18:10:00Z"
+				"gp": "2021-11-07T17:00:00Z"
 			}
 		},
 		{
@@ -371,11 +371,11 @@
 			"localeKey": "australian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/australia/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-11-19T01:00:00Z",
+				"fp1": "2021-11-19T01:30:00Z",
 				"fp2": "2021-11-19T05:00:00Z",
-				"fp3": "2021-03-20T03:00:00Z",
+				"fp3": "2021-03-20T02:00:00Z",
 				"qualifying": "2021-11-20T06:00:00Z",
-				"gp": "2021-11-21T05:10:00Z"
+				"gp": "2021-11-21T05:00:00Z"
 			}
 		},
 		{
@@ -389,11 +389,11 @@
 			"localeKey": "saudi-arabia-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/saudi-arabia/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-12-03T09:00:00Z",
-				"fp2": "2021-12-03T13:00:00Z",
-				"fp3": "2021-12-04T10:00:00Z",
-				"qualifying": "2021-12-04T13:00:00Z",
-				"gp": "2021-12-05T13:10:00Z"
+				"fp1": "2021-12-03T12:30:00Z",
+				"fp2": "2021-12-03T16:00:00Z",
+				"fp3": "2021-12-04T13:00:00Z",
+				"qualifying": "2021-12-04T16:00:00Z",
+				"gp": "2021-12-05T16:00:00Z"
 			}
 		},
 		{
@@ -407,11 +407,11 @@
 			"localeKey": "abu-dhabi-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/abu-dhabi/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-12-10T09:00:00Z",
+				"fp1": "2021-12-10T09:30:00Z",
 				"fp2": "2021-12-10T13:00:00Z",
 				"fp3": "2021-12-11T10:00:00Z",
 				"qualifying": "2021-12-11T13:00:00Z",
-				"gp": "2021-12-12T13:10:00Z"
+				"gp": "2021-12-12T13:00:00Z"
 			}
 		}
 	]
