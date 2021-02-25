@@ -73,6 +73,11 @@ export default function Footer() {
 						</a>
 					</div>
 
+					
+					<p className="mb-10 text-center text-base text-gray-400">
+						{ t('common:footer.links.spottedIssue') } <a href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue..." className="text-gray-300">{ t('common:footer.links.spottedReport') }	</a>
+					</p>
+
 					<p className="mt-8 text-center text-base text-gray-400">
 						&copy;{" "}
 						<a
