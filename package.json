@@ -29,15 +29,14 @@
 		"countries-and-timezones": "^2.3.1",
 		"dayjs": "^1.10.4",
 		"ics": "^2.27.0",
-		"next": "^10.0.7",
+		"next": "^10.0.5",
 		"next-fonts": "^1.5.1",
 		"next-plausible": "^1.5.1",
-		"next-pwa": "^5.0.4",
+		"next-pwa": "^5.0.5",
 		"next-seo": "^4.20.0",
 		"next-translate": "^1.0.3",
 		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
-		"webpack": "^5.24.2"
+		"react-dom": "^17.0.1"
 	},
 	"devDependencies": {
 		"@tailwindcss/forms": "^0.2.1",
