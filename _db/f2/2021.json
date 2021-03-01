@@ -5,17 +5,16 @@
 			"location": "Sakhir",
 			"latitude": 26.037,
 			"longitude": 50.5112,
-			"tbc": true,
 			"round": 1,
 			"slug": "bahrain",
 			"localeKey": "bahrain",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/bahrain/tickets?af=165390",
 			"sessions": {
-				"practice": "2021-03-26T11:00:00Z",
-				"qualifying": "2021-03-26T15:00:00Z",
-				"sprint1": "2021-03-27T11:00:00Z",
-				"sprint2": "2021-03-27T11:00:00Z",
-				"feature": "2021-03-28T14:00:00Z"
+				"practice": "2021-03-26T10:05:00Z",
+				"qualifying": "2021-03-26T13:30:00Z",
+				"sprint1": "2021-03-27T10:25:00Z",
+				"sprint2": "2021-03-27T16:40:00Z",
+				"feature": "2021-03-28T10:50:00Z"
 			}
 		},
 		{
