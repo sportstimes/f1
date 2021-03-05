@@ -92,7 +92,7 @@ function Generate(props) {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${config.url}/download//${lang}${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				webcalURL: `webcal://${config.url}/download/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
 				googleURL: `https://${config.url}/download/${lang}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
