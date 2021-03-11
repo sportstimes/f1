@@ -88,7 +88,7 @@ class Race extends React.Component {
 					badges.push(
 						<a
 							href={props.item.affiliate}
-							className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase md:inline hidden md:inline hover:bg-green-700 ml-2"
+							className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline hover:bg-green-700 ml-2"
 						>
 							{t("calendar:badges.tickets")}
 						</a>
@@ -98,7 +98,7 @@ class Race extends React.Component {
 						badges.push(
 							<a
 								href={props.item.affiliate}
-								className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase md:inline hover:bg-green-700 ml-2"
+								className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline hover:bg-green-700 ml-2"
 							>
 								{t("calendar:badges.tickets")}
 							</a>
@@ -107,7 +107,7 @@ class Race extends React.Component {
 						badges.push(
 							<a
 								href={props.item.affiliate}
-								className="opacity-50 bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase md:inline hover:bg-green-700 ml-2"
+								className="opacity-50 bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline hover:bg-green-700 ml-2"
 							>
 								{t("calendar:badges.tickets")}
 							</a>
@@ -220,7 +220,7 @@ class Race extends React.Component {
 								}`}
 							/>
 						</td>
-						<td className={`w-5/12 ${titleRowClasses} pl-2`}>
+						<td className={`w-6/12 sm:w-5/12 ${titleRowClasses} pl-2`}>
 							{t(`calendar:races.${this.props.item.localeKey}`) !=
 							localeKey
 								? t(`calendar:races.${this.props.item.localeKey}`)
@@ -232,6 +232,12 @@ class Race extends React.Component {
 										{t(`calendar:badges.next`)}
 									</span>
 								)}
+								
+							{this.props.item.tbc && (
+								<span title={t("calendar:badges.tbc_title")} className="bg-yellow-400 rounded sm:hidden p-1 text-xs text-black font-medium ml-2">
+									{t(`calendar:badges.tbc`)}
+								</span>
+							)}
 						</td>
 						<td className={`w-2/12 ${titleRowClasses}`}>
 							{this.props.item.sessions &&
@@ -253,7 +259,7 @@ class Race extends React.Component {
 										this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
 									)}
 						</td>
-						<td className="text-right w-3/12 pr-2">
+						<td className="text-right w-0 sm:w-3/12 pr-2">
 							{badgeColumnLayout(this.props)}
 						</td>
 					</tr>
@@ -309,6 +315,11 @@ class Race extends React.Component {
 										{t(`calendar:badges.next`)}
 									</span>
 								)}
+							{this.props.item.tbc && (
+									<span title={t("calendar:badges.tbc_title")} className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xs text-black font-bold ml-2">
+										{t(`calendar:badges.tbc`)}
+									</span>
+								)}
 						</td>
 						<td className="text-right">
 							{this.props.item.sessions &&
@@ -333,7 +344,7 @@ class Race extends React.Component {
 										.tz(this.props.timezone)
 										.format("D MMM")}`}
 						</td>
-						<td className="text-right w-3/12 pr-2">
+						<td className="text-right w-0 sm:w-3/12 pr-2">
 							{badgeColumnLayout(this.props)}
 						</td>
 					</tr>
