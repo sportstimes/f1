@@ -46,6 +46,22 @@ class Race extends React.Component {
 		const localeKey = "calendar:races." + this.props.item.localeKey;
 
 		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
+		
+		function tbcBadge() {
+			return (
+				<span title={t("calendar:badges.tbc_title")} className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xxs sm:text-xs text-black font-normal sm:font-bold ml-2">
+					{t(`calendar:badges.tbc`)}
+				</span>
+			);
+		}
+		
+		function nextBadge() {
+			return (
+				<span className="bg-yellow-500 rounded px-1 md:px-2 py-1 text-xxs sm:text-xs text-black font-normal sm:font-bold ml-2">
+					{t(`calendar:badges.next`)}
+				</span>
+			);
+		}
 
 		function badgeColumnLayout(props) {
 			var badges = [];
@@ -228,15 +244,11 @@ class Race extends React.Component {
 							{this.props.isNextRace &&
 								!this.props.item.tbc &&
 								!this.props.item.canceled && (
-									<span className="bg-yellow-500 rounded px-1 md:px-1 py-1 text-xs text-black font-bold ml-2">
-										{t(`calendar:badges.next`)}
-									</span>
+									nextBadge()
 								)}
 								
 							{this.props.item.tbc && (
-								<span title={t("calendar:badges.tbc_title")} className="bg-yellow-400 rounded sm:hidden p-1 text-xs text-black font-medium ml-2">
-									{t(`calendar:badges.tbc`)}
-								</span>
+								tbcBadge()
 							)}
 						</td>
 						<td className={`w-2/12 ${titleRowClasses}`}>
@@ -311,15 +323,11 @@ class Race extends React.Component {
 							{this.props.isNextRace &&
 								!this.props.item.tbc &&
 								!this.props.item.canceled && (
-									<span className="bg-orange-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold">
-										{t(`calendar:badges.next`)}
-									</span>
+									nextBadge()
 								)}
 							{this.props.item.tbc && (
-									<span title={t("calendar:badges.tbc_title")} className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xs text-black font-bold ml-2">
-										{t(`calendar:badges.tbc`)}
-									</span>
-								)}
+								tbcBadge()
+							)}
 						</td>
 						<td className="text-right">
 							{this.props.item.sessions &&
