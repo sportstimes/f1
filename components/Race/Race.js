@@ -46,6 +46,22 @@ class Race extends React.Component {
 		const localeKey = "calendar:races." + this.props.item.localeKey;
 
 		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
+		
+		function tbcBadge() {
+			return (
+				<span title={t("calendar:badges.tbc_title")} className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xxs sm:text-xs text-black font-normal sm:font-bold ml-2">
+					{t(`calendar:badges.tbc`)}
+				</span>
+			);
+		}
+		
+		function nextBadge() {
+			return (
+				<span className="bg-yellow-500 rounded px-1 md:px-2 py-1 text-xxs sm:text-xs text-black font-normal sm:font-bold ml-2">
+					{t(`calendar:badges.next`)}
+				</span>
+			);
+		}
 
 		function badgeColumnLayout(props) {
 			var badges = [];
@@ -88,7 +104,7 @@ class Race extends React.Component {
 					badges.push(
 						<a
 							href={props.item.affiliate}
-							className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase md:inline hidden md:inline hover:bg-green-700 ml-2"
+							className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline hover:bg-green-700 ml-2"
 						>
 							{t("calendar:badges.tickets")}
 						</a>
@@ -98,7 +114,7 @@ class Race extends React.Component {
 						badges.push(
 							<a
 								href={props.item.affiliate}
-								className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase md:inline hover:bg-green-700 ml-2"
+								className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline hover:bg-green-700 ml-2"
 							>
 								{t("calendar:badges.tickets")}
 							</a>
@@ -107,7 +123,7 @@ class Race extends React.Component {
 						badges.push(
 							<a
 								href={props.item.affiliate}
-								className="opacity-50 bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase md:inline hover:bg-green-700 ml-2"
+								className="opacity-50 bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline hover:bg-green-700 ml-2"
 							>
 								{t("calendar:badges.tickets")}
 							</a>
@@ -220,7 +236,7 @@ class Race extends React.Component {
 								}`}
 							/>
 						</td>
-						<td className={`w-5/12 ${titleRowClasses} pl-2`}>
+						<td className={`w-6/12 sm:w-5/12 ${titleRowClasses} pl-2`}>
 							{t(`calendar:races.${this.props.item.localeKey}`) !=
 							localeKey
 								? t(`calendar:races.${this.props.item.localeKey}`)
@@ -228,10 +244,12 @@ class Race extends React.Component {
 							{this.props.isNextRace &&
 								!this.props.item.tbc &&
 								!this.props.item.canceled && (
-									<span className="bg-yellow-500 rounded px-1 md:px-1 py-1 text-xs text-black font-bold ml-2">
-										{t(`calendar:badges.next`)}
-									</span>
+									nextBadge()
 								)}
+								
+							{this.props.item.tbc && (
+								tbcBadge()
+							)}
 						</td>
 						<td className={`w-2/12 ${titleRowClasses}`}>
 							{this.props.item.sessions &&
@@ -253,7 +271,7 @@ class Race extends React.Component {
 										this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
 									)}
 						</td>
-						<td className="text-right w-3/12 pr-2">
+						<td className="text-right w-0 sm:w-3/12 pr-2">
 							{badgeColumnLayout(this.props)}
 						</td>
 					</tr>
@@ -305,10 +323,11 @@ class Race extends React.Component {
 							{this.props.isNextRace &&
 								!this.props.item.tbc &&
 								!this.props.item.canceled && (
-									<span className="bg-orange-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold">
-										{t(`calendar:badges.next`)}
-									</span>
+									nextBadge()
 								)}
+							{this.props.item.tbc && (
+								tbcBadge()
+							)}
 						</td>
 						<td className="text-right">
 							{this.props.item.sessions &&
@@ -333,7 +352,7 @@ class Race extends React.Component {
 										.tz(this.props.timezone)
 										.format("D MMM")}`}
 						</td>
-						<td className="text-right w-3/12 pr-2">
+						<td className="text-right w-0 sm:w-3/12 pr-2">
 							{badgeColumnLayout(this.props)}
 						</td>
 					</tr>
