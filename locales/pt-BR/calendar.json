@@ -17,19 +17,19 @@
 		"fp1": "1° Treino Livre",
 		"fp2": "2° Treino Livre",
 		"fp3": "3° Treino Livre",
-		"practice1": "Practice 1",
-		"practice2": "Practice 2",
-		"practice3": "Practice 3",
-		"practice": "Practice",
+		"practice1": "Treino 1",
+		"practice2": "Treino 2",
+		"practice3": "Treino 3",
+		"practice": "Treino",
 		"qualifying": "Classificação",
 		"race": "Corrida",
 		"race1": "Corrida 1",
 		"race2": "Corrida 2",
 		"race3": "Corrida 3",
 		"gp": "Grande Prêmio",
-		"sprint1": "Sprint 1",
-		"sprint2": "Sprint 2",
-		"feature": "Feature"
+		"sprint1": "Corrida de Sprint 1",
+		"sprint2": "Corrida de Sprint 2",
+		"feature": "Corrida Principal"
 	},
 	"races": {
 		"austrian-grand-prix": "GP da Áustria",
@@ -62,6 +62,6 @@
 		"emilia-romagna-grand-prix": "GP da Emilia Romagna",
 		"sakhir-grand-prix": "GP de Sakhir (Barein)",
 		"turkish-grand-prix": "GP da Turquia",
-		"saudi-arabia-grand-prix": "Saudi Arabian Grand Prix"
+		"saudi-arabia-grand-prix": "GP da Arábia Saudita"
 	}
 }

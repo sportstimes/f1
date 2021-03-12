@@ -7,9 +7,9 @@
 			"pick": "Escolha um fuso horário..."
 		},
 		"formatPicker": {
-			"title": "Time Format",
-			"12hr": "12-Hour Time",
-			"24hr": "24-Hour Time"
+			"title": "Formato da hora",
+			"12hr": "12-Horas",
+			"24hr": "24-Horas"
 		},
 		"button": "Finalizar"
 	},
