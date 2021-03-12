@@ -1,10 +1,10 @@
 {
-	"title": "Formula E Calendar",
-	"subtitle": "Races, Qualifying & Practice Sessions",
+	"title": "Calendário da Fórmula E",
+	"subtitle": "Corridas, Classificaçāo e Treinos Livres",
 	"seo": {
-		"title": "Formula E Calendar {{year}} - Formula E Race Times and Dates",
-		"description": "Formula E Calendar for {{year}} season with all Formula E e-prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-		"keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+	  "title": "Calendário da Fórmula E {{year}} - Datas e horários das corridas",
+	  "description": "Calendário da Fórmula 3 para temporada de {{year}} com todos as corridas, treinos livres e classificaçāo da F1. Recurso para definir lembretes. Todos os fuseos horários do mundo. Baixe ou assine.",
+	  "keywords": "FE, fórmula E, horário das corridas, corridas, avisos, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {{year}}"
 	},
-	"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
-}
+	"footnote": "Campeonato FIA de Fórmula E, FIA FÓRMULA E, FÓRMULA E & E-Prix são marcas registradas da FIA."
+  }
