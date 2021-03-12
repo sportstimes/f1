@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-28-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -65,6 +65,9 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://github.com/gro-kmp"><img src="https://avatars1.githubusercontent.com/u/59517998?v=4?s=100" width="100px;" alt=""/><br /><sub><b>gro-kmp</b></sub></a><br /><a href="#translation-gro-kmp" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/Bman425"><img src="https://avatars1.githubusercontent.com/u/7978888?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bman425</b></sub></a><br /><a href="#content-Bman425" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/Norskov"><img src="https://avatars.githubusercontent.com/u/6616991?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Nørskov</b></sub></a><br /><a href="https://github.com/sportstimes/f1/issues?q=author%3ANorskov" title="Bug reports">🐛</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/kareeka007"><img src="https://avatars.githubusercontent.com/u/80452135?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kareeka007</b></sub></a><br /><a href="#translation-kareeka007" title="Translation">🌍</a></td>
   </tr>
 </table>
 
