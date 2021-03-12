@@ -1,0 +1,10 @@
+{
+	"title": "Formula E Naptár",
+	"subtitle": "Futamok, időmérők és szabadedzések",
+	"seo": {
+		"title": "Formula E Naptár {{year}} - Formula E futam időpontok",
+		"description": "{{year}}. évi Formula E naptár az összes FE nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+		"keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+	},
+	"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix az FIA bejegyzett védjegyei."
+}
