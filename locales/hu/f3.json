@@ -1,0 +1,10 @@
+{
+	"title": "F3 Naptár",
+	"subtitle": "Futamok, időmérők és szabadedzések",
+	"seo": {
+		"title": "F3 Naptár {{year}} - Forma 3 futam időpontok",
+		"description": "{{year}}. évi Forma 3 naptár az összes F3 nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+		"keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+	},
+	"footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 az FIA bejegyzett védjegyei."
+}

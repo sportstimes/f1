@@ -1,0 +1,31 @@
+{
+	"options": {
+		"calendar": "Futam időpontok hozzáadása a saját Naptárhoz",
+		"email": "E-mail emlékeztetők kérése",
+		"timezonePicker": {
+			"showing": "Időpontok mutatása ebben az időzónában:",
+			"pick": "Időzóna választása..."
+		},
+		"formatPicker": {
+			"title": "Időformátum",
+			"12hr": "12 órás időformátum",
+			"24hr": "24 órás időformátum"
+		},
+		"button": "Kész"
+	},
+	"contribute": "Közreműködés",
+	"languageSelector": "Nyelv választása",
+	"javascript": "Az F1 Calendar bekapcsolt Javascripttel nyújtja a legjobb élményt.",
+	"footer": {
+		"coffee": "Támogass minket, hívj meg egy kávéra.",
+		"twitter": "Kövess a Twitteren",
+		"github": "Nyílt forráskód a GitHubon",
+		"issue": "Hibát találtál? Jelentsd be",
+		"links": {
+			"wereOn": "Kövess a",
+			"openSourcedOn": "Nyílt forráskód a",
+			"spottedIssue": "Hibát találtál?",
+			"spottedReport": "Jelentsd be"
+		}
+	}
+}
