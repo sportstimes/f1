@@ -12,6 +12,13 @@
 		"qualifying": "qualifying",
 		"race": "race"
 	},
+	"sessionLengths": {
+		"practice1": 45,
+		"practice2": 30,
+		"practice3": 45,
+		"qualifying": 60,
+		"race": 57
+	},
 	"supportsEmailReminders": false,
 	"notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
 }
