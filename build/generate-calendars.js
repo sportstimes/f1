@@ -146,7 +146,6 @@ for (language of i18n.locales) {
 					}
 
 					let category = "Grand Prix";
-					let sessionLength = 120;
 					
 					// If the session isn't featured then add the session name in front...
 					// Or if there are multiple featured sessions then add the session name in front (sprint, feature etc)...
@@ -154,8 +153,16 @@ for (language of i18n.locales) {
 						let sessionTitle = localizedStrings.schedule[sessionKey];
 						
 						title = `${sessionTitle} (${title})`;
-						sessionLength = 90;
 						category = sessionTitle;
+					}
+					
+					// Session Length
+					let sessionLength = 120;
+
+					if(config.sessionLengths != null){
+						if(config.sessionLengths[sessionKey] != null){
+							sessionLength = config.sessionLengths[sessionKey];
+						}
 					}
 					
 					// TODO: Localize....

@@ -18,6 +18,13 @@
 		"sprint2": "sprint2",
 		"feature": "feature"
 	},
+	"sessionLengths": {
+		"practice": 45,
+		"qualifying": 30,
+		"sprint1": 35,
+		"sprint2": 45,
+		"feature": 60
+	},
 	"supportsEmailReminders": false,
 	"notice": "Some dates & times are TBC. Calendar will be updated once details are confirmed."
 }
