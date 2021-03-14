@@ -8,7 +8,6 @@
 			"round": 1,
 			"slug": "bahrain",
 			"localeKey": "bahrain",
-			"affiliate": "https://motorsporttickets.com/en-gb/f1/bahrain/tickets?af=165390",
 			"sessions": {
 				"practice": "2021-03-26T10:05:00Z",
 				"qualifying": "2021-03-26T13:30:00Z",
@@ -26,7 +25,6 @@
 			"round": 2,
 			"slug": "monaco",
 			"localeKey": "monaco",
-			"affiliate": "https://motorsporttickets.com/en-gb/f1/monaco/tickets?af=165390",
 			"sessions": {
 				"practice": "2021-05-21T09:00:00Z",
 				"qualifying": "2021-05-21T13:00:00Z",
@@ -44,7 +42,6 @@
 			"round": 3,
 			"slug": "azerbaijan",
 			"localeKey": "azerbaijan",
-			"affiliate": "https://motorsporttickets.com/en-gb/f1/azerbaijan/tickets?af=165390",
 			"sessions": {
 				"practice": "2021-06-04T09:00:00Z",
 				"qualifying": "2021-06-04T13:00:00Z",
@@ -62,7 +59,6 @@
 			"round": 4,
 			"slug": "british",
 			"localeKey": "british",
-			"affiliate": "https://motorsporttickets.com/en-gb/f1/britain/tickets?af=165390",
 			"sessions": {
 				"practice": "2021-07-16T09:00:00Z",
 				"qualifying": "2021-07-16T13:00:00Z",
@@ -80,7 +76,6 @@
 			"round": 5,
 			"slug": "italian",
 			"localeKey": "italian",
-			"affiliate": "https://motorsporttickets.com/en-gb/f1/italy/tickets?af=165390",
 			"sessions": {
 				"practice": "2021-09-10T09:00:00Z",
 				"qualifying": "2021-09-10T13:00:00Z",
@@ -98,7 +93,6 @@
 			"round": 6,
 			"slug": "russian",
 			"localeKey": "russian",
-			"affiliate": "https://motorsporttickets.com/en-gb/f1/russia/tickets?af=165390",
 			"sessions": {
 				"practice": "2021-09-24T08:00:00Z",
 				"qualifying": "2021-09-24T12:00:00Z",
@@ -116,7 +110,6 @@
 			"round": 7,
 			"slug": "saudi-arabia",
 			"localeKey": "saudi-arabia",
-			"affiliate": "",
 			"sessions": {
 				"practice": "2021-11-26T09:00:00Z",
 				"qualifying": "2021-11-26T13:00:00Z",

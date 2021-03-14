@@ -4,6 +4,10 @@ import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
 import {usePlausible} from "next-plausible";
+import TBCBadge from "../Badges/TBCBadge";
+import CanceledBadge from "../Badges/CanceledBadge";
+import TicketsBadge from "../Badges/TicketsBadge";
+import NextBadge from "../Badges/NextBadge"
 
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
@@ -46,89 +50,25 @@ class Race extends React.Component {
 		const localeKey = "calendar:races." + this.props.item.localeKey;
 
 		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
-		
-		function tbcBadge() {
-			return (
-				<span title={t("calendar:badges.tbc_title")} className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xxs sm:text-xs text-black font-normal sm:font-bold ml-2">
-					{t(`calendar:badges.tbc`)}
-				</span>
-			);
-		}
-		
-		function nextBadge() {
-			return (
-				<span className="bg-yellow-500 rounded px-1 md:px-2 py-1 text-xxs sm:text-xs text-black font-normal sm:font-bold ml-2">
-					{t(`calendar:badges.next`)}
-				</span>
-			);
-		}
-
-		function badgeColumnLayout(props) {
+	
+		function badgeColumnLayout(props, raceInPast) {
 			var badges = [];
 
 			if (props.item.tbc) {
-				badges.push(
-					<span
-						title={t("calendar:badges.tbc_title")}
-						className="bg-yellow-400 rounded px-1 md:px-2 py-1 text-xs text-black font-bold ml-2"
-					>
-						{t("calendar:badges.tbc")}
-					</span>
-				);
+				badges.push(<TBCBadge />);
 			}
 
 			if (props.item.canceled) {
-				badges.push(
-					<span className="bg-red-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase ml-2e">
-						{t("calendar:badges.canceled")}
-					</span>
-				);
-			}
-
-			var sessionDate = dayjs();
-			if (props.item.sessions != null) {
-				if (hasMultipleFeaturedEvents) {
-					let lastEventSessionKey = Object.keys(props.item.sessions)[
-						Object.keys(props.item.sessions).length - 1
-					];
-					sessionDate = dayjs(props.item.sessions[lastEventSessionKey]);
-				} else {
-					sessionDate = dayjs(
-						props.item.sessions[config.featuredSessions[0]]
-					);
-				}
+				badges.push(<CanceledBadge />);
 			}
 
 			if (props.item.affiliate) {
-				if (props.item.tbc) {
+				if(!raceInPast){
 					badges.push(
-						<a
-							href={props.item.affiliate}
-							className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline hover:bg-green-700 ml-2"
-						>
-							{t("calendar:badges.tickets")}
+						<a href={props.item.affiliate} >
+							<TicketsBadge />
 						</a>
 					);
-				} else {
-					if (sessionDate.isAfter(dayjs())) {
-						badges.push(
-							<a
-								href={props.item.affiliate}
-								className="bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline hover:bg-green-700 ml-2"
-							>
-								{t("calendar:badges.tickets")}
-							</a>
-						);
-					} else {
-						badges.push(
-							<a
-								href={props.item.affiliate}
-								className="opacity-50 bg-green-600 rounded px-1 md:px-2 py-1 text-xs text-black font-bold uppercase hidden md:inline hover:bg-green-700 ml-2"
-							>
-								{t("calendar:badges.tickets")}
-							</a>
-						);
-					}
 				}
 			}
 
@@ -160,6 +100,7 @@ class Race extends React.Component {
 		// Bold upcoming races
 		let firstEventSessionKey = "";
 		let lastEventSessionKey = "";
+		let raceInPast = false;
 
 		if (this.props.item.sessions != null) {
 			firstEventSessionKey = Object.keys(this.props.item.sessions)[0];
@@ -182,6 +123,8 @@ class Race extends React.Component {
 					.add(2, "hours")
 					.isBefore(dayjs())
 			) {
+				raceInPast = true;
+				
 				classes += "line-through text-gray-400 ";
 			} else {
 				classes += "text-white ";
@@ -196,140 +139,93 @@ class Race extends React.Component {
 				key={this.props.item.slug}
 				className={`${classes}`}
 			>
-				{!hasMultipleFeaturedEvents ? (
-					<tr
-						key={this.props.item.slug}
-						className="cursor-pointer"
-						onClick={() => this.handleRowClick()}
-					>
-						<td className="py-5 pl-2 md:pl-3 w-6">
-							{this.state.collapsed ? (
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 512 448"
-									width="10"
-									height="10"
-								>
-									<path
-										fill="white"
-										d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-									/>
-								</svg>
-							) : (
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 448 512"
-									width="10"
-									height="10"
-								>
-									<path
-										fill="white"
-										d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-									/>
-								</svg>
-							)}
-							<aria-hidden
-								className={`${
-									this.state.collapsed
-										? "fas fa-caret-right fa-xs"
-										: "fas fa-caret-down fa-xs"
-								}`}
-							/>
-						</td>
-						<td className={`w-6/12 sm:w-5/12 ${titleRowClasses} pl-2`}>
-							{t(`calendar:races.${this.props.item.localeKey}`) !=
-							localeKey
+				
+				<tr
+					key={this.props.item.slug}
+					className="cursor-pointer"
+					onClick={() => this.handleRowClick()}
+				>
+					<td className="py-5 pl-2 md:pl-3 w-6">
+						{this.state.collapsed ? (
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 448"
+								width="10"
+								height="10"
+							>
+								<path
+									fill="white"
+									d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+								/>
+							</svg>
+						) : (
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 448 512"
+								width="10"
+								height="10"
+							>
+								<path
+									fill="white"
+									d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+								/>
+							</svg>
+						)}
+						<aria-hidden
+							className={`${
+								this.state.collapsed
+									? "fas fa-caret-right fa-xs"
+									: "fas fa-caret-down fa-xs"
+							}`}
+						/>
+					</td>
+					<td className={`w-6/12 sm:w-5/12 pl-2`}>
+					
+						<span className={`${titleRowClasses}`}>
+							{t(`calendar:races.${this.props.item.localeKey}`) != localeKey
 								? t(`calendar:races.${this.props.item.localeKey}`)
 								: this.props.item.name}
-							{this.props.isNextRace &&
-								!this.props.item.tbc &&
-								!this.props.item.canceled && (
-									nextBadge()
-								)}
-								
-							{this.props.item.tbc && (
-								tbcBadge()
+						</span>	
+							
+						{this.props.isNextRace &&
+							!this.props.item.tbc &&
+							!this.props.item.canceled && (
+								<NextBadge />
 							)}
-						</td>
-						<td className={`w-2/12 ${titleRowClasses}`}>
-							{this.props.item.sessions &&
-								this.props.item.sessions[config.featuredSessions[0]] &&
-								dayjs(
-									this.props.item.sessions[config.featuredSessions[0]]
-								)
-									.tz(this.props.timezone)
-									.format("D MMM")}
-						</td>
-						<td className={`w-2/12 ${titleRowClasses}`}>
-							{this.props.item.sessions &&
-								this.props.item.sessions[config.featuredSessions[0]] &&
-								dayjs(
-									this.props.item.sessions[config.featuredSessions[0]]
-								)
-									.tz(this.props.timezone)
-									.format(
-										this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
-									)}
-						</td>
-						<td className="text-right w-0 sm:w-3/12 pr-2">
-							{badgeColumnLayout(this.props)}
-						</td>
-					</tr>
-				) : (
-					<tr
-						key={this.props.item.slug}
-						className={`cursor-pointer ${titleRowClasses}`}
-						onClick={() => this.handleRowClick()}
-					>
-						<td className="w-6 md:w-8 py-5 pl-2 md:pl-3">
-							{this.state.collapsed ? (
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 512 448"
-									width="10"
-									height="10"
-								>
-									<path
-										fill="white"
-										d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-									/>
-								</svg>
-							) : (
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 448 512"
-									width="10"
-									height="10"
-								>
-									<path
-										fill="white"
-										d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-									/>
-								</svg>
-							)}
-							<aria-hidden
-								className={`${
-									this.state.collapsed
-										? "fas fa-caret-right fa-xs"
-										: "fas fa-caret-down fa-xs"
-								}`}
-							/>
-						</td>
-						<td className="w-1/2 pl-2">
-							{t(`calendar:races.${this.props.item.localeKey}`) !==
-							localeKey
-								? t(`calendar:races.${this.props.item.localeKey}`)
-								: this.props.item.name}
-							{this.props.isNextRace &&
-								!this.props.item.tbc &&
-								!this.props.item.canceled && (
-									nextBadge()
-								)}
-							{this.props.item.tbc && (
-								tbcBadge()
-							)}
-						</td>
-						<td className="text-right">
+							
+						{this.props.item.tbc && (
+							<TBCBadge mobileOnly="true" />
+						)}
+						
+						{this.props.item.canceled && (
+							<CanceledBadge mobileOnly="true" />
+						)}
+					</td>
+					{!hasMultipleFeaturedEvents ? (
+						<>
+							<td className={`w-2/12 ${titleRowClasses}`}>
+								{this.props.item.sessions &&
+									this.props.item.sessions[config.featuredSessions[0]] &&
+									dayjs(
+										this.props.item.sessions[config.featuredSessions[0]]
+									)
+										.tz(this.props.timezone)
+										.format("D MMM")}
+							</td>
+							<td className={`w-2/12 ${titleRowClasses}`}>
+								{this.props.item.sessions &&
+									this.props.item.sessions[config.featuredSessions[0]] &&
+									dayjs(
+										this.props.item.sessions[config.featuredSessions[0]]
+									)
+										.tz(this.props.timezone)
+										.format(
+											this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
+										)}
+							</td>
+						</>
+					) : (
+						<td className={`text-right pr-3 sm:pr-0 ${titleRowClasses}`}>
 							{this.props.item.sessions &&
 							dayjs(this.props.item.sessions[firstEventSessionKey])
 								.tz(this.props.timezone)
@@ -352,12 +248,12 @@ class Race extends React.Component {
 										.tz(this.props.timezone)
 										.format("D MMM")}`}
 						</td>
-						<td className="text-right w-0 sm:w-3/12 pr-2">
-							{badgeColumnLayout(this.props)}
-						</td>
-					</tr>
-				)}
-
+					)}
+					<td className="text-right w-0 sm:w-3/12 pr-2">
+						{badgeColumnLayout(this.props, raceInPast)}
+					</td>
+				</tr>
+			
 				{config.collapsedSessions.map((item, index) => {
 					if (
 						this.props.item.sessions != null &&
@@ -402,7 +298,7 @@ class RaceTR extends React.Component {
 				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
 					<td className="w-1/8"></td>
 					<td className="w-1/2 py-4 pl-2">{t(titleKey)}</td>
-					<td className="w-1/3 text-right">
+					<td className="w-1/3 text-right pr-3 sm:pr-0">
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
 							.format(
