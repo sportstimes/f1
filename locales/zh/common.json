@@ -7,9 +7,9 @@
 			"pick": "选择时区..."
 		},
 		"formatPicker": {
-			"title": "Time Format",
-			"12hr": "12-Hour Time",
-			"24hr": "24-Hour Time"
+			"title": "时间格式",
+			"12hr": "12小时制",
+			"24hr": "24小时制"
 		},
 		"button": "完成"
 	},
