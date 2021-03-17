@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-30-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -68,6 +68,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/kareeka007"><img src="https://avatars.githubusercontent.com/u/80452135?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kareeka007</b></sub></a><br /><a href="#translation-kareeka007" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/DUYA112233"><img src="https://avatars.githubusercontent.com/u/33391055?v=4?s=100" width="100px;" alt=""/><br /><sub><b>DUYA112233</b></sub></a><br /><a href="#translation-DUYA112233" title="Translation">🌍</a></td>
   </tr>
 </table>
 
