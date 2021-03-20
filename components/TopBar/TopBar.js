@@ -4,6 +4,7 @@ import i18nConfig from "../../i18n.json";
 import Router from "next/router";
 import Link from "next/link";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
+import SiteSelector from "../../components/SiteSelector/SiteSelector";
 
 class TopBar extends React.Component {
 	render() {
@@ -31,6 +32,7 @@ class TopBar extends React.Component {
 									</svg>
 								</a>
 							</div>
+							<SiteSelector />
 							<LanguageSelector />
 						</div>
 						<div className="mt-8 md:mt-0 md:order-1"></div>

@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
+import SiteSelector from "../../components/SiteSelector/SiteSelector";
 import {usePlausible} from "next-plausible";
 
 export default function Footer() {
@@ -12,6 +13,10 @@ export default function Footer() {
 				<div className="max-w-7xl mx-auto py-6 md:py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
 					<div className="mt-1 mb-6 flex justify-center space-x-6">
 						<LanguageSelector />
+					</div>
+					
+					<div className="mt-1 mb-6 flex justify-center space-x-6">
+						<SiteSelector />
 					</div>
 
 					<div className="mb-10 flex justify-center space-x-6">
