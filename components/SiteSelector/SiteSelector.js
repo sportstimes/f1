@@ -24,11 +24,15 @@ class SiteSelector extends React.Component {
 		
 		const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
-
 		// Picker Items
 		const siteItems = [];
+		let currentValue = "";
 		
 		sitesConfig.sites.forEach(function (site, index) {
+			if(site['siteKey'] == config.siteKey){
+				currentValue = site['url'];
+			}
+			
 			siteItems.push(
 				<option value={site['url']} key={site['siteKey']}>
 					{site['name']}
@@ -45,8 +49,8 @@ class SiteSelector extends React.Component {
 					id="siteSelector"
 					name="site"
 					onChange={this.onChange}
-					value={config.siteKey}
-					className="mx-1 text-gray-900 pl-3 pr-10 py-0 text-base
+					value={currentValue}
+					className="text-gray-900 pl-2 pr-8 py-0 text-base
 					border-gray-300 focus:outline-none focus:ring-indigo-500
 					focus:border-indigo-500 sm:text-sm rounded-md"
 				>
