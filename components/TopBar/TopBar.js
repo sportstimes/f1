@@ -4,6 +4,7 @@ import i18nConfig from "../../i18n.json";
 import Router from "next/router";
 import Link from "next/link";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
+import SiteSelector from "../../components/SiteSelector/SiteSelector";
 
 class TopBar extends React.Component {
 	render() {
@@ -14,8 +15,8 @@ class TopBar extends React.Component {
 			<>
 				<div className="w-full bg-dark-green hidden md:block">
 					<div className="max-w-screen-lg mx-auto py-4 px-2 md:flex md:items-center md:justify-between">
-						<div className="flex justify-center space-x-6 md:order-2">
-							<div>
+						<div className="flex justify-center md:order-2">
+							<div className="mr-4">
 								<a
 									href="https://twitter.com/f1cal"
 									className="text-white hover:text-gray-500"
@@ -31,6 +32,7 @@ class TopBar extends React.Component {
 									</svg>
 								</a>
 							</div>
+							<SiteSelector />
 							<LanguageSelector />
 						</div>
 						<div className="mt-8 md:mt-0 md:order-1"></div>
@@ -40,58 +42,5 @@ class TopBar extends React.Component {
 		);
 	}
 }
-
-/*
-<ul className="flex flex-wrap space-x-2">
-<li>
-	<a
-		href=""
-		className="text-gray-400 hover:text-gray-200"
-	>
-		Motorsport Calendars
-	</a>
-</li>
-<li>
-	<a
-		href=""
-		className="text-gray-400 hover:text-gray-200"
-	>
-		F1
-	</a>
-</li>
-<li>
-	<a
-		href=""
-		className="text-gray-400 hover:text-gray-200"
-	>
-		F2
-	</a>
-</li>
-<li>
-	<a
-		href=""
-		className="text-gray-400 hover:text-gray-200"
-	>
-		F3
-	</a>
-</li>
-<li>
-	<a
-		href=""
-		className="text-gray-400 hover:text-gray-200"
-	>
-		FE
-	</a>
-</li>
-<li>
-	<a
-		href=""
-		className="text-gray-400 hover:text-gray-200"
-	>
-		W Series
-	</a>
-</li>
-</ul>
-*/
 
 export default withTranslation(TopBar);

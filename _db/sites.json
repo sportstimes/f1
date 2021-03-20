@@ -1,11 +1,6 @@
 {
   "sites": [
     {
-      "name": "Motorsport Calendars",
-      "url": "https://motorsportcalendars.com",
-      "siteKey": "motorsportcalendars"
-    },
-    {
       "name": "F1",
       "url": "https://f1calendar.com",
       "siteKey": "f1"
