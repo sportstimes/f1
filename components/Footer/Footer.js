@@ -12,11 +12,11 @@ export default function Footer() {
 			<footer className="mt-2 md:mt-6">
 				<div className="max-w-7xl mx-auto py-6 md:py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
 					<div className="mt-1 mb-6 flex justify-center space-x-6">
-						<LanguageSelector />
+						<LanguageSelector id="languageSelector2" />
 					</div>
 					
 					<div className="mt-1 mb-6 flex justify-center space-x-6">
-						<SiteSelector />
+						<SiteSelector id="siteSelector2" />
 					</div>
 
 					<div className="mb-10 flex justify-center space-x-6">

@@ -32,8 +32,8 @@ class TopBar extends React.Component {
 									</svg>
 								</a>
 							</div>
-							<SiteSelector />
-							<LanguageSelector />
+							<SiteSelector id="siteSelector" />
+							<LanguageSelector id="languageSelector" />
 						</div>
 						<div className="mt-8 md:mt-0 md:order-1"></div>
 					</div>

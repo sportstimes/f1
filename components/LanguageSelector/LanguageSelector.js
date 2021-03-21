@@ -70,7 +70,7 @@ class LanguageSelector extends React.Component {
 					{t("common:languageSelector")}
 				</label>
 				<select
-					id="languageSelector"
+					id={this.props.id}
 					name="language"
 					value={lang}
 					onChange={this.onChange}
