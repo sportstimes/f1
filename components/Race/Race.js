@@ -250,7 +250,9 @@ class Race extends React.Component {
 						</td>
 					)}
 					<td className="text-right w-0 sm:w-3/12 pr-2">
-						{badgeColumnLayout(this.props, raceInPast)}
+						<div className="hidden sm:block">
+							{badgeColumnLayout(this.props, raceInPast)}
+						</div>
 					</td>
 				</tr>
 			
