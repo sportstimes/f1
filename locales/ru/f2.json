@@ -1,10 +1,10 @@
 {
-  "title": "F2 Calendar",
-  "subtitle": "Races, Qualifying & Practice Sessions",
+  "title": "Календарь F2",
+  "subtitle": "Гонки, Квалификации и Свободные заезды",
   "seo": {
-    "title": "F2 Calendar {{year}} - Formula Two Race Times and Dates",
-    "description": "Formula Two Calendar for {{year}} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-    "keywords": "placeholder"
+    "title": "Календарь F2 {{year}} - Формула 2 время и даты событий",
+    "description": "Календарь Формулы 2 для сезона {{year}} со всеми гонками, свободными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
+    "keywords": "F2, Формула 2, время гонки, гонки, напоминания, оповещения, Гран-при, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
   },
-  "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+  "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 являются товарными знаками FIA."
 }

@@ -1,10 +1,10 @@
 {
-	"title": "Formula E Calendar",
-	"subtitle": "Races, Qualifying & Practice Sessions",
+	"title": "Календарь Формулы E",
+	"subtitle": "Гонки, Квалификации и Свободные заезды",
 	"seo": {
-		"title": "Formula E Calendar {{year}} - Formula E Race Times and Dates",
-		"description": "Formula E Calendar for {{year}} season with all Formula E e-prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-		"keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		"title": "Календарь Формулы E {{year}} - Формула E время и даты событий",
+		"description": "Календарь Формулы E для сезона {{year}} со всеми гонками, свободными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
+		"keywords": "FE, Формула E, время гонки, гонки, напоминания, оповещения, Гран-при, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
 	},
-	"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
+	"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix являются товарными знаками FIA."
 }

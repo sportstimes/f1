@@ -14,22 +14,22 @@
 		"next": "Далее"
 	},
 	"schedule": {
-		"fp1": "1-я тренировка",
-		"fp2": "2-я тренировка",
-		"fp3": "3-я тренировка",
-		"practice1": "Practice 1",
-		"practice2": "Practice 2",
-		"practice3": "Practice 3",
-		"practice": "Practice",
+		"fp1": "Свободная практика 1",
+		"fp2": "Свободная практика 2",
+		"fp3": "Свободная практика 3",
+		"practice1": "Тренировка 1",
+		"practice2": "Тренировка 2",
+		"practice3": "Тренировка 3",
+		"practice": "Свободная практика",
 		"qualifying": "Квалификация",
 		"race": "Гонка",
 		"race1": "Гонка 1",
 		"race2": "Гонка 2",
 		"race3": "Гонка 3",
-		"gp": "Гонка",
-		"sprint1": "Sprint 1",
-		"sprint2": "Sprint 2",
-		"feature": "Feature"
+		"gp": "Гран-при",
+		"sprint1": "Спринт 1",
+		"sprint2": "Спринт 2",
+		"feature": "Основная гонка"
 	},
 	"races": {
 		"austrian-grand-prix": "Гран-при Австрии",
