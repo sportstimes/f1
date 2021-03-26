@@ -38,6 +38,10 @@ export const UserContextProvider = ({children}) => {
 	}, []);
 
 	const updateTimezone = (timezone) => {
+		if(timezone == "Europe/Kyiv"){
+			timezone = "Europe/Kiev";
+		}
+		
 		setTimezone(timezone);
 		localStorage.setItem("timezone", timezone);
 	};

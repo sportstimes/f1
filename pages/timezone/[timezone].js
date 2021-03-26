@@ -26,7 +26,12 @@ const Timezone = (props) => {
     year: currentYear
   });
   
-  const timezone = props.timezone ? props.timezone.replace("-", "/") : "";
+  var timezone = props.timezone ? props.timezone.replace("-", "/") : "";
+  var displayTimezone = timezone;
+  
+  if(timezone == "Europe/Kyiv"){
+    timezone = "Europe/Kiev";
+  }
   
   const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
   
@@ -38,7 +43,7 @@ const Timezone = (props) => {
         keywords={keywords}
       />
       <Layout showCalendarExport='true' year={props.year} timezone={timezone}>
-        <h3 className="text-xl mb-4">{timezone}</h3>
+        <h3 className="text-xl mb-4">{displayTimezone}</h3>
         
         {router.isFallback ?
           <>
@@ -50,7 +55,7 @@ const Timezone = (props) => {
           :
           <>
             
-            <p><Link href="/timezones"><a>{t('common:options.timezonePicker.pick')}</a></Link><br/><br/></p>
+            <p><Link href="/timezones"><a className="text-green-600">{t('common:options.timezonePicker.pick')}</a></Link><br/><br/></p>
             
             { config.notice != null &&
               <Notice />
@@ -87,11 +92,16 @@ export async function getStaticProps({params}) {
   try {
     const res = await fetch(`https://f1calendar.com/api/year/` + currentYear + ``);
     const data = await res.json();
+    
+    let timezone = params.timezone;
+    if(timezone == "Europe/Kiev"){
+      timezone = "Europe/Kyiv";
+    }
 
     return {
       props: {
         races: data.races,
-        timezone: params.timezone
+        timezone: timezone
       }
     }
   } catch (error) {
