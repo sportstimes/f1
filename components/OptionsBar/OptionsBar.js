@@ -109,9 +109,14 @@ class OptionsBar extends React.Component {
 				return a.offset - b.offset;
 			})
 			.reduce((memo, tz) => {
+				var displayName = tz.name.replace("_", " ");
+				if(displayName == "Europe/Kiev"){
+					displayName = "Europe/Kyiv";
+				}
+				
 				timezoneItems.push(
 					<option value={tz.name} key={tz.name}>
-						(GMT{tz.offsetString}) {tz.name.replace("_", " ")}
+						(GMT{tz.offsetString}) {displayName}
 					</option>
 				);
 			}, "");
@@ -192,8 +197,11 @@ class OptionsBar extends React.Component {
 							>
 								{t("common:options.timezonePicker.showing")}{" "}
 								<strong className="underline">
-									{this.context.timezone &&
-										this.context.timezone.replace("_", " ")}
+									{this.context.timezone == "Europe/Kiev" ? (
+										<>Europe/Kyiv</>
+									) : (
+										this.context.timezone && this.context.timezone.replace("_", " ")
+									)}
 								</strong>
 								.
 							</a>

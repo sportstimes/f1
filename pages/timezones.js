@@ -27,11 +27,17 @@ function Timezones() {
   let zoneslist = Object.keys(ct.getAllTimezones());
 
   for (let zone in zoneslist) {
-    let timezoneSlug = zoneslist[zone].replace(/\//g, "-");
+    let timezoneName = zoneslist[zone];
+    if(timezoneName == "Europe/Kiev"){
+      timezoneName = "Europe/Kyiv";
+    }
+    
+    
+    let timezoneSlug = timezoneName.replace(/\//g, "-");
     timezoneItems.push(
-      <li key={zoneslist[zone]}>
+      <li key={timezoneName}>
         <Link href={`timezone/${timezoneSlug}`}>
-          <a>{zoneslist[zone]}</a>
+          <a>{timezoneName}</a>
         </Link>
       </li>
     );
