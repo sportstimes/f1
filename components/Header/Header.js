@@ -87,6 +87,29 @@ class Header extends React.Component {
 					<div className="clear-both"></div>
 
 					{this.props.showCTABar && <CTABar />}
+					
+					<div className="md:hidden fixed right-4 bottom-4" >
+						<a
+							href="https://www.buymeacoffee.com/f1cal"
+							className="support-btn-rounded mt-3"
+							onClick={() =>
+								plausible("Support", {
+									props: {
+										buttonId: "header"
+									}
+								})
+							}
+						>
+							<img
+								src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+								width="15"
+								height="15"
+								alt="buymeacoffee"
+							/>
+						</a>
+					</div>
+					
+					
 				</header>
 			</div>
 		);
