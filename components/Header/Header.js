@@ -95,7 +95,7 @@ class Header extends React.Component {
 							onClick={() =>
 								plausible("Support", {
 									props: {
-										buttonId: "header"
+										buttonId: "mobile"
 									}
 								})
 							}
