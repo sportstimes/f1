@@ -22,6 +22,9 @@ module.exports = (phase) => {
   }
 
   return withPWA(nextTranslate(withFonts({
+    future: {
+      webpack5: false
+    },
     pwa: {
       disable: !isProd,
       dest: "public"
