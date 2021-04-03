@@ -1,0 +1,10 @@
+{
+	"title": "IndyCar Calendar",
+	"subtitle": "Races, Qualifying & Practice Sessions",
+	"seo": {
+		"title": "IndyCar Calendar {{year}} - Race Times and Dates",
+		"description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+		"keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
+	},
+	"footnote": ""
+}
