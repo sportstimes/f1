@@ -1,4 +1,232 @@
 {
 	"races": [
+		{
+			"name": "Honda Indy Grand Prix of Alabama",
+			"location": "Birmingham, Alabama",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 1,
+			"slug": "grand-prix-of-alabama",
+			"localeKey": "grand-prix-of-alabama",
+			"sessions": {
+				"practice1": "2021-04-17T15:00:00Z",
+				"practice2": "2021-04-17T18:40:00Z",
+				"qualifying": "2021-04-17T21:55:00Z",
+				"warmup": "2021-04-18T15:30:00Z",
+				"race": "2021-04-18T19:00:00Z"
+			}
+		},
+		{
+			"name": "Firestone Grand Prix of St. Petersburg",
+			"location": "St. Petersburg, Florida",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 2,
+			"slug": "grand-prix-of-st-petersburg",
+			"localeKey": "grand-prix-of-st-petersburg",
+			"tbc": true,
+			"sessions": {
+				"practice1": "2021-04-24T15:00:00Z",
+				"practice2": "2021-04-24T15:00:00Z",
+				"qualifying": "2021-04-24T15:00:00Z",
+				"warmup": "2021-04-25T15:00:00Z",
+				"race": "2021-04-25T16:00:00Z"
+			}
+		},
+		{
+			"name": "Genesys 300",
+			"location": "Fort Worth, Texas",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 3,
+			"slug": "genesys-300",
+			"localeKey": "genesys-300",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-05-01T16:00:00Z"
+			}
+		},
+		{
+			"name": "XPEL 375",
+			"location": "Fort Worth, Texas",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 4,
+			"slug": "xpel-375",
+			"localeKey": "xpel-375",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-05-02T21:00:00Z"
+			}
+		},
+		{
+			"name": "GMR Grand Prix",
+			"location": "Speedway, Indiana",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 5,
+			"slug": "gmr-grand-prix",
+			"localeKey": "gmr-grand-prix",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-05-15T18:30:00Z"
+			}
+		},
+		{
+			"name": "105th Running of the Indianapolis 500",
+			"location": "Speedway, Indiana",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 6,
+			"slug": "indy-500",
+			"localeKey": "indy-500",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-05-30T15:00:00Z"
+			}
+		},
+		{
+			"name": "Chevrolet Detroit Grand Prix Race 1",
+			"location": "Detroit, Michigan",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 7,
+			"slug": "chevrolet-detroit-grand-prix",
+			"localeKey": "chevrolet-detroit-grand-prix",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-06-12T18:00:00Z"
+			}
+		},
+		{
+			"name": "Chevrolet Detroit Grand Prix Race 2",
+			"location": "Detroit, Michigan",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 8,
+			"slug": "chevrolet-detroit-grand-prix-2",
+			"localeKey": "chevrolet-detroit-grand-prix-2",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-06-13T18:00:00Z"
+			}
+		},
+		{
+			"name": "REV Group Grand Prix",
+			"location": "Detroit",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 9,
+			"slug": "rev-group-grand-prix",
+			"localeKey": "rev-group-grand-prix",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-06-20T16:00:00Z"
+			}
+		},
+		{
+			"name": "Honda Indy 200 at Mid-Ohio",
+			"location": "Mid-Ohio",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 10,
+			"slug": "honda-indy-200-mid-ohio",
+			"localeKey": "honda-indy-200-mid-ohio",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-07-04T16:00:00Z"
+			}
+		},
+		{
+			"name": "Honda Indy Toronto",
+			"location": "Toronto",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 11,
+			"slug": "honda-indy-toronto",
+			"localeKey": "honda-indy-toronto",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-07-11T16:00:00Z"
+			}
+		},
+		{
+			"name": "Music City Grand Prix",
+			"location": "Nashville",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 12,
+			"slug": "music-city-grand-prix",
+			"localeKey": "music-city-grand-prix",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-08-08T21:30:00Z"
+			}
+		},
+		{
+			"name": "Indianapolis Motor Speedway Road Course",
+			"location": "Indianapolis",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 13,
+			"slug": "indianapolis-motor-speedway-road-course",
+			"localeKey": "indianapolis-motor-speedway-road-course",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-08-14T16:30:00Z"
+			}
+		},
+		{
+			"name": "Bommarito Automotive Group 500",
+			"location": "Madison, Illinois",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 13,
+			"slug": "bommarito-automotive-group-500",
+			"localeKey": "bommarito-automotive-group-500",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-08-21T00:00:00Z"
+			}
+		},
+		{
+			"name": "Grand Prix of Portland",
+			"location": "Portland, Oregon",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 14,
+			"slug": "grand-prix-of-portland",
+			"localeKey": "grand-prix-of-portland",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-09-12T19:00:00Z"
+			}
+		},
+		{
+			"name": "Firestone Grand Prix of Monterey",
+			"location": "Monterey, California",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 14,
+			"slug": "firestone-grand-prix-of-monterey",
+			"localeKey": "firestone-grand-prix-of-monterey",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-09-19T19:00:00Z"
+			}
+		},
+		{
+			"name": "Acura Grand Prix of Long Beach",
+			"location": "Long Beach, California",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 14,
+			"slug": "acura-grand-prix-of-long-beach",
+			"localeKey": "acura-grand-prix-of-long-beach",
+			"tbc": true,
+			"sessions": {
+				"race": "2021-09-26T19:00:00Z"
+			}
+		}
 	]
 }
