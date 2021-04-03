@@ -9,11 +9,11 @@
 			"slug": "desert-xprix",
 			"localeKey": "desert-xprix",
 			"sessions": {
-				"shakedown": "2021-04-25T15:15:00Z",
-				"qualifying1": "2021-04-26T11:00:00Z",
-				"qualifying12": "2021-04-26T13:00:00Z",
-				"semifinal": "2021-04-26T17:03:00Z",
-				"race": "2021-04-26T17:03:00Z"
+				"shakedown": "2021-04-02T16:00:00Z",
+				"qualifying1": "2021-04-03T06:00:00Z",
+				"qualifying2": "2021-04-03T11:00:00Z",
+				"semifinal": "2021-04-04T06:00:00Z",
+				"race": "2021-04-04T10:00:00Z"
 			}
 		},
 		{
@@ -24,12 +24,13 @@
 			"round": 2,
 			"slug": "ocean-xprix",
 			"localeKey": "ocean-xprix",
+			"tbc": true,
 			"sessions": {
-				"shakedown": "2021-05-25T15:15:00Z",
-				"qualifying1": "2021-05-26T11:00:00Z",
-				"qualifying12": "2021-05-26T13:00:00Z",
-				"semifinal": "2021-05-26T17:03:00Z",
-				"race": "2021-05-26T17:03:00Z"
+				"shakedown": "2021-05-28T15:15:00Z",
+				"qualifying1": "2021-05-29T11:00:00Z",
+				"qualifying2": "2021-05-29T13:00:00Z",
+				"semifinal": "2021-05-30T17:00:00Z",
+				"race": "2021-05-30T17:00:00Z"
 			}
 		},
 		{
@@ -40,12 +41,13 @@
 			"round": 3,
 			"slug": "artic-xprix",
 			"localeKey": "artic-xprix",
+			"tbc": true,
 			"sessions": {
-				"shakedown": "2021-08-25T15:15:00Z",
-				"qualifying1": "2021-08-26T11:00:00Z",
-				"qualifying12": "2021-08-26T13:00:00Z",
-				"semifinal": "2021-08-26T17:03:00Z",
-				"race": "2021-08-26T17:03:00Z"
+				"shakedown": "2021-08-27T15:15:00Z",
+				"qualifying1": "2021-08-28T11:00:00Z",
+				"qualifying2": "2021-08-28T13:00:00Z",
+				"semifinal": "2021-08-29T17:00:00Z",
+				"race": "2021-08-29T17:00:00Z"
 			}
 		},
 		{
@@ -56,12 +58,13 @@
 			"round": 4,
 			"slug": "amazon-xprix",
 			"localeKey": "amazon-xprix",
+			"tbc": true,
 			"sessions": {
-				"shakedown": "2021-10-25T15:15:00Z",
-				"qualifying1": "2021-10-26T11:00:00Z",
-				"qualifying12": "2021-10-26T13:00:00Z",
-				"semifinal": "2021-10-26T17:03:00Z",
-				"race": "2021-10-26T17:03:00Z"
+				"shakedown": "2021-10-22T15:15:00Z",
+				"qualifying1": "2021-10-23T11:00:00Z",
+				"qualifying2": "2021-10-23T13:00:00Z",
+				"semifinal": "2021-10-24T17:00:00Z",
+				"race": "2021-10-24T17:00:00Z"
 			}
 		},
 		{
@@ -72,12 +75,13 @@
 			"round": 5,
 			"slug": "glacier-xprix",
 			"localeKey": "glacier-xprix",
+			"tbc": true,
 			"sessions": {
-				"shakedown": "2021-10-25T15:15:00Z",
-				"qualifying1": "2021-10-26T11:00:00Z",
-				"qualifying12": "2021-10-26T13:00:00Z",
-				"semifinal": "2021-10-26T17:03:00Z",
-				"race": "2021-10-26T17:03:00Z"
+				"shakedown": "2021-12-10T15:15:00Z",
+				"qualifying1": "2021-12-11T11:00:00Z",
+				"qualifying2": "2021-12-11T13:00:00Z",
+				"semifinal": "2021-12-12T17:00:00Z",
+				"race": "2021-12-12T17:00:00Z"
 			}
 		}
 	]

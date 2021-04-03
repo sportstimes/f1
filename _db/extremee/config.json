@@ -1,24 +1,24 @@
 {
-	"siteKey": "fe",
-	"url": "formulaecal.com",
+	"siteKey": "extremee",
+	"url": "extremeecalendar.com",
 	"availableYears": [2021],
-	"sessions": ["shakedown", "qualifying1", "qualitying2", "semifinal", "race"],
-	"featuredSessions": ["semifinal", "race"],
-	"collapsedSessions": ["shakedown", "qualifying1", "qualitying2"],
+	"sessions": ["shakedown", "qualifying1", "qualifying2", "semifinal", "race"],
+	"featuredSessions": ["race"],
+	"collapsedSessions": ["shakedown", "qualifying1", "qualifying2", "semifinal"],
 	"sessionMap": {
 		"shakedown": "shakedown",
 		"qualifying1": "qualifying1",
-		"qualitying2": "qualitying2",
+		"qualifying2": "qualifying2",
 		"semifinal": "semifinal",
 		"race": "race"
 	},
 	"sessionLengths": {
 		"shakedown": 30,
 		"qualifying1": 90,
-		"qualitying2": 90,
+		"qualifying2": 90,
 		"semifinal": 90,
 		"race": 120
 	},
 	"supportsEmailReminders": false,
-	"notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
+	"notice": "Dates & Times are TBC. Calendar will be updated once details are confirmed."
 }
