@@ -2,7 +2,7 @@
 	"name": "f1",
 	"version": "1.0.0",
 	"engines": {
-		"node": "12.x"
+		"node": "14.x"
 	},
 	"description": "_The second edition of [f1calendar.com](https://f1calendar.com)_",
 	"main": "index.js",
@@ -45,6 +45,7 @@
 		"autoprefixer": "^10.2.5",
 		"frontmatter-markdown-loader": "^3.6.2",
 		"postcss": "^8.2.9",
-		"tailwindcss": "^2.1.1"
+		"tailwindcss": "^2.1.1",
+		"webpack": "^5.31.1"
 	}
 }
