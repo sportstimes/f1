@@ -27,13 +27,8 @@
     },
     {
       "name": "MotoGP",
-      "url": "https://motogpcalendar.com",
+      "url": "https://motogpcal.com",
       "siteKey": "motogp"
-    },
-    {
-      "name": "IndyCar",
-      "url": "https://indycarcalendar.com",
-      "siteKey": "indycar"
     },
     {
       "name": "ExtremeE",
