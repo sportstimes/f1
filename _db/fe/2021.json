@@ -34,11 +34,29 @@
 			"location": "Rome",
 			"latitude": 41.901983,
 			"longitude": 12.494953,
-			"tbc": true,
 			"round": 3,
 			"slug": "rome-eprix",
 			"localeKey": "rome-eprix",
-			"sessions": null
+			"sessions": {
+				"practice1": "2021-04-10T06:00:00Z",
+				"practice2": "2021-04-10T08:15:00Z",
+				"qualifying": "2021-04-10T10:00:00Z",
+				"race": "2021-04-10T14:04:00Z"
+			}
+		},
+		{
+			"name": "Rome ePrix",
+			"location": "Rome",
+			"latitude": 41.901983,
+			"longitude": 12.494953,
+			"round": 4,
+			"slug": "rome-eprix",
+			"localeKey": "rome-eprix",
+			"sessions": {
+				"practice3": "2021-04-11T05:00:00Z",
+				"qualifying": "2021-04-11T07:00:00Z",
+				"race": "2021-04-11T11:04:00Z"
+			}
 		},
 		{
 			"name": "Valencia ePrix",
@@ -46,10 +64,31 @@
 			"latitude": 38.972520,
 			"longitude": -0.596010,
 			"tbc": true,
-			"round": 4,
+			"round": 5,
 			"slug": "valencia-eprix",
 			"localeKey": "valencia-eprix",
-			"sessions": null
+			"sessions": {
+				"practice1": "2021-04-23T12:00:00Z",
+				"practice2": "2021-04-23T12:00:00Z",
+				"qualifying": "2021-04-23T12:00:00Z",
+				"race": "2021-04-23T12:00:00Z"
+			}
+		},
+		{
+			"name": "Valencia ePrix",
+			"location": "Valencia",
+			"latitude": 38.972520,
+			"longitude": -0.596010,
+			"tbc": true,
+			"round": 6,
+			"slug": "valencia-eprix",
+			"localeKey": "valencia-eprix",
+			"sessions": {
+				"practice1": "2021-04-24T12:00:00Z",
+				"practice2": "2021-04-24T12:00:00Z",
+				"qualifying": "2021-04-24T12:00:00Z",
+				"race": "2021-04-24T12:00:00Z"
+			}
 		},
 		{
 			"name": "Monaco ePrix",
@@ -57,10 +96,15 @@
 			"latitude": 43.7338,
 			"longitude": 7.4215,
 			"tbc": true,
-			"round": 5,
+			"round": 7,
 			"slug": "monaco-eprix",
 			"localeKey": "monaco-eprix",
-			"sessions": null
+			"sessions": {
+				"practice1": "2021-05-07T12:00:00Z",
+				"practice2": "2021-05-07T12:00:00Z",
+				"qualifying": "2021-05-07T12:00:00Z",
+				"race": "2021-05-07T12:00:00Z"
+			}
 		},
 		{
 			"name": "Marrakesh ePrix",
@@ -68,10 +112,15 @@
 			"latitude": 43.7338,
 			"longitude": 7.4215,
 			"tbc": true,
-			"round": 6,
+			"round": 8,
 			"slug": "marrakesh-eprix",
 			"localeKey": "marrakesh-eprix",
-			"sessions": null
+			"sessions": {
+				"practice1": "2021-05-21T12:00:00Z",
+				"practice2": "2021-05-21T12:00:00Z",
+				"qualifying": "2021-05-21T12:00:00Z",
+				"race": "2021-05-21T12:00:00Z"
+			}
 		},
 		{
 			"name": "Santiago ePrix",
@@ -79,10 +128,15 @@
 			"latitude": -33.611778,
 			"longitude": -70.518898,
 			"tbc": true,
-			"round": 7,
+			"round": 9,
 			"slug": "santiago-eprix",
 			"localeKey": "santiago-eprix",
-			"sessions": null
+			"sessions": {
+				"practice1": "2021-06-04T12:00:00Z",
+				"practice2": "2021-06-04T12:00:00Z",
+				"qualifying": "2021-06-04T12:00:00Z",
+				"race": "2021-06-04T12:00:00Z"
+			}
 		},
 		{
 			"name": "Santiago ePrix",
@@ -90,10 +144,15 @@
 			"latitude": -33.611778,
 			"longitude": -70.518898,
 			"tbc": true,
-			"round": 8,
+			"round": 10,
 			"slug": "santiago-eprix",
 			"localeKey": "santiago-eprix",
-			"sessions": null
+			"sessions": {
+				"practice1": "2021-06-05T12:00:00Z",
+				"practice2": "2021-06-05T12:00:00Z",
+				"qualifying": "2021-06-05T12:00:00Z",
+				"race": "2021-06-05T12:00:00Z"
+			}
 		}
 	]
 }
