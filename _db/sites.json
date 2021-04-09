@@ -24,16 +24,6 @@
       "name": "W Series",
       "url": "https://wseriescal.com",
       "siteKey": "wseries"
-    },
-    {
-      "name": "MotoGP",
-      "url": "https://motogpcal.com",
-      "siteKey": "motogp"
-    },
-    {
-      "name": "ExtremeE",
-      "url": "https://extremeecalendar.com",
-      "siteKey": "extremee"
     }
   ]
 }
