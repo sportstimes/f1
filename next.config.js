@@ -1,4 +1,3 @@
-const withFonts = require('next-fonts')
 const withPWA = require("next-pwa")
 const nextTranslate = require('next-translate')
 
@@ -21,7 +20,7 @@ module.exports = (phase) => {
     require('./build/generate-calendars');
   }
 
-  return withPWA(nextTranslate(withFonts({
+  return withPWA(nextTranslate({
     future: {
       webpack5: false
     },
@@ -67,5 +66,5 @@ module.exports = (phase) => {
         return [];
       }
     }
-  })))
+  }))
 }
