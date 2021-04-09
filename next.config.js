@@ -22,7 +22,17 @@ module.exports = (phase) => {
 
   return withPWA(nextTranslate({
     future: {
-      webpack5: false
+      webpack5: true
+    },
+    webpack: (cfg) => {
+      cfg.module.rules.push(
+          {
+              test: /\.md$/,
+              loader: 'frontmatter-markdown-loader',
+              options: { mode: ['react-component'] }
+          }
+      )
+      return cfg;
     },
     pwa: {
       disable: !isProd,
