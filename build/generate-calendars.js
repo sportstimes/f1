@@ -221,7 +221,7 @@ for (language of i18n.locales) {
 			}
 		}
 		
-		if(events){
+		if(events.length != 0){
 			ics.createEvents(events, (error, value) => {
 				if (error) {
 					// TODO: Handle an error...
