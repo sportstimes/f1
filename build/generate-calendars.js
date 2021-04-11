@@ -221,17 +221,21 @@ for (language of i18n.locales) {
 			}
 		}
 		
-		ics.createEvents(events, (error, value) => {
-			if (error) {
-				// TODO: Handle an error...
-				console.log("Calendar Error: " + error);
-			} else {
-				let path = (language === "en") ? `public/download/${siteKey}-calendar_${request}.ics` : `public/download/${language}/${siteKey}-calendar_${request}.ics`;
-				
-				console.log("Writing Calendar to " + path);
-
-				fs.writeFileSync(path, value);
-			}
-		});
+		if(events){
+			ics.createEvents(events, (error, value) => {
+				if (error) {
+					// TODO: Handle an error...
+					console.log("Calendar Error: " + error);
+				} else {
+					let path = (language === "en") ? `public/download/${siteKey}-calendar_${request}.ics` : `public/download/${language}/${siteKey}-calendar_${request}.ics`;
+					
+					console.log("Writing Calendar to " + path);
+	
+					fs.writeFileSync(path, value);
+				}
+			});
+		} else {
+			console.log("Skipped creation");
+		} 
 	}
 }
