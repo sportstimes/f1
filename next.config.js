@@ -13,7 +13,7 @@ module.exports = (phase) => {
       phase === PHASE_PRODUCTION_BUILD && process.env.STAGING === '1'
 
   // Move _public/:site_key to public
-  require('./build/public-assets');
+  require('./build/site-files');
 
   // Generate the ICS files at build time.
   if (isProd || isStaging) {

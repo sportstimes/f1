@@ -48,7 +48,7 @@
 	"defaultLocale": "en",
 	"loadLocaleFrom": "locales",
 	"pages": {
-		"*": ["common", "calendar", "motogp"],
+		"*": ["common", "calendar", "f3"],
 		"/": ["calendar"],
 		"/subscribe": ["subscribe"],
 		"/generate": ["generate", "calendar"],

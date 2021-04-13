@@ -10,7 +10,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"setPublicAssets": "node build/public-assets.js",
+		"copySiteFiles": "node build/site-files.js",
 		"generateCalendars": "node build/generate-calendars.js"
 	},
 	"repository": {
