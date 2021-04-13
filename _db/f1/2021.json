@@ -25,10 +25,10 @@
 			"slug": "emilia-romagna-grand-prix",
 			"localeKey": "emilia-romagna-grand-prix",
 			"sessions": {
-				"fp1": "2021-04-16T09:30:00Z",
-				"fp2": "2021-04-16T13:00:00Z",
-				"fp3": "2021-04-17T09:30:00Z",
-				"qualifying": "2021-04-17T13:00:00Z",
+				"fp1": "2021-04-16T09:00:00Z",
+				"fp2": "2021-04-16T12:30:00Z",
+				"fp3": "2021-04-17T09:00:00Z",
+				"qualifying": "2021-04-17T12:00:00Z",
 				"gp": "2021-04-18T13:00:00Z"
 			}
 		},
