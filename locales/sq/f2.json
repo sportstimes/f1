@@ -1,10 +1,10 @@
 {
-  "title": "F2 Calendar",
-  "subtitle": "Races, Qualifying & Practice Sessions",
+  "title": "Kalendari i F2",
+  "subtitle": "Garat, Kualifikimet & Sesionet e Praktikës",
   "seo": {
-    "title": "F2 Calendar {{year}} - Formula Two Race Times and Dates",
-    "description": "Formula Two Calendar for {{year}} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+    "title": "F2 Calendar {{year}} - Koha dhe Data e Garave për Formula Dy",
+    "description": "Kalendari i Formula Dy për sezonën {{year}} me të gjitha çmimet e mëdha të garave, sesionet e praktikës &amp; kualifikimeve. Mundësohet vendosja e lajmërimeve. Përfshihen të gjitha zonat kohore. Mund ta shkarkosh ose të abonohesh.",
     "keywords": "placeholder"
   },
-  "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+  "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 janë markë e FIA."
 }
