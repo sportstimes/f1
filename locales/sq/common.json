@@ -7,13 +7,13 @@
 			"pick": "Zgjedhni zonën kohore..."
 		},
 		"formatPicker": {
-			"title": "Time Format",
-			"12hr": "12-Hour Time",
-			"24hr": "24-Hour Time"
+			"title": "Format i kohës",
+			"12hr": "12-Orësh",
+			"24hr": "24-Orësh"
 		},
 		"button": "Përfundoj"
 	},
-	"contribute": "Kontribo",
+	"contribute": "Kontribuo",
 	"languageSelector": "Zgjedhni gjuhën",
 	"javascript": "F1 Calendar punon më së miri nëse lejohet Javascript.",
 	"footer": {

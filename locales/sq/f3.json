@@ -1,10 +1,10 @@
 {
-  "title": "F3 Calendar",
-  "subtitle": "Races, Qualifying & Practice Sessions",
+  "title": "FKalendari i F3",
+  "subtitle": "Garat, Kualifikimet & Sesionet e Praktikës",
   "seo": {
-    "title": "F3 Calendar {{year}} - Formula Three Race Times and Dates",
-    "description": "Formula Three Calendar for {{year}} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-    "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+    "title": "F3 Calendar {{year}} - Koha dhe Data e Garave për Formula Tre",
+    "description": "Kalendari i Formula Tre për sezonën {{year}} me të gjitha çmimet e mëdha të garave, sesionet e praktikës &amp; kualifikimeve. Mundësohet vendosja e lajmërimeve. Përfshihen të gjitha zonat kohore. Mund ta shkarkosh ose të abonohesh.",
+    "keywords": "F3, formula t, orari i garave, garat, perkujtime, lajmerime, cmimet e medha, cmimi i madh, kalendari, datat, orari i fillimit, kualifikimet, praktika, Londer, Europe, {{year}}"
   },
-  "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
+  "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 janë markë e FIA."
 }
