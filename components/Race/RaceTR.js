@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
+const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 class RaceTR extends React.Component {
 	render() {
