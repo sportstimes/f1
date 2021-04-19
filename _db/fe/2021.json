@@ -63,15 +63,14 @@
 			"location": "Valencia",
 			"latitude": 38.972520,
 			"longitude": -0.596010,
-			"tbc": true,
 			"round": 5,
 			"slug": "valencia-eprix",
 			"localeKey": "valencia-eprix",
 			"sessions": {
-				"practice1": "2021-04-23T12:00:00Z",
-				"practice2": "2021-04-23T12:00:00Z",
-				"qualifying": "2021-04-23T12:00:00Z",
-				"race": "2021-04-23T12:00:00Z"
+				"practice1": "2021-04-24T05:20:00Z",
+				"practice2": "2021-04-24T07:15:00Z",
+				"qualifying": "2021-04-24T09:00:00Z",
+				"race": "2021-04-24T13:04:00Z"
 			}
 		},
 		{
@@ -79,15 +78,13 @@
 			"location": "Valencia",
 			"latitude": 38.972520,
 			"longitude": -0.596010,
-			"tbc": true,
 			"round": 6,
 			"slug": "valencia-eprix",
 			"localeKey": "valencia-eprix",
 			"sessions": {
-				"practice1": "2021-04-24T12:00:00Z",
-				"practice2": "2021-04-24T12:00:00Z",
-				"qualifying": "2021-04-24T12:00:00Z",
-				"race": "2021-04-24T12:00:00Z"
+				"practice3": "2021-04-25T06:00:00Z",
+				"qualifying": "2021-04-25T08:00:00Z",
+				"race": "2021-04-25T12:04:00Z"
 			}
 		},
 		{
