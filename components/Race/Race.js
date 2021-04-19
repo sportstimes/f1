@@ -8,6 +8,7 @@ import TBCBadge from "../Badges/TBCBadge";
 import CanceledBadge from "../Badges/CanceledBadge";
 import TicketsBadge from "../Badges/TicketsBadge";
 import NextBadge from "../Badges/NextBadge"
+import Toggle from "../Toggle/Toggle"
 
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
@@ -51,7 +52,7 @@ class Race extends React.Component {
 
 		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
 	
-		function badgeColumnLayout(props, raceInPast) {
+		function badgeColumnLayout(props) {
 			var badges = [];
 
 			if (props.item.tbc) {
@@ -62,82 +63,98 @@ class Race extends React.Component {
 				badges.push(<CanceledBadge />);
 			}
 
-			if (props.item.affiliate) {
-				if(!raceInPast){
-					badges.push(
-						<a href={props.item.affiliate} >
-							<TicketsBadge />
-						</a>
-					);
-				}
-			}
+			// if (props.item.affiliate) {
+			// 	if(!raceInPast){
+			// 		badges.push(
+			// 			<a href={props.item.affiliate} >
+			// 				<TicketsBadge />
+			// 			</a>
+			// 		);
+			// 	}
+			// }
 
 			return badges;
 		}
-
-		var classes = "";
-		if (this.props.index % 2 === 1) {
-			classes += "rounded bg-row-gray ";
-		}
-
-		// Fade out TBC races a little
-		if (this.props.item.tbc) {
-			classes += "text-gray-300 ";
-		}
-
-		var titleRowClasses = "";
-
-		// Highlight Next Race
-		if (this.props.isNextRace) {
-			titleRowClasses += "text-yellow-600 ";
-		}
-
-		// Strike out cancelled races
-		if (this.props.item.canceled) {
-			titleRowClasses += "line-through text-gray-300 ";
-		}
-
-		// Bold upcoming races
-		let firstEventSessionKey = "";
-		let lastEventSessionKey = "";
-		let raceInPast = false;
-
-		if (this.props.item.sessions != null) {
-			firstEventSessionKey = Object.keys(this.props.item.sessions)[0];
-
-			lastEventSessionKey = Object.keys(this.props.item.sessions)[
-				Object.keys(this.props.item.sessions).length - 1
-			];
-			if (
-				!dayjs(this.props.item.sessions[lastEventSessionKey])
-					.add(2, "hours")
-					.isBefore() &&
-				!this.props.item.canceled
-			) {
-				titleRowClasses += "font-semibold ";
+		
+		function rowClasses(props) {
+			var classes = "";
+			if (props.index % 2 === 1) {
+				classes += "rounded bg-row-gray ";
 			}
-
-			// Strikethrough past races
-			if (
-				dayjs(this.props.item.sessions[lastEventSessionKey])
-					.add(2, "hours")
-					.isBefore(dayjs())
-			) {
-				raceInPast = true;
+	
+			// Fade out TBC races a little
+			if (props.item.tbc) {
+				classes += "text-gray-300 ";
+			}
+	
+			// Bold upcoming races
+			let firstEventSessionKey = "";
+			let lastEventSessionKey = "";
+	
+			if (props.item.sessions != null) {
+				firstEventSessionKey = Object.keys(props.item.sessions)[0];
+	
+				lastEventSessionKey = Object.keys(props.item.sessions)[
+					Object.keys(props.item.sessions).length - 1
+				];
 				
-				classes += "line-through text-gray-400 ";
+				// Strikethrough past races
+				if (
+					dayjs(props.item.sessions[lastEventSessionKey])
+						.add(2, "hours")
+						.isBefore(dayjs())
+				) {
+					classes += "line-through text-gray-400 ";
+				} else {
+					classes += "text-white ";
+				}
 			} else {
 				classes += "text-white ";
 			}
-		} else {
-			classes += "text-white ";
+			
+			return classes;
 		}
+		
+		function titleRowClasses(props) {
+			var classes = "";
+			
+			// Highlight Next Race
+			if (props.isNextRace) {
+				classes += "text-yellow-600 ";
+			}
+	
+			// Strike out cancelled races
+			if (props.item.canceled) {
+				classes += "line-through text-gray-300 ";
+			}
+			
+			
+			if (props.item.sessions != null) {
+				lastEventSessionKey = Object.keys(props.item.sessions)[
+					Object.keys(props.item.sessions).length - 1
+				];
+				
+				if (
+					!dayjs(props.item.sessions[lastEventSessionKey])
+						.add(2, "hours")
+						.isBefore() &&
+					!props.item.canceled
+				) {
+					classes += "font-semibold ";
+				}
+			}
+			
+			return classes;
+		}
+
+		var firstEventSessionKey = Object.keys(this.props.item.sessions)[0];
+		var lastEventSessionKey = Object.keys(this.props.item.sessions)[Object.keys(this.props.item.sessions).length - 1];	
 
 		return (
 			<tbody
 				id={this.props.item.slug}
 				key={this.props.item.slug}
-				className={`${classes}`}
+				className={`${rowClasses(this.props)}`}
 			>
 				
 				<tr
@@ -146,42 +163,11 @@ class Race extends React.Component {
 					onClick={() => this.handleRowClick()}
 				>
 					<td className="py-5 pl-2 md:pl-3 w-6">
-						{this.state.collapsed ? (
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 512 448"
-								width="10"
-								height="10"
-							>
-								<path
-									fill="white"
-									d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-								/>
-							</svg>
-						) : (
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 448 512"
-								width="10"
-								height="10"
-							>
-								<path
-									fill="white"
-									d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-								/>
-							</svg>
-						)}
-						<aria-hidden
-							className={`${
-								this.state.collapsed
-									? "fas fa-caret-right fa-xs"
-									: "fas fa-caret-down fa-xs"
-							}`}
-						/>
+						<Toggle collapsed={this.state.collapsed} />
 					</td>
 					<td className={`w-6/12 sm:w-5/12 pl-2`}>
 					
-						<span className={`${titleRowClasses}`}>
+						<span className={`${titleRowClasses(this.props)}`}>
 							{t(`calendar:races.${this.props.item.localeKey}`) != localeKey
 								? t(`calendar:races.${this.props.item.localeKey}`)
 								: this.props.item.name}
@@ -203,7 +189,7 @@ class Race extends React.Component {
 					</td>
 					{!hasMultipleFeaturedEvents ? (
 						<>
-							<td className={`w-2/12 ${titleRowClasses}`}>
+							<td className={`w-2/12 ${titleRowClasses(this.props)}`}>
 								{this.props.item.sessions &&
 									this.props.item.sessions[config.featuredSessions[0]] &&
 									dayjs(
@@ -212,7 +198,7 @@ class Race extends React.Component {
 										.tz(this.props.timezone)
 										.format("D MMM")}
 							</td>
-							<td className={`w-2/12 ${titleRowClasses}`}>
+							<td className={`w-2/12 ${titleRowClasses(this.props)}`}>
 								{this.props.item.sessions &&
 									this.props.item.sessions[config.featuredSessions[0]] &&
 									dayjs(
@@ -225,7 +211,7 @@ class Race extends React.Component {
 							</td>
 						</>
 					) : (
-						<td className={`text-right pr-3 sm:pr-0 ${titleRowClasses}`}>
+						<td className={`text-right pr-3 sm:pr-0 ${titleRowClasses(this.props)}`}>
 							{this.props.item.sessions &&
 							dayjs(this.props.item.sessions[firstEventSessionKey])
 								.tz(this.props.timezone)
@@ -251,7 +237,7 @@ class Race extends React.Component {
 					)}
 					<td className="text-right w-0 sm:w-3/12 pr-2">
 						<div className="hidden sm:block">
-							{badgeColumnLayout(this.props, raceInPast)}
+							{badgeColumnLayout(this.props)}
 						</div>
 					</td>
 				</tr>
