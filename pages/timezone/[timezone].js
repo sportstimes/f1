@@ -65,7 +65,7 @@ const Timezone = (props) => {
             <Races year={currentYear} races={props.races} timezone={timezone}/>
             }
   
-            {props.races && props.races.map((item, index) => {
+            {props.races && config.siteKey == "f1" && props.races.map((item, index) => {
               if (item.sessions) {
                 return (<RaceSchema item={item} key={item.name}/>)
               }
