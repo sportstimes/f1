@@ -42,7 +42,7 @@ const Index = (props) => {
 						<Races year={currentYear} races={year.races} />
 					</div>
 
-					{year.races &&
+					{year.races && config.siteKey == "f1" &&
 						year.races.map((item, index) => {
 							if (item.sessions) {
 								return <RaceSchema item={item} key={item.name} />;
