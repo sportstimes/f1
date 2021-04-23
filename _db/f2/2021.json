@@ -21,16 +21,15 @@
 			"location": "Monte Carlo",
 			"latitude": 43.7338,
 			"longitude": 7.4215,
-			"tbc": true,
 			"round": 2,
 			"slug": "monaco",
 			"localeKey": "monaco",
 			"sessions": {
-				"practice": "2021-05-21T09:00:00Z",
-				"qualifying": "2021-05-21T13:00:00Z",
-				"sprint1": "2021-05-22T10:00:00Z",
-				"sprint2": "2021-05-22T10:00:00Z",
-				"feature": "2021-05-23T13:00:00Z"
+				"practice": "2021-05-20T07:45:00Z",
+				"qualifying": "2021-05-20T11:20:00Z",
+				"sprint1": "2021-05-21T09:45:00Z",
+				"sprint2": "2021-05-22T06:20:00Z",
+				"feature": "2021-05-22T15:15:00Z"
 			}
 		},
 		{
