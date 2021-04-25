@@ -90,6 +90,7 @@ export const getStaticProps = async ({params}) => {
 	);
 
 	return {
+		revalidate: 3600,
 		props: {
 			year: params.year,
 			races: data.races
