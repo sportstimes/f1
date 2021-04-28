@@ -99,20 +99,20 @@
 			}
 		},
 		{
-			"name": "Canadian",
-			"location": "Montreal",
-			"latitude": 45.5034,
-			"longitude": -73.5267,
+			"name": "Turkish Grand Prix",
+			"location": "Istanbul",
+			"latitude": 40.957914,
+			"longitude": 29.411675,
+			"tbc": true,
 			"round": 7,
-			"slug": "canadian-grand-prix",
-			"localeKey": "canadian-grand-prix",
-			"affiliate": "https://motorsporttickets.com/en-gb/f1/canada/tickets?af=165390",
+			"slug": "turkish-grand-prix",
+			"localeKey": "turkish-grand-prix",
 			"sessions": {
-				"fp1": "2021-06-11T15:30:00Z",
-				"fp2": "2021-06-11T19:00:00Z",
-				"fp3": "2021-06-12T15:00:00Z",
-				"qualifying": "2021-06-12T18:00:00Z",
-				"gp": "2021-06-13T18:00:00Z"
+				"fp1" : "2021-06-11T09:30:00Z",
+				"fp2" : "2021-06-11T13:00:00Z",
+				"fp3" : "2021-06-12T10:00:00Z",
+				"qualifying" : "2021-06-12T13:00:00Z",
+				"gp" : "2021-06-13T13:00:00Z"
 			}
 		},
 		{
