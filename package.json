@@ -46,6 +46,6 @@
 		"frontmatter-markdown-loader": "^3.6.2",
 		"postcss": "^8.2.12",
 		"tailwindcss": "^2.1.2",
-		"webpack": "^5.35.1"
+		"webpack": "^5.36.0"
 	}
 }
