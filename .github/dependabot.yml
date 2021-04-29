@@ -1,0 +1,100 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: webpack
+    versions:
+    - 5.32.0
+    - 5.33.2
+    - 5.34.0
+    - 5.35.0
+    - 5.36.0
+  - dependency-name: postcss
+    versions:
+    - 8.2.12
+    - 8.2.5
+    - 8.2.6
+    - 8.2.7
+    - 8.2.8
+    - 8.2.9
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.1
+    - 7.13.10
+    - 7.13.14
+    - 7.13.15
+    - 7.13.16
+    - 7.13.8
+  - dependency-name: next-pwa
+    versions:
+    - 5.0.4
+    - 5.0.5
+    - 5.0.6
+    - 5.1.4
+    - 5.2.1
+    - 5.2.14
+    - 5.2.3
+    - 5.2.5
+    - 5.2.9
+  - dependency-name: "@tailwindcss/forms"
+    versions:
+    - 0.3.0
+    - 0.3.2
+  - dependency-name: next-plausible
+    versions:
+    - 1.3.1
+    - 1.4.0
+    - 1.5.1
+    - 1.6.0
+    - 1.6.1
+  - dependency-name: tailwindcss
+    versions:
+    - 2.0.3
+    - 2.0.4
+    - 2.1.1
+  - dependency-name: next
+    versions:
+    - 10.0.6
+    - 10.0.7
+    - 10.0.8
+    - 10.0.9
+    - 10.1.1
+    - 10.1.2
+    - 10.1.3
+  - dependency-name: next-seo
+    versions:
+    - 4.19.0
+    - 4.20.0
+    - 4.22.0
+    - 4.23.0
+  - dependency-name: react-dom
+    versions:
+    - 17.0.2
+  - dependency-name: react
+    versions:
+    - 17.0.2
+  - dependency-name: next-translate
+    versions:
+    - 1.0.2
+    - 1.0.3
+    - 1.0.5
+  - dependency-name: "@tailwindcss/typography"
+    versions:
+    - 0.4.0
+  - dependency-name: autoprefixer
+    versions:
+    - 10.2.3
+    - 10.2.5
+  - dependency-name: ics
+    versions:
+    - 2.27.0
+  - dependency-name: dayjs
+    versions:
+    - 1.10.4
