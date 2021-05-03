@@ -24,13 +24,12 @@
 			"round": 2,
 			"slug": "ocean-xprix",
 			"localeKey": "ocean-xprix",
-			"tbc": true,
 			"sessions": {
-				"shakedown": "2021-05-28T15:15:00Z",
-				"qualifying1": "2021-05-29T11:00:00Z",
-				"qualifying2": "2021-05-29T13:00:00Z",
-				"semifinal": "2021-05-30T17:00:00Z",
-				"race": "2021-05-30T17:00:00Z"
+				"shakedown": "2021-05-28T19:00:00Z",
+				"qualifying1": "2021-05-29T11:30:00Z",
+				"qualifying2": "2021-05-29T16:00:00Z",
+				"semifinal": "2021-05-30T10:00:00Z",
+				"race": "2021-05-30T14:00:00Z"
 			}
 		},
 		{
