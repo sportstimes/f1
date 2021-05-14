@@ -76,9 +76,9 @@
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/monaco/tickets?af=165390",
 			"sessions": {
 				"fp1": "2021-05-20T09:30:00Z",
-				"qualifying": "2021-05-20T13:00:00Z",
-				"fp2": "2021-05-22T10:00:00Z",
-				"sprintQualifying": "2021-05-22T13:00:00Z",
+				"fp2": "2021-05-20T13:00:00Z",
+				"fp3": "2021-05-22T10:00:00Z",
+				"qualifying": "2021-05-22T13:00:00Z",
 				"gp": "2021-05-23T13:00:00Z"
 			}
 		},
@@ -159,10 +159,10 @@
 			"localeKey": "british-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/britain/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-07-16T10:30:00Z",
-				"fp2": "2021-07-16T14:00:00Z",
-				"fp3": "2021-07-17T11:00:00Z",
-				"qualifying": "2021-07-17T14:00:00Z",
+				"fp1": "2021-07-16T13:30:00Z",
+				"qualifying": "2021-07-16T17:00:00Z",
+				"fp2": "2021-07-17T11:00:00Z",
+				"sprintQualifying": "2021-07-17T15:30:00Z",
 				"gp": "2021-07-18T14:00:00Z"
 			}
 		},
