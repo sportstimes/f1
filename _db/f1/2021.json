@@ -99,31 +99,31 @@
 			}
 		},
 		{
-			"name": "Turkish Grand Prix",
-			"location": "Istanbul",
-			"latitude": 40.957914,
-			"longitude": 29.411675,
-			"tbc": true,
-			"round": 7,
-			"slug": "turkish-grand-prix",
-			"localeKey": "turkish-grand-prix",
-			"sessions": {
-				"fp1" : "2021-06-11T09:30:00Z",
-				"fp2" : "2021-06-11T13:00:00Z",
-				"fp3" : "2021-06-12T10:00:00Z",
-				"qualifying" : "2021-06-12T13:00:00Z",
-				"gp" : "2021-06-13T13:00:00Z"
-			}
-		},
-		{
 			"name": "French",
 			"location": "Paul Ricard",
 			"latitude": 43.2517,
 			"longitude": 5.7935,
-			"round": 8,
+			"round": 7,
 			"slug": "french-grand-prix",
 			"localeKey": "french-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/france/tickets?af=165390",
+			"sessions": {
+				"fp1": "2021-06-18T09:30:00Z",
+				"fp2": "2021-06-18T13:00:00Z",
+				"fp3": "2021-06-19T10:00:00Z",
+				"qualifying": "2021-06-19T13:00:00Z",
+				"gp": "2021-06-20T13:00:00Z"
+			}
+		},
+		{
+			"name": "Austrian",
+			"location": "Spielberg",
+			"latitude": 47.2225,
+			"longitude": 14.7607,
+			"round": 8,
+			"slug": "steiermark-grand-prix",
+			"localeKey": "steiermark-grand-prix",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/austria/tickets?af=165390",
 			"sessions": {
 				"fp1": "2021-06-25T09:30:00Z",
 				"fp2": "2021-06-25T13:00:00Z",
