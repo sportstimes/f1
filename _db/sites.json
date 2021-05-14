@@ -24,6 +24,11 @@
       "name": "W Series",
       "url": "https://wseriescal.com",
       "siteKey": "wseries"
+    },
+    {
+      "name": "Extreme E",
+      "url": "https://extremeecalendar.com",
+      "siteKey": "extremee"
     }
   ]
 }
