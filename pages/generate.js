@@ -25,7 +25,13 @@ function Generate(props) {
 
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
-	const sessions = config.sessions;
+	var sessions = config.sessions;
+	
+	// F1: Sprint Qualifying Option...
+	// Remove Sprint Qualifying so we retain a single "Qualifying" Option for 2021.
+	// If the format remains in 2022, then show Sprint Qualifying separately allowing
+	// Users to get notified of Sprint Qualifying specifically
+	sessions = sessions.filter(item => item !== "sprintQualifying");
 
 	// Default form values...
 	var defaults = {
@@ -201,6 +207,12 @@ function Generate(props) {
 						<Card>
 							<p className="mb-4">{t("generate:form.description")}</p>
 
+							{config.siteKey == "f1" &&
+								<div className="bg-yellow-200 rounded-md shadow py-4 mb-4 px-4 text-black font-bold mb-8">
+									The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option.
+								</div>
+							}
+
 							<form id="download_subscribe" onSubmit={handleOnSubmit}>
 								<fieldset className="mb-6" key="options">
 									{sessions.map((item, index) => {
@@ -281,7 +293,7 @@ function Generate(props) {
 										</label>
 									</div>
 								</fieldset>
-
+								
 								<fieldset id="buttons" key="buttons">
 									<button type="submit" className="btn">
 										{!form.submitted

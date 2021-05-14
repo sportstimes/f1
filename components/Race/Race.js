@@ -54,7 +54,7 @@ class Race extends React.Component {
 		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
 
 		var firstEventSessionKey = Object.keys(this.props.item.sessions)[0];
-		var lastEventSessionKey = Object.keys(this.props.item.sessions)[Object.keys(this.props.item.sessions).length - 1];	
+		var lastEventSessionKey = Object.keys(this.props.item.sessions)[Object.keys(this.props.item.sessions).length - 1];
 
 		return (
 			<tbody
@@ -147,31 +147,38 @@ class Race extends React.Component {
 						</div>
 					</td>
 				</tr>
+				
+				{sessionRows(this.props, this.state)}
 			
-				{config.collapsedSessions.map((item, index) => {
-					if (
-						this.props.item.sessions != null &&
-						this.props.item.sessions[item]
-					) {
-						return (
-							<RaceTR
-								date={this.props.item.sessions[item]}
-								title={item}
-								timezone={this.props.timezone}
-								timeFormat={this.props.timeFormat}
-								i18n={this.props.i18n}
-								localeKey={this.props.item.localeKey}
-								collapsed={this.state.collapsed}
-								hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
-							/>
-						);
-					}
-				})}
 			</tbody>
 		);
 		
-		
-		
+		function sessionRows(props, state) {			
+			if(Object.keys(props.item.sessions).length != 0){
+				var rows = [];
+
+				Object.keys(props.item.sessions).forEach(function (session, index) {
+					console.log(props.item);
+					
+					rows.push(
+						<RaceTR
+							date={props.item.sessions[session]}
+							title={session}
+							timezone={props.timezone}
+							timeFormat={props.timeFormat}
+							i18n={props.i18n}
+							localeKey={props.item.localeKey}
+							collapsed={state.collapsed}
+							hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
+						/>
+					);
+				});
+				
+				return rows;
+			} else {
+				return (<></>);
+			}
+		}
 		
 		function badgeColumnLayout(props) {
 			var badges = [];
