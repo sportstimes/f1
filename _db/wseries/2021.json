@@ -1,14 +1,14 @@
 {
 	"races": [
 		{
-			"name": "French",
-			"location": "Paul Ricard",
-			"latitude": 43.2517,
-			"longitude": 5.7935,
+			"name": "Austrian",
+			"location": "Spielberg",
+			"latitude": 47.2225,
+			"longitude": 14.7607,
 			"tbc": true,
 			"round": 1,
-			"slug": "french",
-			"localeKey": "french",
+			"slug": "austrian",
+			"localeKey": "austrian",
 			"sessions": {
 				"practice1": "2021-06-25T09:00:00Z",
 				"practice2": "2021-06-25T13:00:00Z",
