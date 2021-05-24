@@ -60,14 +60,14 @@ class LanguageSelector extends React.Component {
 
 		languageItems.push(
 			<option value="add" key="Add">
-				{t("common:contribute")} +
+				{t("localization:contribute")} +
 			</option>
 		);
 
 		return (
 			<div>
 				<label htmlFor="languageSelector" className="sr-only">
-					{t("common:languageSelector")}
+					{t("localization:languageSelector")}
 				</label>
 				<select
 					id={this.props.id}

@@ -1,0 +1,210 @@
+{
+    "date": "Datum",
+    "time": "Vrijeme",
+    "badges": {
+        "tbc": "TBC",
+        "tbc_title": "Bit će potvrđeno",
+        "tickets": "Ulaznice",
+        "canceled": "Otkazano",
+        "next": "SLJEDEĆE"
+    },
+    "schedule": {
+        "fp1": "1. slobodni trening",
+        "fp2": "2. slobodni trening",
+        "fp3": "3. slobodni trening",
+        "shakedown": "Shakedown",
+        "practice1": "Practice 1",
+        "practice2": "Practice 2",
+        "practice3": "Practice 3",
+        "practice": "Practice",
+        "qualifying": "Kvalifikacije",
+        "qualifying1": "Kvalifikacije 1",
+        "qualifying2": "Kvalifikacije 2",
+        "sprintQualifying": "Sprint Qualifying",
+        "semifinal": "Semi Final",
+        "warmup": "Warmup",
+        "race": "Utrka",
+        "race1": "Utrka 1",
+        "race2": "Utrka 2",
+        "race3": "Utrka 3",
+        "gp": "Velika nagrada",
+        "sprint1": "Sprint 1",
+        "sprint2": "Sprint 2",
+        "feature": "Feature"
+    },
+    "races": {
+        "austrian-grand-prix": "Velika nagrada Austrije",
+        "steiermark-grand-prix": "Velika nagrada Štajerske (Austrija)",
+        "hungarian-grand-prix": "Velika nagrada Mađarske",
+        "british-grand-prix": "Velika nagrada Velike Britanije",
+        "anniversary-british-grand-prix": "Velika nagrada 70. godišnjice F1 (Velika Britanija)",
+        "spanish-grand-prix": "Velika nagrada Španjolske",
+        "belgian-grand-prix": "Velika nagrada Belgije",
+        "italian-grand-prix": "Velika nagrada Italije",
+        "australian-grand-prix": "Velika nagrada Australije",
+        "bahrain-grand-prix": "Velika nagrada Bahreina",
+        "vietnamese-grand-prix": "Velika nagrada Vijetnama",
+        "china-grand-prix": "Velika nagrada Kine",
+        "dutch-grand-prix": "Velika nagrada Nizozemske",
+        "monaco-grand-prix": "Velika nagrada Monaka",
+        "azerbaijan-grand-prix": "Velika nagrada Azerbejdžana",
+        "canadian-grand-prix": "Velika nagrada Kanade",
+        "french-grand-prix": "Velika nagrada Francuske",
+        "singapore-grand-prix": "Velika nagrada Singapura",
+        "russian-grand-prix": "Velika nagrada Rusije",
+        "japanese-grand-prix": "Velika nagrada Japana",
+        "us-grand-prix": "Velika nagrada Sjedinjenih Američkih Država",
+        "mexico-grand-prix": "Velika nagrada Mexico Cityja",
+        "brazilian-grand-prix": "Velika nagrada Brazila",
+        "abu-dhabi-grand-prix": "Velika nagrada Abu Dhabija",
+        "tuscan-grand-prix": "Velika nagrada Toskane (Italija)",
+        "eifel-grand-prix": "Velika nagrada Eifela (Njemačka)",
+        "portuguese-grand-prix": "Velika nagrada Portugala",
+        "emilia-romagna-grand-prix": "Velika nagrada Emilije Romagne (Italija)",
+        "sakhir-grand-prix": "Velika nagrada Sakhira (Bahrain)",
+        "turkish-grand-prix": "Velika nagrada Turske",
+        "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix"
+    },
+    "options": {
+        "calendar": "Futam időpontok hozzáadása a saját Naptárhoz",
+        "email": "E-mail emlékeztetők kérése",
+        "timezonePicker": {
+            "showing": "Időpontok mutatása ebben az időzónában:",
+            "pick": "Időzóna választása..."
+        },
+        "formatPicker": {
+            "title": "Időformátum",
+            "12hr": "12 órás időformátum",
+            "24hr": "24 órás időformátum"
+        },
+        "button": "Kész"
+    },
+    "contribute": "Közreműködés",
+    "languageSelector": "Nyelv választása",
+    "javascript": "Az F1 Calendar bekapcsolt Javascripttel nyújtja a legjobb élményt.",
+    "footer": {
+        "coffee": "Támogass minket, hívj meg egy kávéra.",
+        "twitter": "Kövess a Twitteren",
+        "github": "Nyílt forráskód a GitHubon",
+        "issue": "Hibát találtál? Jelentsd be",
+        "links": {
+            "wereOn": "Kövess a",
+            "openSourcedOn": "Nyílt forráskód a",
+            "spottedIssue": "Hibát találtál?",
+            "spottedReport": "Jelentsd be"
+        }
+    },
+    "form": {
+        "title": "Naptár generálása",
+        "description": "Elsőként válaszd ki, hogy mely eseményeket szeretnéd a naptáradhoz adni:",
+        "reminder": "Emlékeztető beállítása",
+        "reminderContinued": "perccel minden esemény előtt a naptáradban.",
+        "button": "Naptár kérése",
+        "buttonSubmitted": "Elküldve",
+        "nonOptionsSelected": "Kérlek válassz legalább egy eseményt a naptáradhoz."
+    },
+    "download": {
+        "title": "Válassz naptár típust",
+        "webcalTitle": "Mobil vagy asztali",
+        "webcalDescription": "Automatikus naptárfrissítés az olyan alkalmazásokhoz, mint az Outlook vagy a macOS Naptár.",
+        "webcalButton": "Kérés",
+        "gcalTitle": "Google Naptárakra",
+        "gcalDescription": "E naptár hozzáadásához másold be ezt a linket a Google Naptárakba",
+        "gcalDescriptionLink": "részletes leírás",
+        "icsTitle": "ICS fájl letöltése",
+        "icsDescription": "Nem frissülő naptár (.ics) az olyan naptárakhoz, amelyek nem kezelik a frissülő feliratkozásokat.",
+        "icsButton": "Letöltés"
+    },
+    "subscribe": {
+        "title": "Feliratkozás",
+        "description": "E-mail emlékeztető kérése a versenyhétvége előtt.",
+        "label": "E-mail cím",
+        "button": "Feliratkozás"
+    },
+    "timezones": {
+        "title": "Válassz időzónát..."
+    },
+    "years": {
+        "title": "Válassz évet..."
+    },
+    "f1": {
+        "title": "F1 Naptár",
+        "subtitle": "Futamok, Időmérők és Szabadedzések",
+        "seo": {
+            "title": "F1 Naptár {{year}} - Forma 1 futam időpontok és dátumok",
+            "description": "A {{year}}. szezon Forma 1 naptár  az összes F1 nagydíjjal, szabadedzéssel és időmérővel. Emlékezetők is beállíthatók. A világ összes időzónájában. Letöltheted és fel is iratkozhatsz.",
+            "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "A Formula One, Formula 1, F1 & Grand Prix a Formula One Licensing BV. bejegyzett védjegyei."
+    },
+    "f2": {
+        "title": "F2 Naptár",
+        "subtitle": "Futamok, időmérők és szabadedzések",
+        "seo": {
+            "title": "F2 Naptár {{year}} - Forma 2 Futam időpontok",
+            "description": "{{year}}. évi Forma 2 naptár az összes F2 nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+            "keywords": "placeholder"
+        },
+        "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 az FIA bejegyzett védjegyei."
+    },
+    "f3": {
+        "title": "F3 Naptár",
+        "subtitle": "Futamok, időmérők és szabadedzések",
+        "seo": {
+            "title": "F3 Naptár {{year}} - Forma 3 futam időpontok",
+            "description": "{{year}}. évi Forma 3 naptár az összes F3 nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+            "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 az FIA bejegyzett védjegyei."
+    },
+    "fe": {
+        "title": "Formula E Naptár",
+        "subtitle": "Futamok, időmérők és szabadedzések",
+        "seo": {
+            "title": "Formula E Naptár {{year}} - Formula E futam időpontok",
+            "description": "{{year}}. évi Formula E naptár az összes FE nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+            "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix az FIA bejegyzett védjegyei."
+    },
+    "indycar": {
+        "title": "IndyCar Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "IndyCar Calendar {{year}} - Race Times and Dates",
+            "description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
+        },
+        "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+    },
+    "motogp": {
+        "title": "MotoGP Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "MotoGP Calendar {{year}} - Race Times and Dates",
+            "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    },
+    "wseries": {
+        "title": "W Series Naptár",
+        "subtitle": "Futamok, időmérők és szabadedzések",
+        "seo": {
+            "title": "W Series Naptár {{year}} - futam időpontok",
+            "description": "{{year}}. évi W Series naptár az összes W Series nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+            "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "W Series Calendar is not affiliated with W Series."
+    },
+    "extremee": {
+        "title": "Extreme E Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
+            "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    }
+}

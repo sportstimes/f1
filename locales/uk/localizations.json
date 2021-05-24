@@ -1,0 +1,210 @@
+{
+    "date": "Дата",
+    "time": "Час",
+    "badges": {
+        "tbc": "Не підтверджено",
+        "tbc_title": "Очікується підтвердження",
+        "tickets": "Квитки",
+        "canceled": "Скасовано",
+        "next": "НАСТУПНА"
+    },
+    "schedule": {
+        "fp1": "1-ша вільна практика",
+        "fp2": "2-га вільна практика",
+        "fp3": "3-тя вільна практика",
+        "shakedown": "Shakedown",
+        "practice1": "Practice 1",
+        "practice2": "Practice 2",
+        "practice3": "Practice 3",
+        "practice": "Practice",
+        "qualifying": "Кваліфікація",
+        "qualifying1": "Кваліфікація 1",
+        "qualifying2": "Кваліфікація 2",
+        "sprintQualifying": "Sprint Qualifying",
+        "semifinal": "Semi Final",
+        "warmup": "Warmup",
+        "race": "Гонка",
+        "race1": "Гонка 1",
+        "race2": "Гонка 2",
+        "race3": "Гонка 3",
+        "gp": "Гонка",
+        "sprint1": "Sprint 1",
+        "sprint2": "Sprint 2",
+        "feature": "Feature"
+    },
+    "races": {
+        "austrian-grand-prix": "Гран-прі Австрії",
+        "steiermark-grand-prix": "Гран-прі Штирії (Австрія)",
+        "hungarian-grand-prix": "Гран-прі Угорщини",
+        "british-grand-prix": "Гран-прі Великої Британії",
+        "anniversary-british-grand-prix": "Гран-прі 70-ти річчя (Велика Британія)",
+        "spanish-grand-prix": "Гран-прі Іспанії",
+        "belgian-grand-prix": "Гран-прі Бельгії",
+        "italian-grand-prix": "Гран-прі Італії",
+        "australian-grand-prix": "Гран-прі Австралії",
+        "bahrain-grand-prix": "Гран-прі Бахрейну",
+        "vietnamese-grand-prix": "Гран-прі В’єтнаму",
+        "china-grand-prix": "Гран-прі Китаю ",
+        "dutch-grand-prix": "Гран-прі Нідерландів",
+        "monaco-grand-prix": "Гран-прі Монако",
+        "azerbaijan-grand-prix": "Гран-прі Азербайджану",
+        "canadian-grand-prix": "Гран-прі Канади",
+        "french-grand-prix": "Гран-прі Франції",
+        "singapore-grand-prix": "Гран-прі Сінгапуру",
+        "russian-grand-prix": "Гран-прі Росії",
+        "japanese-grand-prix": "Гран-прі Японії",
+        "us-grand-prix": "Гран-прі США",
+        "mexico-grand-prix": "Гран-прі Мексики",
+        "brazilian-grand-prix": "Гран-прі Бразилії",
+        "abu-dhabi-grand-prix": "Гран-прі Абу-Дабі",
+        "tuscan-grand-prix": "Гран-прі Тоскани",
+        "eifel-grand-prix": "Гран-прі Айфеля",
+        "portuguese-grand-prix": "Гран-прі Португалії",
+        "emilia-romagna-grand-prix": "Гран-прі Емілії-Романьї",
+        "sakhir-grand-prix": "Гран-прі Сахіру (Бахрейн)",
+        "turkish-grand-prix": "Гран-прі Туреччини",
+        "saudi-arabia-grand-prix": "Гран-прі Саудівської Аравії"
+    },
+    "options": {
+        "calendar": "Додати розклад гонок до календаря",
+        "email": "Отримувати нагадування на пошту",
+        "timezonePicker": {
+            "showing": "Показано час для",
+            "pick": "Виберіть часовий пояс..."
+        },
+        "formatPicker": {
+            "title": "Формат часу",
+            "12hr": "12-годинний час",
+            "24hr": "24-годинний час"
+        },
+        "button": "Вибрати"
+    },
+    "contribute": "Додати мову",
+    "languageSelector": "Виберіть мову",
+    "javascript": "Календар Ф1 функціонує найкраще із увімкненим Javascript.",
+    "footer": {
+        "coffee": "Підтримайте Календар Ф1, купіть нам каву.",
+        "twitter": "Ми в Твітері",
+        "github": "Відкритий сирцевий код на GitHub",
+        "issue": "Помітили помилку? Повідомте нам",
+        "links": {
+            "wereOn": "Ми в",
+            "openSourcedOn": "Відкритий сирцевий код на",
+            "spottedIssue": "Помітили помилку?",
+            "spottedReport": "Повідомте нам"
+        }
+    },
+    "form": {
+        "title": "Згенерувати календар",
+        "description": "Спершу виберить гоночні сесії Ф1, які Ви б хотіли додати до свого календаря:",
+        "reminder": "Встановити нагадування за",
+        "reminderContinued": "хвилин до початку події в Вашому календарі.",
+        "button": "Згенерувати календар",
+        "buttonSubmitted": "Відправлено",
+        "nonOptionsSelected": "Будь ласка, виберіть хоча б одну сесію, щоб додати до Вашого календаря.."
+    },
+    "download": {
+        "title": "Виберіть тип календаря",
+        "webcalTitle": "Для мобільного чи ПК",
+        "webcalDescription": "Календар iз автомантичним оновленням події для таких програм як Outlook або Календар на Mac.",
+        "webcalButton": "Додати",
+        "gcalTitle": "Для Календаря Google",
+        "gcalDescription": "Щоб додати цей календар, скопіюйте та вставте це посилання до Календаря Google",
+        "gcalDescriptionLink": "детальні інструкції",
+        "icsTitle": "Скачати ICS-файл",
+        "icsDescription": "Розклад без автоматичних оновлень (.ics) для календарів, які не в змозі обробити підписки, що оновлюються.",
+        "icsButton": "Скачати"
+    },
+    "subscribe": {
+        "title": "Підписатися",
+        "description": "Отримувати нагадування на пошту перед кожними гоночними вихідними.",
+        "label": "Адреса електронної пошти",
+        "button": "Підписатися"
+    },
+    "timezones": {
+        "title": "Виберіть часовий пояс..."
+    },
+    "years": {
+        "title": "Виберіть рік..."
+    },
+    "f1": {
+        "title": "Календар Ф1",
+        "subtitle": "Гонки, кваліфікації та вільні практики",
+        "seo": {
+            "title": "Календар Ф1 {{year}} - Час та Дати Гонок Формули-1",
+            "description": "Календар Формули-1 на сезон {{year}} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадуваннь. Всі часові пояси. Скачати чи підписатися.",
+            "keywords": "F1, Ф1, Формула-1, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {{year}}"
+        },
+        "footnote": "Формула-1, Ф1 та Гран-Прі є торговими марками Formula One Licensing BV."
+    },
+    "f2": {
+        "title": "Календар Ф2",
+        "subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
+        "seo": {
+            "title": "Календар Ф2 {{year}} - Час та Дати Гонок Формули-2",
+            "description": "Календар Формули-2 на сезон {{year}} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадуваннь. Всі часові пояси. Скачати чи підписатися.",
+            "keywords": "placeholder"
+        },
+        "footnote": "Чемпіонат ФІА Формула-2, ФІА Формула-2, Формула-2 та Ф2 є торговими марками ФІА."
+    },
+    "f3": {
+        "title": "Календар Ф3",
+        "subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
+        "seo": {
+            "title": "Календар Ф3 {{year}} - Час та Дати Гонок Формули-3",
+            "description": "Календар Формули-3 на сезон {{year}} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадуваннь. Всі часові пояси. Скачати чи підписатися.",
+            "keywords": "Ф3, Фомула-3, Формула-три, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {{year}}"
+        },
+        "footnote": "Чемпіонат ФІА Формула-3, ФІА Формула-3, Формула-3, Ф3 є торговими марками ФІА."
+    },
+    "fe": {
+        "title": "Календар Формули-Е",
+        "subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
+        "seo": {
+            "title": "Календар Формули-Е {{year}} - Час та Дати Гонок Формули-Е",
+            "description": "Календар Формули-Е на сезон {{year}} року зі всіма Гран-Прі, вільними практиками та кваліфікаціями. Можливість встановлення нагадуваннь. Всі часові пояси. Скачати чи підписатися.",
+            "keywords": "ФЕ, формула-е, час гонок, гонки, нагадування, сповіщення, е-гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {{year}}"
+        },
+        "footnote": "Формула-Е, Чемпіонат ФІА Формула-Е та Е-Гран-Прі є торговими марками ФІА."
+    },
+    "indycar": {
+        "title": "IndyCar Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "IndyCar Calendar {{year}} - Race Times and Dates",
+            "description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
+        },
+        "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+    },
+    "motogp": {
+        "title": "MotoGP Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "MotoGP Calendar {{year}} - Race Times and Dates",
+            "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    },
+    "wseries": {
+        "title": "Календар W Series",
+        "subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
+        "seo": {
+            "title": "Календар W Series {{year}} - Час та Дати Гонок Формули-3",
+            "description": "Календар W Series на сезон {{year}} року зі всіма W Series гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадуваннь. Всі часові пояси. Скачати чи підписатися.",
+            "keywords": "wseries, w-series, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {{year}}"
+        },
+        "footnote": "Календар W Series не пов’язаний із W Series."
+    },
+    "extremee": {
+        "title": "Extreme E Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
+            "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    }
+}

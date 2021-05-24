@@ -12,14 +12,13 @@ function MyApp({Component, pageProps}) {
 
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
-	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:title`);
-	const description = t(
-		`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`,
+	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.title`);
+	const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`,
 		{
 			year: currentYear
 		}
 	);
-	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
 		year: currentYear
 	});
 

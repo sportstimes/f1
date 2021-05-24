@@ -10,16 +10,15 @@ function Generate(props) {
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 	const plausible = usePlausible();
 
-	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
 		year: currentYear
 	});
-	const description = t(
-		`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`,
+	const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`,
 		{
 			year: currentYear
 		}
 	);
-	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
 		year: currentYear
 	});
 
@@ -65,7 +64,7 @@ function Generate(props) {
 		});
 
 		if (!sessionSelected) {
-			alert(t("generate:form.nonOptionsSelected"));
+			alert(t("localization:form.nonOptionsSelected"));
 			return;
 		}
 
@@ -124,15 +123,15 @@ function Generate(props) {
 				{form.submitted ? (
 					<>
 						<h3 className="text-xl mb-4">
-							{t("generate:download.title")}
+							{t("localization:download.title")}
 						</h3>
 
 						<Card id="download_option_ical" className="mb-6">
 							<h4 className="uppercase mb-4">
-								{t("generate:download.webcalTitle")}
+								{t("localization:download.webcalTitle")}
 							</h4>
 							<p className="mb-4">
-								{t("generate:download.webcalDescription")}
+								{t("localization:download.webcalDescription")}
 							</p>
 
 							<a
@@ -146,22 +145,22 @@ function Generate(props) {
 									})
 								}
 							>
-								{t("generate:download.webcalButton")}
+								{t("localization:download.webcalButton")}
 							</a>
 						</Card>
 
 						<Card id="download_option_google" className="mb-6">
 							<h4 className="uppercase mb-4">
-								{t("generate:download.gcalTitle")}
+								{t("localization:download.gcalTitle")}
 							</h4>
 							<p className="mb-4">
-								{t("generate:download.gcalDescription")} (
+								{t("localization:download.gcalDescription")} (
 								<a
 									href="https://support.google.com/calendar/answer/37100"
 									target="_blank"
 									className="text-green-100"
 								>
-									{t("generate:download.gcalDescriptionLink")}
+									{t("localization:download.gcalDescriptionLink")}
 								</a>
 								):
 							</p>
@@ -181,10 +180,10 @@ function Generate(props) {
 
 						<Card id="download_option">
 							<h4 className="uppercase mb-4">
-								{t("generate:download.icsTitle")}
+								{t("localization:download.icsTitle")}
 							</h4>
 							<p className="mb-4">
-								{t("generate:download.icsDescription")}
+								{t("localization:download.icsDescription")}
 							</p>
 							<a
 								href={form.downloadURL}
@@ -197,15 +196,15 @@ function Generate(props) {
 									})
 								}
 							>
-								{t("generate:download.icsButton")}
+								{t("localization:download.icsButton")}
 							</a>
 						</Card>
 					</>
 				) : (
 					<>
-						<h3 className="text-xl mb-4">{t("generate:form.title")}</h3>
+						<h3 className="text-xl mb-4">{t("localization:form.title")}</h3>
 						<Card>
-							<p className="mb-4">{t("generate:form.description")}</p>
+							<p className="mb-4">{t("localization:form.description")}</p>
 
 							{config.siteKey == "f1" &&
 								<div className="bg-yellow-200 rounded-md shadow py-4 mb-4 px-4 text-black font-bold mb-8">
@@ -236,7 +235,7 @@ function Generate(props) {
 													htmlFor={item}
 													className="inline-block align-middle text-base"
 												>
-													{t(`calendar:schedule.${item}`)}
+													{t(`localization:schedule.${item}`)}
 												</label>
 											</div>
 										);
@@ -262,7 +261,7 @@ function Generate(props) {
 											htmlFor="alarm"
 											className="inline-block align-middle text-base"
 										>
-											{t("generate:form.reminder")}
+											{t("localization:form.reminder")}
 										</label>{" "}
 										<select
 											name="mins"
@@ -289,7 +288,7 @@ function Generate(props) {
 											htmlFor="alarms-before"
 											className="inline-block align-middle text-base"
 										>
-											{t("generate:form.reminderContinued")}
+											{t("localization:form.reminderContinued")}
 										</label>
 									</div>
 								</fieldset>
@@ -297,8 +296,8 @@ function Generate(props) {
 								<fieldset id="buttons" key="buttons">
 									<button type="submit" className="btn">
 										{!form.submitted
-											? t("generate:form.button")
-											: t("generate:form.buttonSubmitted")}
+											? t("localization:form.button")
+											: t("localization:form.buttonSubmitted")}
 									</button>
 								</fieldset>
 							</form>

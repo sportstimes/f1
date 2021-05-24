@@ -51,7 +51,7 @@ const FullWidthLayout = (props) => {
 			</Head>
 
 			<noscript>
-				<div className="noscript">{t("common:javascript")}</div>
+				<div className="noscript">{t("localization:javascript")}</div>
 			</noscript>
 
 			<TopBar />

@@ -15,7 +15,7 @@ class RaceTR extends React.Component {
 		}
 
 		const hasMultipleFeaturedEvents = this.props.hasMultipleFeaturedEvents;
-		const titleKey = "calendar:schedule." + this.props.title;
+		const titleKey = "localization:schedule." + this.props.title;
 
 		if (hasMultipleFeaturedEvents) {
 			var blankColumnCount = config.featuredSessions.length - 1;

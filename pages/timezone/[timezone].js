@@ -16,13 +16,13 @@ const Timezone = (props) => {
   
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
-  const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+  const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
     year: currentYear
   });
-  const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+  const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
     year: currentYear
   });
-  const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+  const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
     year: currentYear
   });
   
@@ -55,7 +55,7 @@ const Timezone = (props) => {
           :
           <>
             
-            <p><Link href="/timezones"><a className="text-green-600">{t('common:options.timezonePicker.pick')}</a></Link><br/><br/></p>
+            <p><Link href="/timezones"><a className="text-green-600">{t('localization:options.timezonePicker.pick')}</a></Link><br/><br/></p>
             
             { config.notice != null &&
               <Notice />

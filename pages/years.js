@@ -11,13 +11,13 @@ function Years() {
 
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 	
-	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
 		year: currentYear
 	});
-	const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+	const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
 		year: currentYear
 	});
-	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
 		year: currentYear
 	});
 
@@ -42,7 +42,7 @@ function Years() {
 				keywords={keywords}
 			/>
 			<Layout>
-				<h3 className="text-xl mb-4">{t("years:title")}</h3>
+				<h3 className="text-xl mb-4">{t("localization:years.title")}</h3>
 				<Card>
 					<p>
 						<ul>{yearItems}</ul>

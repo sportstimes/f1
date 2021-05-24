@@ -49,7 +49,7 @@ class Race extends React.Component {
 
 	render() {
 		const {t, lang} = this.props.i18n;
-		const localeKey = "calendar:races." + this.props.item.localeKey;
+		const localeKey = "localization:races." + this.props.item.localeKey;
 
 		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
 
@@ -74,8 +74,8 @@ class Race extends React.Component {
 					<td className={`w-6/12 sm:w-5/12 pl-2`}>
 					
 						<span className={`${titleRowClasses(this.props)}`}>
-							{t(`calendar:races.${this.props.item.localeKey}`) != localeKey
-								? t(`calendar:races.${this.props.item.localeKey}`)
+							{t(`localization:races.${this.props.item.localeKey}`) != localeKey
+								? t(`localization:races.${this.props.item.localeKey}`)
 								: this.props.item.name}
 						</span>	
 							
