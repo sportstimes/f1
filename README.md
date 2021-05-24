@@ -17,9 +17,8 @@ npm run dev
 
 ## Localization
 
-If there is a language you'd like to see F1 Calendar localized to but we haven't got around to it yet, and you have some git-fu, feel free to submit a pull request to the repository.
+If there is a language you'd like to see F1 Calendar localized to but we haven't got around to it yet, and you have some spare time, head on over to our new localization project here.
 
-Read more about localizing [here](https://github.com/sportstimes/f1/tree/main/locales).
 ## Contributors ✨
 
 Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajhiggs](https://twitter.com/aajhiggs) and [@si](https://twitter.com/si).
