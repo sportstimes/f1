@@ -112,7 +112,7 @@ for (language of i18n.locales) {
 		fs.mkdirSync(dir);
 	}
 	
-	let i18nStrings = fs.readFileSync(`locales/${language}/localizations.json`);
+	let i18nStrings = fs.readFileSync(`locales/${language}/localization.json`);
 	let localizedStrings = JSON.parse(i18nStrings);
 
 	var languageFilesnames = language == "en" ? fileNames : localizedFilenames;
