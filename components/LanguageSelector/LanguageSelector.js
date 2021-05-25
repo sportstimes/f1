@@ -8,7 +8,7 @@ class LanguageSelector extends React.Component {
 	onChange = (event) => {
 		if (event.target.value === "add") {
 			document.location.href =
-				"https://github.com/sportstimes/f1/tree/main/locales";
+				"https://poeditor.com/join/project?hash=JrDs3Vfc92";
 			return;
 		}
 
