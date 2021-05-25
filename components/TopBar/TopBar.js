@@ -9,7 +9,7 @@ import SiteSelector from "../../components/SiteSelector/SiteSelector";
 class TopBar extends React.Component {
 	render() {
 		const {t, lang} = this.props.i18n;
-		const title = t(process.env.NEXT_PUBLIC_SITE_KEY + `:title`);
+		const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
 
 		return (
 			<>

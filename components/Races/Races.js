@@ -8,6 +8,8 @@ const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.jso
 const Races = (props) => {
 	const {t} = useTranslation();
 
+	const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
+
 	let {timezone, timeFormat} = useContext(UserContext);
 
 	const races = props.races;
@@ -35,7 +37,7 @@ const Races = (props) => {
 						<tr>
 							<th scope="col" className="w-6"></th>
 							<th scope="col" className="w-4/12">
-								{t("localization:event")} {props.year}
+								{title}
 							</th>
 							<th scope="col" className="w-2/12">
 								{t("localization:date")}
@@ -50,7 +52,7 @@ const Races = (props) => {
 						<tr className="hidden">
 							<th scope="col" className="w-8"></th>
 							<th scope="col" className="w-1/2">
-								{t("localization:event")} {props.year}
+								{title}
 							</th>
 							{config.featuredSessions.map((item, index) => {
 								return <th scope="col" className="w-1/6"></th>;
