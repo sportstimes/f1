@@ -156,12 +156,18 @@ class Race extends React.Component {
 		function sessionRows(props, state) {			
 			if(Object.keys(props.item.sessions).length != 0){
 				var rows = [];
+				
+				var keys = Object.keys(props.item.sessions);
+				
+				// Don't include the featured session in the list
+				if(!hasMultipleFeaturedEvents){
+					keys.splice(keys.indexOf(config.featuredSessions[0]), 1);
+				}
 
-				Object.keys(props.item.sessions).forEach(function (session, index) {
-					console.log(props.item);
-					
+				keys.forEach(function (session, index) {					
 					rows.push(
 						<RaceTR
+							key={props.item.localeKey}
 							date={props.item.sessions[session]}
 							title={session}
 							timezone={props.timezone}
