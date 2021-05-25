@@ -1,0 +1,210 @@
+{
+    "date": "Data",
+    "time": "Godzina",
+    "badges": {
+        "tbc": "NP",
+        "tbc_title": "Nie potwierdzone",
+        "tickets": "Bilety",
+        "canceled": "Odwołany",
+        "next": "Nadchodzący"
+    },
+    "schedule": {
+        "fp1": "Pierwszy trening",
+        "fp2": "Drugi trening",
+        "fp3": "Trzeci trening",
+        "shakedown": "Shakedown",
+        "practice1": "Practice 1",
+        "practice2": "Practice 2",
+        "practice3": "Practice 3",
+        "practice": "Practice",
+        "qualifying": "Kwalifikacje",
+        "qualifying1": "Kwalifikacje 1",
+        "qualifying2": "Kwalifikacje 2",
+        "sprintQualifying": "Sprint Qualifying",
+        "semifinal": "Semi Final",
+        "warmup": "Warmup",
+        "race": "Wyścig",
+        "race1": "Wyścig 1",
+        "race2": "Wyścig 2",
+        "race3": "Wyścig 3",
+        "gp": "Wyścig",
+        "sprint1": "Sprint 1",
+        "sprint2": "Sprint 2",
+        "feature": "Feature"
+    },
+    "races": {
+        "austrian-grand-prix": "Grand Prix Austrii",
+        "steiermark-grand-prix": "Grand Prix Styrii",
+        "hungarian-grand-prix": "Grand Prix Węgier",
+        "british-grand-prix": "Grand Prix Wielkiej Brytanii",
+        "anniversary-british-grand-prix": "Grand Prix 70-lecia (Silverstone)",
+        "spanish-grand-prix": "Grand Prix Hiszpanii",
+        "belgian-grand-prix": "Grand Prix Belgii",
+        "italian-grand-prix": "Grand Prix Włoch",
+        "australian-grand-prix": "Grand Prix Australii",
+        "bahrain-grand-prix": "Grand Prix Bahrajnu",
+        "vietnamese-grand-prix": "Grand Prix Wietnamu",
+        "china-grand-prix": "Grand Prix Chin",
+        "dutch-grand-prix": "Grand Prix Holandii",
+        "monaco-grand-prix": "Grand Prix Monako",
+        "azerbaijan-grand-prix": "Grand Prix Azerbejdżanu",
+        "canadian-grand-prix": "Grand Prix Kanady",
+        "french-grand-prix": "Grand Prix Francji",
+        "singapore-grand-prix": "Grand Prix Singapuru",
+        "russian-grand-prix": "Grand Prix Rosji",
+        "japanese-grand-prix": "Grand Prix Japonii",
+        "us-grand-prix": "Grand Prix Stanów Zjednoczonych",
+        "mexico-grand-prix": "Grand Prix Meksyku",
+        "brazilian-grand-prix": "Grand Prix Brazylii",
+        "abu-dhabi-grand-prix": "Grand Prix Abu Zabi",
+        "tuscan-grand-prix": "Grand Prix Toskanii",
+        "eifel-grand-prix": "Grand Prix Eifelu (Nürburgring)",
+        "portuguese-grand-prix": "Grand Prix Portugalii (Portimão)",
+        "emilia-romagna-grand-prix": "Grand Prix Emilii-Romanii (Imola)",
+        "sakhir-grand-prix": "Grand Prix Bahrajnu",
+        "turkish-grand-prix": "Grand Prix Turcji",
+        "saudi-arabia-grand-prix": "Grand Prix Arabii Saudyjskiej"
+    },
+    "options": {
+        "calendar": "Dodaj daty wyścigów do Twojego Kalendarza",
+        "email": "Otrzymuj powiadomienia email",
+        "timezonePicker": {
+            "showing": "Wyświetlaj w strefie czasowej",
+            "pick": "Wybierz strefę czasową..."
+        },
+        "formatPicker": {
+            "title": "Format czasy",
+            "12hr": "12-godzinny czas",
+            "24hr": "24-godzinny czas"
+        },
+        "button": "Ustaw"
+    },
+    "contribute": "Wnieś wkład",
+    "languageSelector": "Wybierz język",
+    "javascript": "Kalendarz F1 działa lepiej z włączoną obsługą Javascript.",
+    "footer": {
+        "coffee": "Wesprzyj Kalendarz F1 i kup nam kawę.",
+        "twitter": "We’re on Twitter",
+        "github": "Open Sourced na GitHub",
+        "issue": "Znalazłeś błąd? Zgłoś",
+        "links": {
+            "wereOn": "Jesteśmy na",
+            "openSourcedOn": "Open Sourced na",
+            "spottedIssue": "Znalazłeś błąd?",
+            "spottedReport": "Zgłoś"
+        }
+    },
+    "form": {
+        "title": "Generuj Kalendarz",
+        "description": "Najpierw, wybierz sesję, który chcesz dodac do Twojego kalendarza:",
+        "reminder": "Ustaw przypomnienie",
+        "reminderContinued": "minut przed wydarzeniem.",
+        "button": "Pobierz kalendarz",
+        "buttonSubmitted": "Pobierz",
+        "nonOptionsSelected": "Wybierz przynajmniej jedną sesję dla swojego kalendarza."
+    },
+    "download": {
+        "title": "Wybierz typ kalendarza",
+        "webcalTitle": "Wersja mobilna lub klasyczna",
+        "webcalDescription": "Automatyczne aktualizowanie kalendarza dla aplikacji takich jak Outlook i macOS Calendar.",
+        "webcalButton": "Pobierz",
+        "gcalTitle": "Dla Google Calendar",
+        "gcalDescription": "Aby dodać ten kalendarz, skopiuj i wklej ten adres do Google Calendar",
+        "gcalDescriptionLink": "szczegółowe instrukcje",
+        "icsTitle": "Pobierz plik ICS",
+        "icsDescription": "Nie samoaktualizacujący się kalendarz (.ics) dla kalendarzy, które nie obsługują aktualizacji subskrypcji.",
+        "icsButton": "Pobierz"
+    },
+    "subscribe": {
+        "title": "Subskrybuj",
+        "description": "Otrzymuj przypomnienie e-mailem przed każdym weekendem wyścigowym.",
+        "label": "Adres email",
+        "button": "Subskrybuj"
+    },
+    "timezones": {
+        "title": "Wybierz strefę czasową..."
+    },
+    "years": {
+        "title": "Wybierz rok..."
+    },
+    "f1": {
+        "title": "Kalendarz F1",
+        "subtitle": "Wyścigi, kwalifikacje i sesje treningowe.",
+        "seo": {
+            "title": "Kalendarz F1 {{year}} - Formula One Race Times and Dates",
+            "description": "Kalendarz Formuły 1 na sezon  {{year}}  z wszystkimi wyścigami, treningami oraz kwalifikacjami. Ustaw przypomnienia. Wszystkie strefy czasowe. Pobierz lub zasubskrybuj.",
+            "keywords": "F1, formula one, formuła 1, godziny wyścigów, wyścigi, przypomnienia, powiadomienia, grands prix, grand prix, kalendarz, daty, godziny startów, kwalifikacje, treningi, London, Europe, {{year}}"
+        },
+        "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+    },
+    "f2": {
+        "title": "F2 Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "F2 Calendar {{year}} - Formula Two Race Times and Dates",
+            "description": "Formula Two Calendar for {{year}} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "placeholder"
+        },
+        "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+    },
+    "f3": {
+        "title": "F3 Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "F3 Calendar {{year}} - Formula Three Race Times and Dates",
+            "description": "Formula Three Calendar for {{year}} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
+    },
+    "fe": {
+        "title": "Formula E Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "Formula E Calendar {{year}} - Formula E Race Times and Dates",
+            "description": "Formula E Calendar for {{year}} season with all Formula E e-prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
+    },
+    "indycar": {
+        "title": "IndyCar Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "IndyCar Calendar {{year}} - Race Times and Dates",
+            "description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
+        },
+        "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+    },
+    "motogp": {
+        "title": "MotoGP Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "MotoGP Calendar {{year}} - Race Times and Dates",
+            "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    },
+    "wseries": {
+        "title": "W Series Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "W Series Calendar {{year}} - Race Times and Dates",
+            "description": "W Series Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "W Series Calendar is not affiliated with W Series."
+    },
+    "extremee": {
+        "title": "Extreme E Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
+            "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    }
+}

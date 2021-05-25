@@ -1,0 +1,210 @@
+{
+    "date": "Päivämäärä",
+    "time": "Aika",
+    "badges": {
+        "tbc": "TBC",
+        "tbc_title": "Vahvistetaan myöhemmin",
+        "tickets": "Liput",
+        "canceled": "Peruutettu",
+        "next": "SEURAAVA"
+    },
+    "schedule": {
+        "fp1": "1. vapaat harjoitukset",
+        "fp2": "2. vapaat harjoitukset",
+        "fp3": "3. vapaat harjoitukset",
+        "shakedown": "Shakedown",
+        "practice1": "Practice 1",
+        "practice2": "Practice 2",
+        "practice3": "Practice 3",
+        "practice": "Practice",
+        "qualifying": "Aika-ajot",
+        "qualifying1": "Aika-ajot 1",
+        "qualifying2": "Aika-ajot 2",
+        "sprintQualifying": "Sprint Qualifying",
+        "semifinal": "Semi Final",
+        "warmup": "Warmup",
+        "race": "Kisa",
+        "race1": "Kisa 1",
+        "race2": "Kisa 2",
+        "race3": "Kisa 3",
+        "gp": "Kisa",
+        "sprint1": "Sprint 1",
+        "sprint2": "Sprint 2",
+        "feature": "Feature"
+    },
+    "races": {
+        "austrian-grand-prix": "Itävallan GP",
+        "steiermark-grand-prix": "Steiermarkin GP (Itävalta)",
+        "hungarian-grand-prix": "Unkarin GP",
+        "british-grand-prix": "Britannian GP",
+        "anniversary-british-grand-prix": "F1 70 vuotta -GP (Iso-Britannia)",
+        "spanish-grand-prix": "Espanjan GP",
+        "belgian-grand-prix": "Belgian GP",
+        "italian-grand-prix": " Italian GP",
+        "australian-grand-prix": "Australian GP",
+        "bahrain-grand-prix": "Bahrainin GP",
+        "vietnamese-grand-prix": "Vietnamin GP",
+        "china-grand-prix": "Kiinan GP",
+        "dutch-grand-prix": "Hollannin GP",
+        "monaco-grand-prix": "Monacon GP",
+        "azerbaijan-grand-prix": "Azerbaidzhanin GP",
+        "canadian-grand-prix": "Kanadan GP",
+        "french-grand-prix": "Ranskan GP",
+        "singapore-grand-prix": "Singaporen GP",
+        "russian-grand-prix": "Venäjän GP",
+        "japanese-grand-prix": "Japanin GP",
+        "us-grand-prix": "Yhdysvaltain GP",
+        "mexico-grand-prix": "Meksikon GP",
+        "brazilian-grand-prix": "Brasilian GP",
+        "abu-dhabi-grand-prix": "Abu Dhabin GP",
+        "tuscan-grand-prix": "Toscanan GP",
+        "eifel-grand-prix": "Saksan GP (Nürburgring)",
+        "portuguese-grand-prix": "Portugalin GP",
+        "emilia-romagna-grand-prix": "Emilia-Romagnan GP (Imola)",
+        "sakhir-grand-prix": "Bahrainin GP",
+        "turkish-grand-prix": "Turkin GP",
+        "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix"
+    },
+    "options": {
+        "calendar": "Lisää osakilpailujen aikataulut kalenteriin",
+        "email": "Vastaanota muistutuksia sähköpostiin",
+        "timezonePicker": {
+            "showing": "Näytetään aikataulut",
+            "pick": "Valitse aikavyöhyke..."
+        },
+        "formatPicker": {
+            "title": "Time Format",
+            "12hr": "12-Hour Time",
+            "24hr": "24-Hour Time"
+        },
+        "button": "Valmis"
+    },
+    "contribute": "Osallistu",
+    "languageSelector": "Valitse kieli",
+    "javascript": "F1 Kalenteri toimii parhaiten Javascriptin kanssa.",
+    "footer": {
+        "coffee": "Tue F1 Kalenteria, osta meille kahvi.",
+        "twitter": "Löydät meidät Twitteristä",
+        "github": "Avoin lähdekoodi GitHubissa",
+        "issue": "Ongelmia? Raportoi",
+        "links": {
+            "wereOn": "Löydät meidät",
+            "openSourcedOn": "Avoin lähdekoodi",
+            "spottedIssue": "Ongelmia?",
+            "spottedReport": "Raportoi"
+        }
+    },
+    "form": {
+        "title": "Luo kalenteri",
+        "description": "Valitse kisaviikonlopun tapahtumat jotka haluat lisätä kalenteriin:",
+        "reminder": "Aseta muistutus",
+        "reminderContinued": "minuuttia ennen jokaista tapahtumaa.",
+        "button": "Luo kalenteri",
+        "buttonSubmitted": "Luotu",
+        "nonOptionsSelected": "Valitse vähintään yksi tapahtuma."
+    },
+    "download": {
+        "title": "Valitse kalenterityyppi",
+        "webcalTitle": "Puhelimelle ja työpöytäkoneelle",
+        "webcalDescription": "Automaattisesti päivittyvä kalenteri sovelluksille kuten Outlook ja macOS-kalenteri.",
+        "webcalButton": "Luo",
+        "gcalTitle": "Google-kalenterille",
+        "gcalDescription": "Kopioi ja liitä tämä URL Google-kalenteriin",
+        "gcalDescriptionLink": "tarkemmat ohjeet",
+        "icsTitle": "Lataa ICS -tiedosto",
+        "icsDescription": "Ei-päivittyvä kalenteri (.ics) sovelluksille, joissa ei ole automaattista päivitystä.",
+        "icsButton": "Lataa"
+    },
+    "subscribe": {
+        "title": "Tilaa",
+        "description": "Vastaanota muistutus sähköpostiin ennen jokaista kisaviikonloppua.",
+        "label": "Sähköposti",
+        "button": "Tilaa"
+    },
+    "timezones": {
+        "title": "Valitse aikavyöhyke..."
+    },
+    "years": {
+        "title": "Valitse vuosi..."
+    },
+    "f1": {
+        "title": "F1 Kalenteri",
+        "subtitle": "Kisat, Aika-ajot ja Vapaat harjoitukset",
+        "seo": {
+            "title": "F1 Kalenteri {{year}} - Formula One Race Times and Dates",
+            "description": "Formula 1 Kalenteri kaudelle {{year}}. Kaikkien osakilpailujen kisat, aika-ajot ja vapaat-harjoitukset. Muistutustoiminto ja kaikki aikavyöhykkeet. Lataa tai tilaa.",
+            "keywords": "F1, formula 1, kisa-aikataulu, kisat, muistutus, hälytykset, osakilpailut, GP, kalenteri, päivämäärät, aikataulut, aika-ajot, vapaat harjoitukset, Lontoo, Eurooppa, {{year}}"
+        },
+        "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+    },
+    "f2": {
+        "title": "F2 Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "F2 Calendar {{year}} - Formula Two Race Times and Dates",
+            "description": "Formula Two Calendar for {{year}} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "placeholder"
+        },
+        "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+    },
+    "f3": {
+        "title": "F3 Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "F3 Calendar {{year}} - Formula Three Race Times and Dates",
+            "description": "Formula Three Calendar for {{year}} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
+    },
+    "fe": {
+        "title": "Formula E Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "Formula E Calendar {{year}} - Formula E Race Times and Dates",
+            "description": "Formula E Calendar for {{year}} season with all Formula E e-prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
+    },
+    "indycar": {
+        "title": "IndyCar Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "IndyCar Calendar {{year}} - Race Times and Dates",
+            "description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
+        },
+        "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+    },
+    "motogp": {
+        "title": "MotoGP Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "MotoGP Calendar {{year}} - Race Times and Dates",
+            "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    },
+    "wseries": {
+        "title": "W Series Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "W Series Calendar {{year}} - Race Times and Dates",
+            "description": "W Series Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "W Series Calendar is not affiliated with W Series."
+    },
+    "extremee": {
+        "title": "Extreme E Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
+            "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    }
+}

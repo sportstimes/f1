@@ -12,8 +12,8 @@ class Header extends React.Component {
 		const plausible = usePlausible();
 
 		const {t, lang} = this.props.i18n;
-		const title = t(process.env.NEXT_PUBLIC_SITE_KEY + `:title`);
-		const subtitle = t(process.env.NEXT_PUBLIC_SITE_KEY + `:subtitle`);
+		const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
+		const subtitle = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.subtitle`);
 
 		const {languageNames} = i18nConfig;
 
@@ -80,7 +80,7 @@ class Header extends React.Component {
 									className="mr-2"
 									alt="buymeacoffee"
 								/>
-								{t("common:footer.coffee")}
+								{t("localization:footer.coffee")}
 							</a>
 						</div>
 					</div>

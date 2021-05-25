@@ -8,7 +8,7 @@ class LanguageSelector extends React.Component {
 	onChange = (event) => {
 		if (event.target.value === "add") {
 			document.location.href =
-				"https://github.com/sportstimes/f1/tree/main/locales";
+				"https://poeditor.com/join/project?hash=JrDs3Vfc92";
 			return;
 		}
 
@@ -43,7 +43,7 @@ class LanguageSelector extends React.Component {
 
 	render() {
 		const {t, lang} = this.props.i18n;
-		const title = t(process.env.NEXT_PUBLIC_SITE_KEY + `:title`);
+		const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
 
 		const {languageNames} = i18nConfig;
 
@@ -60,14 +60,14 @@ class LanguageSelector extends React.Component {
 
 		languageItems.push(
 			<option value="add" key="Add">
-				{t("common:contribute")} +
+				{t("localization:contribute")} +
 			</option>
 		);
 
 		return (
 			<div>
 				<label htmlFor="languageSelector" className="sr-only">
-					{t("common:languageSelector")}
+					{t("localization:languageSelector")}
 				</label>
 				<select
 					id={this.props.id}

@@ -43,7 +43,7 @@ class SiteSelector extends React.Component {
 		return (
 			<div>
 				<label htmlFor="languageSelector" className="sr-only">
-					{t("common:languageSelector")}
+					{t("localization:languageSelector")}
 				</label>
 				<select
 					id={this.props.id}

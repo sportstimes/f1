@@ -38,7 +38,7 @@ export default function Footer() {
 								className="mr-2"
 								alt="buymeacoffee"
 							/>
-							{t("common:footer.coffee")}
+							{t("localization:footer.coffee")}
 						</a>
 					</div>
 
@@ -80,7 +80,7 @@ export default function Footer() {
 
 					
 					<p className="mb-10 text-center text-base text-gray-400">
-						{ t('common:footer.links.spottedIssue') } <a href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue..." className="text-gray-300">{ t('common:footer.links.spottedReport') }	</a>
+						{ t('localization:footer.links.spottedIssue') } <a href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue..." className="text-gray-300">{ t('localization:footer.links.spottedReport') }	</a>
 					</p>
 
 					<p className="mt-8 text-center text-base text-gray-400">
@@ -119,7 +119,7 @@ export default function Footer() {
 						{new Date().getFullYear()}
 					</p>
 					<p className="mb-10 text-center text-base text-gray-400">
-						{t(process.env.NEXT_PUBLIC_SITE_KEY + `:footnote`)}
+						{t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.footnote`)}
 					</p>
 
 					<p className="text-center mt-8">

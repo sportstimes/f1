@@ -1,0 +1,210 @@
+{
+    "date": "Datum",
+    "time": "Čas",
+    "badges": {
+        "tbc": "TBC",
+        "tbc_title": "Čaka na potrditev",
+        "tickets": "Vstopnice",
+        "canceled": "Odpovedano",
+        "next": "NASLEDNJI"
+    },
+    "schedule": {
+        "fp1": "Prvi prosti trening",
+        "fp2": "Drugi prosti trening",
+        "fp3": "Tretji prosti trening",
+        "shakedown": "Shakedown",
+        "practice1": "Practice 1",
+        "practice2": "Practice 2",
+        "practice3": "Practice 3",
+        "practice": "Practice",
+        "qualifying": "Kvalifikacije",
+        "qualifying1": "Kvalifikacije 1",
+        "qualifying2": "Kvalifikacije 2",
+        "sprintQualifying": "Sprint Qualifying",
+        "semifinal": "Semi Final",
+        "warmup": "Warmup",
+        "race": "Dirka",
+        "race1": "Dirka 1",
+        "race2": "Dirka 2",
+        "race3": "Dirka 3",
+        "gp": "Velika nagrada",
+        "sprint1": "Sprint 1",
+        "sprint2": "Sprint 2",
+        "feature": "Feature"
+    },
+    "races": {
+        "austrian-grand-prix": "VN Avstrije",
+        "steiermark-grand-prix": "VN Štajerske",
+        "hungarian-grand-prix": "VN Madžarske",
+        "british-grand-prix": "VN Velike Britanije",
+        "anniversary-british-grand-prix": "VN ob 70. obletnici F1",
+        "spanish-grand-prix": "VN Španije",
+        "belgian-grand-prix": "VN Belgije",
+        "italian-grand-prix": "VN Italije",
+        "australian-grand-prix": "VN Avstralije",
+        "bahrain-grand-prix": "VN Bahraina",
+        "vietnamese-grand-prix": "VN Vietnama",
+        "china-grand-prix": "VN Kitajske",
+        "dutch-grand-prix": "VN Nizozemske",
+        "monaco-grand-prix": "VN Monaka",
+        "azerbaijan-grand-prix": "VN Azerbajdžana",
+        "canadian-grand-prix": "VN Kanade",
+        "french-grand-prix": "VN Francije",
+        "singapore-grand-prix": "VN Singapura",
+        "russian-grand-prix": "VN Rusije",
+        "japanese-grand-prix": "VN Japonske",
+        "us-grand-prix": "VN ZDA",
+        "mexico-grand-prix": "VN Mehike",
+        "brazilian-grand-prix": "VN Brazilije",
+        "abu-dhabi-grand-prix": "VN Abu Dhabija",
+        "tuscan-grand-prix": "VN Toskane",
+        "eifel-grand-prix": "VN Eifla",
+        "portuguese-grand-prix": "VN Portugalske",
+        "emilia-romagna-grand-prix": "VN Emilije-Romanje",
+        "sakhir-grand-prix": "VN Sahirja",
+        "turkish-grand-prix": "VN Turčije",
+        "saudi-arabia-grand-prix": "VN Savdske Arabije"
+    },
+    "options": {
+        "calendar": "Dodaj te datume in čase dirk v svoj koledar",
+        "email": "Prejmi e-mail opomnike",
+        "timezonePicker": {
+            "showing": "Prikazujem čase za",
+            "pick": "Izberi časovni pas..."
+        },
+        "formatPicker": {
+            "title": "Time Format",
+            "12hr": "12-Hour Time",
+            "24hr": "24-Hour Time"
+        },
+        "button": "Zaključi"
+    },
+    "contribute": "Prispevaj",
+    "languageSelector": "Izberi jezik",
+    "javascript": "F1 Koledar deluje najbolje z vključenim JavaScript",
+    "footer": {
+        "coffee": "Podpri F1 Koledar, kupi nam kavo.",
+        "twitter": "Smo na Twitter omrežju",
+        "github": "Odprta koda na GitHub",
+        "issue": "Opaziš napako? Prijavi",
+        "links": {
+            "wereOn": "Smo na",
+            "openSourcedOn": "Odprta koda na",
+            "spottedIssue": "Opaziš napako?",
+            "spottedReport": "Prijavi"
+        }
+    },
+    "form": {
+        "title": "Generiraj koledar",
+        "description": "Najprej izberi F1 dogodke, ki jih želiš dodati v svoj koledar:",
+        "reminder": "Nastavi opomnik",
+        "reminderContinued": "minut pred vsakim dogodkom v koledarju.",
+        "button": "Prenesi koledar",
+        "buttonSubmitted": "Preneseno",
+        "nonOptionsSelected": "Izberi vsaj en dogodek za svoj koledar."
+    },
+    "download": {
+        "title": "Izberi tip koledarja",
+        "webcalTitle": "Za osebni računalnik ali mobilne naprave",
+        "webcalDescription": "Samodejno posodobljen koledar za aplikacije kot sta Outlook in macOS Calendar",
+        "webcalButton": "Prenesi",
+        "gcalTitle": "Za Google Calendar",
+        "gcalDescription": "Kopiraj in prilepi ta URL naslov v Google Calendar",
+        "gcalDescriptionLink": "podrobna navodila",
+        "icsTitle": "Prenesi ICS datoteko",
+        "icsDescription": "Ročno posodobljen koledar (.ics) za koledarje, ki ne podpirajo samodejnih posodobitev",
+        "icsButton": "Prenesi"
+    },
+    "subscribe": {
+        "title": "Naroči se",
+        "description": "Prejmi e-mail obvestilo pred vsakim dirkaškim vikendom.",
+        "label": "E-mail naslov",
+        "button": "Naroči se"
+    },
+    "timezones": {
+        "title": "Izberi časovni pas..."
+    },
+    "years": {
+        "title": "Izberi leto..."
+    },
+    "f1": {
+        "title": "F1 Koledar",
+        "subtitle": "Dirke, kvalifikacije in prosti treningi",
+        "seo": {
+            "title": "F1 Koledar {{year}} - Formula One Race Times and Dates",
+            "description": "F1 koledar za sezono {{year}} z vsemi dirkami, kvalifikacijami in prostimi treningi. Možnost nastavljanja opomnikov. Vsi časovni pasi. Prenesi ali se naroči.",
+            "keywords": "F1, formula ena, časi dirk, dirke, opomniki, obvestila, velike nagrade, velika nagrada, koledar, datumi, štartni časi, kvalifikacije, trening, London, Evropa, {{year}}"
+        },
+        "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+    },
+    "f2": {
+        "title": "F2 Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "F2 Calendar {{year}} - Formula Two Race Times and Dates",
+            "description": "Formula Two Calendar for {{year}} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "placeholder"
+        },
+        "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+    },
+    "f3": {
+        "title": "F3 Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "F3 Calendar {{year}} - Formula Three Race Times and Dates",
+            "description": "Formula Three Calendar for {{year}} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
+    },
+    "fe": {
+        "title": "Formula E Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "Formula E Calendar {{year}} - Formula E Race Times and Dates",
+            "description": "Formula E Calendar for {{year}} season with all Formula E e-prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
+    },
+    "indycar": {
+        "title": "IndyCar Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "IndyCar Calendar {{year}} - Race Times and Dates",
+            "description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
+        },
+        "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+    },
+    "motogp": {
+        "title": "MotoGP Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "MotoGP Calendar {{year}} - Race Times and Dates",
+            "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    },
+    "wseries": {
+        "title": "W Series Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "W Series Calendar {{year}} - Race Times and Dates",
+            "description": "W Series Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "W Series Calendar is not affiliated with W Series."
+    },
+    "extremee": {
+        "title": "Extreme E Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
+            "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": ""
+    }
+}

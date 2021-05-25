@@ -12,13 +12,13 @@ function Subscribe() {
 
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
-	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
 		year: currentYear
 	});
-	const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+	const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
 		year: currentYear
 	});
-	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
 		year: currentYear
 	});
 
@@ -32,9 +32,9 @@ function Subscribe() {
 		<>
 			<NextSeo title={title} description={description} keywords={keywords} />
 			<Layout year={process.env.NEXT_PUBLIC_CURRENT_YEAR}>
-				<h3 className="text-xl mb-4">{t("subscribe:title")}</h3>
+				<h3 className="text-xl mb-4">{t("localization:subscribe.title")}</h3>
 				<Card>
-					<p className="pl-px pb-5">{t("subscribe:description")}</p>
+					<p className="pl-px pb-5">{t("localization:subscribe.description")}</p>
 					<form
 						action="https://f1calendar.us10.list-manage.com/subscribe/post?u=e11245c4d3fecdad90cb66908&amp;id=f7a8a5001f"
 						method="post"
@@ -49,7 +49,7 @@ function Subscribe() {
 					>
 						<div className="row">
 							<label htmlFor="mce-EMAIL" className="font-bold text-lg">
-								{t("subscribe:label")}
+								{t("localization:subscribe.label")}
 							</label>
 							<input
 								type="email"
@@ -71,7 +71,7 @@ function Subscribe() {
 
 						<input
 							type="submit"
-							value={t("subscribe:button")}
+							value={t("localization:subscribe.button")}
 							name="subscribe"
 							id="mc-embedded-subscribe"
 							className="btn"

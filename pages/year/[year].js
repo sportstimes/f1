@@ -7,13 +7,13 @@ import OptionsBar from "components/OptionsBar/OptionsBar";
 const Year = (props) => {
 	const {t} = useTranslation();
 	
-	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
 		year: props.year
 	});
-	const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+	const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
 		year: props.year
 	});
-	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
 		year: props.year
 	});
 	

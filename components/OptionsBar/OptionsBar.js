@@ -131,7 +131,7 @@ class OptionsBar extends React.Component {
 									htmlFor="timezone"
 									className="pickerLabel block md:inline-block mr-2"
 								>
-									{t("common:options.timezonePicker.pick")}
+									{t("localization:options.timezonePicker.pick")}
 								</label>
 								<select
 									id="timezone"
@@ -145,7 +145,7 @@ class OptionsBar extends React.Component {
 							</form>
 							<noscript>
 								<a href="/timezones">
-									{t("common:options.timezonePicker.pick")}
+									{t("localization:options.timezonePicker.pick")}
 								</a>
 							</noscript>
 						</div>
@@ -155,7 +155,7 @@ class OptionsBar extends React.Component {
 									htmlFor="format"
 									className="pickerLabel block md:inline-block mr-2"
 								>
-									{t("common:options.formatPicker.title")}
+									{t("localization:options.formatPicker.title")}
 								</label>
 								<select
 									id="format"
@@ -165,10 +165,10 @@ class OptionsBar extends React.Component {
 									className="text-gray-900 pl-3 pr-10 py-0 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
 								>
 									<option value="12">
-										{t("common:options.formatPicker.12hr")}
+										{t("localization:options.formatPicker.12hr")}
 									</option>
 									<option value="24">
-										{t("common:options.formatPicker.24hr")}
+										{t("localization:options.formatPicker.24hr")}
 									</option>
 								</select>
 							</form>
@@ -180,7 +180,7 @@ class OptionsBar extends React.Component {
 								type="submit"
 								className="inline-block py-0.5 btn"
 							>
-								{t("common:options.button")}
+								{t("localization:options.button")}
 							</button>
 						</div>
 
@@ -195,7 +195,7 @@ class OptionsBar extends React.Component {
 								onClick={this.togglePicker}
 								className="cursor-pointer hover:text-gray-200"
 							>
-								{t("common:options.timezonePicker.showing")}{" "}
+								{t("localization:options.timezonePicker.showing")}{" "}
 								<strong className="underline">
 									{this.context.timezone == "Europe/Kiev" ? (
 										<>Europe/Kyiv</>

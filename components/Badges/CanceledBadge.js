@@ -8,7 +8,7 @@ class CanceledBadge extends React.Component {
 
 		return (
 			<span className={`bg-red-600 rounded px-1 md:px-2 py-1 text-xs text-black font-normal sm:font-bold uppercase ml-2 ${this.props.mobileOnly ? "display sm:hidden" : ""}`}>
-				{t("calendar:badges.canceled")}
+				{t("localization:badges.canceled")}
 			</span>
 		);
 	}

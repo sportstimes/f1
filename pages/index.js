@@ -13,13 +13,13 @@ const Index = (props) => {
 
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
-	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.title`, {
+	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
 		year: currentYear
 	});
-	const description = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.description`, {
+	const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
 		year: currentYear
 	});
-	const keywords = t(`${process.env.NEXT_PUBLIC_SITE_KEY}:seo.keywords`, {
+	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
 		year: currentYear
 	});
 	
