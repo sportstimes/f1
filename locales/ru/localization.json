@@ -12,7 +12,7 @@
         "fp1": "Свободная практика 1",
         "fp2": "Свободная практика 2",
         "fp3": "Свободная практика 3",
-        "shakedown": "Shakedown",
+        "shakedown": "Шейкдаун",
         "practice1": "Тренировка 1",
         "practice2": "Тренировка 2",
         "practice3": "Тренировка 3",
@@ -20,9 +20,9 @@
         "qualifying": "Квалификация",
         "qualifying1": "Квалификация 1",
         "qualifying2": "Квалификация 2",
-        "sprintQualifying": "Sprint Qualifying",
-        "semifinal": "Semi Final",
-        "warmup": "Warmup",
+        "sprintQualifying": "Квалификационный спринт",
+        "semifinal": "Полуфинал",
+        "warmup": "Разминка",
         "race": "Гонка",
         "race1": "Гонка 1",
         "race2": "Гонка 2",
@@ -131,7 +131,7 @@
         "title": "Календарь F1",
         "subtitle": "Гонки, Квалификации и Свободные заезды",
         "seo": {
-            "title": "Календарь F1 {{year}} - Формула 1 время и даты событий",
+            "title": "Календарь F1 {{year}} - Время и даты событий",
             "description": "Календарь Формулы 1 для сезона {{year}} со всеми гонками, свободными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
             "keywords": "F1, Формула 1, время гонки, гонки, напоминания, оповещения, Гран-при, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
         },
@@ -141,7 +141,7 @@
         "title": "Календарь F2",
         "subtitle": "Гонки, Квалификации и Свободные заезды",
         "seo": {
-            "title": "Календарь F2 {{year}} - Формула 2 время и даты событий",
+            "title": "Календарь F2 {{year}} - Время и даты событий",
             "description": "Календарь Формулы 2 для сезона {{year}} со всеми гонками, свободными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
             "keywords": "F2, Формула 2, время гонки, гонки, напоминания, оповещения, Гран-при, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
         },
@@ -151,7 +151,7 @@
         "title": "Календарь F3",
         "subtitle": "Гонки, Квалификации и Свободные заезды",
         "seo": {
-            "title": "Календарь F3 {{year}} - Формула 3 время и даты событий",
+            "title": "Календарь F3 {{year}} - Время и даты событий",
             "description": "Календарь Формулы 3 для сезона {{year}} со всеми гонками, свободными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
             "keywords": "F3, Формула 3, время гонки, гонки, напоминания, оповещения, Гран-при, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
         },
@@ -159,51 +159,51 @@
     },
     "fe": {
         "title": "Календарь Формулы E",
-        "subtitle": "Гонки, Квалификации и Свободные заезды",
+        "subtitle": "Гонки, Квалификации и Тренировочные заезды",
         "seo": {
-            "title": "Календарь Формулы E {{year}} - Формула E время и даты событий",
-            "description": "Календарь Формулы E для сезона {{year}} со всеми гонками, свободными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
+            "title": "Календарь Формулы E {{year}} - Время и даты событий",
+            "description": "Календарь Формулы E для сезона {{year}} со всеми гонками, тренировочными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
             "keywords": "FE, Формула E, время гонки, гонки, напоминания, оповещения, Гран-при, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
         },
         "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix являются товарными знаками FIA."
     },
     "indycar": {
-        "title": "IndyCar Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "Календарь IndyCar",
+        "subtitle": "Гонки, Квалификации и Тренировочные заезды",
         "seo": {
-            "title": "IndyCar Calendar {{year}} - Race Times and Dates",
-            "description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
+            "title": "Календарь IndyCar {{year}} - Время и даты событий",
+            "description": "Календарь IndyCar для сезона {{year}} со всеми гонками, тренировочными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
+            "keywords": "IndyCar, время гонки, гонки, напоминания, оповещения, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
         },
-        "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+        "footnote": "IndyCar зарегистрированная торговая марка Brickyard Trademarks, Inc"
     },
     "motogp": {
-        "title": "MotoGP Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "Календарь MotoGP",
+        "subtitle": "Гонки, Квалификации и Тренировочные заезды",
         "seo": {
-            "title": "MotoGP Calendar {{year}} - Race Times and Dates",
-            "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            "title": "Календарь MotoGP {{year}} - Время и даты событий",
+            "description": "Календарь MotoGP для сезона {{year}} со всеми гонками, тренировочными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
+            "keywords": "MotoGP, время гонки, гонки, напоминания, оповещения, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
         },
         "footnote": ""
     },
     "wseries": {
         "title": "Календарь серии W",
-        "subtitle": "Гонки, Квалификации и Свободные заезды",
+        "subtitle": "Гонки, Квалификации и Тренировочные заезды",
         "seo": {
             "title": "Календарь серии W {{year}} - Время и даты событий",
-            "description": "Календарь серии W для сезона {{year}} со всеми гонками, свободными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
+            "description": "Календарь серии W для сезона {{year}} со всеми гонками, тренировочными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
             "keywords": "W-серия, серия W, время гонки, гонки, напоминания, оповещения, Гран-при, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
         },
         "footnote": "Календарь серии W не связан с серией W."
     },
     "extremee": {
-        "title": "Extreme E Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "Календарь Extreme E",
+        "subtitle": "Гонки, Квалификации и Предварительные заезды",
         "seo": {
-            "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
-            "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            "title": "Календарь Extreme E {{year}} - Время и даты событий",
+            "description": "Календарь Extreme E для сезона {{year}} со всеми гонками, предварительными заездами и квалификациями. Установить напоминания. Часовые пояса всего мира. Скачать или подписаться.",
+            "keywords": "Extreme E, время гонки, гонки, напоминания, оповещения, Гран-при, календарь, даты, время старта, квалификация, практика, Лондон, Европа, {{year}}"
         },
         "footnote": ""
     }
