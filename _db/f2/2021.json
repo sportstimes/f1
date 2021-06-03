@@ -37,16 +37,15 @@
 			"location": "Baku",
 			"latitude": 40.3699,
 			"longitude": 49.8433,
-			"tbc": true,
 			"round": 3,
 			"slug": "azerbaijan",
 			"localeKey": "azerbaijan",
 			"sessions": {
-				"practice": "2021-06-04T09:00:00Z",
-				"qualifying": "2021-06-04T13:00:00Z",
-				"sprint1": "2021-06-05T10:00:00Z",
-				"sprint2": "2021-06-05T10:00:00Z",
-				"feature": "2021-06-06T13:00:00Z"
+				"practice": "2021-06-04T06:25:00Z",
+				"qualifying": "2021-06-04T10:30:00Z",
+				"sprint1": "2021-06-05T07:25:00Z",
+				"sprint2": "2021-06-05T13:40:00Z",
+				"feature": "2021-06-06T08:45:00Z"
 			}
 		},
 		{
