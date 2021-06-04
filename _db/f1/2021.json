@@ -257,6 +257,7 @@
 			"latitude": 1.2857,
 			"longitude": 103.8575,
 			"round": 16,
+			"canceled": true,
 			"slug": "singapore-grand-prix",
 			"localeKey": "singapore-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/singapore/tickets?af=165390",
