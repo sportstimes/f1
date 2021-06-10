@@ -101,7 +101,8 @@
         "reminderContinued": "minuuttia ennen jokaista tapahtumaa.",
         "button": "Luo kalenteri",
         "buttonSubmitted": "Luotu",
-        "nonOptionsSelected": "Valitse vähintään yksi tapahtuma."
+        "nonOptionsSelected": "Valitse vähintään yksi tapahtuma.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "Valitse kalenterityyppi",
