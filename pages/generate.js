@@ -208,7 +208,7 @@ function Generate(props) {
 
 							{config.siteKey == "f1" &&
 								<div className="bg-yellow-200 rounded-md shadow py-4 mb-4 px-4 text-black font-bold mb-8">
-									The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option.
+									{t("localization:form.attention")}
 								</div>
 							}
 

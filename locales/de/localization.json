@@ -101,7 +101,8 @@
         "reminderContinued": "Minuten vor einem Event in deinem Saisonkalender.",
         "button": "Kalender beziehen",
         "buttonSubmitted": "Bestätigen",
-        "nonOptionsSelected": "Bitte wähle mindestens eine Session für deinen Kalender aus."
+        "nonOptionsSelected": "Bitte wähle mindestens eine Session für deinen Kalender aus.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "Wähle den Kalendertyp",

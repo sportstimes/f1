@@ -101,7 +101,8 @@
         "reminderContinued": "dakika kala hatırlatma gelsin.",
         "button": "Takvimi oluştur",
         "buttonSubmitted": "İşlem tamamlandı",
-        "nonOptionsSelected": "Lütfen listeden en az bir seans seçin."
+        "nonOptionsSelected": "Lütfen listeden en az bir seans seçin.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "Takvim Türünü Seçin",
