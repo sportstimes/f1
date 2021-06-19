@@ -1,5 +1,6 @@
 {
 	"locales": [
+		"ar",
 		"cs",
 		"da",
 		"de",
@@ -23,6 +24,7 @@
 		"zh"
 	],
 	"languageNames": {
+		"ar": "العربية",
 		"cs": "čeština",
 		"da": "dansk",
 		"de": "Deutsch",

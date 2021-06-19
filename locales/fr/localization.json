@@ -3,7 +3,7 @@
     "time": "Heure",
     "badges": {
         "tbc": "TBC",
-        "tbc_title": "To be confirmed",
+        "tbc_title": "A confirmer",
         "tickets": "Tickets",
         "canceled": "Annulé",
         "next": "SUIVANT"
@@ -20,9 +20,9 @@
         "qualifying": "Qualifications",
         "qualifying1": "Qualifications 1",
         "qualifying2": "Qualifications 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprintQualifying": "Qualification Sprint",
         "semifinal": "Semi Final",
-        "warmup": "Warmup",
+        "warmup": "échauffement",
         "race": "Course",
         "race1": "Course 1",
         "race2": "Course 2",
@@ -73,14 +73,14 @@
             "pick": "Choisissez un fuseau horaire..."
         },
         "formatPicker": {
-            "title": "Time Format",
+            "title": "Format de l'heure",
             "12hr": "12-Hour Time",
             "24hr": "24-Hour Time"
         },
         "button": "Choisir"
     },
     "contribute": "Contribuer",
-    "languageSelector": "Select Language",
+    "languageSelector": "Choisir une langue",
     "javascript": "F1 Calendar fonctionne mieux lorsque Javascript est activé.",
     "footer": {
         "coffee": "Supportez F1 Calendar, offrez-nous un café.",
@@ -101,8 +101,7 @@
         "reminderContinued": "minutes avant chaque évènement de votre calendrier de la saison.",
         "button": "Obtenir le calendrier",
         "buttonSubmitted": "Envoyé",
-        "nonOptionsSelected": "Veuillez sélectionner au moins une séance pour votre calendrier.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+        "nonOptionsSelected": "Veuillez sélectionner au moins une séance pour votre calendrier."
     },
     "download": {
         "title": "Selectionnez le type de calendrier",
@@ -186,7 +185,7 @@
             "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
             "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
         },
-        "footnote": ""
+        "footnote": "basdepage"
     },
     "wseries": {
         "title": "W Series Calendar",
@@ -206,6 +205,11 @@
             "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
             "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
         },
-        "footnote": ""
+        "footnote": "footnote"
+    },
+    "event": "event",
+    "notice": {
+        "text": "text",
+        "link": "link"
     }
 }
