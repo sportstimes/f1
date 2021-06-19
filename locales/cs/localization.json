@@ -101,7 +101,8 @@
         "reminderContinued": "minut před každou událostí ve vašem kalendáři sezóny.",
         "button": "Získejte kalendář",
         "buttonSubmitted": "Odesláno",
-        "nonOptionsSelected": "Vyberte prosím alespoň jednu relaci pro váš kalendář."
+        "nonOptionsSelected": "Vyberte prosím alespoň jednu relaci pro váš kalendář.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "Vyberte typ kalendáře",

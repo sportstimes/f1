@@ -22,17 +22,16 @@
 			"location": "Paul Ricard",
 			"latitude": 43.2517,
 			"longitude": 5.7935,
-			"tbc": true,
 			"round": 2,
 			"slug": "french",
 			"localeKey": "french",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/france/tickets?af=165390",
 			"sessions": {
-				"practice": "2021-06-25T09:00:00Z",
-				"qualifying": "2021-06-25T13:00:00Z",
-				"race1": "2021-06-26T10:00:00Z",
-				"race2": "2021-06-26T13:00:00Z",
-				"race3": "2021-06-27T13:10:00Z"
+				"practice": "2021-06-18T08:05:00Z",
+				"qualifying": "2021-06-18T11:50:00Z",
+				"race1": "2021-06-19T08:10:00Z",
+				"race2": "2021-06-19T14:40:00Z",
+				"race3": "2021-06-20T09:40:00Z"
 			}
 		},
 		{

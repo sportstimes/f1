@@ -101,7 +101,8 @@
         "reminderContinued": "minuta para secilit event në kalendarin tuaj me sesione.",
         "button": "Shkarko Kalendarin",
         "buttonSubmitted": "E dërguar",
-        "nonOptionsSelected": "Ju lutem zgjedhni të paktën një sesion për kalendarin tuaj."
+        "nonOptionsSelected": "Ju lutem zgjedhni të paktën një sesion për kalendarin tuaj.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "Zgjedhni llojin e kalendarit",

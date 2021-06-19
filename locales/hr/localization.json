@@ -101,7 +101,8 @@
         "reminderContinued": "minuta prije početka svake sesije u vašem kalendaru.",
         "button": "Preuzmi kalendar",
         "buttonSubmitted": "Ispunjeno",
-        "nonOptionsSelected": "Molimo vas da odaberete najmanje jednu sesiju za vaš kalendar."
+        "nonOptionsSelected": "Molimo vas da odaberete najmanje jednu sesiju za vaš kalendar.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "Odaberite vrstu kalendara",

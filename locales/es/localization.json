@@ -101,7 +101,8 @@
         "reminderContinued": "minutos antes de cada evento en tu calendario de temporada.",
         "button": "Obtener Calendario",
         "buttonSubmitted": "Entregado",
-        "nonOptionsSelected": "Por favor, selecciona al menos una sesión para tu calendario."
+        "nonOptionsSelected": "Por favor, selecciona al menos una sesión para tu calendario.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "Selecciona el tipo de Calendario",

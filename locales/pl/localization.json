@@ -101,7 +101,8 @@
         "reminderContinued": "minut przed wydarzeniem.",
         "button": "Pobierz kalendarz",
         "buttonSubmitted": "Pobierz",
-        "nonOptionsSelected": "Wybierz przynajmniej jedną sesję dla swojego kalendarza."
+        "nonOptionsSelected": "Wybierz przynajmniej jedną sesję dla swojego kalendarza.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "Wybierz typ kalendarza",
