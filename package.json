@@ -28,7 +28,7 @@
 		"countries-and-timezones": "^2.4.0",
 		"dayjs": "^1.10.5",
 		"ics": "^2.27.0",
-		"next": "^10.2.3",
+		"next": "^11.0.1",
 		"next-plausible": "^1.6.1",
 		"next-pwa": "^5.2.21",
 		"next-seo": "^4.24.0",
