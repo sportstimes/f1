@@ -275,6 +275,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "Remynator",
+      "name": "Remynator",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80911158?v=4",
+      "profile": "https://github.com/Remynator",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
