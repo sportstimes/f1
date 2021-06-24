@@ -1,215 +1,128 @@
 {
-	"date": "Data",
-	"time": "Koha",
-	"badges": {
-		"tbc": "TBC",
-		"tbc_title": "Pritet konfirmimi",
-		"tickets": "Biletat",
-		"canceled": "Anuluar",
-		"next": "NË RRADHË"
-	},
-	"schedule": {
-		"fp1": "Praktika e lirë 1",
-		"fp2": "Praktika e lirë 2",
-		"fp3": "Praktika e lirë 3",
-		"shakedown": "Shakedown",
-		"practice1": "Practice 1",
-		"practice2": "Practice 2",
-		"practice3": "Practice 3",
-		"practice": "Practice",
-		"qualifying": "Kualifikimet",
-		"qualifying1": "Kualifikimet 1",
-		"qualifying2": "Kualifikimet 2",
-		"sprintQualifying": "Sprint Qualifying",
-		"semifinal": "Semi Final",
-		"warmup": "Ngrohje",
-		"race": "Gara",
-		"race1": "Gara 1",
-		"race2": "Gara 2",
-		"race3": "Gara 3",
-		"gp": "Çmimi i madhë",
-		"sprint1": "Sprint 1",
-		"sprint2": "Sprint 2",
-		"feature": "Feature"
-	},
-	"races": {
-		"austrian-grand-prix": "Çmimi i Madh i Austrisë",
-		"steiermark-grand-prix": "Çmimi i Madh i Steiermark (Austri)",
-		"hungarian-grand-prix": "Çmimi i Madh i Hungarisë",
-		"british-grand-prix": "Çmimi i Madh i Anglisë",
-		"anniversary-british-grand-prix": "Çmimi i Madh i përvjetorit të 70-të (Angli)",
-		"spanish-grand-prix": "Çmimi i Madh i Spanjës",
-		"belgian-grand-prix": "Çmimi i Madh i Belgjikës",
-		"italian-grand-prix": "Çmimi i Madh i Italisë",
-		"australian-grand-prix": "Çmimi i Madh i Australisë",
-		"bahrain-grand-prix": "Çmimi i Madh i Bahrain",
-		"vietnamese-grand-prix": "Çmimi i Madh i Vietnamit",
-		"china-grand-prix": "Çmimi i Madh i Kinës",
-		"dutch-grand-prix": "Çmimi i Madh i Holandës",
-		"monaco-grand-prix": "Çmimi i Madh i Monakos",
-		"azerbaijan-grand-prix": "Çmimi i Madh i Azerbajxhanit",
-		"canadian-grand-prix": "Çmimi i Madh i Kanadës",
-		"french-grand-prix": "Çmimi i Madh i Francës",
-		"singapore-grand-prix": "Çmimi i Madh i Singaporit",
-		"russian-grand-prix": "Çmimi i Madh i Rusisë",
-		"japanese-grand-prix": "Çmimi i Madh i Japonisë",
-		"us-grand-prix": "Çmimi i Madh i Shteteve të Bashkuara",
-		"mexico-grand-prix": "Çmimi i Madh i Mexico City",
-		"brazilian-grand-prix": "Çmimi i Madh i Brazilit",
-		"abu-dhabi-grand-prix": "Çmimi i Madh i Abu Dhabi",
-		"tuscan-grand-prix": "Çmimi i Madh i Toskanës",
-		"eifel-grand-prix": "Çmimi i Madh i Eifel",
-		"portuguese-grand-prix": "Çmimi i Madh i Portugalisë",
-		"emilia-romagna-grand-prix": "Çmimi i Madh i Emilia Romagna",
-		"sakhir-grand-prix": "Çmimi i Madh i Sakhir (Bahrain)",
-		"turkish-grand-prix": "Çmimi i Madh i Turqisë",
-		"saudi-arabia-grand-prix": "Çmimi i Madh i Arabisë Saudite"
-	},
-	"options": {
-		"calendar": "Shtoni oraret e këtyre garave në kalendarin tuaj",
-		"email": "Prano përkujtime përmes email",
-		"timezonePicker": {
-			"showing": "Duke shfaqur oraret për",
-			"pick": "Zgjedhni zonën kohore..."
+	"races": [
+		{
+			"name": "Spanish",
+			"location": "Catalunya",
+			"latitude": 41.5638,
+			"longitude": 2.2585,
+			"round": 1,
+			"slug": "spanish",
+			"localeKey": "spanish",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/spain/tickets?af=165390",
+			"sessions": {
+				"practice": "2021-05-07T08:05:00Z",
+				"qualifying": "2021-05-07T11:55:00Z",
+				"race1": "2021-05-08T08:35:00Z",
+				"race2": "2021-05-08T14:45:00Z",
+				"race3": "2021-05-09T10:05:00Z"
+			}
 		},
-		"formatPicker": {
-			"title": "Format i kohës",
-			"12hr": "12-Orësh",
-			"24hr": "24-Orësh"
+		{
+			"name": "French",
+			"location": "Paul Ricard",
+			"latitude": 43.2517,
+			"longitude": 5.7935,
+			"round": 2,
+			"slug": "french",
+			"localeKey": "french",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/france/tickets?af=165390",
+			"sessions": {
+				"practice": "2021-06-18T08:05:00Z",
+				"qualifying": "2021-06-18T11:50:00Z",
+				"race1": "2021-06-19T08:10:00Z",
+				"race2": "2021-06-19T14:40:00Z",
+				"race3": "2021-06-20T09:40:00Z"
+			}
 		},
-		"button": "Përfundoj"
-	},
-	"contribute": "Kontribuo",
-	"languageSelector": "Zgjedhni gjuhën",
-	"javascript": "F1 Calendar punon më së miri nëse lejohet Javascript.",
-	"footer": {
-		"coffee": "Mbështetni F1 Calendar, na qerasni me një kafe.",
-		"twitter": "Jemi edhe në Twitter",
-		"github": "Open Source në GitHub",
-		"issue": "Keni zbuluar ndonjë problem? Raportoni",
-		"links": {
-			"wereOn": "Gjendemi në",
-			"openSourcedOn": "Open Sourced në",
-			"spottedIssue": "Keni zbuluar ndonjë problem?",
-			"spottedReport": "Raportoni"
+		{
+			"name": "Austrian",
+			"location": "Spielberg",
+			"latitude": 47.2225,
+			"longitude": 14.7607,
+			"tbc": true,
+			"round": 3,
+			"slug": "austrian",
+			"localeKey": "austrian",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/austria/tickets?af=165390",
+			"sessions": {
+				"practice": "2021-07-02T09:00:00Z",
+				"qualifying": "2021-07-02T13:00:00Z",
+				"race1": "2021-07-03T10:00:00Z",
+				"race2": "2021-07-03T13:00:00Z",
+				"race3": "2021-07-04T13:10:00Z"
+			}
+		},
+		{
+			"name": "Hungarian",
+			"location": "Budapest",
+			"latitude": 47.583,
+			"longitude": 19.2526,
+			"tbc": true,
+			"round": 4,
+			"slug": "hungarian",
+			"localeKey": "hungarian",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/hungary/tickets?af=165390",
+			"sessions": {
+				"practice": "2021-07-30T09:00:00Z",
+				"qualifying": "2021-07-30T13:00:00Z",
+				"race1": "2021-07-31T10:00:00Z",
+				"race2": "2021-07-31T13:00:00Z",
+				"race3": "2021-08-01T13:10:00Z"
+			}
+		},
+		{
+			"name": "Belgian",
+			"location": "Spa-Francorchamps",
+			"latitude": 50.444,
+			"longitude": 5.9687,
+			"tbc": true,
+			"round": 5,
+			"slug": "belgian",
+			"localeKey": "belgian",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/belgium/tickets?af=165390",
+			"sessions": {
+				"practice": "2021-08-27T09:00:00Z",
+				"qualifying": "2021-08-27T13:00:00Z",
+				"race1": "2021-08-28T10:00:00Z",
+				"race2": "2021-08-28T13:00:00Z",
+				"race3": "2021-08-29T13:10:00Z"
+			}
+		},
+		{
+			"name": "Dutch",
+			"location": "Zandvoort",
+			"latitude": 52.388408,
+			"longitude": 4.547122,
+			"tbc": true,
+			"round": 6,
+			"slug": "dutch",
+			"localeKey": "dutch",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/dutch/tickets?af=165390",
+			"sessions": {
+				"practice": "2021-09-03T09:00:00Z",
+				"qualifying": "2021-09-03T13:00:00Z",
+				"race1": "2021-09-04T10:00:00Z",
+				"race2": "2021-09-04T13:00:00Z",
+				"race3": "2021-09-05T13:10:00Z"
+			}
+		},
+		{
+			"name": "United States",
+			"location": "Austin",
+			"latitude": 30.1328,
+			"longitude": -97.6411,
+			"tbc": true,
+			"round": 7,
+			"slug": "us",
+			"localeKey": "us",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/united-states/tickets?af=165390",
+			"sessions": {
+				"practice": "2021-10-22T16:00:00Z",
+				"qualifying": "2021-10-22T20:00:00Z",
+				"race1": "2021-10-23T18:00:00Z",
+				"race2": "2021-10-23T21:00:00Z",
+				"race3": "2021-10-24T19:10:00Z"
+			}
 		}
-	},
-	"form": {
-		"title": "Gjenero Kalendarin",
-		"description": "Fillimisht zgjedhni sesionet e cilës fundjavës me garë të F1 dëshironi të shtoni në kalendarin tuaj:",
-		"reminder": "Vendos përkujtim",
-		"reminderContinued": "minuta para secilit event në kalendarin tuaj me sesione.",
-		"button": "Shkarko Kalendarin",
-		"buttonSubmitted": "E dërguar",
-		"nonOptionsSelected": "Ju lutem zgjedhni të paktën një sesion për kalendarin tuaj."
-	},
-	"download": {
-		"title": "Zgjedhni llojin e kalendarit",
-		"webcalTitle": "Për Pajisje Mobile ose Desktop",
-		"webcalDescription": "Përditësim automatik i kalendarit për aplikacione si Outlook dhe macOS Calendar.",
-		"webcalButton": "Shkarko",
-		"gcalTitle": "Për Google Calendar",
-		"gcalDescription": "Për të shtuar këtë kalendar, kopjo dhe vendos këtë URL në Google Calendar",
-		"gcalDescriptionLink": "udhëzime më të detajuara",
-		"icsTitle": "Shkarko ICS File",
-		"icsDescription": "Kalendar që nuk përditësohet (.ics) për aplikacione që nuk ofrojnë përditësim.",
-		"icsButton": "Shkarko"
-	},
-	"subscribe": {
-		"title": "Abonohu",
-		"description": "Prano email si përkujtim para çdo fillimit të javës ku organizohet garë.",
-		"label": "Email Adresa",
-		"button": "Abonohu"
-	},
-	"timezones": {
-		"title": "Zgjedhni zonën kohore..."
-	},
-	"years": {
-		"title": "Zgjedhni vitin..."
-	},
-	"f1": {
-		"title": "Kalendari i F1",
-		"subtitle": "Garat, Kualifikimet & Sesionet e Praktikës",
-		"seo": {
-			"title": "Kalendari i F1 {{year}} - Koha dhe Datat e Garave për Formula Një",
-			"description": "Kalendari i Formula Një për sezonën {{year}} me të gjitha çmimet e mëdha të garave, sesionet e praktikës &amp; kualifikimeve. Mundësohet vendosja e lajmërimeve. Përfshihen të gjitha zonat kohore. Mund ta shkarkosh ose të abonohesh.",
-			"keywords": "F1, formula nje, orari i garave, garat, perkujtime, lajmerime, cmimet e medha, cmimi i madh, kalendari, datat, orari i fillimit, kualifikimet, praktika, Londer, Europe, {{year}}"
-		},
-		"footnote": "Formula One, Formula 1, F1 & Grand Prix janë markë e Formula One Licensing BV."
-	},
-	"f2": {
-		"title": "Kalendari i F2",
-		"subtitle": "Garat, Kualifikimet & Sesionet e Praktikës",
-		"seo": {
-			"title": "F2 Calendar {{year}} - Koha dhe Data e Garave për Formula Dy",
-			"description": "Kalendari i Formula Dy për sezonën {{year}} me të gjitha çmimet e mëdha të garave, sesionet e praktikës &amp; kualifikimeve. Mundësohet vendosja e lajmërimeve. Përfshihen të gjitha zonat kohore. Mund ta shkarkosh ose të abonohesh.",
-			"keywords": "placeholder"
-		},
-		"footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 janë markë e FIA."
-	},
-	"f3": {
-		"title": "FKalendari i F3",
-		"subtitle": "Garat, Kualifikimet & Sesionet e Praktikës",
-		"seo": {
-			"title": "F3 Calendar {{year}} - Koha dhe Data e Garave për Formula Tre",
-			"description": "Kalendari i Formula Tre për sezonën {{year}} me të gjitha çmimet e mëdha të garave, sesionet e praktikës &amp; kualifikimeve. Mundësohet vendosja e lajmërimeve. Përfshihen të gjitha zonat kohore. Mund ta shkarkosh ose të abonohesh.",
-			"keywords": "F3, formula t, orari i garave, garat, perkujtime, lajmerime, cmimet e medha, cmimi i madh, kalendari, datat, orari i fillimit, kualifikimet, praktika, Londer, Europe, {{year}}"
-		},
-		"footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 janë markë e FIA."
-	},
-	"fe": {
-		"title": "Kalendari i Formula E",
-		"subtitle": "Garat, Kualifikimet & Sesionet e Praktikës",
-		"seo": {
-			"title": "Kalendari i Formula E {{year}} - Koha dhe Datat e Garave për Formula Një",
-			"description": "Kalendari i Formula E për sezonën {{year}} me të gjitha çmimet E-Prix të garave, sesionet e praktikës &amp; kualifikimeve. Mundësohet vendosja e lajmërimeve. Përfshihen të gjitha zonat kohore. Mund ta shkarkosh ose të abonohesh.",
-			"keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
-		},
-		"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix janë markë e FIA."
-	},
-	"indycar": {
-		"title": "IndyCar Calendar",
-		"subtitle": "Races, Qualifying & Practice Sessions",
-		"seo": {
-			"title": "IndyCar Calendar {{year}} - Race Times and Dates",
-			"description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-			"keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
-		},
-		"footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
-	},
-	"motogp": {
-		"title": "MotoGP Calendar",
-		"subtitle": "Races, Qualifying & Practice Sessions",
-		"seo": {
-			"title": "MotoGP Calendar {{year}} - Race Times and Dates",
-			"description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-			"keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
-		},
-		"footnote": "shënim"
-	},
-	"wseries": {
-		"title": "W Series Calendar",
-		"subtitle": "Races, Qualifying & Practice Sessions",
-		"seo": {
-			"title": "W Series Calendar {{year}} - Race Times and Dates",
-			"description": "W Series Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-			"keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
-		},
-		"footnote": "W Series Calendar is not affiliated with W Series."
-	},
-	"extremee": {
-		"title": "Kalendari i Extreme E",
-		"subtitle": "Garat, Kualifikimet & Sesionet e Praktikës",
-		"seo": {
-			"title": "Kalendari i Extreme E {{year}} - Koha dhe Data e Garave për Extreme E",
-			"description": "Kalendari i Formula E për sezonën {{year}} me të gjitha çmimet x prix të garave, sesionet e praktikës &amp; kualifikimeve. Mundësohet vendosja e lajmërimeve. Përfshihen të gjitha zonat kohore. Mund ta shkarkosh ose të abonohesh.",
-			"keywords": "Extreme E, orari i garave, garat, perkujtime, lajmerime, x prix, cmimi i madh, kalendari, datat, orari i fillimit, kualifikimet, praktika, Londer, Europe, {{year}}"
-		},
-		"footnote": "shënim"
-	},
-	"event": "ngjarje",
-	"notice": {
-		"text": "tekst",
-		"link": "lidhje"
-	}
+	]
 }
