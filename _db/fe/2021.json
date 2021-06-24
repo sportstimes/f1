@@ -107,15 +107,15 @@
 			"location": "Mexico",
 			"latitude": 9.006710,
 			"longitude": -79.537200,
-			"tbc": true,
+			"tbc": false,
 			"round": 8,
 			"slug": "puebla-eprix",
 			"localeKey": "puebla-eprix",
 			"sessions": {
-				"practice1": "2021-06-19T12:00:00Z",
-				"practice2": "2021-06-19T12:00:00Z",
-				"qualifying": "2021-06-19T12:00:00Z",
-				"race": "2021-06-19T12:00:00Z"
+				"practice1": "2021-06-19T13:00:00Z",
+				"practice2": "2021-06-19T15:15:00Z",
+				"qualifying": "2021-06-19T17:00:00Z",
+				"race": "2021-06-19T21:04:00Z"
 			}
 		},
 		{
@@ -123,15 +123,14 @@
 			"location": "Mexico",
 			"latitude": 9.006710,
 			"longitude": -79.537200,
-			"tbc": true,
+			"tbc": false,
 			"round": 9,
 			"slug": "puebla-eprix",
 			"localeKey": "puebla-eprix",
 			"sessions": {
-				"practice1": "2021-06-20T12:00:00Z",
-				"practice2": "2021-06-20T12:00:00Z",
-				"qualifying": "2021-06-20T12:00:00Z",
-				"race": "2021-06-20T12:00:00Z"
+				"practice3": "2021-06-20T14:15:00Z",
+				"qualifying": "2021-06-20T17:00:00Z",
+				"race": "2021-06-20T21:04:00Z"
 			}
 		},
 		{
