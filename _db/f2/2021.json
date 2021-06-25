@@ -53,16 +53,15 @@
 			"location": "Silverstone",
 			"latitude": 52.0706,
 			"longitude": -1.0174,
-			"tbc": true,
 			"round": 4,
 			"slug": "british",
 			"localeKey": "british",
 			"sessions": {
-				"practice": "2021-07-16T09:00:00Z",
-				"qualifying": "2021-07-16T13:00:00Z",
-				"sprint1": "2021-07-17T10:00:00Z",
-				"sprint2": "2021-07-17T10:00:00Z",
-				"feature": "2021-07-18T13:00:00Z"
+				"practice": "2021-07-16T10:55:00Z",
+				"qualifying": "2021-07-16T16:00:00Z",
+				"sprint1": "2021-07-17T08:10:00Z",
+				"sprint2": "2021-07-17T13:40:00Z",
+				"feature": "2021-07-18T09:40:00Z"
 			}
 		},
 		{

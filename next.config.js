@@ -21,9 +21,6 @@ module.exports = (phase) => {
   }
 
   return withPWA(nextTranslate({
-    future: {
-      webpack5: true
-    },
     webpack: (cfg) => {
       cfg.module.rules.push(
           {

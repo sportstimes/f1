@@ -5,15 +5,13 @@
 			"location": "Spielberg",
 			"latitude": 47.2225,
 			"longitude": 14.7607,
-			"tbc": true,
 			"round": 1,
 			"slug": "austrian",
 			"localeKey": "austrian",
 			"sessions": {
-				"practice1": "2021-06-25T09:00:00Z",
-				"practice2": "2021-06-25T13:00:00Z",
-				"qualifying": "2021-06-26T13:00:00Z",
-				"race": "2021-06-26T13:10:00Z"
+				"practice1": "2021-06-25T11:10:00Z",
+				"qualifying": "2021-06-25T14:30:00Z",
+				"race": "2021-06-26T14:30:00Z"
 			}
 		},
 		{
@@ -21,15 +19,13 @@
 			"location": "Spielberg",
 			"latitude": 47.2225,
 			"longitude": 14.7607,
-			"tbc": true,
 			"round": 2,
 			"slug": "austrian",
 			"localeKey": "austrian",
 			"sessions": {
-				"practice1": "2021-07-02T09:00:00Z",
-				"practice2": "2021-07-02T13:00:00Z",
-				"qualifying": "2021-07-03T13:00:00Z",
-				"race": "2021-07-03T13:10:00Z"
+				"practice1": "2021-07-02T10:55:00Z",
+				"qualifying": "2021-07-02T14:30:00Z",
+				"race": "2021-07-03T14:30:00Z"
 			}
 		},
 		{
@@ -37,15 +33,13 @@
 			"location": "Silverstone",
 			"latitude": 52.0706,
 			"longitude": -1.0174,
-			"tbc": true,
 			"round": 3,
 			"slug": "british",
 			"localeKey": "british",
 			"sessions": {
-				"practice1": "2021-07-16T09:00:00Z",
-				"practice2": "2021-07-16T13:00:00Z",
-				"qualifying": "2021-07-17T13:00:00Z",
-				"race": "2021-07-17T13:10:00Z"
+				"practice1": "2021-07-16T10:00:00Z",
+				"qualifying": "2021-07-16T15:05:00Z",
+				"race": "2021-07-17T12:25:00Z"
 			}
 		},
 		{
