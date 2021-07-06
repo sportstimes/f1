@@ -343,6 +343,7 @@
 			"longitude": 144.9666,
 			"longitude": 50.5112,
 			"round": 21,
+			"canceled":true,
 			"slug": "australian-grand-prix",
 			"localeKey": "australian-grand-prix",
 			"sessions": {
