@@ -21,6 +21,19 @@ module.exports = (phase) => {
   }
 
   return withPWA(nextTranslate({
+    async headers() {
+      return [
+        {
+          source: '/download/:all*(ics)',
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'public, max-age=21600, must-revalidate',
+            },
+          ],
+        },
+      ]
+    },
     webpack: (cfg) => {
       cfg.module.rules.push(
           {
