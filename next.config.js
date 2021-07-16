@@ -28,7 +28,7 @@ module.exports = (phase) => {
           headers: [
             {
               key: 'Cache-Control',
-              value: 'public, max-age=21600, immutable',
+              value: 'public, max-age=21600, must-revalidate',
             },
           ],
         },
