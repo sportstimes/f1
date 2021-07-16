@@ -138,15 +138,15 @@
 			"location": "US",
 			"latitude": 40.775764,
 			"longitude": -74.012724,
-			"tbc": true,
+			"tbc": false,
 			"round": 10,
 			"slug": "nyc-eprix",
 			"localeKey": "nyc-eprix",
 			"sessions": {
 				"practice1": "2021-07-10T12:00:00Z",
-				"practice2": "2021-07-10T12:00:00Z",
-				"qualifying": "2021-07-10T12:00:00Z",
-				"race": "2021-07-10T12:00:00Z"
+				"practice2": "2021-07-10T14:15:00Z",
+				"qualifying": "2021-07-10T16:30:00Z",
+				"race": "2021-07-10T20:34:00Z"
 			}
 		},
 		{
@@ -154,15 +154,14 @@
 			"location": "US",
 			"latitude": 40.775764,
 			"longitude": -74.012724,
-			"tbc": true,
+			"tbc": false,
 			"round": 11,
 			"slug": "nyc-eprix",
 			"localeKey": "nyc-eprix",
 			"sessions": {
-				"practice1": "2021-07-11T12:00:00Z",
-				"practice2": "2021-07-11T12:00:00Z",
-				"qualifying": "2021-07-11T12:00:00Z",
-				"race": "2021-07-11T12:00:00Z"
+				"practice3": "2021-07-11T11:15:00Z",
+				"qualifying": "2021-07-11T13:30:00Z",
+				"race": "2021-07-11T17:35:00Z"
 			}
 		},
 		{
