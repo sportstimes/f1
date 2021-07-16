@@ -47,7 +47,8 @@ module.exports = (phase) => {
     pwa: {
       disable: !isProd,
       dest: "public",
-      publicExcludes: ['download/*']
+      publicExcludes: ['download/**/*'],
+      buildExcludes: ['download/**/*'],
     },
     redirects: async function redirects() {
       if(process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"){
