@@ -24,7 +24,7 @@ module.exports = (phase) => {
     async headers() {
       return [
         {
-          source: '/download/*',
+          source: '/download/:all*(ics)',
           headers: [
             {
               key: 'Cache-Control',
