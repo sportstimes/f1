@@ -60,5 +60,4 @@ export async function getStaticProps() {
 	}
 }
 
-
 export default Index;

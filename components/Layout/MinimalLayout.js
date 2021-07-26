@@ -41,8 +41,8 @@ const MinimalLayout = (props) => {
 					color="#eb000f"
 				/>
 				
-				<meta name="msapplication-TileColor" content="#000000" />
-				<meta name="theme-color" content="#ffffff" />
+				<meta name="msapplication-TileColor" content="#03120f" />
+				<meta name="theme-color" content="#03120f" />
 			</Head>
 
 			<noscript>
