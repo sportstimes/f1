@@ -83,4 +83,10 @@ function Subscribe() {
 	);
 }
 
+export async function getStaticProps() {
+	return {
+		revalidate: 3600
+	}
+}
+
 export default Subscribe;

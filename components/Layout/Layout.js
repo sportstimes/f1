@@ -40,7 +40,7 @@ const Layout = (props) => {
 				/>
 				
 				<meta name="msapplication-TileColor" content="#000000" />
-				<meta name="theme-color" content="#ffffff" />
+				<meta name="theme-color" content="#03120f" />
 
 				{process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION && (
 					<meta

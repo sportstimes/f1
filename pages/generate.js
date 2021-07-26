@@ -309,4 +309,10 @@ function Generate(props) {
 	);
 }
 
+export async function getStaticProps() {
+	return {
+		revalidate: 3600
+	}
+}
+
 export default Generate;

@@ -227,10 +227,10 @@
 			"localeKey": "italian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/italy/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-09-10T09:30:00Z",
-				"fp2": "2021-09-10T13:00:00Z",
-				"fp3": "2021-09-11T10:00:00Z",
-				"qualifying": "2021-09-11T13:00:00Z",
+				"fp1": "2021-09-10T12:30:00Z",
+				"qualifying": "2021-09-10T16:00:00Z",
+				"fp2": "2021-09-11T10:00:00Z",
+				"sprintQualifying": "2021-09-11T14:30:00Z",
 				"gp": "2021-09-12T13:00:00Z"
 			}
 		},
@@ -256,16 +256,15 @@
 			"location": "Istanbul",
 			"latitude": 40.957914,
 			"longitude": 29.411675,
-			"tbc": true,
 			"round": 16,
 			"slug": "turkish-grand-prix",
 			"localeKey": "turkish-grand-prix",
 			"sessions": {
-				"fp1" : "2021-10-01T08:00:00Z",
-				"fp2" : "2021-10-01T12:00:00Z",
-				"fp3" : "2021-10-02T09:00:00Z",
-				"qualifying" : "2021-10-02T12:00:00Z",
-				"gp" : "2021-10-03T10:10:00Z"
+				"fp1" : "2021-10-01T09:30:00Z",
+				"fp2" : "2021-10-01T13:00:00Z",
+				"fp3" : "2021-10-02T10:00:00Z",
+				"qualifying" : "2021-10-02T13:00:00Z",
+				"gp" : "2021-10-03T13:00:00Z"
 			}
 		},
 		{
@@ -337,15 +336,15 @@
 			}
 		},
 		{
-			"name": "Australian",
-			"location": "Melbourne",
+			"name": "TBC",
+			"location": "TBC",
 			"latitude": -37.8373,
 			"longitude": 144.9666,
 			"longitude": 50.5112,
 			"round": 21,
-			"canceled":true,
-			"slug": "australian-grand-prix",
-			"localeKey": "australian-grand-prix",
+			"tbc":true,
+			"slug": "tbc-grand-prix",
+			"localeKey": "tbc-grand-prix",
 			"sessions": {
 				"fp1": "2021-11-19T01:30:00Z",
 				"fp2": "2021-11-19T05:00:00Z",
