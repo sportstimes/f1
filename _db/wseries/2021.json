@@ -47,15 +47,13 @@
 			"location": "Budapest",
 			"latitude": 47.583,
 			"longitude": 19.2526,
-			"tbc": true,
 			"round": 4,
 			"slug": "hungarian",
-			"localeKey": "dutch",
+			"localeKey": "hungarian",
 			"sessions": {
-				"practice1": "2021-07-30T09:00:00Z",
-				"practice2": "2021-07-30T13:00:00Z",
-				"qualifying": "2021-07-31T13:00:00Z",
-				"race": "2021-07-31T13:10:00Z"
+				"practice1": "2021-07-30T10:55:00Z",
+				"qualifying": "2021-07-30T14:30:00Z",
+				"race": "2021-07-31T14:30:00Z"
 			}
 		},
 		{
@@ -63,15 +61,13 @@
 			"location": "Spa-Francorchamps",
 			"latitude": 50.444,
 			"longitude": 5.9687,
-			"tbc": true,
 			"round": 5,
 			"slug": "belgian",
 			"localeKey": "belgian",
 			"sessions": {
-				"practice1": "2021-08-27T09:00:00Z",
-				"practice2": "2021-08-27T13:00:00Z",
-				"qualifying": "2021-08-28T13:00:00Z",
-				"race": "2021-08-28T13:10:00Z"
+				"practice1": "2021-08-27T11:00:00Z",
+				"qualifying": "2021-08-28T14:30:00Z",
+				"race": "2021-08-28T14:30:00Z"
 			}
 		},
 		{
@@ -85,9 +81,8 @@
 			"localeKey": "dutch",
 			"sessions": {
 				"practice1": "2021-09-03T09:00:00Z",
-				"practice2": "2021-09-03T13:00:00Z",
 				"qualifying": "2021-09-04T13:00:00Z",
-				"race": "2021-09-04T13:10:00Z"
+				"race": "2021-09-04T14:30:00Z"
 			}
 		},
 		{
@@ -101,9 +96,8 @@
 			"localeKey": "us",
 			"sessions": {
 				"practice1": "2021-10-22T16:00:00Z",
-				"practice2": "2021-10-22T20:00:00Z",
 				"qualifying": "2021-10-23T21:00:00Z",
-				"race": "2021-10-23T19:10:00Z"
+				"race": "2021-10-23T14:30:00Z"
 			}
 		},
 		{
@@ -117,9 +111,8 @@
 			"localeKey": "mexico",
 			"sessions": {
 				"practice1": "2021-10-29T15:00:00Z",
-				"practice2": "2021-10-29T19:00:00Z",
 				"qualifying": "2021-10-30T18:00:00Z",
-				"race": "2021-10-30T19:10:00Z"
+				"race": "2021-10-30T14:30:00Z"
 			}
 		}
 	]
