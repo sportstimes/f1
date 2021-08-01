@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
 import withTranslation from "next-translate/withTranslation";
-import ct from "countries-and-timezones";
+const ct = require('countries-and-timezones');
 import {usePlausible} from "next-plausible";
 
 class OptionsBar extends React.Component {
