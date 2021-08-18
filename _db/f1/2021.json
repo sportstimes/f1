@@ -273,6 +273,7 @@
 			"latitude": 35.3689,
 			"longitude": 138.9256,
 			"round": 17,
+			"canceled": true,
 			"slug": "japanese-grand-prix",
 			"localeKey": "japanese-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/japan/tickets?af=165390",
