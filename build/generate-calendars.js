@@ -190,12 +190,17 @@ for (language of i18n.locales) {
 						});
 					}
 
-					let start = dayjs(session).format("YYYY-M-D-H-m").split("-");
+					let start = dayjs(session)
+						.format("YYYY-M-D-H-m")
+						.split("-")
+						.map(function(t){return parseInt(t)});
+						
 					let end = dayjs(session)
 						.add(sessionLength, "minutes")
 						.format("YYYY-M-D-H-m")
-						.split("-");
-
+						.split("-")
+						.map(function(t){return parseInt(t)});
+						
 					let status = "CONFIRMED";
 					if (race.tbc) {
 						status = "TENTATIVE";
@@ -224,7 +229,7 @@ for (language of i18n.locales) {
 						start: start,
 						end: end,
 						geo: {lat: race.latitude, lon: race.longitude},
-						sequence: year,
+						sequence: parseInt(year),
 						alarms: alarms,
 						status: status
 					};
@@ -237,7 +242,9 @@ for (language of i18n.locales) {
 			ics.createEvents(events, (error, value) => {
 				if (error) {
 					// TODO: Handle an error...
-					console.log("Calendar Error: " + error);
+					console.log("Calendar Error: " + JSON.stringify(error));
+					
+					
 				} else {
 					let path = (language === "en") ? `public/download/${siteKey}-calendar_${request}.ics` : `public/download/${language}/${siteKey}-calendar_${request}.ics`;
 					
