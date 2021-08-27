@@ -40,13 +40,12 @@
 			"round": 3,
 			"slug": "artic-xprix",
 			"localeKey": "artic-xprix",
-			"tbc": true,
 			"sessions": {
-				"shakedown": "2021-08-27T15:15:00Z",
-				"qualifying1": "2021-08-28T11:00:00Z",
-				"qualifying2": "2021-08-28T13:00:00Z",
-				"semifinal": "2021-08-29T17:00:00Z",
-				"race": "2021-08-29T17:00:00Z"
+				"shakedown": "2021-08-27T19:00:00Z",
+				"qualifying1": "2021-08-28T11:30:00Z",
+				"qualifying2": "2021-08-28T16:00:00Z",
+				"semifinal": "2021-08-29T10:00:00Z",
+				"race": "2021-08-29T14:00:00Z"
 			}
 		},
 		{
