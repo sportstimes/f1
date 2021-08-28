@@ -260,29 +260,11 @@
 			"slug": "turkish-grand-prix",
 			"localeKey": "turkish-grand-prix",
 			"sessions": {
-				"fp1" : "2021-10-01T09:30:00Z",
-				"fp2" : "2021-10-01T13:00:00Z",
-				"fp3" : "2021-10-02T10:00:00Z",
-				"qualifying" : "2021-10-02T13:00:00Z",
-				"gp" : "2021-10-03T13:00:00Z"
-			}
-		},
-		{
-			"name": "Japanese",
-			"location": "Suzuka",
-			"latitude": 35.3689,
-			"longitude": 138.9256,
-			"round": 17,
-			"canceled": true,
-			"slug": "japanese-grand-prix",
-			"localeKey": "japanese-grand-prix",
-			"affiliate": "https://motorsporttickets.com/en-gb/f1/japan/tickets?af=165390",
-			"sessions": {
-				"fp1": "2021-10-08T02:30:00Z",
-				"fp2": "2021-10-08T06:00:00Z",
-				"fp3": "2021-10-09T03:00:00Z",
-				"qualifying": "2021-10-09T06:00:00Z",
-				"gp": "2021-10-10T05:00:00Z"
+				"fp1" : "2021-10-08T09:30:00Z",
+				"fp2" : "2021-10-08T13:00:00Z",
+				"fp3" : "2021-10-09T10:00:00Z",
+				"qualifying" : "2021-10-09T13:00:00Z",
+				"gp" : "2021-10-10T13:00:00Z"
 			}
 		},
 		{
@@ -312,11 +294,11 @@
 			"localeKey": "mexico-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/mexico/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-10-29T16:30:00Z",
-				"fp2": "2021-10-29T20:00:00Z",
-				"fp3": "2021-10-30T16:00:00Z",
-				"qualifying": "2021-10-30T19:00:00Z",
-				"gp": "2021-10-31T19:00:00Z"
+				"fp1": "2021-11-05T16:30:00Z",
+				"fp2": "2021-11-05T20:00:00Z",
+				"fp3": "2021-11-06T16:00:00Z",
+				"qualifying": "2021-11-06T19:00:00Z",
+				"gp": "2021-11-07T19:00:00Z"
 			}
 		},
 		{
@@ -329,11 +311,11 @@
 			"localeKey": "brazilian-grand-prix",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/brazil/tickets?af=165390",
 			"sessions": {
-				"fp1": "2021-11-05T14:30:00Z",
-				"fp2": "2021-11-05T18:00:00Z",
-				"fp3": "2021-11-06T15:00:00Z",
-				"qualifying": "2021-11-06T18:00:00Z",
-				"gp": "2021-11-07T17:00:00Z"
+				"fp1": "2021-11-12T14:30:00Z",
+				"fp2": "2021-11-12T18:00:00Z",
+				"fp3": "2021-11-13T15:00:00Z",
+				"qualifying": "2021-11-13T18:00:00Z",
+				"gp": "2021-11-14T17:00:00Z"
 			}
 		},
 		{
