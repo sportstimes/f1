@@ -7,17 +7,17 @@ console.log(gitBranch);
 console.log(gitMessage);
 
 if(gitBranch.includes(siteKey)){
-	console.log('Deploy');
-	return 1;
+	console.log('✅ - Build can proceed');
+	process.exit(1)
 } else if(gitMessage.includes('#')){
 	if(gitMessage.includes(siteKey)){
-		console.log('Deploy');
-		return 1;
+		console.log('✅ - Build can proceed');
+		process.exit(1)
 	} else {
-		console.log('Ignore');
-		return 0;
+		console.log('🛑 - Build cancelled');
+		process.exit(0)
 	}
 } else {
-	console.log('Deploy all');
-	return 1;
+	console.log('✅ - Building all');
+	process.exit(1)
 }
