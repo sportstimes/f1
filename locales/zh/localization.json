@@ -101,7 +101,8 @@
         "reminderContinued": "分钟前提醒",
         "button": "确认",
         "buttonSubmitted": "已提交",
-        "nonOptionsSelected": "请至少选择一个赛程信息."
+        "nonOptionsSelected": "请至少选择一个赛程信息.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "选择日历的类型",

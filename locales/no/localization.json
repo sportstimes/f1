@@ -101,7 +101,8 @@
         "reminderContinued": "minutter før hver hendelse i din kalender.",
         "button": "Få kalender",
         "buttonSubmitted": "Sendt inn",
-        "nonOptionsSelected": "Vennligst velg minst økt å legge til i din kalender."
+        "nonOptionsSelected": "Vennligst velg minst økt å legge til i din kalender.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
     },
     "download": {
         "title": "Velg kalender-type",
