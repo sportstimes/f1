@@ -7,13 +7,17 @@ console.log(gitBranch);
 console.log(gitMessage);
 
 if(gitBranch.includes(siteKey)){
-	return true;
+	console('Deploy');
+	return 1;
 } else if(gitMessage.includes('#')){
 	if(gitMessage.includes(siteKey)){
-		return true;
+		console('Deploy');
+		return 1;
 	} else {
-		return false;
+		console('Ignore');
+		return 0;
 	}
 } else {
-	return true;
+	console('Deploy all');
+	return 1;
 }
