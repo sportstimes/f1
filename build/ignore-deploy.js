@@ -17,7 +17,10 @@ if(gitBranch.includes(siteKey)){
 		console.log('🛑 - Build cancelled');
 		process.exit(0)
 	}
-} else {
-	console.log('✅ - Building all');
+} else if(gitBranch.includes('all') || gitMessage.includes('all')){
+	console.log('✅ - Build can proceed');
 	process.exit(1)
+} else {
+	console.log('🛑 - Build cancelled');
+	process.exit(0)
 }
