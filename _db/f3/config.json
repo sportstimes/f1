@@ -13,12 +13,12 @@
 		"race3": "race3"
 	},
 	"sessionLengths": {
-		"practice":45,
+		"practice": 45,
 		"qualifying": 30,
 		"race1": 40,
 		"race2": 40,
 		"race3": 40
 	},
 	"supportsEmailReminders": false,
-	"notice": "All Dates & Times are TBC. Calendar will be updated once details are confirmed."
+	"notice": "Some dates & times are TBC. Calendar will be updated once details are confirmed."
 }

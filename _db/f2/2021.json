@@ -69,16 +69,15 @@
 			"location": "Monza",
 			"latitude": 45.6169,
 			"longitude": 9.2825,
-			"tbc": true,
 			"round": 5,
 			"slug": "italian",
 			"localeKey": "italian",
 			"sessions": {
-				"practice": "2021-09-10T09:00:00Z",
-				"qualifying": "2021-09-10T13:00:00Z",
-				"sprint1": "2021-09-11T10:00:00Z",
-				"sprint2": "2021-09-11T10:00:00Z",
-				"feature": "2021-09-12T13:00:00Z"
+				"practice": "2021-09-10T09:20:00Z",
+				"qualifying": "2021-09-10T14:50:00Z",
+				"sprint1": "2021-09-11T06:50:00Z",
+				"sprint2": "2021-09-11T12:45:00Z",
+				"feature": "2021-09-12T08:25:00Z"
 			}
 		},
 		{
@@ -86,16 +85,15 @@
 			"location": "Sochi",
 			"latitude": 43.6203,
 			"longitude": 39.712,
-			"tbc": true,
 			"round": 6,
 			"slug": "russian",
 			"localeKey": "russian",
 			"sessions": {
-				"practice": "2021-09-24T08:00:00Z",
-				"qualifying": "2021-09-24T12:00:00Z",
-				"sprint1": "2021-09-25T09:00:00Z",
-				"sprint2": "2021-09-25T09:00:00Z",
-				"feature": "2021-09-26T12:00:00Z"
+				"practice": "2021-09-24T06:45:00Z",
+				"qualifying": "2021-09-24T10:30:00Z",
+				"sprint1": "2021-09-25T07:20:00Z",
+				"sprint2": "2021-09-25T13:45:00Z",
+				"feature": "2021-09-26T08:20:00Z"
 			}
 		},
 		{
