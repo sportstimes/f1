@@ -6,14 +6,14 @@ if(gitBranch.includes(siteKey)){
 	console.log('✅ - Build can proceed');
 	process.exit(1)
 } else if(gitMessage.includes('#')){
-	if(gitMessage.includes(siteKey)){
+	if(gitMessage.includes(siteKey) || gitMessage.includes('all') || gitBranch.includes('all')){
 		console.log('✅ - Build can proceed');
 		process.exit(1)
 	} else {
 		console.log('🛑 - Build cancelled');
 		process.exit(0)
 	}
-} else if(gitBranch.includes('all') || gitMessage.includes('all')){
+} else if(gitBranch.includes('all') || gitMessage.includes('all') || gitMessage.includes('Bump')){
 	console.log('✅ - Build can proceed');
 	process.exit(1)
 } else {
