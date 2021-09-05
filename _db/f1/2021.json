@@ -323,9 +323,8 @@
 			"location": "TBC",
 			"latitude": -37.8373,
 			"longitude": 144.9666,
-			"longitude": 50.5112,
 			"round": 20,
-			"tbc":true,
+			"tbc": true,
 			"slug": "tbc-grand-prix",
 			"localeKey": "tbc-grand-prix",
 			"sessions": {
