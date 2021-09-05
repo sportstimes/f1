@@ -103,21 +103,21 @@
 			}
 		},
 		{
-			"name": "United States",
-			"location": "Austin",
-			"latitude": 30.1328,
-			"longitude": -97.6411,
+			"name": "Russian",
+			"location": "Sochi",
+			"latitude": 43.6203,
+			"longitude": 39.712,
 			"tbc": true,
 			"round": 7,
-			"slug": "us",
-			"localeKey": "us",
-			"affiliate": "https://motorsporttickets.com/en-gb/f1/united-states/tickets?af=165390",
+			"slug": "russian",
+			"localeKey": "russian",
+			"affiliate": "https://motorsporttickets.com/en-gb/f1/russia/tickets?af=165390",
 			"sessions": {
-				"practice": "2021-10-22T16:00:00Z",
-				"qualifying": "2021-10-22T20:00:00Z",
-				"race1": "2021-10-23T18:00:00Z",
-				"race2": "2021-10-23T21:00:00Z",
-				"race3": "2021-10-24T19:10:00Z"
+				"practice": "2021-09-24T06:45:00Z",
+				"qualifying": "2021-09-24T10:30:00Z",
+				"race1": "2021-09-25T07:20:00Z",
+				"race2": "2021-09-25T13:45:00Z",
+				"race3": "2021-09-26T08:20:00Z"
 			}
 		}
 	]

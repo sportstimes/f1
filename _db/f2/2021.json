@@ -85,6 +85,7 @@
 			"location": "Sochi",
 			"latitude": 43.6203,
 			"longitude": 39.712,
+			"tbc": true,
 			"round": 6,
 			"slug": "russian",
 			"localeKey": "russian",
