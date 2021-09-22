@@ -44,7 +44,7 @@
 		"@tailwindcss/typography": "^0.4.1",
 		"autoprefixer": "^10.2.6",
 		"frontmatter-markdown-loader": "^3.6.2",
-		"postcss": "^8.3.0",
+		"postcss": "^8.3.7",
 		"tailwindcss": "^2.1.2",
 		"webpack": "^5.38.0"
 	}
