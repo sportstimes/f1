@@ -100,18 +100,18 @@
 			}
 		},
 		{
-			"name": "Mexican",
-			"location": "Mexico City",
-			"latitude": 19.4028,
-			"longitude": -99.0986,
+			"name": "United States",
+			"location": "Austin",
+			"latitude": 30.1328,
+			"longitude": -97.6411,
 			"tbc": true,
 			"round": 8,
-			"slug": "mexican",
-			"localeKey": "mexico",
+			"slug": "us",
+			"localeKey": "us",
 			"sessions": {
-				"practice1": "2021-10-29T15:00:00Z",
-				"qualifying": "2021-10-30T18:00:00Z",
-				"race": "2021-10-30T14:30:00Z"
+				"practice1": "2021-10-22T16:00:00Z",
+				"qualifying": "2021-10-24T21:00:00Z",
+				"race": "2021-10-24T14:30:00Z"
 			}
 		}
 	]
