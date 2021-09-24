@@ -60,7 +60,7 @@ class Race extends React.Component {
 			<tbody
 				id={this.props.item.slug}
 				key={this.props.item.slug}
-				className={`${rowClasses(this.props)}`}
+				className={`${rowClasses(this.props, this.state)}`}
 			>
 				
 				<tr
@@ -200,7 +200,7 @@ class Race extends React.Component {
 			return badges;
 		}
 		
-		function rowClasses(props) {
+		function rowClasses(props, state) {
 			var classes = "";
 			if (props.index % 2 === 1) {
 				classes += "rounded bg-row-gray ";
@@ -223,14 +223,14 @@ class Race extends React.Component {
 				];
 				
 				// Strikethrough past races
-				if (
-					dayjs(props.item.sessions[lastEventSessionKey])
-						.add(2, "hours")
-						.isBefore(dayjs())
-				) {
+				if (props.hasOccured) {
 					classes += "line-through text-gray-400 ";
 				} else {
 					classes += "text-white ";
+				}
+				
+				if(props.hasOccured && props.shouldCollapsePastRaces){
+					classes += "hidden";	
 				}
 			} else {
 				classes += "text-white ";
