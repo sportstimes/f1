@@ -10,6 +10,7 @@ export const UserContext = React.createContext();
 export const UserContextProvider = ({children}) => {
 	const [timezone, setTimezone] = useState("America/New_York");
 	const [timeFormat, setTimeFormat] = useState(24);
+	const [collapsePastRaces, setCollapsePastRaces] = useState(true);
 
 	useEffect(() => {
 		const {pathname} = Router
@@ -35,6 +36,13 @@ export const UserContextProvider = ({children}) => {
 		} else {
 			setTimeFormat(24);
 		}
+		
+		const storedCollapsedState = localStorage.getItem("collapasePastRaces");
+		if (storedCollapsedState) {
+			setCollapsePastRaces(storedCollapsedState);
+		} else {
+			setCollapsePastRaces(true);
+		}
 	}, []);
 
 	const updateTimezone = (timezone) => {
@@ -50,12 +58,19 @@ export const UserContextProvider = ({children}) => {
 		setTimeFormat(format);
 		localStorage.setItem("timeFormat", format);
 	};
+	
+	const updateCollapsePastRaces = (bool) => {
+		setCollapsePastRaces(bool);
+		localStorage.setItem("collapsePastRaces", bool);
+	};
 
 	const contextValue = {
 		timezone,
 		timeFormat,
+		collapsePastRaces,
 		updateTimezone,
-		updateTimeFormat
+		updateTimeFormat,
+		updateCollapsePastRaces
 	};
 
 	return (
@@ -65,50 +80,3 @@ export const UserContextProvider = ({children}) => {
 	);
 };
 
-//
-//
-// import React, { createContext, useState, useEffect } from 'react'
-//
-// export const UserContext = createContext();
-//
-// const UserProvider = UserContext.Provider;
-//
-// const UserContextProvider = ({children}) => {
-//   const [locale, setLocale] = React.useState(null);
-//   const [timezone, setTimezone] = React.useState(null);
-//
-//   React.useEffect(() => {
-// 	// hydrate on mount
-// 	const timezone = localStorage.getItem("timezone");
-// 	if (timezone) {
-// 	  setTimezone(timezone);
-// 	} else {
-// 		dayjs.extend(dayjsutc);
-// 		dayjs.extend(dayjstimezone);
-// 		setTimezone(dayjs.tz.guess());
-// 	}
-//
-// 	setTimezone("America/New_York");
-//
-// 	const locale = localStorage.getItem("locale");
-// 	if (locale) {
-// 	  setLocale(locale);
-// 	} else {
-// 		setLocale("en");
-// 	}
-//
-// 	console.log("Use Effect!!!");
-//
-// 	console.log(timezone);
-// 	console.log(locale);
-//
-//   }, []);
-//
-//   return (
-// 	<UserProvider value={{ timezone, setTimezone, locale, setLocale }}>
-// 	  {children}
-//    </UserProvider>
-//   );
-// }
-//
-// export default UserContextProvider;
