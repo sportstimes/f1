@@ -1,6 +1,8 @@
 {
     "date": "Datum",
     "time": "Čas",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
     "badges": {
         "tbc": "TBC",
         "tbc_title": "Čaka na potrditev",

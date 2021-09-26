@@ -59,14 +59,16 @@ const Races = (props) => {
 						<a onClick={() => {
 							updateCollapsePastRaces(!collapsePastRaces)
 							shouldCollapsePastRaces = false
-						}} className="inline-block py-0.5 collapse-btn justify-self-center">Show Previous Races</a>
+						}} className="inline-block py-0.5 collapse-btn justify-self-center">
+						{t("localization:showPreviousRaces")}</a>
 					</div>
 				) : (
 					<div className="mt-8 mb-4 grid">
 						<a onClick={() => {
 							updateCollapsePastRaces(!collapsePastRaces)
 							shouldCollapsePastRaces = true
-						}} className="inline-block py-0.5 collapse-btn justify-self-center">Hide Previous Races</a>
+						}} className="inline-block py-0.5 collapse-btn justify-self-center">
+						{t("localization:hidePreviousRaces")}</a>
 					</div>
 				)
 			)}

@@ -1,6 +1,8 @@
 {
     "date": "Dátum",
     "time": "Idő",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
     "badges": {
         "tbc": "Nem megerősített",
         "tbc_title": "Nem megerősített",
