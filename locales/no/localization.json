@@ -1,6 +1,8 @@
 {
     "date": "Dato",
     "time": "Tidspunkt",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
     "badges": {
         "tbc": "Ikke kjent",
         "tbc_title": "Ikke kjent",

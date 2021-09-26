@@ -1,6 +1,8 @@
 {
     "date": "Gün",
     "time": "Saat",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
     "badges": {
         "tbc": "Belirsiz",
         "tbc_title": "Henüz netleşmedi",

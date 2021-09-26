@@ -1,6 +1,8 @@
 {
     "date": "Дата",
     "time": "Время",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
     "badges": {
         "tbc": "Не подтверждён",
         "tbc_title": "Не подтверждён",

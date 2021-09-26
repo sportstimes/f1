@@ -1,6 +1,8 @@
 {
     "date": "Date",
     "time": "Heure",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
     "badges": {
         "tbc": "TBC",
         "tbc_title": "A confirmer",

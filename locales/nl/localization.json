@@ -1,6 +1,8 @@
 {
     "date": "Datum",
     "time": "Tijd",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
     "badges": {
         "tbc": "TB",
         "tbc_title": "Te beslissen",

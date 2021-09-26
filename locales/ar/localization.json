@@ -1,6 +1,8 @@
 {
     "date": "التاريخ",
     "time": "الوقت",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
     "badges": {
         "tbc": "يتم تأكيده",
         "tbc_title": "يتم تأكيده",
