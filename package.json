@@ -45,7 +45,7 @@
 		"autoprefixer": "^10.3.5",
 		"frontmatter-markdown-loader": "^3.6.2",
 		"postcss": "^8.3.7",
-		"tailwindcss": "^2.2.15",
+		"tailwindcss": "^2.2.16",
 		"webpack": "^5.53.0"
 	}
 }
