@@ -40,7 +40,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.14.3",
 		"@babel/preset-react": "^7.13.13",
-		"@tailwindcss/forms": "^0.3.2",
+		"@tailwindcss/forms": "^0.3.4",
 		"@tailwindcss/typography": "^0.4.1",
 		"autoprefixer": "^10.3.5",
 		"frontmatter-markdown-loader": "^3.6.2",
