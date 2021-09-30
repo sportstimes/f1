@@ -65,7 +65,8 @@
         "emilia-romagna-grand-prix": "Grand Prix Emilii-Romanii (Imola)",
         "sakhir-grand-prix": "Grand Prix Bahrajnu",
         "turkish-grand-prix": "Grand Prix Turcji",
-        "saudi-arabia-grand-prix": "Grand Prix Arabii Saudyjskiej"
+        "saudi-arabia-grand-prix": "Grand Prix Arabii Saudyjskiej",
+        "qatar-grand-prix" : "Qatar Grand Prix"
     },
     "options": {
         "calendar": "Dodaj daty wyścigów do Twojego Kalendarza",

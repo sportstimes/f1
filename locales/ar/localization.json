@@ -65,7 +65,8 @@
         "emilia-romagna-grand-prix": "جائزة اميليا رومانيا الكبري",
         "sakhir-grand-prix": "جائزة صخير (البحرين) الكبري",
         "turkish-grand-prix": "جائزة تركيا الكبري",
-        "saudi-arabia-grand-prix": "جائزة السعودية الكبري"
+        "saudi-arabia-grand-prix": "جائزة السعودية الكبري",
+        "qatar-grand-prix" : "Qatar Grand Prix"
     },
     "options": {
         "calendar": "اضف مواعيد السباقات الي تقويمك",
