@@ -65,7 +65,8 @@
         "emilia-romagna-grand-prix": "Grand Prix d'Émilie-Romagne",
         "sakhir-grand-prix": "Grand Prix de Sakhir (Bahrein)",
         "turkish-grand-prix": "Grand Prix de Turquie",
-        "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix"
+        "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix",
+        "qatar-grand-prix" : "Qatar Grand Prix"
     },
     "options": {
         "calendar": "Ajouter ces dates et horaires de Grand Prix à votre calendrier.",

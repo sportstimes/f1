@@ -65,7 +65,8 @@
         "emilia-romagna-grand-prix": "GP da Emilia Romagna",
         "sakhir-grand-prix": "GP de Sakhir (Barein)",
         "turkish-grand-prix": "GP da Turquia",
-        "saudi-arabia-grand-prix": "GP da Arábia Saudita"
+        "saudi-arabia-grand-prix": "GP da Arábia Saudita",
+        "qatar-grand-prix" : "Qatar Grand Prix"
     },
     "options": {
         "calendar": "Adicione essas datas e horários da corrida ao seu Calendário",

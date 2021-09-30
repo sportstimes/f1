@@ -65,7 +65,8 @@
         "emilia-romagna-grand-prix": "Velika nagrada Emilije Romagne (Italija)",
         "sakhir-grand-prix": "Velika nagrada Sakhira (Bahrain)",
         "turkish-grand-prix": "Velika nagrada Turske",
-        "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix"
+        "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix",
+        "qatar-grand-prix" : "Qatar Grand Prix"
     },
     "options": {
         "calendar": "Dodajte ove datume utrka na vaš kalendar",

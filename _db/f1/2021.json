@@ -319,14 +319,14 @@
 			}
 		},
 		{
-			"name": "TBC",
-			"location": "TBC",
-			"latitude": -37.8373,
-			"longitude": 144.9666,
+			"name": "Qatar",
+			"location": "Doha",
+			"latitude": 25.490292,
+			"longitude": 51.453030,
 			"round": 20,
 			"tbc": true,
-			"slug": "tbc-grand-prix",
-			"localeKey": "tbc-grand-prix",
+			"slug": "qatar-grand-prix",
+			"localeKey": "qatar-grand-prix",
 			"sessions": {
 				"fp1": "2021-11-19T01:30:00Z",
 				"fp2": "2021-11-19T05:00:00Z",

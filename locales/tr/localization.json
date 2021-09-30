@@ -65,7 +65,8 @@
         "emilia-romagna-grand-prix": "Emilia Romagna Grand Prix'si",
         "sakhir-grand-prix": "Sakhir Grand Prix'si",
         "turkish-grand-prix": "Türkiye Grand Prix'si",
-        "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix"
+        "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix",
+        "qatar-grand-prix" : "Qatar Grand Prix"
     },
     "options": {
         "calendar": "Yarış programını kendi takviminize ekleyin",

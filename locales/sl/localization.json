@@ -65,7 +65,8 @@
         "emilia-romagna-grand-prix": "VN Emilije-Romanje",
         "sakhir-grand-prix": "VN Sahirja",
         "turkish-grand-prix": "VN Turčije",
-        "saudi-arabia-grand-prix": "VN Savdske Arabije"
+        "saudi-arabia-grand-prix": "VN Savdske Arabije",
+        "qatar-grand-prix" : "Qatar Grand Prix"
     },
     "options": {
         "calendar": "Dodaj te datume in čase dirk v svoj koledar",

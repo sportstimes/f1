@@ -64,7 +64,8 @@
         "emilia-romagna-grand-prix": "Emilia Romagna Nagydíj",
         "sakhir-grand-prix": "Szakhír (Bahreini) Nagydíj",
         "turkish-grand-prix": "Török Nagydíj",
-        "saudi-arabia-grand-prix": "Szaúd-Arábiai Nagydíj"
+        "saudi-arabia-grand-prix": "Szaúd-Arábiai Nagydíj",
+        "qatar-grand-prix" : "Qatar Grand Prix"
     },
     "options": {
         "calendar": "Futam időpontok hozzáadása a saját Naptárhoz",
