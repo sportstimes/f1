@@ -38,7 +38,7 @@ const Races = (props) => {
 				Object.keys(item.sessions).length - 1
 			];
 			
-			if (!dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore()) {
+			if (dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore()) {
 				racesOccured = racesOccured + 1;
 			}
 		}

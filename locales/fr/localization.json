@@ -66,9 +66,11 @@
         "sakhir-grand-prix": "Grand Prix de Sakhir (Bahrein)",
         "turkish-grand-prix": "Grand Prix de Turquie",
         "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix",
-        "qatar-grand-prix" : "Qatar Grand Prix"
-    },
-    "options": {
+        "qatar-grand-prix" : "Qatar Grand Prix",
+		"canadian-grand-prix" : "Canadian Grand Prix",
+		"miami-grand-prix" : "Miami Grand Prix"
+	},
+	"options": {
         "calendar": "Ajouter ces dates et horaires de Grand Prix à votre calendrier.",
         "email": "Recevoir des e-mails de rappel",
         "timezonePicker": {
