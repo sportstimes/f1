@@ -65,9 +65,11 @@
         "sakhir-grand-prix": "Szakhír (Bahreini) Nagydíj",
         "turkish-grand-prix": "Török Nagydíj",
         "saudi-arabia-grand-prix": "Szaúd-Arábiai Nagydíj",
-        "qatar-grand-prix" : "Qatar Grand Prix"
-    },
-    "options": {
+        "qatar-grand-prix" : "Qatar Grand Prix",
+		"canadian-grand-prix" : "Canadian Grand Prix",
+		"miami-grand-prix" : "Miami Grand Prix"
+	},
+	"options": {
         "calendar": "Futam időpontok hozzáadása a saját Naptárhoz",
         "email": "E-mail emlékeztetők kérése",
         "timezonePicker": {
