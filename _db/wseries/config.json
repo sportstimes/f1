@@ -17,6 +17,5 @@
 		"qualifying": 30,
 		"race": 30
 	},
-	"supportsEmailReminders": false,
-	"notice": "Calendar will be updated once additional times are confirmed."
+	"supportsEmailReminders": false
 }
