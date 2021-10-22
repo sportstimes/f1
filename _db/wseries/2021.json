@@ -89,14 +89,14 @@
 			"location": "Austin",
 			"latitude": 30.1328,
 			"longitude": -97.6411,
-			"tbc": true,
 			"round": 7,
 			"slug": "us",
 			"localeKey": "us",
 			"sessions": {
-				"practice1": "2021-10-22T16:00:00Z",
-				"qualifying": "2021-10-23T21:00:00Z",
-				"race": "2021-10-23T14:30:00Z"
+				"practice1": "2021-10-22T15:20:00Z",
+				"practice2": "2021-10-22T21:40:00Z",
+				"qualifying": "2021-10-23T16:10:00Z",
+				"race": "2021-10-23T22:25:00Z"
 			}
 		},
 		{
@@ -104,14 +104,11 @@
 			"location": "Austin",
 			"latitude": 30.1328,
 			"longitude": -97.6411,
-			"tbc": true,
 			"round": 8,
 			"slug": "us",
 			"localeKey": "us",
 			"sessions": {
-				"practice1": "2021-10-22T16:00:00Z",
-				"qualifying": "2021-10-24T21:00:00Z",
-				"race": "2021-10-24T14:30:00Z"
+				"race": "2021-10-24T16:05:00Z"
 			}
 		}
 	]
