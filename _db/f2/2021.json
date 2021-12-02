@@ -101,16 +101,15 @@
 			"location": "Jeddah",
 			"latitude": 21.485811,
 			"longitude": 39.192505,
-			"tbc": true,
 			"round": 7,
 			"slug": "saudi-arabia",
 			"localeKey": "saudi-arabia",
 			"sessions": {
-				"practice": "2021-11-26T09:00:00Z",
-				"qualifying": "2021-11-26T13:00:00Z",
-				"sprint1": "2021-11-27T10:00:00Z",
-				"sprint2": "2021-11-27T10:00:00Z",
-				"feature": "2021-11-28T13:00:00Z"
+				"practice": "2021-12-02T10:45:00Z",
+				"qualifying": "2021-12-02T15:20:00Z",
+				"sprint1": "2021-12-03T12:30:00Z",
+				"sprint2": "2021-12-03T18:40:00Z",
+				"feature": "2021-12-04T14:25:00Z"
 			}
 		},
 		{
@@ -118,17 +117,16 @@
 			"location": "Yas Marina",
 			"latitude": 24.4821,
 			"longitude": 54.3482,
-			"tbc": true,
 			"round": 8,
 			"slug": "abu-dhabi",
 			"localeKey": "abu-dhabi",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/abu-dhabi/tickets?af=165390",
 			"sessions": {
-				"practice": "2021-12-03T09:00:00Z",
-				"qualifying": "2021-12-03T13:00:00Z",
-				"sprint1": "2021-12-04T10:00:00Z",
-				"sprint2": "2021-12-04T10:00:00Z",
-				"feature": "2021-12-05T13:00:00Z"
+				"practice": "2021-12-09T07:35:00Z",
+				"qualifying": "2021-12-09T14:30:00Z",
+				"sprint1": "2021-12-10T08:20:00Z",
+				"sprint2": "2021-12-10T14:45:00Z",
+				"feature": "2021-12-11T09:00:00Z"
 			}
 		}
 	]
