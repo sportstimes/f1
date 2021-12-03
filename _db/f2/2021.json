@@ -105,11 +105,11 @@
 			"slug": "saudi-arabia",
 			"localeKey": "saudi-arabia",
 			"sessions": {
-				"practice": "2021-12-02T10:45:00Z",
-				"qualifying": "2021-12-02T15:20:00Z",
-				"sprint1": "2021-12-03T12:30:00Z",
-				"sprint2": "2021-12-03T18:40:00Z",
-				"feature": "2021-12-04T14:25:00Z"
+				"practice": "2021-12-03T10:45:00Z",
+				"qualifying": "2021-12-03T15:20:00Z",
+				"sprint1": "2021-12-04T12:30:00Z",
+				"sprint2": "2021-12-04T18:40:00Z",
+				"feature": "2021-12-05T14:25:00Z"
 			}
 		},
 		{
@@ -122,11 +122,11 @@
 			"localeKey": "abu-dhabi",
 			"affiliate": "https://motorsporttickets.com/en-gb/f1/abu-dhabi/tickets?af=165390",
 			"sessions": {
-				"practice": "2021-12-09T07:35:00Z",
-				"qualifying": "2021-12-09T14:30:00Z",
-				"sprint1": "2021-12-10T08:20:00Z",
-				"sprint2": "2021-12-10T14:45:00Z",
-				"feature": "2021-12-11T09:00:00Z"
+				"practice": "2021-12-10T07:35:00Z",
+				"qualifying": "2021-12-10T14:30:00Z",
+				"sprint1": "2021-12-11T08:20:00Z",
+				"sprint2": "2021-12-11T14:45:00Z",
+				"feature": "2021-12-12T09:00:00Z"
 			}
 		}
 	]
