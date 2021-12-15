@@ -68,10 +68,10 @@ class Race extends React.Component {
 					className="cursor-pointer"
 					onClick={() => this.handleRowClick()}
 				>
-					<td className="py-5 pl-2 md:pl-3 w-6">
+					<td className="w-0 relative left-1">
 						<Toggle collapsed={this.state.collapsed} />
 					</td>
-					<td className={`w-6/12 sm:w-5/12 pl-2`}>
+					<td className={`w-7/12 pl-5 pt-3 pb-3 md:pt-4 md:pb-4`}>
 					
 						<span className={`${titleRowClasses(this.props)}`}>
 							{t(`localization:races.${this.props.item.localeKey}`) != localeKey
@@ -104,7 +104,7 @@ class Race extends React.Component {
 										.tz(this.props.timezone)
 										.format("D MMM")}
 							</td>
-							<td className={`w-2/12 ${titleRowClasses(this.props)}`}>
+							<td className={`w-1/12 ${titleRowClasses(this.props)} relative right-3`}>
 								{this.props.item.sessions &&
 									this.props.item.sessions[config.featuredSessions[0]] &&
 									dayjs(
