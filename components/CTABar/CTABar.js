@@ -84,7 +84,7 @@ class CTABar extends React.Component {
 				<div className="grid grid-cols-1 pt-4">
 					<div className="h-12">
 						<Link href="/generate">
-							<a className="bg-green-900 rounded-md shadow hover:bg-green-800 hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative">
+							<a className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative">
 								<svg
 									className="icon"
 									xmlns="http://www.w3.org/2000/svg"
