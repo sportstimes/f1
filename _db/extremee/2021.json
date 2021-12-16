@@ -49,14 +49,13 @@
 			}
 		},
 		{
-			"name": "Amazon X Prix",
-			"location": "Santarém, Brazil",
-			"latitude": -2.43,
-			"longitude": -54.72,
+			"name": "Island X Prix",
+			"location": "Sardinia, Italy",
+			"latitude": 0,
+			"longitude": 0,
 			"round": 4,
-			"slug": "amazon-xprix",
-			"localeKey": "amazon-xprix",
-			"tbc": true,
+			"slug": "island-xprix",
+			"localeKey": "island-xprix",
 			"sessions": {
 				"shakedown": "2021-10-22T15:15:00Z",
 				"qualifying1": "2021-10-23T11:00:00Z",
@@ -66,20 +65,19 @@
 			}
 		},
 		{
-			"name": "Glacier X Prix",
-			"location": "Ushuaia, Argentina",
-			"latitude": -54.801944,
-			"longitude": -68.303056,
+			"name": "Jurassic X Prix",
+			"location": "Dorset, UK",
+			"latitude": 0,
+			"longitude": 0,
 			"round": 5,
-			"slug": "glacier-xprix",
-			"localeKey": "glacier-xprix",
-			"tbc": true,
+			"slug": "jurassic-xprix",
+			"localeKey": "jurassic-xprix",
 			"sessions": {
-				"shakedown": "2021-12-10T15:15:00Z",
-				"qualifying1": "2021-12-11T11:00:00Z",
-				"qualifying2": "2021-12-11T13:00:00Z",
-				"semifinal": "2021-12-12T17:00:00Z",
-				"race": "2021-12-12T17:00:00Z"
+				"shakedown": "2021-12-17T19:00:00Z",
+				"qualifying1": "2021-12-18T10:00:00Z",
+				"qualifying2": "2021-12-18T13:00:00Z",
+				"semifinal": "2021-12-19T10:00:00Z",
+				"race": "2021-12-19T12:00:00Z"
 			}
 		}
 	]
