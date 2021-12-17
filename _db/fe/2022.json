@@ -1,0 +1,258 @@
+{
+	"races": [
+		{
+			"name": "Diriyah ePrix",
+			"location": "Diriyah",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 1,
+			"tbc": true,
+			"slug": "diriyah-eprix",
+			"localeKey": "diriyah-eprix",
+			"sessions": {
+				"practice1": "2022-01-27T15:15:00Z",
+				"practice2": "2022-01-28T11:00:00Z",
+				"qualifying": "2022-01-28T13:00:00Z",
+				"race": "2022-01-28T17:03:00Z"
+			}
+		},
+		{
+			"name": "Diriyah ePrix",
+			"location": "Diriyah",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 2,
+			"tbc": true,
+			"slug": "diriyah-eprix",
+			"localeKey": "diriyah-eprix",
+			"sessions": {
+				"practice3": "2022-01-29T10:45:00Z",
+				"qualifying": "2022-01-29T13:00:00Z",
+				"race": "2022-01-29T17:03:00Z"
+			}
+		},
+		{
+			"name": "Mexico City ePrix",
+			"location": "Mexico",
+			"latitude": 9.006710,
+			"longitude": -79.537200,
+			"tbc": true,
+			"round": 3,
+			"slug": "mexico-city-eprix",
+			"localeKey": "mexico-city-eprix",
+			"sessions": {
+				"practice1": "2022-02-12T13:00:00Z",
+				"practice2": "2022-02-12T15:15:00Z",
+				"qualifying": "2022-02-12T17:00:00Z",
+				"race": "2022-02-12T21:04:00Z"
+			}
+		},
+		{
+			"name": "Rome ePrix",
+			"location": "Rome",
+			"latitude": 41.901983,
+			"longitude": 12.494953,
+			"round": 4,
+			"tbc": true,
+			"slug": "rome-eprix",
+			"localeKey": "rome-eprix",
+			"sessions": {
+				"practice1": "2022-04-09T06:00:00Z",
+				"practice2": "2022-04-09T08:15:00Z",
+				"qualifying": "2022-04-09T10:00:00Z",
+				"race": "2022-04-09T14:04:00Z"
+			}
+		},
+		{
+			"name": "Rome ePrix",
+			"location": "Rome",
+			"latitude": 41.901983,
+			"longitude": 12.494953,
+			"round": 5,
+			"tbc": true,
+			"slug": "rome-eprix",
+			"localeKey": "rome-eprix",
+			"sessions": {
+				"practice3": "2022-04-10T05:00:00Z",
+				"qualifying": "2022-04-10T07:00:00Z",
+				"race": "2022-04-10T11:04:00Z"
+			}
+		},
+		{
+			"name": "Monaco ePrix",
+			"location": "Monte Carlo",
+			"latitude": 43.7338,
+			"longitude": 7.4215,
+			"round": 6,
+			"tbc": true,
+			"slug": "monaco-eprix",
+			"localeKey": "monaco-eprix",
+			"sessions": {
+				"practice1": "2022-04-30T05:55:00Z",
+				"practice2": "2022-04-30T08:10:00Z",
+				"qualifying": "2022-04-30T09:45:00Z",
+				"race": "2022-04-30T13:30:00Z"
+			}
+		},
+		{
+			"name": "Berlin ePrix",
+			"location": "Berlin",
+			"latitude": 52.482258,
+			"longitude": 13.389437,
+			"tbc": true,
+			"round": 7,
+			"slug": "berlin-eprix",
+			"localeKey": "berlin-eprix",
+			"sessions": {
+				"practice1": "2022-05-14T12:00:00Z",
+				"practice2": "2022-05-14T12:00:00Z",
+				"qualifying": "2022-05-14T12:00:00Z",
+				"race": "2022-05-14T12:00:00Z"
+			}
+		},
+		{
+			"name": "Berlin ePrix",
+			"location": "Berlin",
+			"latitude": 52.482258,
+			"longitude": 13.389437,
+			"tbc": true,
+			"round": 8,
+			"slug": "berlin-eprix",
+			"localeKey": "berlin-eprix",
+			"sessions": {
+				"practice1": "2022-05-15T12:00:00Z",
+				"practice2": "2022-05-15T12:00:00Z",
+				"qualifying": "2022-05-15T12:00:00Z",
+				"race": "2022-05-15T12:00:00Z"
+			}
+		},
+		{
+			"name": "Jakarta ePrix",
+			"location": "Indonesia",
+			"latitude": 0,
+			"longitude": 0,
+			"tbc": true,
+			"round": 9,
+			"slug": "jakarta-eprix",
+			"localeKey": "jakarta-eprix",
+			"sessions": {
+				"practice1": "2022-06-04T12:00:00Z",
+				"practice2": "2022-06-04T12:00:00Z",
+				"qualifying": "2022-06-04T12:00:00Z",
+				"race": "2022-06-04T12:00:00Z"
+			}
+		},
+		{
+			"name": "Vancouver ePrix",
+			"location": "Canada",
+			"latitude": 0,
+			"longitude": 0,
+			"tbc": true,
+			"round": 10,
+			"slug": "vancouver-eprix",
+			"localeKey": "vancouver-eprix",
+			"sessions": {
+				"practice1": "2022-07-02T12:00:00Z",
+				"practice2": "2022-07-02T12:00:00Z",
+				"qualifying": "2022-07-02T12:00:00Z",
+				"race": "2022-07-02T12:00:00Z"
+			}
+		},
+		{
+			"name": "New York ePrix",
+			"location": "US",
+			"latitude": 40.775764,
+			"longitude": -74.012724,
+			"tbc": true,
+			"round": 11,
+			"slug": "nyc-eprix",
+			"localeKey": "nyc-eprix",
+			"sessions": {
+				"practice1": "2022-07-16T12:00:00Z",
+				"practice2": "2022-07-16T12:00:00Z",
+				"qualifying": "2022-07-16T12:00:00Z",
+				"race": "2022-07-16T12:00:00Z"
+			}
+		},
+		{
+			"name": "New York ePrix",
+			"location": "US",
+			"latitude": 40.775764,
+			"longitude": -74.012724,
+			"tbc": true,
+			"round": 12,
+			"slug": "nyc-eprix",
+			"localeKey": "nyc-eprix",
+			"sessions": {
+				"practice1": "2022-07-17T12:00:00Z",
+				"practice2": "2022-07-17T12:00:00Z",
+				"qualifying": "2022-07-17T12:00:00Z",
+				"race": "2022-07-17T12:00:00Z"
+			}
+		},
+		{
+			"name": "London ePrix",
+			"location": "GB",
+			"latitude": 51.500149,
+			"longitude": -0.126240,
+			"tbc": true,
+			"round": 13,
+			"slug": "london-eprix",
+			"localeKey": "london-eprix",
+			"sessions": {
+				"practice1": "2022-07-30T12:00:00Z",
+				"practice2": "2022-07-30T12:00:00Z",
+				"qualifying": "2022-07-30T12:00:00Z",
+				"race": "2022-07-30T12:00:00Z"
+			}
+		},
+		{
+			"name": "London ePrix",
+			"location": "GB",
+			"latitude": 51.500149,
+			"longitude": -0.126240,
+			"tbc": true,
+			"round": 14,
+			"slug": "london-eprix",
+			"localeKey": "london-eprix",
+			"sessions": {
+				"practice1": "2022-07-31T12:00:00Z",
+				"practice2": "2022-07-31T12:00:00Z",
+				"qualifying": "2022-07-31T12:00:00Z",
+				"race": "2022-07-31T12:00:00Z"
+			}
+		},
+		{
+			"name": "Seoul ePrix",
+			"location": "South Korea",
+			"latitude": 0,
+			"longitude": 0,
+			"tbc": true,
+			"round": 15,
+			"slug": "seoul-eprix",
+			"localeKey": "seoul-eprix",
+			"sessions": {
+				"practice1": "2022-08-13T12:00:00Z",
+				"practice2": "2022-08-13T12:00:00Z",
+				"qualifying": "2022-08-13T12:00:00Z",
+				"race": "2022-08-13T12:00:00Z"
+			}
+		},
+		{
+			"name": "Seoul ePrix",
+			"location": "South Korea",
+			"latitude": 0,
+			"longitude": 0,
+			"tbc": true,
+			"round": 16,
+			"slug": "seoul-eprix",
+			"localeKey": "seoul-eprix",
+			"sessions": {
+				"practice1": "2022-08-14T12:00:00Z",
+				"practice2": "2022-08-14T12:00:00Z",
+				"qualifying": "2022-08-14T12:00:00Z",
+				"race": "2022-08-14T12:00:00Z"
+			}
+		}
+	]
+}

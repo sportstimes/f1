@@ -16,83 +16,42 @@ class RaceSchema extends React.Component {
         if (t(`localization:races.${this.props.item.localeKey}`) != localeKey) {
             name = t(`localization:races.${this.props.item.localeKey}`);
         }
+		
+		let location = this.props.item.location;
+		let latitude = this.props.item.latitude;
+		let longitude = this.props.item.longitude;
+		
+		var rows = [];
+		
+		var keys = Object.keys(this.props.item.sessions);
+		var sessions = this.props.item.sessions;
+		
+		keys.forEach(function (session, index) {
+			let key = `localization:schedule.${session}`;
+
+			let eventName = `${name} - ${t(key)}`;
+			let eventDescription = `${name} - ${t(key)}`;
+						
+			rows.push({
+				"@context": "http://schema.org/",
+				"@type": "Event",
+				"name": eventName,
+				"description": eventDescription,
+				"startdate": dayjs(sessions[session]).toJSON(),
+				"enddate": dayjs(sessions[session]).add(1.5, 'hours').toJSON(),
+				"location": {
+					"@type": "Place",
+					"name": location,
+					"latitude": latitude,
+					"longitude": latitude,
+					"address": location
+				}
+			});
+		});
+		
 
         return {
-            __html: `[{
-				"@context": "http://schema.org/",
-				"@type": "Event",
-				"name": "${name} - ${t('localization:schedule.fp1')}",
-				"description": "${name} - ${t('localization:schedule.fp1')}",
-				"startdate": "${dayjs(this.props.item.sessions.fp1).toJSON()}",
-				"enddate": "${dayjs(this.props.item.sessions.fp1).add(1.5, 'hours').toJSON()}",
-				"location": {
-					"@type": "Place",
-					"name": "${this.props.item.location}",
-					"latitude": "${this.props.item.latitude}",
-					"longitude": "${this.props.item.longitude}",
-					"address": "${this.props.item.location}"
-				}
-		},
-		{
-				"@context": "http://schema.org/",
-				"@type": "Event",
-				"name": "${name} - ${t('localization:schedule.fp2')}",
-				"description": "${name} - ${t('localization:schedule.fp2')}",
-				"startdate": "${dayjs(this.props.item.sessions.fp2).toJSON()}",
-				"enddate": "${dayjs(this.props.item.sessions.fp2).add(1.5, 'hours').toJSON()}",
-				"location": {
-					"@type": "Place",
-					"name": "${this.props.item.location}",
-					"latitude": "${this.props.item.latitude}",
-					"longitude": "${this.props.item.longitude}",
-					"address": "${this.props.item.location}"
-				}
-		},
-		{
-				"@context": "http://schema.org/",
-				"@type": "Event",
-				"name": "${name} - ${t('localization:schedule.fp3')}",
-				"description": "${name} - ${t('localization:schedule.fp3')}",
-				"startdate": "${dayjs(this.props.item.sessions.fp3).add(1, 'hours').toJSON()}",
-				"enddate": "${dayjs(this.props.item.sessions.fp3).add(1, 'hours').toJSON()}",
-				"location": {
-					"@type": "Place",
-					"name": "${this.props.item.location}",
-					"latitude": "${this.props.item.latitude}",
-					"longitude": "${this.props.item.longitude}",
-					"address": "${this.props.item.location}"
-				}
-		},
-		{
-				"@context": "http://schema.org/",
-				"@type": "Event",
-				"name": "${name} - ${t('localization:schedule.qualifying')}",
-				"description": "{name} - ${t('localization:schedule.qualifying')}",
-				"startdate": "${dayjs(this.props.item.sessions.qualifying).add(1, 'hours').toJSON()}",
-				"enddate": "${dayjs(this.props.item.sessions.qualifying).add(1, 'hours').toJSON()}",
-				"location": {
-					"@type": "Place",
-					"name": "${this.props.item.location}",
-					"latitude": "${this.props.item.latitude}",
-					"longitude": "${this.props.item.longitude}",
-					"address": "${this.props.item.location}"
-				}
-		},
-		{
-				"@context": "http://schema.org/",
-				"@type": "Event",
-				"name": "${name} - ${t('localization:schedule.race')}",
-				"description": "${name} - ${t('localization:schedule.race')}",
-				"startdate": "${dayjs(this.props.item.sessions.race).toJSON()}",
-				"enddate": "${dayjs(this.props.item.sessions.race).add(2, 'hours').toJSON()}",
-				"location": {
-					"@type": "Place",
-					"name": "${this.props.item.location}",
-					"latitude": "${this.props.item.latitude}",
-					"longitude": "${this.props.item.longitude}",
-					"address": "${this.props.item.location}"
-				}
-		}]`
+            __html: `${JSON.stringify(rows)}`
         };
     }
 
