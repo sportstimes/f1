@@ -68,8 +68,8 @@
         "saudi-arabia-grand-prix": "Гран-при Саудовской Аравии",
         "qatar-grand-prix" : "Гран-при Катара",
         "miami-grand-prix" : "Miami Grand Prix"
-	},
-	"options": {
+    },
+    "options": {
         "calendar": "Добавить расписание гонок в Календарь",
         "email": "Напоминания по электронной почте",
         "timezonePicker": {
