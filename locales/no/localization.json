@@ -66,9 +66,10 @@
         "sakhir-grand-prix": "Sakhirs (Bahrain) Grand Prix",
         "turkish-grand-prix": "Tyrkias Grand Prix",
         "saudi-arabia-grand-prix": "Saudiarabiske Grand Prix",
-        "qatar-grand-prix" : "Qatar Grand Prix"
-    },
-    "options": {
+        "qatar-grand-prix" : "Qatar Grand Prix",
+		"miami-grand-prix" : "Miami Grand Prix"
+	},
+	"options": {
         "calendar": "Legg til disse race-datoene og tidspunkt til din kalender",
         "email": "Motta epost påminnelser",
         "timezonePicker": {

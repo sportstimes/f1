@@ -38,7 +38,7 @@ const Races = (props) => {
 				Object.keys(item.sessions).length - 1
 			];
 			
-			if (!dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore()) {
+			if (dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore()) {
 				racesOccured = racesOccured + 1;
 			}
 		}
@@ -47,11 +47,15 @@ const Races = (props) => {
 	if(racesOccured > 2 && collapsePastRaces){
 		shouldCollapsePastRaces = true;
 	}
+	
+	if(racesOccured == races.length){
+		shouldCollapsePastRaces = false;
+	}
 
 	return (
 		<div>
 		
-			{racesOccured < 2 ? (
+			{racesOccured < 2 || racesOccured == races.length ? (
 				<div></div>
 			) : (
 				shouldCollapsePastRaces == true ? (
@@ -143,7 +147,7 @@ const Races = (props) => {
 							key={item.slug}
 							isNextRace={isNextRace}
 							hasOccured={hasOccured}
-							shouldCollapsePastRaces={collapsePastRaces}
+							shouldCollapsePastRaces={shouldCollapsePastRaces}
 						/>
 					);
 				})}

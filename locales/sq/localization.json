@@ -66,9 +66,10 @@
         "sakhir-grand-prix": "Çmimi i Madh i Sakhir (Bahrain)",
         "turkish-grand-prix": "Çmimi i Madh i Turqisë",
         "saudi-arabia-grand-prix": "Çmimi i Madh i Arabisë Saudite",
-        "qatar-grand-prix" : "Qatar Grand Prix"
-    },
-    "options": {
+        "qatar-grand-prix" : "Qatar Grand Prix",
+		"miami-grand-prix" : "Miami Grand Prix"
+	},
+	"options": {
         "calendar": "Shtoni oraret e këtyre garave në kalendarin tuaj",
         "email": "Prano përkujtime përmes email",
         "timezonePicker": {

@@ -7,6 +7,7 @@ import RaceSchema from "components/RaceSchema/RaceSchema";
 import useTranslation from "next-translate/useTranslation";
 import OptionsBar from "components/OptionsBar/OptionsBar";
 const year = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NEXT_PUBLIC_CURRENT_YEAR}.json`);
+import Link from "next/link";
 
 const Index = (props) => {
 	const {t, lang} = useTranslation();
@@ -37,7 +38,7 @@ const Index = (props) => {
 					{ config.notice != null &&
 						<Notice />
 					}
-
+					
 					<div className="px-0 md:px-2">
 						<Races year={currentYear} races={year.races} />
 					</div>

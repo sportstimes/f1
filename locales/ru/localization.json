@@ -66,9 +66,10 @@
         "sakhir-grand-prix": "Гран-при Сахира (Бахрейна)",
         "turkish-grand-prix": "Гран-при Турции",
         "saudi-arabia-grand-prix": "Гран-при Саудовской Аравии",
-        "qatar-grand-prix" : "Гран-при Катара"
-    },
-    "options": {
+        "qatar-grand-prix" : "Гран-при Катара",
+        "miami-grand-prix" : "Miami Grand Prix"
+	},
+	"options": {
         "calendar": "Добавить расписание гонок в Календарь",
         "email": "Напоминания по электронной почте",
         "timezonePicker": {

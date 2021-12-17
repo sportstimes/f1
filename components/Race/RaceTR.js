@@ -46,7 +46,7 @@ class RaceTR extends React.Component {
 							.tz(this.props.timezone)
 							.format("D MMM")}
 					</td>
-					<td className="w-1/6">
+					<td className="w-1/6 relative right-3">
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
 							.format(this.props.timeFormat == 12 ? "h:mm A" : "HH:mm")}
