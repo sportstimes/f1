@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-33-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-34-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -71,6 +71,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://github.com/Remynator"><img src="https://avatars.githubusercontent.com/u/80911158?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Remynator</b></sub></a><br /><a href="#content-Remynator" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/lerhond"><img src="https://avatars.githubusercontent.com/u/11545731?v=4?s=100" width="100px;" alt=""/><br /><sub><b>lerhond</b></sub></a><br /><a href="#content-lerhond" title="Content">🖋</a></td>
     <td align="center"><a href="https://www.ck12info.org/about/team/"><img src="https://avatars.githubusercontent.com/u/58284608?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sarah Nair</b></sub></a><br /><a href="#translation-sarathcodes" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/mdawidowski"><img src="https://avatars.githubusercontent.com/u/9027933?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marcin Dawidowski</b></sub></a><br /><a href="#translation-mdawidowski" title="Translation">🌍</a></td>
   </tr>
 </table>
 
