@@ -246,7 +246,7 @@ for (language of i18n.locales) {
 					console.log("Calendar Error: " + JSON.stringify(error));
 				} else {
 					
-					let folder = (language === "en") ? `/static/` : `/static/${language}/`;
+					let folder = (language === "en") ? `~/static/` : `~/static/${language}/`;
 					
 					// Check if the folder exists currently or not.
 					!fs.existsSync(folder) && fs.mkdirSync(folder, { recursive: true })
