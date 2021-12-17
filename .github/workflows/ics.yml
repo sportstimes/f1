@@ -45,9 +45,9 @@ jobs:
           npm i ics
           npm i dayjs
 
-      # - name: Build Files
-      #   run: |
-      #     sudo node build/generate-calendars.js
+      - name: Build Files
+        run: |
+          sudo node build/generate-calendars.js
 
       - name: Publish to Cloudflare Workers Sites
         run: |
