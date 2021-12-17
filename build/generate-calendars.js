@@ -246,12 +246,12 @@ for (language of i18n.locales) {
 					console.log("Calendar Error: " + JSON.stringify(error));
 				} else {
 					
-					let folder = (language === "en") ? `/static/` : `/static/${language}/`;
+					let folder = (language === "en") ? `${GITHUB_WORKSPACE}/static/` : `${GITHUB_WORKSPACE}/static/${language}/`;
 					
 					!fs.existsSync(folder) && fs.mkdirSync(folder, { recursive: true })
 					
 					
-					let path = (language === "en") ? `static/${siteKey}-calendar_${request}.ics` : `static/${language}/${siteKey}-calendar_${request}.ics`;
+					let path = (language === "en") ? `${GITHUB_WORKSPACE}/static/${siteKey}-calendar_${request}.ics` : `${GITHUB_WORKSPACE}/static/${language}/${siteKey}-calendar_${request}.ics`;
 					
 					console.log("Writing Calendar to " + path);
 	
