@@ -15,6 +15,8 @@ _The second edition of [f1calendar.com](https://f1calendar.com)_
 npm run dev
 ```
 
+Edit .env.local to adjust which year / series (f1, f2, f3, fe, indycar, wseries, motogp) is being loaded.
+
 ## Localization
 
 If there is a language you'd like to see F1 Calendar localized to but we haven't got around to it yet, and you have some spare time, head on over to our new localization project [here](https://poeditor.com/join/project?hash=JrDs3Vfc92).
