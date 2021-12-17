@@ -2,11 +2,12 @@ const fs = require("fs");
 const ics = require("ics");
 const dayjs = require("dayjs");
 
-const siteKey = process.env.NEXT_PUBLIC_SITE_KEY;
-const year = process.env.NEXT_PUBLIC_CURRENT_YEAR;
+// const siteKey = process.env.NEXT_PUBLIC_SITE_KEY;
+// const year = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
-// const siteKey = "f1";
-// const year = "2021";
+const siteKey = "f1";
+const year = "2021";
+
 
 // Grab the site config...
 let rawConfig = fs.readFileSync(`_db/${siteKey}/config.json`);
@@ -246,7 +247,7 @@ for (language of i18n.locales) {
 					
 					
 				} else {
-					let path = (language === "en") ? `public/download/${siteKey}-calendar_${request}.ics` : `public/download/${language}/${siteKey}-calendar_${request}.ics`;
+					let path = (language === "en") ? `static/${siteKey}-calendar_${request}.ics` : `static/${language}/${siteKey}-calendar_${request}.ics`;
 					
 					console.log("Writing Calendar to " + path);
 	

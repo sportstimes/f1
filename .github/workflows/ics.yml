@@ -38,7 +38,7 @@ jobs:
 
       - name: Build Files
         run: |
-          npm run generate
+          node build/generate-calendars.js
 
       - name: Publish to Cloudflare Workers Sites
         run: |
