@@ -6,12 +6,12 @@ on:
   # Only triggers if _db is modified within the Push or PR.
   push:
     branches: [ main ]
-    paths:
-      - '_db/**'
+    # paths:
+    #   - '_db/**'
   pull_request:
     branches: [ main ]
-    paths:
-      - '_db/**'
+    # paths:
+    #   - '_db/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
