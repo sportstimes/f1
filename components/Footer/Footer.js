@@ -108,14 +108,6 @@ export default function Footer() {
 						>
 							Si Jobling
 						</a>{" "}
-						&amp;&nbsp;
-						<a
-							href="http://abitgone.co.uk/"
-							rel="author"
-							className="text-gray-300"
-						>
-							Ant Williams
-						</a>{" "}
 						{new Date().getFullYear()}
 					</p>
 					<p className="mb-10 text-center text-base text-gray-400">

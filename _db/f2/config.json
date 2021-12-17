@@ -25,6 +25,5 @@
 		"sprint2": 45,
 		"feature": 60
 	},
-	"supportsEmailReminders": false,
-	"notice": "Some dates & times are TBC. Calendar will be updated once details are confirmed."
+	"supportsEmailReminders": false
 }

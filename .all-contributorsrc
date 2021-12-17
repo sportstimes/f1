@@ -293,6 +293,24 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "sarathcodes",
+      "name": "Sarah Nair",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58284608?v=4",
+      "profile": "https://www.ck12info.org/about/team/",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "mdawidowski",
+      "name": "Marcin Dawidowski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9027933?v=4",
+      "profile": "https://github.com/mdawidowski",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
