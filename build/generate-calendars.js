@@ -2,10 +2,6 @@ const fs = require("fs");
 const ics = require("ics");
 const dayjs = require("dayjs");
 
-const {
-  GITHUB_WORKSPACE
-} = process.env;
-
 // const siteKey = process.env.NEXT_PUBLIC_SITE_KEY;
 // const year = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
@@ -250,12 +246,12 @@ for (language of i18n.locales) {
 					console.log("Calendar Error: " + JSON.stringify(error));
 				} else {
 					
-					let folder = (language === "en") ? `${GITHUB_WORKSPACE}/static/` : `${GITHUB_WORKSPACE}/static/${language}/`;
+					let folder = (language === "en") ? `${process.env.GITHUB_WORKSPACE}/static/` : `${process.env.GITHUB_WORKSPACE}/static/${language}/`;
 					
+					// Check if the folder exists currently or not.
 					!fs.existsSync(folder) && fs.mkdirSync(folder, { recursive: true })
 					
-					
-					let path = (language === "en") ? `${GITHUB_WORKSPACE}/static/${siteKey}-calendar_${request}.ics` : `${GITHUB_WORKSPACE}/static/${language}/${siteKey}-calendar_${request}.ics`;
+					let path = `${folder}${siteKey}-calendar_${request}.ics`;
 					
 					console.log("Writing Calendar to " + path);
 	
