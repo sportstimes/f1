@@ -1,0 +1,39 @@
+name: Deploy ICS Files to Cloudflare Workers
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache yarn dependencies
+        uses: c-hive/gha-yarn-cache@v1
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: yarn install --frozen-lockfile
+      - run: yarn export
+
+      - name: Publish to Cloudflare Workers Sites
+        run: |
+          mkdir -p ~/.wrangler/config/
+          echo "api_token=\"${CF_API_TOKEN}\"" > ~/.wrangler/config/default.toml
+          yarn wrangler publish --env production
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
