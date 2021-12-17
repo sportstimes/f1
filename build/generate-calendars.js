@@ -244,9 +244,13 @@ for (language of i18n.locales) {
 				if (error) {
 					// TODO: Handle an error...
 					console.log("Calendar Error: " + JSON.stringify(error));
-					
-					
 				} else {
+					
+					let folder = (language === "en") ? `/static/` : `/static/${language}/`;
+					
+					!fs.existsSync(folder) && fs.mkdirSync(folder, { recursive: true })
+					
+					
 					let path = (language === "en") ? `static/${siteKey}-calendar_${request}.ics` : `static/${language}/${siteKey}-calendar_${request}.ics`;
 					
 					console.log("Writing Calendar to " + path);
