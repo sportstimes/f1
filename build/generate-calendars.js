@@ -98,17 +98,10 @@ for (permutation of optionPermutations) {
 	}
 }
 
-
-// Make the download folder...
-let downloadDir = `public/download`;
-if (!fs.existsSync(downloadDir)){
-	fs.mkdirSync(downloadDir);
-}
-
 // For each filename, create a ics file.
 for (language of i18n.locales) {
 	// Create the folder in public...
-	let dir = `public/download/${language}`;
+	let dir = `./static/${language}`;
 	if (language != "en" && !fs.existsSync(dir)){
 		fs.mkdirSync(dir);
 	}
@@ -245,11 +238,7 @@ for (language of i18n.locales) {
 					// TODO: Handle an error...
 					console.log("Calendar Error: " + JSON.stringify(error));
 				} else {
-					
-					let folder = (language === "en") ? `~/static/` : `~/static/${language}/`;
-					
-					// Check if the folder exists currently or not.
-					!fs.existsSync(folder) && fs.mkdirSync(folder, { recursive: true })
+					let folder = (language === "en") ? `./static/` : `./static/${language}/`;
 					
 					let path = `${folder}${siteKey}-calendar_${request}.ics`;
 					
