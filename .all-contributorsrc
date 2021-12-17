@@ -302,6 +302,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "mdawidowski",
+      "name": "Marcin Dawidowski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9027933?v=4",
+      "profile": "https://github.com/mdawidowski",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
