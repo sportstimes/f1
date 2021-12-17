@@ -2,6 +2,10 @@ const fs = require("fs");
 const ics = require("ics");
 const dayjs = require("dayjs");
 
+const {
+  GITHUB_WORKSPACE
+} = process.env;
+
 // const siteKey = process.env.NEXT_PUBLIC_SITE_KEY;
 // const year = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
