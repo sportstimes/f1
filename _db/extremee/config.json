@@ -19,6 +19,5 @@
 		"semifinal": 90,
 		"race": 120
 	},
-	"supportsEmailReminders": false,
-	"notice": "Dates & Times are TBC. Calendar will be updated once details are confirmed."
+	"supportsEmailReminders": false
 }

@@ -1,3 +1,5 @@
+@tailwind components;
+
 @font-face {
 	font-family: "LeagueSpartan";
 	src: url("/fonts/leaguespartan-bold-webfont.woff2") format("woff2"),
@@ -64,7 +66,7 @@ body {
 	}
 
 	.btn {
-		@apply items-center justify-center px-4 py-2 space-x-2 text-sm font-medium transition-shadow bg-green-900 rounded shadow-sm hover:bg-green-800 cursor-pointer focus:outline-none;
+		@apply items-center justify-center px-4 py-2 space-x-2 text-sm font-medium transition-shadow bg-mid-green rounded shadow-sm hover:bg-light-green cursor-pointer focus:outline-none;
 	}
 	
 	.collapse-btn {
