@@ -249,7 +249,7 @@ function generateCalendars(siteKey){
 }
 
 function generateAllCalendars() {
-	console.log("Generating Calendars for all sites');
+	console.log('Generating Calendars for all sites');
 	
 	// Generate and deploy all calendars.
 	let rawConfig = fs.readFileSync(`_db/sites.json`);
