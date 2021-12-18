@@ -248,18 +248,7 @@ function generateCalendars(siteKey){
 	}
 }
 
-console.log('process.argv ' + process.argv);
-
-if(process.argv.length > 2){
-	var args = process.argv.slice(2);
-	
-	// Generate and deploy specific calendar
-	let site = args[0];
-	
-	console.log("Generating Calendars for " + site);
-	
-	generateCalendars(site);
-} else {
+function generateAllCalendars() {
 	console.log("Generating Calendars for all sites');
 	
 	// Generate and deploy all calendars.
@@ -272,6 +261,24 @@ if(process.argv.length > 2){
 		
 		generateCalendars(site.siteKey);
 	}
+}
+
+console.log('process.argv ' + process.argv);
+
+if(process.argv.length > 2){
+	var args = process.argv.slice(2);
+	
+	// Generate and deploy specific calendar
+	let site = args[0];
+	
+	if(site === "all"){
+		generateAllCalendars();
+	} else {
+		console.log("Generating Calendars for " + site);
+		generateCalendars(site);
+	}
+} else {
+	generateAllCalendars();
 }
 
 
