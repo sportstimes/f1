@@ -54,7 +54,7 @@ jobs:
           
       - name: Generate Specific Calendars
         run: |
-          sudo node build/generate-calendars.js ${github.event.inputs.site}
+          sudo node build/generate-calendars.js ${{github.event.inputs.site}}
 
       - name: Publish to Cloudflare Workers Sites
         run: |
