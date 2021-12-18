@@ -250,7 +250,7 @@ function generateCalendars(siteKey){
 
 console.log('process.argv ' + process.argv);
 
-if(process.argv > 2){
+if(process.argv.length > 2){
 	var args = process.argv.slice(2);
 	
 	// Generate and deploy specific calendar
@@ -260,6 +260,8 @@ if(process.argv > 2){
 	
 	generateCalendars(site);
 } else {
+	console.log("Generating Calendars for all sites');
+	
 	// Generate and deploy all calendars.
 	let rawConfig = fs.readFileSync(`_db/sites.json`);
 	let config = JSON.parse(rawConfig);
