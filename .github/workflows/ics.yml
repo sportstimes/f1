@@ -4,17 +4,30 @@ name: Deploy ICS Files to Cloudflare Workers
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   # Only triggers if _db is modified within the Push or PR.
-  push:
-    branches: [ main ]
-    # paths:
-    #   - '_db/**'
-  pull_request:
-    branches: [ main ]
-    # paths:
-    #   - '_db/**'
-
-  # Allows you to run this workflow manually from the Actions tab
+  # push:
+  #   branches: [ main ]
+  #   paths:
+  #     - '_db/**'
+  # pull_request:
+  #   branches: [ main ]
+  #   paths:
+  #     - '_db/**'
+      
   workflow_dispatch:
+  inputs:
+    site:
+      type: choice
+      description: Which site?
+      options:
+      - all
+      - f1
+      - f2
+      - f3
+      - fe
+      - indycar
+      - motogp
+      - wseries
+      - extremee
 
 jobs:
   build:
@@ -45,9 +58,14 @@ jobs:
           npm i ics
           npm i dayjs
 
-      - name: Build Files
-        run: |
-          sudo node build/generate-calendars.js
+      # - name: Generate All Calendars
+      #   if: !github.event.inputs.site
+      #   run: |
+      #     sudo node build/generate-calendars.js
+          
+      - name: Generate Specific Calendars
+          run: |
+            sudo node build/generate-calendars.js ${github.event.inputs.site}
 
       - name: Publish to Cloudflare Workers Sites
         run: |

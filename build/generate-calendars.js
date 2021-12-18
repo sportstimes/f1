@@ -248,17 +248,18 @@ function generateCalendars(siteKey){
 	}
 }
 
+console.log('process.argv ' + process.argv);
 
-
-// var args = process.argv.slice(2);
-// if(args){
-// 	// Generate and deploy specific calendar
-// 	let site = args[0];
-// 	
-// 	console.log("Generating Calendars for " + site);
-// 	
-// 	generateCalendars(site);
-// } else {
+if(process.argv > 2){
+	var args = process.argv.slice(2);
+	
+	// Generate and deploy specific calendar
+	let site = args[0];
+	
+	console.log("Generating Calendars for " + site);
+	
+	generateCalendars(site);
+} else {
 	// Generate and deploy all calendars.
 	let rawConfig = fs.readFileSync(`_db/sites.json`);
 	let config = JSON.parse(rawConfig);
@@ -269,6 +270,6 @@ function generateCalendars(siteKey){
 		
 		generateCalendars(site.siteKey);
 	}
-// }
+}
 
 
