@@ -30,8 +30,8 @@ function generateCalendars(siteKey){
 	let config = JSON.parse(rawConfig);
 	
 	// Determine year to generate based off config...
-	let latestYear = config.availableYears.at(-1);
-	let rawdata = fs.readFileSync(`_db/${siteKey}/${latestYear}.json`);
+	let year = config.availableYears.at(-1);
+	let rawdata = fs.readFileSync(`_db/${siteKey}/${year}.json`);
 	let data = JSON.parse(rawdata);
 	
 	// Calendar Options
