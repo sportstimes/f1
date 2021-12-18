@@ -2,17 +2,6 @@ name: Deploy ICS Files to Cloudflare Workers
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  # Only triggers if _db is modified within the Push or PR.
-  # push:
-  #   branches: [ main ]
-  #   paths:
-  #     - '_db/**'
-  # pull_request:
-  #   branches: [ main ]
-  #   paths:
-  #     - '_db/**'
-      
   workflow_dispatch:
     inputs:
       site:
