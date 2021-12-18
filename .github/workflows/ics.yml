@@ -14,20 +14,20 @@ on:
   #     - '_db/**'
       
   workflow_dispatch:
-  inputs:
-    site:
-      type: choice
-      description: Which site?
-      options:
-      - all
-      - f1
-      - f2
-      - f3
-      - fe
-      - indycar
-      - motogp
-      - wseries
-      - extremee
+    inputs:
+      site:
+        type: choice
+        description: Which site?
+        options:
+        - all
+        - f1
+        - f2
+        - f3
+        - fe
+        - indycar
+        - motogp
+        - wseries
+        - extremee
 
 jobs:
   build:
