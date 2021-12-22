@@ -49,38 +49,19 @@ module.exports = (phase) => {
       if(process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"){
         return [
             {
-              source: "/generate",
+              source: "/*",
               destination: "/maintenance",
               permanent: false,
-            },
-            {
-              source: "/timezones",
-              destination: "/maintenance",
-              permanent: false,
-            },
-            {
-              source: "/timezone/:slug*",
-              destination: "/maintenance",
-              permanent: false,
-            },
-            {
-              source: "/years",
-              destination: "/maintenance",
-              permanent: false,
-            },
-            {
-              source: "/year/:slug*",
-              destination: "/maintenance",
-              permanent: false,
-            },
-            {
-              source: "/subscribe",
-              destination: "/maintenance",
-              permanent: false,
-            },
+            }
         ]
       } else {
-        return [];
+        return [
+          {
+            source: "/download/:file*",
+            destination: "https://static.motorsportcalendars.com/:file*",
+            permanent: true,
+          }
+        ];
       }
     }
   }))
