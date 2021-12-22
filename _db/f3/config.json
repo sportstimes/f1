@@ -1,6 +1,7 @@
 {
 	"siteKey": "f3",
 	"url": "f3calendar.com",
+	"calendarCDN": "static.motorsportcalendars.com",
 	"availableYears": [2021],
 	"sessions": ["practice", "qualifying", "race1", "race2", "race3"],
 	"featuredSessions": ["race1", "race2", "race3"],
