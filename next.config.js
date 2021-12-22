@@ -15,11 +15,6 @@ module.exports = (phase) => {
   // Move _public/:site_key to public
   require('./build/public-assets');
 
-  // Generate the ICS files at build time.
-  if (isProd || isStaging) {
-    require('./build/generate-calendars');
-  }
-
   return withPWA(nextTranslate({
     async headers() {
       return [
