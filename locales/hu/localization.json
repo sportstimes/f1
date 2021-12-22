@@ -73,6 +73,7 @@
         "calendar": "Futam időpontok hozzáadása a saját Naptárhoz",
         "email": "E-mail emlékeztetők kérése",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Időpontok mutatása ebben az időzónában:",
             "pick": "Időzóna választása..."
         },
@@ -105,8 +106,7 @@
         "reminderContinued": "perccel minden esemény előtt a naptáradban.",
         "button": "Naptár kérése",
         "buttonSubmitted": "Elküldve",
-        "nonOptionsSelected": "Kérlek válassz legalább egy eseményt a naptáradhoz.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+        "nonOptionsSelected": "Kérlek válassz legalább egy eseményt a naptáradhoz."
     },
     "download": {
         "title": "Válassz naptár típust",

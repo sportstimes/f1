@@ -73,6 +73,7 @@
         "calendar": "Dodajte ove datume utrka na vaš kalendar",
         "email": "Primi e-mail podsjetnik",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Pokazujemo vremensku zonu za",
             "pick": "Odaberite vremensku zonu..."
         },
@@ -105,8 +106,7 @@
         "reminderContinued": "minuta prije početka svake sesije u vašem kalendaru.",
         "button": "Preuzmi kalendar",
         "buttonSubmitted": "Ispunjeno",
-        "nonOptionsSelected": "Molimo vas da odaberete najmanje jednu sesiju za vaš kalendar.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+        "nonOptionsSelected": "Molimo vas da odaberete najmanje jednu sesiju za vaš kalendar."
     },
     "download": {
         "title": "Odaberite vrstu kalendara",

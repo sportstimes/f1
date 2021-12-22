@@ -73,6 +73,7 @@
 		"calendar": "Add race dates & times to your Calendar",
 		"email": "Receive email reminders",
 		"timezonePicker": {
+            "detect": "Detect",
 			"showing": "Showing times for",
 			"pick": "Pick a timezone..."
 		},
@@ -105,8 +106,7 @@
 		"reminderContinued": "minutes before each event in your season calendar.",
 		"button": "Get Calendar",
 		"buttonSubmitted": "Submitted",
-		"nonOptionsSelected": "Please select at least one session for your calendar.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+		"nonOptionsSelected": "Please select at least one session for your calendar."
 	},
 	"download": {
 		"title": "Select Calendar Type",

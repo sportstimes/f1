@@ -73,6 +73,7 @@
         "calendar": "Füge diese Renndaten - und Zeiten deinem Kalender hinzu",
         "email": "Erhalte Erinnerungen per E-Mail",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Zeige die Zeiten für",
             "pick": "Wähle eine Zeitzone..."
         },
@@ -105,8 +106,7 @@
         "reminderContinued": "Minuten vor einem Event in deinem Saisonkalender.",
         "button": "Kalender beziehen",
         "buttonSubmitted": "Bestätigen",
-        "nonOptionsSelected": "Bitte wähle mindestens eine Session für deinen Kalender aus.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+        "nonOptionsSelected": "Bitte wähle mindestens eine Session für deinen Kalender aus."
     },
     "download": {
         "title": "Wähle den Kalendertyp",

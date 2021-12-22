@@ -73,6 +73,7 @@
         "calendar": "Ajouter ces dates et horaires de Grand Prix à votre calendrier.",
         "email": "Recevoir des e-mails de rappel",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Montrer les horaires pour",
             "pick": "Choisissez un fuseau horaire..."
         },
@@ -105,8 +106,7 @@
         "reminderContinued": "minutes avant chaque évènement de votre calendrier de la saison.",
         "button": "Obtenir le calendrier",
         "buttonSubmitted": "Envoyé",
-        "nonOptionsSelected": "Veuillez sélectionner au moins une séance pour votre calendrier.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+        "nonOptionsSelected": "Veuillez sélectionner au moins une séance pour votre calendrier."
     },
     "download": {
         "title": "Selectionnez le type de calendrier",

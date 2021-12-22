@@ -73,6 +73,7 @@
         "calendar": "Voeg deze race datums en starttijden toe aan je kalender",
         "email": "Ontvang herinneringen via email",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Starttijden voor",
             "pick": "Kies een tijdzone..."
         },
@@ -105,8 +106,7 @@
         "reminderContinued": "enkele minuten voor elk evenement in je seizoenskalender.",
         "button": "Haal de kalender op",
         "buttonSubmitted": "Ingediend",
-        "nonOptionsSelected": "Gelieve minstens één sessie te selecteren voor je kalender.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+        "nonOptionsSelected": "Gelieve minstens één sessie te selecteren voor je kalender."
     },
     "download": {
         "title": "Selecteer het type kalender",

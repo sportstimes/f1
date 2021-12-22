@@ -73,6 +73,7 @@
         "calendar": "Adicione essas datas e horários da corrida ao seu Calendário",
         "email": "Receba avisos por e-mail",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Mostrando horários para",
             "pick": "Escolha um fuso horário..."
         },
@@ -105,8 +106,7 @@
         "reminderContinued": "minutos andes de cada evento em seu caledário da temporada.",
         "button": "Obter Calendário",
         "buttonSubmitted": "Submetido",
-        "nonOptionsSelected": "Selecione pelo menos uma temporada para o seu calendário.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+        "nonOptionsSelected": "Selecione pelo menos uma temporada para o seu calendário."
     },
     "download": {
         "title": "Selecione Tipo do Calendário",
