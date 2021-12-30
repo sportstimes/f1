@@ -273,6 +273,9 @@ if(process.argv.length > 2){
 	
 	if(site === "all"){
 		generateAllCalendars();
+	} else if(site === "build"){
+		console.log("Generating Calendars for " + process.env.NEXT_PUBLIC_SITE_KEY);
+		generateCalendars(process.env.NEXT_PUBLIC_SITE_KEY);
 	} else {
 		console.log("Generating Calendars for " + site);
 		generateCalendars(site);
