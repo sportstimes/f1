@@ -97,6 +97,11 @@ function generateCalendars(siteKey){
 	for (language of i18n.locales) {
 		// Create the folder in public...
 		let dir = `./static/${language}`;
+		
+		if(process.env.NEXT_PUBLIC_SITE_KEY) {
+			dir = (language === "en") ? `public/download/` : `public/download/${language}/`;
+		}
+		
 		if (language != "en" && !fs.existsSync(dir)){
 			fs.mkdirSync(dir);
 		}
