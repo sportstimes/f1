@@ -92,6 +92,12 @@ function generateCalendars(siteKey){
 		}
 	}
 	
+	if(process.env.NEXT_PUBLIC_SITE_KEY) {
+		let downloadDir = `public/download`;
+		if (!fs.existsSync(downloadDir)){
+			fs.mkdirSync(downloadDir);
+		}
+	}
 	
 	// For each filename, create a ics file.
 	for (language of i18n.locales) {
@@ -99,7 +105,7 @@ function generateCalendars(siteKey){
 		let dir = `./static/${language}`;
 		
 		if(process.env.NEXT_PUBLIC_SITE_KEY) {
-			dir = (language === "en") ? `public/download/` : `public/download/${language}/`;
+			dir = `public/download/${language}`;
 		}
 		
 		if (language != "en" && !fs.existsSync(dir)){
