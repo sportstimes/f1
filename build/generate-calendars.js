@@ -234,6 +234,10 @@ function generateCalendars(siteKey){
 					} else {
 						let folder = (language === "en") ? `./static/` : `./static/${language}/`;
 						
+						if(process.env.NEXT_PUBLIC_SITE_KEY) {
+							folder = (language === "en") ? `public/download/` : `public/download/${language}/`;
+						}
+						
 						let path = `${folder}${siteKey}-calendar_${request}.ics`;
 						
 						console.log("Writing Calendar to " + path);
