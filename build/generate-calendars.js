@@ -30,7 +30,7 @@ function generateCalendars(siteKey){
 	let config = JSON.parse(rawConfig);
 	
 	// Determine year to generate based off config...
-	let year = config.availableYears.at(-1);
+	let year = config.availableYears.slice(-1);
 	let rawdata = fs.readFileSync(`_db/${siteKey}/${year}.json`);
 	let data = JSON.parse(rawdata);
 	
@@ -92,11 +92,22 @@ function generateCalendars(siteKey){
 		}
 	}
 	
+	if(process.env.NEXT_PUBLIC_SITE_KEY) {
+		let downloadDir = `public/download`;
+		if (!fs.existsSync(downloadDir)){
+			fs.mkdirSync(downloadDir);
+		}
+	}
 	
 	// For each filename, create a ics file.
 	for (language of i18n.locales) {
 		// Create the folder in public...
 		let dir = `./static/${language}`;
+		
+		if(process.env.NEXT_PUBLIC_SITE_KEY) {
+			dir = `public/download/${language}`;
+		}
+		
 		if (language != "en" && !fs.existsSync(dir)){
 			fs.mkdirSync(dir);
 		}
@@ -234,6 +245,10 @@ function generateCalendars(siteKey){
 					} else {
 						let folder = (language === "en") ? `./static/` : `./static/${language}/`;
 						
+						if(process.env.NEXT_PUBLIC_SITE_KEY) {
+							folder = (language === "en") ? `public/download/` : `public/download/${language}/`;
+						}
+						
 						let path = `${folder}${siteKey}-calendar_${request}.ics`;
 						
 						console.log("Writing Calendar to " + path);
@@ -273,6 +288,9 @@ if(process.argv.length > 2){
 	
 	if(site === "all"){
 		generateAllCalendars();
+	} else if(site === "build"){
+		console.log("Generating Calendars for " + process.env.NEXT_PUBLIC_SITE_KEY);
+		generateCalendars(process.env.NEXT_PUBLIC_SITE_KEY);
 	} else {
 		console.log("Generating Calendars for " + site);
 		generateCalendars(site);
