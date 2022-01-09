@@ -1,8 +1,6 @@
 
 export default async (req, res) => {
 	
-	console.log(req.query.subscriberUUID);
-	
 	if (!req.query.subscriberUUID) {
 		return res.status(400).json({
 			success: false,
@@ -17,50 +15,16 @@ export default async (req, res) => {
 	const token = `${process.env.NEXT_PUBLIC_LISTMONK_USERNAME}:${process.env.NEXT_PUBLIC_LISTMONK_PASSWORD}`;
 	const encodedToken = Buffer.from(token).toString('base64');
 	
-	// Get the subscriber based on the UUID
-	const response = await fetch('https://mailer.f1calendar.com/api/subscribers?query=subscribers.uuid%3D%27'+subscriberUUID+'%27', {
-	  method: 'GET',
+	const body = `l=${process.env.NEXT_PUBLIC_LISTMONK_LIST_UUID}&confirm=true`;
+	
+	const updateResponse = await fetch(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/subscription/optin/${subscriberUUID}`, {
+	  method: 'POST',
 	  headers: {
-		'Content-Type': 'application/json',
+	  	'Content-Type': 'application/x-www-form-urlencoded',
 		Authorization: 'Basic ' + encodedToken
-	  }
-	})
+	  },
+	  body: body
+	});
 	
-	const results = await response.json()
-	
-	if(results.data.results.length != 0){
-		const subscriber = results.data.results[0];
-		
-		var listIDs = [];
-		var lists = subscriber.lists;
-		lists.forEach((list) => {
-			listIDs.push(list.id);	
-		});
-		
-		// Update the subscriber with preconfirm_subscriptions set to true
-		let body = {
-			id:subscriber.id,
-			email:subscriber.email,
-			name:subscriber.name,
-			status:subscriber.status,
-			attribs:subscriber.attribs,
-			lists:listIDs,
-			preconfirm_subscriptions: true
-		};
-		
-		console.log("Confirming Subscription");
-		
-		const updateResponse = await fetch('https://mailer.f1calendar.com/api/subscribers/'+subscriber.id, {
-		  method: 'PUT',
-		  headers: {
-			'Content-Type': 'application/json',
-			Authorization: 'Basic ' + encodedToken
-		  },
-		  body: JSON.stringify(body)
-		});
-		
-		return res.status(200).json(updateResponse);
-	} else {
-		return res.status(400).json({success:false});
-	}
+	return res.status(200).json(JSON.stringify(updateResponse));
 }

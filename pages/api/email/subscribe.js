@@ -21,10 +21,10 @@ export default async (req, res) => {
 		name: '',
 		email: email,
 		status: 'enabled',
-		lists: [config.emailReminderListID]
+		lists: [process.env.NEXT_PUBLIC_LISTMONK_LIST_ID]
 	};
 	
-	return axios.post('https://mailer.f1calendar.com/api/subscribers', data, {
+	return axios.post(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/api/subscribers`, data, {
 		headers: {
 			'Content-Type': 'application/json',
 			Authorization: 'Basic ' + encodedToken,

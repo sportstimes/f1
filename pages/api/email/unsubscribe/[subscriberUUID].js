@@ -18,7 +18,7 @@ export default async (req, res) => {
 	const encodedToken = Buffer.from(token).toString('base64');
 	
 	// Get the subscriber based on the UUID
-	const response = await fetch('https://mailer.f1calendar.com/api/subscribers?query=subscribers.uuid%3D%27'+subscriberUUID+'%27', {
+	const response = await fetch(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/api/subscribers?query=subscribers.uuid%3D%27${subscriberUUID}%27`, {
 	  method: 'GET',
 	  headers: {
 		'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ export default async (req, res) => {
 		var listIDs = [];
 		var lists = subscriber.lists;
 		lists.forEach((list) => {
-			if(list.id != config.emailReminderListID){
+			if(list.id != process.env.NEXT_PUBLIC_LISTMONK_LIST_ID){
 				listIDs.push(list.id);
 			}
 		});
@@ -47,7 +47,7 @@ export default async (req, res) => {
 			console.log("Removing entirely...");
 			
 			// Remove the subscriber entirely...
-			const deleteResponse = await fetch('https://mailer.f1calendar.com/api/subscribers/'+subscriber.id, {
+			const deleteResponse = await fetch(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/api/subscribers/${subscriber.id}`, {
 			  method: 'DELETE',
 			  headers: {
 				'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ export default async (req, res) => {
 			
 			console.log("Removing this site");
 			
-			const updateResponse = await fetch('https://mailer.f1calendar.com/api/subscribers/'+subscriber.id, {
+			const updateResponse = await fetch(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/api/subscribers/${subscriber.id}`, {
 			  method: 'PUT',
 			  headers: {
 				'Content-Type': 'application/json',
