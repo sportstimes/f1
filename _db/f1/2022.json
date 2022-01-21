@@ -90,7 +90,7 @@
 			"location": "Catalunya",
 			"latitude": 41.5638,
 			"longitude": 2.2585,
-			"round": 5,
+			"round": 6,
 			"slug": "spanish-grand-prix",
 			"localeKey": "spanish-grand-prix",
 			"tbc":true,
