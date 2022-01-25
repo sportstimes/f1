@@ -6,14 +6,13 @@
 			"latitude": 25.31319,
 			"longitude": 55.512081,
 			"round": 1,
-			"tbc": true,
 			"slug": "diriyah-eprix",
 			"localeKey": "diriyah-eprix",
 			"sessions": {
-				"practice1": "2022-01-27T15:15:00Z",
-				"practice2": "2022-01-28T11:00:00Z",
-				"qualifying": "2022-01-28T13:00:00Z",
-				"race": "2022-01-28T17:03:00Z"
+				"practice1": "2022-01-27T15:00:00Z",
+				"practice2": "2022-01-28T10:30:00Z",
+				"qualifying": "2022-01-28T12:40:00Z",
+				"race": "2022-01-28T17:00:00Z"
 			}
 		},
 		{
@@ -22,13 +21,12 @@
 			"latitude": 25.31319,
 			"longitude": 55.512081,
 			"round": 2,
-			"tbc": true,
 			"slug": "diriyah-eprix",
 			"localeKey": "diriyah-eprix",
 			"sessions": {
-				"practice3": "2022-01-29T10:45:00Z",
-				"qualifying": "2022-01-29T13:00:00Z",
-				"race": "2022-01-29T17:03:00Z"
+				"practice3": "2022-01-29T10:30:00Z",
+				"qualifying": "2022-01-29T12:40:00Z",
+				"race": "2022-01-29T17:00:00Z"
 			}
 		},
 		{
