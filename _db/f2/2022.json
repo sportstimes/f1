@@ -1,0 +1,242 @@
+{
+	"races": [
+		{
+			"name": "Bahrain",
+			"location": "Sakhir",
+			"latitude": 26.037,
+			"longitude": 50.5112,
+			"round": 1,
+			"slug": "bahrain",
+			"localeKey": "bahrain",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-03-18T00:00:00Z",
+				"qualifying": "2022-03-18T00:00:00Z",
+				"sprint1": "2022-03-19T00:00:00Z",
+				"sprint2": "2022-03-19T00:00:00Z",
+				"feature": "2022-03-20T00:00:00Z"
+			}
+		},
+		{
+			"name": "Saudi Arabian",
+			"location": "Jeddah",
+			"latitude": 21.485811,
+			"longitude": 39.192505,
+			"round": 2,
+			"slug": "saudi-arabia",
+			"localeKey": "saudi-arabia",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-03-25T00:00:00Z",
+				"qualifying": "2022-03-25T00:00:00Z",
+				"sprint1": "2022-03-26T00:00:00Z",
+				"sprint2": "2022-03-26T00:00:00Z",
+				"feature": "2022-03-27T00:00:00Z"
+			}
+		},
+		{
+			"name": "Emilia Romagna",
+			"location": "Imola",
+			"latitude": 44.344576,
+			"longitude": 11.713808,
+			"round": 3,
+			"slug": "emilia-romagna",
+			"localeKey": "emilia-romagna",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-04-22T00:00:00Z",
+				"qualifying": "2022-04-22T00:00:00Z",
+				"sprint1": "2022-04-23T00:00:00Z",
+				"sprint2": "2022-04-23T00:00:00Z",
+				"feature": "2022-04-24T00:00:00Z"
+			}
+		},
+		{
+			"name": "Spanish",
+			"location": "Barcelona",
+			"latitude": 41.5638,
+			"longitude": 2.2585,
+			"round": 4,
+			"slug": "spanish",
+			"localeKey": "spanish",
+			"tbc":true,
+			"sessions": {
+				"fp1": "2022-05-20T00:00:00Z",
+				"fp2": "2022-05-20T00:00:00Z",
+				"fp3": "2022-05-21T00:00:00Z",
+				"qualifying": "2022-05-21T00:00:00Z",
+				"gp": "2022-05-22T00:00:00Z"
+			}
+		},
+		{
+			"name": "Monaco",
+			"location": "Monte Carlo",
+			"latitude": 43.7338,
+			"longitude": 7.4215,
+			"round": 5,
+			"slug": "monaco",
+			"localeKey": "monaco",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-05-27T00:00:00Z",
+				"qualifying": "2022-05-27T00:00:00Z",
+				"sprint1": "2022-05-28T00:00:00Z",
+				"sprint2": "2022-05-29T00:00:00Z",
+				"feature": "2022-05-29T00:00:00Z"
+			}
+		},
+		{
+			"name": "Azerbaijan",
+			"location": "Baku",
+			"latitude": 40.3699,
+			"longitude": 49.8433,
+			"round": 6,
+			"slug": "azerbaijan",
+			"localeKey": "azerbaijan",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-06-10T00:00:00Z",
+				"qualifying": "2022-06-10T00:00:00Z",
+				"sprint1": "2022-06-11T00:00:00Z",
+				"sprint2": "2022-06-11T00:00:00Z",
+				"feature": "2022-06-12T00:00:00Z"
+			}
+		},
+		{
+			"name": "British",
+			"location": "Silverstone",
+			"latitude": 52.0706,
+			"longitude": -1.0174,
+			"round": 7,
+			"slug": "british",
+			"localeKey": "british",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-07-01T00:00:00Z",
+				"qualifying": "2022-07-01T00:00:00Z",
+				"sprint1": "2022-07-02T00:00:00Z",
+				"sprint2": "2022-07-02T00:00:00Z",
+				"feature": "2022-07-03T00:00:00Z"
+			}
+		},
+		{
+			"name": "Austrian",
+			"location": "Spielberg",
+			"latitude": 47.2225,
+			"longitude": 14.7607,
+			"round": 8,
+			"slug": "austrian",
+			"localeKey": "austrian",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-07-08T00:00:00Z",
+				"qualifying": "2022-07-08T00:00:00Z",
+				"sprint1": "2022-07-09T00:00:00Z",
+				"sprint2": "2022-07-09T00:00:00Z",
+				"feature": "2022-07-10T00:00:00Z"
+			}
+		},
+		{
+			"name": "Hungarian",
+			"location": "Budapest",
+			"latitude": 47.583,
+			"longitude": 19.2526,
+			"round": 9,
+			"slug": "hungarian",
+			"localeKey": "hungarian",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-07-29T00:00:00Z",
+				"qualifying": "2022-07-29T00:00:00Z",
+				"sprint1": "2022-07-30T00:00:00Z",
+				"sprint2": "2022-07-30T00:00:00Z",
+				"feature": "2022-07-31T00:00:00Z"
+			}
+		},
+		{
+			"name": "Belgian",
+			"location": "Spa-Francorchamps",
+			"latitude": 50.444,
+			"longitude": 5.9687,
+			"round": 10,
+			"slug": "belgian",
+			"localeKey": "belgian",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-08-26T00:00:00Z",
+				"qualifying": "2022-08-26T00:00:00Z",
+				"sprint1": "2022-08-27T00:00:00Z",
+				"sprint2": "2022-08-27T00:00:00Z",
+				"feature": "2022-08-28T00:00:00Z"
+			}
+		},
+		{
+			"name": "Dutch",
+			"location": "Zandvoort",
+			"latitude": 52.388408,
+			"longitude": 4.547122,
+			"round": 11,
+			"slug": "dutch",
+			"localeKey": "dutch",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-09-02T00:00:00Z",
+				"qualifying": "2022-09-02T00:00:00Z",
+				"sprint1": "2022-09-03T00:00:00Z",
+				"sprint2": "2022-09-03T00:00:00Z",
+				"feature": "2022-09-04T00:00:00Z"
+			}
+		},
+		{
+			"name": "Italian",
+			"location": "Monza",
+			"latitude": 45.6169,
+			"longitude": 9.2825,
+			"round": 12,
+			"slug": "italian",
+			"localeKey": "italian",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-09-09T00:00:00Z",
+				"qualifying": "2022-09-09T00:00:00Z",
+				"sprint1": "2022-09-10T00:00:00Z",
+				"sprint2": "2022-09-10T00:00:00Z",
+				"feature": "2022-09-11T00:00:00Z"
+			}
+		},
+		{
+			"name": "Russian",
+			"location": "Sochi",
+			"latitude": 43.6203,
+			"longitude": 39.712,
+			"round": 13,
+			"slug": "russian",
+			"localeKey": "russian",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-09-23T00:00:00Z",
+				"qualifying": "2022-09-23T00:00:00Z",
+				"sprint1": "2022-09-24T00:00:00Z",
+				"sprint2": "2022-09-24T00:00:00Z",
+				"feature": "2022-09-25T00:00:00Z"
+			}
+		},
+		{
+			"name": "Abu Dhabi",
+			"location": "Yas Marina",
+			"latitude": 24.4821,
+			"longitude": 54.3482,
+			"round": 14,
+			"slug": "abu-dhabi",
+			"localeKey": "abu-dhabi",
+			"tbc":true,
+			"sessions": {
+				"practice": "2022-11-18T00:00:00Z",
+				"qualifying": "2022-11-18T00:00:00Z",
+				"sprint1": "2022-11-19T00:00:00Z",
+				"sprint2": "2022-11-19T00:00:00Z",
+				"feature": "2022-11-20T00:00:00Z"
+			}
+		}
+	]
+}
