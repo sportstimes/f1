@@ -1,0 +1,220 @@
+{
+    "date": "Dată",
+    "time": "Oră",
+    "badges": {
+        "tbc": "AFC",
+        "tbc_title": "A fi confirmat",
+        "tickets": "Bilete",
+        "canceled": "Anulat",
+        "next": "URMĂTOR"
+    },
+    "schedule": {
+        "fp1": "Antrenament liber 1",
+        "fp2": "Antrenament liber 2",
+        "fp3": "Antrenament liber 3",
+        "shakedown": "Probe",
+        "practice1": "Antrenament 1",
+        "practice2": "Antrenament 2",
+        "practice3": "Antrenament 3",
+        "practice": "Antrenament",
+        "qualifying": "Calificări",
+        "qualifying1": "Calificări 1",
+        "qualifying2": "Calificări 2",
+        "sprintQualifying": "Calificare Sprint",
+        "semifinal": "Semifinală",
+        "warmup": "Încălzire",
+        "race": "Cursă",
+        "race1": "Cursa 1",
+        "race2": "Cursa 2",
+        "race3": "Cursa 3",
+        "gp": "Marele Premiu",
+        "sprint1": "Sprint 1",
+        "sprint2": "Sprint 2",
+        "feature": "Posibilitate"
+    },
+    "races": {
+        "austrian-grand-prix": "Marele Premiu al Austriei",
+        "steiermark-grand-prix": "Marele Premiu Steiermark (al Austriei)",
+        "hungarian-grand-prix": "Marele Premiu al Ungariei",
+        "british-grand-prix": "Marele Premiu al Marii Britanii",
+        "anniversary-british-grand-prix": "Marele Premiu al Aniversării de 70 de ani (al Marii Britanii)",
+        "spanish-grand-prix": "Marele Premiu al Spaniei",
+        "belgian-grand-prix": "Marele Premiu al Belgiei",
+        "italian-grand-prix": "Marele Premiu al Italiei",
+        "australian-grand-prix": "Marele Premiu al Australiei",
+        "bahrain-grand-prix": "Marele Premiu al Bahrainului",
+        "vietnamese-grand-prix": "Marele Premiu al Vietnamului",
+        "china-grand-prix": "Marele Premiu al Chinei",
+        "dutch-grand-prix": "Marele Premiu al Olandei",
+        "monaco-grand-prix": "Marele Premiu din Monaco",
+        "azerbaijan-grand-prix": "Marele Premiu al Azerbaijanului",
+        "canadian-grand-prix": "Marele Premiu al Canadei",
+        "french-grand-prix": "Marele Premiu al Franței",
+        "singapore-grand-prix": "Marele Premiu din Singapore",
+        "russian-grand-prix": "Marele Premiu al Rusiei",
+        "japanese-grand-prix": "Marele Premiu al Japoniei",
+        "us-grand-prix": "Marele Premiu al Statelor Unite ale Americii",
+        "mexico-grand-prix": "Marele Premiu al Mexicului",
+        "brazilian-grand-prix": "Marele Premiu al Braziliei",
+        "abu-dhabi-grand-prix": "Marele Premiu din Abu Dhabi",
+        "tuscan-grand-prix": "Marele Premiu al Toscanei",
+        "eifel-grand-prix": "Marele Premiu Eifel",
+        "portuguese-grand-prix": "Marele Premiu al Portugaliei",
+        "emilia-romagna-grand-prix": "Marele Premiu Emilia Romagna",
+        "sakhir-grand-prix": "Marele Premiu Sakhir (al Bahrainului)",
+        "turkish-grand-prix": "Marele Premiu al Turciei",
+        "saudi-arabia-grand-prix": "Marele Premiu al Arabiei Saudite",
+        "qatar-grand-prix": "qatar-marele-premiu",
+        "miami-grand-prix": "miami-marele-premiu"
+    },
+    "options": {
+        "calendar": "Adaugă data și ora curselor în Calendar",
+        "email": "Primește notificare pe email",
+        "timezonePicker": {
+            "showing": "Arată data și ora pentru",
+            "pick": "Selectează fus orar..."
+        },
+        "formatPicker": {
+            "title": "Formatul de Timp",
+            "12hr": "Format 12-ore",
+            "24hr": "Format 24-ore"
+        },
+        "button": "Gata"
+    },
+    "contribute": "Contribuie",
+    "languageSelector": "Selectează Limba",
+    "javascript": "Acest site funcționează cel mai bine cu JavaScript activat.",
+    "footer": {
+        "coffee": "Susține-ne, cumpără-ne o cafea.",
+        "twitter": "Suntem pe Twitter",
+        "github": "Sursă deschisă pe GitHub",
+        "issue": "Ai întâmpinat o problemă? Raportează",
+        "links": {
+            "wereOn": "Suntem pe",
+            "openSourcedOn": "Sursă deschisă pe",
+            "spottedIssue": "Ai întâmpinat o problemă?",
+            "spottedReport": "Raportează"
+        }
+    },
+    "form": {
+        "title": "Generează calendar",
+        "description": "Începe prin a selecta sesiunile pe care vrei să le adaugi în calendarul tău:",
+        "reminder": "Setează un memento",
+        "reminderContinued": "minute înainte de fiecare eveniment din calendarul sezonului tău.",
+        "button": "Obține Calendar",
+        "buttonSubmitted": "Trimis",
+        "nonOptionsSelected": "Selectează cel puțin o sesiune pentru calendarul tău.",
+        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+    },
+    "download": {
+        "title": "Selectează Tipul Calendarului",
+        "webcalTitle": "Pentru Mobil sau Desktop",
+        "webcalDescription": "Calendar care se actualizează automat pentru aplicații precum Outlook și macOS.",
+        "webcalButton": "Obține",
+        "gcalTitle": "Pentru Google Calendar",
+        "gcalDescription": "Pentru a adăuga acest calendar, copiază și lipește acest URL în Google Calendar",
+        "gcalDescriptionLink": "instrucțiuni detaliate",
+        "icsTitle": "Descarcă fișier ICS",
+        "icsDescription": "Calendar care nu se actualizează automat (.ics) pentru aplicații care nu suportă această funcționalitate.",
+        "icsButton": "Descarcă"
+    },
+    "subscribe": {
+        "title": "Abonează-te",
+        "description": "Primește o notificare înaintea fiecărui weekend de cursă.",
+        "label": "Adresă Email",
+        "button": "Abonează-te"
+    },
+    "timezones": {
+        "title": "Selectează fusul orar..."
+    },
+    "years": {
+        "title": "Selectează anul..."
+    },
+    "f1": {
+        "title": "Calendar F1",
+        "subtitle": "Curse, Calificări și Sesiuni de antrenament",
+        "seo": {
+            "title": "Calendar F1 {{year}} - Data și Ora Curselor Formula Unu",
+            "description": "Calendar Formula Unu pentru sezonul {{year}} cu toate marele premii de F1, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
+            "keywords": "F1, formula unu, data și ora curselor, curse, notificări, alerte, marele premiu, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {{year}}"
+        },
+        "footnote": "Formula Unu, Formula 1, F1 și Marele Premiu sunt mărci înregistrate Formula One Licensing BV."
+    },
+    "f2": {
+        "title": "Calendar F2",
+        "subtitle": "Curse, Calificări și Sesiuni de antrenament",
+        "seo": {
+            "title": "Calendar F2 {{year}} - Data și Ora Curselor Formula Doi",
+            "description": "Calendar Formula Doi pentru sezonul {{year}} cu toate marele premii de F2, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
+            "keywords": "substituent"
+        },
+        "footnote": "CAMPIONATUL FIA FORMULA 2, FIA FORMULA 2, FORMULA 2, F2 sunt mărci înregistrate FIA."
+    },
+    "f3": {
+        "title": "Calendar F3",
+        "subtitle": "Curse, Calificări și Sesiuni de antrenament",
+        "seo": {
+            "title": "Calendar F3 {{year}} - Data și Ora Curselor Formula Trei",
+            "description": "Calendar Formula Trei pentru sezonul {{year}} cu toate marele premii de F3, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
+            "keywords": "F3, formula trei, data și ora curselor, curse, notificări, alerte, marele premiu, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {{year}}"
+        },
+        "footnote": "CAMPIONATUL FIA FORMULA 3, FIA FORMULA 3, FORMULA 3, F3 sunt mărci înregistrate FIA."
+    },
+    "fe": {
+        "title": "Calendar Formula E",
+        "subtitle": "Curse, Calificări și Sesiuni de antrenament",
+        "seo": {
+            "title": "Calendar Formula E {{year}} - Data și Ora Curselor Formula E",
+            "description": "Calendar Formula E pentru sezonul {{year}} cu toate e-premiile de Formula E, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
+            "keywords": "FE, formula e, data și ora curselor, curse, notificări, alerte, premiu e, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {{year}}"
+        },
+        "footnote": "Formula-E, CAMPIONATUL FIA FORMULA-E și E-Prix sunt mărci înregistrate FIA."
+    },
+    "indycar": {
+        "title": "Calendar IndyCar",
+        "subtitle": "Curse, Calificări și Sesiuni de antrenament",
+        "seo": {
+            "title": "Calendar IndyCar {{year}} - Data și Ora Curselor",
+            "description": "Calendar IndyCar pentru sezonul {{year}} cu toate cursele de IndyCar, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
+            "keywords": "IndyCar, data și ora curselor, curse, notificări, alerte, calendar, dată, timp de începere, calificări, antrenament, {{year}}"
+        },
+        "footnote": "IndyCar este marcă înregistrată Brickyard Trademarks, Inc"
+    },
+    "motogp": {
+        "title": "Calendar MotoGP",
+        "subtitle": "Curse, Calificări și Sesiuni de antrenament",
+        "seo": {
+            "title": "Calendar MotoGP {{year}} - Data și Ora Curselor",
+            "description": "Calendar MotoGP pentru sezonul {{year}} cu toate cursele de MotoGP, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
+            "keywords": "MotoGP, data și ora curselor, curse, notificări, alerte, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {{year}}"
+        },
+        "footnote": "notă de subsol"
+    },
+    "wseries": {
+        "title": "Calendar Seria W",
+        "subtitle": "Curse, Calificări și Sesiuni de antrenament",
+        "seo": {
+            "title": "Calendar Seria W {{year}} - Data și Ora Curselor",
+            "description": "Calendar Seria W pentru sezonul {{year}} cu toate cursele de Seria W, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
+            "keywords": "seriaw, seria-w, data și ora curselor, curse, notificări, alerte, premiu, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {{year}}"
+        },
+        "footnote": "Calendarul Seriei W nu este afiliat cu Seria W."
+    },
+    "extremee": {
+        "title": "Calendar Extreme E",
+        "subtitle": "Curse, Calificări și Sesiuni de antrenament",
+        "seo": {
+            "title": "Calendar Extreme E {{year}} - Data și Ora Curselor Extreme E",
+            "description": "Calendar Extreme E pentru sezonul {{year}} cu toate xpremiile de Extreme E, antrenamentele &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
+            "keywords": "Extreme E, data și ora curselor, curse, notificări, alerte, premiu x, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {{year}}"
+        },
+        "footnote": "notă de subsol"
+    },
+    "event": "eveniment",
+    "notice": {
+        "text": "text",
+        "link": "link"
+    },
+    "showPreviousRaces": "arataCursaPrecedenta",
+    "hidePreviousRaces": "ascundeCursaPrecedenta"
+}
