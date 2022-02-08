@@ -1,7 +1,7 @@
 {
 	"siteKey": "f3",
 	"url": "f3calendar.com",
-	"availableYears": [2021],
+	"availableYears": [2021, 2022],
 	"sessions": ["practice", "qualifying", "race1", "race2", "race3"],
 	"featuredSessions": ["race1", "race2", "race3"],
 	"collapsedSessions": ["practice", "qualifying", "race1", "race2", "race3"],
