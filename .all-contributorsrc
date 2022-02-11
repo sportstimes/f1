@@ -320,6 +320,24 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "dmartinjs",
+      "name": "David MARTIN",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53537199?v=4",
+      "profile": "https://github.com/dmartinjs",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "a3drian",
+      "name": "Adi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38135936?v=4",
+      "profile": "https://www.linkedin.com/in/a3drian/",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,

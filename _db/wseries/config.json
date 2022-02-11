@@ -1,8 +1,7 @@
 {
 	"siteKey": "wseries",
 	"url": "wseriescalendar.com",
-	"calendarCDN": "static.motorsportcalendars.com",
-	"availableYears": [2021],
+	"availableYears": [2021, 2022],
 	"sessions": ["practice1", "practice2", "qualifying", "race"],
 	"featuredSessions": ["race"],
 	"collapsedSessions": ["practice1", "practice2", "qualifying"],
@@ -18,5 +17,6 @@
 		"qualifying": 30,
 		"race": 30
 	},
-	"supportsEmailReminders": false
+	"supportsEmailReminders": false,
+	"notice": "Races marked with TBC are showing placeholder times. Calendar will be updated as details are confirmed."
 }

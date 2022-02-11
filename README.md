@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-35-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-37-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -73,6 +73,10 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://www.ck12info.org/about/team/"><img src="https://avatars.githubusercontent.com/u/58284608?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sarah Nair</b></sub></a><br /><a href="#translation-sarathcodes" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/mdawidowski"><img src="https://avatars.githubusercontent.com/u/9027933?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marcin Dawidowski</b></sub></a><br /><a href="#translation-mdawidowski" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/Mauricevb"><img src="https://avatars.githubusercontent.com/u/2742292?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Maurice</b></sub></a><br /><a href="#translation-Mauricevb" title="Translation">🌍</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/dmartinjs"><img src="https://avatars.githubusercontent.com/u/53537199?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David MARTIN</b></sub></a><br /><a href="#content-dmartinjs" title="Content">🖋</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/a3drian/"><img src="https://avatars.githubusercontent.com/u/38135936?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adi</b></sub></a><br /><a href="#translation-a3drian" title="Translation">🌍</a></td>
   </tr>
 </table>
 

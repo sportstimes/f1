@@ -17,25 +17,29 @@ export default async (req, res) => {
 	const token = `${process.env.NEXT_PUBLIC_LISTMONK_USERNAME}:${process.env.NEXT_PUBLIC_LISTMONK_PASSWORD}`;
 	const encodedToken = Buffer.from(token).toString('base64');
 	
+	let listID = parseInt(process.env.NEXT_PUBLIC_LISTMONK_LIST_ID);
+	
 	let data = {
-		name: '',
+		name: 'a',
 		email: email,
 		status: 'enabled',
-		lists: [process.env.NEXT_PUBLIC_LISTMONK_LIST_ID]
+		lists: [listID]
 	};
+	
+	console.log(data);
 	
 	return axios.post(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/api/subscribers`, data, {
 		headers: {
-			'Content-Type': 'application/json',
+			'Content-Type':'application/json',
 			Authorization: 'Basic ' + encodedToken,
 		}
 	})
 	.then(async (response) => {
-		console.log(response);
+		console.log('Success: ' + response);
 		return res.json({success:true});
 	})
 	.catch(async function (error) {
-		console.log(error.toJSON());
+		console.log('Error: ' + JSON.stringify(error));
 		return res.status(400).json({success:false});
 	});
 	
