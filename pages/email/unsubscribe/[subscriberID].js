@@ -21,4 +21,4 @@ const Unsubscribe = (props) => {
 	</>);
 };
 
-export default Confirmation;
+export default Unsubscribe;
