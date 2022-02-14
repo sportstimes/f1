@@ -1,8 +1,8 @@
 {
     "date": "日期",
     "time": "时间",
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
+    "showPreviousRaces": "显示过往比赛",
+    "hidePreviousRaces": "隐藏过往比赛",
     "badges": {
         "tbc": "待定",
         "tbc_title": "待确认",
@@ -22,7 +22,7 @@
         "qualifying": "排位赛",
         "qualifying1": "排位赛 1",
         "qualifying2": "排位赛 2",
-        "sprintQualifying": "排位冲刺赛",
+        "sprintQualifying": "冲刺排位赛",
         "semifinal": "Semi Final",
         "warmup": "暖胎圈",
         "race": "正赛",
@@ -66,8 +66,8 @@
         "sakhir-grand-prix": "萨基尔 (巴林) 大奖赛",
         "turkish-grand-prix": "土耳其大奖赛",
         "saudi-arabia-grand-prix": "沙特阿拉伯大奖赛",
-        "qatar-grand-prix" : "Qatar Grand Prix",
-		"miami-grand-prix" : "Miami Grand Prix"
+        "qatar-grand-prix" : "卡塔尔大奖赛",
+	"miami-grand-prix" : "迈阿密大奖赛"
 	},
 	"options": {
         "calendar": "在你的日历App中添加赛程信息",
@@ -100,13 +100,13 @@
     },
     "form": {
         "title": "生成日历",
-        "description": "首先, 选择你在比赛日中所关注的某个赛程",
+        "description": "首先，选择你在比赛日中所关注的某个赛程",
         "reminder": "设置",
         "reminderContinued": "分钟前提醒",
         "button": "确认",
         "buttonSubmitted": "已提交",
-        "nonOptionsSelected": "请至少选择一个赛程信息.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+        "nonOptionsSelected": "请至少选择一个赛程信息",
+        "attention": "2021赛季的三场冲刺排位赛包含在排位赛选项中。如果2022年保留此赛程，我们会添加新的选项。"
     },
     "download": {
         "title": "选择日历的类型",
@@ -115,14 +115,14 @@
         "webcalButton": "获取",
         "gcalTitle": "Google Calendar",
         "gcalDescription": "复制并粘贴到Google Calendar中",
-        "gcalDescriptionLink": "详细指导",
+        "gcalDescriptionLink": "详细指南",
         "icsTitle": "下载ICS文件",
-        "icsDescription": "某些方式（如.ic），无法自动获取更新信息",
+        "icsDescription": "某些方式（如.ics），无法自动获取更新信息",
         "icsButton": "下载"
     },
     "subscribe": {
         "title": "订阅",
-        "description": "在比赛日之前接受邮件提醒服务.",
+        "description": "在比赛日之前接受邮件提醒服务",
         "label": "邮箱地址",
         "button": "确认订阅"
     },
@@ -134,9 +134,9 @@
     },
     "f1": {
         "title": "F1赛程",
-        "subtitle": "正赛，排位赛和练习赛",
+        "subtitle": "正赛、排位赛和练习赛",
         "seo": {
-            "title": "F1赛程 {{year}} - Formula One Race Times and Dates",
+            "title": " {{year}}年F1赛程 - F1比赛日历",
             "description": "Formula One Calendar for {{year}} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
             "keywords": "F1, 一级方程式, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
         },
