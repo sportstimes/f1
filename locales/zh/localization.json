@@ -105,8 +105,8 @@
         "reminderContinued": "分钟前提醒",
         "button": "确认",
         "buttonSubmitted": "已提交",
-        "nonOptionsSelected": "请至少选择一个赛程信息",
-        "attention": "2021赛季的三场冲刺排位赛包含在排位赛选项中。如果2022年保留此赛程，我们会添加新的选项。"
+        "nonOptionsSelected": "请至少选择一个赛程信息.",
+        "attention": "2022赛季的三场冲刺排位赛包含在排位赛选项中。如果2023年保留此赛程，我们会添加新的选项。"
     },
     "download": {
         "title": "选择日历的类型",
