@@ -16,19 +16,6 @@ module.exports = (phase) => {
   require('./build/public-assets');
 
   return withPWA(nextTranslate({
-    async headers() {
-      return [
-        {
-          source: '/download/:all*(ics)',
-          headers: [
-            {
-              key: 'Cache-Control',
-              value: 'public, max-age=21600, must-revalidate',
-            },
-          ],
-        },
-      ]
-    },
     webpack: (cfg) => {
       cfg.module.rules.push(
           {
@@ -46,23 +33,40 @@ module.exports = (phase) => {
       buildExcludes: ['!download/*', '!download/**/*'],
     },
     redirects: async function redirects() {
+      const rules = [];
+      
       if(process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"){
-        return [
+        rules.push(
             {
               source: "/*",
               destination: "/maintenance",
               permanent: false,
             }
-        ]
-      } else {
-        return [
+        );
+      }
+      
+      // Handle 2022 adjustment to separate sprint races out as a separate session.
+      // This allows users who generated a url prior to 2022 to get sprint sessions
+      // Without needing to regenerate the url for the new format.
+      if(process.env.NEXT_PUBLIC_SITE_KEY === "f1"){
+        rules.push(
+            {
+              source: '/download/:prefix*_q_:suffix*',
+              permanent: true,
+              destination: 'https://static.motorsportcalendars.com/:prefix*_sprint_qualifying_:suffix*',
+            }
+        );
+      }
+      
+      rules.push(
           {
             source: "/download/:file*",
             destination: "https://static.motorsportcalendars.com/:file*",
             permanent: true,
           }
-        ];
-      }
+      );
+      
+      return rules; 
     }
   }))
 }
