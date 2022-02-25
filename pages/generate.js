@@ -26,12 +26,6 @@ function Generate(props) {
 
 	var sessions = config.sessions;
 	
-	// F1: Sprint Qualifying Option...
-	// Remove Sprint Qualifying so we retain a single "Qualifying" Option for 2021.
-	// If the format remains in 2022, then show Sprint Qualifying separately allowing
-	// Users to get notified of Sprint Qualifying specifically
-	sessions = sessions.filter(item => item !== "sprintQualifying");
-
 	// Default form values...
 	var defaults = {
 		alarm: false,
@@ -205,12 +199,6 @@ function Generate(props) {
 						<h3 className="text-xl mb-4">{t("localization:form.title")}</h3>
 						<Card>
 							<p className="mb-4">{t("localization:form.description")}</p>
-
-							{config.siteKey == "f1" &&
-								<div className="bg-yellow-200 rounded-md shadow py-4 mb-4 px-4 text-black font-bold mb-8">
-									{t("localization:form.attention")}
-								</div>
-							}
 
 							<form id="download_subscribe" onSubmit={handleOnSubmit}>
 								<fieldset className="mb-6" key="options">
