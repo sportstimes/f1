@@ -20,7 +20,7 @@
         "qualifying": "Calificări",
         "qualifying1": "Calificări 1",
         "qualifying2": "Calificări 2",
-        "sprintQualifying": "Calificare Sprint",
+        "sprint": "Sprint",
         "semifinal": "Semifinală",
         "warmup": "Încălzire",
         "race": "Cursă",
@@ -104,7 +104,7 @@
         "button": "Obține Calendar",
         "buttonSubmitted": "Trimis",
         "nonOptionsSelected": "Selectează cel puțin o sesiune pentru calendarul tău.",
-        "attention": "The three 2021 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2022 we'll introduce a new option."
+        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
     },
     "download": {
         "title": "Selectează Tipul Calendarului",
