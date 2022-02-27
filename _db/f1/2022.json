@@ -266,6 +266,7 @@
 			"round": 17,
 			"slug": "russian-grand-prix",
 			"localeKey": "russian-grand-prix",
+			"canceled": true,
 			"sessions": {
 				"fp1": "2022-09-23T10:00:00Z",
 				"fp2": "2022-09-23T14:00:00Z",
