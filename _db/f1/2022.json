@@ -259,28 +259,11 @@
 			}
 		},
 		{
-			"name": "Russian",
-			"location": "Sochi",
-			"latitude": 43.6203,
-			"longitude": 39.712,
-			"round": 17,
-			"slug": "russian-grand-prix",
-			"localeKey": "russian-grand-prix",
-			"canceled": true,
-			"sessions": {
-				"fp1": "2022-09-23T10:00:00Z",
-				"fp2": "2022-09-23T14:00:00Z",
-				"fp3": "2022-09-24T10:00:00Z",
-				"qualifying": "2022-09-24T13:00:00Z",
-				"gp": "2022-09-25T11:00:00Z"
-			}
-		},
-		{
 			"name": "Singapore",
 			"location": "Singapore",
 			"latitude": 1.2857,
 			"longitude": 103.8575,
-			"round": 18,
+			"round": 17,
 			"slug": "singapore-grand-prix",
 			"localeKey": "singapore-grand-prix",
 			"sessions": {
@@ -296,7 +279,7 @@
 			"location": "Suzuka",
 			"latitude": 35.3689,
 			"longitude": 138.9256,
-			"round": 19,
+			"round": 18,
 			"slug": "japanese-grand-prix",
 			"localeKey": "japanese-grand-prix",
 			"sessions": {
@@ -312,7 +295,7 @@
 			"location": "Austin",
 			"latitude": 30.1328,
 			"longitude": -97.6411,
-			"round": 20,
+			"round": 19,
 			"slug": "us-grand-prix",
 			"localeKey": "us-grand-prix",
 			"sessions": {
@@ -328,7 +311,7 @@
 			"location": "Mexico City",
 			"latitude": 19.4028,
 			"longitude": -99.0986,
-			"round": 21,
+			"round": 20,
 			"slug": "mexican-grand-prix",
 			"localeKey": "mexico-grand-prix",
 			"sessions": {
@@ -344,7 +327,7 @@
 			"location": "Sao Paulo",
 			"latitude": -23.7014,
 			"longitude": -46.6969,
-			"round": 22,
+			"round": 21,
 			"tbc": true,
 			"slug": "brazilian-grand-prix",
 			"localeKey": "brazilian-grand-prix",
@@ -361,7 +344,7 @@
 			"location": "Yas Marina",
 			"latitude": 24.4821,
 			"longitude": 54.3482,
-			"round": 23,
+			"round": 22,
 			"slug": "abu-dhabi-grand-prix",
 			"localeKey": "abu-dhabi-grand-prix",
 			"sessions": {
