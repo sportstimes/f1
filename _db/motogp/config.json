@@ -2,9 +2,9 @@
 	"siteKey": "motogp",
 	"url": "motogpcal.com",
 	"availableYears": [2021, 2022],
-	"sessions": ["fp1", "fp2", "fp3", "fp4", "q1", "q2", "race"],
+	"sessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2", "race"],
 	"featuredSessions": ["race"],
-	"collapsedSessions": ["fp1", "fp2", "fp3", "fp4", "q1", "q2"],
+	"collapsedSessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2"],
 	"sessionMap": {
 		"fp1": "p1",
 		"fp2": "p2",
@@ -23,6 +23,5 @@
 		"q2": 15,
 		"race": 57
 	},
-	"supportsEmailReminders": false,
-	"notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
+	"supportsEmailReminders": false
 }

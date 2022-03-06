@@ -34,6 +34,11 @@
       "name": "IndyCar",
       "url": "https://indycarcalendar.com",
       "siteKey": "indycar"
+    },
+    {
+      "name": "MotoGP",
+      "url": "https://motogpcal.com",
+      "siteKey": "motogp"
     }
   ]
 }
