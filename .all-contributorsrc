@@ -338,6 +338,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "justinnais",
+      "name": "Justin Naismith",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60305417?v=4",
+      "profile": "http://www.nais.dev",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
