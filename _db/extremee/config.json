@@ -1,7 +1,6 @@
 {
 	"siteKey": "extremee",
 	"url": "extremeecalendar.com",
-	"calendarCDN": "static.motorsportcalendars.com",
 	"availableYears": [2021, 2022],
 	"sessions": ["shakedown", "qualifying1", "qualifying2", "semifinal", "race"],
 	"featuredSessions": ["race"],

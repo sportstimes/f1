@@ -87,25 +87,30 @@ function Generate(props) {
 			props: plausibleProps
 		});
 
+		var calendarBaseURL = config.url;
+		if(config.calendarCDN){
+			calendarBaseURL = config.calendarCDN;
+		}
+
 		if (lang != "en") {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${config.calendarCDN}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${config.calendarCDN}/${lang}/${
+				webcalURL: `webcal://${calendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${calendarBaseURL}/${lang}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${config.calendarCDN}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${ccalendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		} else {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${config.calendarCDN}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${config.calendarCDN}/${
+				webcalURL: `webcal://${calendarBaseURL}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${calendarBaseURL}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${config.calendarCDN}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${calendarBaseURL}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		}
 	};
