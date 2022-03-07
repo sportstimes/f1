@@ -16,7 +16,7 @@ module.exports = (phase) => {
   require('./build/public-assets');
   
   // Generate the ICS files at build time.
-  if (isProd || isStaging && (process.env.NEXT_PUBLIC_SITE_KEY != "motogp")) {
+  if ((isProd || isStaging) && (process.env.NEXT_PUBLIC_SITE_KEY != "motogp")) {
     require('./build/generate-calendars');
   }
 
