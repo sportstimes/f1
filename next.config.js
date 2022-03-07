@@ -58,7 +58,7 @@ module.exports = (phase) => {
       //       {
       //         source: '/download/:prefix*_q_:suffix*',
       //         permanent: true,
-      //         destination: 'https://static.motorsportcalendars.com/:prefix*_sprint_qualifying_:suffix*',
+      //         destination: 'https://files.motorsportcalendars.com/:prefix*_sprint_qualifying_:suffix*',
       //       }
       //   );
       // }
@@ -66,7 +66,7 @@ module.exports = (phase) => {
       // rules.push(
       //     {
       //       source: "/download/:file*",
-      //       destination: "https://static.motorsportcalendars.com/:file*",
+      //       destination: "https://files.motorsportcalendars.com/:file*",
       //       permanent: true,
       //     }
       // );
