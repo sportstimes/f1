@@ -3,7 +3,7 @@
 	"url": "motogpcal.com",
 	"calendarCDN": "static.motorsportcalendars.com",
 	"availableYears": [2021, 2022],
-	"sessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2", "race"]
+	"sessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2", "race"],
 	"featuredSessions": ["race"],
 	"collapsedSessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2"],
 	"sessionMap": {
