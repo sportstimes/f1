@@ -14,6 +14,11 @@ module.exports = (phase) => {
 
   // Move _public/:site_key to public
   require('./build/public-assets');
+  
+  // Generate the ICS files at build time.
+  if (isProd || isStaging && (process.env.NEXT_PUBLIC_SITE_KEY != "motogp")) {
+    require('./build/generate-calendars');
+  }
 
   return withPWA(nextTranslate({
     webpack: (cfg) => {
@@ -48,23 +53,23 @@ module.exports = (phase) => {
       // Handle 2022 adjustment to separate sprint races out as a separate session.
       // This allows users who generated a url prior to 2022 to get sprint sessions
       // Without needing to regenerate the url for the new format.
-      if(process.env.NEXT_PUBLIC_SITE_KEY === "f1"){
-        rules.push(
-            {
-              source: '/download/:prefix*_q_:suffix*',
-              permanent: true,
-              destination: 'https://static.motorsportcalendars.com/:prefix*_sprint_qualifying_:suffix*',
-            }
-        );
-      }
-      
-      rules.push(
-          {
-            source: "/download/:file*",
-            destination: "https://static.motorsportcalendars.com/:file*",
-            permanent: true,
-          }
-      );
+      // if(process.env.NEXT_PUBLIC_SITE_KEY === "f1"){
+      //   rules.push(
+      //       {
+      //         source: '/download/:prefix*_q_:suffix*',
+      //         permanent: true,
+      //         destination: 'https://static.motorsportcalendars.com/:prefix*_sprint_qualifying_:suffix*',
+      //       }
+      //   );
+      // }
+      // 
+      // rules.push(
+      //     {
+      //       source: "/download/:file*",
+      //       destination: "https://static.motorsportcalendars.com/:file*",
+      //       permanent: true,
+      //     }
+      // );
       
       return rules; 
     }
