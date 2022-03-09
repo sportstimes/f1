@@ -106,7 +106,7 @@ function Generate(props) {
 				googleURL: `https://${calendarBaseURL}/${lang}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${ccalendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${calendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		} else {
 			setState({
