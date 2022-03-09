@@ -44,7 +44,7 @@ function generateCalendars(siteKey){
 	
 	// Site specific logic...
 	// F1: Remove Sprint Qualifying for 2021.
-	calendarOptions = calendarOptions.filter(item => item !== "sprintQualifying");
+	calendarOptions = calendarOptions.filter(item => item !== "sprint");
 	
 	// Add the alarm suffix.
 	calendarOptions.push("alarm");
@@ -146,7 +146,7 @@ function generateCalendars(siteKey){
 						
 						// F1: Some logic to include Sprint Qualifying Races when "Qualifying" is selected.
 						if(siteKey == "f1"){
-							if(!request.includes(sessionMap[sessionKey]) && !(sessionMap[sessionKey] == "sprintQualifying" && request.includes("q")))  continue;
+							if(!request.includes(sessionMap[sessionKey]) && !(sessionMap[sessionKey] == "sprint" && request.includes("q")))  continue;
 						} else {
 							if(!request.includes(sessionMap[sessionKey])) continue;	
 						}
