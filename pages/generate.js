@@ -93,7 +93,7 @@ function Generate(props) {
 			props: plausibleProps
 		});
 
-		var calendarBaseURL = config.url;
+		var calendarBaseURL = config.url + "/download";
 		if(config.calendarCDN){
 			calendarBaseURL = config.calendarCDN;
 		}
