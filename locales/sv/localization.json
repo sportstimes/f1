@@ -23,7 +23,7 @@
         "qualifying": "Kvalificering",
         "qualifying1": "Kvalificering 1",
         "qualifying2": "Kvalificering 2",
-        "sprintQualifying": "Sprintkvalificering",
+        "sprint": "Sprintkvalificering",
         "semifinal": "Semifinal",
         "warmup": "Uppvärmning",
         "race": "Race",
@@ -74,6 +74,7 @@
         "calendar": "Lägg till racetider och datum till din kalender",
         "email": "Få e-postpåminnelser",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Visar tider för",
             "pick": "Välj en tidszon..."
         },
@@ -106,8 +107,7 @@
         "reminderContinued": "minuter innan varje session i din säsongskalender.",
         "button": "Skapa Kalender",
         "buttonSubmitted": "Inlämnad",
-        "nonOptionsSelected": "Välj minst en session till din kalender.",
-        "attention": "De tre 2022 Sprintkvalificeringarna inkluderas när Kvalificering är vald. Om dessa sessioner blir kvar under 2023 års säsong kommer vi att introducera ett nytt alternativ."
+        "nonOptionsSelected": "Välj minst en session till din kalender."
     },
     "download": {
         "title": "Välj kalendertyp",

@@ -23,7 +23,7 @@
         "qualifying": "Kvalifikacije",
         "qualifying1": "Kvalifikacije 1",
         "qualifying2": "Kvalifikacije 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Dirka",
@@ -74,6 +74,7 @@
         "calendar": "Dodaj te datume in čase dirk v svoj koledar",
         "email": "Prejmi e-mail opomnike",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Prikazujem čase za",
             "pick": "Izberi časovni pas..."
         },
@@ -106,8 +107,7 @@
         "reminderContinued": "minut pred vsakim dogodkom v koledarju.",
         "button": "Prenesi koledar",
         "buttonSubmitted": "Preneseno",
-        "nonOptionsSelected": "Izberi vsaj en dogodek za svoj koledar.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Izberi vsaj en dogodek za svoj koledar."
     },
     "download": {
         "title": "Izberi tip koledarja",

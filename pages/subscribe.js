@@ -1,4 +1,5 @@
 import Layout from "components/Layout/Layout";
+import { useState } from "react";
 import {NextSeo} from "next-seo";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
@@ -24,6 +25,9 @@ function Subscribe() {
 
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
+	const [showSuccess, setShowSuccess] = useState(false);
+	const [showSubmitting, setShowSubmitting] = useState(false);
+
 	if(!config.supportsEmailReminders){
 		return <NextError statusCode={404} />
 	}
@@ -38,12 +42,36 @@ function Subscribe() {
 					<form
 						action="https://f1calendar.us10.list-manage.com/subscribe/post?u=e11245c4d3fecdad90cb66908&amp;id=f7a8a5001f"
 						method="post"
-						id="mc-embedded-subscribe-form"
+						id="subscribe-form"
 						name="mc-embedded-subscribe-form"
 						className="validate"
 						target="_blank"
 						noValidate
-						onSubmit={async e => {
+						style={{ display: showSuccess ? "none":"block" }}
+						onSubmit={async event => {
+							event.preventDefault();
+							
+							if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(event.target.EMAIL.value)){
+								alert("You have entered an invalid email address!")
+								return;
+							}
+							
+							setShowSubmitting(true)
+							
+							const res = await fetch('/api/email/subscribe', {
+							  body: JSON.stringify({
+								email: event.target.EMAIL.value
+							  }),
+							  headers: {
+								'Content-Type': 'application/json'
+							  },
+							  method: 'POST'
+							});
+							
+							const result = await res.json()
+							
+							setShowSuccess(true)
+							
 							plausible("Subscribed to Email Alerts");
 						}}
 					>
@@ -75,8 +103,20 @@ function Subscribe() {
 							name="subscribe"
 							id="mc-embedded-subscribe"
 							className="btn"
+							style={{ display: showSubmitting ? "none":"block" }}
+						/>
+						
+						<input
+							type="submit"
+							value="..."
+							disabled="disabled"
+							name="subscribe"
+							id="mc-embedded-subscribe"
+							className="btn"
+							style={{ display: showSubmitting ? "block":"none" }}
 						/>
 					</form>
+					<p style={{ display: showSuccess ? "block":"none" }}>Success!</p>
 				</Card>
 			</Layout>
 		</>

@@ -1,6 +1,7 @@
 {
 	"siteKey": "motogp",
 	"url": "motogpcal.com",
+	"calendarCDN": "files.motorsportcalendars.com",
 	"availableYears": [2021, 2022],
 	"sessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2", "race"],
 	"featuredSessions": ["race"],
@@ -10,8 +11,8 @@
 		"fp2": "p2",
 		"fp3": "p3",
 		"fp4": "p4",
-		"q1": "q1",
-		"q2": "q2",
+		"qualifying1": "qualifying1",
+		"qualifying2": "qualifying2",
 		"race": "race"
 	},
 	"sessionLengths": {
@@ -19,8 +20,8 @@
 		"fp2": 45,
 		"fp3": 45,
 		"fp4": 30,
-		"q1": 15,
-		"q2": 15,
+		"qualifying1": 15,
+		"qualifying2": 15,
 		"race": 57
 	},
 	"supportsEmailReminders": false

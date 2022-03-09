@@ -23,7 +23,7 @@
         "qualifying": "Кваліфікація",
         "qualifying1": "Кваліфікація 1",
         "qualifying2": "Кваліфікація 2",
-        "sprintQualifying": "Спринтерська гонка",
+        "sprint": "Спринтерська гонка",
         "semifinal": "Півфінал",
         "warmup": "Розминка",
         "race": "Гонка",
@@ -74,6 +74,7 @@
         "calendar": "Додати розклад гонок до календаря",
         "email": "Отримувати нагадування на пошту",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Показано час для",
             "pick": "Виберіть часовий пояс..."
         },
@@ -106,8 +107,7 @@
         "reminderContinued": "хвилин до початку події в Вашому календарі.",
         "button": "Згенерувати календар",
         "buttonSubmitted": "Відправлено",
-        "nonOptionsSelected": "Будь ласка, виберіть хоча б одну сесію, щоб додати до Вашого календаря.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Будь ласка, виберіть хоча б одну сесію, щоб додати до Вашого календаря."
     },
     "download": {
         "title": "Виберіть тип календаря",

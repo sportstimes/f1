@@ -14,26 +14,13 @@ module.exports = (phase) => {
 
   // Move _public/:site_key to public
   require('./build/public-assets');
-
+  
   // Generate the ICS files at build time.
-  if (isProd || isStaging) {
+  if ((isProd || isStaging) && (process.env.NEXT_PUBLIC_SITE_KEY != "motogp")) {
     require('./build/generate-calendars');
   }
 
   return withPWA(nextTranslate({
-    async headers() {
-      return [
-        {
-          source: '/download/:all*(ics)',
-          headers: [
-            {
-              key: 'Cache-Control',
-              value: 'public, max-age=21600, must-revalidate',
-            },
-          ],
-        },
-      ]
-    },
     webpack: (cfg) => {
       cfg.module.rules.push(
           {
@@ -51,42 +38,40 @@ module.exports = (phase) => {
       buildExcludes: ['!download/*', '!download/**/*'],
     },
     redirects: async function redirects() {
+      const rules = [];
+      
       if(process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"){
-        return [
+        rules.push(
             {
-              source: "/generate",
+              source: "/*",
               destination: "/maintenance",
               permanent: false,
-            },
-            {
-              source: "/timezones",
-              destination: "/maintenance",
-              permanent: false,
-            },
-            {
-              source: "/timezone/:slug*",
-              destination: "/maintenance",
-              permanent: false,
-            },
-            {
-              source: "/years",
-              destination: "/maintenance",
-              permanent: false,
-            },
-            {
-              source: "/year/:slug*",
-              destination: "/maintenance",
-              permanent: false,
-            },
-            {
-              source: "/subscribe",
-              destination: "/maintenance",
-              permanent: false,
-            },
-        ]
-      } else {
-        return [];
+            }
+        );
       }
+      
+      // Handle 2022 adjustment to separate sprint races out as a separate session.
+      // This allows users who generated a url prior to 2022 to get sprint sessions
+      // Without needing to regenerate the url for the new format.
+      // if(process.env.NEXT_PUBLIC_SITE_KEY === "f1"){
+      //   rules.push(
+      //       {
+      //         source: '/download/:prefix*_q_:suffix*',
+      //         permanent: true,
+      //         destination: 'https://files.motorsportcalendars.com/:prefix*_sprint_qualifying_:suffix*',
+      //       }
+      //   );
+      // }
+      // 
+      // rules.push(
+      //     {
+      //       source: "/download/:file*",
+      //       destination: "https://files.motorsportcalendars.com/:file*",
+      //       permanent: true,
+      //     }
+      // );
+      
+      return rules; 
     }
   }))
 }
