@@ -23,7 +23,7 @@
         "qualifying": "Kualifikimet",
         "qualifying1": "Kualifikimet 1",
         "qualifying2": "Kualifikimet 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Ngrohje",
         "race": "Gara",
@@ -74,6 +74,7 @@
         "calendar": "Shtoni oraret e këtyre garave në kalendarin tuaj",
         "email": "Prano përkujtime përmes email",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Duke shfaqur oraret për",
             "pick": "Zgjedhni zonën kohore..."
         },
@@ -106,8 +107,7 @@
         "reminderContinued": "minuta para secilit event në kalendarin tuaj me sesione.",
         "button": "Shkarko Kalendarin",
         "buttonSubmitted": "E dërguar",
-        "nonOptionsSelected": "Ju lutem zgjedhni të paktën një sesion për kalendarin tuaj.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Ju lutem zgjedhni të paktën një sesion për kalendarin tuaj."
     },
     "download": {
         "title": "Zgjedhni llojin e kalendarit",

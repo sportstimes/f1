@@ -23,7 +23,7 @@
         "qualifying": "Aika-ajot",
         "qualifying1": "Aika-ajot 1",
         "qualifying2": "Aika-ajot 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Kisa",
@@ -74,6 +74,7 @@
         "calendar": "Lisää osakilpailujen aikataulut kalenteriin",
         "email": "Vastaanota muistutuksia sähköpostiin",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Näytetään aikataulut",
             "pick": "Valitse aikavyöhyke..."
         },
@@ -106,8 +107,7 @@
         "reminderContinued": "minuuttia ennen jokaista tapahtumaa.",
         "button": "Luo kalenteri",
         "buttonSubmitted": "Luotu",
-        "nonOptionsSelected": "Valitse vähintään yksi tapahtuma.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Valitse vähintään yksi tapahtuma."
     },
     "download": {
         "title": "Valitse kalenterityyppi",

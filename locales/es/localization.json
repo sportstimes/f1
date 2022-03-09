@@ -23,7 +23,7 @@
         "qualifying": "Clasificatoria",
         "qualifying1": "Clasificatoria 1",
         "qualifying2": "Clasificatoria 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Carrera",
@@ -74,6 +74,7 @@
         "calendar": "Agregar las fechas y horarios de estas carreras a tu calendario",
         "email": "Reciba recordatorios por correo electrónico",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Mostrando horarios para",
             "pick": "Elige una zona horaria..."
         },
@@ -106,8 +107,7 @@
         "reminderContinued": "minutos antes de cada evento en tu calendario de temporada.",
         "button": "Obtener Calendario",
         "buttonSubmitted": "Entregado",
-        "nonOptionsSelected": "Por favor, selecciona al menos una sesión para tu calendario.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Por favor, selecciona al menos una sesión para tu calendario."
     },
     "download": {
         "title": "Selecciona el tipo de Calendario",

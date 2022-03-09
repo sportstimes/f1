@@ -23,7 +23,7 @@
         "qualifying": "Kwalificatie",
         "qualifying1": "Kwalificatie 1",
         "qualifying2": "Kwalificatie 2",
-        "sprintQualifying": "Sprintkwalificatie",
+        "sprint": "Sprintkwalificatie",
         "semifinal": "Halve finale",
         "warmup": "Formatieronde",
         "race": "Race",
@@ -74,6 +74,7 @@
         "calendar": "Voeg deze race datums en starttijden toe aan je agenda",
         "email": "Ontvang herinneringen via email",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Starttijden voor",
             "pick": "Kies een tijdzone..."
         },
@@ -106,8 +107,7 @@
         "reminderContinued": "enkele minuten voor elk evenement in je seizoensagenda.",
         "button": "Haal de agenda op",
         "buttonSubmitted": "Ingediend",
-        "nonOptionsSelected": "Gelieve minstens één sessie te selecteren voor je agenda.",
-        "attention": "De drie sprintkwalificatie sessies van 2022 zijn inbegrepen wanneer de kwalificatie optie geselecteerd is. Als deze sessies blijven in 2023 zullen we een nieuwe optie introduceren."
+        "nonOptionsSelected": "Gelieve minstens één sessie te selecteren voor je agenda."
     },
     "download": {
         "title": "Selecteer het type agenda",

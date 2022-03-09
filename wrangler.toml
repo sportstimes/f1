@@ -6,4 +6,4 @@ compatibility_date = "2021-12-17"
 
 [env.production]
 name = "calendar-worker-production"
-route = "static.motorsportcalendars.com/*"
+route = "files.motorsportcalendars.com/*"

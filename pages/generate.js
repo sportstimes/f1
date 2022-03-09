@@ -30,7 +30,7 @@ function Generate(props) {
 	// Remove Sprint Qualifying so we retain a single "Qualifying" Option for 2021.
 	// If the format remains in 2022, then show Sprint Qualifying separately allowing
 	// Users to get notified of Sprint Qualifying specifically
-	sessions = sessions.filter(item => item !== "sprintQualifying");
+	sessions = sessions.filter(item => item !== "sprint");
 
 	// Default form values...
 	var defaults = {
@@ -93,25 +93,30 @@ function Generate(props) {
 			props: plausibleProps
 		});
 
+		var calendarBaseURL = config.url + "/download";
+		if(config.calendarCDN){
+			calendarBaseURL = config.calendarCDN;
+		}
+
 		if (lang != "en") {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${config.url}/download/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${config.url}/download/${lang}/${
+				webcalURL: `webcal://${calendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${calendarBaseURL}/${lang}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${config.url}/download/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${ccalendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		} else {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${config.url}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${config.url}/download/${
+				webcalURL: `webcal://${calendarBaseURL}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${calendarBaseURL}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${config.url}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${calendarBaseURL}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		}
 	};
@@ -205,12 +210,6 @@ function Generate(props) {
 						<h3 className="text-xl mb-4">{t("localization:form.title")}</h3>
 						<Card>
 							<p className="mb-4">{t("localization:form.description")}</p>
-
-							{config.siteKey == "f1" &&
-								<div className="bg-yellow-200 rounded-md shadow py-4 mb-4 px-4 text-black font-bold mb-8">
-									{t("localization:form.attention")}
-								</div>
-							}
 
 							<form id="download_subscribe" onSubmit={handleOnSubmit}>
 								<fieldset className="mb-6" key="options">
