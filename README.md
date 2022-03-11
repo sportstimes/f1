@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-38-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-39-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -78,6 +78,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://github.com/dmartinjs"><img src="https://avatars.githubusercontent.com/u/53537199?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David MARTIN</b></sub></a><br /><a href="#content-dmartinjs" title="Content">🖋</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/a3drian/"><img src="https://avatars.githubusercontent.com/u/38135936?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adi</b></sub></a><br /><a href="#translation-a3drian" title="Translation">🌍</a></td>
     <td align="center"><a href="http://www.nais.dev"><img src="https://avatars.githubusercontent.com/u/60305417?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Justin Naismith</b></sub></a><br /><a href="#content-justinnais" title="Content">🖋</a></td>
+    <td align="center"><a href="https://jameslakin.co.uk"><img src="https://avatars.githubusercontent.com/u/7294642?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Lakin</b></sub></a><br /><a href="https://github.com/sportstimes/f1/commits?author=jamesorlakin" title="Code">💻</a></td>
   </tr>
 </table>
 
