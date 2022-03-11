@@ -117,7 +117,8 @@
         "gcalTitle": "Për Google Calendar",
         "gcalDescription": "Për të shtuar këtë kalendar, kopjo dhe vendos këtë URL në Google Calendar",
         "gcalDescriptionLink": "udhëzime më të detajuara",
-        "icsTitle": "Shkarko ICS File",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Shkarko ICS File",
         "icsDescription": "Kalendar që nuk përditësohet (.ics) për aplikacione që nuk ofrojnë përditësim.",
         "icsButton": "Shkarko"
     },

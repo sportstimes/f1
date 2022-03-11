@@ -112,7 +112,7 @@
 	"download": {
 		"title": "Select Calendar Type",
 		"webcalTitle": "For Mobile or Desktop",
-		"webcalDescription": "Automatically updating calendar for apps like Outlook and macOS Calendar.",
+		"webcalDescription": "Automatically updating calendar for apps like Outlook and iOS & macOS Calendar.",
 		"webcalButton": "Get",
 		"gcalTitle": "For Google Calendar",
 		"gcalDescription": "To add this calendar, copy and paste this URL into Google Calendar",

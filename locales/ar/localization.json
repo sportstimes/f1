@@ -117,7 +117,8 @@
         "gcalTitle": "تقويم جوجل",
         "gcalDescription": "قم بنسخ هذا الرابط الي تطبيق تقويم جوجل من أجل الإضافة",
         "gcalDescriptionLink": "التعليمات المفصلة",
-        "icsTitle": "تحميل ملف ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "تحميل ملف ICS",
         "icsDescription": "ملف ICS للتقويمات التي لا تدعم خاصية الاشتراكات",
         "icsButton": "تحميل"
     },
