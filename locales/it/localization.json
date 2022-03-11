@@ -14,6 +14,7 @@
         "fp1": "Prove libere 1",
         "fp2": "Prove libere 2",
         "fp3": "Prove libere 3",
+        "fp4": "Prove libere 4",
         "shakedown": "Shakedown",
         "practice1": "Practice 1",
         "practice2": "Practice 2",
@@ -22,7 +23,7 @@
         "qualifying": "Qualifiche",
         "qualifying1": "Qualifiche 1",
         "qualifying2": "Qualifiche 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Gara",
@@ -73,6 +74,7 @@
         "calendar": "Aggiungi queste date e orari di gara al tuo calendario",
         "email": "Ricevi promemoria via email",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Mostra gli orari per",
             "pick": "Scegli un fuso orario..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "minuti prima di ciascun evento nel tuo calendario della stagione.",
         "button": "Ottieni il calendario",
         "buttonSubmitted": "Inviato",
-        "nonOptionsSelected": "Per piacere scegli almeno una sessione per il tuo calendario.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Per piacere scegli almeno una sessione per il tuo calendario."
     },
     "download": {
         "title": "Scegli il tipo di calendario",
@@ -116,7 +117,8 @@
         "gcalTitle": "Per Google Calendar",
         "gcalDescription": "Per aggiungere questo calendario, copia e incolla questo link in Google Calendar",
         "gcalDescriptionLink": "istruzioni dettagliate",
-        "icsTitle": "Scarica file ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Scarica file ICS",
         "icsDescription": "Calendario non autoaggiornante (.ics) per le applicazioni di calendario che non possono gestire sottoscrizioni autoaggiornanti.",
         "icsButton": "Scarica"
     },

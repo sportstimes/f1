@@ -14,6 +14,7 @@
         "fp1": "1° Treino Livre",
         "fp2": "2° Treino Livre",
         "fp3": "3° Treino Livre",
+        "fp4": "4° Treino Livre",
         "shakedown": "Shakedown",
         "practice1": "Treino 1",
         "practice2": "Treino 2",
@@ -22,7 +23,7 @@
         "qualifying": "Classificação",
         "qualifying1": "Classificação 1",
         "qualifying2": "Classificação 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Corrida",
@@ -73,6 +74,7 @@
         "calendar": "Adicione essas datas e horários da corrida ao seu Calendário",
         "email": "Receba avisos por e-mail",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Mostrando horários para",
             "pick": "Escolha um fuso horário..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "minutos andes de cada evento em seu caledário da temporada.",
         "button": "Obter Calendário",
         "buttonSubmitted": "Submetido",
-        "nonOptionsSelected": "Selecione pelo menos uma temporada para o seu calendário.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Selecione pelo menos uma temporada para o seu calendário."
     },
     "download": {
         "title": "Selecione Tipo do Calendário",
@@ -116,7 +117,8 @@
         "gcalTitle": "Para Google Agenda",
         "gcalDescription": "Para adicionar este calendário, copie e cole este URL no Google Agenda",
         "gcalDescriptionLink": "detailed instructions",
-        "icsTitle": "Baixar arquio ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Baixar arquio ICS",
         "icsDescription": "Calendário sem atualizaçāo (.ics) para calendários que não conseguem lidar com atualizações de assinaturas.",
         "icsButton": "Baixar"
     },

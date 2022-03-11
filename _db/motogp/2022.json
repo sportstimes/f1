@@ -1,0 +1,402 @@
+{
+	"races": [
+		{
+			"name": "Grand Prix of Qatar",
+			"location": "Qatar",
+			"track": "Lusail International Circuit",
+			"round": "1",
+			"sessions": {
+				"fp1": "2022-03-04T10:40:00.000Z",
+				"fp2": "2022-03-04T15:00:00.000Z",
+				"fp3": "2022-03-05T10:15:00.000Z",
+				"fp4": "2022-03-05T14:20:00.000Z",
+				"qualifying1": "2022-03-05T15:00:00.000Z",
+				"qualifying2": "2022-03-05T15:25:00.000Z",
+				"race": "2022-03-06T15:00:00.000Z"
+			},
+			"latitude": 25.4862831,
+			"longitude": 51.4528912,
+			"slug": "grand-prix-of-qatar",
+			"localeKey": "grand-prix-of-qatar"
+		},
+		{
+			"name": "Pertamina Grand Prix of Indonesia",
+			"location": "Indonesia",
+			"track": "Pertamina Mandalika Circuit",
+			"round": "2",
+			"sessions": {
+				"fp1": "2022-03-18T02:50:00.000Z",
+				"fp2": "2022-03-18T07:05:00.000Z",
+				"fp3": "2022-03-19T02:50:00.000Z",
+				"fp4": "2022-03-19T06:25:00.000Z",
+				"qualifying1": "2022-03-19T07:05:00.000Z",
+				"qualifying2": "2022-03-19T07:30:00.000Z",
+				"race": "2022-03-20T07:00:00.000Z"
+			},
+			"latitude": -8.8951582,
+			"longitude": 116.305952,
+			"slug": "pertamina-grand-prix-of-indonesia",
+			"localeKey": "pertamina-grand-prix-of-indonesia"
+		},
+		{
+			"name": "Gran Premio Michelin® de la República Argentina",
+			"location": "Argentina",
+			"track": "Termas de Río Hondo",
+			"round": "3",
+			"sessions": {
+				"fp1": "2022-04-01T13:50:00.000Z",
+				"fp2": "2022-04-01T18:05:00.000Z",
+				"fp3": "2022-04-02T13:50:00.000Z",
+				"fp4": "2022-04-02T17:25:00.000Z",
+				"qualifying1": "2022-04-02T18:05:00.000Z",
+				"qualifying2": "2022-04-02T18:30:00.000Z",
+				"race": "2022-04-03T18:00:00.000Z"
+			},
+			"latitude": -27.4985572,
+			"longitude": -64.8605362,
+			"slug": "gran-premio-michelin®-de-la-república-argentina",
+			"localeKey": "gran-premio-michelin®-de-la-república-argentina"
+		},
+		{
+			"name": "Red Bull Grand Prix of the Americas",
+			"location": "United states",
+			"track": "Circuit Of The Americas",
+			"round": "4",
+			"sessions": {
+				"fp1": "2022-04-08T14:55:00.000Z",
+				"fp2": "2022-04-08T19:10:00.000Z",
+				"fp3": "2022-04-09T14:55:00.000Z",
+				"fp4": "2022-04-09T18:30:00.000Z",
+				"qualifying1": "2022-04-09T19:10:00.000Z",
+				"qualifying2": "2022-04-09T19:35:00.000Z",
+				"race": "2022-04-10T19:00:00.000Z"
+			},
+			"latitude": 30.1345808,
+			"longitude": -97.6358511,
+			"slug": "red-bull-grand-prix-of-the-americas",
+			"localeKey": "red-bull-grand-prix-of-the-americas"
+		},
+		{
+			"name": "Grande Prémio de Portugal",
+			"location": "Portugal",
+			"track": "Autódromo Internacional do Algarve",
+			"round": "5",
+			"sessions": {
+				"fp1": "2022-04-22T08:55:00.000Z",
+				"fp2": "2022-04-22T13:10:00.000Z",
+				"fp3": "2022-04-23T08:55:00.000Z",
+				"fp4": "2022-04-23T12:30:00.000Z",
+				"qualifying1": "2022-04-23T13:10:00.000Z",
+				"qualifying2": "2022-04-23T13:35:00.000Z",
+				"race": "2022-04-24T13:00:00.000Z"
+			},
+			"latitude": 37.2313331,
+			"longitude": -8.6283276,
+			"slug": "grande-prémio-de-portugal",
+			"localeKey": "grande-prémio-de-portugal"
+		},
+		{
+			"name": "Gran Premio Red Bull de España",
+			"location": "Spain",
+			"track": "Circuito de Jerez - Angel Nieto",
+			"round": "6",
+			"sessions": {
+				"fp1": "2022-04-29T07:55:00.000Z",
+				"fp2": "2022-04-29T12:10:00.000Z",
+				"fp3": "2022-04-30T07:55:00.000Z",
+				"fp4": "2022-04-30T11:30:00.000Z",
+				"qualifying1": "2022-04-30T12:10:00.000Z",
+				"qualifying2": "2022-04-30T12:35:00.000Z",
+				"race": "2022-05-01T12:00:00.000Z"
+			},
+			"latitude": 36.709385,
+			"longitude": -6.03374,
+			"slug": "gran-premio-red-bull-de-españa",
+			"localeKey": "gran-premio-red-bull-de-españa"
+		},
+		{
+			"name": "SHARK Grand Prix de France",
+			"location": "France",
+			"track": "Le Mans",
+			"round": "7",
+			"sessions": {
+				"fp1": "2022-05-13T07:55:00.000Z",
+				"fp2": "2022-05-13T12:10:00.000Z",
+				"fp3": "2022-05-14T07:55:00.000Z",
+				"fp4": "2022-05-14T11:30:00.000Z",
+				"qualifying1": "2022-05-14T12:10:00.000Z",
+				"qualifying2": "2022-05-14T12:35:00.000Z",
+				"race": "2022-05-15T12:00:00.000Z"
+			},
+			"latitude": 48.00611000000001,
+			"longitude": 0.199556,
+			"slug": "shark-grand-prix-de-france",
+			"localeKey": "shark-grand-prix-de-france"
+		},
+		{
+			"name": "Gran Premio d’Italia Oakley",
+			"location": "Italy",
+			"track": "Autodromo Internazionale del Mugello",
+			"round": "8",
+			"sessions": {
+				"fp1": "2022-05-27T07:55:00.000Z",
+				"fp2": "2022-05-27T12:10:00.000Z",
+				"fp3": "2022-05-28T07:55:00.000Z",
+				"fp4": "2022-05-28T11:30:00.000Z",
+				"qualifying1": "2022-05-28T12:10:00.000Z",
+				"qualifying2": "2022-05-28T12:35:00.000Z",
+				"race": "2022-05-29T12:00:00.000Z"
+			},
+			"latitude": 43.9960588,
+			"longitude": 11.3710716,
+			"slug": "gran-premio-d’italia-oakley",
+			"localeKey": "gran-premio-d’italia-oakley"
+		},
+		{
+			"name": "Gran Premi Monster Energy de Catalunya",
+			"location": "Spain",
+			"track": "Circuit de Barcelona-Catalunya",
+			"round": "9",
+			"sessions": {
+				"fp1": "2022-06-03T07:55:00.000Z",
+				"fp2": "2022-06-03T12:10:00.000Z",
+				"fp3": "2022-06-04T07:55:00.000Z",
+				"fp4": "2022-06-04T11:30:00.000Z",
+				"qualifying1": "2022-06-04T12:10:00.000Z",
+				"qualifying2": "2022-06-04T12:35:00.000Z",
+				"race": "2022-06-05T12:00:00.000Z"
+			},
+			"latitude": 41.5684837,
+			"longitude": 2.2573012,
+			"slug": "gran-premi-monster-energy-de-catalunya",
+			"localeKey": "gran-premi-monster-energy-de-catalunya"
+		},
+		{
+			"name": "Liqui Moly Motorrad Grand Prix Deutschland",
+			"location": "Germany",
+			"track": "Sachsenring",
+			"round": "10",
+			"sessions": {
+				"fp1": "2022-06-17T07:55:00.000Z",
+				"fp2": "2022-06-17T12:10:00.000Z",
+				"fp3": "2022-06-18T07:55:00.000Z",
+				"fp4": "2022-06-18T11:30:00.000Z",
+				"qualifying1": "2022-06-18T12:10:00.000Z",
+				"qualifying2": "2022-06-18T12:35:00.000Z",
+				"race": "2022-06-19T12:00:00.000Z"
+			},
+			"latitude": 50.7915509,
+			"longitude": 12.6867853,
+			"slug": "liqui-moly-motorrad-grand-prix-deutschland",
+			"localeKey": "liqui-moly-motorrad-grand-prix-deutschland"
+		},
+		{
+			"name": "Motul TT Assen",
+			"location": "Netherlands",
+			"track": "TT Circuit Assen",
+			"round": "11",
+			"sessions": {
+				"fp1": "2022-06-24T07:55:00.000Z",
+				"fp2": "2022-06-24T12:10:00.000Z",
+				"fp3": "2022-06-25T07:55:00.000Z",
+				"fp4": "2022-06-25T11:30:00.000Z",
+				"qualifying1": "2022-06-25T12:10:00.000Z",
+				"qualifying2": "2022-06-25T12:35:00.000Z",
+				"race": "2022-06-26T12:00:00.000Z"
+			},
+			"latitude": 52.9583015,
+			"longitude": 6.522342,
+			"slug": "motul-tt-assen",
+			"localeKey": "motul-tt-assen"
+		},
+		{
+			"name": "Grand Prix of Finland",
+			"location": "Finland",
+			"track": "KymiRing",
+			"round": "12",
+			"sessions": {
+				"fp1": "2022-07-08T07:50:00.000Z",
+				"fp2": "2022-07-08T12:05:00.000Z",
+				"fp3": "2022-07-09T07:50:00.000Z",
+				"fp4": "2022-07-09T11:25:00.000Z",
+				"qualifying1": "2022-07-09T12:05:00.000Z",
+				"qualifying2": "2022-07-09T12:30:00.000Z",
+				"race": "2022-07-10T12:00:00.000Z"
+			},
+			"latitude": 60.88102420000001,
+			"longitude": 26.4849804,
+			"slug": "grand-prix-of-finland",
+			"localeKey": "grand-prix-of-finland"
+		},
+		{
+			"name": "Monster Energy British Grand Prix",
+			"location": "Great britain",
+			"track": "Silverstone Circuit",
+			"round": "13",
+			"sessions": {
+				"fp1": "2022-08-05T08:55:00.000Z",
+				"fp2": "2022-08-05T13:10:00.000Z",
+				"fp3": "2022-08-06T08:55:00.000Z",
+				"fp4": "2022-08-06T12:30:00.000Z",
+				"qualifying1": "2022-08-06T13:10:00.000Z",
+				"qualifying2": "2022-08-06T13:35:00.000Z",
+				"race": "2022-08-07T13:00:00.000Z"
+			},
+			"latitude": 52.0733006,
+			"longitude": -1.0146634,
+			"slug": "monster-energy-british-grand-prix",
+			"localeKey": "monster-energy-british-grand-prix"
+		},
+		{
+			"name": "Motorrad Grand Prix von Österreich",
+			"location": "Austria",
+			"track": "Red Bull Ring - Spielberg",
+			"round": "14",
+			"sessions": {
+				"fp1": "2022-08-19T07:55:00.000Z",
+				"fp2": "2022-08-19T12:10:00.000Z",
+				"fp3": "2022-08-20T07:55:00.000Z",
+				"fp4": "2022-08-20T11:30:00.000Z",
+				"qualifying1": "2022-08-20T12:10:00.000Z",
+				"qualifying2": "2022-08-20T12:35:00.000Z",
+				"race": "2022-08-21T12:00:00.000Z"
+			},
+			"latitude": 47.220181,
+			"longitude": 14.7651864,
+			"slug": "motorrad-grand-prix-von-österreich",
+			"localeKey": "motorrad-grand-prix-von-österreich"
+		},
+		{
+			"name": "Gran Premio di San Marino e della Riviera di Rimini",
+			"location": "Italy",
+			"track": "Misano World Circuit Marco Simoncelli",
+			"round": "15",
+			"sessions": {
+				"fp1": "2022-09-02T07:55:00.000Z",
+				"fp2": "2022-09-02T12:10:00.000Z",
+				"fp3": "2022-09-03T07:55:00.000Z",
+				"fp4": "2022-09-03T11:30:00.000Z",
+				"qualifying1": "2022-09-03T12:10:00.000Z",
+				"qualifying2": "2022-09-03T12:35:00.000Z",
+				"race": "2022-09-04T12:00:00.000Z"
+			},
+			"latitude": 43.961376,
+			"longitude": 12.6859581,
+			"slug": "gran-premio-di-san-marino-e-della-riviera-di-rimini",
+			"localeKey": "gran-premio-di-san-marino-e-della-riviera-di-rimini"
+		},
+		{
+			"name": "Gran Premio de Aragón",
+			"location": "Spain",
+			"track": "MotorLand Aragón",
+			"round": "16",
+			"sessions": {
+				"fp1": "2022-09-16T07:55:00.000Z",
+				"fp2": "2022-09-16T12:10:00.000Z",
+				"fp3": "2022-09-17T07:55:00.000Z",
+				"fp4": "2022-09-17T11:30:00.000Z",
+				"qualifying1": "2022-09-17T12:10:00.000Z",
+				"qualifying2": "2022-09-17T12:35:00.000Z",
+				"race": "2022-09-18T12:00:00.000Z"
+			},
+			"latitude": 41.0803413,
+			"longitude": -0.20437,
+			"slug": "gran-premio-de-aragón",
+			"localeKey": "gran-premio-de-aragón"
+		},
+		{
+			"name": "Motul Grand Prix of Japan",
+			"location": "Japan",
+			"track": "Twin Ring Motegi",
+			"round": "17",
+			"sessions": {
+				"fp1": "2022-09-23T01:50:00.000Z",
+				"fp2": "2022-09-23T06:05:00.000Z",
+				"fp4": "2022-09-24T05:25:00.000Z",
+				"qualifying1": "2022-09-24T06:05:00.000Z",
+				"qualifying2": "2022-09-24T06:30:00.000Z",
+				"race": "2022-09-25T06:00:00.000Z"
+			},
+			"latitude": 36.531954,
+			"longitude": 140.2253966,
+			"slug": "motul-grand-prix-of-japan",
+			"localeKey": "motul-grand-prix-of-japan"
+		},
+		{
+			"name": "Thailand Grand Prix",
+			"location": "Thailand",
+			"track": "Chang International Circuit",
+			"round": "18",
+			"sessions": {
+				"fp1": "2022-09-30T03:50:00.000Z",
+				"fp2": "2022-09-30T08:05:00.000Z",
+				"fp3": "2022-10-01T02:00:00.000Z",
+				"fp4": "2022-10-01T07:25:00.000Z",
+				"qualifying1": "2022-10-01T08:05:00.000Z",
+				"qualifying2": "2022-10-01T08:30:00.000Z",
+				"race": "2022-10-02T08:00:00.000Z"
+			},
+			"latitude": 14.9578931,
+			"longitude": 103.0848277,
+			"slug": "thailand-grand-prix",
+			"localeKey": "thailand-grand-prix"
+		},
+		{
+			"name": "Australian Motorcycle Grand Prix",
+			"location": "Australia",
+			"track": "Phillip Island",
+			"round": "19",
+			"sessions": {
+				"fp1": "2022-10-14T08:55:00.000Z",
+				"fp2": "2022-10-14T13:10:00.000Z",
+				"fp3": "2022-10-15T08:55:00.000Z",
+				"fp4": "2022-10-15T12:30:00.000Z",
+				"qualifying1": "2022-10-15T13:10:00.000Z",
+				"qualifying2": "2022-10-15T13:35:00.000Z",
+				"race": "2022-10-16T13:00:00.000Z"
+			},
+			"latitude": -38.4898703,
+			"longitude": 145.2038278,
+			"slug": "australian-motorcycle-grand-prix",
+			"localeKey": "australian-motorcycle-grand-prix"
+		},
+		{
+			"name": "Malaysia Motorcycle Grand Prix",
+			"location": "Malaysia",
+			"track": "Sepang International Circuit",
+			"round": "20",
+			"sessions": {
+				"fp1": "2022-10-21T02:50:00.000Z",
+				"fp2": "2022-10-21T07:05:00.000Z",
+				"fp3": "2022-10-22T02:50:00.000Z",
+				"fp4": "2022-10-22T06:25:00.000Z",
+				"qualifying1": "2022-10-22T07:05:00.000Z",
+				"qualifying2": "2022-10-22T07:30:00.000Z",
+				"race": "2022-10-23T07:00:00.000Z"
+			},
+			"latitude": 2.7594144,
+			"longitude": 101.7317775,
+			"slug": "malaysia-motorcycle-grand-prix",
+			"localeKey": "malaysia-motorcycle-grand-prix"
+		},
+		{
+			"name": "Gran Premio Motul de la Comunitat Valenciana",
+			"location": "Spain",
+			"track": "Circuit Ricardo Tormo",
+			"round": "21",
+			"sessions": {
+				"fp1": "2022-11-04T08:55:00.000Z",
+				"fp2": "2022-11-04T13:10:00.000Z",
+				"fp3": "2022-11-05T08:55:00.000Z",
+				"fp4": "2022-11-05T12:30:00.000Z",
+				"qualifying1": "2022-11-05T13:10:00.000Z",
+				"qualifying2": "2022-11-05T13:35:00.000Z",
+				"race": "2022-11-06T13:00:00.000Z"
+			},
+			"latitude": 39.4877192,
+			"longitude": -0.6289116,
+			"slug": "gran-premio-motul-de-la-comunitat-valenciana",
+			"localeKey": "gran-premio-motul-de-la-comunitat-valenciana"
+		}
+	]
+}

@@ -14,6 +14,7 @@
         "fp1": "1. vapaat harjoitukset",
         "fp2": "2. vapaat harjoitukset",
         "fp3": "3. vapaat harjoitukset",
+        "fp4": "4. vapaat harjoitukset",
         "shakedown": "Shakedown",
         "practice1": "Practice 1",
         "practice2": "Practice 2",
@@ -22,7 +23,7 @@
         "qualifying": "Aika-ajot",
         "qualifying1": "Aika-ajot 1",
         "qualifying2": "Aika-ajot 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Kisa",
@@ -73,6 +74,7 @@
         "calendar": "Lisää osakilpailujen aikataulut kalenteriin",
         "email": "Vastaanota muistutuksia sähköpostiin",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Näytetään aikataulut",
             "pick": "Valitse aikavyöhyke..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "minuuttia ennen jokaista tapahtumaa.",
         "button": "Luo kalenteri",
         "buttonSubmitted": "Luotu",
-        "nonOptionsSelected": "Valitse vähintään yksi tapahtuma.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Valitse vähintään yksi tapahtuma."
     },
     "download": {
         "title": "Valitse kalenterityyppi",
@@ -116,7 +117,8 @@
         "gcalTitle": "Google-kalenterille",
         "gcalDescription": "Kopioi ja liitä tämä URL Google-kalenteriin",
         "gcalDescriptionLink": "tarkemmat ohjeet",
-        "icsTitle": "Lataa ICS -tiedosto",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Lataa ICS -tiedosto",
         "icsDescription": "Ei-päivittyvä kalenteri (.ics) sovelluksille, joissa ei ole automaattista päivitystä.",
         "icsButton": "Lataa"
     },

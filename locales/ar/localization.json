@@ -14,6 +14,7 @@
         "fp1": "التجارب الحرة 1",
         "fp2": "التجارب الحرة 2",
         "fp3": "التجارب الحرة 3",
+        "fp4": "التجارب الحرة 4",
         "shakedown": "اعادة تعيين",
         "practice1": "التجارب 1",
         "practice2": "التجارب 2",
@@ -22,7 +23,7 @@
         "qualifying": "التجارب التأهيلية",
         "qualifying1": "التجارب التأهيلية 1",
         "qualifying2": "التجارب التأهيلية 2",
-        "sprintQualifying": "التجارب التأهيلية السريعة",
+        "sprint": "التجارب التأهيلية السريعة",
         "semifinal": "نصف النهائي",
         "warmup": "الإحماء",
         "race": "السباق",
@@ -73,6 +74,7 @@
         "calendar": "اضف مواعيد السباقات الي تقويمك",
         "email": "استقبل اشعارات عبر البريد الإلكتروني",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "اظهر المواعيد لـ",
             "pick": "اختر منطقة زمنية"
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "دقائق قبل كل حدث في التقويم.",
         "button": "التقويم",
         "buttonSubmitted": "تم التسجيل",
-        "nonOptionsSelected": "من فضلك اختر علي الأقل حدث واحد للتقويم",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "من فضلك اختر علي الأقل حدث واحد للتقويم"
     },
     "download": {
         "title": "نوع التقويم",
@@ -116,7 +117,8 @@
         "gcalTitle": "تقويم جوجل",
         "gcalDescription": "قم بنسخ هذا الرابط الي تطبيق تقويم جوجل من أجل الإضافة",
         "gcalDescriptionLink": "التعليمات المفصلة",
-        "icsTitle": "تحميل ملف ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "تحميل ملف ICS",
         "icsDescription": "ملف ICS للتقويمات التي لا تدعم خاصية الاشتراكات",
         "icsButton": "تحميل"
     },

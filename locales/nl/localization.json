@@ -14,6 +14,7 @@
         "fp1": "Vrije Training 1",
         "fp2": "Vrije Training 2",
         "fp3": "Vrije Training 3",
+        "fp4": "Vrije Training 4",
         "shakedown": "Shakedown",
         "practice1": "Training 1",
         "practice2": "Training 2",
@@ -22,7 +23,7 @@
         "qualifying": "Kwalificatie",
         "qualifying1": "Kwalificatie 1",
         "qualifying2": "Kwalificatie 2",
-        "sprintQualifying": "Sprintkwalificatie",
+        "sprint": "Sprintkwalificatie",
         "semifinal": "Halve finale",
         "warmup": "Formatieronde",
         "race": "Race",
@@ -73,6 +74,7 @@
         "calendar": "Voeg deze race datums en starttijden toe aan je agenda",
         "email": "Ontvang herinneringen via email",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Starttijden voor",
             "pick": "Kies een tijdzone..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "enkele minuten voor elk evenement in je seizoensagenda.",
         "button": "Haal de agenda op",
         "buttonSubmitted": "Ingediend",
-        "nonOptionsSelected": "Gelieve minstens één sessie te selecteren voor je agenda.",
-        "attention": "De drie sprintkwalificatie sessies van 2022 zijn inbegrepen wanneer de kwalificatie optie geselecteerd is. Als deze sessies blijven in 2023 zullen we een nieuwe optie introduceren."
+        "nonOptionsSelected": "Gelieve minstens één sessie te selecteren voor je agenda."
     },
     "download": {
         "title": "Selecteer het type agenda",
@@ -116,7 +117,8 @@
         "gcalTitle": "Voor Google Agenda",
         "gcalDescription": "Om deze agenda toe te voegen, gelieve de link te kopiëren en te plakken in Google Agenda",
         "gcalDescriptionLink": "gedetailleerde instructies",
-        "icsTitle": "Download ICS Bestand",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Download ICS Bestand",
         "icsDescription": "Agenda die niet automatisch wordt bijgewerkt (.ics). Voor digitale agenda's die niet overweg kunnen met automatische updates.",
         "icsButton": "Download"
     },

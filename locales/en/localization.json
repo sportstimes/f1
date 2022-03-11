@@ -14,6 +14,7 @@
 		"fp1": "Free Practice 1",
 		"fp2": "Free Practice 2",
 		"fp3": "Free Practice 3",
+		"fp4": "Free Practice 4",
 		"shakedown": "Shakedown",
 		"practice1": "Practice 1",
 		"practice2": "Practice 2",
@@ -22,7 +23,7 @@
 		"qualifying": "Qualifying",
 		"qualifying1": "Qualifying 1",
 		"qualifying2": "Qualifying 2",
-		"sprintQualifying": "Sprint Qualifying",
+		"sprint": "Sprint",
 		"semifinal": "Semi Final",
 		"warmup": "Warmup",
 		"race": "Race",
@@ -73,6 +74,7 @@
 		"calendar": "Add race dates & times to your Calendar",
 		"email": "Receive email reminders",
 		"timezonePicker": {
+            "detect": "Detect",
 			"showing": "Showing times for",
 			"pick": "Pick a timezone..."
 		},
@@ -105,17 +107,17 @@
 		"reminderContinued": "minutes before each event in your season calendar.",
 		"button": "Get Calendar",
 		"buttonSubmitted": "Submitted",
-		"nonOptionsSelected": "Please select at least one session for your calendar.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+		"nonOptionsSelected": "Please select at least one session for your calendar."
 	},
 	"download": {
 		"title": "Select Calendar Type",
 		"webcalTitle": "For Mobile or Desktop",
-		"webcalDescription": "Automatically updating calendar for apps like Outlook and macOS Calendar.",
+		"webcalDescription": "Automatically updating calendar for apps like Outlook and iOS & macOS Calendar.",
 		"webcalButton": "Get",
 		"gcalTitle": "For Google Calendar",
 		"gcalDescription": "To add this calendar, copy and paste this URL into Google Calendar",
 		"gcalDescriptionLink": "detailed instructions",
+		"gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
 		"icsTitle": "Download ICS File",
 		"icsDescription": "Non-updating calendar (.ics) for calendars that can’t handle updating subscriptions.",
 		"icsButton": "Download"

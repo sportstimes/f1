@@ -30,7 +30,7 @@ function Generate(props) {
 	// Remove Sprint Qualifying so we retain a single "Qualifying" Option for 2021.
 	// If the format remains in 2022, then show Sprint Qualifying separately allowing
 	// Users to get notified of Sprint Qualifying specifically
-	sessions = sessions.filter(item => item !== "sprintQualifying");
+	sessions = sessions.filter(item => item !== "sprint");
 
 	// Default form values...
 	var defaults = {
@@ -93,25 +93,30 @@ function Generate(props) {
 			props: plausibleProps
 		});
 
+		var calendarBaseURL = config.url + "/download";
+		if(config.calendarCDN){
+			calendarBaseURL = config.calendarCDN;
+		}
+
 		if (lang != "en") {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${config.url}/download/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${config.url}/download/${lang}/${
+				webcalURL: `webcal://${calendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${calendarBaseURL}/${lang}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${config.url}/download/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${calendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		} else {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${config.url}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${config.url}/download/${
+				webcalURL: `webcal://${calendarBaseURL}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${calendarBaseURL}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${config.url}/download/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${calendarBaseURL}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		}
 	};
@@ -153,6 +158,28 @@ function Generate(props) {
 							<h4 className="uppercase mb-4">
 								{t("localization:download.gcalTitle")}
 							</h4>
+							{form.alarm && <div className="bg-yellow-200 rounded-md shadow py-4 mb-12 px-4 text-black font-bold">
+								<p className="w-fill flex align-middle items-center">
+									<svg
+										className="flex-none w-6 h-full"
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="far"
+										data-icon="bell"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 512 512"
+									>
+										<path
+											fill="#000000"
+											d="M256 32V49.88C328.5 61.39 384 124.2 384 200V233.4C384 278.8 399.5 322.9 427.8 358.4L442.7 377C448.5 384.2 449.6 394.1 445.6 402.4C441.6 410.7 433.2 416 424 416H24C14.77 416 6.365 410.7 2.369 402.4C-1.628 394.1-.504 384.2 5.26 377L20.17 358.4C48.54 322.9 64 278.8 64 233.4V200C64 124.2 119.5 61.39 192 49.88V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32V32zM216 96C158.6 96 112 142.6 112 200V233.4C112 281.3 98.12 328 72.31 368H375.7C349.9 328 336 281.3 336 233.4V200C336 142.6 289.4 96 232 96H216zM288 448C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288z"
+										/>
+									</svg>
+									<span className="ml-2 text-black">
+										{t("localization:download.gcalNotificationNotice")}
+									</span>
+								</p>
+							</div>}
 							<p className="mb-4">
 								{t("localization:download.gcalDescription")} (
 								<a
@@ -205,12 +232,6 @@ function Generate(props) {
 						<h3 className="text-xl mb-4">{t("localization:form.title")}</h3>
 						<Card>
 							<p className="mb-4">{t("localization:form.description")}</p>
-
-							{config.siteKey == "f1" &&
-								<div className="bg-yellow-200 rounded-md shadow py-4 mb-4 px-4 text-black font-bold mb-8">
-									{t("localization:form.attention")}
-								</div>
-							}
 
 							<form id="download_subscribe" onSubmit={handleOnSubmit}>
 								<fieldset className="mb-6" key="options">

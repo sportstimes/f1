@@ -14,6 +14,7 @@
         "fp1": "第1次练习赛",
         "fp2": "第2次练习赛",
         "fp3": "第3次练习赛",
+        "fp4": "第4次练习赛",
         "shakedown": "Shakedown",
         "practice1": "Practice 1",
         "practice2": "Practice 2",
@@ -22,7 +23,7 @@
         "qualifying": "排位赛",
         "qualifying1": "排位赛 1",
         "qualifying2": "排位赛 2",
-        "sprintQualifying": "排位冲刺赛",
+        "sprint": "排位冲刺赛",
         "semifinal": "Semi Final",
         "warmup": "暖胎圈",
         "race": "正赛",
@@ -73,6 +74,7 @@
         "calendar": "在你的日历App中添加赛程信息",
         "email": "接受邮件提醒",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "当前显示的时间，时区为",
             "pick": "选择时区..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "分钟前提醒",
         "button": "确认",
         "buttonSubmitted": "已提交",
-        "nonOptionsSelected": "请至少选择一个赛程信息.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "请至少选择一个赛程信息."
     },
     "download": {
         "title": "选择日历的类型",
@@ -116,7 +117,8 @@
         "gcalTitle": "Google Calendar",
         "gcalDescription": "复制并粘贴到Google Calendar中",
         "gcalDescriptionLink": "详细指导",
-        "icsTitle": "下载ICS文件",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "下载ICS文件",
         "icsDescription": "某些方式（如.ic），无法自动获取更新信息",
         "icsButton": "下载"
     },

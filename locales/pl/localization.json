@@ -14,6 +14,7 @@
         "fp1": "Pierwszy trening",
         "fp2": "Drugi trening",
         "fp3": "Trzeci trening",
+        "fp4": "Free Practive 4",
         "shakedown": "Shakedown",
         "practice1": "Trening 1",
         "practice2": "Trening 2",
@@ -22,7 +23,7 @@
         "qualifying": "Kwalifikacje",
         "qualifying1": "Kwalifikacje 1",
         "qualifying2": "Kwalifikacje 2",
-        "sprintQualifying": "Sprint kwalifikacyjny",
+        "sprint": "Sprint",
         "semifinal": "Półfinał",
         "warmup": "Rozgrzewka",
         "race": "Wyścig",
@@ -73,6 +74,7 @@
         "calendar": "Dodaj daty wyścigów do Twojego Kalendarza",
         "email": "Otrzymuj powiadomienia email",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Wyświetlaj w strefie czasowej",
             "pick": "Wybierz strefę czasową..."
         },
@@ -105,7 +107,6 @@
         "reminderContinued": "minut przed wydarzeniem.",
         "button": "Pobierz kalendarz",
         "buttonSubmitted": "Pobierz",
-        "attention": "Trzy kwalifikacje do sprintów 2022 zostaną dołączone, jeśli kwalifikacji zostaną wybrane. Jeśli te sesje pozostaną na sezon 2023 wprowadzimy nową opcję.",
         "nonOptionsSelected": "Wybierz przynajmniej jedną sesję dla swojego kalendarza."
     },
     "download": {
@@ -116,7 +117,8 @@
         "gcalTitle": "Dla Google Calendar",
         "gcalDescription": "Aby dodać ten kalendarz, skopiuj i wklej ten adres do Google Calendar",
         "gcalDescriptionLink": "szczegółowe instrukcje",
-        "icsTitle": "Pobierz plik ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Pobierz plik ICS",
         "icsDescription": "Nie samoaktualizacujący się kalendarz (.ics) dla kalendarzy, które nie obsługują aktualizacji subskrypcji.",
         "icsButton": "Pobierz"
     },

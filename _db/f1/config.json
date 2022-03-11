@@ -2,15 +2,15 @@
 	"siteKey": "f1",
 	"url": "f1calendar.com",
 	"availableYears": [2018, 2019, 2020, 2021, 2022],
-	"sessions": ["fp1", "fp2", "fp3", "qualifying", "sprintQualifying", "gp"],
+	"sessions": ["fp1", "fp2", "fp3", "qualifying", "sprint", "gp"],
 	"featuredSessions": ["gp"],
-	"collapsedSessions": ["fp1", "fp2", "fp3", "qualifying", "sprintQualifying"],
+	"collapsedSessions": ["fp1", "fp2", "fp3", "qualifying", "sprint"],
 	"sessionMap": {
 		"fp1":"p1",
 		"fp2":"p2",
 		"fp3":"p3",
 		"qualifying":"q",
-		"sprintQualifying":"sprintQualifying",
+		"sprint":"sprint",
 		"gp":"gp"
 	},
 	"sessionLengths": {
@@ -18,7 +18,7 @@
 		"fp2":60,
 		"fp3":60,
 		"qualifying":60,
-		"sprintQualifying":60,
+		"sprint":60,
 		"gp":120
 	},
 	"supportsEmailReminders": false
