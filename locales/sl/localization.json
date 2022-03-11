@@ -117,7 +117,8 @@
         "gcalTitle": "Za Google Calendar",
         "gcalDescription": "Kopiraj in prilepi ta URL naslov v Google Calendar",
         "gcalDescriptionLink": "podrobna navodila",
-        "icsTitle": "Prenesi ICS datoteko",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Prenesi ICS datoteko",
         "icsDescription": "Ročno posodobljen koledar (.ics) za koledarje, ki ne podpirajo samodejnih posodobitev",
         "icsButton": "Prenesi"
     },

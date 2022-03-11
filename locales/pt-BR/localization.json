@@ -117,7 +117,8 @@
         "gcalTitle": "Para Google Agenda",
         "gcalDescription": "Para adicionar este calendário, copie e cole este URL no Google Agenda",
         "gcalDescriptionLink": "detailed instructions",
-        "icsTitle": "Baixar arquio ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Baixar arquio ICS",
         "icsDescription": "Calendário sem atualizaçāo (.ics) para calendários que não conseguem lidar com atualizações de assinaturas.",
         "icsButton": "Baixar"
     },

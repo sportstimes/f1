@@ -117,7 +117,8 @@
         "gcalTitle": "For Google Calendar",
         "gcalDescription": "For å legge til denne kalenderen, kopier og lim inn denne linken til Google Calendar",
         "gcalDescriptionLink": "detaljerte instruksjoner",
-        "icsTitle": "Last ned ICS fil",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Last ned ICS fil",
         "icsDescription": "Statisk kalender (.ics) for kalendere som ikke kan oppdatere kalender-abonnenter automatisk .",
         "icsButton": "Last ned"
     },

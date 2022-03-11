@@ -117,7 +117,8 @@
         "gcalTitle": "Google Naptárakra",
         "gcalDescription": "E naptár hozzáadásához másold be ezt a linket a Google Naptárakba",
         "gcalDescriptionLink": "részletes leírás",
-        "icsTitle": "ICS fájl letöltése",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "ICS fájl letöltése",
         "icsDescription": "Nem frissülő naptár (.ics) az olyan naptárakhoz, amelyek nem kezelik a frissülő feliratkozásokat.",
         "icsButton": "Letöltés"
     },

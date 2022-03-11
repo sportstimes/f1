@@ -117,7 +117,8 @@
         "gcalTitle": "Pro Google Kalendář",
         "gcalDescription": "Pro přidání tohoto kalendáře zkopírujte a vložte adresu do Google Kalendáře",
         "gcalDescriptionLink": "podrobné pokyny",
-        "icsTitle": "Stáhněte soubor ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Stáhněte soubor ICS",
         "icsDescription": "Neaktualizovaný kalendář (.ics) pro kalendáře, které neumí aktualizovat odběry.",
         "icsButton": "Stáhnout"
     },

@@ -117,6 +117,7 @@
         "gcalTitle": "För Google Kalender",
         "gcalDescription": "För att lägga till den här kalendern, klipp och klistra länken nedan till din Google Calendar",
         "gcalDescriptionLink": "detaljerade instruktioner",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
         "icsTitle": "Ladda ner ICS-fil",
         "icsDescription": "Statisk kalender (.ics) som inte uppdateras automatiskt. Används för kalenderprogram som inte stödjer automatiskt uppdaterande kalendrar.",
         "icsButton": "Ladda ner"

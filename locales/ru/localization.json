@@ -117,7 +117,8 @@
         "gcalTitle": "Для Календаря Google",
         "gcalDescription": "Чтобы добавить этот календарь, скопируйте и вставьте этот URL в Календарь Google.",
         "gcalDescriptionLink": "подробные инструкции",
-        "icsTitle": "Скачать файл ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Скачать файл ICS",
         "icsDescription": "Файл (.ics) без автоматического обновления, для календарей, которые не могут обрабатывать обновления подписок.",
         "icsButton": "Скачать"
     },
