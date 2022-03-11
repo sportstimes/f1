@@ -112,11 +112,12 @@
 	"download": {
 		"title": "Select Calendar Type",
 		"webcalTitle": "For Mobile or Desktop",
-		"webcalDescription": "Automatically updating calendar for apps like Outlook and macOS Calendar.",
+		"webcalDescription": "Automatically updating calendar for apps like Outlook and iOS & macOS Calendar.",
 		"webcalButton": "Get",
 		"gcalTitle": "For Google Calendar",
 		"gcalDescription": "To add this calendar, copy and paste this URL into Google Calendar",
 		"gcalDescriptionLink": "detailed instructions",
+		"gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
 		"icsTitle": "Download ICS File",
 		"icsDescription": "Non-updating calendar (.ics) for calendars that can’t handle updating subscriptions.",
 		"icsButton": "Download"

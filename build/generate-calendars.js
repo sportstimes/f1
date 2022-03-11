@@ -114,12 +114,14 @@ function generateCalendars(siteKey){
 		var languageFilesnames = language == "en" ? fileNames : localizedFilenames;
 	
 		for (request of languageFilesnames) {
+			let sessionArray = request.split("_");
 			let alarmEnabled = request.includes("alarm");
 	
 			let alarmOffset = 30;
 			if (alarmEnabled) {
 				let requestArray = request.split("-");
 				alarmOffset = requestArray.slice(-1)[0];
+				sessionArray = sessionArray.slice(0, -1);
 			}
 	
 			let events = [];
@@ -139,7 +141,12 @@ function generateCalendars(siteKey){
 						let session = race.sessions[sessionKey];
 	
 						// Skip
-						if(!request.includes(sessionMap[sessionKey])) continue;	
+						// F1: Some logic to include Sprint Qualifying Races when "Qualifying" is selected.
+						if(siteKey == "f1"){
+							if(!sessionArray.includes(sessionMap[sessionKey]) && !(sessionMap[sessionKey] == "sprint" && sessionArray.includes("q")))  continue;
+						} else {
+							if(!sessionArray.includes(sessionMap[sessionKey])) continue;
+						}
 						
 						let title = race.name;
 						if (localizedStrings.races[race.localeKey]) {

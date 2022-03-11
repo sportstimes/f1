@@ -115,7 +115,8 @@
         "gcalTitle": "Pentru Google Calendar",
         "gcalDescription": "Pentru a adăuga acest calendar, copiază și lipește acest URL în Google Calendar",
         "gcalDescriptionLink": "instrucțiuni detaliate",
-        "icsTitle": "Descarcă fișier ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Descarcă fișier ICS",
         "icsDescription": "Calendar care nu se actualizează automat (.ics) pentru aplicații care nu suportă această funcționalitate.",
         "icsButton": "Descarcă"
     },

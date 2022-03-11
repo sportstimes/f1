@@ -13,7 +13,7 @@ if(gitBranch.includes(siteKey)){
 		console.log('🛑 - Build cancelled');
 		process.exit(0)
 	}
-} else if(gitBranch.includes('all') || gitMessage.includes('all') || gitMessage.includes('Bump')){
+} else if((gitBranch.includes('all') || gitMessage.includes('all')) && !gitBranch.includes('all-contributors')){
 	console.log('✅ - Build can proceed');
 	process.exit(1)
 } else {
