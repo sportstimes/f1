@@ -205,23 +205,6 @@
 			}
 		},
 		{
-			"name": "Russian",
-			"location": "Sochi",
-			"latitude": 43.6203,
-			"longitude": 39.712,
-			"round": 13,
-			"slug": "russian",
-			"localeKey": "russian",
-			"tbc":true,
-			"sessions": {
-				"practice": "2022-09-23T00:00:00Z",
-				"qualifying": "2022-09-23T00:00:00Z",
-				"sprint1": "2022-09-24T00:00:00Z",
-				"sprint2": "2022-09-24T00:00:00Z",
-				"feature": "2022-09-25T00:00:00Z"
-			}
-		},
-		{
 			"name": "Abu Dhabi",
 			"location": "Yas Marina",
 			"latitude": 24.4821,
