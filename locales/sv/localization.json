@@ -14,17 +14,18 @@
         "fp1": "Fri Träning 1",
         "fp2": "Fri Träning 2",
         "fp3": "Fri Träning 3",
+        "fp4": "Fri Träning 4",
         "shakedown": "Shakedown",
-        "practice1": "Practice 1",
-        "practice2": "Practice 2",
-        "practice3": "Practice 3",
+        "practice1": "Träning 1",
+        "practice2": "Träning 2",
+        "practice3": "Träning 3",
         "practice": "Practice",
         "qualifying": "Kvalificering",
         "qualifying1": "Kvalificering 1",
         "qualifying2": "Kvalificering 2",
-        "sprintQualifying": "Sprint Qualifying",
-        "semifinal": "Semi Final",
-        "warmup": "Warmup",
+        "sprint": "Sprintkvalificering",
+        "semifinal": "Semifinal",
+        "warmup": "Uppvärmning",
         "race": "Race",
         "race1": "Race 1",
         "race2": "Race 2",
@@ -66,28 +67,29 @@
         "sakhir-grand-prix": "Sakhirs (Bahrains) Grand Prix",
         "turkish-grand-prix": "Turkiets Grand Prix",
         "saudi-arabia-grand-prix": "Saudiarabiens Grand Prix",
-        "qatar-grand-prix" : "Qatar Grand Prix",
-		"miami-grand-prix" : "Miami Grand Prix"
+        "qatar-grand-prix" : "Qatars Grand Prix",
+		"miami-grand-prix" : "Miamis Grand Prix"
 	},
 	"options": {
-        "calendar": "Lägg till race tider och datum till din kalender",
+        "calendar": "Lägg till racetider och datum till din kalender",
         "email": "Få e-postpåminnelser",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Visar tider för",
             "pick": "Välj en tidszon..."
         },
         "formatPicker": {
-            "title": "Time Format",
-            "12hr": "12-Hour Time",
-            "24hr": "24-Hour Time"
+            "title": "Tidsformat",
+            "12hr": "12-timmarsklocka",
+            "24hr": "24-timmarsklocka"
         },
         "button": "Klar"
     },
     "contribute": "Bidra",
     "languageSelector": "Välj Språk",
-    "javascript": "F1 Kalender fungerar bäst om Javascript är tillåten.",
+    "javascript": "F1 Kalender fungerar bäst om Javascript är tillåtet.",
     "footer": {
-        "coffee": "Understöd F1 Kalender, köp oss en kaffe.",
+        "coffee": "Stöd F1 Kalender, köp oss en kaffe.",
         "twitter": "Vi finns på Twitter",
         "github": "Öppen källkod på GitHub",
         "issue": "Hittade du ett problem? Rapportera",
@@ -100,24 +102,24 @@
     },
     "form": {
         "title": "Generera Kalender",
-        "description": "Välj först vilka F1 sessioner du vill lägga till din kalender:",
+        "description": "Välj först vilka F1-sessioner du vill lägga till din kalender:",
         "reminder": "Sätt en påminnelse",
         "reminderContinued": "minuter innan varje session i din säsongskalender.",
         "button": "Skapa Kalender",
         "buttonSubmitted": "Inlämnad",
-        "nonOptionsSelected": "Välj minst en session till din kalender.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Välj minst en session till din kalender."
     },
     "download": {
-        "title": "Välj Kalender Typ",
+        "title": "Välj kalendertyp",
         "webcalTitle": "För mobil eller dator",
         "webcalDescription": "Automatiskt uppdaterad kalender för program som Outlook och macOS Calendar.",
         "webcalButton": "Hämta",
-        "gcalTitle": "För Google Calendar",
+        "gcalTitle": "För Google Kalender",
         "gcalDescription": "För att lägga till den här kalendern, klipp och klistra länken nedan till din Google Calendar",
         "gcalDescriptionLink": "detaljerade instruktioner",
-        "icsTitle": "Ladda ner ICS fil",
-        "icsDescription": "Statisk kalender (.ics) som inte uppdateras automatiskt.",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+        "icsTitle": "Ladda ner ICS-fil",
+        "icsDescription": "Statisk kalender (.ics) som inte uppdateras automatiskt. Används för kalenderprogram som inte stödjer automatiskt uppdaterande kalendrar.",
         "icsButton": "Ladda ner"
     },
     "subscribe": {
@@ -134,81 +136,81 @@
     },
     "f1": {
         "title": "F1 Kalender",
-        "subtitle": "Race, Kval & Träningar",
+        "subtitle": "Race, Kval & Träningssessioner",
         "seo": {
-            "title": "F1 Kalender {{year}} - Formula One Race Times and Dates",
-            "description": "Formel 1 kalender för {{year}} säsongen med alla F1 race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller .",
-            "keywords": "F1, formel 1, race tider, race, påminnelse, varningar, grands prix, grand prix, kalender, datum, start tider, kval, träning, London, Europa, {{year}}"
+            "title": "F1 Kalender {{year}} - Formel Ett Racetider and Datum",
+            "description": "Formel 1 kalender för {{year}}-säsongen med alla F1 race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller prenumerera.",
+            "keywords": "F1, formel ett, race tider, race, påminnelse, aviseringar, grands prix, grand prix, kalender, datum, start tider, kval, träning, London, Europa, {{year}}"
         },
         "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     },
     "f2": {
-        "title": "F2 Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "F2 Kalender",
+        "subtitle": "Race, Kval & Träningssessioner",
         "seo": {
-            "title": "F2 Calendar {{year}} - Formula Two Race Times and Dates",
-            "description": "Formula Two Calendar for {{year}} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "title": "F2 Calendar {{year}} - Formel Två Racetider och Datum",
+            "description": "Formel Två Kalender för {{year}}-säsongen med alla F2 race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller prenumerera.",
             "keywords": "placeholder"
         },
         "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
     },
     "f3": {
-        "title": "F3 Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "F3 Kalender",
+        "subtitle": "Race, Kval & Träningssessioner",
         "seo": {
-            "title": "F3 Calendar {{year}} - Formula Three Race Times and Dates",
-            "description": "Formula Three Calendar for {{year}} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            "title": "F3 Kalender {{year}} - Formel Tre Racetider och Datum",
+            "description": "Formel Tre Kalender för {{year}}-säsongen med alla F3 race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller prenumerera.",
+            "keywords": "F3, formel tre, race tider, race, påminnelse, aviseringar, grands prix, grand prix, kalender, datum, start tider, kval, träning, London, Europa, {{year}}"
         },
         "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
     },
     "fe": {
-        "title": "Formula E Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "Formula E Kalender",
+        "subtitle": "Race, Kval & Träningssessioner",
         "seo": {
-            "title": "Formula E Calendar {{year}} - Formula E Race Times and Dates",
-            "description": "Formula E Calendar for {{year}} season with all Formula E e-prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            "title": "Formula E Kalender {{year}} - Formel E Racetider och Datum",
+            "description": "Formel E Kalender för {{year}}-säsongen med alla Formel E e-prix race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller prenumerera.",
+            "keywords": "FE, formel e, race tider, race, påminnelse, aviseringar, e prix, kalender, datum, start tider, kval, träning, London, Europa, {{year}}"
         },
         "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
     },
     "indycar": {
-        "title": "IndyCar Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "IndyCar Kalender",
+        "subtitle": "Race, Kval & Träningssessioner",
         "seo": {
-            "title": "IndyCar Calendar {{year}} - Race Times and Dates",
-            "description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
+            "title": "IndyCar Kalender {{year}} - Racetider och Datum",
+            "description": "IndyCar Kalender för {{year}}-säsongen med alla IndyCar race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller prenumerera.",
+            "keywords": "IndyCar, race tider, race, påminnelse, aviseringar, kalender, datum, start tider, kval, träning, {{year}}"
         },
         "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
     },
     "motogp": {
-        "title": "MotoGP Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "MotoGP Kalender",
+        "subtitle": "Race, Kval & Träningssessioner",
         "seo": {
-            "title": "MotoGP Calendar {{year}} - Race Times and Dates",
-            "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            "title": "MotoGP Kalender {{year}} - Racetider och Datum",
+            "description": "MotoGP Kalender för {{year}}-säsongen med alla MotoGP race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller prenumerera.",
+            "keywords": "MotoGP, race tider, race, påminnelse, aviseringar, kalender, datum, start tider, kval, träning, London, Europa, {{year}}"
         },
         "footnote": ""
     },
     "wseries": {
-        "title": "W Series Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "W Series Kalender",
+        "subtitle": "Race, Kval & Träningssessioner",
         "seo": {
-            "title": "W Series Calendar {{year}} - Race Times and Dates",
-            "description": "W Seroes Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "wseries, w-series, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            "title": "W Series Kalender {{year}} - Racetider och Datum",
+            "description": "W Series Kalender för {{year}}-säsongen med alla W Series race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller prenumerera.",
+            "keywords": "wseries, w-series, race tider, race, påminnelse, aviseringar, kalender, datum, start tider, kval, träning, London, Europa, {{year}}"
         },
         "footnote": "W Series Calendar is not affiliated with W Series."
     },
     "extremee": {
-        "title": "Extreme E Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "Extreme E Kalender",
+        "subtitle": "Race, Kval & Träningssessioner",
         "seo": {
-            "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
-            "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            "title": "Extreme E Kalender {{year}} - Extreme E Racetider och Datum",
+            "description": "Extreme E Kalender för {{year}}-säsongen med alla Extreme E xprix race, kvalifikationer &amp; träningar. Sätt påminnelser. Alla tidszoner. Ladda ner eller prenumerera.",
+            "keywords": "Extreme E, race tider, race, påminnelse, aviseringar, kalender, datum, start tider, x prix, kval, träning, London, Europa, {{year}}"
         },
         "footnote": ""
     }

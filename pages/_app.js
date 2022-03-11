@@ -28,6 +28,8 @@ function MyApp({Component, pageProps}) {
 		<UserContextProvider>
 			<PlausibleProvider domain={process.env.NEXT_PUBLIC_PLAUSIBLE_KEY}>
 				<DefaultSeo
+					title={title}
+					description={description}
 					canonical={`https://www.${config.url}/`}
 					twitter={{
 						handle: "@f1cal",

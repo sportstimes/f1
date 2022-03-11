@@ -14,6 +14,7 @@
         "fp1": "Trening 1",
         "fp2": "Trening 2",
         "fp3": "Trening 3",
+        "fp4": "Trening 4",
         "shakedown": "Shakedown",
         "practice1": "Practice 1",
         "practice2": "Practice 2",
@@ -22,7 +23,7 @@
         "qualifying": "Kvalifisering",
         "qualifying1": "Kvalifisering 1",
         "qualifying2": "Kvalifisering 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Race",
@@ -73,6 +74,7 @@
         "calendar": "Legg til disse race-datoene og tidspunkt til din kalender",
         "email": "Motta epost påminnelser",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Viser tider for",
             "pick": "Velg en tidssone..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "minutter før hver hendelse i din kalender.",
         "button": "Få kalender",
         "buttonSubmitted": "Sendt inn",
-        "nonOptionsSelected": "Vennligst velg minst økt å legge til i din kalender.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Vennligst velg minst økt å legge til i din kalender."
     },
     "download": {
         "title": "Velg kalender-type",
@@ -116,7 +117,8 @@
         "gcalTitle": "For Google Calendar",
         "gcalDescription": "For å legge til denne kalenderen, kopier og lim inn denne linken til Google Calendar",
         "gcalDescriptionLink": "detaljerte instruksjoner",
-        "icsTitle": "Last ned ICS fil",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Last ned ICS fil",
         "icsDescription": "Statisk kalender (.ics) for kalendere som ikke kan oppdatere kalender-abonnenter automatisk .",
         "icsButton": "Last ned"
     },

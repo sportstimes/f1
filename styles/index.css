@@ -81,4 +81,8 @@ body {
 	.support-btn-rounded {
 		@apply flex items-center justify-center px-2 py-2 space-x-2 text-sm font-medium transition-shadow bg-red-600 rounded-full shadow-sm hover:bg-red-700 cursor-pointer focus:outline-none w-12 h-12;
 	}
+	
+	.support-btn-rounded-desktop {
+		@apply flex items-center justify-center px-2 py-2 space-x-2 text-sm font-medium transition-shadow bg-red-600 rounded-full shadow-sm hover:bg-red-700 cursor-pointer focus:outline-none w-16 h-16;
+	}
 }

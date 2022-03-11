@@ -14,6 +14,7 @@
         "fp1": "1. slobodni trening",
         "fp2": "2. slobodni trening",
         "fp3": "3. slobodni trening",
+        "fp4": "4. slobodni trening",
         "shakedown": "Shakedown",
         "practice1": "Practice 1",
         "practice2": "Practice 2",
@@ -22,7 +23,7 @@
         "qualifying": "Kvalifikacije",
         "qualifying1": "Kvalifikacije 1",
         "qualifying2": "Kvalifikacije 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Utrka",
@@ -73,6 +74,7 @@
         "calendar": "Dodajte ove datume utrka na vaš kalendar",
         "email": "Primi e-mail podsjetnik",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Pokazujemo vremensku zonu za",
             "pick": "Odaberite vremensku zonu..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "minuta prije početka svake sesije u vašem kalendaru.",
         "button": "Preuzmi kalendar",
         "buttonSubmitted": "Ispunjeno",
-        "nonOptionsSelected": "Molimo vas da odaberete najmanje jednu sesiju za vaš kalendar.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Molimo vas da odaberete najmanje jednu sesiju za vaš kalendar."
     },
     "download": {
         "title": "Odaberite vrstu kalendara",
@@ -116,7 +117,8 @@
         "gcalTitle": "za Google Kalendar",
         "gcalDescription": "Da bi ste dodali ovaj kalendar, kopirajte i zalijepite ovu adresu na Google Kalendar",
         "gcalDescriptionLink": "detaljna uputstva",
-        "icsTitle": "Preuzmite ICS datoteku",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Preuzmite ICS datoteku",
         "icsDescription": "Kalendar koji se ne ažurira za kalendare koji ne podržavaju automatska ažuriranja.",
         "icsButton": "Preuzmi"
     },

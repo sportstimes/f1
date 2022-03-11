@@ -14,6 +14,7 @@
         "fp1": "Volný Trénink 1",
         "fp2": "Volný Trénink 2",
         "fp3": "Volný Trénink 3",
+        "fp4": "Volný Trénink 4",
         "shakedown": "Shakedown",
         "practice1": "Practice 1",
         "practice2": "Practice 2",
@@ -22,7 +23,7 @@
         "qualifying": "Kvalifikace",
         "qualifying1": "Kvalifikace 1",
         "qualifying2": "Kvalifikace 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Závod",
@@ -73,6 +74,7 @@
         "calendar": "Přidejte si termíny a časy závodů do svého kalendáře.",
         "email": "Dostávejte připomínky na email",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Zobrazení času pro",
             "pick": "Vyberte časové pásmo..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "minut před každou událostí ve vašem kalendáři sezóny.",
         "button": "Získejte kalendář",
         "buttonSubmitted": "Odesláno",
-        "nonOptionsSelected": "Vyberte prosím alespoň jednu relaci pro váš kalendář.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Vyberte prosím alespoň jednu relaci pro váš kalendář."
     },
     "download": {
         "title": "Vyberte typ kalendáře",
@@ -116,7 +117,8 @@
         "gcalTitle": "Pro Google Kalendář",
         "gcalDescription": "Pro přidání tohoto kalendáře zkopírujte a vložte adresu do Google Kalendáře",
         "gcalDescriptionLink": "podrobné pokyny",
-        "icsTitle": "Stáhněte soubor ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Stáhněte soubor ICS",
         "icsDescription": "Neaktualizovaný kalendář (.ics) pro kalendáře, které neumí aktualizovat odběry.",
         "icsButton": "Stáhnout"
     },

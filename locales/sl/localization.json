@@ -14,6 +14,7 @@
         "fp1": "Prvi prosti trening",
         "fp2": "Drugi prosti trening",
         "fp3": "Tretji prosti trening",
+        "fp4": "Free Practive 4",
         "shakedown": "Shakedown",
         "practice1": "Practice 1",
         "practice2": "Practice 2",
@@ -22,7 +23,7 @@
         "qualifying": "Kvalifikacije",
         "qualifying1": "Kvalifikacije 1",
         "qualifying2": "Kvalifikacije 2",
-        "sprintQualifying": "Sprint Qualifying",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Dirka",
@@ -73,6 +74,7 @@
         "calendar": "Dodaj te datume in čase dirk v svoj koledar",
         "email": "Prejmi e-mail opomnike",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Prikazujem čase za",
             "pick": "Izberi časovni pas..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "minut pred vsakim dogodkom v koledarju.",
         "button": "Prenesi koledar",
         "buttonSubmitted": "Preneseno",
-        "nonOptionsSelected": "Izberi vsaj en dogodek za svoj koledar.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Izberi vsaj en dogodek za svoj koledar."
     },
     "download": {
         "title": "Izberi tip koledarja",
@@ -116,7 +117,8 @@
         "gcalTitle": "Za Google Calendar",
         "gcalDescription": "Kopiraj in prilepi ta URL naslov v Google Calendar",
         "gcalDescriptionLink": "podrobna navodila",
-        "icsTitle": "Prenesi ICS datoteko",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Prenesi ICS datoteko",
         "icsDescription": "Ročno posodobljen koledar (.ics) za koledarje, ki ne podpirajo samodejnih posodobitev",
         "icsButton": "Prenesi"
     },

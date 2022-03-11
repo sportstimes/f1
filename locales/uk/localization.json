@@ -14,6 +14,7 @@
         "fp1": "1-ша вільна практика",
         "fp2": "2-га вільна практика",
         "fp3": "3-тя вільна практика",
+        "fp4": "4-тя вільна практика",
         "shakedown": "Обкатка",
         "practice1": "Практика №1",
         "practice2": "Практика №2",
@@ -22,7 +23,7 @@
         "qualifying": "Кваліфікація",
         "qualifying1": "Кваліфікація 1",
         "qualifying2": "Кваліфікація 2",
-        "sprintQualifying": "Спринтерська гонка",
+        "sprint": "Спринтерська гонка",
         "semifinal": "Півфінал",
         "warmup": "Розминка",
         "race": "Гонка",
@@ -73,6 +74,7 @@
         "calendar": "Додати розклад гонок до календаря",
         "email": "Отримувати нагадування на пошту",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Показано час для",
             "pick": "Виберіть часовий пояс..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "хвилин до початку події в Вашому календарі.",
         "button": "Згенерувати календар",
         "buttonSubmitted": "Відправлено",
-        "nonOptionsSelected": "Будь ласка, виберіть хоча б одну сесію, щоб додати до Вашого календаря.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "nonOptionsSelected": "Будь ласка, виберіть хоча б одну сесію, щоб додати до Вашого календаря."
     },
     "download": {
         "title": "Виберіть тип календаря",
@@ -116,7 +117,8 @@
         "gcalTitle": "Для Календаря Google",
         "gcalDescription": "Щоб додати цей календар, скопіюйте та вставте це посилання до Календаря Google",
         "gcalDescriptionLink": "детальні інструкції",
-        "icsTitle": "Скачати ICS-файл",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Скачати ICS-файл",
         "icsDescription": "Розклад без автоматичних оновлень (.ics) для календарів, які не в змозі обробити підписки, що оновлюються.",
         "icsButton": "Скачати"
     },

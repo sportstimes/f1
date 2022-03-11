@@ -44,7 +44,7 @@ function generateCalendars(siteKey){
 	
 	// Site specific logic...
 	// F1: Remove Sprint Qualifying for 2021.
-	calendarOptions = calendarOptions.filter(item => item !== "sprintQualifying");
+	calendarOptions = calendarOptions.filter(item => item !== "sprint");
 	
 	// Add the alarm suffix.
 	calendarOptions.push("alarm");
@@ -118,12 +118,14 @@ function generateCalendars(siteKey){
 		var languageFilesnames = language == "en" ? fileNames : localizedFilenames;
 	
 		for (request of languageFilesnames) {
+			let sessionArray = request.split("_");
 			let alarmEnabled = request.includes("alarm");
 	
 			let alarmOffset = 30;
 			if (alarmEnabled) {
 				let requestArray = request.split("-");
 				alarmOffset = requestArray.slice(-1)[0];
+				sessionArray = sessionArray.slice(0, -1);
 			}
 	
 			let events = [];
@@ -146,9 +148,9 @@ function generateCalendars(siteKey){
 						
 						// F1: Some logic to include Sprint Qualifying Races when "Qualifying" is selected.
 						if(siteKey == "f1"){
-							if(!request.includes(sessionMap[sessionKey]) && !(sessionMap[sessionKey] == "sprintQualifying" && request.includes("q")))  continue;
+							if(!sessionArray.includes(sessionMap[sessionKey]) && !(sessionMap[sessionKey] == "sprint" && sessionArray.includes("q")))  continue;
 						} else {
-							if(!request.includes(sessionMap[sessionKey])) continue;	
+							if(!sessionArray.includes(sessionMap[sessionKey])) continue;
 						}
 						
 						let title = race.name;

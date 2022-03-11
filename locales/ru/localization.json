@@ -14,6 +14,7 @@
         "fp1": "Свободная практика 1",
         "fp2": "Свободная практика 2",
         "fp3": "Свободная практика 3",
+        "fp4": "Свободная практика 4",
         "shakedown": "Шейкдаун",
         "practice1": "Тренировка 1",
         "practice2": "Тренировка 2",
@@ -22,7 +23,7 @@
         "qualifying": "Квалификация",
         "qualifying1": "Квалификация 1",
         "qualifying2": "Квалификация 2",
-        "sprintQualifying": "Квалификационный спринт",
+        "sprint": "Квалификационный спринт",
         "semifinal": "Полуфинал",
         "warmup": "Разминка",
         "race": "Гонка",
@@ -73,6 +74,7 @@
         "calendar": "Добавить расписание гонок в Календарь",
         "email": "Напоминания по электронной почте",
         "timezonePicker": {
+            "detect": "Detect",
             "showing": "Время показано для",
             "pick": "Выберите часовой пояс..."
         },
@@ -105,8 +107,7 @@
         "reminderContinued": "минут до наступления события в Вашем календаре.",
         "button": "Создать календарь",
         "buttonSubmitted": "Отправлено",
-        "nonOptionsSelected": "Пожалуйста, выберите хотя бы одну сессию для своего календаря.",
-        "attention": "При выборе Квалификации будут также включены Спринт заезды для 2021 года. Мы реализуем новую опцию, если эти заезды сохранятся на 2022 год."
+        "nonOptionsSelected": "Пожалуйста, выберите хотя бы одну сессию для своего календаря."
     },
     "download": {
         "title": "Выберите тип календаря",
@@ -116,7 +117,8 @@
         "gcalTitle": "Для Календаря Google",
         "gcalDescription": "Чтобы добавить этот календарь, скопируйте и вставьте этот URL в Календарь Google.",
         "gcalDescriptionLink": "подробные инструкции",
-        "icsTitle": "Скачать файл ICS",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"icsTitle": "Скачать файл ICS",
         "icsDescription": "Файл (.ics) без автоматического обновления, для календарей, которые не могут обрабатывать обновления подписок.",
         "icsButton": "Скачать"
     },
