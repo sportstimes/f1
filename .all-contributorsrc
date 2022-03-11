@@ -356,6 +356,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jmcgreevy42",
+      "name": "jmcgreevy42",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12002363?v=4",
+      "profile": "https://github.com/jmcgreevy42",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
