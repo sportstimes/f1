@@ -56,9 +56,9 @@ module.exports = (phase) => {
       if(process.env.NEXT_PUBLIC_SITE_KEY === "f1"){
         rules.push(
             {
-              source: '/download/:prefix*_q_:suffix*',
+              source: '/download/:prefix*_q_\:suffix',
               permanent: true,
-              destination: 'https://files.motorsportcalendars.com/:prefix*_sprint_qualifying_:suffix*',
+              destination: `https://files-${process.env.NEXT_PUBLIC_SITE_KEY}.motorsportcalendars.com/:prefix*_qualifying_sprint_\:suffix`,
             }
         );
       }
