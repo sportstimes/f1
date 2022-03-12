@@ -26,6 +26,12 @@ function Generate(props) {
 
 	var sessions = config.sessions;
 	
+	// F1: Sprint Qualifying Option...
+	// Remove Sprint Qualifying so we retain a single "Qualifying" Option for 2021.
+	// If the format remains in 2022, then show Sprint Qualifying separately allowing
+	// Users to get notified of Sprint Qualifying specifically
+	sessions = sessions.filter(item => item !== "sprint");
+	
 	// Default form values...
 	var defaults = {
 		alarm: false,
