@@ -1,4 +1,4 @@
-name: Deploy F2 ICS Files
+name: Deploy Formula E ICS Files
 
 # Controls when the workflow will run
 on:
@@ -6,10 +6,10 @@ on:
     branches:
       - 'main'
     paths:
-      - '_db/f2/2022.json'
+      - '_db/fe/2022.json'
 
 jobs:
   build:
     uses: sportstimes/f1/.github/workflows/ics.yml@feature/updated-workflows
     with:
-      site: 'f2'
+      site: 'fe'
