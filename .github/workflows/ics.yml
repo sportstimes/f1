@@ -35,7 +35,7 @@ jobs:
         
       - name: Test
         run: |
-          echo "${{github.event.inputs.site}}"
+          echo "${{github.event}}"
       
       
 #       - name: Cache node modules
