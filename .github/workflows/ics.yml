@@ -16,6 +16,11 @@ on:
         - motogp
         - wseries
         - extremee
+  workflow_call:
+    inputs:
+      site:
+        required: true
+        type: string
 
 jobs:
   build:

@@ -1,4 +1,4 @@
-name: Deploy ICS Files to Cloudflare Workers
+name: Deploy F2 ICS
 
 # Controls when the workflow will run
 on:
@@ -9,7 +9,7 @@ on:
       - '_db/f2/2022.json'
 
 jobs:
-  reusable_workflow_job:
+  ics_job:
     runs-on: ubuntu-latest
     environment: production
     steps:
