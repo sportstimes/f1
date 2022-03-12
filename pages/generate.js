@@ -152,7 +152,7 @@ function Generate(props) {
 							<h4 className="uppercase mb-4">
 								{t("localization:download.gcalTitle")}
 							</h4>
-							{form.alarm && <div className="bg-yellow-200 rounded-md shadow py-4 mb-12 px-4 text-black font-bold">
+							{form.alarm && <div className="bg-yellow-200 rounded-md shadow py-4 mb-5 px-4 text-black font-bold">
 								<p className="w-fill flex align-middle items-center">
 									<svg
 										className="flex-none w-6 h-full"
