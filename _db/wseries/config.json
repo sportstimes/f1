@@ -1,7 +1,7 @@
 {
 	"siteKey": "wseries",
 	"url": "wseriescalendar.com",
-	"calendarCDN": "files.motorsportcalendars.com",
+	"calendarCDN": "files-wseries.motorsportcalendars.com",
 	"availableYears": [2021, 2022],
 	"sessions": ["practice1", "practice2", "qualifying", "race"],
 	"featuredSessions": ["race"],

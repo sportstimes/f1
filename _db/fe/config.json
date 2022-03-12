@@ -1,7 +1,7 @@
 {
 	"siteKey": "fe",
 	"url": "formulaecal.com",
-	"calendarCDN": "files.motorsportcalendars.com",
+	"calendarCDN": "files-fe.motorsportcalendars.com",
 	"availableYears": [2021, 2022],
 	"sessions": ["practice1", "practice2", "practice3", "qualifying", "race"],
 	"featuredSessions": ["race"],

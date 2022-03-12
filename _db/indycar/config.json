@@ -1,7 +1,7 @@
 {
 	"siteKey": "indycar",
 	"url": "indycarcalendar.com",
-	"calendarCDN": "files.motorsportcalendars.com",
+	"calendarCDN": "files-indycar.motorsportcalendars.com",
 	"availableYears": [2021, 2022],
 	"sessions": ["practice1", "practice2", "practice3", "qualifying", "warmup", "race"],
 	"featuredSessions": ["race"],
