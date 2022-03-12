@@ -1,4 +1,4 @@
-name: Deploy F2 ICS
+name: Deploy ICS Files to Cloudflare Workers
 
 # Controls when the workflow will run
 on:
@@ -7,12 +7,8 @@ on:
       # - 'main'
     paths:
       - '_db/f2/2022.json'
-
+		  
 jobs:
-  ics_job:
-    runs-on: ubuntu-latest
-    environment: production
-    steps:
-      - uses: sportstimes/f1/.github/workflows/ics.yml@feature/updates-workflows
-        with:
-          site: "f2"
+  build:
+    uses: sportstimes/f1/.github/workflows/ics.yml@feature/updates-workflows
+    site: "f2"
