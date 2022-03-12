@@ -1,0 +1,18 @@
+name: Deploy ICS Files to Cloudflare Workers
+
+# Controls when the workflow will run
+on:
+  push:
+  	branches:
+	  - 'main'
+  	paths:
+	  - '_db/f2/2022.json'
+
+jobs:
+  reusable_workflow_job:
+  	runs-on: ubuntu-latest
+  	environment: production
+  	steps:
+	  - uses: ./.github/workflows/ics
+	  	with:
+		  site: "f2"
