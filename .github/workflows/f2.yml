@@ -7,7 +7,7 @@ on:
       # - 'main'
     paths:
       - '_db/f2/2022.json'
-		  
+
 jobs:
   build:
     uses: sportstimes/f1/.github/workflows/ics.yml@feature/updates-workflows
