@@ -53,25 +53,23 @@ module.exports = (phase) => {
       // Handle 2022 adjustment to separate sprint races out as a separate session.
       // This allows users who generated a url prior to 2022 to get sprint sessions
       // Without needing to regenerate the url for the new format.
-      // if(process.env.NEXT_PUBLIC_SITE_KEY === "f1"){
-      //   rules.push(
-      //       {
-      //         source: '/download/:prefix*_q_:suffix*',
-      //         permanent: true,
-      //         destination: 'https://files.motorsportcalendars.com/:prefix*_sprint_qualifying_:suffix*',
-      //       }
-      //   );
-      // }
-      
-      if(process.env.NEXT_PUBLIC_SITE_KEY != "f1"){
+      if(process.env.NEXT_PUBLIC_SITE_KEY === "f1"){
         rules.push(
             {
-              source: "/download/:file*",
-              destination: `https://files-${process.env.NEXT_PUBLIC_SITE_KEY}.motorsportcalendars.com/:file*`,
+              source: '/download/:prefix*_q_:suffix*',
               permanent: true,
+              destination: 'https://files.motorsportcalendars.com/:prefix*_sprint_qualifying_:suffix*',
             }
         );
       }
+      
+      rules.push(
+          {
+            source: "/download/:file*",
+            destination: `https://files-${process.env.NEXT_PUBLIC_SITE_KEY}.motorsportcalendars.com/:file*`,
+            permanent: true,
+          }
+      );
       
       return rules; 
     }
