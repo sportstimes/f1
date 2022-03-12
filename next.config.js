@@ -15,11 +15,6 @@ module.exports = (phase) => {
   // Move _public/:site_key to public
   require('./build/public-assets');
   
-  // Generate the ICS files at build time.
-  if ((isProd || isStaging) && (process.env.NEXT_PUBLIC_SITE_KEY == "f1")) {
-    require('./build/generate-calendars');
-  }
-
   return withPWA(nextTranslate({
     webpack: (cfg) => {
       cfg.module.rules.push(
