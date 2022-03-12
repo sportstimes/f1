@@ -7,3 +7,35 @@ compatibility_date = "2021-12-17"
 [env.production]
 name = "calendar-worker-production"
 route = "files.motorsportcalendars.com/*"
+
+[env.extremee]
+name = "files-extremee"
+route = "files-extremee.motorsportcalendars.com/*"
+
+[env.f1]
+name = "files-f1"
+route = "files-f1.motorsportcalendars.com/*"
+
+[env.f2]
+name = "files-f2"
+route = "files-f2.motorsportcalendars.com/*"
+
+[env.f3]
+name = "files-f3"
+route = "files-f3.motorsportcalendars.com/*"
+
+[env.fe]
+name = "files-fe"
+route = "files-fe.motorsportcalendars.com/*"
+
+[env.indycar]
+name = "files-indycar"
+route = "files-indycar.motorsportcalendars.com/*"
+
+[env.motogp]
+name = "files-motogp"
+route = "files-motogp.motorsportcalendars.com/*"
+
+[env.wseries]
+name = "files-wseries"
+route = "files-wseries.motorsportcalendars.com/*"

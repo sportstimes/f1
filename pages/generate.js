@@ -31,7 +31,7 @@ function Generate(props) {
 	// If the format remains in 2022, then show Sprint Qualifying separately allowing
 	// Users to get notified of Sprint Qualifying specifically
 	sessions = sessions.filter(item => item !== "sprint");
-
+	
 	// Default form values...
 	var defaults = {
 		alarm: false,

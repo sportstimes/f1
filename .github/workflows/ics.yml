@@ -8,7 +8,6 @@ on:
         type: choice
         description: Which site?
         options:
-        - all
         - f1
         - f2
         - f3
@@ -46,11 +45,6 @@ jobs:
           npm i @cloudflare/wrangler
           npm i ics
           npm i dayjs
-
-      # - name: Generate All Calendars
-      #   if: !github.event.inputs.site
-      #   run: |
-      #     sudo node build/generate-calendars.js
           
       - name: Generate Specific Calendars
         run: |
@@ -60,7 +54,7 @@ jobs:
         run: |
           mkdir -p ~/.wrangler/config/
           echo "api_token=\"${CF_API_TOKEN}\"" > ~/.wrangler/config/default.toml
-          yarn wrangler publish --env production
+          yarn wrangler publish --env ${{github.event.inputs.site}}
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}

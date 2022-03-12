@@ -16,7 +16,7 @@ module.exports = (phase) => {
   require('./build/public-assets');
   
   // Generate the ICS files at build time.
-  if ((isProd || isStaging) && (process.env.NEXT_PUBLIC_SITE_KEY != "motogp")) {
+  if ((isProd || isStaging) && (process.env.NEXT_PUBLIC_SITE_KEY == "f1")) {
     require('./build/generate-calendars');
   }
 
@@ -62,14 +62,16 @@ module.exports = (phase) => {
       //       }
       //   );
       // }
-      // 
-      // rules.push(
-      //     {
-      //       source: "/download/:file*",
-      //       destination: "https://files.motorsportcalendars.com/:file*",
-      //       permanent: true,
-      //     }
-      // );
+      
+      if(process.env.NEXT_PUBLIC_SITE_KEY != "f1"){
+        rules.push(
+            {
+              source: "/download/:file*",
+              destination: `https://files-${process.env.NEXT_PUBLIC_SITE_KEY}.motorsportcalendars.com/:file*`,
+              permanent: true,
+            }
+        );
+      }
       
       return rules; 
     }
