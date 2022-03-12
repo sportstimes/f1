@@ -33,9 +33,9 @@ jobs:
           node-version: '14'
         
         
-        - name: Test
-          run: |
-            echo "${{github.event.inputs.site}}"
+      - name: Test
+        run: |
+          echo "${{github.event.inputs.site}}"
       
       
 #       - name: Cache node modules

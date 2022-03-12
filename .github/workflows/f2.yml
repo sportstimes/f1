@@ -1,4 +1,4 @@
-name: Deploy ICS Files to Cloudflare Workers
+name: Deploy F2 ICS Files
 
 # Controls when the workflow will run
 on:
