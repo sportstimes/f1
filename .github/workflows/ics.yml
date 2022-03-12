@@ -59,13 +59,13 @@ jobs:
           
       - name: Generate Specific Calendars
         run: |
-          sudo node build/generate-calendars.js ${{github.event.inputs.site}}
+          sudo node build/generate-calendars.js ${{env.SITE}}
 
       - name: Publish to Cloudflare Workers Sites
         run: |
           mkdir -p ~/.wrangler/config/
           echo "api_token=\"${CF_API_TOKEN}\"" > ~/.wrangler/config/default.toml
-          yarn wrangler publish --env ${{github.event.inputs.site}}
+          yarn wrangler publish --env ${{env.SITE}}
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
