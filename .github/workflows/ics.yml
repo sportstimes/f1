@@ -1,6 +1,5 @@
 name: Deploy ICS Files to Cloudflare Workers
 
-# Controls when the workflow will run
 on:
   workflow_dispatch:
     inputs:
@@ -25,35 +24,21 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  
-  env:
-    SITE: ${{ github.event.inputs.site || inputs.site }}
-  
-  
-  steps:
-    - name: print message
-      run: |
-        echo "${{ env.SITE }}"
     
+    env:
+      SITE: ${{ github.event.inputs.site || inputs.site }}
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
   
-
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-# 
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: actions/setup-node@v2
-#         with:
-#           node-version: '14'
-#         
-#         
-#       - name: Test
-#         run: |
-#           run: echo ${{ toJson(github) }}
-      
-      
+      - name: Site
+        run: |
+          echo "${{ env.SITE }}"
+          
+          
 #       - name: Cache node modules
 #         uses: actions/cache@v2
 #         env:
