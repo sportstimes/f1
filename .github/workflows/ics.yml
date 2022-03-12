@@ -35,7 +35,7 @@ jobs:
         
       - name: Test
         run: |
-          echo "${{github.event}}"
+          run: echo ${{ toJson(github) }}
       
       
 #       - name: Cache node modules
