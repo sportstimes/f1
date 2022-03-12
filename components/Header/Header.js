@@ -109,7 +109,7 @@ class Header extends React.Component {
 						</a>
 					</div>
 					
-					<div className="md:hidden fixed right-4 bottom-4" >
+					<div className="md:hidden fixed right-4 bottom-4 z-50" >
 						<a
 							href="https://www.buymeacoffee.com/f1cal"
 							className="support-btn-rounded mt-3"
