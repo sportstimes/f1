@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - uses: ./.github/workflows/ics
+      - uses: sportstimes/f1/.github/workflows/ics.yml@feature/updates-workflows
         with:
           site: "f2"
