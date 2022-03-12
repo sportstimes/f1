@@ -3,23 +3,26 @@
 	"url": "f3calendar.com",
 	"calendarCDN": "files-f3.motorsportcalendars.com",
 	"availableYears": [2021, 2022],
-	"sessions": ["practice", "qualifying", "race1", "race2", "race3"],
-	"featuredSessions": ["race1", "race2", "race3"],
-	"collapsedSessions": ["practice", "qualifying", "race1", "race2", "race3"],
+	"sessions": ["practice", "qualifying", "sprint", "feature"],
+	"featuredSessions": ["feature"],
+	"collapsedSessions": [
+		"practice",
+		"qualifying",
+		"sprint*",
+		"feature"
+	],
 	"sessionMap": {
 		"practice": "p",
 		"qualifying": "q",
-		"race1": "race1",
-		"race2": "race2",
-		"race3": "race3"
+		"sprint": "sprint",
+		"feature": "feature"
 	},
 	"sessionLengths": {
 		"practice": 45,
 		"qualifying": 30,
-		"race1": 40,
-		"race2": 40,
-		"race3": 40
+		"sprint": 40,
+		"race": 40
 	},
 	"supportsEmailReminders": false,
-	"notice": "Some dates & times are TBC. Calendar will be updated once details are confirmed."
+	"notice": "The F3 weekend format has changed. You may need to regenerate your calendar to account for the different sessions. Most sessions are still TBC. Calendar will be updated once details are confirmed."
 }
