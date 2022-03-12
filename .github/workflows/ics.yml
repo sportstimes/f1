@@ -23,20 +23,19 @@ on:
         type: string
 
 jobs:
-  execute:
+  build:
     runs-on: ubuntu-latest
   
   env:
     SITE: ${{ github.event.inputs.site || inputs.site }}
   
   
-  printJob:    
-    name: Print event
-    runs-on: ubuntu-latest
-    steps:
-    - name: Dump GitHub context
+  steps:
+    - name: print message
       run: |
-        echo "${{ env.MESSAGE }}"
+        echo "${{ env.SITE }}"
+    
+  
 
 
 # jobs:
