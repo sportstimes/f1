@@ -10,6 +10,6 @@ on:
 
 jobs:
   build:
-    uses: sportstimes/f1/.github/workflows/ics.yml@feature/updated-workflows
+    uses: sportstimes/f1/.github/workflows/ics.yml@main
     with:
       site: 'wseries'
