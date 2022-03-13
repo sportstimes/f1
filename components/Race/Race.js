@@ -104,7 +104,7 @@ class Race extends React.Component {
 										.tz(this.props.timezone)
 										.format("D MMM")}
 							</td>
-							<td className={`w-1/12 ${titleRowClasses(this.props)} relative right-3`}>
+							<td className={`w-1/12 ${titleRowClasses(this.props)} pr-3 sm:pr-0`}>
 								{this.props.item.sessions &&
 									this.props.item.sessions[config.featuredSessions[0]] &&
 									dayjs(
