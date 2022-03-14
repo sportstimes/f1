@@ -1,8 +1,8 @@
 {
     "date": "日期",
     "time": "时间",
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
+    "showPreviousRaces": "显示过往比赛",
+    "hidePreviousRaces": "隐藏过往比赛",
     "badges": {
         "tbc": "待定",
         "tbc_title": "待确认",
@@ -11,36 +11,36 @@
         "next": "即将开始"
     },
     "schedule": {
-        "fp1": "第1次练习赛",
-        "fp2": "第2次练习赛",
-        "fp3": "第3次练习赛",
-        "fp4": "第4次练习赛",
+        "fp1": "第1次自由练习",
+        "fp2": "第2次自由练习",
+        "fp3": "第3次自由练习",
+        "fp4": "第4次自由练习",
         "shakedown": "Shakedown",
-        "practice1": "Practice 1",
-        "practice2": "Practice 2",
-        "practice3": "Practice 3",
-        "practice": "Practice",
+        "practice1": "练习赛 1",
+        "practice2": "练习赛 2",
+        "practice3": "练习赛 3",
+        "practice": "练习赛",
         "qualifying": "排位赛",
         "qualifying1": "排位赛 1",
         "qualifying2": "排位赛 2",
-        "sprint": "排位冲刺赛",
-        "semifinal": "Semi Final",
+        "sprint": "冲刺排位赛",
+        "semifinal": "半决赛",
         "warmup": "暖胎圈",
         "race": "正赛",
         "race1": "正赛 1",
         "race2": "正赛 2",
         "race3": "正赛 3",
         "gp": "大奖赛",
-        "sprint1": "Sprint 1",
-        "sprint2": "Sprint 2",
+        "sprint1": "冲刺赛 1",
+        "sprint2": "冲刺赛 2",
         "feature": "Feature"
     },
     "races": {
         "austrian-grand-prix": "奥地利大奖赛",
-        "steiermark-grand-prix": "施泰尔马克 (奥地利) 大奖赛",
+        "steiermark-grand-prix": "施蒂利亚（奥地利）大奖赛",
         "hungarian-grand-prix": "匈牙利大奖赛",
         "british-grand-prix": "英国大奖赛",
-        "anniversary-british-grand-prix": "七十周年纪念 (英国) 大奖赛",
+        "anniversary-british-grand-prix": "七十周年纪念（英国）大奖赛",
         "spanish-grand-prix": "西班牙大奖赛",
         "belgian-grand-prix": "比利时大奖赛",
         "italian-grand-prix": "意大利大奖赛",
@@ -60,23 +60,23 @@
         "mexico-grand-prix": "墨西哥大奖赛",
         "brazilian-grand-prix": "巴西大奖赛",
         "abu-dhabi-grand-prix": "阿布扎比大奖赛",
-        "tuscan-grand-prix": "托斯卡纳 (意大利) 大奖赛",
+        "tuscan-grand-prix": "托斯卡纳（意大利）大奖赛",
         "eifel-grand-prix": "艾费尔 (德国) 大奖赛",
         "portuguese-grand-prix": "葡萄牙大奖赛",
-        "emilia-romagna-grand-prix": "艾米利亚-罗马涅 (意大利) 大奖赛",
-        "sakhir-grand-prix": "萨基尔 (巴林) 大奖赛",
+        "emilia-romagna-grand-prix": "艾米利亚-罗马涅（意大利）大奖赛",
+        "sakhir-grand-prix": "萨基尔（巴林）大奖赛",
         "turkish-grand-prix": "土耳其大奖赛",
         "saudi-arabia-grand-prix": "沙特阿拉伯大奖赛",
-        "qatar-grand-prix" : "Qatar Grand Prix",
-		"miami-grand-prix" : "Miami Grand Prix"
+        "qatar-grand-prix" : "卡塔尔大奖赛",
+		"miami-grand-prix" : "迈阿密（美国）大奖赛"
 	},
 	"options": {
         "calendar": "在你的日历App中添加赛程信息",
         "email": "接受邮件提醒",
         "timezonePicker": {
             "detect": "Detect",
-            "showing": "当前显示的时间，时区为",
-            "pick": "选择时区..."
+            "showing": "当前时区：",
+            "pick": "选择时区"
         },
         "formatPicker": {
             "title": "时间格式",
@@ -102,15 +102,15 @@
     },
     "form": {
         "title": "生成日历",
-        "description": "首先, 选择你在比赛日中所关注的某个赛程",
+        "description": "请选择你在比赛日中所关注的赛程",
         "reminder": "设置",
         "reminderContinued": "分钟前提醒",
         "button": "确认",
         "buttonSubmitted": "已提交",
-        "nonOptionsSelected": "请至少选择一个赛程信息."
+        "nonOptionsSelected": "请至少选择一个赛程信息"
     },
     "download": {
-        "title": "选择日历的类型",
+        "title": "选择日历类型",
         "webcalTitle": "手机端或电脑端",
         "webcalDescription": "像Outlook和macOS日历这样的程序或者App，会自动更新日历",
         "webcalButton": "获取",
@@ -119,12 +119,12 @@
         "gcalDescriptionLink": "详细指导",
         "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
 		"icsTitle": "下载ICS文件",
-        "icsDescription": "某些方式（如.ic），无法自动获取更新信息",
+        "icsDescription": "某些方式（如.ics），无法自动获取更新信息",
         "icsButton": "下载"
     },
     "subscribe": {
         "title": "订阅",
-        "description": "在比赛日之前接受邮件提醒服务.",
+        "description": "在比赛日之前接受邮件提醒服务",
         "label": "邮箱地址",
         "button": "确认订阅"
     },
@@ -138,7 +138,7 @@
         "title": "F1赛程",
         "subtitle": "正赛，排位赛和练习赛",
         "seo": {
-            "title": "F1赛程 {{year}} - Formula One Race Times and Dates",
+            "title": "{{year}} F1赛程 - F1赛事日历",
             "description": "Formula One Calendar for {{year}} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
             "keywords": "F1, 一级方程式, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
         },
