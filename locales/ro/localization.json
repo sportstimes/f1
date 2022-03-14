@@ -3,16 +3,15 @@
     "time": "Oră",
     "badges": {
         "tbc": "AFC",
-        "tbc_title": "A fi confirmat",
+        "tbc_title": "Urmează a fi confirmat",
         "tickets": "Bilete",
         "canceled": "Anulat",
-        "next": "URMĂTOR"
+        "next": "URMEAZĂ"
     },
     "schedule": {
         "fp1": "Antrenament liber 1",
         "fp2": "Antrenament liber 2",
         "fp3": "Antrenament liber 3",
-        "fp4": "Antrenament liber 4",
         "shakedown": "Probe",
         "practice1": "Antrenament 1",
         "practice2": "Antrenament 2",
@@ -21,7 +20,7 @@
         "qualifying": "Calificări",
         "qualifying1": "Calificări 1",
         "qualifying2": "Calificări 2",
-        "sprint": "Sprint",
+        "sprintQualifying": "Calificare Sprint",
         "semifinal": "Semifinală",
         "warmup": "Încălzire",
         "race": "Cursă",
@@ -38,8 +37,7 @@
         "steiermark-grand-prix": "Marele Premiu Steiermark (al Austriei)",
         "hungarian-grand-prix": "Marele Premiu al Ungariei",
         "british-grand-prix": "Marele Premiu al Marii Britanii",
-        "anniversary-british-grand-prix": "Marele Premiu al Aniversării de 70 de ani (al Marii Britanii)",
-        "spanish-grand-prix": "Marele Premiu al Spaniei",
+        "anniversary-british-grand-prix": "Marele Premiu al Aniversării de 70 de ani (al Marii Britanii)",        "spanish-grand-prix": "Marele Premiu al Spaniei",
         "belgian-grand-prix": "Marele Premiu al Belgiei",
         "italian-grand-prix": "Marele Premiu al Italiei",
         "australian-grand-prix": "Marele Premiu al Australiei",
@@ -65,8 +63,8 @@
         "sakhir-grand-prix": "Marele Premiu Sakhir (al Bahrainului)",
         "turkish-grand-prix": "Marele Premiu al Turciei",
         "saudi-arabia-grand-prix": "Marele Premiu al Arabiei Saudite",
-        "qatar-grand-prix": "qatar-marele-premiu",
-        "miami-grand-prix": "miami-marele-premiu"
+        "qatar-grand-prix": "Marele Premiu al Qatarului",
+        "miami-grand-prix": "Marele Premiu din Miami"
     },
     "options": {
         "calendar": "Adaugă data și ora curselor în Calendar",
@@ -105,7 +103,7 @@
         "button": "Obține Calendar",
         "buttonSubmitted": "Trimis",
         "nonOptionsSelected": "Selectează cel puțin o sesiune pentru calendarul tău.",
-        "attention": "The three 2022 Sprint Qualifying sessions will be included when Qualifying is selected. If these sessions remain for 2023 we'll introduce a new option."
+        "attention": "Cele 3 Calificări Sprint din 2021 vor fi incluse când este selectată opțiunea Calificări. Dacă aceste sesiuni rămân și pentru anul 2022, vom introduce o nouă opțiune."
     },
     "download": {
         "title": "Selectează Tipul Calendarului",
@@ -116,7 +114,7 @@
         "gcalDescription": "Pentru a adăuga acest calendar, copiază și lipește acest URL în Google Calendar",
         "gcalDescriptionLink": "instrucțiuni detaliate",
         "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
-		"icsTitle": "Descarcă fișier ICS",
+        "icsTitle": "Descarcă fișier ICS",
         "icsDescription": "Calendar care nu se actualizează automat (.ics) pentru aplicații care nu suportă această funcționalitate.",
         "icsButton": "Descarcă"
     },
@@ -190,7 +188,7 @@
             "description": "Calendar MotoGP pentru sezonul {{year}} cu toate cursele de MotoGP, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
             "keywords": "MotoGP, data și ora curselor, curse, notificări, alerte, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {{year}}"
         },
-        "footnote": "notă de subsol"
+        "footnote": "MotoGP este marcă înregistrată Dorna Sports, S.L"
     },
     "wseries": {
         "title": "Calendar Seria W",
@@ -210,13 +208,13 @@
             "description": "Calendar Extreme E pentru sezonul {{year}} cu toate xpremiile de Extreme E, antrenamentele &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
             "keywords": "Extreme E, data și ora curselor, curse, notificări, alerte, premiu x, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {{year}}"
         },
-        "footnote": "notă de subsol"
+        "footnote": "Extreme E este marcă înregistrată."
     },
     "event": "eveniment",
     "notice": {
         "text": "text",
-        "link": "link"
+        "link": "Citește mai mult"
     },
-    "showPreviousRaces": "arataCursaPrecedenta",
-    "hidePreviousRaces": "ascundeCursaPrecedenta"
+    "showPreviousRaces": "Arată cursele precedente",
+    "hidePreviousRaces": "Ascunde cursele precedente"
 }
