@@ -3,20 +3,18 @@
 	"url": "f2cal.com",
 	"calendarCDN": "files-f2.motorsportcalendars.com",
 	"availableYears": [2021, 2022],
-	"sessions": ["practice", "qualifying", "sprint1", "sprint2", "feature"],
-	"featuredSessions": ["sprint1", "sprint2", "feature"],
+	"sessions": ["practice", "qualifying", "sprint", "feature"],
+	"featuredSessions": ["feature"],
 	"collapsedSessions": [
 		"practice",
 		"qualifying",
-		"sprint1",
-		"sprint2",
+		"sprint*",
 		"feature"
 	],
 	"sessionMap": {
 		"practice": "p",
 		"qualifying": "q",
-		"sprint1": "sprint1",
-		"sprint2": "sprint2",
+		"sprint": "sprint",
 		"feature": "feature"
 	},
 	"sessionLengths": {
@@ -26,5 +24,6 @@
 		"sprint2": 45,
 		"feature": 60
 	},
-	"supportsEmailReminders": false
+	"supportsEmailReminders": false,
+	"notice": "The F2 weekend format has changed. You may need to regenerate your calendar to account for the different sessions. Most sessions are still TBC. Calendar will be updated once details are confirmed."
 }

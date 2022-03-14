@@ -1,0 +1,15 @@
+name: Deploy F3 ICS Files
+
+# Controls when the workflow will run
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '_db/f3/2022.json'
+
+jobs:
+  build:
+    uses: sportstimes/f1/.github/workflows/ics.yml@main
+    with:
+      site: 'f3'

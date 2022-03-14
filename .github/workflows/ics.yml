@@ -1,6 +1,5 @@
 name: Deploy ICS Files to Cloudflare Workers
 
-# Controls when the workflow will run
 on:
   workflow_dispatch:
     inputs:
@@ -16,17 +15,29 @@ on:
         - motogp
         - wseries
         - extremee
+  workflow_call:
+    inputs:
+      site:
+        required: true
+        type: string
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
+    env:
+      SITE: ${{ github.event.inputs.site || inputs.site }}
+    
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-
+  
+      - name: Site Selection
+        run: |
+          echo "${{ env.SITE }}"
+          
       - name: Cache node modules
         uses: actions/cache@v2
         env:
@@ -48,13 +59,13 @@ jobs:
           
       - name: Generate Specific Calendars
         run: |
-          sudo node build/generate-calendars.js ${{github.event.inputs.site}}
+          sudo node build/generate-calendars.js ${{env.SITE}}
 
       - name: Publish to Cloudflare Workers Sites
         run: |
           mkdir -p ~/.wrangler/config/
           echo "api_token=\"${CF_API_TOKEN}\"" > ~/.wrangler/config/default.toml
-          yarn wrangler publish --env ${{github.event.inputs.site}}
+          yarn wrangler publish --env ${{env.SITE}}
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}

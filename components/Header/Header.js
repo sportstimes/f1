@@ -88,28 +88,8 @@ class Header extends React.Component {
 
 					{this.props.showCTABar && <CTABar />}
 					
-					<div className="hidden md:block fixed right-4 bottom-4" >
-						<a
-							href="https://www.buymeacoffee.com/f1cal"
-							className="support-btn-rounded-desktop mt-3"
-							onClick={() =>
-								plausible("Support", {
-									props: {
-										buttonId: "footer"
-									}
-								})
-							}
-						>
-							<img
-								src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-								width="25"
-								height="25"
-								alt="buymeacoffee"
-							/>
-						</a>
-					</div>
-					
-					<div className="md:hidden fixed right-4 bottom-4" >
+					{ /*
+					<div className="md:hidden fixed right-4 bottom-4 z-50" >
 						<a
 							href="https://www.buymeacoffee.com/f1cal"
 							className="support-btn-rounded mt-3"
@@ -129,7 +109,10 @@ class Header extends React.Component {
 							/>
 						</a>
 					</div>
+					*/
+					}
 					
+					<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="f1cal" data-description="Support F1 Calendar on Buy me a coffee!" data-message="" data-color="#d10f1e" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 					
 				</header>
 			</div>

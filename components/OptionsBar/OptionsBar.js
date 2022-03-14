@@ -189,7 +189,7 @@ class OptionsBar extends React.Component {
 						</noscript>
 					</>
 				) : (
-					<div className="flex justify-between">
+					<div className="flex justify-between items-center">
 						<div>
 							<a
 								onClick={this.togglePicker}
