@@ -1,0 +1,224 @@
+{
+	"date": "தேதி",
+	"time": "நேரம்",
+	"badges": {
+		"tbc": "உறுதி செய்யவில்லை",
+		"tbc_title": "உறுதி செய்யவில்லை",
+		"tickets": "நுழைவு சீட்டுகள்",
+		"canceled": "ரத்து",
+		"next": "அடுத்தது"
+	},
+	"schedule": {
+		"fp1": "இலவச பயிற்சி 1",
+		"fp2": "இலவச பயிற்சி 2",
+		"fp3": "இலவச பயிற்சி 3",
+		"shakedown": "துறிதப்படுத்துதல்",
+		"practice1": "பயிற்சி 1",
+		"practice2": "பயிற்சி 2",
+		"practice3": "பயிற்சி 3",
+		"practice": "பயிற்சி",
+		"qualifying": "தகுதி போட்டி",
+		"qualifying1": "தகுதி போட்டி 1",
+		"qualifying2": "தகுதி போட்டி 2",
+		"sprintQualifying": "விரைவோட்ட தகுதி போட்டி",
+		"semifinal": "அரை இறுதி",
+		"warmup": "தயார் செய்தல்",
+		"race": "பந்தயம்",
+		"race1": "பந்தயம் 1",
+		"race2": "பந்தயம் 2",
+		"race3": "பந்தயம் 3",
+		"gp": "பந்தயம்",
+		"sprint1": "குறுகிய பந்தயம்",
+		"sprint2": "குறுகிய பந்தயம்",
+		"feature": "அறிமுகம்",
+		"fp4": "Free Practice 4",
+		"sprint": "Sprint"
+	},
+	"races": {
+		"austrian-grand-prix": "ஆஸ்திரியன் பாந்தயம்",
+		"steiermark-grand-prix": "ஸ்டீயர்மார்க் (ஆஸ்திரிய) பந்தயம்",
+		"hungarian-grand-prix": "ஹங்கேரியன் பந்தயம்",
+		"british-grand-prix": "பிரிட்டிஷ் பந்தயம்",
+		"anniversary-british-grand-prix": "70ஆம் ஆண்டுவிழா (பிரிட்டிஷ்) பந்தயம்",
+		"spanish-grand-prix": "ஸ்பானிஷ் பந்தயம்",
+		"belgian-grand-prix": "பெல்ஜிய பந்தயம்",
+		"italian-grand-prix": "இத்தாலிய பந்தயம்",
+		"australian-grand-prix": "ஆஸ்திரேலிய பந்தயம்",
+		"bahrain-grand-prix": "பஹ்ரைன் பந்தயம்",
+		"vietnamese-grand-prix": "வியேட்னாமீஸ் பந்தயம்",
+		"china-grand-prix": "சீனா பந்தயம்",
+		"dutch-grand-prix": "டட்ச் பந்தயம்",
+		"monaco-grand-prix": "மானகோ பந்தயம்",
+		"azerbaijan-grand-prix": "ஏசர்பாய்ஜான் பந்தயம்",
+		"canadian-grand-prix": "கன்னட பந்தயம்",
+		"french-grand-prix": "பிரெஞ்ச் பந்தயம்",
+		"singapore-grand-prix": "சிங்கப்பூர் பந்தயம்",
+		"russian-grand-prix": "ராஸ்ய பந்தயம்",
+		"japanese-grand-prix": "ஜப்பானிய பந்தயம்",
+		"us-grand-prix": "யுணைட்டெட் ஸ்டேட்ஸ் பந்தயம்",
+		"mexico-grand-prix": "மெக்சிகன் பந்தயம்",
+		"brazilian-grand-prix": "பிரேசிலிய பந்தயம்",
+		"abu-dhabi-grand-prix": "அபுதாபி பந்தயம்",
+		"tuscan-grand-prix": "டஸ்கன் பந்தயம்",
+		"eifel-grand-prix": "இஃபில் பந்தயம்",
+		"portuguese-grand-prix": "போட்டுச்சுகீஸ்ய பந்தயம்",
+		"emilia-romagna-grand-prix": "எமிலா ரோமனா பந்தயம்",
+		"sakhir-grand-prix": "சக்கீர் (பஹ்ரைன்) பந்தயம்",
+		"turkish-grand-prix": "துருக்கிய பந்தயம்",
+		"saudi-arabia-grand-prix": "சவுதி அரேபிய பந்தயம்",
+		"qatar-grand-prix": "Qatar Grand Prix",
+		"miami-grand-prix": "Miami Grand Prix"
+	},
+	"options": {
+		"calendar": "Add race dates & times to your Calendar",
+		"email": "Receive email reminders",
+		"timezonePicker": {
+			"showing": "Showing times for",
+			"pick": "Pick a timezone...",
+			"detect": "Detect"
+		},
+		"formatPicker": {
+			"title": "Time Format",
+			"12hr": "12-Hour Time",
+			"24hr": "24-Hour Time"
+		},
+		"button": "Done"
+	},
+	"contribute": "Contribute",
+	"languageSelector": "Select Language",
+	"javascript": "This site works best with Javascript Enabled.",
+	"footer": {
+		"coffee": "Support us, buy us a coffee.",
+		"twitter": "We’re on Twitter",
+		"github": "Open Sourced on GitHub",
+		"issue": "Spotted an issue? Report",
+		"links": {
+			"wereOn": "We're on",
+			"openSourcedOn": "Open Sourced on",
+			"spottedIssue": "Spotted an issue?",
+			"spottedReport": "Report"
+		}
+	},
+	"form": {
+		"title": "Generate Calendar",
+		"description": "முதலில், உங்கள் காலெண்டரில் எந்த அமர்வுக்காலத்தை சேர்க்க விரும்புகிறீர்கள் என்பதைத் தேர்ந்தெடுக்கவும்:",
+		"reminder": "நினைவூட்டலை அமைக்கவும்",
+		"reminderContinued": "உங்கள் சீசன் நாட்காட்டியில் ஒவ்வொரு நிகழ்வுக்கும் சில நிமிடங்களுக்கு முன்.",
+		"button": "நாட்காட்டியை தெரிவுசெய்",
+		"buttonSubmitted": "சமர்ப்பிக்கப்பட்டது",
+		"nonOptionsSelected": "குறைந்தது ஒரு சீசனை தெரிவு செய்யவும்.",
+		"attention": ""
+	},
+	"download": {
+		"title": "நாட்காட்டி வகையை தெரிவுசெய்",
+		"webcalTitle": "மொபைல் அல்லது டெஸ்க்டாப் தெரிவுசெய்யவும்",
+		"webcalDescription": "Outlook மற்றும் mac OS Calendar போன்ற பயன்பாடுகளுக்கான நாட்காட்டியை தானாகப் புதுப்பிக்கிறது.",
+		"webcalButton": "பெற்றுக்கொள்",
+		"gcalTitle": "கூகிள் நாட்காட்டிக்காக",
+		"gcalDescription": "இந்த நாட்காட்டியை தெரிவு செய்ய, இந்த URL-ஐ காப்பி செய்து கூகிள் நாட்காட்டியில் பேஸ்ட் செய்யவும்",
+		"gcalDescriptionLink": "நீக்கப்பட்ட அறிவுறுத்தல்கள்",
+		"icsTitle": "ICS ஃபைலை பதிவிறக்கம் செய்க",
+		"icsDescription": "தானாக மேம்படுத்த இயலாத நாட்காட்டிக்கான (.ics) நாட்காட்டி.",
+		"icsButton": "பதிவிறக்கம் செய்க",
+		"gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added."
+	},
+	"subscribe": {
+		"title": "பதிவு செய்க",
+		"description": "ஒவ்வொரு பந்தய வார இறுதிக்கும் முன்னதாக மின்னஞ்சல் நினைவூட்டலைப் பெறவும்.",
+		"label": "மின்னஞ்சல் முகவரி",
+		"button": "பதிவு செய்க"
+	},
+	"timezones": {
+		"title": "Pick a timezone..."
+	},
+	"years": {
+		"title": "Pick a year..."
+	},
+	"f1": {
+		"title": "F1 Calendar",
+		"subtitle": "Races, Qualifying & Practice Sessions",
+		"seo": {
+			"title": "F1 Calendar {{year}} - Formula One Race Times and Dates",
+			"description": "Formula One Calendar for {{year}} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+			"keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		},
+		"footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+	},
+	"f2": {
+		"title": "F2 Calendar",
+		"subtitle": "Races, Qualifying & Practice Sessions",
+		"seo": {
+			"title": "F2 Calendar {{year}} - Formula Two Race Times and Dates",
+			"description": "Formula Two Calendar for {{year}} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+			"keywords": "placeholder"
+		},
+		"footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+	},
+	"f3": {
+		"title": "F3 Calendar",
+		"subtitle": "Races, Qualifying & Practice Sessions",
+		"seo": {
+			"title": "F3 Calendar {{year}} - Formula Three Race Times and Dates",
+			"description": "Formula Three Calendar for {{year}} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+			"keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		},
+		"footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
+	},
+	"fe": {
+		"title": "பார்முலா E நாட்காட்டி",
+		"subtitle": "பந்தயம், தகுதி போட்டி மற்றும் பயிர்ச் அமர்வுக்காலம்",
+		"seo": {
+			"title": "பார்முலா E நாட்காட்டி {{ஆண்டு}} - பார்முலா E பந்தயம் நேரம் மற்றும் தேதிகள்",
+			"description": "அனைத்து பார்முலா E, E-பிரிக்ஸ் பந்தயங்கள், பயிற்சி மற்றும் தகுதி அமர்வுகளுடன் {{ஆண்டு}} சீசனுக்கான பார்முலா E நாட்காட்டி. நினைவூட்டல் அம்சத்தை அமைக்கவும். அனைத்து உலக நேர மண்டலங்கள். பதிவிறக்கவும் அல்லது குழுசேரவும்.",
+			"keywords": "FE, பார்முலா E, பந்தய நேரங்கள், பந்தயங்கள், நினைவூட்டல், விழிப்பூட்டல்கள், E பிரிக்ஸ், காலண்டர், தேதிகள், தொடக்க நேரங்கள், தகுதி, பயிற்சி, லண்டன், ஐரோப்பா, {{ஆண்டு}}"
+		},
+		"footnote": "பார்முலா-E, FIA பார்முலா-E சாம்பியன்ஷிப் & E-ப்ரிக்ஸ் ஆகியவை FIA இன் வர்த்தக முத்திரைகள்."
+	},
+	"indycar": {
+		"title": "இண்டிகார் நாட்காட்டி",
+		"subtitle": "பந்தயங்கள், தகுதி போட்டி மற்றும் பயிற்சி அமர்வுக்காலம்",
+		"seo": {
+			"title": "IndyCar நாட்காட்டி {{ஆண்டு}} - பந்தய நேரங்கள் மற்றும் தேதிகள்",
+			"description": "அனைத்து IndyCar பந்தயங்கள், பயிற்சி மற்றும் தகுதி அமர்வுகளுடன் {{year}} சீசனுக்கான IndyCar Calendar. நினைவூட்டல் அம்சத்தை அமைக்கவும். அனைத்து உலக நேர மண்டலங்கள். பதிவிறக்கவும் அல்லது குழுசேரவும்.",
+			"keywords": "IndyCar, பந்தய நேரங்கள், பந்தயங்கள், நினைவூட்டல், விழிப்பூட்டல்கள், காலண்டர், தேதிகள், தொடக்க நேரங்கள், தகுதி, பயிற்சி, {{year}}"
+		},
+		"footnote": "IndyCar என்பது Brickyard வர்த்தக முத்திரைகள், Inc இன் பதிவு செய்யப்பட்ட வர்த்தக முத்திரையாகும்"
+	},
+	"motogp": {
+		"title": "MotoGP நாட்காட்டி",
+		"subtitle": "பந்தயங்கள், தகுதி போட்டி மற்றும் பயிற்சி அமர்வுக்காலம்",
+		"seo": {
+			"title": "MotoGP நாட்காட்டி {{year}} - பந்தய நேரங்கள் மற்றும் தேதிகள்",
+			"description": "அனைத்து MotoGP பந்தயங்கள், பயிற்சி மற்றும் தகுதி அமர்வுகளுடன் {{year}} பருவத்திற்கான MotoGP நாட்காட்டி. நினைவூட்டல் அம்சத்தை அமைக்கவும். அனைத்து உலக நேர மண்டலங்கள். பதிவிறக்கவும் அல்லது குழுசேரவும்.",
+			"keywords": "MotoGP, பந்தய நேரங்கள், பந்தயங்கள், நினைவூட்டல், எச்சரிக்கைகள், நாட்காட்டி, தேதிகள், தொடக்க நேரங்கள், தகுதி, பயிற்சி, லண்டன், ஐரோப்பா, {{year}}"
+		},
+		"footnote": "அடிக்குறிப்பு"
+	},
+	"wseries": {
+		"title": "W தொடர் நாட்காட்டி",
+		"subtitle": "பந்தயங்கள், தகுதி போட்டி மற்றும் பயிற்சி அமர்வுக்காலம்",
+		"seo": {
+			"title": "W Series Calendar {{year}} - Race Times and Dates",
+			"description": "W Series Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+			"keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		},
+		"footnote": "W Series Calendar is not affiliated with W Series."
+	},
+	"extremee": {
+		"title": "Extreme E Calendar",
+		"subtitle": "Races, Qualifying & Practice Sessions",
+		"seo": {
+			"title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
+			"description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+			"keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		},
+		"footnote": ""
+	},
+	"event": "Formula 1 Grand Prix Events",
+	"notice": {
+		"text": "",
+		"link": ""
+	},
+	"showPreviousRaces": "Show Previous Races",
+	"hidePreviousRaces": "Hide Previous Races"
+}

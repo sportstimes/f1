@@ -24,14 +24,16 @@ class RaceTR extends React.Component {
 				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
 					<td className="w-1/8"></td>
 					<td className="w-1/2 py-4 pl-2">{t(titleKey)}</td>
-					<td className="w-1/3 text-right pr-3 sm:pr-0">
-						{dayjs(this.props.date)
-							.tz(this.props.timezone)
-							.format(
-								this.props.timeFormat == 12
-									? "D MMM h:mm A"
-									: "D MMM HH:mm"
-							)}
+					<td className="w-1/3 text-right">
+						<div className="relative right-3 sm:right-0">
+							{dayjs(this.props.date)
+								.tz(this.props.timezone)
+								.format(
+									this.props.timeFormat == 12
+										? "D MMM h:mm A"
+										: "D MMM HH:mm"
+								)}
+						</div>
 					</td>
 					<td />
 				</tr>
@@ -40,16 +42,18 @@ class RaceTR extends React.Component {
 			return (
 				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
 					<td className="w-1/8"></td>
-					<td className="w-1/2 py-4 pl-2">{t(titleKey)}</td>
+					<td className="w-1/2 py-4 pl-5">{t(titleKey)}</td>
 					<td className="w-1/6">
 						{dayjs(this.props.date)
 							.tz(this.props.timezone)
 							.format("D MMM")}
 					</td>
-					<td className="w-1/6 relative right-3">
-						{dayjs(this.props.date)
-							.tz(this.props.timezone)
-							.format(this.props.timeFormat == 12 ? "h:mm A" : "HH:mm")}
+					<td className="w-1/6">
+						<div className="relative right-3 sm:right-0">
+							{dayjs(this.props.date)
+								.tz(this.props.timezone)
+								.format(this.props.timeFormat == 12 ? "h:mm A" : "HH:mm")}
+						</div>
 					</td>
 					<td />
 				</tr>

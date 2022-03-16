@@ -104,41 +104,45 @@ class Race extends React.Component {
 										.tz(this.props.timezone)
 										.format("D MMM")}
 							</td>
-							<td className={`w-1/12 ${titleRowClasses(this.props)} relative right-3`}>
-								{this.props.item.sessions &&
-									this.props.item.sessions[config.featuredSessions[0]] &&
-									dayjs(
-										this.props.item.sessions[config.featuredSessions[0]]
-									)
-										.tz(this.props.timezone)
-										.format(
-											this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
-										)}
+							<td className={`w-1/12 ${titleRowClasses(this.props)}`}>
+								<div className="relative right-3 sm:right-0">
+									{this.props.item.sessions &&
+										this.props.item.sessions[config.featuredSessions[0]] &&
+										dayjs(
+											this.props.item.sessions[config.featuredSessions[0]]
+										)
+											.tz(this.props.timezone)
+											.format(
+												this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
+											)}
+								</div>
 							</td>
 						</>
 					) : (
-						<td className={`text-right pr-3 sm:pr-0 ${titleRowClasses(this.props)}`}>
-							{this.props.item.sessions &&
-							dayjs(this.props.item.sessions[firstEventSessionKey])
-								.tz(this.props.timezone)
-								.format("D MMM") !=
-								dayjs(this.props.item.sessions[lastEventSessionKey])
+						<td className={`text-right ${titleRowClasses(this.props)}`}>
+							<div className="relative right-3 sm:right-0">
+								{this.props.item.sessions &&
+								dayjs(this.props.item.sessions[firstEventSessionKey])
 									.tz(this.props.timezone)
-									.format("D MMM")
-								? `${dayjs(
-										this.props.item.sessions[firstEventSessionKey]
-								  )
+									.format("D MMM") !=
+									dayjs(this.props.item.sessions[lastEventSessionKey])
 										.tz(this.props.timezone)
-										.format("D MMM")} - ${dayjs(
-										this.props.item.sessions[lastEventSessionKey]
-								  )
-										.tz(this.props.timezone)
-										.format("D MMM")}`
-								: `${dayjs(
-										this.props.item.sessions[lastEventSessionKey]
-								  )
-										.tz(this.props.timezone)
-										.format("D MMM")}`}
+										.format("D MMM")
+									? `${dayjs(
+											this.props.item.sessions[firstEventSessionKey]
+								  	)
+											.tz(this.props.timezone)
+											.format("D MMM")} - ${dayjs(
+											this.props.item.sessions[lastEventSessionKey]
+								  	)
+											.tz(this.props.timezone)
+											.format("D MMM")}`
+									: `${dayjs(
+											this.props.item.sessions[lastEventSessionKey]
+								  	)
+											.tz(this.props.timezone)
+											.format("D MMM")}`}
+							</div>
 						</td>
 					)}
 					<td className="text-right w-0 sm:w-3/12 pr-2">

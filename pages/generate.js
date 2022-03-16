@@ -26,14 +26,6 @@ function Generate(props) {
 
 	var sessions = config.sessions;
 	
-	// F1: Sprint Qualifying Option...
-	// Remove Sprint Qualifying so we retain a single "Qualifying" Option for 2021.
-	// If the format remains in 2022, then show Sprint Qualifying separately allowing
-	// Users to get notified of Sprint Qualifying specifically
-	if(process.env.NEXT_PUBLIC_SITE_KEY == "f1"){
-		sessions = sessions.filter(item => item !== "sprint");
-	}
-	
 	// Default form values...
 	var defaults = {
 		alarm: false,
@@ -160,7 +152,7 @@ function Generate(props) {
 							<h4 className="uppercase mb-4">
 								{t("localization:download.gcalTitle")}
 							</h4>
-							{form.alarm && <div className="bg-yellow-200 rounded-md shadow py-4 mb-12 px-4 text-black font-bold">
+							{form.alarm && <div className="bg-yellow-200 rounded-md shadow py-4 mb-5 px-4 text-black font-bold">
 								<p className="w-fill flex align-middle items-center">
 									<svg
 										className="flex-none w-6 h-full"
