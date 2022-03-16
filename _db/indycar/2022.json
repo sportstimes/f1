@@ -24,9 +24,12 @@
 			"round": 2,
 			"slug": "xpel-375",
 			"localeKey": "xpel-375",
-			"tbc": true,
 			"sessions": {
-				"race": "2023-03-20T16:30:00Z"
+				"practice1": "2022-03-19T15:45:00Z",
+				"qualifying": "2022-03-19T19:00:00Z",
+				"practice2": "2022-02-19T23:00:00Z",
+				"warmup": "2022-03-20T13:45:00Z",
+				"race": "2022-03-20T17:40:00Z"
 			}
 		},
 		{
