@@ -23,12 +23,11 @@
 			"round": 2,
 			"slug": "saudi-arabia",
 			"localeKey": "saudi-arabia",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-03-25T00:00:00Z",
-				"qualifying": "2022-03-25T00:00:00Z",
-				"sprint": "2022-03-26T00:00:00Z",
-				"feature": "2022-03-27T00:00:00Z"
+				"practice": "2022-03-25T11:25:00Z",
+				"qualifying": "2022-03-25T15:20:00Z",
+				"sprint": "2022-03-26T12:30:00Z",
+				"feature": "2022-03-27T13:55:00Z"
 			}
 		},
 		{
