@@ -5,12 +5,6 @@ import Link from "next/link";
 import { useRouter } from 'next/router'
 
 const Unsubscribe = (props) => {
-	
-	const router = useRouter()
-	const { subscriberID } = router.query
-	
-	// Use the Subscriber ID and set their subscriber to be "confirmed" in listmonk.
-	
 	return (<>
 		<Layout>
 			<h3 className="text-xl mb-4">Awesome!</h3>
@@ -19,6 +13,22 @@ const Unsubscribe = (props) => {
 			</Card>
 		</Layout>
 	</>);
+};
+
+export async function getServerSideProps(context) {
+  const res = await fetch(`https://f1calendar.com/api/email/unsubscribe/${context.query.subscriberID}`, {
+	headers: {
+	  'Content-Type': 'application/json'
+	}
+  });
+  
+  const result = await res.json()
+
+  return {
+	props: {
+	  result,
+	},
+  };
 };
 
 export default Unsubscribe;
