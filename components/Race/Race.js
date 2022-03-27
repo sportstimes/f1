@@ -167,8 +167,13 @@ class Race extends React.Component {
 				if(!hasMultipleFeaturedEvents){
 					keys.splice(keys.indexOf(config.featuredSessions[0]), 1);
 				}
-
-				keys.forEach(function (session, index) {					
+				
+				keys.forEach(function (session, index) {
+					var hasOccured = false;
+					if(dayjs(props.item.sessions[session]).add(2, "hours").isBefore()){
+						hasOccured = true;
+					}
+						
 					rows.push(
 						<RaceTR
 							key={props.item.localeKey}
@@ -180,6 +185,7 @@ class Race extends React.Component {
 							localeKey={props.item.localeKey}
 							collapsed={state.collapsed}
 							hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
+							hasOccured={hasOccured}
 						/>
 					);
 				});
