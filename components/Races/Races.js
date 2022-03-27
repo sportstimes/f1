@@ -44,7 +44,7 @@ const Races = (props) => {
 		}
 	});
 	
-	if(racesOccured > 2 && collapsePastRaces){
+	if(racesOccured > 2 || collapsePastRaces){
 		shouldCollapsePastRaces = true;
 	}
 	
