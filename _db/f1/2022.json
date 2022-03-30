@@ -54,7 +54,6 @@
 			"latitude": 44.344576,
 			"longitude": 11.713808,
 			"round": 4,
-			"tbc": true,
 			"slug": "emilia-romagna-grand-prix",
 			"localeKey": "emilia-romagna-grand-prix",
 			"sessions": {
@@ -167,14 +166,13 @@
 			"latitude": 47.2225,
 			"longitude": 14.7607,
 			"round": 11,
-			"tbc": true,
 			"slug": "austrian-grand-prix",
 			"localeKey": "austrian-grand-prix",
 			"sessions": {
-				"fp1": "2022-07-08T12:00:00Z",
+				"fp1": "2022-07-08T11:30:00Z",
 				"qualifying": "2022-07-08T15:00:00Z",
-				"fp2": "2022-07-09T11:00:00Z",
-				"sprint": "2022-07-09T14:00:00Z",
+				"fp2": "2022-07-09T10:30:00Z",
+				"sprint": "2022-07-09T14:30:00Z",
 				"gp": "2022-07-10T13:00:00Z"
 			}
 		},
@@ -328,14 +326,13 @@
 			"latitude": -23.7014,
 			"longitude": -46.6969,
 			"round": 21,
-			"tbc": true,
 			"slug": "brazilian-grand-prix",
 			"localeKey": "brazilian-grand-prix",
 			"sessions": {
-				"fp1": "2022-11-11T16:00:00Z",
+				"fp1": "2022-11-11T15:30:00Z",
 				"qualifying": "2022-11-11T19:00:00Z",
-				"fp2": "2022-11-12T16:00:00Z",
-				"sprint": "2022-11-12T19:00:00Z",
+				"fp2": "2022-11-12T15:30:00Z",
+				"sprint": "2022-11-12T19:30:00Z",
 				"gp": "2022-11-13T18:00:00Z"
 			}
 		},
