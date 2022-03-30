@@ -21,7 +21,7 @@ class RaceTR extends React.Component {
 			var blankColumnCount = config.featuredSessions.length - 1;
 
 			return (
-				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
+				<tr className={`${this.props.collapsed ? "hidden" : ""} ${this.props.hasOccured ? "line-through text-gray-400" : ""}`}>
 					<td className="w-1/8"></td>
 					<td className="w-1/2 py-4 pl-2">{t(titleKey)}</td>
 					<td className="w-1/3 text-right">
@@ -40,7 +40,7 @@ class RaceTR extends React.Component {
 			);
 		} else {
 			return (
-				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>
+				<tr className={`${this.props.collapsed ? "hidden" : ""} ${this.props.hasOccured ? "line-through text-gray-400" : ""}`}>
 					<td className="w-1/8"></td>
 					<td className="w-1/2 py-4 pl-5">{t(titleKey)}</td>
 					<td className="w-1/6">

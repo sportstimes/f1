@@ -28,7 +28,9 @@ export default async (req, res) => {
 	
 	const results = await response.json()
 	
-	if(results.data.results.length != 0){
+	if(results.data == null){
+		return res.status(400).json({success:false});
+	} else if(results.data.results.length != 0){
 		const subscriber = results.data.results[0];
 		
 		// Create an array of lists the subscriber should remain subscribed to.

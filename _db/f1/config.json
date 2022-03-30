@@ -22,5 +22,5 @@
 		"sprint":60,
 		"gp":120
 	},
-	"supportsEmailReminders": false
+	"supportsEmailReminders": true
 }

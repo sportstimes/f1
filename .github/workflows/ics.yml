@@ -20,6 +20,13 @@ on:
       site:
         required: true
         type: string
+    secrets:
+      CF_API_TOKEN:
+        required: true
+      CF_ZONE_ID:
+        required: true
+      CF_ACCOUNT_ID:
+        required: true
 
 jobs:
   build:
