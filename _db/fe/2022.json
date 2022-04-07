@@ -50,14 +50,13 @@
 			"latitude": 41.901983,
 			"longitude": 12.494953,
 			"round": 4,
-			"tbc": true,
 			"slug": "rome-eprix",
 			"localeKey": "rome-eprix",
 			"sessions": {
-				"practice1": "2022-04-09T06:00:00Z",
-				"practice2": "2022-04-09T08:15:00Z",
-				"qualifying": "2022-04-09T10:00:00Z",
-				"race": "2022-04-09T14:04:00Z"
+				"practice1": "2022-04-09T05:15:00Z",
+				"practice2": "2022-04-09T07:00:00Z",
+				"qualifying": "2022-04-09T08:30:00Z",
+				"race": "2022-04-09T13:00:00Z"
 			}
 		},
 		{
@@ -66,13 +65,12 @@
 			"latitude": 41.901983,
 			"longitude": 12.494953,
 			"round": 5,
-			"tbc": true,
 			"slug": "rome-eprix",
 			"localeKey": "rome-eprix",
 			"sessions": {
-				"practice3": "2022-04-10T05:00:00Z",
-				"qualifying": "2022-04-10T07:00:00Z",
-				"race": "2022-04-10T11:04:00Z"
+				"practice3": "2022-04-10T06:30:00Z",
+				"qualifying": "2022-04-10T08:30:00Z",
+				"race": "2022-04-10T13:00:00Z"
 			}
 		},
 		{
