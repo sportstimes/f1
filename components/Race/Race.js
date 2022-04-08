@@ -21,7 +21,7 @@ class Race extends React.Component {
 		dayjs.extend(dayjstimezone);
 
 		this.state = {
-			collapsed: true
+			collapsed: this.props.isNextRace ? false : true
 		};
 	}
 
@@ -43,7 +43,7 @@ class Race extends React.Component {
 
 	componentDidMount() {
 		this.setState({
-			collapsed: true
+			collapsed: this.props.isNextRace ? false : true
 		});
 	}
 
