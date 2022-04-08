@@ -1,12 +1,13 @@
 import Layout from "../components/Layout/Layout";
 import {NextSeo} from "next-seo";
+import Card from "components/Card/Card";
 
 function CustomError({statusCode}) {
 	return (
 		<>
 			<Layout>
 				<h3>Whoops - Error {statusCode}</h3>
-				<section className="card">
+				<Card id="download_option_ical" className="mb-6">
 					<p>We bumped into a wall on the circuit...</p>
 					<p>
 						Help us into the pits, by letting us know on{" "}
@@ -15,58 +16,7 @@ function CustomError({statusCode}) {
 						</a>
 						.
 					</p>
-				</section>
-
-				<style jsx>{`
-					.card {
-						background: #141414;
-						-webkit-border-radius: 15px;
-						-moz-border-radius: 15px;
-						padding: 25px 25px 10px 25px;
-						margin-bottom: 16px;
-					}
-					.card h4 {
-						margin-top: 0;
-						font-size: 18px;
-						margin-bottom: 8px;
-					}
-					.card p {
-						margin-bottom: 15px;
-					}
-
-					button {
-						background: #1a8b73;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px;
-						font-size: 15px;
-						border: 0;
-						color: #fff;
-						cursor: pointer;
-					}
-
-					.button {
-						background: #1a8b73;
-						margin-bottom: 25px;
-						-webkit-border-radius: 4px;
-						-moz-border-radius: 4px;
-						padding: 12px;
-						font-size: 15px;
-						border: 0;
-						color: #fff;
-						cursor: pointer;
-					}
-
-					section {
-					}
-
-					hr {
-						border: 1px solid #151515;
-						width: 25%;
-						margin: 15px auto;
-					}
-				`}</style>
+				</Card>
 			</Layout>
 		</>
 	);
