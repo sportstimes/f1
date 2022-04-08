@@ -40,8 +40,11 @@
 			"round": 3,
 			"slug": "acura-grand-prix-of-long-beach",
 			"localeKey": "acura-grand-prix-of-long-beach",
-			"tbc": true,
 			"sessions": {
+				"practice1": "2022-04-08T22:15:00Z",
+				"practice2": "2022-04-09T15:45:00Z",
+				"qualifying": "2022-04-09T19:00:00Z",
+				"warmup": "2022-04-10T16:00:00Z",
 				"race": "2022-04-10T19:00:00Z"
 			}
 		},
