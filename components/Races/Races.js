@@ -45,7 +45,7 @@ const Races = (props) => {
 	});
 	
 	if(racesOccured > 2 || collapsePastRaces){
-		shouldCollapsePastRaces = true;
+		shouldCollapsePastRaces = collapsePastRaces;
 	}
 	
 	if(racesOccured == races.length){
@@ -61,7 +61,8 @@ const Races = (props) => {
 				shouldCollapsePastRaces == true ? (
 					<div className="mt-8 mb-4 grid">
 						<a onClick={() => {
-							updateCollapsePastRaces(!collapsePastRaces)
+							console.log('1');
+							updateCollapsePastRaces(false)
 							shouldCollapsePastRaces = false
 						}} className="inline-block py-0.5 collapse-btn justify-self-center">
 						{t("localization:showPreviousRaces")}</a>
@@ -69,7 +70,7 @@ const Races = (props) => {
 				) : (
 					<div className="mt-8 mb-4 grid">
 						<a onClick={() => {
-							updateCollapsePastRaces(!collapsePastRaces)
+							updateCollapsePastRaces(true)
 							shouldCollapsePastRaces = true
 						}} className="inline-block py-0.5 collapse-btn justify-self-center">
 						{t("localization:hidePreviousRaces")}</a>
