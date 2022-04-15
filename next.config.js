@@ -20,8 +20,7 @@ module.exports = (phase) => {
       cfg.module.rules.push(
           {
               test: /\.md$/,
-              loader: 'frontmatter-markdown-loader',
-              options: { mode: ['react-component'] }
+              loader: 'ignore-loader'
           }
       )
       return cfg;
