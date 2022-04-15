@@ -63,13 +63,13 @@
 			"track": "Circuit Of The Americas",
 			"round": "4",
 			"sessions": {
-				"fp1": "2022-04-08T14:55:00.000Z",
-				"fp2": "2022-04-08T19:10:00.000Z",
-				"fp3": "2022-04-09T14:55:00.000Z",
-				"fp4": "2022-04-09T18:30:00.000Z",
-				"qualifying1": "2022-04-09T19:10:00.000Z",
-				"qualifying2": "2022-04-09T19:35:00.000Z",
-				"race": "2022-04-10T19:00:00.000Z"
+				"fp1": "2022-04-08T13:55:00.000Z",
+				"fp2": "2022-04-08T18:10:00.000Z",
+				"fp3": "2022-04-09T13:55:00.000Z",
+				"fp4": "2022-04-09T17:30:00.000Z",
+				"qualifying1": "2022-04-09T18:10:00.000Z",
+				"qualifying2": "2022-04-09T18:35:00.000Z",
+				"race": "2022-04-10T17:00:00.000Z"
 			},
 			"latitude": 30.1345808,
 			"longitude": -97.6358511,
@@ -81,14 +81,15 @@
 			"location": "Portugal",
 			"track": "Autódromo Internacional do Algarve",
 			"round": "5",
+			"tbc":true,
 			"sessions": {
-				"fp1": "2022-04-22T08:55:00.000Z",
-				"fp2": "2022-04-22T13:10:00.000Z",
-				"fp3": "2022-04-23T08:55:00.000Z",
-				"fp4": "2022-04-23T12:30:00.000Z",
-				"qualifying1": "2022-04-23T13:10:00.000Z",
-				"qualifying2": "2022-04-23T13:35:00.000Z",
-				"race": "2022-04-24T13:00:00.000Z"
+				"fp1": "2022-04-22T07:55:00.000Z",
+				"fp2": "2022-04-22T12:10:00.000Z",
+				"fp3": "2022-04-23T07:55:00.000Z",
+				"fp4": "2022-04-23T11:30:00.000Z",
+				"qualifying1": "2022-04-23T12:10:00.000Z",
+				"qualifying2": "2022-04-23T12:35:00.000Z",
+				"race": "2022-04-24T11:00:00.000Z"
 			},
 			"latitude": 37.2313331,
 			"longitude": -8.6283276,
@@ -100,6 +101,7 @@
 			"location": "Spain",
 			"track": "Circuito de Jerez - Angel Nieto",
 			"round": "6",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-04-29T07:55:00.000Z",
 				"fp2": "2022-04-29T12:10:00.000Z",
@@ -119,6 +121,7 @@
 			"location": "France",
 			"track": "Le Mans",
 			"round": "7",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-05-13T07:55:00.000Z",
 				"fp2": "2022-05-13T12:10:00.000Z",
@@ -138,6 +141,7 @@
 			"location": "Italy",
 			"track": "Autodromo Internazionale del Mugello",
 			"round": "8",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-05-27T07:55:00.000Z",
 				"fp2": "2022-05-27T12:10:00.000Z",
@@ -157,6 +161,7 @@
 			"location": "Spain",
 			"track": "Circuit de Barcelona-Catalunya",
 			"round": "9",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-06-03T07:55:00.000Z",
 				"fp2": "2022-06-03T12:10:00.000Z",
@@ -176,6 +181,7 @@
 			"location": "Germany",
 			"track": "Sachsenring",
 			"round": "10",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-06-17T07:55:00.000Z",
 				"fp2": "2022-06-17T12:10:00.000Z",
@@ -195,6 +201,7 @@
 			"location": "Netherlands",
 			"track": "TT Circuit Assen",
 			"round": "11",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-06-24T07:55:00.000Z",
 				"fp2": "2022-06-24T12:10:00.000Z",
@@ -214,6 +221,7 @@
 			"location": "Finland",
 			"track": "KymiRing",
 			"round": "12",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-07-08T07:50:00.000Z",
 				"fp2": "2022-07-08T12:05:00.000Z",
@@ -233,6 +241,7 @@
 			"location": "Great britain",
 			"track": "Silverstone Circuit",
 			"round": "13",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-08-05T08:55:00.000Z",
 				"fp2": "2022-08-05T13:10:00.000Z",
@@ -252,6 +261,7 @@
 			"location": "Austria",
 			"track": "Red Bull Ring - Spielberg",
 			"round": "14",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-08-19T07:55:00.000Z",
 				"fp2": "2022-08-19T12:10:00.000Z",
@@ -271,6 +281,7 @@
 			"location": "Italy",
 			"track": "Misano World Circuit Marco Simoncelli",
 			"round": "15",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-09-02T07:55:00.000Z",
 				"fp2": "2022-09-02T12:10:00.000Z",
@@ -290,6 +301,7 @@
 			"location": "Spain",
 			"track": "MotorLand Aragón",
 			"round": "16",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-09-16T07:55:00.000Z",
 				"fp2": "2022-09-16T12:10:00.000Z",
@@ -309,6 +321,7 @@
 			"location": "Japan",
 			"track": "Twin Ring Motegi",
 			"round": "17",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-09-23T01:50:00.000Z",
 				"fp2": "2022-09-23T06:05:00.000Z",
@@ -327,6 +340,7 @@
 			"location": "Thailand",
 			"track": "Chang International Circuit",
 			"round": "18",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-09-30T03:50:00.000Z",
 				"fp2": "2022-09-30T08:05:00.000Z",
@@ -346,6 +360,7 @@
 			"location": "Australia",
 			"track": "Phillip Island",
 			"round": "19",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-10-14T08:55:00.000Z",
 				"fp2": "2022-10-14T13:10:00.000Z",
@@ -365,6 +380,7 @@
 			"location": "Malaysia",
 			"track": "Sepang International Circuit",
 			"round": "20",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-10-21T02:50:00.000Z",
 				"fp2": "2022-10-21T07:05:00.000Z",
@@ -384,6 +400,7 @@
 			"location": "Spain",
 			"track": "Circuit Ricardo Tormo",
 			"round": "21",
+			"tbc":true,
 			"sessions": {
 				"fp1": "2022-11-04T08:55:00.000Z",
 				"fp2": "2022-11-04T13:10:00.000Z",

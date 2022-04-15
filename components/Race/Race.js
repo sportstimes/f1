@@ -59,12 +59,12 @@ class Race extends React.Component {
 		return (
 			<tbody
 				id={this.props.item.slug}
-				key={this.props.item.slug}
+				key={`${this.props.item.slug}-body`}
 				className={`${rowClasses(this.props, this.state)}`}
 			>
 				
 				<tr
-					key={this.props.item.slug}
+					key={`${this.props.item.slug}-tr`}
 					className="cursor-pointer"
 					onClick={() => this.handleRowClick()}
 				>
@@ -176,7 +176,7 @@ class Race extends React.Component {
 						
 					rows.push(
 						<RaceTR
-							key={props.item.localeKey}
+							key={`${props.item.localeKey}-${session}`}
 							date={props.item.sessions[session]}
 							title={session}
 							timezone={props.timezone}
