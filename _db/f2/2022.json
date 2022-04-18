@@ -38,10 +38,9 @@
 			"round": 3,
 			"slug": "emilia-romagna",
 			"localeKey": "emilia-romagna",
-			"tbc":true,
 			"sessions": {
 				"practice": "2022-04-22T09:05:00Z",
-				"qualifying": "2022-04-22T13:50:00Z",
+				"qualifying": "2022-04-22T13:55:00Z",
 				"sprint": "2022-04-23T15:55:00Z",
 				"feature": "2022-04-24T08:20:00Z"
 			}
