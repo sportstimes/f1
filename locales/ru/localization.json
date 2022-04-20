@@ -68,13 +68,13 @@
         "turkish-grand-prix": "Гран-при Турции",
         "saudi-arabia-grand-prix": "Гран-при Саудовской Аравии",
         "qatar-grand-prix" : "Гран-при Катара",
-        "miami-grand-prix" : "Miami Grand Prix"
+        "miami-grand-prix" : "Гран-при Майами"
     },
     "options": {
         "calendar": "Добавить расписание гонок в Календарь",
         "email": "Напоминания по электронной почте",
         "timezonePicker": {
-            "detect": "Detect",
+            "detect": "Определить",
             "showing": "Время показано для",
             "pick": "Выберите часовой пояс..."
         },
@@ -117,7 +117,7 @@
         "gcalTitle": "Для Календаря Google",
         "gcalDescription": "Чтобы добавить этот календарь, скопируйте и вставьте этот URL в Календарь Google.",
         "gcalDescriptionLink": "подробные инструкции",
-        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+        "gcalNotificationNotice": "Календарь Google не учитывает напоминания в подключенных удаленно календарях. Уведомления о событиях можно настроить в настройках календаря после его добавления.",
 		"icsTitle": "Скачать файл ICS",
         "icsDescription": "Файл (.ics) без автоматического обновления, для календарей, которые не могут обрабатывать обновления подписок.",
         "icsButton": "Скачать"
