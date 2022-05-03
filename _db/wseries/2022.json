@@ -8,11 +8,10 @@
 			"round": 1,
 			"slug": "miami",
 			"localeKey": "miami",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-05-07T11:10:00Z",
-				"qualifying": "2022-05-07T14:30:00Z",
-				"race": "2022-05-08T14:30:00Z"
+				"practice1": "2022-05-06T20:00:00Z",
+				"qualifying": "2022-05-07T13:10:00Z",
+				"race": "2022-05-07T18:30:00Z"
 			}
 		},
 		{
@@ -23,11 +22,8 @@
 			"round": 2,
 			"slug": "miami",
 			"localeKey": "miami",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-05-07T11:10:00Z",
-				"qualifying": "2022-05-07T14:30:00Z",
-				"race": "2022-05-08T14:30:00Z"
+				"race": "2022-05-08T14:35:00Z"
 			}
 		},
 		{
