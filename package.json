@@ -25,29 +25,29 @@
 	},
 	"homepage": "https://github.com/sportstimes/f1#readme",
 	"dependencies": {
-		"axios": "^0.26.1",
+		"axios": "^0.27.2",
 		"countries-and-timezones": "^3.2.3",
 		"dayjs": "^1.11.1",
 		"ics": "^2.31.0",
 		"ignore-loader": "^0.1.2",
-		"next": "^12.1.5",
+		"next": "^12.1.6",
 		"next-plausible": "^3.1.5",
-		"next-pwa": "^5.5.0",
+		"next-pwa": "^5.5.2",
 		"next-seo": "^5.4.0",
-		"next-translate": "^1.1.1",
+		"next-translate": "^1.4.0",
 		"nextjs": "0.0.3",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0",
 		"terser-webpack-plugin": "^5.2.4"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.15.8",
+		"@babel/core": "^7.17.10",
 		"@babel/preset-react": "^7.13.13",
 		"@tailwindcss/forms": "^0.5.0",
 		"@tailwindcss/typography": "^0.5.0",
-		"autoprefixer": "^10.3.7",
-		"postcss": "^8.4.8",
-		"tailwindcss": "^3.0.2",
-		"webpack": "^5.70.0"
+		"autoprefixer": "^10.4.7",
+		"postcss": "^8.4.13",
+		"tailwindcss": "^3.0.24",
+		"webpack": "^5.72.0"
 	}
 }
