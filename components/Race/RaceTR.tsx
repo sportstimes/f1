@@ -4,7 +4,11 @@ import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
-class RaceTR extends React.Component {
+interface Props {
+	i18n: I18n;
+}
+
+class RaceTR extends React.Component<Props> {
 	render() {
 		const {t, lang} = this.props.i18n;
 

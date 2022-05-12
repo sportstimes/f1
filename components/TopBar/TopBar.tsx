@@ -7,7 +7,11 @@ import Link from "next/link";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 import SiteSelector from "../../components/SiteSelector/SiteSelector";
 
-class TopBar extends React.Component {
+interface Props {
+	i18n: I18n;
+}
+
+class TopBar extends React.Component<Props> {
 	render() {
 		const {t, lang} = this.props.i18n;
 		const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);

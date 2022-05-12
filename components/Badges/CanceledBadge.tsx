@@ -2,7 +2,11 @@ import React, {useState} from "react"
 import withTranslation from 'next-translate/withTranslation'
 import type { I18n } from 'next-translate'
 
-class CanceledBadge extends React.Component {
+interface Props {
+	i18n: I18n;
+}
+
+class CanceledBadge extends React.Component<Props> {
   render() {
 	const { t, lang } = this.props.i18n
 

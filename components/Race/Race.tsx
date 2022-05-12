@@ -15,7 +15,7 @@ const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.jso
 export interface RaceRow {
   isNextRace: bool;
   hasOccured: bool;
-  shouldCollapsePastRaces: bool;
+  shouldCollapsePastRaces
   index: number;
   timezone: string;
   timeFormat: number;

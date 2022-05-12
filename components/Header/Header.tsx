@@ -7,8 +7,11 @@ import CTABar from "../CTABar/CTABar";
 import Link from "next/link";
 import {usePlausible} from "next-plausible";
 
+interface Props {
+	i18n: I18n;
+}
 
-class Header extends React.Component {
+class Header extends React.Component<Props> {
 	
 	// TODO: Shift Icons to Components
 	// TODO: Tidy up

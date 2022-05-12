@@ -5,7 +5,11 @@ import withTranslation from "next-translate/withTranslation";
 import type { I18n } from 'next-translate'
 import { Race } from '../models'
 
-class RaceSchema extends React.Component {
+interface Props {
+	i18n: I18n;
+}
+
+class RaceSchema extends React.Component<Props> {
 	render() {
 		const {t} = this.props.i18n
 		const localeKey = 'localization:races.' + this.props.race.localeKey;

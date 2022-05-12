@@ -4,7 +4,11 @@ import type { I18n } from 'next-translate'
 import Router from "next/router";
 import {usePlausible} from "next-plausible";
 
-class SiteSelector extends React.Component {
+interface Props {
+	i18n: I18n;
+}
+
+class SiteSelector extends React.Component<Props> {
 	onChange = (event) => {
 		const plausible = usePlausible();
 

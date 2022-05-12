@@ -4,8 +4,11 @@ import LanguageSelector from "../../components/LanguageSelector/LanguageSelector
 import SiteSelector from "../../components/SiteSelector/SiteSelector";
 import {usePlausible} from "next-plausible";
 
+interface Props {
+	i18n: I18n;
+}
 
-class Footer extends React.Component {
+class Footer extends React.Component<Props> {
 	
 	// TODO: Shift Icons to Components
 	// TODO: Tidy up
