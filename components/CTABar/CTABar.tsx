@@ -7,7 +7,7 @@ import ChevronRightIcon from '../Icons/ChevronRightIcon'
 import EmailIcon from '../Icons/EmailIcon'
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
-class CTABar extends React.Component<Props> {
+class CTABar extends React.Component<> {
   render() {
 	const { t, lang } = this.props.i18n
 

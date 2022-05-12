@@ -5,7 +5,7 @@ import i18nConfig from "../../i18n.json";
 import Router from "next/router";
 import {usePlausible} from "next-plausible";
 
-class LanguageSelector extends React.Component<Props> {
+class LanguageSelector extends React.Component<> {
 	onChange = (event) => {
 		if (event.target.value === "add") {
 			document.location.href =

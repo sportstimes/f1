@@ -1,9 +1,6 @@
 {
 	"name": "f1",
 	"version": "1.0.0",
-	"engines": {
-		"node": "14.x"
-	},
 	"description": "_The second edition of [f1calendar.com](https://f1calendar.com)_",
 	"main": "index.js",
 	"scripts": {

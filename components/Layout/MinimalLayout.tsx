@@ -7,7 +7,7 @@ import withTranslation from 'next-translate/withTranslation'
 import Logo from "../Logo/Logo";
 import Link from "next/link";
 
-class MinimalLayout extends React.Component<Props> {
+class MinimalLayout extends React.Component<> {
 	render() {
 		const { t, lang } = this.props.i18n
 		

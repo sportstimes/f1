@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Race } from '../models'
 import RaceSchema from '../RaceSchema/RaceSchema'
 
-class RaceSchemas extends React.Component<Props> {
+class RaceSchemas extends React.Component<> {
 	render() {
 		return (
 			<>
