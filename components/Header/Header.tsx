@@ -17,7 +17,6 @@ class Header extends React.Component<Props> {
 	// TODO: Tidy up
 	
 	render() {
-		const plausible = usePlausible();
 	
 		const {t, lang} = this.props.i18n;
 		const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
@@ -73,13 +72,15 @@ class Header extends React.Component<Props> {
 							<a
 								href="https://www.buymeacoffee.com/f1cal"
 								className="support-btn mt-3"
-								onClick={() =>
+								onClick={() => {
+									const plausible = usePlausible();
+									
 									plausible("Support", {
 										props: {
 											buttonId: "header"
 										}
 									})
-								}
+								}}
 							>
 								<img
 									src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
@@ -101,13 +102,15 @@ class Header extends React.Component<Props> {
 						<a
 							href="https://www.buymeacoffee.com/f1cal"
 							className="support-btn-rounded mt-3"
-							onClick={() =>
+							onClick={() => {
+								const plausible = usePlausible();
+								
 								plausible("Support", {
 									props: {
 										buttonId: "mobile"
 									}
 								})
-							}
+							}}
 						>
 							<img
 								src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"

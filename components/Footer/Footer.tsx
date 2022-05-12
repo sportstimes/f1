@@ -15,7 +15,6 @@ class Footer extends React.Component<Props> {
 	
 	render() {
 		const { t, lang } = this.props.i18n
-		const plausible = usePlausible();
 		
 		return (
 			<>
@@ -103,7 +102,10 @@ class Footer extends React.Component<Props> {
 						<p className="text-center mt-8">
 							<a
 								href="https://vercel.com?utm_source=sportstimes"
-								onClick={() => plausible("Visit Vercel")}
+								onClick={() => {
+									const plausible = usePlausible();
+									plausible("Visit Vercel")
+								}}
 							>
 								<svg
 									className="inline"
