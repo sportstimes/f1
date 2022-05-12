@@ -5,7 +5,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import withTranslation from 'next-translate/withTranslation'
 
-class Layout extends React.Component<> {
+class Layout extends React.Component {
 	render() {
 		const { t, lang } = this.props.i18n
 	

@@ -5,7 +5,7 @@ import SiteSelector from "../../components/SiteSelector/SiteSelector";
 import {usePlausible} from "next-plausible";
 
 
-class Footer extends React.Component<> {
+class Footer extends React.Component {
 	
 	// TODO: Shift Icons to Components
 	// TODO: Tidy up

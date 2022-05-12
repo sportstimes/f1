@@ -8,7 +8,7 @@ import Link from "next/link";
 import {usePlausible} from "next-plausible";
 
 
-class Header extends React.Component<> {
+class Header extends React.Component {
 	
 	// TODO: Shift Icons to Components
 	// TODO: Tidy up

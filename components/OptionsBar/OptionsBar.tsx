@@ -8,7 +8,7 @@ import withTranslation from "next-translate/withTranslation";
 import ct from "countries-and-timezones";
 import {usePlausible} from "next-plausible";
 
-class OptionsBar extends React.Component<> {
+class OptionsBar extends React.Component {
 	static contextType = UserContext;
 
 	constructor(props) {

@@ -5,7 +5,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import withTranslation from 'next-translate/withTranslation'
 
-class FullWidthLayout extends React.Component<> {
+class FullWidthLayout extends React.Component {
 	render() {
 		const { t, lang } = this.props.i18n
 	

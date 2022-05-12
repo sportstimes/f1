@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import withTranslation from 'next-translate/withTranslation'
 import type { I18n } from 'next-translate'
 
-class NextBadge extends React.Component<> {
+class NextBadge extends React.Component {
   render() {
 	const { t, lang } = this.props.i18n
 
