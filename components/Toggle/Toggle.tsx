@@ -2,7 +2,11 @@ import React, {Component} from "react";
 import OpenIcon from "../Icons/OpenIcon"
 import CollapsedIcon from "../Icons/CollapsedIcon"
 
-class Toggle extends React.Component {
+export interface Props {
+  collapsed: boolean;
+}
+
+class Toggle extends React.Component<Props> {
 	
 	render() {
 		return (

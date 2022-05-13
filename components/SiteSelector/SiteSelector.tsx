@@ -6,10 +6,11 @@ import {usePlausible} from "next-plausible";
 
 interface Props {
 	i18n: I18n;
+	id: string;
 }
 
 class SiteSelector extends React.Component<Props> {
-	onChange = (event) => {
+	onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		const plausible = usePlausible();
 
 		plausible("Changed Site", {

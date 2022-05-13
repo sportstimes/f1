@@ -1,6 +1,6 @@
 import React from "react";
 
-const MotoGPLogo = (props) => {
+const MotoGPLogo = () => {
 	return (
 		<svg width="60"
 		height="60"

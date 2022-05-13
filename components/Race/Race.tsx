@@ -1,29 +1,36 @@
 import React, {useState} from "react";
-import withTranslation from "next-translate/withTranslation";
+import withTranslation from "next-translate/withTranslation"
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
-import dayjstimezone from "dayjs/plugin/timezone";
-import {usePlausible} from "next-plausible";
-import TBCBadge from "../Badges/TBCBadge";
-import CanceledBadge from "../Badges/CanceledBadge";
+import dayjstimezone from "dayjs/plugin/timezone"
+import {usePlausible} from "next-plausible"
+import TBCBadge from "../Badges/TBCBadge"
+import CanceledBadge from "../Badges/CanceledBadge"
 import NextBadge from "../Badges/NextBadge"
-import Toggle from "../Toggle/Toggle";
-import RaceTR from "../Race/RaceTR";
+import Toggle from "../Toggle/Toggle"
+import RaceTR from "../Race/RaceTR"
+import {RaceModel} from "../../models/RaceModel"
+import type { I18n } from 'next-translate'
 
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 export interface RaceRow {
-  isNextRace: bool;
-  hasOccured: bool;
-  shouldCollapsePastRaces
+  isNextRace: boolean;
+  hasOccured: boolean;
+  shouldCollapsePastRaces: boolean;
   index: number;
   timezone: string;
   timeFormat: number;
-  item: Race
+  item: RaceModel
+  i18n: I18n;
 }
 
-class Race extends React.Component<RaceRow> {
-	constructor(props) {
+export interface RaceRowState {
+  collapsed: boolean;
+}
+
+class Race extends React.Component<RaceRow, RaceRowState> {
+	constructor(props:RaceRow) {
 		super(props);
 
 		dayjs.extend(dayjsutc);
@@ -91,11 +98,11 @@ class Race extends React.Component<RaceRow> {
 							)}
 							
 						{this.props.item.tbc && (
-							<TBCBadge mobileOnly="true" />
+							<TBCBadge mobileOnly={true} />
 						)}
 						
 						{this.props.item.canceled && (
-							<CanceledBadge mobileOnly="true" />
+							<CanceledBadge mobileOnly={true} />
 						)}
 					</td>
 					{!hasMultipleFeaturedEvents ? (
@@ -162,9 +169,9 @@ class Race extends React.Component<RaceRow> {
 			</tbody>
 		);
 		
-		function sessionRows(props, state) {			
+		function sessionRows(props:RaceRow, state:RaceRowState) {			
 			if(Object.keys(props.item.sessions).length != 0){
-				var rows = [];
+				var rows: React.ReactElement[] = [];
 				
 				var keys = Object.keys(props.item.sessions);
 				
@@ -175,9 +182,11 @@ class Race extends React.Component<RaceRow> {
 				
 				keys.forEach(function (session, index) {
 					var hasOccured = false;
-					if(dayjs(props.item.sessions[session]).add(2, "hours").isBefore()){
-						hasOccured = true;
-					}
+					
+					// TODO: isBefore
+					//if(dayjs(props.item.sessions[session]).add(2, "hours").isBefore()){
+					//	hasOccured = true;
+					//}
 						
 					rows.push(
 						<RaceTR
@@ -201,7 +210,7 @@ class Race extends React.Component<RaceRow> {
 			}
 		}
 		
-		function badgeColumnLayout(props) {
+		function badgeColumnLayout(props:RaceRow) {
 			var badges = [];
 
 			if (props.item.tbc) {
@@ -215,7 +224,7 @@ class Race extends React.Component<RaceRow> {
 			return badges;
 		}
 		
-		function rowClasses(props, state) {
+		function rowClasses(props:RaceRow, state:RaceRowState) {
 			var classes = "";
 			if (props.index % 2 === 1) {
 				classes += "rounded bg-row-gray ";
@@ -254,7 +263,7 @@ class Race extends React.Component<RaceRow> {
 			return classes;
 		}
 		
-		function titleRowClasses(props) {
+		function titleRowClasses(props:RaceRow) {
 			var classes = "";
 			
 			// Highlight Next Race
@@ -273,6 +282,8 @@ class Race extends React.Component<RaceRow> {
 					Object.keys(props.item.sessions).length - 1
 				];
 				
+				// TODO: isBefore
+				/*
 				if (
 					!dayjs(props.item.sessions[lastEventSessionKey])
 						.add(2, "hours")
@@ -281,6 +292,7 @@ class Race extends React.Component<RaceRow> {
 				) {
 					classes += "font-semibold ";
 				}
+				*/
 			}
 			
 			return classes;

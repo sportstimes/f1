@@ -4,6 +4,7 @@ import type { I18n } from 'next-translate'
 
 interface Props {
 	i18n: I18n;
+	mobileOnly?: boolean;
 }
 
 class TBCBadge extends React.Component<Props> {

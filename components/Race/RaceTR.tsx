@@ -3,20 +3,33 @@ import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+import type { I18n } from 'next-translate'
 
-interface Props {
+export interface RaceRowTR {
+	collapsed: boolean;
+	hasOccured: boolean;
+	hasMultipleFeaturedEvents: boolean;
+	title: string;
+	date: string;
+	timezone: string;
+	timeFormat: number;
+	localeKey: string;
+	locale?: string;
 	i18n: I18n;
 }
 
-class RaceTR extends React.Component<Props> {
+class RaceTR extends React.Component<RaceRowTR> {
 	render() {
 		const {t, lang} = this.props.i18n;
-
+		
+		/*
+		// TODO:
 		if (lang === "en") {
 			dayjs.locale(this.props.locale);
 		} else {
 			dayjs.locale(lang);
 		}
+		*/
 
 		const hasMultipleFeaturedEvents = this.props.hasMultipleFeaturedEvents;
 		const titleKey = "localization:schedule." + this.props.title;

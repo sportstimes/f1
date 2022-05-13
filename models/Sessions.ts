@@ -1,4 +1,4 @@
-export type Session = {
+export type Sessions = {
   fp1: Date
   fp2: Date
   fp3: Date

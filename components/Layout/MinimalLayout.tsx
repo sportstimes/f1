@@ -4,11 +4,13 @@ import TopBar from "../../components/TopBar/TopBar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import withTranslation from 'next-translate/withTranslation'
+import type { I18n } from 'next-translate'
 import Logo from "../Logo/Logo";
 import Link from "next/link";
 
 interface Props {
 	i18n: I18n;
+	children: any;
 }
 
 class MinimalLayout extends React.Component<Props> {

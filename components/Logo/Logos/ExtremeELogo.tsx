@@ -1,6 +1,6 @@
 import React from "react";
 
-const ExtremeELogo = (props) => {
+const ExtremeELogo = () => {
 	return (
 		<svg width="60"
 		height="60"

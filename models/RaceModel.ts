@@ -1,4 +1,4 @@
-export type Race = {
+export type RaceModel = {
   round: number
   name: string
   location: string
@@ -6,5 +6,7 @@ export type Race = {
   longitude: string
   slug: string
   localeKey: string
-  sessions: [Session]
+  sessions: Sessions
+  tbc: boolean
+  canceled: boolean
 };

@@ -3,6 +3,7 @@ import withTranslation from 'next-translate/withTranslation'
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 import SiteSelector from "../../components/SiteSelector/SiteSelector";
 import {usePlausible} from "next-plausible";
+import type { I18n } from 'next-translate'
 
 interface Props {
 	i18n: I18n;

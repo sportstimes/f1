@@ -1,6 +1,6 @@
 import React from "react";
 
-const WSeriesLogo = (props) => {
+const WSeriesLogo = () => {
 	return (
 		<svg
 			width="60"

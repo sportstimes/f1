@@ -4,7 +4,7 @@ import type { I18n } from 'next-translate'
 
 interface Props {
 	i18n: I18n;
-	mobileOnly: bool;
+	mobileOnly?: boolean;
 }
 
 class CanceledBadge extends React.Component<Props> {

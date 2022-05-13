@@ -1,6 +1,6 @@
 import React from "react";
 
-const F3Logo = (props) => {
+const F3Logo = () => {
 	return (
 		<svg
 			width="60"

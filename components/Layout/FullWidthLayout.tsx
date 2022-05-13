@@ -4,9 +4,13 @@ import TopBar from "../../components/TopBar/TopBar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import withTranslation from 'next-translate/withTranslation'
+import type { I18n } from 'next-translate'
 
 interface Props {
 	i18n: I18n;
+	showCTABar: boolean;
+	children: any;
+	year: number;
 }
 
 class FullWidthLayout extends React.Component<Props> {

@@ -21,6 +21,9 @@
     "paths": {
       "@components/*": [
         "components/*"
+      ],
+      "@models/*": [
+        "models/*"
       ]
     },
     "incremental": true

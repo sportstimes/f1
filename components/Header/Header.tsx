@@ -6,9 +6,12 @@ import Router from "next/router";
 import CTABar from "../CTABar/CTABar";
 import Link from "next/link";
 import {usePlausible} from "next-plausible";
+import type { I18n } from 'next-translate'
 
 interface Props {
 	i18n: I18n;
+	year: number;
+	showCTABar: boolean;
 }
 
 class Header extends React.Component<Props> {
@@ -23,6 +26,9 @@ class Header extends React.Component<Props> {
 		const subtitle = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.subtitle`);
 	
 		const {languageNames} = i18nConfig;
+		
+		const languageName = "123";
+		// TODO: LANG ${languageNames[lang]}
 	
 		return (
 			<div className="w-full bg-dark-green mb-4">
@@ -34,7 +40,7 @@ class Header extends React.Component<Props> {
 								style={{width: "60px"}}
 							>
 								<Link href="/">
-									<a name={title}>
+									<a title={title}>
 										<Logo />
 									</a>
 								</Link>
@@ -43,7 +49,7 @@ class Header extends React.Component<Props> {
 								<h1 className="mb-1 text-lg tracking-wider">
 									<Link href="/">
 										<a
-											name={title}
+											title={title}
 											className="text-white hover:text-white font-bold text-lg"
 										>
 											{title}&nbsp;
@@ -51,7 +57,7 @@ class Header extends React.Component<Props> {
 												<span>{this.props.year}</span>
 											)}
 											{lang != "en" && (
-												<span> | {languageNames[lang]}</span>
+												<span> | {languageName}</span>
 											)}
 										</a>
 									</Link>
@@ -59,7 +65,7 @@ class Header extends React.Component<Props> {
 								<h2 className="text-xs font-normal tracking-wider">
 									<Link href="/">
 										<a
-											name={title}
+											title={title}
 											className="text-light-green hover:text-light-green"
 										>
 											{subtitle}

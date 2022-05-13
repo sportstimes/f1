@@ -4,8 +4,14 @@ import Router from "next/router";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
+import {Context} from "../../models/Context"
 
-export const UserContext = React.createContext();
+const defaultState = {
+  timeFormat: 24,
+  timezone: "America/New_York"
+};
+
+export const UserContext = React.createContext()<Context>(defaultState);
 
 export const UserContextProvider = ({children}) => {
 	const [timezone, setTimezone] = useState("America/New_York");

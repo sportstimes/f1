@@ -7,10 +7,11 @@ import {usePlausible} from "next-plausible";
 
 interface Props {
 	i18n: I18n;
+	id: string;
 }
 
 class LanguageSelector extends React.Component<Props> {
-	onChange = (event) => {
+	onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		if (event.target.value === "add") {
 			document.location.href =
 				"https://poeditor.com/join/project?hash=JrDs3Vfc92";
@@ -46,11 +47,14 @@ class LanguageSelector extends React.Component<Props> {
 		});
 	};
 
+	
+
 	render() {
 		const {t, lang} = this.props.i18n;
 		const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
 
 		const {languageNames} = i18nConfig;
+		// TODO: Picker {languageName(language)}
 
 		// Picker Items
 		const languageItems = [];
@@ -58,7 +62,7 @@ class LanguageSelector extends React.Component<Props> {
 		for (const language in languageNames) {
 			languageItems.push(
 				<option value={language} key={language}>
-					{languageNames[language]}
+					
 				</option>
 			);
 		}
@@ -77,7 +81,6 @@ class LanguageSelector extends React.Component<Props> {
 				<select
 					id={this.props.id}
 					name="language"
-					value={lang}
 					onChange={this.onChange}
 					value={lang}
 					className="mx-2 text-gray-900 pl-3 pr-10 py-0 text-base
