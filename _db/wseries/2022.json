@@ -34,11 +34,10 @@
 			"round": 3,
 			"slug": "barcelona",
 			"localeKey": "barcelona",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-05-20T11:10:00Z",
-				"qualifying": "2022-05-21T14:30:00Z",
-				"race": "2022-05-22T14:30:00Z"
+				"practice1": "2022-05-20T08:40:00Z",
+				"qualifying": "2022-05-21T17:25:00Z",
+				"race": "2022-05-22T12:40:00Z"
 			}
 		},
 		{
