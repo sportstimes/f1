@@ -38,12 +38,11 @@
 			"round": 3,
 			"slug": "spanish",
 			"localeKey": "spanish",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-05-20T00:00:00Z",
-				"qualifying": "2022-05-20T00:00:00Z",
-				"sprint": "2022-05-21T00:00:00Z",
-				"feature": "2022-05-22T00:00:00Z"
+				"practice": "2022-05-20T07:30:00Z",
+				"qualifying": "2022-05-20T13:30:00Z",
+				"sprint": "2022-05-21T09:00:00Z",
+				"feature": "2022-05-22T08:05:00Z"
 			}
 		},
 		{
