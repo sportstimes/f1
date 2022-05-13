@@ -1,4 +1,4 @@
-export type RaceModel = {
+export default type RaceModel = {
   round: number
   name: string
   location: string

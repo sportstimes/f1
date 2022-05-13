@@ -3,10 +3,11 @@ import React, {useState} from 'react';
 import dayjs from 'dayjs'
 import withTranslation from "next-translate/withTranslation";
 import type { I18n } from 'next-translate'
-import { Race } from '../models'
+import RaceModel from '../../models/RaceModel'
 
 interface Props {
 	i18n: I18n;
+	race: RaceModel
 }
 
 class RaceSchema extends React.Component<Props> {

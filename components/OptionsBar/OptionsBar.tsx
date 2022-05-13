@@ -8,7 +8,7 @@ import withTranslation from "next-translate/withTranslation";
 import ct from "countries-and-timezones";
 import {usePlausible} from "next-plausible";
 import type { I18n } from 'next-translate'
-import {Context} from "../../models/Context"
+import UserContextModel from "../../models/UserContextModel"
 
 interface Props {
 	i18n: I18n;
@@ -18,7 +18,7 @@ interface State {
   pickerShowing: boolean;
 }
 
-class OptionsBar extends React.Component<Props, State, Context> {
+class OptionsBar extends React.Component<Props, State, UserContextModel> {
 	static contextType = UserContext;
 
 	constructor(props: Props) {

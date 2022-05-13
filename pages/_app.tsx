@@ -1,5 +1,5 @@
 import NextApp from 'next/app'
-import {UserContextProvider} from "../components/UserContext";
+import {UserContextProvider} from "../components/UserContextProvider";
 import {DefaultSeo} from "next-seo";
 import "../styles/tailwind.css";
 import "../styles/tailwind-utils.css";

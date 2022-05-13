@@ -9,6 +9,16 @@ interface Props {
 	id: string;
 }
 
+interface SiteConfig {
+	name: string;
+	siteKey: string;
+	url: string;
+	calenderCDN: string;
+	supportsEmailReminders: boolean;
+}
+
+
+
 class SiteSelector extends React.Component<Props> {
 	onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		const plausible = usePlausible();
@@ -31,17 +41,17 @@ class SiteSelector extends React.Component<Props> {
 		const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 		// Picker Items
-		const siteItems = [];
+		const siteItems: React.ReactElement[] = [];
 		let currentValue = "";
 		
-		sitesConfig.sites.forEach(function (site, index) {
-			if(site['siteKey'] == config.siteKey){
-				currentValue = site['url'];
+		sitesConfig.sites.forEach(function (site: SiteConfig, index: number) {
+			if(site.siteKey == config.siteKey){
+				currentValue = site.url;
 			}
 			
 			siteItems.push(
-				<option value={site['url']} key={site['siteKey']}>
-					{site['name']}
+				<option value={site.url} key={site.siteKey}>
+					{site.name}
 				</option>
 			);
 		});

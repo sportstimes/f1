@@ -1,10 +1,11 @@
-import {useContext} from "react";
+import React, {useContext} from "react";
 import {UserContext} from "../../components/UserContext";
 import dayjs from "dayjs";
 import Race, {RaceRow} from "../../components/Race/Race";
-import useTranslation from "next-translate/useTranslation";
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
-import {RaceModel} from "../../models/RaceModel"
+import RaceModel from "../../models/RaceModel"
+import type { I18n } from 'next-translate'
+import withTranslation from "next-translate/withTranslation"
 
 export interface Props {
 	year: number;
@@ -23,10 +24,10 @@ class Races extends React.Component<Props> {
 	
 		let {timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces} = useContext(UserContext);
 	
-		const races = props.races;
+		const races = this.props.races;
 	
-		if (props.timezone) timezone = props.timezone;
-		if (props.timeFormat) timeFormat = props.timeFormat;
+		if (this.props.timezone) timezone = this.props.timezone;
+		if (this.props.timeFormat) timeFormat = this.props.timeFormat;
 		//if (props.locale) locale = props.locale;
 	
 		let isNextRace = false;
@@ -146,7 +147,7 @@ class Races extends React.Component<Props> {
 							timezone: timezone,
 							timeFormat: timeFormat,
 							item: item,
-							i18n: i18n
+							i18n: this.props.i18n
 						};
 						
 						return (

@@ -9,7 +9,7 @@ import CanceledBadge from "../Badges/CanceledBadge"
 import NextBadge from "../Badges/NextBadge"
 import Toggle from "../Toggle/Toggle"
 import RaceTR from "../Race/RaceTR"
-import {RaceModel} from "../../models/RaceModel"
+import RaceModel from "../../models/RaceModel"
 import type { I18n } from 'next-translate'
 
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);

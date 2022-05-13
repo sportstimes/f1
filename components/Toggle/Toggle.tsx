@@ -12,20 +12,27 @@ class Toggle extends React.Component<Props> {
 		return (
 			<>
 				{this.props.collapsed ? (
-					<CollapsedIcon />
+					<CollapsedIcon className="" />
 				) : (
-					<OpenIcon />
+					<OpenIcon className="" />
 				)}
-				<aria-hidden
-					className={`${
-						this.props.collapsed
-							? "fas fa-caret-right fa-xs"
-							: "fas fa-caret-down fa-xs"
-					}`}
-				/>
+				
+				
+				
 			</>
 		);
 	}
 }
+
+// TODO: Aria
+/*
+<aria-hidden
+	className={`${
+		this.props.collapsed
+			? "fas fa-caret-right fa-xs"
+			: "fas fa-caret-down fa-xs"
+	}`}
+/>
+*/
 
 export default Toggle;

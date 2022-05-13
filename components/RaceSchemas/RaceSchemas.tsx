@@ -1,8 +1,12 @@
 import * as React from 'react'
-import { Race } from '../models'
+import RaceModel from '../../models/RaceModel'
 import RaceSchema from '../RaceSchema/RaceSchema'
 
-class RaceSchemas extends React.Component {
+interface Props {
+	races: [RaceModel]
+}
+
+class RaceSchemas extends React.Component<Props> {
 	render() {
 		return (
 			<>
