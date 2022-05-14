@@ -8,8 +8,8 @@ import dayjstimezone from "dayjs/plugin/timezone";
 type userContextType = {
     timeFormat: number;
     timezone: string
-    updateTimezone: () => void;
-    updateTimeFormat: () => void;
+    updateTimezone: (timezone:string) => void;
+    updateTimeFormat: (timeformat:string) => void;
 };
 
 const userContextDefaultValues: authContextType = {
@@ -33,11 +33,11 @@ export function UserContextProvider({ children }: Props) {
     const [timezone, updateStateTimezone] = useState<string>(null);
     const [timeFormat, updateStateTimeFormat] = useState<string>(null);
 
-    const updateTimeFormat = () => {
+    const updateTimeFormat = (string) => {
       
     };
 
-    const updateTimezone = () => {
+    const updateTimezone = (string) => {
       
     };
 

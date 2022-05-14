@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { useUserContext } from "../../components/UserContext";
+import UserContext from "../../components/UserContext";
 import Link from "next/link";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
@@ -18,6 +19,8 @@ interface State {
 }
 
 class OptionsBar extends React.Component<Props, State> {
+	static contextType = UserContext;
+
 	constructor(props: Props) {
 		super(props);
 
