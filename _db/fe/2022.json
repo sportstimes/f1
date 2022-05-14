@@ -94,15 +94,14 @@
 			"location": "Berlin",
 			"latitude": 52.482258,
 			"longitude": 13.389437,
-			"tbc": true,
 			"round": 7,
 			"slug": "berlin-eprix",
 			"localeKey": "berlin-eprix",
 			"sessions": {
-				"practice1": "2022-05-14T12:00:00Z",
-				"practice2": "2022-05-14T12:00:00Z",
-				"qualifying": "2022-05-14T12:00:00Z",
-				"race": "2022-05-14T12:00:00Z"
+				"practice1": "2022-05-14T05:15:00Z",
+				"practice2": "2022-05-14T07:00:00Z",
+				"qualifying": "2022-05-14T08:40:00Z",
+				"race": "2022-05-14T13:00:00Z"
 			}
 		},
 		{
@@ -110,15 +109,14 @@
 			"location": "Berlin",
 			"latitude": 52.482258,
 			"longitude": 13.389437,
-			"tbc": true,
 			"round": 8,
 			"slug": "berlin-eprix",
 			"localeKey": "berlin-eprix",
 			"sessions": {
-				"practice1": "2022-05-15T12:00:00Z",
-				"practice2": "2022-05-15T12:00:00Z",
-				"qualifying": "2022-05-15T12:00:00Z",
-				"race": "2022-05-15T12:00:00Z"
+				"practice1": "2022-05-15T05:15:00Z",
+				"practice2": "2022-05-15T07:00:00Z",
+				"qualifying": "2022-05-15T08:40:00Z",
+				"race": "2022-05-15T13:00:00Z"
 			}
 		},
 		{
