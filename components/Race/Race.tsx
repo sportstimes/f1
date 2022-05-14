@@ -42,19 +42,20 @@ class Race extends React.Component<RaceRow, RaceRowState> {
 	}
 
 	handleRowClick() {
-		if (this.props.item.sessions != null) {
-			const plausible = usePlausible();
+		const plausible = usePlausible();
 
-			plausible(!this.state.collapsed ? "Closed Event" : "Opened Event", {
-				props: {
-					event: this.props.item.slug
-				}
-			});
+		const race = this.props.item;
 
-			this.setState({
-				collapsed: !this.state.collapsed
-			});
-		}
+		// TODO:
+		plausible(!this.state.collapsed ? "Closed Event" : "Opened Event", {
+			props: {
+				event: race.slug
+			}
+		});
+
+		this.setState({
+			collapsed: !this.state.collapsed
+		});
 	}
 
 	componentDidMount() {

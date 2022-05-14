@@ -1,14 +1,58 @@
-import React, {useState, useEffect} from "react";
+import { createContext, useContext, ReactNode, useState } from "react";
 import {useRouter} from "next/router";
 import Router from "next/router";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
-import UserContextModel from "../models/UserContextModel"
 
-const defaultState = {
-  timeFormat: 24,
-  timezone: "America/New_York"
+type userContextType = {
+    timeFormat: number;
+    timezone: string
+    updateTimezone: () => void;
+    updateTimeFormat: () => void;
 };
 
-export const UserContext = React.createContext()<UserContextModel>(defaultState);
+const userContextDefaultValues: authContextType = {
+    timeFormat: 24,
+    timezone: "Europe/London",
+    updateTimeFormat: () => {},
+    updateTimezone: () => {},
+};
+
+const UserContext = createContext<userContextType>(userContextDefaultValues);
+
+export function useUserContext() {
+    return useContext(UserContext);
+}
+
+type Props = {
+    children: ReactNode;
+};
+
+export function UserContextProvider({ children }: Props) {
+    const [timezone, updateStateTimezone] = useState<string>(null);
+    const [timeFormat, updateStateTimeFormat] = useState<string>(null);
+
+    const updateTimeFormat = () => {
+      
+    };
+
+    const updateTimezone = () => {
+      
+    };
+
+    const value = {
+        timezone,
+        timeFormat,
+        updateTimezone,
+        updateTimeFormat,
+    };
+
+    return (
+        <>
+            <UserContext.Provider value={value}>
+                {children}
+            </UserContext.Provider>
+        </>
+    );
+}

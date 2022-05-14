@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {UserContext} from "../../components/UserContext";
+import { useUserContext } from "../../components/UserContext";
 import Link from "next/link";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
@@ -8,7 +8,6 @@ import withTranslation from "next-translate/withTranslation";
 import ct from "countries-and-timezones";
 import {usePlausible} from "next-plausible";
 import type { I18n } from 'next-translate'
-import UserContextModel from "../../models/UserContextModel"
 
 interface Props {
 	i18n: I18n;
@@ -18,9 +17,7 @@ interface State {
   pickerShowing: boolean;
 }
 
-class OptionsBar extends React.Component<Props, State, UserContextModel> {
-	static contextType = UserContext;
-
+class OptionsBar extends React.Component<Props, State> {
 	constructor(props: Props) {
 		super(props);
 
@@ -39,7 +36,7 @@ class OptionsBar extends React.Component<Props, State, UserContextModel> {
 	}
 
 	onTimezoneChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		const { updateTimezone } = useContext(UserContext);
+		const { updateTimezone } = useUserContext();
 		updateTimezone(event.target.value);
 
 		const plausible = usePlausible();
@@ -51,8 +48,7 @@ class OptionsBar extends React.Component<Props, State, UserContextModel> {
 	};
 
 	onFormatChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		
-		const { updateTimeFormat } = useContext(UserContext);
+		const { updateTimeFormat } = useUserContext();
 		updateTimeFormat(event.target.value);
 
 		const plausible = usePlausible();
@@ -135,7 +131,7 @@ class OptionsBar extends React.Component<Props, State, UserContextModel> {
 			}, "");
 		*/
 		
-		const { timezone, timeFormat } = useContext(UserContext);
+		const { timezone, timeFormat } = useUserContext();
 		
 		return (
 			<div className="px-2">

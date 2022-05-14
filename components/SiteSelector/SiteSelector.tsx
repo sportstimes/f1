@@ -17,8 +17,6 @@ interface SiteConfig {
 	supportsEmailReminders: boolean;
 }
 
-
-
 class SiteSelector extends React.Component<Props> {
 	onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		const plausible = usePlausible();
