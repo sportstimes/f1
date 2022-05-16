@@ -14,13 +14,11 @@ const Index = (props) => {
 	const {t, lang} = useTranslation();
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
-	
-	console.log(year.races);
 
 	return (
 		<FullWidthLayout showCTABar="true" year={currentYear}>
 			<div className="max-w-screen-lg mx-auto font-sans">
-				<OptionsBar />
+				<OptionsBar i18n={t} pickerShowing={false} />
 				<Notice />
 				<Races year={currentYear} races={year.races} />
 				<RaceSchemas races={year.races} />

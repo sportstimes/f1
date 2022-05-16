@@ -1,5 +1,6 @@
-import React, {useState} from "react";
-import withTranslation from "next-translate/withTranslation"
+import React, {useState, useEffect} from "react";
+import useTranslation from 'next-translate/useTranslation'
+import {useUserContext} from "../../components/UserContext";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone"
@@ -19,286 +20,277 @@ export interface RaceRow {
   hasOccured: boolean;
   shouldCollapsePastRaces: boolean;
   index: number;
-  timezone: string;
-  timeFormat: number;
   item: RaceModel
-  i18n: I18n;
 }
 
 export interface RaceRowState {
   collapsed: boolean;
 }
 
-class Race extends React.Component<RaceRow, RaceRowState> {
-	constructor(props:RaceRow) {
-		super(props);
+const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: RaceRow) => {
+	const {t, lang} = useTranslation();
+	const plausible = usePlausible();
+	
+	let {timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces} = useUserContext();
+	const [collapsed, setCollapsed] = useState(false);
+	
+	// TODO:
+	timezone = "Europe/London";
 
-		dayjs.extend(dayjsutc);
-		dayjs.extend(dayjstimezone);
+	dayjs.extend(dayjsutc);
+	dayjs.extend(dayjstimezone);
 
-		this.state = {
-			collapsed: this.props.isNextRace ? false : true
-		};
-	}
+	useEffect(() => {
+		setCollapsed(!isNextRace)
+	}, []);
 
-	handleRowClick() {
-		const plausible = usePlausible();
+	const handleRowClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+		const race = item;
 
-		const race = this.props.item;
-
-		// TODO:
-		plausible(!this.state.collapsed ? "Closed Event" : "Opened Event", {
+		plausible(!collapsed ? "Closed Event" : "Opened Event", {
 			props: {
 				event: race.slug
 			}
 		});
 
-		this.setState({
-			collapsed: !this.state.collapsed
-		});
+		setCollapsed(!collapsed);
 	}
 
-	componentDidMount() {
-		this.setState({
-			collapsed: this.props.isNextRace ? false : true
-		});
-	}
+	const localeKey = "localization:races." + item.localeKey;
 
-	render() {
-		const {t, lang} = this.props.i18n;
-		const localeKey = "localization:races." + this.props.item.localeKey;
+	const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
 
-		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
+	var firstEventSessionKey = Object.keys(item.sessions)[0];
+	var lastEventSessionKey = Object.keys(item.sessions)[Object.keys(item.sessions).length - 1];
 
-		var firstEventSessionKey = Object.keys(this.props.item.sessions)[0];
-		var lastEventSessionKey = Object.keys(this.props.item.sessions)[Object.keys(this.props.item.sessions).length - 1];
+	//className={`${/*rowClasses(this.props, this.state)*/}`}
+	
+	const race: RaceRow = {
+		isNextRace: isNextRace,
+		// TODO:
+		//hasOccured: sessionDate.isBefore(),
+		hasOccured: false,
+		shouldCollapsePastRaces: shouldCollapsePastRaces,
+		index,
+		timezone: timezone,
+		timeFormat: timeFormat,
+		item: item
+	};
 
-		return (
-			<tbody id={this.props.item.slug} key={`${this.props.item.slug}-body`} className={`${rowClasses(this.props, this.state)}`}>
-				
-				<tr
-					key={`${this.props.item.slug}-tr`}
-					className="cursor-pointer"
-					onClick={() => this.handleRowClick()}
-				>
-					<td className="w-0 relative left-1">
-						<Toggle collapsed={this.state.collapsed} />
-					</td>
-					<td className={`w-7/12 pl-5 pt-3 pb-3 md:pt-4 md:pb-4`}>
-					
-						<span className={`${titleRowClasses(this.props)}`}>
-							{t(`localization:races.${this.props.item.localeKey}`) != localeKey
-								? t(`localization:races.${this.props.item.localeKey}`)
-								: this.props.item.name}
-						</span>	
+	return (
+		<tbody id={item.slug} key={`${item.slug}-body`} className={`${rowClasses(race)}`}>
+			<tr key={`${item.slug}-tr`} className="cursor-pointer" onClick={() => handleRowClick()}>
+				<td className="w-0 relative left-1">
+					<Toggle collapsed={collapsed} />
+				</td>
+				<td className={`w-7/12 pl-5 pt-3 pb-3 md:pt-4 md:pb-4`}>
+					<span className={`${titleRowClasses(race)}`}>
+						{t(`localization:races.${item.localeKey}`) != localeKey
+							? t(`localization:races.${item.localeKey}`)
+							: item.name}
 							
-						{this.props.isNextRace &&
-							!this.props.item.tbc &&
-							!this.props.item.canceled && (
+						{isNextRace &&
+							!item.tbc &&
+							!item.canceled && (
 								<NextBadge />
-							)}
-							
-						{this.props.item.tbc && (
+						)}
+						
+						{item.tbc && (
 							<TBCBadge mobileOnly={true} />
 						)}
 						
-						{this.props.item.canceled && (
+						{item.canceled && (
 							<CanceledBadge mobileOnly={true} />
 						)}
-					</td>
-					{!hasMultipleFeaturedEvents ? (
-						<>
-							<td className={`w-2/12 ${titleRowClasses(this.props)}`}>
-								{this.props.item.sessions &&
-									this.props.item.sessions[config.featuredSessions[0]] &&
-									dayjs(
-										this.props.item.sessions[config.featuredSessions[0]]
-									)
-										.tz(this.props.timezone)
-										.format("D MMM")}
-							</td>
-							<td className={`w-1/12 ${titleRowClasses(this.props)}`}>
-								<div className="relative right-3 sm:right-0">
-									{this.props.item.sessions &&
-										this.props.item.sessions[config.featuredSessions[0]] &&
-										dayjs(
-											this.props.item.sessions[config.featuredSessions[0]]
-										)
-											.tz(this.props.timezone)
-											.format(
-												this.props.timeFormat == 12 ? "h:mm A" : "HH:mm"
-											)}
-								</div>
-							</td>
-						</>
-					) : (
-						<td className={`text-right ${titleRowClasses(this.props)}`}>
+					</span>	
+				</td>
+				{!hasMultipleFeaturedEvents ? (
+					<>
+						<td className={`w-2/12 ${titleRowClasses(race)}`}>
+							{item.sessions &&
+								item.sessions[config.featuredSessions[0]] &&
+								dayjs(
+									item.sessions[config.featuredSessions[0]]
+								)
+									.tz(timezone)
+									.format("D MMM")}
+						</td>
+						<td className={`w-1/12 ${titleRowClasses(race)}`}>
 							<div className="relative right-3 sm:right-0">
-								{this.props.item.sessions &&
-								dayjs(this.props.item.sessions[firstEventSessionKey])
-									.tz(this.props.timezone)
-									.format("D MMM") !=
-									dayjs(this.props.item.sessions[lastEventSessionKey])
-										.tz(this.props.timezone)
-										.format("D MMM")
-									? `${dayjs(
-											this.props.item.sessions[firstEventSessionKey]
-								  	)
-											.tz(this.props.timezone)
-											.format("D MMM")} - ${dayjs(
-											this.props.item.sessions[lastEventSessionKey]
-								  	)
-											.tz(this.props.timezone)
-											.format("D MMM")}`
-									: `${dayjs(
-											this.props.item.sessions[lastEventSessionKey]
-								  	)
-											.tz(this.props.timezone)
-											.format("D MMM")}`}
+								{item.sessions &&
+									item.sessions[config.featuredSessions[0]] &&
+									dayjs(
+										item.sessions[config.featuredSessions[0]]
+									)
+										.tz(timezone)
+										.format(timeFormat == 12 ? "h:mm A" : "HH:mm")
+								}
 							</div>
 						</td>
-					)}
-					<td className="text-right w-0 sm:w-3/12 pr-2">
-						<div className="hidden sm:block">
-							{badgeColumnLayout(this.props)}
+					</>
+				) : (
+					<td className={`text-right ${titleRowClasses(race)}`}>
+						<div className="relative right-3 sm:right-0">
+							{item.sessions &&
+							dayjs(item.sessions[firstEventSessionKey])
+								.tz(timezone)
+								.format("D MMM") !=
+								dayjs(item.sessions[lastEventSessionKey])
+									.tz(timezone)
+									.format("D MMM")
+								? `${dayjs(
+										item.sessions[firstEventSessionKey]
+								  )
+										.tz(timezone)
+										.format("D MMM")} - ${dayjs(
+										item.sessions[lastEventSessionKey]
+								  )
+										.tz(timezone)
+										.format("D MMM")}`
+								: `${dayjs(
+										item.sessions[lastEventSessionKey]
+								  )
+										.tz(timezone)
+										.format("D MMM")}`}
 						</div>
 					</td>
-				</tr>
-				
-				{sessionRows(this.props, this.state)}
+				)}
+				<td className="text-right w-0 sm:w-3/12 pr-2">
+					<div className="hidden sm:block">
+						{badgeColumnLayout(item)}
+					</div>
+				</td>
+			</tr>
 			
-			</tbody>
-		);
-		
-		function sessionRows(props:RaceRow, state:RaceRowState) {			
-			if(Object.keys(props.item.sessions).length != 0){
-				var rows: React.ReactElement[] = [];
+			{sessionRows(race, collapsed)}
+			
+		</tbody>
+	);
+
+	
+	function sessionRows(props:RaceRow, collapsed:Boolean) {			
+		if(Object.keys(props.item.sessions).length != 0){
+			var rows: React.ReactElement[] = [];
+			
+			var keys = Object.keys(props.item.sessions);
+			
+			// Don't include the featured session in the list
+			if(!hasMultipleFeaturedEvents){
+				keys.splice(keys.indexOf(config.featuredSessions[0]), 1);
+			}
+			
+			keys.forEach(function (session, index) {
+				var hasOccured = false;
 				
-				var keys = Object.keys(props.item.sessions);
-				
-				// Don't include the featured session in the list
-				if(!hasMultipleFeaturedEvents){
-					keys.splice(keys.indexOf(config.featuredSessions[0]), 1);
+				if(dayjs(props.item.sessions[session]).add(2, "hours").isBefore()){
+					hasOccured = true;
 				}
-				
-				keys.forEach(function (session, index) {
-					var hasOccured = false;
 					
-					// TODO: isBefore
-					//if(dayjs(props.item.sessions[session]).add(2, "hours").isBefore()){
-					//	hasOccured = true;
-					//}
-						
-					rows.push(
-						<RaceTR
-							key={`${props.item.localeKey}-${session}`}
-							date={props.item.sessions[session]}
-							title={session}
-							timezone={props.timezone}
-							timeFormat={props.timeFormat}
-							i18n={props.i18n}
-							localeKey={props.item.localeKey}
-							collapsed={state.collapsed}
-							hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
-							hasOccured={hasOccured}
-						/>
-					);
-				});
-				
-				return rows;
-			} else {
-				return (<></>);
-			}
+				rows.push(
+					<RaceTR
+						key={`${props.item.localeKey}-${session}`}
+						date={props.item.sessions[session]}
+						title={session}
+						timezone={props.timezone}
+						timeFormat={props.timeFormat}
+						localeKey={props.item.localeKey}
+						collapsed={collapsed}
+						hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
+						hasOccured={hasOccured}
+					/>
+				);
+			});
+			
+			return rows;
+		} else {
+			return (<></>);
 		}
-		
-		function badgeColumnLayout(props:RaceRow) {
-			var badges = [];
+	}
+	
+	function badgeColumnLayout(race:RaceModel) {
+		var badges = [];
 
-			if (props.item.tbc) {
-				badges.push(<TBCBadge />);
-			}
-
-			if (props.item.canceled) {
-				badges.push(<CanceledBadge />);
-			}
-
-			return badges;
+		if (race.tbc) {
+			badges.push(<TBCBadge />);
 		}
-		
-		function rowClasses(props:RaceRow, state:RaceRowState) {
-			var classes = "";
-			if (props.index % 2 === 1) {
-				classes += "rounded bg-row-gray ";
-			}
+
+		if (race.canceled) {
+			badges.push(<CanceledBadge />);
+		}
+
+		return badges;
+	}
 	
-			// Fade out TBC races a little
-			if (props.item.tbc) {
-				classes += "text-gray-300 ";
-			}
-	
-			// Bold upcoming races
-			let firstEventSessionKey = "";
-			let lastEventSessionKey = "";
-	
-			if (props.item.sessions != null) {
-				firstEventSessionKey = Object.keys(props.item.sessions)[0];
-	
-				lastEventSessionKey = Object.keys(props.item.sessions)[
-					Object.keys(props.item.sessions).length - 1
-				];
-				
-				// Strikethrough past races
-				if (props.hasOccured) {
-					classes += "line-through text-gray-400 ";
-				} else {
-					classes += "text-white ";
-				}
-				
-				if(props.hasOccured && props.shouldCollapsePastRaces){
-					classes += "hidden";	
-				}
+	function rowClasses(props:RaceRow) {
+		var classes = "";
+		if (props.index % 2 === 1) {
+			classes += "rounded bg-row-gray ";
+		}
+
+		// Fade out TBC races a little
+		if (props.item.tbc) {
+			classes += "text-gray-300 ";
+		}
+
+		// Bold upcoming races
+		let firstEventSessionKey = "";
+		let lastEventSessionKey = "";
+
+		if (props.item.sessions != null) {
+			firstEventSessionKey = Object.keys(props.item.sessions)[0];
+
+			lastEventSessionKey = Object.keys(props.item.sessions)[
+				Object.keys(props.item.sessions).length - 1
+			];
+			
+			// Strikethrough past races
+			if (props.hasOccured) {
+				classes += "line-through text-gray-400 ";
 			} else {
 				classes += "text-white ";
 			}
 			
-			return classes;
+			if(props.hasOccured && props.shouldCollapsePastRaces){
+				classes += "hidden";	
+			}
+		} else {
+			classes += "text-white ";
 		}
 		
-		function titleRowClasses(props:RaceRow) {
-			var classes = "";
-			
-			// Highlight Next Race
-			if (props.isNextRace) {
-				classes += "text-yellow-600 ";
-			}
+		return classes;
+	}
 	
-			// Strike out cancelled races
-			if (props.item.canceled) {
-				classes += "line-through text-gray-300 ";
-			}
-			
-			
-			if (props.item.sessions != null) {
-				lastEventSessionKey = Object.keys(props.item.sessions)[
-					Object.keys(props.item.sessions).length - 1
-				];
-				
-				// TODO: isBefore
-				/*
-				if (
-					!dayjs(props.item.sessions[lastEventSessionKey])
-						.add(2, "hours")
-						.isBefore() &&
-					!props.item.canceled
-				) {
-					classes += "font-semibold ";
-				}
-				*/
-			}
-			
-			return classes;
+	function titleRowClasses(props:RaceRow) {
+		var classes = "";
+		
+		// Highlight Next Race
+		if (props.isNextRace) {
+			classes += "text-yellow-600 ";
 		}
+
+		// Strike out cancelled races
+		if (props.item.canceled) {
+			classes += "line-through text-gray-300 ";
+		}
+		
+		
+		if (props.item.sessions != null) {
+			lastEventSessionKey = Object.keys(props.item.sessions)[
+				Object.keys(props.item.sessions).length - 1
+			];
+			
+			if (
+				!dayjs(props.item.sessions[lastEventSessionKey])
+					.add(2, "hours")
+					.isBefore() &&
+				!props.item.canceled
+			) {
+				classes += "font-semibold ";
+			}
+		}
+		
+		return classes;
 	}
 }
 
-export default withTranslation(Race);
+export default Race;
