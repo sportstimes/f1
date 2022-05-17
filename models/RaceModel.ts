@@ -1,4 +1,4 @@
-export default interface RaceModel = {
+export default type RaceModel = {
   round: Number;
   name: String;
   location: String;

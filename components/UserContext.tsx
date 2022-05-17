@@ -10,6 +10,8 @@ type userContextType = {
     timezone: string
     updateTimezone: (timezone:string) => void;
     updateTimeFormat: (timeformat:string) => void;
+    updateCollapsePastRaces: (state:boolean) => void;
+    collapsePastRaces: boolean;
 };
 
 const userContextDefaultValues: authContextType = {
@@ -17,6 +19,8 @@ const userContextDefaultValues: authContextType = {
     timezone: "Europe/London",
     updateTimeFormat: () => {},
     updateTimezone: () => {},
+    collapsePastRaces: true,
+    updateCollapsePastRaces: () => {},
 };
 
 const UserContext = createContext<userContextType>(userContextDefaultValues);
@@ -32,7 +36,7 @@ type Props = {
 export function UserContextProvider({ children }: Props) {
     const [timezone, updateStateTimezone] = useState<string>("Europe/London");
     const [timeFormat, updateStateTimeFormat] = useState<number>(24);
-    const [collapsePastRaces, setCollapsePastRaces] = useState(true);
+    const [collapsePastRaces, updateStateCollapsePastRaces] = useState(true);
 
     useEffect(() => {
         const {pathname} = Router
@@ -61,9 +65,9 @@ export function UserContextProvider({ children }: Props) {
         
         const storedCollapsedState = localStorage.getItem("collapasePastRaces");
         if (storedCollapsedState) {
-            setCollapsePastRaces(storedCollapsedState);
+            updateStateCollapsePastRaces(storedCollapsedState);
         } else {
-            setCollapsePastRaces(true);
+            updateStateCollapsePastRaces(true);
         }
     }, []);
 
@@ -82,7 +86,7 @@ export function UserContextProvider({ children }: Props) {
     };
     
     const updateCollapsePastRaces = (bool) => {
-        setCollapsePastRaces(bool);
+        updateStateCollapsePastRaces(bool);
         localStorage.setItem("collapsePastRaces", bool);
     };
 

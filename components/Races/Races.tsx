@@ -32,10 +32,9 @@ const Races: FunctionComponent = ({ year, races }: Props) => {
 				Object.keys(item.sessions).length - 1
 			];
 			
-			// TODO:
-			//if (dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore()) {
-			//	racesOccured = racesOccured + 1;
-			//}
+			if (dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore()) {
+				racesOccured = racesOccured + 1;
+			}
 		}
 	});
 	

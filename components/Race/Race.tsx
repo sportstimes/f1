@@ -27,14 +27,13 @@ export interface RaceRowState {
   collapsed: boolean;
 }
 	
-const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: RaceRow) => {
-
+const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: RaceRow) => {
 	
 	const {t, lang} = useTranslation();
 	const plausible = usePlausible();
 	
 	let {timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces} = useUserContext();
-	const [collapsed, setCollapsed] = useState(false);
+	const [collapsed, setCollapsed] = useState(!isNextRace);
 	
 	dayjs.extend(dayjsutc);
 	dayjs.extend(dayjstimezone);
@@ -43,7 +42,9 @@ const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccu
 		setCollapsed(!isNextRace)
 	}, []);
 
-	const handleRowClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+	const handleRowClick = (event: React.MouseEvent<HTMLTableRowElement>) => {
+		/*
+		TODO:
 		const race = item;
 
 		plausible(!collapsed ? "Closed Event" : "Opened Event", {
@@ -51,6 +52,7 @@ const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccu
 				event: race.slug
 			}
 		});
+		*/
 
 		setCollapsed(!collapsed);
 	}
@@ -66,19 +68,15 @@ const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccu
 	
 	const race: RaceRow = {
 		isNextRace: isNextRace,
-		// TODO:
-		//hasOccured: sessionDate.isBefore(),
-		hasOccured: false,
+		hasOccured: dayjs(item.sessions[lastEventSessionKey]).isBefore(),
 		shouldCollapsePastRaces: shouldCollapsePastRaces,
 		index,
-		timezone: timezone,
-		timeFormat: timeFormat,
 		item: item
 	};
 
 	return (
 		<tbody id={item.slug} key={`${item.slug}-body`} className={`${rowClasses(race)}`}>
-			<tr key={`${item.slug}-tr`} className="cursor-pointer" onClick={() => handleRowClick()}>
+			<tr key={`${item.slug}-tr`} className="cursor-pointer" onClick={handleRowClick}>
 				<td className="w-0 relative left-1">
 					<Toggle collapsed={collapsed} />
 				</td>
