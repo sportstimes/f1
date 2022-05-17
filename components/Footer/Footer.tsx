@@ -22,11 +22,11 @@ class Footer extends React.Component<Props> {
 				<footer className="mt-2 md:mt-6">
 					<div className="max-w-7xl mx-auto py-6 md:py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
 						<div className="mt-1 mb-6 flex justify-center space-x-6">
-							<LanguageSelector id="languageSelector2" />
+							<LanguageSelector />
 						</div>
 						
 						<div className="mt-1 mb-6 flex justify-center space-x-6">
-							<SiteSelector id="siteSelector2" />
+							<SiteSelector />
 						</div>
 		
 						<p className="mb-10 text-center text-base text-gray-400">

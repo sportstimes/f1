@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, FunctionComponent} from "react";
 import useTranslation from 'next-translate/useTranslation'
 import {useUserContext} from "../../components/UserContext";
 import dayjs from "dayjs";
@@ -20,23 +20,22 @@ export interface RaceRow {
   hasOccured: boolean;
   shouldCollapsePastRaces: boolean;
   index: number;
-  item: RaceModel
+  item: RaceModel;
 }
 
 export interface RaceRowState {
   collapsed: boolean;
 }
-
+	
 const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: RaceRow) => {
+
+	
 	const {t, lang} = useTranslation();
 	const plausible = usePlausible();
 	
 	let {timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces} = useUserContext();
 	const [collapsed, setCollapsed] = useState(false);
 	
-	// TODO:
-	timezone = "Europe/London";
-
 	dayjs.extend(dayjsutc);
 	dayjs.extend(dayjstimezone);
 
@@ -96,18 +95,18 @@ const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccu
 						)}
 						
 						{item.tbc && (
-							<TBCBadge mobileOnly={true} />
+							<TBCBadge />
 						)}
 						
 						{item.canceled && (
-							<CanceledBadge mobileOnly={true} />
+							<CanceledBadge />
 						)}
 					</span>	
 				</td>
 				{!hasMultipleFeaturedEvents ? (
 					<>
 						<td className={`w-2/12 ${titleRowClasses(race)}`}>
-							{item.sessions &&
+							{collapsed && item.sessions &&
 								item.sessions[config.featuredSessions[0]] &&
 								dayjs(
 									item.sessions[config.featuredSessions[0]]
@@ -117,7 +116,7 @@ const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccu
 						</td>
 						<td className={`w-1/12 ${titleRowClasses(race)}`}>
 							<div className="relative right-3 sm:right-0">
-								{item.sessions &&
+								{collapsed && item.sessions &&
 									item.sessions[config.featuredSessions[0]] &&
 									dayjs(
 										item.sessions[config.featuredSessions[0]]
@@ -155,11 +154,6 @@ const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccu
 						</div>
 					</td>
 				)}
-				<td className="text-right w-0 sm:w-3/12 pr-2">
-					<div className="hidden sm:block">
-						{badgeColumnLayout(item)}
-					</div>
-				</td>
 			</tr>
 			
 			{sessionRows(race, collapsed)}
@@ -174,11 +168,6 @@ const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccu
 			
 			var keys = Object.keys(props.item.sessions);
 			
-			// Don't include the featured session in the list
-			if(!hasMultipleFeaturedEvents){
-				keys.splice(keys.indexOf(config.featuredSessions[0]), 1);
-			}
-			
 			keys.forEach(function (session, index) {
 				var hasOccured = false;
 				
@@ -190,13 +179,12 @@ const Race: FunctionComponent = ({ item, index, shouldCollapsePastRaces, hasOccu
 					<RaceTR
 						key={`${props.item.localeKey}-${session}`}
 						date={props.item.sessions[session]}
+						isNextRace={isNextRace}
 						title={session}
-						timezone={props.timezone}
-						timeFormat={props.timeFormat}
-						localeKey={props.item.localeKey}
 						collapsed={collapsed}
 						hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
 						hasOccured={hasOccured}
+						isFeaturedSession={config.featuredSessions.includes(session)}
 					/>
 				);
 			});

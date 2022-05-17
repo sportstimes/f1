@@ -1,16 +1,13 @@
-import React, {Component} from "react";
+import React, { FunctionComponent } from "react";
 import useTranslation from 'next-translate/useTranslation'
 import i18nConfig from "../../i18n.json";
 import Router from "next/router";
 import {usePlausible} from "next-plausible";
 
-interface Props {
-	id: string;
-}
-
-const LanguageSelector: FunctionComponent = ({ id }: Props) => {
+const LanguageSelector: FunctionComponent = ({}) => {
 	const {t, lang} = useTranslation();
-	
+	const plausible = usePlausible();
+
 	const onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		if (event.target.value === "add") {
 			document.location.href =
@@ -27,36 +24,30 @@ const LanguageSelector: FunctionComponent = ({ id }: Props) => {
 		if (adjustedURL.includes("[timezone]")) {
 			adjustedURL = "/timezones/";
 		}
-
-		Router.push(adjustedURL, adjustedURL, {locale: event.target.value});
 		
-		/*
-		TODO
-		const plausible = usePlausible();
-
 		plausible("Changed Language", {
 			props: {
 				language: event.target.value
 			}
 		});
-		*/
+		
+		Router.push(adjustedURL, adjustedURL, {locale: event.target.value});
 	};
 
 	const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
 
 	const {languageNames} = i18nConfig;
-	// TODO: Picker {languageName(language)}
+	
 
 	// Picker Items
-	const languageItems = [];
-
-	for (const language in languageNames) {
+	const languageItems : React.ReactElement[] = [];
+	Object.keys(languageNames).forEach(language => {
 		languageItems.push(
 			<option value={language} key={language}>
-				{languageNames[language]}
+				{languageNames[language as keyof String]}
 			</option>
 		);
-	}
+	});
 
 	languageItems.push(
 		<option value="add" key="Add">
@@ -70,7 +61,6 @@ const LanguageSelector: FunctionComponent = ({ id }: Props) => {
 				{t("localization:languageSelector")}
 			</label>
 			<select
-				id={id}
 				name="language"
 				onChange={onChange}
 				value={lang}

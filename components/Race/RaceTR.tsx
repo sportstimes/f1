@@ -12,16 +12,16 @@ export interface RaceRowTR {
 	collapsed: boolean;
 	hasOccured: boolean;
 	hasMultipleFeaturedEvents: boolean;
+	isNextRace: boolean;
 	title: string;
 	date: string;
-	timezone: string;
-	timeFormat: number;
+	timezone: RaceRow;
 	localeKey: string;
 	locale?: string;
-	i18n: I18n;
+	isFeaturedSession: boolean;
 }
 
-const RaceTR: FunctionComponent = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, date }: RaceRowTR) => {
+const RaceTR: FunctionComponent = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace }: RaceRowTR) => {
 
 	/*
 	// TODO:
@@ -37,9 +37,6 @@ const RaceTR: FunctionComponent = ({ hasMultipleFeaturedEvents, title, collapsed
 	const {t, lang} = useTranslation();
 	let {timezone, timeFormat} = useUserContext();
 	
-	// TODO:
-	timezone = "Europe/London";
-
 	if (hasMultipleFeaturedEvents) {
 		var blankColumnCount = config.featuredSessions.length - 1;
 
@@ -58,12 +55,11 @@ const RaceTR: FunctionComponent = ({ hasMultipleFeaturedEvents, title, collapsed
 							)}
 					</div>
 				</td>
-				<td />
 			</tr>
 		);
 	} else {
 		return (
-			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""}`}>
+			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""} ${!hasOccured && isFeaturedSession ? "font-bold" : ""} ${isNextRace && isFeaturedSession ? "text-yellow-600" : ""}`}>
 				<td className="w-1/8"></td>
 				<td className="w-1/2 py-4 pl-5">{t(titleKey)}</td>
 				<td className="w-1/6">
@@ -72,13 +68,12 @@ const RaceTR: FunctionComponent = ({ hasMultipleFeaturedEvents, title, collapsed
 						.format("D MMM")}
 				</td>
 				<td className="w-1/6">
-					<div className="relative right-3 sm:right-0">
+					<div className={`relative right-3 sm:right-0`}>
 						{dayjs(date)
 							.tz(timezone)
 							.format(timeFormat == 12 ? "h:mm A" : "HH:mm")}
 					</div>
 				</td>
-				<td />
 			</tr>
 		);
 	}

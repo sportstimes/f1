@@ -6,7 +6,6 @@ import {usePlausible} from "next-plausible";
 
 interface Props {
 	i18n: I18n;
-	id: string;
 }
 
 interface SiteConfig {

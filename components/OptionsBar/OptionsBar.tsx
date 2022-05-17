@@ -9,21 +9,20 @@ import ct from "countries-and-timezones";
 import {usePlausible} from "next-plausible";
 import useTranslation from 'next-translate/useTranslation'
 
-const OptionsBar: FunctionComponent = ({ }: Props) => {
+const OptionsBar: FunctionComponent = () => {
 	
 	const [pickerShowing, setPickerShowing] = useState(false);
 	const { t, lang } = useTranslation();
-	const { timezone, timeFormat } = useUserContext();
+	const { timezone, timeFormat, updateTimezone, updateTimeFormat } = useUserContext();
+
+	const plausible = usePlausible();
 
 	dayjs.extend(dayjsutc);
 	dayjs.extend(dayjstimezone);
-	
 
 	const onTimezoneChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		const { updateTimezone } = useUserContext();
 		updateTimezone(event.target.value);
 
-		const plausible = usePlausible();
 		plausible("Changed Timezone", {
 			props: {
 				timezone: event.target.value
@@ -32,10 +31,8 @@ const OptionsBar: FunctionComponent = ({ }: Props) => {
 	};
 
 	const onFormatChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		const { updateTimeFormat } = useUserContext();
 		updateTimeFormat(event.target.value);
 
-		const plausible = usePlausible();
 		plausible("Changed Time Format", {
 			props: {
 				format: event.target.value
@@ -72,7 +69,7 @@ const OptionsBar: FunctionComponent = ({ }: Props) => {
 
 	const allTimezones = ct.getAllTimezones();
 	let timezoneNames = Object.keys(ct.getAllTimezones());
-	const timezoneItems : string[] = [];
+	const timezoneItems : React.ReactElement[] = [];
 
 	timezoneNames = timezoneNames
 		.filter((name) => name.indexOf("/") !== -1)
