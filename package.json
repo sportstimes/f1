@@ -42,7 +42,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.17.10",
-		"@babel/preset-react": "^7.13.13",
+		"@babel/preset-react": "^7.17.12",
 		"@tailwindcss/forms": "^0.5.0",
 		"@tailwindcss/typography": "^0.5.0",
 		"autoprefixer": "^10.4.7",
