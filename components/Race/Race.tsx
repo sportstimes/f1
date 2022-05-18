@@ -21,9 +21,6 @@ export interface RaceRow {
   shouldCollapsePastRaces: boolean;
   index: number;
   item: RaceModel;
-}
-
-export interface RaceRowState {
   collapsed: boolean;
 }
 	
@@ -43,16 +40,12 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 	}, []);
 
 	const handleRowClick = (event: React.MouseEvent<HTMLTableRowElement>) => {
-		/*
-		TODO:
-		const race = item;
-
+		
 		plausible(!collapsed ? "Closed Event" : "Opened Event", {
 			props: {
-				event: race.slug
+				event: item.slug
 			}
 		});
-		*/
 
 		setCollapsed(!collapsed);
 	}
@@ -63,15 +56,14 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 
 	var firstEventSessionKey = Object.keys(item.sessions)[0];
 	var lastEventSessionKey = Object.keys(item.sessions)[Object.keys(item.sessions).length - 1];
-
-	//className={`${/*rowClasses(this.props, this.state)*/}`}
 	
 	const race: RaceRow = {
 		isNextRace: isNextRace,
-		hasOccured: dayjs(item.sessions[lastEventSessionKey]).isBefore(),
+		hasOccured: dayjs(item.sessions[lastEventSessionKey]).isBefore(Date()),
 		shouldCollapsePastRaces: shouldCollapsePastRaces,
 		index,
-		item: item
+		item: item,
+		collapsed: !isNextRace
 	};
 
 	return (
@@ -169,7 +161,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 			keys.forEach(function (session, index) {
 				var hasOccured = false;
 				
-				if(dayjs(props.item.sessions[session]).add(2, "hours").isBefore()){
+				if(dayjs(props.item.sessions[session]).add(2, "hours").isBefore(Date())){
 					hasOccured = true;
 				}
 					
@@ -179,7 +171,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 						date={props.item.sessions[session]}
 						isNextRace={isNextRace}
 						title={session}
-						collapsed={collapsed}
+						collapsed={!isNextRace}
 						hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
 						hasOccured={hasOccured}
 						isFeaturedSession={config.featuredSessions.includes(session)}
@@ -268,7 +260,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 			if (
 				!dayjs(props.item.sessions[lastEventSessionKey])
 					.add(2, "hours")
-					.isBefore() &&
+					.isBefore(Date()) &&
 				!props.item.canceled
 			) {
 				classes += "font-semibold ";

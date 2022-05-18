@@ -14,7 +14,7 @@ type userContextType = {
     collapsePastRaces: boolean;
 };
 
-const userContextDefaultValues: authContextType = {
+const userContextDefaultValues: userContextType = {
     timeFormat: 24,
     timezone: "Europe/London",
     updateTimeFormat: () => {},
@@ -58,25 +58,25 @@ export function UserContextProvider({ children }: Props) {
         const storedFormat = localStorage.getItem("timeFormat");
     
         if (storedFormat) {
-            updateTimeFormat(storedFormat);
+            updateTimeFormat(Number(storedFormat));
         } else {
             updateTimeFormat(24);
         }
         
         const storedCollapsedState = localStorage.getItem("collapasePastRaces");
         if (storedCollapsedState) {
-            updateStateCollapsePastRaces(storedCollapsedState);
+            updateStateCollapsePastRaces(Boolean(storedCollapsedState));
         } else {
             updateStateCollapsePastRaces(true);
         }
     }, []);
 
-    const updateTimeFormat = (format) => {
+    const updateTimeFormat = (format:number) => {
         updateStateTimeFormat(format);
-        localStorage.setItem("timeFormat", format);
+        localStorage.setItem("timeFormat", String(format));
     };
 
-    const updateTimezone = (timezone) => {
+    const updateTimezone = (timezone:string) => {
         if(timezone == "Europe/Kyiv"){
             timezone = "Europe/Kiev";
         }
@@ -85,9 +85,9 @@ export function UserContextProvider({ children }: Props) {
         localStorage.setItem("timezone", timezone);
     };
     
-    const updateCollapsePastRaces = (bool) => {
-        updateStateCollapsePastRaces(bool);
-        localStorage.setItem("collapsePastRaces", bool);
+    const updateCollapsePastRaces = (bool:Boolean) => {
+        updateStateCollapsePastRaces(Boolean(bool));
+        localStorage.setItem("collapsePastRaces", String(bool));
     };
 
     const value = {

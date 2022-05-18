@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, FunctionComponent} from "react";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
@@ -15,13 +15,11 @@ export interface RaceRowTR {
 	isNextRace: boolean;
 	title: string;
 	date: string;
-	timezone: RaceRow;
-	localeKey: string;
-	locale?: string;
 	isFeaturedSession: boolean;
 }
 
-const RaceTR: FunctionComponent = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace }: RaceRowTR) => {
+
+const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace }: RaceRowTR) => {
 
 	/*
 	// TODO:

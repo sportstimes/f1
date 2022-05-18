@@ -13,6 +13,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "strictNullChecks":false,
     "strictPropertyInitialization": false,
+    "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",

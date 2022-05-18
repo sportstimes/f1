@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, FunctionComponent} from "react";
 import {useUserContext} from "../../components/UserContext";
 import dayjs from "dayjs";
 import Race, {RaceRow} from "../../components/Race/Race";
@@ -12,7 +12,7 @@ export interface Props {
 	locale?: string;
 }
 
-const Races: FunctionComponent = ({ year, races }: Props) => {
+const Races: FunctionComponent<Props> = ({ year, races }: Props) => {
 	const {t, lang} = useTranslation();
 	const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
 
@@ -32,7 +32,7 @@ const Races: FunctionComponent = ({ year, races }: Props) => {
 				Object.keys(item.sessions).length - 1
 			];
 			
-			if (dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore()) {
+			if (dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore(Date())) {
 				racesOccured = racesOccured + 1;
 			}
 		}
@@ -127,12 +127,11 @@ const Races: FunctionComponent = ({ year, races }: Props) => {
 					
 					const race: RaceRow = {
 						isNextRace: isNextRace,
-						hasOccured: sessionDate.isBefore(),
+						hasOccured: sessionDate.isBefore(Date()),
 						shouldCollapsePastRaces: shouldCollapsePastRaces,
 						index,
-						timezone: timezone,
-						timeFormat: timeFormat,
-						item: item
+						item: item,
+						collapsed: !isNextRace
 					};
 					
 					return (

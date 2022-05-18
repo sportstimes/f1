@@ -59,7 +59,6 @@ class SiteSelector extends React.Component<Props> {
 					{t("localization:languageSelector")}
 				</label>
 				<select
-					id={this.props.id}
 					name="site"
 					onChange={this.onChange}
 					value={currentValue}
