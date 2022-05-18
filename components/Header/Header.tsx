@@ -27,8 +27,7 @@ class Header extends React.Component<Props> {
 	
 		const {languageNames} = i18nConfig;
 		
-		const languageName = "123";
-		// TODO: LANG ${languageNames[lang]}
+		const languageName = languageNames[lang]
 	
 		return (
 			<div className="w-full bg-dark-green mb-4">

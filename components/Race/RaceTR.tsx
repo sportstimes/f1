@@ -21,18 +21,15 @@ export interface RaceRowTR {
 
 const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace }: RaceRowTR) => {
 
-	/*
-	// TODO:
-	if (lang === "en") {
-		dayjs.locale(this.props.locale);
-	} else {
+	const {t, lang} = useTranslation();
+
+	if (lang != "en") {
 		dayjs.locale(lang);
 	}
-	*/
+	
 
 	const titleKey = "localization:schedule." + title;
 
-	const {t, lang} = useTranslation();
 	let {timezone, timeFormat} = useUserContext();
 	
 	if (hasMultipleFeaturedEvents) {
