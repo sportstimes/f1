@@ -4,7 +4,6 @@ import Link from "next/link";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
-import withTranslation from "next-translate/withTranslation";
 import ct from "countries-and-timezones";
 import {usePlausible} from "next-plausible";
 import useTranslation from 'next-translate/useTranslation'
@@ -31,7 +30,7 @@ const OptionsBar: FunctionComponent = () => {
 	};
 
 	const onFormatChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		updateTimeFormat(event.target.value);
+		updateTimeFormat(Number(event.target.value));
 
 		plausible("Changed Time Format", {
 			props: {

@@ -9,7 +9,7 @@ import {useUserContext} from "../../components/UserContext";
 
 
 export interface RaceRowTR {
-	collapsed: boolean;
+	collapsed: Boolean;
 	hasOccured: boolean;
 	hasMultipleFeaturedEvents: boolean;
 	isNextRace: boolean;

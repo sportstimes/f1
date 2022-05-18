@@ -3,7 +3,7 @@ import OpenIcon from "../Icons/OpenIcon"
 import CollapsedIcon from "../Icons/CollapsedIcon"
 
 export interface Props {
-  collapsed: boolean;
+  collapsed: Boolean;
 }
 
 class Toggle extends React.Component<Props> {
@@ -16,15 +16,12 @@ class Toggle extends React.Component<Props> {
 				) : (
 					<OpenIcon className="" />
 				)}
-				
-				
-				
 			</>
 		);
 	}
 }
 
-// TODO: Aria
+// TODO
 /*
 <aria-hidden
 	className={`${

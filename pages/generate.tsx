@@ -5,7 +5,7 @@ import useTranslation from "next-translate/useTranslation";
 import Card from "../components/Card/Card";
 import {usePlausible} from "next-plausible";
 
-function Generate(props) {
+function Generate() {
 	const {t, lang} = useTranslation();
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 	const plausible = usePlausible();
@@ -26,7 +26,7 @@ function Generate(props) {
 	};
 
 	// Add sessions from config...
-	sessions.forEach(function (session, index) {
+	sessions.forEach(function (session:String, index:Number) {
 		defaults[session] = true;
 	});
 

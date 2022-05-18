@@ -9,7 +9,7 @@ type userContextType = {
     timeFormat: number;
     timezone: string
     updateTimezone: (timezone:string) => void;
-    updateTimeFormat: (timeformat:string) => void;
+    updateTimeFormat: (timeformat:number) => void;
     updateCollapsePastRaces: (state:boolean) => void;
     collapsePastRaces: boolean;
 };

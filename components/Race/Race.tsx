@@ -30,7 +30,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 	const plausible = usePlausible();
 	
 	let {timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces} = useUserContext();
-	const [collapsed, setCollapsed] = useState(!isNextRace);
+	const [collapsed, setCollapsed] = useState<Boolean>(!isNextRace);
 	
 	dayjs.extend(dayjsutc);
 	dayjs.extend(dayjstimezone);
@@ -152,7 +152,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 	);
 
 	
-	function sessionRows(props:RaceRow, collapsed:Boolean) {			
+	function sessionRows(props:RaceRow, collapsed:Boolean) {
 		if(Object.keys(props.item.sessions).length != 0){
 			var rows: React.ReactElement[] = [];
 			
@@ -171,7 +171,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 						date={props.item.sessions[session]}
 						isNextRace={isNextRace}
 						title={session}
-						collapsed={!isNextRace}
+						collapsed={collapsed}
 						hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
 						hasOccured={hasOccured}
 						isFeaturedSession={config.featuredSessions.includes(session)}

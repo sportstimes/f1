@@ -16,7 +16,7 @@ const Index = (props) => {
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 	return (
-		<FullWidthLayout showCTABar="true" year={currentYear}>
+		<FullWidthLayout showCTABar={true} year={Number(currentYear)}>
 			<div className="max-w-screen-lg mx-auto font-sans">
 				<OptionsBar i18n={t} pickerShowing={false} />
 				<Notice />

@@ -1,12 +1,14 @@
-export default type RaceModel = {
-  round: Number;
-  name: String;
-  location: String;
-  latitude: String;
-  longitude: String;
-  slug: String;
-  localeKey: String;
-  sessions?: Sessions;
-  tbc: Boolean;
-  canceled: Boolean;
+import {Sessions} from './Sessions';
+
+export default class RaceModel {
+  round: number
+  name: string
+  location: string
+  latitude: string
+  longitude: string
+  slug: string
+  localeKey: string
+  sessions?: Sessions
+  tbc: boolean
+  canceled: boolean
 };

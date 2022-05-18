@@ -1,17 +1,14 @@
-import NextApp from 'next/app'
+import { AppProps } from 'next/app'
 import {UserContextProvider} from "../components/UserContext";
 import {DefaultSeo} from "next-seo";
 import "../styles/tailwind.css";
 import "../styles/tailwind-utils.css";
 import "../styles/index.css";
-import withTranslation from 'next-translate/withTranslation'
+import useTranslation from 'next-translate/useTranslation'
 import PlausibleProvider from "next-plausible";
 
-class CalendarApp extends NextApp {
-  render() {
-	const { Component, pageProps } = this.props
-	
-	const {t} = this.props.i18n
+export default function CalendarApp({ Component, pageProps }: AppProps) {
+	const { t, lang } = useTranslation();
 	
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 	
@@ -52,7 +49,5 @@ class CalendarApp extends NextApp {
 			</PlausibleProvider>
 		</UserContextProvider>
 	);
-  }
 }
 
-export default withTranslation(CalendarApp);
