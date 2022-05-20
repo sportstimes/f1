@@ -52,19 +52,19 @@ const Races: FunctionComponent<Props> = ({ year, races }: Props) => {
 			{racesOccured < 1 || racesOccured != races.length && (
 				shouldCollapsePastRaces == true ? (
 					<div className="mt-8 mb-4 grid">
-						<a onClick={() => {
+						<button onClick={() => {
 							updateCollapsePastRaces(false)
 							shouldCollapsePastRaces = false
-						}} className="inline-block py-0.5 collapse-btn justify-self-center">
-						{t("localization:showPreviousRaces")}</a>
+						}} className="inline-block py-1 collapse-btn justify-self-center">
+						{t("localization:showPreviousRaces")}</button>
 					</div>
 				) : (
 					<div className="mt-8 mb-4 grid">
-						<a onClick={() => {
+						<button onClick={() => {
 							updateCollapsePastRaces(true)
 							shouldCollapsePastRaces = true
-						}} className="inline-block py-0.5 collapse-btn justify-self-center">
-						{t("localization:hidePreviousRaces")}</a>
+						}} className="inline-block py-1 collapse-btn justify-self-center">
+						{t("localization:hidePreviousRaces")}</button>
 					</div>
 				)
 			)}
