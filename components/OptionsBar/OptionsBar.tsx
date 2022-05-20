@@ -190,7 +190,7 @@ const OptionsBar: FunctionComponent = () => {
 								.
 							</button>
 						</div>
-						<button onClick={togglePicker} className="cursor-pointer" name="Settings">
+						<button onClick={togglePicker} className="cursor-pointer" aria-label="Settings">
 							<svg
 								aria-hidden="true"
 								focusable="false"
