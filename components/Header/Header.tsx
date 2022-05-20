@@ -34,16 +34,11 @@ class Header extends React.Component<Props> {
 				<header className="max-w-screen-lg mx-auto font-sans px-2 py-4">
 					<div className="md:justify-between md:flex">
 						<div className="md:flex md:justify-start mb-4">
-							<div
-								className="mx-auto md:m-0 md:w-auto mb-4 md:mb-0"
-								style={{width: "60px"}}
-							>
-								<Link href="/">
-									<a title={title}>
-										<Logo />
-									</a>
-								</Link>
-							</div>
+							<Link href="/" className="mx-auto md:m-0 md:w-auto mb-4 md:mb-0" style={{width: "60px"}}>
+								<a title={title}>
+									<Logo />
+								</a>
+							</Link>
 							<div className="mt-1 ml-0 md:ml-4 text-center md:text-left font-title uppercase">
 								<h1 className="mb-1 text-lg tracking-wider">
 									<Link href="/">
