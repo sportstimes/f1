@@ -69,11 +69,13 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 	return (
 		<tbody id={item.slug} key={`${item.slug}-body`} className={`${rowClasses(race)}`}>
 			<tr key={`${item.slug}-tr`} className="cursor-pointer" onClick={handleRowClick}>
-				<td className="w-0 relative left-1">
-					<Toggle collapsed={collapsed} />
+				<td className="w-4 lg:w-8">
+					<div className="relative left-2 lg:left-4 w-0">
+						<Toggle collapsed={collapsed} />
+					</div>
 				</td>
-				<td className={`w-7/12 pl-5 pt-3 pb-3 md:pt-4 md:pb-4`}>
-					<span className={`${titleRowClasses(race)}`}>
+				<td className={`flex p-4`}>
+					<span className={`${titleRowClasses(race)} flex`}>
 						{t(`localization:races.${item.localeKey}`) != localeKey
 							? t(`localization:races.${item.localeKey}`)
 							: item.name}
@@ -95,7 +97,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 				</td>
 				{!hasMultipleFeaturedEvents ? (
 					<>
-						<td className={`w-2/12 ${titleRowClasses(race)}`}>
+						<td className={`text-right md:text-left ${titleRowClasses(race)}`}>
 							{collapsed && item.sessions &&
 								item.sessions[config.featuredSessions[0]] &&
 								dayjs(
@@ -104,8 +106,8 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 									.tz(timezone)
 									.format("D MMM")}
 						</td>
-						<td className={`w-1/12 ${titleRowClasses(race)}`}>
-							<div className="relative right-3 sm:right-0">
+						<td className={`${titleRowClasses(race)}`}>
+							<div className="text-right md:text-left pr-2 md:pr-0">
 								{collapsed && item.sessions &&
 									item.sessions[config.featuredSessions[0]] &&
 									dayjs(
@@ -118,8 +120,8 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 						</td>
 					</>
 				) : (
-					<td className={`text-right ${titleRowClasses(race)}`}>
-						<div className="relative right-3 sm:right-0">
+					<td className={`${titleRowClasses(race)}`}>
+						<div className="text-right md:text-left pr-2 md:pr-0">
 							{item.sessions &&
 							dayjs(item.sessions[firstEventSessionKey])
 								.tz(timezone)

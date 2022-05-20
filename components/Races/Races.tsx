@@ -69,18 +69,18 @@ const Races: FunctionComponent<Props> = ({ year, races }: Props) => {
 				)
 			)}
 		
-			<table id="events-table" className="table-fixed w-full">
+			<table id="events-table" className="w-full">
 				{config.featuredSessions.length === 1 ? (
 					<thead className="hidden">
 						<tr>
-							<th scope="col" className="w-6"></th>
-							<th scope="col" className="w-4/12">
+							<th scope="col" className="w-8"></th>
+							<th scope="col">
 								{title}
 							</th>
-							<th scope="col" className="w-2/12">
+							<th scope="col">
 								{t("localization:date")}
 							</th>
-							<th scope="col" className="w-3/12">
+							<th scope="col">
 								{t("localization:time")}
 							</th>
 						</tr>
@@ -89,11 +89,11 @@ const Races: FunctionComponent<Props> = ({ year, races }: Props) => {
 					<thead>
 						<tr className="hidden">
 							<th scope="col" className="w-8"></th>
-							<th scope="col" className="w-1/2">
+							<th scope="col">
 								{title}
 							</th>
 							{config.featuredSessions.map((item:string, index:number) => {
-								return <th scope="col" className="w-1/6"></th>;
+								return <th scope="col"></th>;
 							})}
 						</tr>
 					</thead>
