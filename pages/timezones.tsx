@@ -14,12 +14,6 @@ function Timezones() {
   const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
     year: currentYear
   });
-  const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
-    year: currentYear
-  });
-  const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
-    year: currentYear
-  });
 
   // Picker Items
   const timezoneItems = [];
@@ -44,21 +38,12 @@ function Timezones() {
   }
 
   return (
-    <>
-      <NextSeo
-        title={title}
-        description={description}
-        keywords={keywords}
-      />
       <Layout year={currentYear}>
         <h3 className="text-xl mb-4">{t("localization:timezones.title")}</h3>
         <Card>
-          <p>
-            <ul>{timezoneItems}</ul>
-          </p>
+          <ul>{timezoneItems}</ul>
         </Card>
       </Layout>
-    </>
   );
 }
 
