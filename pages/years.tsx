@@ -35,21 +35,12 @@ function Years() {
 	}
 
 	return (
-		<>
-			<NextSeo
-				title={title}
-				description={description}
-				keywords={keywords}
-			/>
-			<Layout>
-				<h3 className="text-xl mb-4">{t("localization:years.title")}</h3>
-				<Card>
-					<p>
-						<ul>{yearItems}</ul>
-					</p>
-				</Card>
-			</Layout>
-		</>
+		<Layout>
+			<h3 className="text-xl mb-4">{t("localization:years.title")}</h3>
+			<Card>
+				<ul>{yearItems}</ul>
+			</Card>
+		</Layout>
 	);
 }
 
