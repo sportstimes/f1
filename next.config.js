@@ -16,6 +16,9 @@ module.exports = (phase) => {
   require('./build/public-assets');
   
   return withPWA(nextTranslate({
+    typescript: {
+      ignoreBuildErrors: true,
+    },
     webpack: (cfg) => {
       cfg.module.rules.push(
           {
