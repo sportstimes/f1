@@ -37,10 +37,10 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 
 		return (
 			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""}`}>
-				<td className="w-1/8"></td>
-				<td className="w-1/2 py-4 pl-2">{t(titleKey)}</td>
-				<td className="w-1/3 text-right">
-					<div className="relative right-3 sm:right-0">
+				<td className=""></td>
+				<td className="p-4">{t(titleKey)}</td>
+				<td className="text-right">
+					<div className="">
 						{dayjs(date)
 							.tz(timezone)
 							.format(
@@ -55,15 +55,15 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 	} else {
 		return (
 			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""} ${!hasOccured && isFeaturedSession ? "font-bold" : ""} ${isNextRace && isFeaturedSession ? "text-yellow-600" : ""}`}>
-				<td className="w-1/8"></td>
-				<td className="w-1/2 py-4 pl-5">{t(titleKey)}</td>
-				<td className="w-1/6">
+				<td className=""></td>
+				<td className="p-4">{t(titleKey)}</td>
+				<td className="text-right md:text-left">
 					{dayjs(date)
 						.tz(timezone)
 						.format("D MMM")}
 				</td>
-				<td className="w-1/6">
-					<div className={`relative right-3 sm:right-0`}>
+				<td className="">
+					<div className={`text-right md:text-left pr-2 md:pr-0`}>
 						{dayjs(date)
 							.tz(timezone)
 							.format(timeFormat == 12 ? "h:mm A" : "HH:mm")}
