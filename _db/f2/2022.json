@@ -68,12 +68,11 @@
 			"round": 5,
 			"slug": "monaco",
 			"localeKey": "monaco",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-05-27T00:00:00Z",
-				"qualifying": "2022-05-27T00:00:00Z",
-				"sprint": "2022-05-28T00:00:00Z",
-				"feature": "2022-05-29T00:00:00Z"
+				"practice": "2022-05-26T15:05:00Z",
+				"qualifying": "2022-05-27T09:40:00Z",
+				"sprint": "2022-05-28T15:40:00Z",
+				"feature": "2022-05-29T07:50:00Z"
 			}
 		},
 		{
