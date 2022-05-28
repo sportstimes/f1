@@ -1,217 +1,217 @@
 {
-    "date": "Gün",
-    "time": "Saat",
-	"showPreviousRaces": "Show Previous Races",
-	"hidePreviousRaces": "Hide Previous Races",
-	"badges": {
-        "tbc": "Belirsiz",
-        "tbc_title": "Henüz netleşmedi",
-        "tickets": "Biletler",
-        "canceled": "İptal",
-        "next": "SIRADAKİ"
-	},
-	"schedule": {
-        "fp1": "Birinci antrenman",
-        "fp2": "İkinci antrenman",
-        "fp3": "Üçüncü antrenman",
-        "fp4": "Dördüncü antreman",
-		"shakedown": "Deneme sürüşü",
-		"practice1": "Birinci antrenman",
-		"practice2": "İkinci antrenman",
-		"practice3": "Üçüncü antrenman",
-		"practice": "Antreman",
-        "qualifying": "Sıralama turları",
-        "qualifying1": "Sıralama turları 1",
-        "qualifying2": "Sıralama turları 2",
-		"sprint": "Sprint",
-		"semifinal": "Yarı Final",
-		"warmup": "Isınma",
-        "race": "Yarış",
-        "race1": "Yarış 1",
-        "race2": "Yarış 2",
-        "race3": "Yarış 3",
-        "gp": "Yarış",
-		"sprint1": "Sprint 1",
-		"sprint2": "Sprint 2",
-		"feature": "Feature"
-	},
-	"races": {
-        "austrian-grand-prix": "Avusturya Grand Prix'si",
-        "steiermark-grand-prix": "Steiermark Grand Prix'si",
-        "hungarian-grand-prix": "Macaristan Grand Prix'si",
-        "british-grand-prix": "Britanya Grand Prix'si",
-        "anniversary-british-grand-prix": "70. Yıldönümü Grand Prix'si",
-        "spanish-grand-prix": "İspanya Grand Prix'si",
-        "belgian-grand-prix": "Belçika Grand Prix'si",
-        "italian-grand-prix": "İtalya Grand Prix'si",
-        "australian-grand-prix": "Avustralya Grand Prix'si",
-        "bahrain-grand-prix": "Bahreyn Grand Prix'si",
-        "vietnamese-grand-prix": "Vietnam Grand Prix'si",
-        "china-grand-prix": "Çin Grand Prix'si",
-        "dutch-grand-prix": "Hollanda Grand Prix'si",
-        "monaco-grand-prix": "Monako Grand Prix'si",
-        "azerbaijan-grand-prix": "Azerbaycan Grand Prix'si",
-        "canadian-grand-prix": "Kanada Grand Prix'si",
-        "french-grand-prix": "Fransa Grand Prix'si",
-        "singapore-grand-prix": "Singapur Grand Prix'si",
-        "russian-grand-prix": "Rusya Grand Prix'si",
-        "japanese-grand-prix": "Japonya Grand Prix'si",
-        "us-grand-prix": "ABD Grand Prix'si",
-        "mexico-grand-prix": "Mexico City Grand Prix'si",
-        "brazilian-grand-prix": "Brezilya Grand Prix'si",
-        "abu-dhabi-grand-prix": "Abu Dhabi Grand Prix'si",
-        "tuscan-grand-prix": "Toskana Grand Prix'si",
-        "eifel-grand-prix": "Eifel Grand Prix'si",
-        "portuguese-grand-prix": "Portekiz Grand Prix'si",
-        "emilia-romagna-grand-prix": "Emilia Romagna Grand Prix'si",
-        "sakhir-grand-prix": "Sakhir Grand Prix'si",
-        "turkish-grand-prix": "Türkiye Grand Prix'si",
-        "saudi-arabia-grand-prix": "Suudi Arabistan Grand Prix'si",
-        "qatar-grand-prix" : "Katar Grand Prix'si",
-		"miami-grand-prix" : "Miami Grand Prix'si"
-	},
-	"options": {
-        "calendar": "Yarış programını kendi takviminize ekleyin",
-        "email": "E-posta ile hatırlatma alın",
-        "timezonePicker": {
-            "detect": "Tespit et",
-            "showing": "Seçili saat dilimi",
-            "pick": "Saat diliminizi seçin..."
-		},
-		"formatPicker": {
-			"title": "Zaman Formatı",
-			"12hr": "12 saatlik zaman",
-			"24hr": "24 saatlik zaman"
-		},
-        "button": "Tamam"
-	},
-    "contribute": "Katkıda bulunun",
-    "languageSelector": "Dil Seçimi",
-    "javascript": "F1 Takvimi sorunsuz çalışmak için Javascript'e ihtiyaç duyar.",
-	"footer": {
-        "coffee": "Bir kahve ısmarlayarak F1 Takvimi'ne destek olabilirsiniz.",
-        "twitter": "Sosyal medyada Twitter",
-        "github": "Kaynak kodumuz için GitHub",
-        "issue": "Sorun mu gördünüz? Bildirin",
-		"links": {
-            "wereOn": "Sosyal medyada",
-            "openSourcedOn": "Kaynak kodumuz için",
-            "spottedIssue": "Sorun mu gördünüz?",
-            "spottedReport": "Bildirin"
-		}
-	},
-	"form": {
-        "title": "Takvim oluşturun",
-        "description": "Öncelikle takviminizde F1 yarış haftalarının hangi seanslarını görmek istediğinizi seçin:",
-        "reminder": "Seçili etkinliklere",
-        "reminderContinued": "dakika kala hatırlatma gelsin.",
-        "button": "Takvimi oluştur",
-        "buttonSubmitted": "İşlem tamamlandı",
-        "nonOptionsSelected": "Lütfen listeden en az bir seans seçin."
-	},
-	"download": {
-        "title": "Takvim Türünü Seçin",
-        "webcalTitle": "Cep Telefonu veya Bilgisayar İçin",
-        "webcalDescription": "Outlook ve macOS Takvim gibi uygulamalar için kendiliğinden güncellenen takvim.",
-        "webcalButton": "Takvimi ekleyin",
-        "gcalTitle": "Google Takvim için",
-        "gcalDescription": "Bu takvimi eklemek için aşağıdaki adresi kopyalayıp Google Takvim'e yapıştırın",
-        "gcalDescriptionLink": "Diğer takvimler -> URL ile",
-        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
-		"icsTitle": "ICS Dosyası İndirin",
-        "icsDescription": "Güncellemelere abone olunamayan takvimler için kendini güncelleştirmeyen takvim dosyası (.ics).",
-        "icsButton": "İndirin"
-	},
-	"subscribe": {
-        "title": "Abone Olun",
-        "description": "Yarışılacak haftasonlarında size e-posta ile hatırlatıcı gönderelim.",
-        "label": "E-posta adresiniz",
-        "button": "Abone Olun"
-	},
-	"timezones": {
-        "title": "Saat diliminizi seçin..."
-	},
-	"years": {
-        "title": "Yıl seçin..."
-	},
-	"f1": {
-        "title": "F1 Takvimi",
-        "subtitle": "Yarışlar, Sıralama ve Antrenman Turları",
-        "seo": {
-            "title": "F1 Takvimi {{year}} - Formula 1 Yarış Tarih ve Zamanları",
-            "description": "{{year}} sezonu için tüm F1 Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Formula 1 takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
-            "keywords": "F1, formula bir, yarış saatleri, yarışlar, hatırlatıcı, alarm, grands prix, grand prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, Londra, Avrupa, {{year}}"
-		},
-		"footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
-	},
-	"f2": {
-		"title": "F2 Takvimi",
-		"subtitle": "Yarışlar, Sıralama & Antreman seansları ",
-		"seo": {
-			"title": "F2 Calendar {{year}} - Formula 2 Yarış Tarih ve Zamanları",
-			"description": "{{year}} sezonu için tüm F2 Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Formula 2 takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
-			"keywords": "F2, formula iki, yarış saatleri, yarışlar, hatırlatıcı, alarm, grands prix, grand prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, Londra, Avrupa, {{year}}"
-		},
-		"footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
-	},
-	"f3": {
-		"title": "F3 Takvimi",
-		"subtitle": "Yarışlar, Sıralama & Antreman seansları",
-		"seo": {
-			"title": "F3 Calendar {{year}} - Formula 3 Yarış Tarih ve Zamanları",
-			"description": "{{year}} sezonu için tüm F3 Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Formula 3 takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
-			"keywords": "F3, formula üç, yarış saatleri, yarışlar, hatırlatıcı, alarm, grands prix, grand prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, Londra, Avrupa, {{year}}"
-		},
-		"footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
-	},
-	"fe": {
-		"title": "Formula E Takvimi",
-		"subtitle": "Yarışlar, Sıralama & Antreman seansları",
-		"seo": {
-			"title": "Formula E Takvimi {{year}} - Formula E Yarış Tarih ve Zamanları",
-			"description": "{{year}} sezonu için tüm Formula E Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Formula E takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
-			"keywords": "FE, formula e, yarış saatleri, yarışlar, hatırlatıcı, e prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, London, Europe, {{year}}"
-		},
-		"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
-	},
-	"indycar": {
-		"title": "IndyCar Takvimi",
-		"subtitle": "Yarışlar, Sıralama & Antreman seansları",
-		"seo": {
-			"title": "IndyCar Calendar {{year}} - Yarış Tarih ve Zamanları",
-			"description": "{{year}} sezonu için tüm IndyCar Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen IndyCar takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
-			"keywords": "IndyCar, yarış saatleri, yarışlar, hatırlatıcı, takvim, tarihler, başlama saatleri, sıralama, antrenman, {{year}}"
-		},
-		"footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
-	},
-	"motogp": {
-		"title": "MotoGP Takvimi",
-		"subtitle": "Yarışlar, Sıralama & Antreman seansları",
-		"seo": {
-			"title": "MotoGP Calendar {{year}} - Race Times and Dates",
-			"description": "{{year}} sezonu için tüm MotoGP Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen MotoGP takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
-			"keywords": "MotoGP, yarış saatleri, yarışlar, hatırlatıcı, takvim, tarihler, başlama saatleri, sıralama, antrenman, London, Europe, {{year}}"
-		},
-		"footnote": ""
-	},
-	"wseries": {
-		"title": "W Series Takvimi",
-		"subtitle": "Yarışlar, Sıralama & Antreman seansları",
-		"seo": {
-			"title": "W Series Calendar {{year}} - Race Times and Dates",
-			"description": "{{year}} sezonu için tüm W Series Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen W Series takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
-			"keywords": "wseries, w-series, yarış saatleri, yarışlar, hatırlatıcı, prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, London, Europe, {{year}}"
-		},
-		"footnote": "W Series Calendar is not affiliated with W Series."
-	},
-	"extremee": {
-		"title": "Extreme E Takvimi",
-		"subtitle": "Yarışlar, Sıralama & Antreman seansları",
-		"seo": {
-			"title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
-			"description": "{{year}} sezonu için tüm Extreme E Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Extreme E takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
-			"keywords": "Extreme E, yarış saatleri, yarışlar, hatırlatıcı, x prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, London, Europe, {{year}}"
-		},
-		"footnote": ""
-	}
+  "date": "Gün",
+  "time": "Saat",
+  "showPreviousRaces": "Show Previous Races",
+  "hidePreviousRaces": "Hide Previous Races",
+  "badges": {
+    "tbc": "Belirsiz",
+    "tbc_title": "Henüz netleşmedi",
+    "tickets": "Biletler",
+    "canceled": "İptal",
+    "next": "SIRADAKİ"
+  },
+  "schedule": {
+    "fp1": "Birinci antrenman",
+    "fp2": "İkinci antrenman",
+    "fp3": "Üçüncü antrenman",
+    "fp4": "Dördüncü antreman",
+    "shakedown": "Deneme sürüşü",
+    "practice1": "Birinci antrenman",
+    "practice2": "İkinci antrenman",
+    "practice3": "Üçüncü antrenman",
+    "practice": "Antreman",
+    "qualifying": "Sıralama turları",
+    "qualifying1": "Sıralama turları 1",
+    "qualifying2": "Sıralama turları 2",
+    "sprint": "Sprint",
+    "semifinal": "Yarı Final",
+    "warmup": "Isınma",
+    "race": "Yarış",
+    "race1": "Yarış 1",
+    "race2": "Yarış 2",
+    "race3": "Yarış 3",
+    "gp": "Yarış",
+    "sprint1": "Sprint 1",
+    "sprint2": "Sprint 2",
+    "feature": "Feature"
+  },
+  "races": {
+    "austrian-grand-prix": "Avusturya Grand Prix'si",
+    "steiermark-grand-prix": "Steiermark Grand Prix'si",
+    "hungarian-grand-prix": "Macaristan Grand Prix'si",
+    "british-grand-prix": "Britanya Grand Prix'si",
+    "anniversary-british-grand-prix": "70. Yıldönümü Grand Prix'si",
+    "spanish-grand-prix": "İspanya Grand Prix'si",
+    "belgian-grand-prix": "Belçika Grand Prix'si",
+    "italian-grand-prix": "İtalya Grand Prix'si",
+    "australian-grand-prix": "Avustralya Grand Prix'si",
+    "bahrain-grand-prix": "Bahreyn Grand Prix'si",
+    "vietnamese-grand-prix": "Vietnam Grand Prix'si",
+    "china-grand-prix": "Çin Grand Prix'si",
+    "dutch-grand-prix": "Hollanda Grand Prix'si",
+    "monaco-grand-prix": "Monako Grand Prix'si",
+    "azerbaijan-grand-prix": "Azerbaycan Grand Prix'si",
+    "canadian-grand-prix": "Kanada Grand Prix'si",
+    "french-grand-prix": "Fransa Grand Prix'si",
+    "singapore-grand-prix": "Singapur Grand Prix'si",
+    "russian-grand-prix": "Rusya Grand Prix'si",
+    "japanese-grand-prix": "Japonya Grand Prix'si",
+    "us-grand-prix": "ABD Grand Prix'si",
+    "mexico-grand-prix": "Mexico City Grand Prix'si",
+    "brazilian-grand-prix": "Brezilya Grand Prix'si",
+    "abu-dhabi-grand-prix": "Abu Dhabi Grand Prix'si",
+    "tuscan-grand-prix": "Toskana Grand Prix'si",
+    "eifel-grand-prix": "Eifel Grand Prix'si",
+    "portuguese-grand-prix": "Portekiz Grand Prix'si",
+    "emilia-romagna-grand-prix": "Emilia Romagna Grand Prix'si",
+    "sakhir-grand-prix": "Sakhir Grand Prix'si",
+    "turkish-grand-prix": "Türkiye Grand Prix'si",
+    "saudi-arabia-grand-prix": "Suudi Arabistan Grand Prix'si",
+    "qatar-grand-prix": "Katar Grand Prix'si",
+    "miami-grand-prix": "Miami Grand Prix'si"
+  },
+  "options": {
+    "calendar": "Yarış programını kendi takviminize ekleyin",
+    "email": "E-posta ile hatırlatma alın",
+    "timezonePicker": {
+      "detect": "Tespit et",
+      "showing": "Seçili saat dilimi",
+      "pick": "Saat diliminizi seçin..."
+    },
+    "formatPicker": {
+      "title": "Zaman Formatı",
+      "12hr": "12 saatlik zaman",
+      "24hr": "24 saatlik zaman"
+    },
+    "button": "Tamam"
+  },
+  "contribute": "Katkıda bulunun",
+  "languageSelector": "Dil Seçimi",
+  "javascript": "F1 Takvimi sorunsuz çalışmak için Javascript'e ihtiyaç duyar.",
+  "footer": {
+    "coffee": "Bir kahve ısmarlayarak F1 Takvimi'ne destek olabilirsiniz.",
+    "twitter": "Sosyal medyada Twitter",
+    "github": "Kaynak kodumuz için GitHub",
+    "issue": "Sorun mu gördünüz? Bildirin",
+    "links": {
+      "wereOn": "Sosyal medyada",
+      "openSourcedOn": "Kaynak kodumuz için",
+      "spottedIssue": "Sorun mu gördünüz?",
+      "spottedReport": "Bildirin"
+    }
+  },
+  "form": {
+    "title": "Takvim oluşturun",
+    "description": "Öncelikle takviminizde F1 yarış haftalarının hangi seanslarını görmek istediğinizi seçin:",
+    "reminder": "Seçili etkinliklere",
+    "reminderContinued": "dakika kala hatırlatma gelsin.",
+    "button": "Takvimi oluştur",
+    "buttonSubmitted": "İşlem tamamlandı",
+    "nonOptionsSelected": "Lütfen listeden en az bir seans seçin."
+  },
+  "download": {
+    "title": "Takvim Türünü Seçin",
+    "webcalTitle": "Cep Telefonu veya Bilgisayar İçin",
+    "webcalDescription": "Outlook ve macOS Takvim gibi uygulamalar için kendiliğinden güncellenen takvim.",
+    "webcalButton": "Takvimi ekleyin",
+    "gcalTitle": "Google Takvim için",
+    "gcalDescription": "Bu takvimi eklemek için aşağıdaki adresi kopyalayıp Google Takvim'e yapıştırın",
+    "gcalDescriptionLink": "Diğer takvimler -> URL ile",
+    "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+    "icsTitle": "ICS Dosyası İndirin",
+    "icsDescription": "Güncellemelere abone olunamayan takvimler için kendini güncelleştirmeyen takvim dosyası (.ics).",
+    "icsButton": "İndirin"
+  },
+  "subscribe": {
+    "title": "Abone Olun",
+    "description": "Yarışılacak haftasonlarında size e-posta ile hatırlatıcı gönderelim.",
+    "label": "E-posta adresiniz",
+    "button": "Abone Olun"
+  },
+  "timezones": {
+    "title": "Saat diliminizi seçin..."
+  },
+  "years": {
+    "title": "Yıl seçin..."
+  },
+  "f1": {
+    "title": "F1 Takvimi",
+    "subtitle": "Yarışlar, Sıralama ve Antrenman Turları",
+    "seo": {
+      "title": "F1 Takvimi {{year}} - Formula 1 Yarış Tarih ve Zamanları",
+      "description": "{{year}} sezonu için tüm F1 Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Formula 1 takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
+      "keywords": "F1, formula bir, yarış saatleri, yarışlar, hatırlatıcı, alarm, grands prix, grand prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, Londra, Avrupa, {{year}}"
+    },
+    "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+  },
+  "f2": {
+    "title": "F2 Takvimi",
+    "subtitle": "Yarışlar, Sıralama & Antreman seansları ",
+    "seo": {
+      "title": "F2 Calendar {{year}} - Formula 2 Yarış Tarih ve Zamanları",
+      "description": "{{year}} sezonu için tüm F2 Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Formula 2 takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
+      "keywords": "F2, formula iki, yarış saatleri, yarışlar, hatırlatıcı, alarm, grands prix, grand prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, Londra, Avrupa, {{year}}"
+    },
+    "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+  },
+  "f3": {
+    "title": "F3 Takvimi",
+    "subtitle": "Yarışlar, Sıralama & Antreman seansları",
+    "seo": {
+      "title": "F3 Calendar {{year}} - Formula 3 Yarış Tarih ve Zamanları",
+      "description": "{{year}} sezonu için tüm F3 Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Formula 3 takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
+      "keywords": "F3, formula üç, yarış saatleri, yarışlar, hatırlatıcı, alarm, grands prix, grand prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, Londra, Avrupa, {{year}}"
+    },
+    "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
+  },
+  "fe": {
+    "title": "Formula E Takvimi",
+    "subtitle": "Yarışlar, Sıralama & Antreman seansları",
+    "seo": {
+      "title": "Formula E Takvimi {{year}} - Formula E Yarış Tarih ve Zamanları",
+      "description": "{{year}} sezonu için tüm Formula E Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Formula E takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
+      "keywords": "FE, formula e, yarış saatleri, yarışlar, hatırlatıcı, e prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, London, Europe, {{year}}"
+    },
+    "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
+  },
+  "indycar": {
+    "title": "IndyCar Takvimi",
+    "subtitle": "Yarışlar, Sıralama & Antreman seansları",
+    "seo": {
+      "title": "IndyCar Calendar {{year}} - Yarış Tarih ve Zamanları",
+      "description": "{{year}} sezonu için tüm IndyCar Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen IndyCar takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
+      "keywords": "IndyCar, yarış saatleri, yarışlar, hatırlatıcı, takvim, tarihler, başlama saatleri, sıralama, antrenman, {{year}}"
+    },
+    "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+  },
+  "motogp": {
+    "title": "MotoGP Takvimi",
+    "subtitle": "Yarışlar, Sıralama & Antreman seansları",
+    "seo": {
+      "title": "MotoGP Calendar {{year}} - Race Times and Dates",
+      "description": "{{year}} sezonu için tüm MotoGP Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen MotoGP takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
+      "keywords": "MotoGP, yarış saatleri, yarışlar, hatırlatıcı, takvim, tarihler, başlama saatleri, sıralama, antrenman, London, Europe, {{year}}"
+    },
+    "footnote": ""
+  },
+  "wseries": {
+    "title": "W Series Takvimi",
+    "subtitle": "Yarışlar, Sıralama & Antreman seansları",
+    "seo": {
+      "title": "W Series Calendar {{year}} - Race Times and Dates",
+      "description": "{{year}} sezonu için tüm W Series Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen W Series takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
+      "keywords": "wseries, w-series, yarış saatleri, yarışlar, hatırlatıcı, prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, London, Europe, {{year}}"
+    },
+    "footnote": "W Series Calendar is not affiliated with W Series."
+  },
+  "extremee": {
+    "title": "Extreme E Takvimi",
+    "subtitle": "Yarışlar, Sıralama & Antreman seansları",
+    "seo": {
+      "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
+      "description": "{{year}} sezonu için tüm Extreme E Grand Prix'lerini, antrenman turlarını ve sıralama turlarını listeleyen Extreme E takvimi. Her saat dilimi için alarm kurun. İndirin ya da abone olun.",
+      "keywords": "Extreme E, yarış saatleri, yarışlar, hatırlatıcı, x prix, takvim, tarihler, başlama saatleri, sıralama, antrenman, London, Europe, {{year}}"
+    },
+    "footnote": ""
+  }
 }
