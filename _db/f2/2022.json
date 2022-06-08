@@ -83,12 +83,11 @@
 			"round": 6,
 			"slug": "azerbaijan",
 			"localeKey": "azerbaijan",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-06-10T00:00:00Z",
-				"qualifying": "2022-06-10T00:00:00Z",
-				"sprint": "2022-06-11T00:00:00Z",
-				"feature": "2022-06-12T00:00:00Z"
+				"practice": "2022-06-10T08:35:00Z",
+				"qualifying": "2022-06-10T12:30:00Z",
+				"sprint": "2022-06-11T09:30:00Z",
+				"feature": "2022-06-12T07:05:00Z"
 			}
 		},
 		{
