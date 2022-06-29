@@ -48,10 +48,9 @@
 			"round": 4,
 			"slug": "british",
 			"localeKey": "british",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-07-01T08:40:00Z",
-				"qualifying": "2022-07-01T14:55:00Z",
+				"practice1": "2022-07-01T07:40:00Z",
+				"qualifying": "2022-07-01T17:25:00Z",
 				"race": "2022-07-02T12:25:00Z"
 			}
 		},
