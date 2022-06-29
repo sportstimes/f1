@@ -98,12 +98,11 @@
 			"round": 7,
 			"slug": "british",
 			"localeKey": "british",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-07-01T00:00:00Z",
-				"qualifying": "2022-07-01T00:00:00Z",
-				"sprint": "2022-07-02T00:00:00Z",
-				"feature": "2022-07-03T00:00:00Z"
+				"practice": "2022-07-01T09:45:00Z",
+				"qualifying": "2022-07-01T16:30:00Z",
+				"sprint": "2022-07-02T16:00:00Z",
+				"feature": "2022-07-03T09:05:00Z"
 			}
 		},
 		{
