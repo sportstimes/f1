@@ -113,12 +113,11 @@
 			"round": 8,
 			"slug": "austrian",
 			"localeKey": "austrian",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-07-08T00:00:00Z",
-				"qualifying": "2022-07-08T00:00:00Z",
-				"sprint": "2022-07-09T00:00:00Z",
-				"feature": "2022-07-10T00:00:00Z"
+				"practice": "2022-07-08T09:05:00Z",
+				"qualifying": "2022-07-08T13:55:00Z",
+				"sprint": "2022-07-09T15:55:00Z",
+				"feature": "2022-07-10T08:05:00Z"
 			}
 		},
 		{
