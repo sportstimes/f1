@@ -24,13 +24,12 @@
 			"round": 2,
 			"slug": "island-xprix",
 			"localeKey": "island-xprix",
-			"tbc": true,
 			"sessions": {
-				"shakedown": "2022-07-06T19:00:00Z",
-				"qualifying1": "2022-07-07T11:30:00Z",
-				"qualifying2": "2022-07-07T16:00:00Z",
-				"semifinal": "2022-07-08T10:00:00Z",
-				"race": "2022-07-08T14:00:00Z"
+				"shakedown": "2022-07-05T20:00:00Z",
+				"qualifying1": "2022-07-06T09:00:00Z",
+				"qualifying2": "2022-07-06T14:00:00Z",
+				"semifinal": "2022-07-07T11:00:00Z",
+				"race": "2022-07-07T14:00:00Z"
 			}
 		},
 		{
@@ -41,12 +40,11 @@
 			"round": 3,
 			"slug": "island-xprix",
 			"localeKey": "island-xprix",
-			"tbc": true,
 			"sessions": {
-				"qualifying1": "2022-07-09T11:30:00Z",
-				"qualifying2": "2022-07-09T16:00:00Z",
-				"semifinal": "2022-07-10T10:00:00Z",
-				"race": "2022-07-10T14:00:00Z"
+				"qualifying1": "2022-07-09T09:00:00Z",
+				"qualifying2": "2022-07-09T14:00:00Z",
+				"semifinal": "2022-07-10T08:00:00Z",
+				"race": "2022-07-10T11:00:00Z"
 			}
 		},
 		{
