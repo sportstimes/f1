@@ -23,7 +23,7 @@
         "qualifying": "排位赛",
         "qualifying1": "排位赛 1",
         "qualifying2": "排位赛 2",
-        "sprint": "冲刺排位赛",
+        "sprint": "冲刺赛",
         "semifinal": "半决赛",
         "warmup": "暖胎圈",
         "race": "正赛",
@@ -118,7 +118,7 @@
         "gcalDescription": "复制并粘贴到Google Calendar中",
         "gcalDescriptionLink": "详细指导",
         "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
-		"icsTitle": "下载ICS文件",
+		"icsTitle": "下载ics文件",
         "icsDescription": "某些方式（如.ics），无法自动获取更新信息",
         "icsButton": "下载"
     },
