@@ -138,7 +138,6 @@
 			"location": "Marrakesh",
 			"latitude": 0,
 			"longitude": 0,
-			"tbc": true,
 			"round": 10,
 			"slug": "marrakesh-eprix",
 			"localeKey": "marrakesh-eprix",
@@ -154,15 +153,14 @@
 			"location": "US",
 			"latitude": 40.775764,
 			"longitude": -74.012724,
-			"tbc": true,
 			"round": 11,
 			"slug": "nyc-eprix",
 			"localeKey": "nyc-eprix",
 			"sessions": {
-				"practice1": "2022-07-16T12:00:00Z",
-				"practice2": "2022-07-16T12:00:00Z",
-				"qualifying": "2022-07-16T12:00:00Z",
-				"race": "2022-07-16T12:00:00Z"
+				"practice1": "2022-07-15T20:00:00Z",
+				"practice2": "2022-07-16T11:00:00Z",
+				"qualifying": "2022-07-16T12:40:00Z",
+				"race": "2022-07-16T17:00:00Z"
 			}
 		},
 		{
