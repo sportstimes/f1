@@ -62,11 +62,10 @@
 			"round": 5,
 			"slug": "france",
 			"localeKey": "france",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-07-22T10:55:00Z",
-				"qualifying": "2022-07-22T14:30:00Z",
-				"race": "2022-07-23T14:30:00Z"
+				"practice1": "2022-07-22T08:40:00Z",
+				"qualifying": "2022-07-22T17:25:00Z",
+				"race": "2022-07-23T12:50:00Z"
 			}
 		},
 		{

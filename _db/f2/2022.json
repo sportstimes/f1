@@ -121,6 +121,21 @@
 			}
 		},
 		{
+			"name": "France",
+			"location": "Le Castellet",
+			"latitude": 43.2517,
+			"longitude": 5.7935,
+			"round": 8,
+			"slug": "france",
+			"localeKey": "france",
+			"sessions": {
+				"practice": "2022-07-21T09:35:00Z",
+				"qualifying": "2022-07-21T16:30:00Z",
+				"sprint": "2022-07-22T16:00:00Z",
+				"feature": "2022-07-23T07:35:00Z"
+			}
+		},
+		{
 			"name": "Hungarian",
 			"location": "Budapest",
 			"latitude": 47.583,
@@ -128,12 +143,11 @@
 			"round": 9,
 			"slug": "hungarian",
 			"localeKey": "hungarian",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-07-29T00:00:00Z",
-				"qualifying": "2022-07-29T00:00:00Z",
-				"sprint": "2022-07-30T00:00:00Z",
-				"feature": "2022-07-31T00:00:00Z"
+				"practice": "2022-07-28T08:40:00Z",
+				"qualifying": "2022-07-28T16:30:00Z",
+				"sprint": "2022-07-29T16:00:00Z",
+				"feature": "2022-07-30T09:35:00Z"
 			}
 		},
 		{
