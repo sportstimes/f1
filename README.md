@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-41-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-42-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -81,6 +81,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://jameslakin.co.uk"><img src="https://avatars.githubusercontent.com/u/7294642?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Lakin</b></sub></a><br /><a href="https://github.com/sportstimes/f1/commits?author=jamesorlakin" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/jmcgreevy42"><img src="https://avatars.githubusercontent.com/u/12002363?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jmcgreevy42</b></sub></a><br /><a href="https://github.com/sportstimes/f1/issues?q=author%3Ajmcgreevy42" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/pjarayuzu"><img src="https://avatars.githubusercontent.com/u/83130601?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pjara Yuzu</b></sub></a><br /><a href="#translation-pjarayuzu" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/niklashjh"><img src="https://avatars.githubusercontent.com/u/66720563?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Niklas</b></sub></a><br /><a href="#content-niklashjh" title="Content">🖋</a></td>
   </tr>
 </table>
 
