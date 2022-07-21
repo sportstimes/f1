@@ -374,6 +374,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "niklashjh",
+      "name": "Niklas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66720563?v=4",
+      "profile": "https://github.com/niklashjh",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
