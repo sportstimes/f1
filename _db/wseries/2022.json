@@ -76,26 +76,25 @@
 			"round": 6,
 			"slug": "hungarian",
 			"localeKey": "hungarian",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-07-29T10:55:00Z",
-				"qualifying": "2022-07-29T14:30:00Z",
-				"race": "2022-07-30T14:30:00Z"
+				"practice1": "2022-07-29T09:50:00Z",
+				"qualifying": "2022-07-29T17:25:00Z",
+				"race": "2022-07-30T12:40:00Z"
 			}
 		},
 		{
-			"name": "Suzuka",
-			"location": "Japan",
-			"latitude": 35.3689,
-			"longitude": 138.9256,
+			"name": "Singapore",
+			"location": "Singapore",
+			"latitude": 1.2857,
+			"longitude": 103.8575,
 			"round": 7,
-			"slug": "suzuka",
-			"localeKey": "suzuka",
+			"slug": "singapore",
+			"localeKey": "singapore",
 			"tbc": true,
 			"sessions": {
-				"practice1": "2022-10-07T11:00:00Z",
-				"qualifying": "2022-10-07T14:30:00Z",
-				"race": "2022-10-08T14:30:00Z"
+				"practice1": "2022-09-30T11:00:00Z",
+				"qualifying": "2022-09-30T14:30:00Z",
+				"race": "2022-10-01T14:30:00Z"
 			}
 		},
 		{
