@@ -188,12 +188,11 @@
 			"round": 12,
 			"slug": "italian",
 			"localeKey": "italian",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-09-09T00:00:00Z",
-				"qualifying": "2022-09-09T00:00:00Z",
-				"sprint": "2022-09-10T00:00:00Z",
-				"feature": "2022-09-11T00:00:00Z"
+				"practice": "2022-09-09T08:25:00Z",
+				"qualifying": "2022-09-09T16:30:00Z",
+				"sprint": "2022-09-10T16:00:00Z",
+				"feature": "2022-09-11T08:05:00Z"
 			}
 		},
 		{
