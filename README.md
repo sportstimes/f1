@@ -11,6 +11,10 @@ _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 ## Running Locally
 
+Use .env.sample as a template to set your environment variables, the key ones are NEXT_PUBLIC_SITE_KEY and NEXT_PUBLIC_CURRENT_YEAR. Once set rename the file to .env.local.
+
+Then run the following command to spin up a local server...
+
 ```
 npm run dev
 ```
