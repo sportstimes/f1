@@ -105,7 +105,7 @@
 			"round": 8,
 			"slug": "us",
 			"localeKey": "us",
-			"tbc": true,
+			"canceled": true,
 			"sessions": {
 				"practice1": "2022-10-21T15:20:00Z",
 				"practice2": "2022-10-22T21:40:00Z",
@@ -121,7 +121,7 @@
 			"round": 9,
 			"slug": "mexico",
 			"localeKey": "mexico",
-			"tbc": true,
+			"canceled": true,
 			"sessions": {
 				"practice1": "2022-10-28T15:20:00Z",
 				"practice2": "2022-10-28T21:40:00Z",
@@ -137,7 +137,7 @@
 			"round": 10,
 			"slug": "mexico",
 			"localeKey": "mexico",
-			"tbc": true,
+			"canceled": true,
 			"sessions": {
 				"practice1": "2022-10-28T15:20:00Z",
 				"practice2": "2022-10-28T21:40:00Z",
