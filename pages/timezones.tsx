@@ -49,6 +49,7 @@ function Timezones() {
 
 export async function getStaticProps() {
   return {
+    props: {},
     revalidate: 3600
   }
 }

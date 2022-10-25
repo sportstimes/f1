@@ -125,6 +125,7 @@ function Subscribe() {
 
 export async function getStaticProps() {
 	return {
+		props: {},
 		revalidate: 3600
 	}
 }
