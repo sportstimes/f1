@@ -31,7 +31,7 @@ function Timezones() {
     timezoneItems.push(
       <li key={timezoneName}>
         <Link href={`timezone/${timezoneSlug}`}>
-          <a>{timezoneName}</a>
+          {timezoneName}
         </Link>
       </li>
     );
@@ -49,6 +49,7 @@ function Timezones() {
 
 export async function getStaticProps() {
   return {
+    props: {},
     revalidate: 3600
   }
 }

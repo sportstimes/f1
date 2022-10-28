@@ -61,9 +61,7 @@ class MinimalLayout extends React.Component<Props> {
 				
 					<div className="mx-auto mt-5 mb-5" style={{width: "60px"}} >
 						<Link href="/">
-							<a>
-								<Logo />
-							</a>
+							<Logo />
 						</Link>
 					</div>
 				

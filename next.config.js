@@ -15,6 +15,13 @@ module.exports = (phase) => {
   // Move _public/:site_key to public
   require('./build/public-assets');
   
+  const withPWA = require('next-pwa')({
+    disable: !isProd,
+    dest: "public",
+    publicExcludes: ['!download/*', '!download/**/*'],
+    buildExcludes: ['!download/*', '!download/**/*'],
+  })
+  
   return withPWA(nextTranslate({
     typescript: {
       ignoreBuildErrors: true,
@@ -27,12 +34,6 @@ module.exports = (phase) => {
           }
       )
       return cfg;
-    },
-    pwa: {
-      disable: !isProd,
-      dest: "public",
-      publicExcludes: ['!download/*', '!download/**/*'],
-      buildExcludes: ['!download/*', '!download/**/*'],
     },
     redirects: async function redirects() {
       const rules = [];
