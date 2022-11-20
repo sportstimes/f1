@@ -2,7 +2,7 @@
 	"siteKey": "f1",
 	"url": "f1calendar.com",
 	"calendarCDN": "files-f1.motorsportcalendars.com",
-	"availableYears": [2018, 2019, 2020, 2021, 2022],
+	"availableYears": [2018, 2019, 2020, 2021, 2022, 2023],
 	"sessions": ["fp1", "fp2", "fp3", "qualifying", "sprint", "gp"],
 	"featuredSessions": ["gp"],
 	"collapsedSessions": ["fp1", "fp2", "fp3", "qualifying", "sprint"],
@@ -22,5 +22,6 @@
 		"sprint":60,
 		"gp":120
 	},
-	"supportsEmailReminders": true
+	"supportsEmailReminders": true,
+	"notice": "Thanks for supporting F1 Calendar in 2022. We'll confirm 2023 session times once they've been announced. See you next year!"
 }

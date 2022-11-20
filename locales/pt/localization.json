@@ -67,7 +67,9 @@
 		"turkish-grand-prix": "Grande Prémio da Turquia",
 		"saudi-arabia-grand-prix": "Grande Prémio da Arábia Saudita",
 		"qatar-grand-prix": "Qatar Grand Prix",
-		"miami-grand-prix": "Miami Grand Prix"
+		"miami-grand-prix": "Miami Grand Prix",
+		"chinese-grand-prix" : "Chinese Grand Prix",
+		"las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {
 		"calendar": "Adicione as datas e horas das corridas ao seu Calendário",
