@@ -22,5 +22,6 @@
 		"sprint":60,
 		"gp":120
 	},
-	"supportsEmailReminders": true
+	"supportsEmailReminders": true,
+	"notice": "Thanks for supporting F1 Calendar in 2022. We'll confirm 2023 session times once they've been announced. See you next year!"
 }
