@@ -68,7 +68,9 @@
         "turkish-grand-prix": "Гран-при Турции",
         "saudi-arabia-grand-prix": "Гран-при Саудовской Аравии",
         "qatar-grand-prix" : "Гран-при Катара",
-        "miami-grand-prix" : "Гран-при Майами"
+        "miami-grand-prix" : "Гран-при Майами",
+        "chinese-grand-prix" : "Chinese Grand Prix",
+        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
     },
     "options": {
         "calendar": "Добавить расписание гонок в Календарь",
