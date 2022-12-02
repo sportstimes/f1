@@ -52,23 +52,6 @@
 			}
 		},
 		{
-			"name": "Chinese",
-			"location": "Shanghai",
-			"latitude": 31.3807,
-			"longitude": 121.2498,
-			"round": 4,
-			"slug": "chinese-grand-prix",
-			"localeKey": "chinese-grand-prix",
-			"canceled": true,
-			"sessions": {
-				"fp1" : "2023-04-14T02:00:00Z",
-				"fp2" : "2023-04-14T06:00:00Z",
-				"fp3" : "2023-04-15T03:00:00Z",
-				"qualifying" : "2023-04-15T06:00:00Z",
-				"gp" : "2023-04-16T06:10:00Z"
-			}
-		},
-		{
 			"name": "Azerbaijan",
 			"location": "Baku",
 			"latitude": 40.3699,
