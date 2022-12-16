@@ -98,12 +98,11 @@
 			"round": 7,
 			"slug": "belgian",
 			"localeKey": "belgian",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-08-26T00:00:00Z",
-				"qualifying": "2022-08-26T00:00:00Z",
-				"sprint": "2022-08-27T00:00:00Z",
-				"feature": "2022-08-28T00:00:00Z"
+				"practice": "2022-08-26T08:25:00Z",
+				"qualifying": "2022-08-26T13:30:00Z",
+				"sprint": "2022-08-27T08:35:00Z",
+				"feature": "2022-08-28T06:50:00Z"
 			}
 		},
 		{
@@ -114,12 +113,11 @@
 			"round": 8,
 			"slug": "dutch",
 			"localeKey": "dutch",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-09-02T00:00:00Z",
-				"qualifying": "2022-09-02T00:00:00Z",
-				"sprint": "2022-09-03T00:00:00Z",
-				"feature": "2022-09-04T00:00:00Z"
+				"practice": "2022-09-02T06:55:00Z",
+				"qualifying": "2022-09-02T12:00:00Z",
+				"sprint": "2022-09-03T08:25:00Z",
+				"feature": "2022-09-04T06:45:00Z"
 			}
 		},
 		{
@@ -130,12 +128,11 @@
 			"round": 9,
 			"slug": "italian",
 			"localeKey": "italian",
-			"tbc":true,
 			"sessions": {
-				"practice": "2022-09-09T00:00:00Z",
-				"qualifying": "2022-09-09T00:00:00Z",
-				"sprint": "2022-09-10T00:00:00Z",
-				"feature": "2022-09-11T00:00:00Z"
+				"practice": "2022-09-09T07:15:00Z",
+				"qualifying": "2022-09-09T13:30:00Z",
+				"sprint": "2022-09-10T08:35:00Z",
+				"feature": "2022-09-11T06:35:00Z"
 			}
 		}
 	]

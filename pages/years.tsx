@@ -28,7 +28,7 @@ function Years() {
 		yearItems.push(
 			<li key={availableYears[year]}>
 				<Link href={`year/${config.availableYears[year]}`}>
-					<a>{availableYears[year]}</a>
+					{availableYears[year]}
 				</Link>
 			</li>
 		);
@@ -46,6 +46,7 @@ function Years() {
 
 export async function getStaticProps() {
 	return {
+		props: {},
 		revalidate: 3600
 	}
 }

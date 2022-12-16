@@ -12,7 +12,7 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 	
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 	
-	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.title`);
+	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, { year: currentYear });
 	const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, { year: currentYear })
 	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, { year: currentYear })
 	

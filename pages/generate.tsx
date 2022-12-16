@@ -313,6 +313,7 @@ function Generate() {
 
 export async function getStaticProps() {
 	return {
+		props: {},
 		revalidate: 3600
 	}
 }

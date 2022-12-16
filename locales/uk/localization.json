@@ -68,9 +68,11 @@
         "turkish-grand-prix": "Гран-прі Туреччини",
         "saudi-arabia-grand-prix": "Гран-прі Саудівської Аравії",
         "qatar-grand-prix" : "Гран-прі Катару",
-        "miami-grand-prix" : "Гран-прі Маямі"
-    },
-    "options": {
+        "miami-grand-prix" : "Гран-прі Маямі",
+        "chinese-grand-prix" : "Chinese Grand Prix",
+        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
+	},
+	"options": {
         "calendar": "Додати розклад гонок до календаря",
         "email": "Отримувати нагадування на пошту",
         "timezonePicker": {

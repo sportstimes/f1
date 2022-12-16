@@ -55,7 +55,6 @@
 			"round": 4,
 			"slug": "copper-xprix",
 			"localeKey": "copper-xprix",
-			"tbc": true,
 			"sessions": {
 				"shakedown": "2022-09-09T15:15:00Z",
 				"qualifying1": "2022-09-10T11:00:00Z",
@@ -72,13 +71,12 @@
 			"round": 5,
 			"slug": "energy-xprix",
 			"localeKey": "energy-xprix",
-			"tbc": true,
 			"sessions": {
-				"shakedown": "2022-11-25T19:00:00Z",
-				"qualifying1": "2022-11-26T10:00:00Z",
-				"qualifying2": "2022-11-26T13:00:00Z",
-				"semifinal": "2022-11-27T10:00:00Z",
-				"race": "2022-11-27T12:00:00Z"
+				"shakedown": "2022-11-25T23:00:00Z",
+				"qualifying1": "2022-11-26T12:00:00Z",
+				"qualifying2": "2022-11-26T17:00:00Z",
+				"semifinal": "2022-11-27T13:00:00Z",
+				"race": "2022-11-27T16:00:00Z"
 			}
 		}
 	]

@@ -11,7 +11,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "suppressImplicitAnyIndexErrors": true,
-    "strictNullChecks":false,
+    "strictNullChecks": false,
     "strictPropertyInitialization": false,
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
@@ -30,12 +30,18 @@
         "models/*"
       ]
     },
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

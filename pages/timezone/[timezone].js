@@ -42,7 +42,7 @@ const Timezone = (props) => {
         :
         <>
           
-          <p><Link href="/timezones"><a className="text-green-600">{t('localization:options.timezonePicker.pick')}</a></Link><br/><br/></p>
+          <p><Link href="/timezones" className="text-green-600">{t('localization:options.timezonePicker.pick')}</Link><br/><br/></p>
           
           { config.notice != null &&
             <Notice />

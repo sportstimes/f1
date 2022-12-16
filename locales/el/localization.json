@@ -67,7 +67,9 @@
         "turkish-grand-prix": "Γκραν Πρι Τουρκίας",
         "saudi-arabia-grand-prix": "Γκραν Πρι Σαουδικής Αραβίας",
         "qatar-grand-prix": "Γκραν Πρι Κατάρ",
-        "miami-grand-prix": "Γκραν Πρι Μαϊάμι"
+        "miami-grand-prix": "Γκραν Πρι Μαϊάμι",
+        "chinese-grand-prix" : "Chinese Grand Prix",
+        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
     },
     "options": {
         "calendar": "Προσθήκη ημερομηνιών και ωρών αγώνων στο Ημερολόγιό σας",
