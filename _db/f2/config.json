@@ -20,8 +20,7 @@
 	"sessionLengths": {
 		"practice": 45,
 		"qualifying": 30,
-		"sprint1": 45,
-		"sprint2": 45,
+		"sprint": 45,
 		"feature": 60
 	},
 	"supportsEmailReminders": false,

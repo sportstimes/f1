@@ -21,7 +21,7 @@
 		"practice": 45,
 		"qualifying": 30,
 		"sprint": 40,
-		"race": 40
+		"feature": 45
 	},
 	"supportsEmailReminders": false,
 	"notice": "The F3 weekend format has changed. You may need to regenerate your calendar to account for the different sessions. Most sessions are still TBC. Calendar will be updated once details are confirmed."
