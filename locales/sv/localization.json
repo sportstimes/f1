@@ -1,8 +1,8 @@
 {
     "date": "Datum",
     "time": "Tid",
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
+    "showPreviousRaces": "Visa Tidigare Race",
+    "hidePreviousRaces": "Dölj Tidigare Race",
     "badges": {
         "tbc": "TBC",
         "tbc_title": "To be confirmed",
@@ -69,14 +69,14 @@
         "saudi-arabia-grand-prix": "Saudiarabiens Grand Prix",
         "qatar-grand-prix" : "Qatars Grand Prix",
 		"miami-grand-prix" : "Miamis Grand Prix",
-        "chinese-grand-prix" : "Chinese Grand Prix",
+        "chinese-grand-prix" : "Kinas Grand Prix",
         "las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {
         "calendar": "Lägg till racetider och datum till din kalender",
         "email": "Få e-postpåminnelser",
         "timezonePicker": {
-            "detect": "Detect",
+            "detect": "Detektera",
             "showing": "Visar tider för",
             "pick": "Välj en tidszon..."
         },
@@ -119,7 +119,7 @@
         "gcalTitle": "För Google Kalender",
         "gcalDescription": "För att lägga till den här kalendern, klipp och klistra länken nedan till din Google Calendar",
         "gcalDescriptionLink": "detaljerade instruktioner",
-        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+        "gcalNotificationNotice": "Google Kalender följer inte påminnelser på fjärrkalendrar. Evenemangspåminnelser kan läggas till inom kalenderinställningarna efter att den har lagts till.",
         "icsTitle": "Ladda ner ICS-fil",
         "icsDescription": "Statisk kalender (.ics) som inte uppdateras automatiskt. Används för kalenderprogram som inte stödjer automatiskt uppdaterande kalendrar.",
         "icsButton": "Ladda ner"
