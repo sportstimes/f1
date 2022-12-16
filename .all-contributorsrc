@@ -374,6 +374,33 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "niklashjh",
+      "name": "Niklas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66720563?v=4",
+      "profile": "https://github.com/niklashjh",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "meshwork100",
+      "name": "meshwork100",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94045768?v=4",
+      "profile": "https://github.com/meshwork100",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "siroirukan",
+      "name": "irukan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77875799?v=4",
+      "profile": "https://github.com/siroirukan",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -381,5 +408,6 @@
   "projectOwner": "sportstimes",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }

@@ -1,8 +1,6 @@
 
 export default async (req, res) => {
 	
-	console.log(req.query.subscriberUUID);
-	
 	if (!req.query.subscriberUUID) {
 		return res.status(400).json({
 			success: false,
@@ -42,12 +40,7 @@ export default async (req, res) => {
 			}
 		});
 		
-		console.log('lists '+ listIDs);
-		
 		if(listIDs.length == 0){
-			
-			console.log("Removing entirely...");
-			
 			// Remove the subscriber entirely...
 			const deleteResponse = await fetch(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/api/subscribers/${subscriber.id}`, {
 			  method: 'DELETE',
@@ -68,8 +61,6 @@ export default async (req, res) => {
 				attribs:subscriber.attribs,
 				lists:listIDs
 			};
-			
-			console.log("Removing this site");
 			
 			const updateResponse = await fetch(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/api/subscribers/${subscriber.id}`, {
 			  method: 'PUT',

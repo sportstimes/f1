@@ -26,8 +26,6 @@ export default async (req, res) => {
 		lists: [listID]
 	};
 	
-	console.log(data);
-	
 	return axios.post(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/api/subscribers`, data, {
 		headers: {
 			'Content-Type':'application/json',
@@ -35,11 +33,9 @@ export default async (req, res) => {
 		}
 	})
 	.then(async (response) => {
-		console.log('Success: ' + response);
 		return res.json({success:true});
 	})
 	.catch(async function (error) {
-		console.log('Error: ' + JSON.stringify(error));
 		return res.status(400).json({success:false});
 	});
 	

@@ -68,7 +68,9 @@
         "turkish-grand-prix": "Türkiye Grand Prix'si",
         "saudi-arabia-grand-prix": "Saudi Arabian Grand Prix",
         "qatar-grand-prix" : "Qatar Grand Prix",
-		"miami-grand-prix" : "Miami Grand Prix"
+		"miami-grand-prix" : "Miami Grand Prix",
+        "chinese-grand-prix" : "Chinese Grand Prix",
+        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {
         "calendar": "Yarış programını kendi takviminize ekleyin",

@@ -15,22 +15,25 @@ module.exports = (phase) => {
   // Move _public/:site_key to public
   require('./build/public-assets');
   
+  const withPWA = require('next-pwa')({
+    disable: !isProd,
+    dest: "public",
+    publicExcludes: ['!download/*', '!download/**/*'],
+    buildExcludes: ['!download/*', '!download/**/*'],
+  })
+  
   return withPWA(nextTranslate({
+    typescript: {
+      ignoreBuildErrors: true,
+    },
     webpack: (cfg) => {
       cfg.module.rules.push(
           {
               test: /\.md$/,
-              loader: 'frontmatter-markdown-loader',
-              options: { mode: ['react-component'] }
+              loader: 'ignore-loader'
           }
       )
       return cfg;
-    },
-    pwa: {
-      disable: !isProd,
-      dest: "public",
-      publicExcludes: ['!download/*', '!download/**/*'],
-      buildExcludes: ['!download/*', '!download/**/*'],
     },
     redirects: async function redirects() {
       const rules = [];

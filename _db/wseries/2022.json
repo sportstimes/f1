@@ -8,11 +8,10 @@
 			"round": 1,
 			"slug": "miami",
 			"localeKey": "miami",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-05-07T11:10:00Z",
-				"qualifying": "2022-05-07T14:30:00Z",
-				"race": "2022-05-08T14:30:00Z"
+				"practice1": "2022-05-06T20:00:00Z",
+				"qualifying": "2022-05-07T13:10:00Z",
+				"race": "2022-05-07T18:30:00Z"
 			}
 		},
 		{
@@ -23,11 +22,8 @@
 			"round": 2,
 			"slug": "miami",
 			"localeKey": "miami",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-05-07T11:10:00Z",
-				"qualifying": "2022-05-07T14:30:00Z",
-				"race": "2022-05-08T14:30:00Z"
+				"race": "2022-05-08T14:35:00Z"
 			}
 		},
 		{
@@ -38,11 +34,10 @@
 			"round": 3,
 			"slug": "barcelona",
 			"localeKey": "barcelona",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-05-20T11:10:00Z",
-				"qualifying": "2022-05-21T14:30:00Z",
-				"race": "2022-05-22T14:30:00Z"
+				"practice1": "2022-05-20T08:40:00Z",
+				"qualifying": "2022-05-20T17:25:00Z",
+				"race": "2022-05-21T12:40:00Z"
 			}
 		},
 		{
@@ -53,11 +48,10 @@
 			"round": 4,
 			"slug": "british",
 			"localeKey": "british",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-07-01T08:40:00Z",
-				"qualifying": "2022-07-02T14:55:00Z",
-				"race": "2022-07-03T12:25:00Z"
+				"practice1": "2022-07-01T07:40:00Z",
+				"qualifying": "2022-07-01T17:25:00Z",
+				"race": "2022-07-02T12:25:00Z"
 			}
 		},
 		{
@@ -68,11 +62,10 @@
 			"round": 5,
 			"slug": "france",
 			"localeKey": "france",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-07-22T10:55:00Z",
-				"qualifying": "2022-07-23T14:30:00Z",
-				"race": "2022-07-24T14:30:00Z"
+				"practice1": "2022-07-22T08:40:00Z",
+				"qualifying": "2022-07-22T17:25:00Z",
+				"race": "2022-07-23T12:50:00Z"
 			}
 		},
 		{
@@ -83,26 +76,25 @@
 			"round": 6,
 			"slug": "hungarian",
 			"localeKey": "hungarian",
-			"tbc": true,
 			"sessions": {
-				"practice1": "2022-07-29T10:55:00Z",
-				"qualifying": "2022-07-30T14:30:00Z",
-				"race": "2022-07-31T14:30:00Z"
+				"practice1": "2022-07-29T09:50:00Z",
+				"qualifying": "2022-07-29T17:25:00Z",
+				"race": "2022-07-30T12:40:00Z"
 			}
 		},
 		{
-			"name": "Suzuka",
-			"location": "Japan",
-			"latitude": 35.3689,
-			"longitude": 138.9256,
+			"name": "Singapore",
+			"location": "Singapore",
+			"latitude": 1.2857,
+			"longitude": 103.8575,
 			"round": 7,
-			"slug": "suzuka",
-			"localeKey": "suzuka",
+			"slug": "singapore",
+			"localeKey": "singapore",
 			"tbc": true,
 			"sessions": {
-				"practice1": "2022-10-07T11:00:00Z",
-				"qualifying": "2022-10-08T14:30:00Z",
-				"race": "2022-10-09T14:30:00Z"
+				"practice1": "2022-09-30T11:00:00Z",
+				"qualifying": "2022-09-30T14:30:00Z",
+				"race": "2022-10-01T14:30:00Z"
 			}
 		},
 		{
@@ -113,7 +105,7 @@
 			"round": 8,
 			"slug": "us",
 			"localeKey": "us",
-			"tbc": true,
+			"canceled": true,
 			"sessions": {
 				"practice1": "2022-10-21T15:20:00Z",
 				"practice2": "2022-10-22T21:40:00Z",
@@ -129,7 +121,7 @@
 			"round": 9,
 			"slug": "mexico",
 			"localeKey": "mexico",
-			"tbc": true,
+			"canceled": true,
 			"sessions": {
 				"practice1": "2022-10-28T15:20:00Z",
 				"practice2": "2022-10-28T21:40:00Z",
@@ -145,7 +137,7 @@
 			"round": 10,
 			"slug": "mexico",
 			"localeKey": "mexico",
-			"tbc": true,
+			"canceled": true,
 			"sessions": {
 				"practice1": "2022-10-28T15:20:00Z",
 				"practice2": "2022-10-28T21:40:00Z",

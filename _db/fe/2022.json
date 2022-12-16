@@ -50,14 +50,13 @@
 			"latitude": 41.901983,
 			"longitude": 12.494953,
 			"round": 4,
-			"tbc": true,
 			"slug": "rome-eprix",
 			"localeKey": "rome-eprix",
 			"sessions": {
-				"practice1": "2022-04-09T06:00:00Z",
-				"practice2": "2022-04-09T08:15:00Z",
-				"qualifying": "2022-04-09T10:00:00Z",
-				"race": "2022-04-09T14:04:00Z"
+				"practice1": "2022-04-09T05:15:00Z",
+				"practice2": "2022-04-09T07:00:00Z",
+				"qualifying": "2022-04-09T08:30:00Z",
+				"race": "2022-04-09T13:00:00Z"
 			}
 		},
 		{
@@ -66,13 +65,12 @@
 			"latitude": 41.901983,
 			"longitude": 12.494953,
 			"round": 5,
-			"tbc": true,
 			"slug": "rome-eprix",
 			"localeKey": "rome-eprix",
 			"sessions": {
-				"practice3": "2022-04-10T05:00:00Z",
-				"qualifying": "2022-04-10T07:00:00Z",
-				"race": "2022-04-10T11:04:00Z"
+				"practice3": "2022-04-10T06:30:00Z",
+				"qualifying": "2022-04-10T08:30:00Z",
+				"race": "2022-04-10T13:00:00Z"
 			}
 		},
 		{
@@ -81,7 +79,6 @@
 			"latitude": 43.7338,
 			"longitude": 7.4215,
 			"round": 6,
-			"tbc": true,
 			"slug": "monaco-eprix",
 			"localeKey": "monaco-eprix",
 			"sessions": {
@@ -96,15 +93,14 @@
 			"location": "Berlin",
 			"latitude": 52.482258,
 			"longitude": 13.389437,
-			"tbc": true,
 			"round": 7,
 			"slug": "berlin-eprix",
 			"localeKey": "berlin-eprix",
 			"sessions": {
-				"practice1": "2022-05-14T12:00:00Z",
-				"practice2": "2022-05-14T12:00:00Z",
-				"qualifying": "2022-05-14T12:00:00Z",
-				"race": "2022-05-14T12:00:00Z"
+				"practice1": "2022-05-14T05:15:00Z",
+				"practice2": "2022-05-14T07:00:00Z",
+				"qualifying": "2022-05-14T08:40:00Z",
+				"race": "2022-05-14T13:00:00Z"
 			}
 		},
 		{
@@ -112,15 +108,14 @@
 			"location": "Berlin",
 			"latitude": 52.482258,
 			"longitude": 13.389437,
-			"tbc": true,
 			"round": 8,
 			"slug": "berlin-eprix",
 			"localeKey": "berlin-eprix",
 			"sessions": {
-				"practice1": "2022-05-15T12:00:00Z",
-				"practice2": "2022-05-15T12:00:00Z",
-				"qualifying": "2022-05-15T12:00:00Z",
-				"race": "2022-05-15T12:00:00Z"
+				"practice1": "2022-05-15T05:15:00Z",
+				"practice2": "2022-05-15T07:00:00Z",
+				"qualifying": "2022-05-15T08:40:00Z",
+				"race": "2022-05-15T13:00:00Z"
 			}
 		},
 		{
@@ -128,26 +123,24 @@
 			"location": "Indonesia",
 			"latitude": 0,
 			"longitude": 0,
-			"tbc": true,
 			"round": 9,
 			"slug": "jakarta-eprix",
 			"localeKey": "jakarta-eprix",
 			"sessions": {
-				"practice1": "2022-06-04T12:00:00Z",
-				"practice2": "2022-06-04T12:00:00Z",
-				"qualifying": "2022-06-04T12:00:00Z",
-				"race": "2022-06-04T12:00:00Z"
+				"practice1": "2022-06-04T00:15:00Z",
+				"practice2": "2022-06-04T02:00:00Z",
+				"qualifying": "2022-06-04T03:40:00Z",
+				"race": "2022-06-04T08:00:00Z"
 			}
 		},
 		{
-			"name": "Vancouver ePrix",
-			"location": "Canada",
+			"name": "Marrakesh ePrix",
+			"location": "Marrakesh",
 			"latitude": 0,
 			"longitude": 0,
-			"tbc": true,
 			"round": 10,
-			"slug": "vancouver-eprix",
-			"localeKey": "vancouver-eprix",
+			"slug": "marrakesh-eprix",
+			"localeKey": "marrakesh-eprix",
 			"sessions": {
 				"practice1": "2022-07-02T12:00:00Z",
 				"practice2": "2022-07-02T12:00:00Z",
@@ -160,15 +153,14 @@
 			"location": "US",
 			"latitude": 40.775764,
 			"longitude": -74.012724,
-			"tbc": true,
 			"round": 11,
 			"slug": "nyc-eprix",
 			"localeKey": "nyc-eprix",
 			"sessions": {
-				"practice1": "2022-07-16T12:00:00Z",
-				"practice2": "2022-07-16T12:00:00Z",
-				"qualifying": "2022-07-16T12:00:00Z",
-				"race": "2022-07-16T12:00:00Z"
+				"practice1": "2022-07-15T20:00:00Z",
+				"practice2": "2022-07-16T11:00:00Z",
+				"qualifying": "2022-07-16T12:40:00Z",
+				"race": "2022-07-16T17:00:00Z"
 			}
 		},
 		{
