@@ -67,7 +67,9 @@
 		"turkish-grand-prix": "トルコGP",
 		"saudi-arabia-grand-prix": "サウジアラビアGP",
 		"qatar-grand-prix": "カタールGP",
-		"miami-grand-prix": "マイアミGP"
+		"miami-grand-prix": "マイアミGP",
+		"chinese-grand-prix" : "Chinese Grand Prix",
+		"las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {
 		"calendar": "開催日程をカレンダーに追加",

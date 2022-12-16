@@ -1,8 +1,8 @@
 {
     "date": "Дата",
     "time": "Час",
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
+    "showPreviousRaces": "Показати Попередні Гонки",
+    "hidePreviousRaces": "Приховати Попередні Гонки",
     "badges": {
         "tbc": "Не підтверджено",
         "tbc_title": "Очікується підтвердження",
@@ -67,14 +67,16 @@
         "sakhir-grand-prix": "Гран-прі Сахіру (Бахрейн)",
         "turkish-grand-prix": "Гран-прі Туреччини",
         "saudi-arabia-grand-prix": "Гран-прі Саудівської Аравії",
-        "qatar-grand-prix" : "Qatar Grand Prix",
-		"miami-grand-prix" : "Miami Grand Prix"
+        "qatar-grand-prix" : "Гран-прі Катару",
+        "miami-grand-prix" : "Гран-прі Маямі",
+        "chinese-grand-prix" : "Chinese Grand Prix",
+        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {
         "calendar": "Додати розклад гонок до календаря",
         "email": "Отримувати нагадування на пошту",
         "timezonePicker": {
-            "detect": "Detect",
+            "detect": "Визначити",
             "showing": "Показано час для",
             "pick": "Виберіть часовий пояс..."
         },
@@ -117,7 +119,7 @@
         "gcalTitle": "Для Календаря Google",
         "gcalDescription": "Щоб додати цей календар, скопіюйте та вставте це посилання до Календаря Google",
         "gcalDescriptionLink": "детальні інструкції",
-        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+        "gcalNotificationNotice": "Google Календар не бере до уваги нагадування зі загальнодоступних календарів. Сповіщення для події можна змінити в налаштуваннях після, того як був доданий календар.",
 		"icsTitle": "Скачати ICS-файл",
         "icsDescription": "Розклад без автоматичних оновлень (.ics) для календарів, які не в змозі обробити підписки, що оновлюються.",
         "icsButton": "Скачати"
@@ -175,22 +177,22 @@
         "footnote": "Формула-Е, Чемпіонат ФІА Формула-Е та Е-Гран-Прі є торговими марками ФІА."
     },
     "indycar": {
-        "title": "IndyCar Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "Календаd ІндіКар",
+        "subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
         "seo": {
-            "title": "IndyCar Calendar {{year}} - Race Times and Dates",
-            "description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {{year}}"
+            "title": "Календар ІндіКар {{year}} - Час та Дати Гонок",
+            "description": "Календар ІндіКар на сезон {{year}} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
+            "keywords": "IndyCar, ІндіКар, час гонок, гонки, нагадування, сповіщення, календар, дати, час стартів, кваліфікація, практика, {{year}}"
         },
-        "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+        "footnote": "ІндіКар є торговою маркою Brickyard Trademarks, Inc"
     },
     "motogp": {
         "title": "MotoGP Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
         "seo": {
-            "title": "MotoGP Calendar {{year}} - Race Times and Dates",
-            "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            "title": "Календар MotoGP {{year}} - Час та Дати Гонок",
+            "description": "Календар MotoGP на сезон {{year}} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
+            "keywords": "MotoGP, МотоГП, час гонок, гонки, нагадування, сповіщення, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {{year}}"
         },
         "footnote": ""
     },
@@ -198,19 +200,19 @@
         "title": "Календар W Series",
         "subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
         "seo": {
-            "title": "Календар W Series {{year}} - Час та Дати Гонок Формули-3",
+            "title": "Календар W Series {{year}} - Час та Дати Гонок",
             "description": "Календар W Series на сезон {{year}} року зі всіма W Series гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
             "keywords": "wseries, w-series, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {{year}}"
         },
         "footnote": "Календар W Series не пов’язаний із W Series."
     },
     "extremee": {
-        "title": "Extreme E Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "Календар Extreme E",
+        "subtitle": "Гонки, Кваліфікації та Тренувальні Сесії",
         "seo": {
-            "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
-            "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            "title": "Календар Extreme E {{year}} - Час та Дати Гонок Extreme E",
+            "description": "Календар Extreme E на сезон {{year}} року зі всіма X-Prix гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
+            "keywords": "Extreme E, час гонок, гонки, нагадування, сповіщення, x prix, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {{year}}"
         },
         "footnote": ""
     }

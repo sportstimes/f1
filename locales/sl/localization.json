@@ -68,7 +68,9 @@
         "turkish-grand-prix": "VN Turčije",
         "saudi-arabia-grand-prix": "VN Savdske Arabije",
         "qatar-grand-prix" : "Qatar Grand Prix",
-		"miami-grand-prix" : "Miami Grand Prix"
+		"miami-grand-prix" : "Miami Grand Prix",
+        "chinese-grand-prix" : "Chinese Grand Prix",
+        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {
         "calendar": "Dodaj te datume in čase dirk v svoj koledar",
