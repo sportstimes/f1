@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-44-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-45-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -91,6 +91,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <tr>
       <td align="center"><a href="https://github.com/meshwork100"><img src="https://avatars.githubusercontent.com/u/94045768?v=4?s=100" width="100px;" alt="meshwork100"/><br /><sub><b>meshwork100</b></sub></a><br /><a href="#translation-meshwork100" title="Translation">🌍</a></td>
       <td align="center"><a href="https://github.com/siroirukan"><img src="https://avatars.githubusercontent.com/u/77875799?v=4?s=100" width="100px;" alt="irukan"/><br /><sub><b>irukan</b></sub></a><br /><a href="#translation-siroirukan" title="Translation">🌍</a></td>
+      <td align="center"><a href="https://alimoncul.github.io/"><img src="https://avatars.githubusercontent.com/u/15328038?v=4?s=100" width="100px;" alt="Alim Öncül"/><br /><sub><b>Alim Öncül</b></sub></a><br /><a href="#translation-alimoncul" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
