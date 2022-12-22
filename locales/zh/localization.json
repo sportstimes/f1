@@ -69,8 +69,8 @@
         "saudi-arabia-grand-prix": "沙特阿拉伯大奖赛",
         "qatar-grand-prix" : "卡塔尔大奖赛",
 		"miami-grand-prix" : "迈阿密（美国）大奖赛",
-        "chinese-grand-prix" : "Chinese Grand Prix",
-        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
+        "chinese-grand-prix" : "中国大奖赛",
+        "las-vegas-grand-prix" : "拉斯维加斯大奖赛"
 	},
 	"options": {
         "calendar": "在你的日历App中添加赛程信息",
