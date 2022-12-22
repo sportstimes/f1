@@ -88,7 +88,6 @@
 			"round": 7,
 			"slug": "emilia-romagna-grand-prix",
 			"localeKey": "emilia-romagna-grand-prix",
-			"tbc": true,
 			"sessions": {
 				"fp1": "2023-05-19T11:30:00Z",
 				"fp2": "2023-05-19T15:00:00Z",
