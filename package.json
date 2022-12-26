@@ -28,7 +28,7 @@
 		"axios": "^1.1.3",
 		"countries-and-timezones": "^3.2.3",
 		"dayjs": "^1.11.5",
-		"eslint-config-next": "^13.1.0",
+		"eslint-config-next": "^13.1.1",
 		"ics": "^2.41.0",
 		"ignore-loader": "^0.1.2",
 		"loader-utils": "^3.2.1",
