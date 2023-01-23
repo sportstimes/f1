@@ -33,7 +33,7 @@
 		"ignore-loader": "^0.1.2",
 		"loader-utils": "^3.2.1",
 		"next": "^13.1.0",
-		"next-plausible": "^3.6.3",
+		"next-plausible": "^3.7.1",
 		"next-pwa": "^5.5.4",
 		"next-seo": "^5.5.0",
 		"next-translate": "^1.4.0",
