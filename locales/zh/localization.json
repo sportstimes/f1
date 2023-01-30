@@ -1,31 +1,28 @@
 {
     "date": "日期",
     "time": "时间",
-    "showPreviousRaces": "显示过往比赛",
-    "hidePreviousRaces": "隐藏过往比赛",
     "badges": {
-        "tbc": "待定",
+        "tbc": "TBC",
         "tbc_title": "待确认",
         "tickets": "门票",
         "canceled": "已取消",
         "next": "即将开始"
     },
     "schedule": {
-        "fp1": "第1次自由练习",
-        "fp2": "第2次自由练习",
-        "fp3": "第3次自由练习",
-        "fp4": "第4次自由练习",
+        "fp1": "第1次练习赛",
+        "fp2": "第2次练习赛",
+        "fp3": "第3次练习赛",
         "shakedown": "Shakedown",
-        "practice1": "练习赛 1",
-        "practice2": "练习赛 2",
-        "practice3": "练习赛 3",
-        "practice": "练习赛",
+        "practice1": "Practice 1",
+        "practice2": "Practice 2",
+        "practice3": "Practice 3",
+        "practice": "Practice",
         "qualifying": "排位赛",
         "qualifying1": "排位赛 1",
         "qualifying2": "排位赛 2",
-        "sprint": "冲刺赛",
-        "semifinal": "半决赛",
-        "warmup": "暖胎圈",
+        "sprintQualifying": "冲刺排位赛",
+        "semifinal": "Semi Final",
+        "warmup": "Warmup",
         "race": "正赛",
         "race1": "正赛 1",
         "race2": "正赛 2",
@@ -33,14 +30,16 @@
         "gp": "大奖赛",
         "sprint1": "冲刺赛 1",
         "sprint2": "冲刺赛 2",
-        "feature": "Feature"
+        "feature": "Feature",
+        "fp4": "第4次自由练习",
+        "sprint": "冲刺赛"
     },
     "races": {
         "austrian-grand-prix": "奥地利大奖赛",
-        "steiermark-grand-prix": "施蒂利亚（奥地利）大奖赛",
+        "steiermark-grand-prix": "施泰尔马克 (奥地利) 大奖赛",
         "hungarian-grand-prix": "匈牙利大奖赛",
         "british-grand-prix": "英国大奖赛",
-        "anniversary-british-grand-prix": "七十周年纪念（英国）大奖赛",
+        "anniversary-british-grand-prix": "七十周年纪念 (英国) 大奖赛",
         "spanish-grand-prix": "西班牙大奖赛",
         "belgian-grand-prix": "比利时大奖赛",
         "italian-grand-prix": "意大利大奖赛",
@@ -60,25 +59,25 @@
         "mexico-grand-prix": "墨西哥大奖赛",
         "brazilian-grand-prix": "巴西大奖赛",
         "abu-dhabi-grand-prix": "阿布扎比大奖赛",
-        "tuscan-grand-prix": "托斯卡纳（意大利）大奖赛",
+        "tuscan-grand-prix": "托斯卡纳 (意大利) 大奖赛",
         "eifel-grand-prix": "艾费尔 (德国) 大奖赛",
         "portuguese-grand-prix": "葡萄牙大奖赛",
-        "emilia-romagna-grand-prix": "艾米利亚-罗马涅（意大利）大奖赛",
-        "sakhir-grand-prix": "萨基尔（巴林）大奖赛",
+        "emilia-romagna-grand-prix": "艾米利亚-罗马涅 (意大利) 大奖赛",
+        "sakhir-grand-prix": "萨基尔 (巴林) 大奖赛",
         "turkish-grand-prix": "土耳其大奖赛",
         "saudi-arabia-grand-prix": "沙特阿拉伯大奖赛",
-        "qatar-grand-prix" : "卡塔尔大奖赛",
-		"miami-grand-prix" : "迈阿密（美国）大奖赛",
-        "chinese-grand-prix" : "中国大奖赛",
-        "las-vegas-grand-prix" : "拉斯维加斯大奖赛"
-	},
-	"options": {
+        "qatar-grand-prix": "卡塔尔大奖赛",
+        "miami-grand-prix": "迈阿密大奖赛",
+        "chinese-grand-prix": "中国大奖赛",
+        "las-vegas-grand-prix": "拉斯维加斯大奖赛"
+    },
+    "options": {
         "calendar": "在你的日历App中添加赛程信息",
         "email": "接受邮件提醒",
         "timezonePicker": {
-            "detect": "Detect",
-            "showing": "当前时区：",
-            "pick": "选择时区"
+            "showing": "当前显示的时间，时区为",
+            "pick": "选择时区...",
+            "detect": "Detect"
         },
         "formatPicker": {
             "title": "时间格式",
@@ -93,7 +92,7 @@
     "footer": {
         "coffee": "支持这个项目, 给我们买杯咖啡吧",
         "twitter": "We’re on Twitter",
-        "github": "Open Sourced on GitHub",
+        "github": "在 GitHub 上开源",
         "issue": "Spotted an issue? Report",
         "links": {
             "wereOn": "We're on",
@@ -104,29 +103,30 @@
     },
     "form": {
         "title": "生成日历",
-        "description": "请选择你在比赛日中所关注的赛程",
+        "description": "首先，选择你在比赛日中所关注的某个赛程",
         "reminder": "设置",
         "reminderContinued": "分钟前提醒",
         "button": "确认",
         "buttonSubmitted": "已提交",
-        "nonOptionsSelected": "请至少选择一个赛程信息"
+        "nonOptionsSelected": "请至少选择一个赛程信息.",
+        "attention": "注意"
     },
     "download": {
-        "title": "选择日历类型",
+        "title": "选择日历的类型",
         "webcalTitle": "手机端或电脑端",
         "webcalDescription": "像Outlook和macOS日历这样的程序或者App，会自动更新日历",
         "webcalButton": "获取",
         "gcalTitle": "Google Calendar",
-        "gcalDescription": "复制并粘贴到Google Calendar中",
+        "gcalDescription": "复制并粘贴到 Google Calendar 中",
         "gcalDescriptionLink": "详细指导",
-        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
-		"icsTitle": "下载ics文件",
+        "icsTitle": "下载ICS文件",
         "icsDescription": "某些方式（如.ics），无法自动获取更新信息",
-        "icsButton": "下载"
+        "icsButton": "下载",
+        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added."
     },
     "subscribe": {
         "title": "订阅",
-        "description": "在比赛日之前接受邮件提醒服务",
+        "description": "在比赛日之前接受邮件提醒服务。",
         "label": "邮箱地址",
         "button": "确认订阅"
     },
@@ -138,17 +138,17 @@
     },
     "f1": {
         "title": "F1赛程",
-        "subtitle": "正赛，排位赛和练习赛",
+        "subtitle": "正赛、排位赛和练习赛",
         "seo": {
-            "title": "{{year}} F1赛程 - F1赛事日历",
+            "title": "F1赛程 {{year}} - Formula One Race Times and Dates",
             "description": "Formula One Calendar for {{year}} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
             "keywords": "F1, 一级方程式, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
         },
         "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     },
     "f2": {
-        "title": "F2 Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "F2 赛程",
+        "subtitle": "正赛、排位赛和练习赛",
         "seo": {
             "title": "F2 Calendar {{year}} - Formula Two Race Times and Dates",
             "description": "Formula Two Calendar for {{year}} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
@@ -157,8 +157,8 @@
         "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
     },
     "f3": {
-        "title": "F3 Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "F3 赛程",
+        "subtitle": "正赛、排位赛和练习赛",
         "seo": {
             "title": "F3 Calendar {{year}} - Formula Three Race Times and Dates",
             "description": "Formula Three Calendar for {{year}} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
@@ -167,8 +167,8 @@
         "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
     },
     "fe": {
-        "title": "Formula E Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "Formula E 赛程",
+        "subtitle": "正赛、排位赛和练习赛",
         "seo": {
             "title": "Formula E Calendar {{year}} - Formula E Race Times and Dates",
             "description": "Formula E Calendar for {{year}} season with all Formula E e-prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
@@ -177,8 +177,8 @@
         "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
     },
     "indycar": {
-        "title": "IndyCar Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "IndyCar 赛程",
+        "subtitle": "正赛、排位赛和练习赛",
         "seo": {
             "title": "IndyCar Calendar {{year}} - Race Times and Dates",
             "description": "IndyCar Calendar for {{year}} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
@@ -187,8 +187,8 @@
         "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
     },
     "motogp": {
-        "title": "MotoGP Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "MotoGP 赛程",
+        "subtitle": "正赛、排位赛和练习赛",
         "seo": {
             "title": "MotoGP Calendar {{year}} - Race Times and Dates",
             "description": "MotoGP Calendar for {{year}} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
@@ -197,8 +197,8 @@
         "footnote": ""
     },
     "wseries": {
-        "title": "W Series Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "W Series 赛程",
+        "subtitle": "正赛、排位赛和练习赛",
         "seo": {
             "title": "W Series Calendar {{year}} - Race Times and Dates",
             "description": "W Series Calendar for {{year}} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
@@ -207,8 +207,8 @@
         "footnote": "W Series Calendar is not affiliated with W Series."
     },
     "extremee": {
-        "title": "Extreme E Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
+        "title": "Extreme E 赛程",
+        "subtitle": "正赛、排位赛和练习赛",
         "seo": {
             "title": "Extreme E Calendar {{year}} - Extreme E Race Times and Dates",
             "description": "Extreme E Calendar for {{year}} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
@@ -216,9 +216,11 @@
         },
         "footnote": ""
     },
-    "event": "",
+    "event": "F1大奖赛活动",
     "notice": {
-        "text": "",
-        "link": ""
-    }
+        "text": "文本",
+        "link": "链接"
+    },
+    "showPreviousRaces": "显示过往比赛",
+    "hidePreviousRaces": "隐藏过往比赛"
 }

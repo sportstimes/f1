@@ -1,0 +1,226 @@
+{
+    "date": "Tanggal",
+    "time": "Jam",
+    "badges": {
+        "tbc": "TBC",
+        "tbc_title": "Untuk di konfirmasi",
+        "tickets": "Tiket",
+        "canceled": "Dibatalkan",
+        "next": "Selanjutnya"
+    },
+    "schedule": {
+        "fp1": "Latihan Bebas 1",
+        "fp2": "Latihan Bebas 2",
+        "fp3": "Latihan Bebas 3",
+        "shakedown": "Uji Coba",
+        "practice1": "Latihan 1",
+        "practice2": "Latihan 2",
+        "practice3": "Latihan 3",
+        "practice": "Praktek",
+        "qualifying": "Kualifikasi",
+        "qualifying1": "Kualifikasi 1",
+        "qualifying2": "Kuailifikasi 2",
+        "sprintQualifying": "Kualifikasi Sprint",
+        "semifinal": "Semi final",
+        "warmup": "Pemanasan",
+        "race": "Balapan",
+        "race1": "Balapan 1",
+        "race2": "Balapan 2",
+        "race3": "Balapan 3",
+        "gp": "Grand Prix",
+        "sprint1": "lari cepat 1",
+        "sprint2": "lari cepat 2",
+        "feature": "Fitur",
+        "fp4": "Latihan Bebas 4",
+        "sprint": "lari cepat"
+    },
+    "races": {
+        "austrian-grand-prix": "Grand Prix Austria",
+        "steiermark-grand-prix": "Steiermark (Austria) Grand Prix",
+        "hungarian-grand-prix": "Grand Prix Hongaria",
+        "british-grand-prix": "Grand Prix Inggris",
+        "anniversary-british-grand-prix": "Grand Prix Hari Jadi (Inggris) ke-70",
+        "spanish-grand-prix": "Grand Prix Spanyol",
+        "belgian-grand-prix": "Grand Prix Belgia",
+        "italian-grand-prix": "Grand Prix Italia",
+        "australian-grand-prix": "Grand Prix Australia",
+        "bahrain-grand-prix": "Grand Prix Bahrain",
+        "vietnamese-grand-prix": "Grand Prix Vietnam",
+        "china-grand-prix": "Grand Prix Tiongkok",
+        "dutch-grand-prix": "Grand Prix Belanda",
+        "monaco-grand-prix": "Grand Prix Monako",
+        "azerbaijan-grand-prix": "Grand Prix Azerbaijan",
+        "canadian-grand-prix": "Grand Prix Kanada",
+        "french-grand-prix": "Grand Prix Prancis",
+        "singapore-grand-prix": "Grand Prix Singapura",
+        "russian-grand-prix": "Grand Prix Russia",
+        "japanese-grand-prix": "Grand Prix Jepang",
+        "us-grand-prix": "Grand Prix Amerika Serikat",
+        "mexico-grand-prix": "Grand Prix Meksiko",
+        "brazilian-grand-prix": "Grand Prix Brazil",
+        "abu-dhabi-grand-prix": "Grand Prix Abu Dhabi",
+        "tuscan-grand-prix": "Grand Prix Tuscan",
+        "eifel-grand-prix": "Grand Prix Eifel",
+        "portuguese-grand-prix": "Grand Prix Portugal",
+        "emilia-romagna-grand-prix": "Grand Prix Emilia Romagna",
+        "sakhir-grand-prix": "Sakhir (Bahrain) Grand Prix",
+        "turkish-grand-prix": "Grand Prix Turki",
+        "saudi-arabia-grand-prix": "Grand Prix Arab Saudi",
+        "qatar-grand-prix": "Grand Prix Qatar",
+        "miami-grand-prix": "Grand Prix Miami",
+        "chinese-grand-prix": "Chinese Grand Prix",
+        "las-vegas-grand-prix": "Las Vegas Grand Prix"
+    },
+    "options": {
+        "calendar": "Tambahkan tanggal &amp; waktu balapan ke Kalender Anda",
+        "email": "Terima pengingat email",
+        "timezonePicker": {
+            "showing": "Menampilkan waktu untuk",
+            "pick": "Pilih zona waktu...",
+            "detect": "Deteksi"
+        },
+        "formatPicker": {
+            "title": "Format waktu",
+            "12hr": "Waktu 12-Jam",
+            "24hr": "Waktu 24 Jam"
+        },
+        "button": "Selesai"
+    },
+    "contribute": "Kontribusi",
+    "languageSelector": "Pilih bahasa",
+    "javascript": "Situs ini bekerja paling baik dengan Javascript Diaktifkan.",
+    "footer": {
+        "coffee": "Dukung kami, belikan kami kopi.",
+        "twitter": "Kami ada di Twitter",
+        "github": "Sumber Terbuka di GitHub",
+        "issue": "Menemukan masalah? Laporkan",
+        "links": {
+            "wereOn": "Kami aktif",
+            "openSourcedOn": "Sumber Terbuka di",
+            "spottedIssue": "Menemukan masalah?",
+            "spottedReport": "Laporkan"
+        }
+    },
+    "form": {
+        "title": "Buat Kalendar",
+        "description": "Pertama, pilih musim mana yang ingin kamu tambahkan dalam kalendarmu:",
+        "reminder": "Buat pengingat",
+        "reminderContinued": "menit sebelum setiap acara di kalender musim Anda.",
+        "button": "Dapatkan Kalender",
+        "buttonSubmitted": "Dikirim",
+        "nonOptionsSelected": "Harap pilih setidaknya satu sesi untuk kalender Anda.",
+        "attention": "perhatian"
+    },
+    "download": {
+        "title": "Pilih Jenis Kalender",
+        "webcalTitle": "Untuk Mobile atau Desktop",
+        "webcalDescription": "Memperbarui kalender secara otomatis untuk aplikasi seperti Outlook dan Kalender macOS.",
+        "webcalButton": "Dapatkan",
+        "gcalTitle": "Untuk Google Kalender",
+        "gcalDescription": "Untuk menambahkan kalender ini, salin dan tempel URL ini ke Google Kalender",
+        "gcalDescriptionLink": "Instruksi lebih lanjut",
+        "icsTitle": "Unduh file ICS",
+        "icsDescription": "Kalender yang tidak diperbarui (.ics) untuk kalender yang tidak dapat menangani pembaruan langganan.",
+        "icsButton": "Unduh",
+        "gcalNotificationNotice": "Google Kalender tidak menghormati pengingat pada kalender jarak jauh. Pemberitahuan acara dapat dikonfigurasi dalam pengaturan kalender setelah ditambahkan."
+    },
+    "subscribe": {
+        "title": "Berlangganan",
+        "description": "Terima email pengingat sebelum setiap akhir pekan balapan.",
+        "label": "Alamat email",
+        "button": "Berlangganan"
+    },
+    "timezones": {
+        "title": "Pilih zona waktu..."
+    },
+    "years": {
+        "title": "Pilih satu tahun..."
+    },
+    "f1": {
+        "title": "Kalender F1",
+        "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
+        "seo": {
+            "title": "Kalender F1 {{tahun}} - Waktu dan Tanggal Balap Formula Satu",
+            "description": "Kalender Formula Satu untuk musim {{year}} dengan semua balapan grand prix F1, sesi latihan &amp; kualifikasi. Setel fitur pengingat. Semua zona waktu dunia. Unduh atau berlangganan.",
+            "keywords": "F1, formula satu, waktu balapan, balapan, pengingat, peringatan, grand prix, grand prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
+        },
+        "footnote": "Formula Satu, Formula 1, F1 &amp; Grand Prix adalah merek dagang dari Formula One Licensing BV."
+    },
+    "f2": {
+        "title": "Kalender F2",
+        "subtitle": "Balapan, Kualifikasi & Sesi uji coba",
+        "seo": {
+            "title": "Kalender F2 {{tahun}} - Waktu dan Tanggal Balap Formula Dua",
+            "description": "Kalender Formula Dua untuk musim {{year}} dengan semua balapan grand prix F2, sesi latihan &amp; kualifikasi. Setel fitur pengingat. Semua zona waktu dunia. Unduh atau berlangganan.",
+            "keywords": "tempat penampung"
+        },
+        "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 adalah merek dagang dari FIA."
+    },
+    "f3": {
+        "title": "Kalender F3",
+        "subtitle": "Balapan, Kualifikasi & Sesi uji coba",
+        "seo": {
+            "title": "Kalender F3 {{tahun}} - Waktu dan Tanggal Balap Formula Tiga",
+            "description": "Kalender Formula Tiga untuk musim {{year}} dengan semua balapan grand prix F3, sesi latihan &amp; kualifikasi. Setel fitur pengingat. Semua zona waktu dunia. Unduh atau berlangganan.",
+            "keywords": "F3, formula tiga, waktu balapan, balapan, pengingat, peringatan, grand prix, grand prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
+        },
+        "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 adalah merek dagang dari FIA."
+    },
+    "fe": {
+        "title": "Kalender Formula E",
+        "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
+        "seo": {
+            "title": "Kalender Formula E {{tahun}} - Waktu dan Tanggal Balap Formula E",
+            "description": "Kalender Formula E untuk musim {{year}} dengan semua balapan e-prix Formula E, sesi latihan &amp; kualifikasi. Setel fitur pengingat. Semua zona waktu dunia. Unduh atau berlangganan.",
+            "keywords": "FE, formula e, waktu balapan, balapan, pengingat, peringatan, e prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
+        },
+        "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP &amp; E-Prix adalah merek dagang dari FIA."
+    },
+    "indycar": {
+        "title": "Kalender IndyCar",
+        "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
+        "seo": {
+            "title": "Kalender IndyCar {{tahun}} - Waktu dan Tanggal Balapan",
+            "description": "Kalender IndyCar untuk musim {{year}} dengan semua balapan IndyCar, sesi latihan &amp; kualifikasi. Setel fitur pengingat. Semua zona waktu dunia. Unduh atau berlangganan.",
+            "keywords": "IndyCar, waktu balapan, balapan, pengingat, peringatan, kalender, tanggal, waktu mulai, kualifikasi, latihan, {{tahun}}"
+        },
+        "footnote": "IndyCar adalah merek dagang terdaftar dari Brickyard Trademarks, Inc"
+    },
+    "motogp": {
+        "title": "Kalender MotoGP",
+        "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
+        "seo": {
+            "title": "Kalender MotoGP {{tahun}} - Waktu dan Tanggal Balapan",
+            "description": "Kalender MotoGP untuk musim {{year}} dengan semua balapan MotoGP, sesi latihan &amp; kualifikasi. Setel fitur pengingat. Semua zona waktu dunia. Unduh atau berlangganan.",
+            "keywords": "MotoGP, waktu balapan, balapan, pengingat, peringatan, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
+        },
+        "footnote": ""
+    },
+    "wseries": {
+        "title": "Kalender Seri W",
+        "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
+        "seo": {
+            "title": "Kalender Seri W {{tahun}} - Waktu dan Tanggal Balapan",
+            "description": "Kalender Seri W untuk musim {{year}} dengan semua balapan Seri W, sesi latihan &amp; kualifikasi. Setel fitur pengingat. Semua zona waktu dunia. Unduh atau berlangganan.",
+            "keywords": "wseries, w-series, waktu balapan, balapan, pengingat, peringatan, prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
+        },
+        "footnote": "Kalender Seri W tidak berafiliasi dengan Seri W."
+    },
+    "extremee": {
+        "title": "Kalender E Ekstrim",
+        "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
+        "seo": {
+            "title": "Kalender E Ekstrim {{tahun}} - Waktu dan Tanggal Balap E Ekstrim",
+            "description": "Kalender Extreme E untuk musim {{year}} dengan semua balapan Extreme E xprix, sesi latihan &amp; kualifikasi. Setel fitur pengingat. Semua zona waktu dunia. Unduh atau berlangganan.",
+            "keywords": "Extreme E, waktu balapan, balapan, pengingat, peringatan, x prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
+        },
+        "footnote": "Catatan kaki"
+    },
+    "event": "Acara Grand Prix Formula 1",
+    "notice": {
+        "text": "teks",
+        "link": "alamat url"
+    },
+    "showPreviousRaces": "Tampilkan balapan sebelumnya",
+    "hidePreviousRaces": "Sembunyikan balapan sebelumnya"
+}
