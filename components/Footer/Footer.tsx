@@ -19,8 +19,9 @@ class Footer extends React.Component<Props> {
 		
 		return (
 			<>
-				<footer className="mt-2 md:mt-6">
-					<div className="max-w-7xl mx-auto py-6 md:py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+				<footer className="max-w-screen-lg mx-auto mt-2 md:mt-10">
+					
+					<div className="max-w-7xl mx-auto overflow-hidden md:hidden">
 						<div className="mt-1 mb-6 flex justify-center space-x-6">
 							<LanguageSelector />
 						</div>
@@ -28,12 +29,45 @@ class Footer extends React.Component<Props> {
 						<div className="mt-1 mb-6 flex justify-center space-x-6">
 							<SiteSelector />
 						</div>
-		
-						<p className="mb-10 text-center text-base text-gray-400">
-							{ t('localization:footer.links.spottedIssue') } <a href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue..." className="text-gray-300">{ t('localization:footer.links.spottedReport') }	</a>
-						</p>
+					</div>
+					
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 px-4">
+						<div>
+							<p className="text-base text-gray-400 mb-2">
+								&copy; {new Date().getFullYear()}{" "}
+								<a
+									href="https://andydev.co.uk"
+									rel="author developer"
+									className="text-gray-300"
+								>
+									Andrew Yates
+								</a>
+								,&nbsp;
+								<a
+									href="https://andyhiggs.uk/"
+									rel="author designer"
+									className="text-gray-300"
+								>
+									Andy Higgs
+								</a>
+								,&nbsp;
+								<a
+									href="https://sijobling.com"
+									rel="author developer"
+									className="text-gray-300"
+								>
+									Si Jobling
+								</a>{" "}
+							</p>
+							
+							<p className="text-base text-gray-400 text-xs">
+								{t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.footnote`)}
+							</p>
+							
+						</div>
 						
-						<div className="mb-8 flex justify-center space-x-6">
+						
+						<div className="flex justify-end space-x-6">
 							<a
 								href="https://twitter.com/f1cal"
 								className="text-gray-400 hover:text-gray-500"
@@ -84,38 +118,11 @@ class Footer extends React.Component<Props> {
 								</svg>
 							</a>
 						</div>
-		
-						<p className="mt-8 text-center text-base text-gray-400">
-							&copy;{" "}
-							<a
-								href="https://andydev.co.uk"
-								rel="author developer"
-								className="text-gray-300"
-							>
-								Andrew Yates
-							</a>
-							,&nbsp;
-							<a
-								href="https://andyhiggs.uk/"
-								rel="author designer"
-								className="text-gray-300"
-							>
-								Andy Higgs
-							</a>
-							,&nbsp;
-							<a
-								href="https://sijobling.com"
-								rel="author developer"
-								className="text-gray-300"
-							>
-								Si Jobling
-							</a>{" "}
-							{new Date().getFullYear()}
-						</p>
-						<p className="mb-10 text-center text-base text-gray-400">
-							{t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.footnote`)}
-						</p>
-		
+					</div>
+					
+					
+					<div className="max-w-7xl mx-auto overflow-hidden pb-8 pt-2">
+						
 						<p className="text-center mt-8">
 							<a
 								href="https://vercel.com?utm_source=sportstimes"
