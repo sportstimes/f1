@@ -16,11 +16,7 @@ interface Props {
 
 class Header extends React.Component<Props> {
 	
-	// TODO: Shift Icons to Components
-	// TODO: Tidy up
-	
 	render() {
-	
 		const {t, lang} = this.props.i18n;
 		const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
 		const subtitle = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.subtitle`);
