@@ -7,6 +7,7 @@ import useTranslation from "next-translate/useTranslation";
 import OptionsBar from "../components/OptionsBar/OptionsBar";
 import Link from "next/link";
 import RaceSchemas from '../components/RaceSchemas/RaceSchemas';
+import * as PusherPushNotifications from "@pusher/push-notifications-web";
 
 const year = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NEXT_PUBLIC_CURRENT_YEAR}.json`);
 

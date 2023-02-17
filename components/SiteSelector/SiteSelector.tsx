@@ -14,6 +14,7 @@ interface SiteConfig {
 	url: string;
 	calenderCDN: string;
 	supportsEmailReminders: boolean;
+	supportsWebPush: boolean;
 }
 
 const SiteSelector: FunctionComponent = ({}) => {
