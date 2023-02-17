@@ -44,6 +44,18 @@ const OptionsBar: FunctionComponent = () => {
 
 		setPickerShowing(!pickerShowing);
 	};
+	
+	const detectTimezone = (event: React.MouseEvent<HTMLButtonElement>) => {
+		event.preventDefault();
+	
+		updateTimezone(dayjs.tz.guess());
+		
+		plausible("Changed Timezone", {
+			props: {
+				timezone: dayjs.tz.guess()
+			}
+		});
+	};
 
 	// Picker Items
 	const scrubbedPrefixes = [
@@ -126,6 +138,14 @@ const OptionsBar: FunctionComponent = () => {
 								>
 									{timezoneItems}
 								</select>
+								
+								<button
+									onClick={detectTimezone}
+									type="button"
+									className="inline-block py-0.5 ml-2"
+								>
+									{t("localization:options.timezonePicker.detect")}
+								</button>
 							</form>
 							<noscript>
 								<a href="/timezones">
