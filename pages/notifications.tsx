@@ -83,6 +83,18 @@ function Notifications() {
 			})
 			.catch(console.error);
 	};
+	
+	const disableNotifications = (event: React.ChangeEvent<HTMLSelectElement>) => {
+		beamsClient
+			.clearDeviceInterests()
+			.then(() => {
+				beamsClient
+					.stop()
+					.then(() => {
+						checkState();
+					});
+			});
+	};
 
 	const handleOnSubmit = async (e) => {
 		e.preventDefault();
@@ -217,6 +229,13 @@ function Notifications() {
 								: t("localization:notifications.buttonSubmitted")}
 						</button>
 					</fieldset>
+					
+					
+					<p>
+						<button type="button" className="btn" onClick={disableNotifications}>
+							Disable All Notifications
+						</button>	
+					</p>
 				</form>
 			</Card>
 		</Layout>
