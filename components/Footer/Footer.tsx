@@ -11,9 +11,6 @@ interface Props {
 
 class Footer extends React.Component<Props> {
 	
-	// TODO: Shift Icons to Components
-	// TODO: Tidy up
-	
 	render() {
 		const { t, lang } = this.props.i18n
 		
@@ -31,7 +28,7 @@ class Footer extends React.Component<Props> {
 						</div>
 					</div>
 					
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 px-2">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 px-2 text-center md:text-left">
 						<div>
 							<p className="text-base text-gray-400 mb-2">
 								&copy; {new Date().getFullYear()}{" "}
@@ -60,14 +57,14 @@ class Footer extends React.Component<Props> {
 								</a>{" "}
 							</p>
 							
-							<p className="text-base text-gray-400 text-xs">
+							<p className="text-base text-gray-400 text-xs px-2 md:px-0">
 								{t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.footnote`)}
 							</p>
 							
 						</div>
 						
 						
-						<div className="flex justify-end space-x-6">
+						<div className="flex justify-center md:justify-end space-x-6 pt-2">
 							<a
 								href="https://twitter.com/f1cal"
 								className="text-gray-400 hover:text-gray-500"
