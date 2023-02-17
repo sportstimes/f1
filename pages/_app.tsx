@@ -28,12 +28,15 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 		});
 		
 		beamsClient
-		  .start()
-		  .then((beamsClient) => beamsClient.getDeviceId())
-		  .then((deviceId) =>
-			console.log("Successfully registered with Beams. Device ID:", deviceId)
-		  )
-		  .catch(console.error);
+			.getRegistrationState()
+			.then((state) => {
+				let states = PusherPushNotifications.RegistrationState;
+				if(state === states.PERMISSION_GRANTED_REGISTERED_WITH_BEAMS){
+					beamsClient
+						.start()
+						.catch(console.error);
+				}
+			});
 	  }, [beamsClient]);
 	
 	return (
