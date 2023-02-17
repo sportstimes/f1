@@ -136,7 +136,9 @@
 		"description": "Subscribe to recieve s Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
 		"statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
 		"button": "Save",
-		"buttonSubmitted": "Saved"
+		"buttonSubmitted": "Saved",
+		"permissions": "You can opt-in to recieve Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
+		"permissionsButton": "Allow Notifications"
 	},
 	"timezones": {
 		"title": "Pick a timezone..."

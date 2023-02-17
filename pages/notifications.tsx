@@ -20,14 +20,16 @@ function Notifications() {
 	
 	// Default form values...
 	var defaults = {
-		submitted: false,
-		loaded: false
+		submitted: false
 	};
 
 	// Add sessions from config...
 	sessions.forEach(function (session:String, index:Number) {
 		defaults[session] = false;
 	});
+
+	let states = PusherPushNotifications.RegistrationState;
+	const [registationState, setRegistrationState] = useState<PusherPushNotifications.RegistrationState>();
 
 	const [form, setState] = useState();
 	
@@ -36,24 +38,45 @@ function Notifications() {
 			instanceId: process.env.NEXT_PUBLIC_PUSHER_INSTANCE,
 		});
 		
+		checkState();
+	}, []);
+
+	function checkState() {
+		beamsClient
+			.getRegistrationState()
+			.then((state) => {
+				if(state === states.PERMISSION_GRANTED_REGISTERED_WITH_BEAMS){
+					beamsClient
+						.start()
+						.then((beamsClient) => beamsClient.getDeviceId())
+						.then((deviceId) =>
+							console.log("Successfully registered with Beams. Device ID:", deviceId)
+						)
+						.then(() => beamsClient.getDeviceInterests())
+						.then((interests) => {
+							interests.forEach(function (interest, index) {
+								defaults[interest] = true;
+							});
+							setState(defaults);
+						})
+						.catch(console.error);
+				}
+				
+				setRegistrationState(state);
+			});
+	}
+
+	const enableNotifications = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		beamsClient
 			.start()
 			.then((beamsClient) => beamsClient.getDeviceId())
-			.then((deviceId) =>
+			.then((deviceId) => {
 				console.log("Successfully registered with Beams. Device ID:", deviceId)
-			)
-			.then(() => beamsClient.getDeviceInterests())
-			.then((interests) => {
-				interests.forEach(function (interest, index) {
-					defaults[interest] = true;
-				});
 				
-				setState(defaults);
-				
-				console.log(form);
+				checkState()
 			})
 			.catch(console.error);
-	}, []);
+	};
 
 	const handleOnSubmit = async (e) => {
 		e.preventDefault();
@@ -78,7 +101,41 @@ function Notifications() {
 			})
 			.catch(console.error);
 	};
+	
+	if(registationState === states.PERMISSION_GRANTED_NOT_REGISTERED_WITH_BEAMS || registationState === states.PERMISSION_PROMPT_REQUIRED){
+		return (
+			<Layout year={currentYear}>
+				<NextSeo title={title} />
+				<h3 className="text-xl mb-4">
+					{t("localization:notifications.title")}
+				</h3>
+				<Card>
+					<p className="mb-4">{t("localization:notifications.permissions")}</p>
+					<p>
+						<button type="button" className="btn" onClick={enableNotifications}>
+							{t("localization:notifications.permissionsButton")}
+						</button>	
+					</p>
+				</Card>
+			</Layout>
+		);
+	}
+	
+	if(registationState === states.PERMISSION_DENIED){
+		return (
+			<Layout year={currentYear}>
+				<NextSeo title={title} />
+				<h3 className="text-xl mb-4">
+					{t("localization:notifications.title")}
+				</h3>
+				<Card>
+					<p>Denied</p>
+				</Card>
+			</Layout>
+		);
+	}
 
+	
 	if(form === undefined){
 		return (
 			<Layout year={currentYear}>
