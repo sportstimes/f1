@@ -11,6 +11,28 @@ interface Props {
 
 class Footer extends React.Component<Props> {
 	
+	constructor(props) {
+		super(props);
+		this.state = {
+		  showHomeScreenPrompt: false
+		};
+	}
+	
+	componentDidMount() {
+		var standalone = "standalone" in window.navigator && window.navigator.standalone;
+		var iOS = /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+		var prompt = window.localStorage.a2hs_message;
+			
+		if (iOS && !standalone && !prompt) {
+			this.setState({ showHomeScreenPrompt: true })
+		}
+	}
+	
+	dismissPrompt = () => {
+		localStorage.setItem("a2hs_message", true);
+		this.setState({ showHomeScreenPrompt: false })
+	};
+	
 	render() {
 		const { t, lang } = this.props.i18n
 		
@@ -150,6 +172,29 @@ class Footer extends React.Component<Props> {
 						</p>
 					</div>
 				</footer>
+				
+				{ this.state.showHomeScreenPrompt && (
+					<div class="relative z-99999" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+						<div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
+						
+					  	<div class="fixed inset-0 z-10 overflow-y-auto">
+							<div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+						  	<div class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
+								<div class="sm:flex sm:items-start">
+							  	<div class="mt-2 text-center sm:mt-0 sm:text-left">
+									<div class="mt-2">
+								  	<p class="text-sm text-gray-500 mb-4">Install F1 Calendar on your device: tap share and "Add to Home Screen".</p>
+									</div>
+							  	</div>
+								</div>
+								<div class="mt-5 sm:mt-4">
+							  	<button type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm" onClick={this.dismissPrompt}>Got it</button>
+								</div>
+						  	</div>
+							</div>
+					  	</div>
+					</div>
+				)}
 			</>
 		);
   	}
