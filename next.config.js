@@ -16,13 +16,16 @@ module.exports = (phase) => {
   require('./build/public-assets');
   
   const withPWA = require('next-pwa')({
-    disable: !isProd,
+    // disable: !isProd,
     dest: "public",
     publicExcludes: ['!download/*', '!download/**/*'],
     buildExcludes: ['!download/*', '!download/**/*'],
+    sw: 'service-worker.js',
+    importScripts: ['https://js.pusher.com/beams/service-worker.js'],
   })
   
   return withPWA(nextTranslate({
+    transpilePackages: ['@pusher/push-notifications-web'],
     typescript: {
       ignoreBuildErrors: true,
     },
