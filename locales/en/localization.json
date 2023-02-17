@@ -75,6 +75,7 @@
 	"options": {
 		"calendar": "Add race dates & times to your Calendar",
 		"email": "Receive email reminders",
+		"notifications": "Receive Push Notifications",
 		"timezonePicker": {
             "detect": "Detect",
 			"showing": "Showing times for",
