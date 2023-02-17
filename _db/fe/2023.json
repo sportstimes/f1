@@ -82,12 +82,11 @@
 			"round": 6,
 			"slug": "sao-paulo-eprix",
 			"localeKey": "sao-paulo-eprix",
-			"tbc":true,
 			"sessions": {
-				"practice1": "2023-03-24T05:15:00Z",
-				"practice2": "2023-03-25T07:00:00Z",
-				"qualifying": "2023-03-25T08:30:00Z",
-				"race": "2023-03-25T13:00:00Z"
+				"practice1": "2023-03-24T19:25:00Z",
+				"practice2": "2023-03-25T10:25:00Z",
+				"qualifying": "2023-03-25T12:40:00Z",
+				"race": "2023-03-25T17:03:00Z"
 			}
 		},
 		{
@@ -98,12 +97,11 @@
 			"round": 7,
 			"slug": "berlin-eprix",
 			"localeKey": "berlin-eprix",
-			"tbc":true,
 			"sessions": {
-				"practice1": "2023-04-21T05:15:00Z",
-				"practice2": "2023-04-22T07:00:00Z",
+				"practice1": "2023-04-21T14:55:00Z",
+				"practice2": "2023-04-22T06:05:00Z",
 				"qualifying": "2023-04-22T08:40:00Z",
-				"race": "2023-04-22T13:00:00Z"
+				"race": "2023-04-22T13:03:00Z"
 			}
 		},
 		{
@@ -114,11 +112,10 @@
 			"round": 8,
 			"slug": "berlin-eprix",
 			"localeKey": "berlin-eprix",
-			"tbc":true,
 			"sessions": {
-				"practice3": "2023-04-23T07:00:00Z",
+				"practice3": "2023-04-23T06:05:00Z",
 				"qualifying": "2023-04-23T08:40:00Z",
-				"race": "2023-04-23T13:00:00Z"
+				"race": "2023-04-23T13:03:00Z"
 			}
 		},
 		{
