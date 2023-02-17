@@ -23,6 +23,7 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
 	
 	useEffect(() => {
+		try {
 		beamsClient = new PusherPushNotifications.Client({
 		  instanceId: process.env.NEXT_PUBLIC_PUSHER_INSTANCE,
 		});
@@ -37,6 +38,9 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 						.catch(console.error);
 				}
 			});
+		} catch (error) {
+			
+		}
 	  }, [beamsClient]);
 	
 	return (
