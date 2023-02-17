@@ -30,15 +30,21 @@ function Notifications() {
 
 	let states = PusherPushNotifications.RegistrationState;
 	const [registationState, setRegistrationState] = useState<PusherPushNotifications.RegistrationState>();
-
 	const [form, setState] = useState();
+	const [beamsSupported, setBeamsSupported] = useState(true);
 	
 	useEffect(() => {
-		beamsClient = new PusherPushNotifications.Client({
-			instanceId: process.env.NEXT_PUBLIC_PUSHER_INSTANCE,
-		});
-		
-		checkState();
+		try {
+			beamsClient = new PusherPushNotifications.Client({
+				instanceId: process.env.NEXT_PUBLIC_PUSHER_INSTANCE,
+			});
+			
+			checkState();
+		} catch(error) {
+			if(error.message.includes("Pusher Beams does not support this browser version")){
+				setBeamsSupported(false);
+			}
+		}
 	}, []);
 
 	function checkState() {
@@ -101,6 +107,20 @@ function Notifications() {
 			})
 			.catch(console.error);
 	};
+	
+	if(!beamsSupported){
+		return (
+			<Layout year={currentYear}>
+				<NextSeo title={title} />
+				<h3 className="text-xl mb-4">
+					{t("localization:notifications.title")}
+				</h3>
+				<Card>
+					<p>Not Supported</p>
+				</Card>
+			</Layout>
+		);
+	}
 	
 	if(registationState === states.PERMISSION_GRANTED_NOT_REGISTERED_WITH_BEAMS || registationState === states.PERMISSION_PROMPT_REQUIRED){
 		return (
