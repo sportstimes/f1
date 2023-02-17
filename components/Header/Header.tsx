@@ -28,12 +28,14 @@ class Header extends React.Component<Props> {
 		return (
 			<div className="w-full bg-dark-green mb-4">
 				<header className="max-w-screen-lg mx-auto font-sans px-2 py-4">
-					<div className="md:justify-between md:flex">
-						<div className="md:flex md:justify-start mb-4">
-							<Link href="/" className="mx-auto md:m-0 md:w-auto mb-4 md:mb-0" style={{width: "60px"}} title={title}>
-								<Logo />
-							</Link>
-							<div className="mt-1 ml-0 md:ml-4 text-center md:text-left font-title uppercase">
+					
+					<div className="flex md:justify-between">
+						<div className="flex flex-col md:flex-row justify-center items-center md:justify-between w-screen md:w-auto mb-4">
+							<Link href="/" className="" style={{width: "60px"}} title={title}>
+								<Logo style={{width: "60px"}}  />
+							</Link>	
+							
+							<div className="text-center md:text-left font-title uppercase mt-4 md:mt-0 md:ml-4">
 								<h1 className="mb-1 text-lg tracking-wider">
 									<Link href="/" title={title} className="text-white hover:text-white font-bold text-lg"
 										>
@@ -53,6 +55,7 @@ class Header extends React.Component<Props> {
 								</h2>
 							</div>
 						</div>
+						
 						<div className="hidden md:inline-block">
 							<a
 								href="https://www.buymeacoffee.com/f1cal"
@@ -76,10 +79,10 @@ class Header extends React.Component<Props> {
 								/>
 								{t("localization:footer.coffee")}
 							</a>
-						</div>
+						</div>	
+						
 					</div>
-					<div className="clear-both"></div>
-	
+					
 					{this.props.showCTABar && <CTABar />}
 					
 					{ /*
