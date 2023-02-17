@@ -31,7 +31,7 @@ class Footer extends React.Component<Props> {
 						</div>
 					</div>
 					
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 px-4">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 px-2">
 						<div>
 							<p className="text-base text-gray-400 mb-2">
 								&copy; {new Date().getFullYear()}{" "}
