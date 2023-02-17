@@ -130,6 +130,13 @@
 		"label": "Email Address",
 		"button": "Subscribe"
 	},
+	"notifications": {
+		"title": "Notifications (Beta)",
+		"description": "Subscribe to recieve s Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
+		"statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
+		"button": "Save",
+		"buttonSubmitted": "Saved"
+	},
 	"timezones": {
 		"title": "Pick a timezone..."
 	},
