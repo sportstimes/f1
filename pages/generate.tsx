@@ -269,6 +269,7 @@ function Generate() {
 									<select
 										name="mins"
 										id="alarm-mins"
+										defaultValue="30"
 										className="mx-2 text-gray-900 pl-3 pr-10 py-0 text-base
 									border-gray-300 focus:outline-none focus:ring-indigo-500
 									focus:border-indigo-500 sm:text-sm rounded-md"
@@ -280,9 +281,7 @@ function Generate() {
 										}
 									>
 										<option value="0">0</option>
-										<option selected="selected" value="30">
-											30
-										</option>
+										<option value="30">30</option>
 										<option value="60">60</option>
 										<option value="90">90</option>
 										<option value="120">120</option>
