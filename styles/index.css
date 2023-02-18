@@ -69,6 +69,10 @@ body {
 		@apply items-center justify-center px-4 py-2 space-x-2 text-sm font-medium transition-shadow bg-mid-green rounded shadow-sm hover:bg-light-green cursor-pointer focus:outline-none;
 	}
 	
+	.destructive-btn {
+		@apply items-center justify-center px-4 py-2 space-x-2 text-sm font-medium transition-shadow bg-red-800 rounded shadow-sm hover:bg-red-900 cursor-pointer focus:outline-none;
+	}
+	
 	.collapse-btn {
 		@apply items-center justify-center px-4 py-2 space-x-2 text-sm font-medium transition-shadow rounded shadow-sm cursor-pointer focus:outline-none;
 		background: #222;

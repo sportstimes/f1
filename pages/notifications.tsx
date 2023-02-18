@@ -59,10 +59,12 @@ function Notifications() {
 							console.log("Successfully registered with Beams. Device ID:", deviceId)
 						)
 						.then(() => beamsClient.getDeviceInterests())
-						.then((interests) => {
-							interests.forEach(function (interest, index) {
-								defaults[interest] = true;
-							});
+						.then((device) => {
+							if(device.interests && device.interests.length != 0){
+								device.interests.forEach(function (interest, index) {
+									defaults[interest] = true;
+								});
+							}
 							setState(defaults);
 						})
 						.catch(console.error);
@@ -92,7 +94,8 @@ function Notifications() {
 					.stop()
 					.then(() => {
 						checkState();
-					});
+					})
+					.catch(console.error);
 			});
 	};
 
@@ -222,20 +225,18 @@ function Notifications() {
 						})}
 					</fieldset>
 
-					<fieldset id="buttons" key="buttons">
+					<fieldset id="buttons" key="buttons" className="flex gap-x-4">
 						<button type="submit" className="btn">
 							{!form.submitted
 								? t("localization:notifications.button")
 								: t("localization:notifications.buttonSubmitted")}
 						</button>
+						
+						<button type="button" className="destructive-btn" onClick={disableNotifications}>
+							Disable All Notifications
+						</button>
 					</fieldset>
 					
-					
-					<p>
-						<button type="button" className="btn" onClick={disableNotifications}>
-							Disable All Notifications
-						</button>	
-					</p>
 				</form>
 			</Card>
 		</Layout>
