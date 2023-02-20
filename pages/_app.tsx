@@ -7,9 +7,6 @@ import "../styles/tailwind-utils.css";
 import "../styles/index.css";
 import useTranslation from 'next-translate/useTranslation'
 import PlausibleProvider from "next-plausible";
-import * as PusherPushNotifications from "@pusher/push-notifications-web";
-
-let beamsClient: PusherPushNotifications.Client | undefined = undefined;
 
 export default function CalendarApp({ Component, pageProps }: AppProps) {
 	const { t, lang } = useTranslation();
@@ -19,29 +16,8 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, { year: currentYear });
 	const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, { year: currentYear })
 	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, { year: currentYear })
-	
+
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
-	
-	useEffect(() => {
-		try {
-		beamsClient = new PusherPushNotifications.Client({
-		  instanceId: process.env.NEXT_PUBLIC_PUSHER_INSTANCE,
-		});
-		
-		beamsClient
-			.getRegistrationState()
-			.then((state) => {
-				let states = PusherPushNotifications.RegistrationState;
-				if(state === states.PERMISSION_GRANTED_REGISTERED_WITH_BEAMS){
-					beamsClient
-						.start()
-						.catch(console.error);
-				}
-			});
-		} catch (error) {
-			
-		}
-	  }, [beamsClient]);
 	
 	return (
 		<UserContextProvider>
