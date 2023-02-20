@@ -8,12 +8,11 @@
 			"round": 1,
 			"slug": "bahrain",
 			"localeKey": "bahrain",
-			"tbc": true,
 			"sessions": {
-				"practice": "2023-03-03T08:25:00Z",
-				"qualifying": "2023-03-03T13:30:00Z",
-				"sprint": "2023-03-04T09:45:00Z",
-				"feature": "2023-03-05T08:45:00Z"
+				"practice": "2023-03-03T07:55:00Z",
+				"qualifying": "2023-03-03T13:00:00Z",
+				"sprint": "2023-03-04T09:15:00Z",
+				"feature": "2023-03-05T08:50:00Z"
 			}
 		},
 		{
@@ -24,12 +23,11 @@
 			"round": 2,
 			"slug": "melbourne",
 			"localeKey": "melbourne",
-			"tbc": true,
 			"sessions": {
-				"practice": "2023-03-31T08:35:00Z",
-				"qualifying": "2023-03-31T12:30:00Z",
-				"sprint": "2023-04-01T09:30:00Z",
-				"feature": "2023-04-02T07:05:00Z"
+				"practice": "2023-03-30T23:00:00Z",
+				"qualifying": "2023-03-31T03:00:00Z",
+				"sprint": "2023-04-01T00:00:00Z",
+				"feature": "2023-04-01T23:05:00Z"
 			}
 		},
 		{
