@@ -8,6 +8,7 @@
 			"round": 1,
 			"slug": "desert-xprix",
 			"localeKey": "desert-xprix",
+			"tbc": true,
 			"sessions": {
 				"shakedown": "2023-03-10T19:00:00Z",
 				"qualifying1": "2023-03-11T08:00:00Z",
