@@ -38,7 +38,7 @@ class Footer extends React.Component<Props> {
 		
 		return (
 			<>
-				<footer className="max-w-screen-lg mx-auto mt-2 md:mt-10">
+				<footer className="max-w-screen-lg mx-auto mt-2 md:mt-10 px-0 sm:px-2">
 					
 					<div className="max-w-7xl mx-auto overflow-hidden md:hidden">
 						<div className="mt-1 mb-6 flex justify-center space-x-6">
