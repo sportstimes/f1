@@ -1,6 +1,13 @@
-import axios from 'axios';
+import { Novu } from '@novu/node';
 
 export default async (req, res) => {
+	if (!req.body.identifier) {
+		return res.status(400).json({
+			success: false,
+			message: "No identifier defined."
+		});
+	}
+	
 	if (!req.body.email) {
 		return res.status(400).json({
 			success: false,
@@ -12,31 +19,15 @@ export default async (req, res) => {
 	
 	let email = req.body.email;
 	
-	// TODO: Validate the email...
-	
-	const token = `${process.env.NEXT_PUBLIC_LISTMONK_USERNAME}:${process.env.NEXT_PUBLIC_LISTMONK_PASSWORD}`;
-	const encodedToken = Buffer.from(token).toString('base64');
-	
-	let listID = parseInt(process.env.NEXT_PUBLIC_LISTMONK_LIST_ID);
-	
-	let data = {
-		name: 'a',
+	const novu = new Novu(process.env.NEXT_PUBLIC_NOVU_API);
+
+	const subscriptionResponse = await novu.subscribers.identify(req.body.identifier, {
 		email: email,
-		status: 'enabled',
-		lists: [listID]
-	};
+	})
 	
-	return axios.post(`${process.env.NEXT_PUBLIC_LISTMONK_URL}/api/subscribers`, data, {
-		headers: {
-			'Content-Type':'application/json',
-			Authorization: 'Basic ' + encodedToken,
-		}
-	})
-	.then(async (response) => {
-		return res.json({success:true});
-	})
-	.catch(async function (error) {
-		return res.status(400).json({success:false});
+	const response = await novu.topics.addSubscribers('reminder', {
+		subscribers: [req.body.identifier],
 	});
 	
+	return res.json({success:true});
 }

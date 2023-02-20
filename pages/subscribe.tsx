@@ -60,7 +60,8 @@ function Subscribe() {
 							
 							const res = await fetch('/api/email/subscribe', {
 							  body: JSON.stringify({
-								email: event.target.EMAIL.value
+								email: event.target.EMAIL.value,
+								identifier: localStorage.getItem('uuid'),
 							  }),
 							  headers: {
 								'Content-Type': 'application/json'
