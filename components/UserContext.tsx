@@ -4,6 +4,7 @@ import Router from "next/router";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
+import { v4 as uuidv4 } from 'uuid';
 
 type userContextType = {
     timeFormat: number;
@@ -45,8 +46,8 @@ export function UserContextProvider({ children }: Props) {
             return
         }  
         
+        // Fetch the stored timezone, or guess it via dayjs and save it.
         const storedTimezone = localStorage.getItem("timezone");
-    
         if (storedTimezone) {
             updateTimezone(storedTimezone);
         } else {
@@ -55,20 +56,28 @@ export function UserContextProvider({ children }: Props) {
             updateTimezone(dayjs.tz.guess());
         }
     
+        // Fetch the stored time format (12hr/24hr)
         const storedFormat = localStorage.getItem("timeFormat");
-    
         if (storedFormat) {
             updateTimeFormat(Number(storedFormat));
         } else {
             updateTimeFormat(24);
         }
         
+        // Store whether to collapse or show the past races.
         const storedCollapsedState = localStorage.getItem("collapasePastRaces");
         if (storedCollapsedState) {
             updateStateCollapsePastRaces(Boolean(storedCollapsedState));
         } else {
             updateStateCollapsePastRaces(true);
         }
+        
+        // Fetch the stored UUID, utilized to configure web push notifications.
+        const storedUUID = localStorage.getItem("uuid");
+        if(!storedUUID){
+            setUUID();
+        }
+        
     }, []);
 
     const updateTimeFormat = (format:number) => {
@@ -88,6 +97,10 @@ export function UserContextProvider({ children }: Props) {
     const updateCollapsePastRaces = (bool:Boolean) => {
         updateStateCollapsePastRaces(Boolean(bool));
         localStorage.setItem("collapsePastRaces", String(bool));
+    };
+    
+    const setUUID = () => {
+        localStorage.setItem("uuid", uuidv4());
     };
 
     const value = {
