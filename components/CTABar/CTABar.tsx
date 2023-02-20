@@ -5,11 +5,8 @@ import type { I18n } from 'next-translate'
 import CalendarIcon from '../Icons/CalendarIcon'
 import ChevronRightIcon from '../Icons/ChevronRightIcon'
 import EmailIcon from '../Icons/EmailIcon'
-import * as PusherPushNotifications from "@pusher/push-notifications-web";
 
 const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
-
-let beamsClient: PusherPushNotifications.Client | undefined = undefined;
 
 interface Props {
 	i18n: I18n;
@@ -24,20 +21,8 @@ class CTABar extends React.Component<Props> {
 	}
 	
 	componentDidMount() {
-		try {
-			beamsClient = new PusherPushNotifications.Client({
-				instanceId: process.env.NEXT_PUBLIC_PUSHER_INSTANCE,
-			});
-			
-			this.setState({ supportsWebPush: true })
-		} catch(error) {
-			
-			console.log(error);
-			
-			if(error.message.includes("Pusher Beams does not support this browser version")){
-				this.setState({ supportsWebPush: false })
-			}
-		}
+		// TODO: Determine if browser supports web push
+		// this.setState({ supportsWebPush: false })
 	}
 	
 	render() {
