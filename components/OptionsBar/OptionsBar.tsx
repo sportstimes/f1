@@ -148,9 +148,9 @@ const OptionsBar: FunctionComponent = () => {
 								</button>
 							</form>
 							<noscript>
-								<a href="/timezones">
+								<Link href="/timezones">
 									{t("localization:options.timezonePicker.pick")}
-								</a>
+								</Link>
 							</noscript>
 						</div>
 						<div className="mb-4">

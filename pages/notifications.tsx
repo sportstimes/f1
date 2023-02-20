@@ -137,7 +137,7 @@ function Notifications() {
 						let defaultChecked = form[item] ? "checked" : "";
 						
 						return (
-							<div className="mb-4">
+							<div className="mb-4" key={item}>
 								<input
 									type="checkbox"
 									className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"

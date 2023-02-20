@@ -7,6 +7,7 @@ import CTABar from "../CTABar/CTABar";
 import Link from "next/link";
 import {usePlausible} from "next-plausible";
 import type { I18n } from 'next-translate'
+import Image from 'next/image'
 
 interface Props {
 	i18n: I18n;
@@ -70,7 +71,7 @@ class Header extends React.Component<Props> {
 									})
 								}}
 							>
-								<img
+								<Image
 									src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
 									width="15"
 									height="15"
@@ -110,9 +111,6 @@ class Header extends React.Component<Props> {
 					</div>
 					*/
 					}
-					
-					<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="f1cal" data-description="Support F1 Calendar on Buy me a coffee!" data-message="" data-color="#d10f1e" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-					
 				</header>
 			</div>
 		);

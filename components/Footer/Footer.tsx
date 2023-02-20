@@ -183,7 +183,7 @@ class Footer extends React.Component<Props> {
 								<div class="sm:flex sm:items-start">
 							  	<div class="mt-2 text-center sm:mt-0 sm:text-left">
 									<div class="mt-2">
-								  	<p class="text-sm text-gray-500 mb-4">Install F1 Calendar on your device: tap share and "Add to Home Screen".</p>
+								  	<p class="text-sm text-gray-500 mb-4">Install F1 Calendar on your device: tap share and &quot;Add to Home Screen&quot;.</p>
 									</div>
 							  	</div>
 								</div>

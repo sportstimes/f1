@@ -8,7 +8,7 @@ const Maintenance = () => (
 		<MinimalLayout>
 			<h3 className="text-xl mb-4">Under Maintenance</h3>
 			<Card>
-				<p>We'll be back soon, the site is currently undergoing maintenance.</p>
+				<p>We&apos;ll be back soon, the site is currently undergoing maintenance.</p>
 			</Card>
 		</MinimalLayout>
 	</>

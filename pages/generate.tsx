@@ -167,6 +167,7 @@ function Generate() {
 							<a
 								href="https://support.google.com/calendar/answer/37100"
 								target="_blank"
+								rel="noreferrer"
 								className="text-green-100"
 							>
 								{t("localization:download.gcalDescriptionLink")}
@@ -219,7 +220,7 @@ function Generate() {
 							<fieldset className="mb-6" key="options">
 								{sessions.map((item, index) => {
 									return (
-										<div className="mb-4">
+										<div className="mb-4" key={item}>
 											<input
 												type="checkbox"
 												className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
