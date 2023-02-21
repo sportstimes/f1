@@ -35,16 +35,38 @@ function Notifications() {
 	
 		const sessions = config.sessions;
 		const sessionMap = config.sessionMap;
-		let interests = [];
+		let topics = [];
 	
 		sessions.forEach(function (session, index) {
 			if (form[session]) {
-				interests.push(session);
+				topics.push(session);
 			}
+		});
+		
+		setState({
+			...form,
+			submitted: true,
+		});
+		
+		const res = await fetch('/api/notifications/update', {
+		  body: JSON.stringify({
+			identifier: localStorage.getItem("uuid"),
+			topics: topics
+		  }),
+		  headers: {
+			'Content-Type': 'application/json'
+		  },
+		  method: 'POST'
+		});
+		
+		const result = await res.json()
+		
+		setState({
+			...form,
+			saved: true,
 		});
 	};
 
-	
 	const [permission, setPermission] = useState<"denied" | "default" | "granted">("denied")
     const [fcmToken, setFcmToken] = useState<string|undefined>(undefined);
 
@@ -55,9 +77,7 @@ function Notifications() {
 			await firebaseCloudMessaging.getMessage()
 			setFcmToken(token)
 			
-			if(!localStorage.getItem('tokenSubscribed')){
-				console.log('Subscribe the token to the user');
-				
+			if(!localStorage.getItem('tokenSubscribed')){				
 				const res = await fetch('/api/notifications/subscribe', {
 				  body: JSON.stringify({
 					identifier: localStorage.getItem("uuid"),
@@ -77,7 +97,21 @@ function Notifications() {
 		} catch (error) {
 		  console.log(error)
 		}
-	  }
+	}
+	
+	const getSubscriptions = async () => {
+		console.log("UUID : "+localStorage.getItem("uuid"))
+		
+		try {
+			const res = await fetch(`/api/notifications/subscriptions?identifier=${localStorage.getItem("uuid")}`);
+			const result = await res.json()
+			const subscriptions = result.subscriptions
+			
+			setState(subscriptions);
+		} catch (error) {
+		  console.log("err2" + error)
+		}
+	}
 
 	const checkNotification = useCallback(async () => {
 		const status = Notification.permission;
@@ -85,6 +119,7 @@ function Notifications() {
 		
 		if(status === 'granted') {
 			await getToken();
+			await getSubscriptions();
 		}
 	}, [getToken])
 	
@@ -100,13 +135,12 @@ function Notifications() {
 			await checkNotification()
 		}
 		initialize()
-	}, [checkNotification])
+	}, [])
 	
 	const handleRequestPermission = async () => {
 	  await Notification.requestPermission();
 	  await checkNotification();
 	}
-	
 	
 	const renderDeniedNotificationBlock = () => (
 		<p>
@@ -143,8 +177,7 @@ function Notifications() {
 									className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
 									name={item}
 									id={item}
-									defaultValue={defaultValue}
-									defaultChecked={defaultChecked}
+									checked={defaultChecked}
 									onChange={async event => {
 										setState({
 											...form,
@@ -179,19 +212,6 @@ function Notifications() {
 					}
 				</fieldset>
 			</form>
-			
-			
-			{
-				/*
-				fcmToken && (
-			   <>
-				   <p>
-					   Your FCM Token
-				   </p>
-				   <p style={{marginLeft: 10, marginRight: 10, background: '#e7e7e7', padding: 10, wordBreak: 'break-word'}}>{fcmToken}</p>
-			   </>
-			)
-			*/}
 		</>
 	)
 	
@@ -202,23 +222,14 @@ function Notifications() {
 				{t("localization:notifications.title")}
 			</h3>
 			<Card>
-	
-			{permission === "denied" && renderDeniedNotificationBlock()}
-	
-			{permission === "default" && renderAllowNotificationBlock()}
-	
-			{permission === "granted" && renderGrantedNotificationBlock()}
+				{permission === "denied" && renderDeniedNotificationBlock()}
 		
+				{permission === "default" && renderAllowNotificationBlock()}
+		
+				{permission === "granted" && renderGrantedNotificationBlock()}
 			</Card>
 		</Layout>
 	)
-}
-
-export async function getStaticProps() {
-	return {
-		props: {},
-		revalidate: 3600
-	}
 }
 
 export default Notifications;

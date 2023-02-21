@@ -79,3 +79,4 @@ jspm_packages
 /public/manifest.json
 /public/service-worker.js
 /public/service-worker.js.map
+/public/firebase-messaging-sw.js.map
