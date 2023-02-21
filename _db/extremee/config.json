@@ -2,7 +2,7 @@
 	"siteKey": "extremee",
 	"url": "extremeecalendar.com",
 	"calendarCDN": "files-extremee.motorsportcalendars.com",
-	"availableYears": [2021, 2022],
+	"availableYears": [2021, 2022, 2023],
 	"sessions": ["shakedown", "qualifying1", "qualifying2", "semifinal", "race"],
 	"featuredSessions": ["race"],
 	"collapsedSessions": ["shakedown", "qualifying1", "qualifying2", "semifinal"],
@@ -20,5 +20,6 @@
 		"semifinal": 90,
 		"race": 120
 	},
-	"supportsEmailReminders": false
+	"supportsEmailReminders": false,
+	"notice": "Sessions are still TBC. Calendar will be updated as details are confirmed."
 }
