@@ -95,7 +95,7 @@ function Notifications() {
 			}
 		  }
 		} catch (error) {
-		  console.log(error)
+		  console.log("err1:" +error)
 		}
 	}
 	
@@ -109,7 +109,7 @@ function Notifications() {
 			
 			setState(subscriptions);
 		} catch (error) {
-		  console.log("err2" + error)
+		  console.log("err2:" + error)
 		}
 	}
 
