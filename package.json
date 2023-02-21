@@ -29,7 +29,7 @@
 		"countries-and-timezones": "^3.2.3",
 		"dayjs": "^1.11.5",
 		"eslint-config-next": "^13.1.0",
-		"ics": "^3.0.1",
+		"ics": "^3.1.0",
 		"ignore-loader": "^0.1.2",
 		"loader-utils": "^3.2.1",
 		"next": "^13.1.0",
