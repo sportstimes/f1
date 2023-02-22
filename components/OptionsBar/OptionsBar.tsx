@@ -121,20 +121,20 @@ const OptionsBar: FunctionComponent = () => {
 			<div className="bg-red-600 rounded-md shadow py-4 mb-4 px-4">
 				{pickerShowing ? (
 					<>
-						<div className="mb-6">
+						<div className="mb-2 md:mb-8">
 							<form action="/" method="GET" id="timezone-picker">
 								<label
 									htmlFor="timezone"
-									className="pickerLabel block md:inline-block mr-2"
+									className="pickerLabel block md:inline-block mr-2 font-semibold pb-2 md:pb-0"
 								>
-									{t("localization:options.timezonePicker.pick")}
+									{t("localization:options.timezonePicker.pick")}:
 								</label>
 								<select
 									id="timezone"
 									onChange={onTimezoneChange}
 									name="timezone"
 									value={timezone}
-									className="text-gray-900 pl-3 pr-10 py-0 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md max-w-sm"
+									className="text-gray-900 pl-3 pr-10 py-0 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md w-full md:w-1/2 pr-10 md:pr-0 md:mr-4"
 								>
 									{timezoneItems}
 								</select>
@@ -142,7 +142,7 @@ const OptionsBar: FunctionComponent = () => {
 								<button
 									onClick={detectTimezone}
 									type="button"
-									className="inline-block py-0.5 ml-2"
+									className="inline-block py-4 md:py-0"
 								>
 									{t("localization:options.timezonePicker.detect")}
 								</button>
@@ -153,13 +153,13 @@ const OptionsBar: FunctionComponent = () => {
 								</Link>
 							</noscript>
 						</div>
-						<div className="mb-4">
+						<div className="mb-2 md:mb-8">
 							<form action="/" method="GET" id="format-picker">
 								<label
 									htmlFor="format"
-									className="pickerLabel block md:inline-block mr-2"
+									className="pickerLabel block md:inline-block mr-2 font-semibold pb-2 md:pb-0"
 								>
-									{t("localization:options.formatPicker.title")}
+									{t("localization:options.formatPicker.title")}:
 								</label>
 								<select
 									id="format"

@@ -78,7 +78,7 @@
         "timezonePicker": {
             "detect": "Detect",
             "showing": "Starttijden voor",
-            "pick": "Kies een tijdzone..."
+            "pick": "Kies een tijdzone"
         },
         "formatPicker": {
             "title": "Tijdformaat",

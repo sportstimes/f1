@@ -76,7 +76,7 @@
         "email": "Ricevi promemoria via email",
         "timezonePicker": {
             "showing": "Mostra gli orari per",
-            "pick": "Scegli un fuso orario...",
+            "pick": "Scegli un fuso orario",
             "detect": "Individua"
         },
         "formatPicker": {

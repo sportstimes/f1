@@ -78,7 +78,7 @@
         "timezonePicker": {
             "detect": "Detect",
             "showing": "Zobrazení času pro",
-            "pick": "Vyberte časové pásmo..."
+            "pick": "Vyberte časové pásmo"
         },
         "formatPicker": {
             "title": "Time Format",

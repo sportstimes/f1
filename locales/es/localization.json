@@ -78,7 +78,7 @@
         "timezonePicker": {
             "detect": "Detectar",
             "showing": "Mostrando horarios para",
-            "pick": "Elige una zona horaria..."
+            "pick": "Elige una zona horaria"
         },
         "formatPicker": {
             "title": "Formato de fecha",

@@ -78,7 +78,7 @@
         "timezonePicker": {
             "detect": "Detect",
             "showing": "Időpontok mutatása ebben az időzónában:",
-            "pick": "Időzóna választása..."
+            "pick": "Időzóna választása"
         },
         "formatPicker": {
             "title": "Időformátum",

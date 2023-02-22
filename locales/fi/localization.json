@@ -78,7 +78,7 @@
         "timezonePicker": {
             "detect": "Detect",
             "showing": "Näytetään aikataulut",
-            "pick": "Valitse aikavyöhyke..."
+            "pick": "Valitse aikavyöhyke"
         },
         "formatPicker": {
             "title": "Time Format",

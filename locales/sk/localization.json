@@ -76,7 +76,7 @@
         "email": "Dostávajte upozornenia emailom",
         "timezonePicker": {
             "showing": "Zobrazuje sa čas pre",
-            "pick": "Vyberte časovú zónu...",
+            "pick": "Vyberte časovú zónu",
             "detect": "Zistiť"
         },
         "formatPicker": {

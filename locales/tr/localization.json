@@ -78,7 +78,7 @@
         "timezonePicker": {
             "detect": "Tespit et",
             "showing": "Seçili saat dilimi",
-            "pick": "Saat diliminizi seçin..."
+            "pick": "Saat diliminizi seçin"
         },
         "formatPicker": {
             "title": "Zaman Formatı",

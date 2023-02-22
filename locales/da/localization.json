@@ -78,7 +78,7 @@
         "timezonePicker": {
             "detect": "Detect",
             "showing": "Viser tider for",
-            "pick": "Vælg en tidszone..."
+            "pick": "Vælg en tidszone"
         },
         "formatPicker": {
             "title": "Tidsformat",

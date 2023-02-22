@@ -73,7 +73,7 @@
         "email": "Primește notificare pe email",
         "timezonePicker": {
             "showing": "Arată data și ora pentru",
-            "pick": "Selectează fus orar..."
+            "pick": "Selectează fus orar"
         },
         "formatPicker": {
             "title": "Formatul de Timp",

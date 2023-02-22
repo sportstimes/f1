@@ -76,7 +76,7 @@
         "email": "接受邮件提醒",
         "timezonePicker": {
             "showing": "当前显示的时间，时区为",
-            "pick": "选择时区...",
+            "pick": "选择时区",
             "detect": "Detect"
         },
         "formatPicker": {

@@ -76,7 +76,7 @@
         "email": "Terima pengingat email",
         "timezonePicker": {
             "showing": "Menampilkan waktu untuk",
-            "pick": "Pilih zona waktu...",
+            "pick": "Pilih zona waktu",
             "detect": "Deteksi"
         },
         "formatPicker": {
