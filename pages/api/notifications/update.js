@@ -8,10 +8,8 @@ export default async (req, res) => {
 		});
 	}
 	
-	console.log(req.body);
 	const novu = new Novu(process.env.NEXT_PUBLIC_NOVU_API);
 
-	
 	const config = await import(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)  
 	let sessions = config.sessions;
 	
