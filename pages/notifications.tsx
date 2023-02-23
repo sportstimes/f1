@@ -74,7 +74,6 @@ function Notifications() {
 		try {
 		  const token = await firebaseCloudMessaging.init()
 		  if (token) {
-			await firebaseCloudMessaging.getMessage()
 			setFcmToken(token)
 			
 			if(!localStorage.getItem('tokenSubscribed')){				

@@ -8,6 +8,9 @@ import "../styles/index.css";
 import useTranslation from 'next-translate/useTranslation'
 import PlausibleProvider from "next-plausible";
 import Script from 'next/script'
+import { firebaseCloudMessaging } from "../config/firebase";
+import firebase from 'firebase/app';
+import { getMessaging, onMessage } from "firebase/messaging";
 
 export default function CalendarApp({ Component, pageProps }: AppProps) {
 	const { t, lang } = useTranslation();
@@ -19,6 +22,31 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, { year: currentYear })
 
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
+	
+	useEffect(() => {
+		setToken();
+		async function setToken() {
+		  try {
+			const token = await firebaseCloudMessaging.init();
+			if (token) {
+			  getMessage();
+			}
+		  } catch (error) {
+			console.log(error);
+		  }
+		}
+		function getMessage() {
+		  const messaging = getMessaging();
+		  console.log({ messaging });
+		  onMessage(messaging, (message) => {
+			const { title, body } = JSON.parse(message.data.notification);
+			var options = {
+			  body,
+			};
+			self.registration.showNotification(title, options);
+		  });
+		}
+	  });
 	
 	return (
 		<UserContextProvider>
