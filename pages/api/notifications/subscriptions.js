@@ -1,6 +1,7 @@
 import { Novu, PushProviderIdEnum } from '@novu/node';
 
 export default async (req, res) => {
+	
 	if (!req.query.identifier) {
 		return res.status(400).json({
 			success: false,
@@ -28,7 +29,7 @@ export default async (req, res) => {
 	sessions.forEach(function (session, index) {
 		let topic = topics.find(o => o.key === session);
 		let subscribers = topic.subscribers;
-		
+				
 		subscriptions[session] = subscribers.includes(req.query.identifier);		
 	});
 	

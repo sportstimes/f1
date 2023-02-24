@@ -5,6 +5,18 @@ import { Novu } from '@novu/node';
 import { TriggerRecipientsTypeEnum } from '@novu/shared';
 
 export default async (req, res) => {
+	// if (req.query.key !== 'sharedKey') {
+	// 	res.status(404).end();
+	// 	return;
+	// }
+	
+	// Check if either email or push is supported.
+	const config = await import(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)	
+	if(!config.supportsEmailReminders && !config.supportsWebPush){
+		res.json({ success: true, message:"Site doesn't support email or web push." })
+		return;
+	}
+	
 	firebase.initializeApp({
 		apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
 		authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
@@ -62,20 +74,17 @@ export default async (req, res) => {
 		const nextSessionDate = dayjs(nextRace.sessions[nextSession]);
 		
 		if(nextSessionDate.diff(Date(), 'minutes') < 10){
-			console.log(nextSession);
-			console.log(dayjs(Date()).diff(dayjs(docData.data()[nextSession]), 'minutes'));
-			
 			// Ensure we're not about to send a duplicate trigger to Novu...
 			if (!docData.exists || (docData.exists && docData.data()[nextSession] == null) || (docData.exists && dayjs(Date()).diff(dayjs(docData.data()[nextSession]), 'minutes') > 60)) {
 				console.log("Trigger Topic: pushReminder, " + nextSession);
 				
-				// await novu.trigger('pushReminder', {
-				// 	to: [{ type: TriggerRecipientsTypeEnum.TOPIC, topicKey: nextSession }],
-				// 	payload: {
-				// 		race: nextRace,
-				// 		session: nextSession
-				// 	},
-				// });
+				await novu.trigger('pushreminder', {
+					to: [{ type: TriggerRecipientsTypeEnum.TOPIC, topicKey: nextSession }],
+					payload: {
+						title:nextRace.name,
+						content:`${nextSession}`
+					},
+				});
 				
 				docRef.set({[nextSession]:Date()}, { merge: true });
 			} else {
