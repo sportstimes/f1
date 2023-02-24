@@ -17,6 +17,7 @@ export default async (req, res) => {
 		return;
 	}
 	
+	// Initialize Firebase
 	firebase.initializeApp({
 		apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
 		authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
@@ -26,12 +27,27 @@ export default async (req, res) => {
 		appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 	})
 	
+	// Where we store the dates of the last send, used to protect against sending extra notifications etc.
 	const db = firebase.firestore();
 	const docRef = db.collection("sites").doc(process.env.NEXT_PUBLIC_SITE_KEY)
 	const docData = await docRef.get()
 	
+	// Initialize Novu
 	const novu = new Novu(process.env.NEXT_PUBLIC_NOVU_API);
 	
+	// Get the English localization file...
+	const localization = await import(`../../locales/en/localization.json`)
+	const localizationSite = localization[process.env.NEXT_PUBLIC_SITE_KEY];
+	const localizationSchedule = localization.schedule;
+	const localizationRaces = localization.races;
+
+	console.log(localizationSite)
+
+	res.json({ success: true })
+
+	return;
+
+	// Get this years calendar
 	const data = await import(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NEXT_PUBLIC_CURRENT_YEAR}.json`)
 	const races = data.races;
 	var nextRace = null;
@@ -49,7 +65,7 @@ export default async (req, res) => {
 		}
 	});
 	
-	// Are we anywhere near the next race time wise?
+	// Figure out the first and last sessions.
 	let firstEventSessionKey = Object.keys(nextRace.sessions)[0];
 	let lastEventSessionKey = Object.keys(nextRace.sessions)[
 		Object.keys(nextRace.sessions).length - 1
@@ -78,8 +94,10 @@ export default async (req, res) => {
 			if (!docData.exists || (docData.exists && docData.data()[nextSession] == null) || (docData.exists && dayjs(Date()).diff(dayjs(docData.data()[nextSession]), 'minutes') > 60)) {
 				console.log("Trigger Topic: pushReminder, " + nextSession);
 				
+				const sessionTopic = `${process.env.NEXT_PUBLIC_SITE_KEY}-${nextSession}`;
+				
 				await novu.trigger('pushreminder', {
-					to: [{ type: TriggerRecipientsTypeEnum.TOPIC, topicKey: nextSession }],
+					to: [{ type: TriggerRecipientsTypeEnum.TOPIC, topicKey: sessionTopic }],
 					payload: {
 						title:nextRace.name,
 						content:`${nextSession}`
@@ -97,17 +115,19 @@ export default async (req, res) => {
 	} else if(firstSession.diff(Date(), 'minutes') < 60){
 		
 		// Ensure we're not about to send a duplicate trigger to Novu...
-		if (!docData.exists || (docData.exists && docData.data()['race-weekend'] == null) || (docData.exists && dayjs(Date()).diff(dayjs(docData.data()['race-weekend']), 'minutes') > 120)) {
-			console.log("Trigger Topic: race-weekend, " + JSON.stringify(nextRace));
+		if (!docData.exists || (docData.exists && docData.data()['email-reminder'] == null) || (docData.exists && dayjs(Date()).diff(dayjs(docData.data()['email-reminder']), 'minutes') > 120)) {
+			const reminderTopic = `${process.env.NEXT_PUBLIC_SITE_KEY}-reminder`;
+
+			console.log("Trigger Topic: email-weekend, " + JSON.stringify(nextRace));
 			
 			// Is the first session within the next hour
 			// If so, send the race weekend email.
-			// await novu.trigger('race-weekend', {
-			// 	to: [{ type: TriggerRecipientsTypeEnum.TOPIC, topicKey: 'reminder' }],
-			// 	payload: nextRace,
-			// });
+			await novu.trigger('emailreminder', {
+				to: [{ type: TriggerRecipientsTypeEnum.TOPIC, topicKey: reminderTopic }],
+				payload: nextRace,
+			});
 			
-			docRef.set({'race-weekend':Date()}, { merge: true });
+			docRef.set({'email-reminder':Date()}, { merge: true });
 		} else {
 			console.log("Already sent race-weekend!");
 		}
@@ -115,5 +135,6 @@ export default async (req, res) => {
 		console.log("Nothing to send");
 	}
 
+	// Just send a success...
 	res.json({ success: true })
 }
