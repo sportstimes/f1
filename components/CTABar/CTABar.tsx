@@ -40,7 +40,7 @@ class CTABar extends React.Component<Props> {
 				<div className="h-12 grow">
 					<Link href="/generate" className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative">
 						{t("localization:options.calendar")}
-						<CalendarIcon className="absolute left-3" />
+						<CalendarIcon className="absolute left-3 self-center" />
 						<ChevronRightIcon className="absolute right-3 top-4" />
 					</Link>
 				</div>
@@ -48,7 +48,7 @@ class CTABar extends React.Component<Props> {
 					<div className="h-12 grow">
 						<Link href="/subscribe" className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative">
 							{t("localization:options.email")}
-							<EmailIcon className="absolute left-3" />
+							<EmailIcon className="absolute left-3 self-center" />
 							<ChevronRightIcon className="absolute right-3 top-4" />
 						</Link>
 					</div>
@@ -56,7 +56,7 @@ class CTABar extends React.Component<Props> {
 				{config.supportsWebPush > 0 && this.state.supportsWebPush &&
 					<div className="h-12">
 						<Link href="/notifications" className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative" title={t("localization:options.notifications")}>
-							<NotificationIcon className="absolute left-3.5" />
+							<NotificationIcon className="absolute left-3.5 self-center" />
 							<span className="visible md:hidden">{t("localization:options.notifications")}</span>
 							<ChevronRightIcon className="visible md:hidden absolute right-3 top-4" />
 						</Link>

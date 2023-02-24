@@ -216,7 +216,7 @@ const OptionsBar: FunctionComponent = () => {
 								focusable="false"
 								data-prefix="far"
 								data-icon="cog"
-								className="svg-inline--fa fa-cog fa-w-16"
+								className="svg-inline--fa fa-cog fa-w-16 self-center"
 								role="img"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 512 512"
