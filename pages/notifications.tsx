@@ -69,6 +69,7 @@ function Notifications() {
 
 	const [permission, setPermission] = useState<"denied" | "default" | "granted">("denied")
     const [fcmToken, setFcmToken] = useState<string|undefined>(undefined);
+	const [loaded, setLoaded] = useState<Boolean>(false)
 
 	const getToken = async () => {
 		try {
@@ -76,7 +77,7 @@ function Notifications() {
 		  if (token) {
 			setFcmToken(token)
 			
-			if(!localStorage.getItem('tokenSubscribed')){				
+			if(!localStorage.getItem('tokenSubscribed') || (localStorage.getItem('tokenSubscribed') != token)){				
 				const res = await fetch('/api/notifications/subscribe', {
 				  body: JSON.stringify({
 					identifier: localStorage.getItem("uuid"),
@@ -90,7 +91,7 @@ function Notifications() {
 				
 				const result = await res.json()
 				
-				localStorage.setItem("tokenSubscribed", String(true));
+				localStorage.setItem("tokenSubscribed", String(token));
 			}
 		  }
 		} catch (error) {
@@ -99,14 +100,13 @@ function Notifications() {
 	}
 	
 	const getSubscriptions = async () => {
-		console.log("UUID : "+localStorage.getItem("uuid"))
-		
 		try {
 			const res = await fetch(`/api/notifications/subscriptions?identifier=${localStorage.getItem("uuid")}`);
 			const result = await res.json()
 			const subscriptions = result.subscriptions
 			
 			setState(subscriptions);
+			setLoaded(true);
 		} catch (error) {
 		  console.log("err2:" + error)
 		}
@@ -225,7 +225,11 @@ function Notifications() {
 		
 				{permission === "default" && renderAllowNotificationBlock()}
 		
-				{permission === "granted" && renderGrantedNotificationBlock()}
+				{permission === "granted" && loaded && renderGrantedNotificationBlock()}
+				
+				{permission === "granted" && !loaded && (
+					<p>Loading</p>
+				)}
 			</Card>
 		</Layout>
 	)
