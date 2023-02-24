@@ -19,13 +19,15 @@ export default async (req, res) => {
 	
 	let email = req.body.email;
 	
+	// Prefix the topic with the site key so we can support reminders other sites also.
+	let topic = `${process.env.NEXT_PUBLIC_SITE_KEY}-reminder`;
+	
 	const novu = new Novu(process.env.NEXT_PUBLIC_NOVU_API);
-
 	const subscriptionResponse = await novu.subscribers.identify(req.body.identifier, {
 		email: email,
 	})
 	
-	const response = await novu.topics.addSubscribers('reminder', {
+	const response = await novu.topics.addSubscribers(topic, {
 		subscribers: [req.body.identifier],
 	});
 	

@@ -11,8 +11,9 @@ export default async (req, res) => {
 	const config = await import(`../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)  
 	
 	let subscriberUUID = req.query.subscriberUUID;
-	
-	const response = await fetch('https://api.novu.co/v1/topics/reminder/subscribers/removal', {
+	let topic = `${process.env.NEXT_PUBLIC_SITE_KEY}-reminder`;
+
+	const response = await fetch(`https://api.novu.co/v1/topics/${topic}/subscribers/removal`, {
 	  method: 'POST',
 	  headers: {
 		'Content-Type': 'application/json',
