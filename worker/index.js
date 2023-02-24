@@ -14,6 +14,10 @@ firebase.messaging();
 
 //background notifications will be received here
 firebase.messaging().onBackgroundMessage((payload) => {
+  
+  
+  console.log(payload);
+  
   const { title, body } = JSON.parse(payload.data.notification);
   var options = {
     body,
