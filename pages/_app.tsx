@@ -42,7 +42,7 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 			  
 			  console.log(message);
 			  
-			const { title, body } = JSON.parse(message.data.notification);
+			const { title, body } = JSON.parse(message.notification);
 			var options = {
 			  body,
 			};
