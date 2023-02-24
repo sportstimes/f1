@@ -18,7 +18,7 @@ firebase.messaging().onBackgroundMessage((payload) => {
   
   console.log(payload);
   
-  const { title, body } = JSON.parse(payload.notification);
+  const { title, body } = payload.notification;
   var options = {
     body,
     icon: '/icons/apple-touch-icon.png',
