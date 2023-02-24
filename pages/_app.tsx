@@ -46,7 +46,10 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 			var options = {
 			  body,
 			};
-			self.registration.showNotification(title, options);
+			
+			navigator.serviceWorker.ready.then((registration) => {
+				registration.showNotification(title, options);
+			});
 		  });
 		}
 	  });
