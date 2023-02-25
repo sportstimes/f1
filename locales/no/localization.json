@@ -47,7 +47,6 @@
         "australian-grand-prix": "Australias Grand Prix",
         "bahrain-grand-prix": "Bahrains Grand Prix",
         "vietnamese-grand-prix": "Vietnams Grand Prix",
-        "china-grand-prix": "Kinas Grand Prix",
         "dutch-grand-prix": "Nederlands Grand Prix",
         "monaco-grand-prix": "Monacos Grand Prix",
         "azerbaijan-grand-prix": "Aserbadsjans Grand Prix",
@@ -69,7 +68,7 @@
         "saudi-arabia-grand-prix": "Saudiarabiske Grand Prix",
         "qatar-grand-prix" : "Qatar Grand Prix",
 		"miami-grand-prix" : "Miami Grand Prix",
-        "chinese-grand-prix" : "Chinese Grand Prix",
+        "chinese-grand-prix" : "Kinas Grand Prix",
         "las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {

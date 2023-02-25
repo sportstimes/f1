@@ -46,7 +46,6 @@
         "australian-grand-prix": "澳洲大獎賽",
         "bahrain-grand-prix": "巴林大獎賽",
         "vietnamese-grand-prix": "越南大獎賽",
-        "china-grand-prix": "中國大獎賽",
         "dutch-grand-prix": "荷蘭大獎賽",
         "monaco-grand-prix": "摩納哥大獎賽",
         "azerbaijan-grand-prix": "阿塞拜疆大獎賽",
@@ -68,7 +67,7 @@
         "saudi-arabia-grand-prix": "沙特阿拉伯大獎賽",
         "qatar-grand-prix": "卡塔爾大獎賽",
         "miami-grand-prix": "邁阿密大獎賽",
-        "chinese-grand-prix": "Chinese Grand Prix",
+        "chinese-grand-prix": "中國大獎賽",
         "las-vegas-grand-prix": "Las Vegas Grand Prix"
     },
     "options": {

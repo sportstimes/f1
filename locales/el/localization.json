@@ -46,7 +46,6 @@
         "australian-grand-prix": "Γκραν Πρι Αυστραλίας",
         "bahrain-grand-prix": "Γκραν Πρι Μπαχρέιν",
         "vietnamese-grand-prix": "Γκραν Πρι Βιετνάμ",
-        "china-grand-prix": "Γκραν Πρι Κίνας",
         "dutch-grand-prix": "Γκραν Πρι Ολλανδίας",
         "monaco-grand-prix": "Γκραν Πρι Μονακό",
         "azerbaijan-grand-prix": "Γκραν Πρι Αζερμπαϊτζάν",
@@ -68,7 +67,7 @@
         "saudi-arabia-grand-prix": "Γκραν Πρι Σαουδικής Αραβίας",
         "qatar-grand-prix": "Γκραν Πρι Κατάρ",
         "miami-grand-prix": "Γκραν Πρι Μαϊάμι",
-        "chinese-grand-prix" : "Chinese Grand Prix",
+        "chinese-grand-prix" : "Γκραν Πρι Κίνας",
         "las-vegas-grand-prix" : "Las Vegas Grand Prix"
     },
     "options": {

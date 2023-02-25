@@ -47,7 +47,6 @@
         "australian-grand-prix": "جائزة استراليا الكبري",
         "bahrain-grand-prix": "جائزة البحرين الكبري",
         "vietnamese-grand-prix": "جائزة فيتنام الكبري",
-        "china-grand-prix": "جائزة الصين الكبري",
         "dutch-grand-prix": "جائزة هولندا الكبري",
         "monaco-grand-prix": "جائزة موناكو الكبري",
         "azerbaijan-grand-prix": "جائزة أذربيجان الكبري",
@@ -69,7 +68,7 @@
         "saudi-arabia-grand-prix": "جائزة السعودية الكبري",
         "qatar-grand-prix" : "Qatar Grand Prix",
 		"miami-grand-prix" : "Miami Grand Prix",
-        "chinese-grand-prix" : "Chinese Grand Prix",
+        "chinese-grand-prix" : "جائزة الصين الكبري",
         "las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {
