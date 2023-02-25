@@ -27,7 +27,7 @@ export default async (req, res) => {
 	
 	var subscriptions = {};
 	sessions.forEach(function (session, index) {
-		let topic = topics.find(o => o.key === session);
+		let topic = topics.find(o => o.key === `${process.env.NEXT_PUBLIC_SITE_KEY}-${session}`);
 		let subscribers = topic.subscribers;
 				
 		subscriptions[session] = subscribers.includes(req.query.identifier);		

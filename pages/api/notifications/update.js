@@ -11,19 +11,20 @@ export default async (req, res) => {
 	let sessions = config.sessions;
 	
 	// Get the current state for the user...
-	const existingRes = await fetch(`http://localhost:3000/api/notifications/subscriptions?identifier=${req.body.identifier}`);
-	const existingResult = await existingRes.json()
-	const existingSubscriptions = existingResult.subscriptions
+	// const existingRes = await fetch(`http://localhost:3000/api/notifications/subscriptions?identifier=${req.body.identifier}`);
+	// const existingResult = await existingRes.json()
+	// const existingSubscriptions = existingResult.subscriptions
 	
 	
 	var subscriptions = {};
 	for await (const session of sessions) {
-		if(req.body.topics.includes(session) && (!existingSubscriptions[session] || existingSubscriptions[session] != true)){
-			
-			console.log("Add "+session)
+		
+		const sessionKey = `${process.env.NEXT_PUBLIC_SITE_KEY}-${session}`;
+		
+		if(req.body.topics.includes(session)){
 			
 			// Subscribe...
-			const response = await fetch(`https://api.novu.co/v1/topics/${session}/subscribers`, {
+			const response = await fetch(`https://api.novu.co/v1/topics/${sessionKey}/subscribers`, {
 			  method: 'POST',
 			  headers: {
 				'Content-Type': 'application/json',
@@ -34,13 +35,11 @@ export default async (req, res) => {
 			  }),
 			});
 			const data = await response.json();
-		} else if((existingSubscriptions[session] && existingSubscriptions[session] == true) && !req.body.topics.includes(session)) {
-			
-			console.log("Remove "+session)
+		} else {
 			
 			// Unsubscribe...
 			try {
-				const response2 = await fetch(`https://api.novu.co/v1/topics/${session}/subscribers/removal`, {
+				const response2 = await fetch(`https://api.novu.co/v1/topics/${sessionKey}/subscribers/removal`, {
 			  		method: 'POST',
 			  		headers: {
 						'Content-Type': 'application/json',
