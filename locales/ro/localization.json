@@ -43,7 +43,6 @@
         "australian-grand-prix": "Marele Premiu al Australiei",
         "bahrain-grand-prix": "Marele Premiu al Bahrainului",
         "vietnamese-grand-prix": "Marele Premiu al Vietnamului",
-        "china-grand-prix": "Marele Premiu al Chinei",
         "dutch-grand-prix": "Marele Premiu al Olandei",
         "monaco-grand-prix": "Marele Premiu din Monaco",
         "azerbaijan-grand-prix": "Marele Premiu al Azerbaijanului",
@@ -65,7 +64,7 @@
         "saudi-arabia-grand-prix": "Marele Premiu al Arabiei Saudite",
         "qatar-grand-prix": "Marele Premiu al Qatarului",
         "miami-grand-prix": "Marele Premiu din Miami",
-        "chinese-grand-prix" : "Chinese Grand Prix",
+        "chinese-grand-prix" : "Marele Premiu al Chinei",
         "las-vegas-grand-prix" : "Las Vegas Grand Prix"
     },
     "options": {

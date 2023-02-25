@@ -46,7 +46,6 @@
 		"australian-grand-prix": "オーストラリアGP",
 		"bahrain-grand-prix": "バーレーンGP",
 		"vietnamese-grand-prix": "ベトナムGP",
-		"china-grand-prix": "中国GP",
 		"dutch-grand-prix": "オランダGP",
 		"monaco-grand-prix": "モナコGP",
 		"azerbaijan-grand-prix": "アゼルバイジャンGP",
@@ -68,7 +67,7 @@
 		"saudi-arabia-grand-prix": "サウジアラビアGP",
 		"qatar-grand-prix": "カタールGP",
 		"miami-grand-prix": "マイアミGP",
-		"chinese-grand-prix" : "Chinese Grand Prix",
+		"chinese-grand-prix" : "中国GP",
 		"las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {
