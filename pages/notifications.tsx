@@ -75,17 +75,6 @@ function Notifications() {
 		try {
 		  const token = await firebaseCloudMessaging.init()
 		  if (token) {			
-			const res = await fetch('/api/notifications/subscribe', {
-			  body: JSON.stringify({
-				identifier: localStorage.getItem("uuid"),
-				token: token
-			  }),
-			  headers: {
-				'Content-Type': 'application/json'
-			  },
-			  method: 'POST'
-			});
-			
 			setFcmToken(token)
 		  }
 		} catch (error) {
@@ -95,6 +84,19 @@ function Notifications() {
 	
 	const getSubscriptions = async () => {
 		try {
+			if(fcmToken){
+				const subscribeRes = await fetch('/api/notifications/subscribe', {
+				  body: JSON.stringify({
+					identifier: localStorage.getItem("uuid"),
+					token: fcmToken
+				  }),
+				  headers: {
+					'Content-Type': 'application/json'
+				  },
+				  method: 'POST'
+				});
+			}
+			
 			const res = await fetch(`/api/notifications/subscriptions?identifier=${localStorage.getItem("uuid")}`);
 			const result = await res.json()
 			const subscriptions = result.subscriptions
@@ -132,12 +134,7 @@ function Notifications() {
 	
 	const handleRequestPermission = async () => {
 	  await Notification.requestPermission();
-	  
-	  const status = Notification.permission;
-	  setPermission(status)
-	  
-	  await getToken();
-	  await getSubscriptions();
+	  await checkNotification()
 	}
 	
 	const renderDeniedNotificationBlock = () => (
