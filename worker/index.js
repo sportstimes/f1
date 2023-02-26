@@ -14,13 +14,10 @@ firebase.messaging();
 
 //background notifications will be received here
 firebase.messaging().onBackgroundMessage((payload) => {
-  
-  
-  console.log(payload);
-  
-  const { title, body } = payload.notification;
+  const { title, body, tag } = payload.notification;
   var options = {
     body,
+    tag,
     icon: '/icons/apple-touch-icon.png',
   };
   registration.showNotification(title, options);
