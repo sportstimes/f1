@@ -112,6 +112,9 @@ function Notifications() {
 		const status = Notification.permission;
 		setPermission(status)
 		
+		console.log("status")
+		console.log(status)
+		
 		if(status === 'granted') {
 			await getToken();
 			await getSubscriptions();
