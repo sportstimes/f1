@@ -143,16 +143,16 @@ function Notifications() {
 	
 	const renderDeniedNotificationBlock = () => (
 		<p>
-			{'You have Denied Notification Permissions.\nPlease Reset your Permissions and Try Again.'}
+			{t("localization:notifications.permissions.denied")}
 		</p>
 	)
 	
 	const renderAllowNotificationBlock = () => (
 		<>
-			<p className="mb-4">{t("localization:notifications.permissions")}</p>
+			<p className="mb-4">{t("localization:notifications.permissions.prompt")}</p>
 			<p>
 				<button type="button" className="btn" onClick={handleRequestPermission}>
-					{t("localization:notifications.permissionsButton")}
+					{t("localization:notifications.permissions.button")}
 				</button>	
 			</p>
 		</>
@@ -201,14 +201,6 @@ function Notifications() {
 							? t("localization:notifications.button")
 							: t("localization:notifications.buttonSubmitted")}
 					</button>
-					
-					{ 
-					/*
-					<button type="button" className="destructive-btn" onClick={unsubscribeAllNotifications}>
-						Disable All Notifications
-					</button>
-					*/
-					}
 				</fieldset>
 			</form>
 		</>
