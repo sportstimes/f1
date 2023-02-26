@@ -58,15 +58,8 @@ export default async (req, res) => {
 			}
 		}
 	});
-	
-	
-	console.log(nextRace)
-	
-	// res.json({ race:nextRace })
-	// 
-	// return;
 
-	
+
 	// Figure out the first and last sessions.
 	let firstEventSessionKey = Object.keys(nextRace.sessions)[0];
 	let lastEventSessionKey = Object.keys(nextRace.sessions)[
@@ -76,9 +69,12 @@ export default async (req, res) => {
 	const firstSession = dayjs(nextRace.sessions[firstEventSessionKey]);
 	const lastSession = dayjs(nextRace.sessions[lastEventSessionKey]);
 	
+	// Notification Gap
+	const date = dayjs(Date()).duration(5, 'm');
+	
 	// Are we within a weekend?
 	// Or within 10 minutes of the first session?
-	if(firstSession.isBefore(Date()) && lastSession.isAfter(Date()) || firstSession.diff(Date(), 'minutes') < 10){
+	if(firstSession.isBefore(date) && lastSession.isAfter(date)){
 		// Within a weekend. So lets check if we need to send a session reminder...
 		// Within 10 minutes of the first session, so lets send out a push reminder...
 		
@@ -92,7 +88,7 @@ export default async (req, res) => {
 		
 		const nextSessionDate = dayjs(nextRace.sessions[nextSession]);
 		
-		if(nextSessionDate.diff(Date(), 'minutes') < 10){
+		if(nextSessionDate.diff(date, 'minutes') <= 1){
 			// Ensure we're not about to send a duplicate trigger to Novu...
 			if (!docData.exists || (docData.exists && docData.data()[nextSession] == null) || (docData.exists && dayjs(Date()).diff(dayjs(docData.data()[nextSession]), 'minutes') > 60)) {
 				console.log("Trigger Topic: pushReminder, " + nextSession);
@@ -114,9 +110,9 @@ export default async (req, res) => {
 		} else {
 			console.log("Not within 10 minutes of a session");
 		}
-		
-	} else if(firstSession.diff(Date(), 'minutes') < 60){
-		
+	}
+	
+	if(firstSession.diff(Date(), 'minutes') < 60){
 		// Ensure we're not about to send a duplicate trigger to Novu...
 		if (!docData.exists || (docData.exists && docData.data()['email-reminder'] == null) || (docData.exists && dayjs(Date()).diff(dayjs(docData.data()['email-reminder']), 'minutes') > 120)) {
 			const reminderTopic = `${process.env.NEXT_PUBLIC_SITE_KEY}-reminder`;
@@ -134,8 +130,6 @@ export default async (req, res) => {
 		} else {
 			console.log("Already sent race-weekend!");
 		}
-	} else {
-		console.log("Nothing to send");
 	}
 
 	// Just send a success...
