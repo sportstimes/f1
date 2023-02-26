@@ -70,14 +70,12 @@ export default async (req, res) => {
 	const lastSession = dayjs(nextRace.sessions[lastEventSessionKey]);
 	
 	// Notification Gap
-	const date = dayjs(Date()).duration(5, 'm');
+	var date = new Date();
+	date.setMinutes(date.getMinutes() + 5); 
 	
 	// Are we within a weekend?
-	// Or within 10 minutes of the first session?
 	if(firstSession.isBefore(date) && lastSession.isAfter(date)){
-		// Within a weekend. So lets check if we need to send a session reminder...
-		// Within 10 minutes of the first session, so lets send out a push reminder...
-		
+		// Within a weekend. So lets check if we need to send a session reminder...		
 		var nextSession = null;
 		
 		Object.keys(nextRace.sessions).forEach(function (session, index) {
