@@ -43,6 +43,9 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 			function getMessage() {
 				const messaging = getMessaging();
 				onMessage(messaging, (message) => {
+					
+					console.log("onMessage "+message);
+					
 					const { title, body, tag } = message.notification;
 					var options = {
 						body,
