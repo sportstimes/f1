@@ -8,12 +8,11 @@
 			"round": 1,
 			"slug": "bahrain",
 			"localeKey": "bahrain",
-			"tbc": true,
 			"sessions": {
-				"practice": "2023-03-03T09:35:00Z",
+				"practice": "2023-03-03T09:05:00Z",
 				"qualifying": "2023-03-03T16:30:00Z",
-				"sprint": "2023-03-04T16:40:00Z",
-				"feature": "2023-03-05T10:40:00Z"
+				"sprint": "2023-03-04T13:15:00Z",
+				"feature": "2023-03-05T10:20:00Z"
 			}
 		},
 		{
@@ -24,11 +23,10 @@
 			"round": 2,
 			"slug": "saudi-arabia",
 			"localeKey": "saudi-arabia",
-			"tbc": true,
 			"sessions": {
-				"practice": "2023-03-17T11:25:00Z",
-				"qualifying": "2023-03-17T15:20:00Z",
-				"sprint": "2023-03-18T12:30:00Z",
+				"practice": "2023-03-17T10:55:00Z",
+				"qualifying": "2023-03-17T15:00:00Z",
+				"sprint": "2023-03-18T15:10:00Z",
 				"feature": "2023-03-19T13:35:00Z"
 			}
 		},
@@ -40,12 +38,11 @@
 			"round": 3,
 			"slug": "melbourne",
 			"localeKey": "melbourne",
-			"tbc": true,
 			"sessions": {
-				"practice": "2023-03-31T08:35:00Z",
-				"qualifying": "2023-03-31T12:30:00Z",
-				"sprint": "2023-04-01T09:30:00Z",
-				"feature": "2023-04-02T07:05:00Z"
+				"practice": "2023-03-30T23:00:00Z",
+				"qualifying": "2023-03-31T06:30:00Z",
+				"sprint": "2023-04-01T03:25:00Z",
+				"feature": "2023-04-02T01:35:00Z"
 			}
 		},
 		{

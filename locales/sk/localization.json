@@ -1,0 +1,225 @@
+{
+    "date": "Dátum",
+    "time": "Čas",
+    "badges": {
+        "tbc": "Potvrdené",
+        "tbc_title": "Potvrdené",
+        "tickets": "Lístky",
+        "canceled": "Zrušené",
+        "next": "ĎALŠIE"
+    },
+    "schedule": {
+        "fp1": "Voľný tréning 1",
+        "fp2": "Voľný tréning 2",
+        "fp3": "Voľný tréning 3",
+        "shakedown": "nastavenie monopostu",
+        "practice1": "Tréning 1",
+        "practice2": "Tréning 2",
+        "practice3": "Tréning 3",
+        "practice": "Tréning",
+        "qualifying": "Kvalifikácia",
+        "qualifying1": "Kvalifikácia 1",
+        "qualifying2": "Kvalifikácia 2",
+        "sprintQualifying": "Kvalifikácia šprintu",
+        "semifinal": "Semifinále",
+        "warmup": "Zahrievanie",
+        "race": "Preteky",
+        "race1": "Preteky 1",
+        "race2": "Preteky 2",
+        "race3": "Preteky 3",
+        "gp": "Veľká cena",
+        "sprint1": "Šprint 1",
+        "sprint2": "Šprint 2",
+        "feature": "Funkcia",
+        "fp4": "Voľný tréning 4",
+        "sprint": "Šprint"
+    },
+    "races": {
+        "austrian-grand-prix": "Veľká cena Rakúska",
+        "steiermark-grand-prix": "Veľká cena Štajerska (Rakúsko)",
+        "hungarian-grand-prix": "Veľká cena Maďarska",
+        "british-grand-prix": "Veľká cena Británie",
+        "anniversary-british-grand-prix": "Veľká cena 70. výročia (Británia)",
+        "spanish-grand-prix": "Veľká cena Španielska",
+        "belgian-grand-prix": "Veľká cena Belgicka",
+        "italian-grand-prix": "Veľká cena Talianska",
+        "australian-grand-prix": "Veľká cena Austrálie",
+        "bahrain-grand-prix": "Veľká cena Bahrainu",
+        "vietnamese-grand-prix": "Veľká cena Vietnamu",
+        "dutch-grand-prix": "Veľká cena Holandska",
+        "monaco-grand-prix": "Veľká cena Monaka",
+        "azerbaijan-grand-prix": "Veľká cena Azerbajdžanu",
+        "canadian-grand-prix": "Veľká cena Kanady",
+        "french-grand-prix": "Veľká cena Francúzska",
+        "singapore-grand-prix": "Veľká cena Signapuru",
+        "russian-grand-prix": "Veľká cena Ruska",
+        "japanese-grand-prix": "Veľká cena Japonska",
+        "us-grand-prix": "Veľká cena Spojených štátov",
+        "mexico-grand-prix": "Veľká cena Mexika",
+        "brazilian-grand-prix": "Veľká cena Brazílie",
+        "abu-dhabi-grand-prix": "Veľká cena Abú Zabí",
+        "tuscan-grand-prix": "Veľká cena Toskánska",
+        "eifel-grand-prix": "Veľká cena Eifelu",
+        "portuguese-grand-prix": "Veľká cena Portugalska",
+        "emilia-romagna-grand-prix": "Veľká cena Emiglia Romagna",
+        "sakhir-grand-prix": "Veľká cena Sachíru (Bahrajnu)",
+        "turkish-grand-prix": "Veľká cena Turecka",
+        "saudi-arabia-grand-prix": "Veľká cena Saudskej Arábie",
+        "qatar-grand-prix": "Veľká cena Kataru",
+        "miami-grand-prix": "Veľká cena Miami",
+        "chinese-grand-prix": "Veľká cena Číny",
+        "las-vegas-grand-prix": "Veľká cena Las Vegas"
+    },
+    "options": {
+        "calendar": "Pridať čas a dátum pretekov do vášho kalendára",
+        "email": "Dostávajte upozornenia emailom",
+        "timezonePicker": {
+            "showing": "Zobrazuje sa čas pre",
+            "pick": "Vyberte časovú zónu...",
+            "detect": "Zistiť"
+        },
+        "formatPicker": {
+            "title": "Formát času",
+            "12hr": "12-hodinový",
+            "24hr": "24-hodinový"
+        },
+        "button": "Hotovo"
+    },
+    "contribute": "Prispieť",
+    "languageSelector": "Vyberte jazyk",
+    "javascript": "Táto stránka funguje najlepšie s povoleným JavaScriptom.",
+    "footer": {
+        "coffee": "Podporte nás, kúpte nám kávu.",
+        "twitter": "Sme na Twitteri",
+        "github": "Open Sourced na GitHube",
+        "issue": "Našli ste chybu? Nahlásiť",
+        "links": {
+            "wereOn": "Sme na",
+            "openSourcedOn": "Open Sourced na",
+            "spottedIssue": "Našli ste chybu?",
+            "spottedReport": "Nahlásiť"
+        }
+    },
+    "form": {
+        "title": "Vygenerovať kalendár",
+        "description": "Najprv vyberte, ktoré udalosti chcete pridať do svojho kalendára:",
+        "reminder": "Nastaviť pripomienku",
+        "reminderContinued": "minút pred každou udalosťou vo vašom kalendári sezóny.",
+        "button": "Stiahnuť kalendár",
+        "buttonSubmitted": "Odoslané",
+        "nonOptionsSelected": "Vyberte aspoň jednu udalosť pre svoj kalendár.",
+        "attention": "upozornenie"
+    },
+    "download": {
+        "title": "Vyberte typ kalendára",
+        "webcalTitle": "Pre mobil a desktop",
+        "webcalDescription": "Automatická aktualizácia kalendára pre aplikácie ako Outlook a macOS Calendar.",
+        "webcalButton": "Získať",
+        "gcalTitle": "Pre Google Valendar",
+        "gcalDescription": "Ak chcete pridať tento kalendár, skopírujte a prilepte túto webovú adresu do Kalendára Google",
+        "gcalDescriptionLink": "detailné inštrukcie",
+        "icsTitle": "Stiahnuť ICS súbor",
+        "icsDescription": "Neaktualizovaný kalendár (.ics) pre kalendáre, ktoré nedokážu spracovať aktualizáciu odberov.",
+        "icsButton": "Stiahnuť",
+        "gcalNotificationNotice": "Kalendár Google nerešpektuje pripomienky vo vzdialených kalendároch.  Upozornenia na udalosti je možné nakonfigurovať v nastaveniach kalendára po jeho pridaní."
+    },
+    "subscribe": {
+        "title": "Prihlásiť sa na odber",
+        "description": "Dostávajte pripomienky na email pred každými pretekmi.",
+        "label": "Emailová adresa",
+        "button": "Prihlásiť sa na odber"
+    },
+    "timezones": {
+        "title": "Vyberte časovú zónu..."
+    },
+    "years": {
+        "title": "Vyberte rok..."
+    },
+    "f1": {
+        "title": "F1 kalendár",
+        "subtitle": "Preteky, kvalifikácie & tréningy",
+        "seo": {
+            "title": "F1 kalendár {{year}} - Časy a dátumy pretekov formuly 1",
+            "description": "Kalendár Formuly 1 na sezónu {{year}} so všetkými pretekmi veľkých cien F1, tréningami &amp;  kvalifikačnými stretnutiami. Nastaviť funkciu pripomenutia. Všetky svetové časové pásma. Stiahnite si alebo sa prihláste na odber.",
+            "keywords": "F1, Formula 1, časy pretekov, preteky, pripomienka, upozornenia, veľké ceny, veľká cena, kalendár, dátumy, časy štartov, kvalifikácia, tréning, Londýn, Európa, {{year}}"
+        },
+        "footnote": "Formula One, Formula 1, F1 & Grand Prix sú ochranné známky Formula One Licensing BV."
+    },
+    "f2": {
+        "title": "F2 kalendár",
+        "subtitle": "Preteky, kvalifikácie & tréningy",
+        "seo": {
+            "title": "F2 kalendár {{year}} - Časy a dátumy pretekov formuly 2",
+            "description": "Kalendár Formuly 2 na sezónu {{year}} so všetkými pretekmi veľkých cien F2, tréningami &amp;  kvalifikačnými stretnutiami. Nastaviť funkciu pripomenutia. Všetky svetové časové pásma. Stiahnite si alebo sa prihláste na odber.",
+            "keywords": "placeholder"
+        },
+        "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 sú ochranné známky FIA."
+    },
+    "f3": {
+        "title": "F3 kalendár",
+        "subtitle": "Preteky, kvalifikácie & tréningy",
+        "seo": {
+            "title": "Kalendár F3 {{year}} - Časy a dátumy pretekov Formuly 3",
+            "description": "Kalendár Formuly 3 na sezónu {{year}} so všetkými pretekmi veľkých cien F3, tréningami &amp;  kvalifikačnými stretnutiami. Nastaviť funkciu pripomenutia. Všetky svetové časové pásma. Stiahnite si alebo sa prihláste na odber.",
+            "keywords": "F3, Formula 3, časy pretekov, preteky, pripomienka, upozornenia, veľké ceny, veľká cena, kalendár, dátumy, časy štartov, kvalifikácia, tréning, Londýn, Európa, {{year}}"
+        },
+        "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 asú ochranné známky FIA."
+    },
+    "fe": {
+        "title": "Formula E kalendár",
+        "subtitle": "Preteky, kvalifikácie & tréningy",
+        "seo": {
+            "title": "Formula E kalendár {{year}} - Časy a dátumy pretekov formuly E",
+            "description": "Kalendár Formuly E na sezónu {{year}} so všetkými pretekmi Formuly E e-prix, tréningami &amp;  kvalifikačnými stretnutiami. Nastaviť funkciu pripomenutia. Všetky svetové časové pásma. Stiahnite si alebo sa prihláste na odber.",
+            "keywords": "FE, formula e, časy pretekov, preteky, pripomienka, upozornenia, e prix, kalendár, dátumy, časy štartov, kvalifikácia, tréning, Londýn, Európa, {{year}}"
+        },
+        "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix sú ochranné známky FIA."
+    },
+    "indycar": {
+        "title": "IndyCar kalendár",
+        "subtitle": "Preteky, kvalifikácie & tréningy",
+        "seo": {
+            "title": "IndyCar kalendár {{year}} - Časy a dátumy pretekov",
+            "description": "Kalendár IndyCar na sezónu {{year}} so všetkými pretekmi IndyCar, tréningami &amp;  kvalifikačnými stretnutiami. Nastaviť funkciu pripomenutia. Všetky svetové časové pásma. Stiahnite si alebo sa prihláste na odber.",
+            "keywords": "IndyCar, časy pretekov, preteky, pripomienka, upozornenia, kalendár, dátumy, časy štartov, kvalifikácia, tréning, {{year}}"
+        },
+        "footnote": "IndyCar je ochranná známka Brickyard Trademarks, Inc"
+    },
+    "motogp": {
+        "title": "MotoGP kalendár",
+        "subtitle": "Preteky, kvalifikácie & tréningy",
+        "seo": {
+            "title": "MotoGP kalendár {{year}} - Časy a dátumy pretekov",
+            "description": "Kalendár MotoGP na sezónu {{year}} so všetkými pretekmi MotoGP, tréningami &amp;  kvalifikačnými stretnutiami. Nastaviť funkciu pripomenutia. Všetky svetové časové pásma. Stiahnite si alebo sa prihláste na odber.",
+            "keywords": "MotoGP, časy pretekov, preteky, pripomienka, upozornenia, kalendár, dátumy, časy štartov, kvalifikácia, tréning, Londýn, Európa, {{year}}"
+        },
+        "footnote": "poznámka pod čiarou"
+    },
+    "wseries": {
+        "title": "Kalendár série W",
+        "subtitle": "Preteky, kvalifikácie & tréningy",
+        "seo": {
+            "title": "Kalendár série W {{year}} - Časy a dátumy pretekov",
+            "description": "Kalendár série W na sezónu {{year}} so všetkými pretekmi série W, tréningami &amp;  kvalifikačnými stretnutiami. Nastaviť funkciu pripomenutia. Všetky svetové časové pásma. Stiahnite si alebo sa prihláste na odber.",
+            "keywords": "wseries, w-series, časy pretekov, preteky, pripomienka, upozornenia, cena, kalendár, dátumy, časy štartov, kvalifikácia, tréning, Londýn, Európa, {{year}}"
+        },
+        "footnote": "Kalendár série W nie je prepojený so sériou W."
+    },
+    "extremee": {
+        "title": "Extreme E kalendár",
+        "subtitle": "Preteky, kvalifikácie & tréningy",
+        "seo": {
+            "title": "Extreme E kalendár {{year}} - Časy a dátumy pretekov Extreme E",
+            "description": "Extreme E kalendár na sezónu {{year}} so všetkými pretekmi Extreme E xprix, tréningami &amp;  kvalifikačné stretnutia. Nastaviť funkciu pripomenutia. Všetky svetové časové pásma. Stiahnite si alebo sa prihláste na odber.",
+            "keywords": "Extreme E, časy pretekov, preteky, pripomienka, upozornenia, x cena, kalendár, dátumy, časy štartov, kvalifikácia, tréning, Londýn, Európa, {{year}}"
+        },
+        "footnote": "poznámka pod čiarou"
+    },
+    "event": "Podujatia Veľkej ceny Formuly 1",
+    "notice": {
+        "text": "text",
+        "link": "odkaz"
+    },
+    "showPreviousRaces": "Zobraziť predchádzajúce preteky",
+    "hidePreviousRaces": "Skryť predchádzajúce preteky"
+}

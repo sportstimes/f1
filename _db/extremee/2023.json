@@ -1,0 +1,89 @@
+{
+	"races": [
+		{
+			"name": "Desert X Prix",
+			"location": "Neom, Saudi Arabia",
+			"latitude": 0,
+			"longitude": 0,
+			"round": 1,
+			"slug": "desert-xprix",
+			"localeKey": "desert-xprix",
+			"tbc": true,
+			"sessions": {
+				"shakedown": "2023-03-10T19:00:00Z",
+				"qualifying1": "2023-03-11T08:00:00Z",
+				"qualifying2": "2023-03-11T12:00:00Z",
+				"semifinal": "2023-03-12T09:00:00Z",
+				"race": "2023-03-12T12:00:00Z"
+			}
+		},
+		{
+			"name": "Hydro X Prix",
+			"location": "TBC, Scotland",
+			"latitude": 0,
+			"longitude": 0,
+			"round": 2,
+			"slug": "hydro-xprix",
+			"localeKey": "hydro-xprix",
+			"tbc": true,
+			"sessions": {
+				"shakedown": "2023-05-12T20:00:00Z",
+				"qualifying1": "2023-05-13T09:00:00Z",
+				"qualifying2": "2023-05-13T14:00:00Z",
+				"semifinal": "2023-05-14T11:00:00Z",
+				"race": "2023-05-14T14:00:00Z"
+			}
+		},
+		{
+			"name": "Island X Prix",
+			"location": "Sardinia, Italy",
+			"latitude": 0,
+			"longitude": 0,
+			"round": 3,
+			"slug": "island-xprix",
+			"localeKey": "island-xprix",
+			"tbc": true,
+			"sessions": {
+				"shakedown": "2023-07-05T20:00:00Z",
+				"qualifying1": "2023-07-06T09:00:00Z",
+				"qualifying2": "2023-07-06T14:00:00Z",
+				"semifinal": "2023-07-07T11:00:00Z",
+				"race": "2023-07-07T14:00:00Z"
+			}
+		},
+		{
+			"name": "TBC X Prix",
+			"location": "Amazon or USA",
+			"latitude": 0,
+			"longitude": 0,
+			"round": 4,
+			"slug": "tbc-xprix",
+			"localeKey": "tbc-xprix",
+			"tbc": true,
+			"sessions": {
+				"shakedown": "2023-07-15T20:00:00Z",
+				"qualifying1": "2023-09-16T09:00:00Z",
+				"qualifying2": "2023-09-16T14:00:00Z",
+				"semifinal": "2023-09-17T08:00:00Z",
+				"race": "2023-09-17T11:00:00Z"
+			}
+		},
+		{
+			"name": "Copper X Prix",
+			"location": "Antofagasta, Chine",
+			"latitude": 0,
+			"longitude": 0,
+			"round": 5,
+			"slug": "copper-xprix",
+			"localeKey": "copper-xprix",
+			"tbc": true,
+			"sessions": {
+				"shakedown": "2023-12-01T15:15:00Z",
+				"qualifying1": "2023-12-02T11:00:00Z",
+				"qualifying2": "2023-12-02T13:00:00Z",
+				"semifinal": "2023-12-03T17:00:00Z",
+				"race": "2023-12-03T17:00:00Z"
+			}
+		}
+	]
+}

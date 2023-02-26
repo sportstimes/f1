@@ -47,7 +47,6 @@
         "australian-grand-prix": "Ausztrál Nagydíj",
         "bahrain-grand-prix": "Bahreini Nagydíj",
         "vietnamese-grand-prix": "Vietnámi Nagydíj",
-        "china-grand-prix": "Kínai Nagydíj",
         "dutch-grand-prix": "Holland Nagydíj",
         "monaco-grand-prix": "Monacói Nagydíj",
         "azerbaijan-grand-prix": "Azeri Nagydíj",
@@ -69,7 +68,7 @@
         "saudi-arabia-grand-prix": "Szaúd-Arábiai Nagydíj",
         "qatar-grand-prix" : "Qatar Grand Prix",
 		"miami-grand-prix" : "Miami Grand Prix",
-        "chinese-grand-prix" : "Chinese Grand Prix",
+        "chinese-grand-prix" : "Kínai Nagydíj",
         "las-vegas-grand-prix" : "Las Vegas Grand Prix"
 	},
 	"options": {
