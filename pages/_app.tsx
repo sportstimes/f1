@@ -49,7 +49,7 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 					};
 				
 					navigator.serviceWorker.ready.then((registration) => {
-						registration.showNotification(title, options);
+						//registration.showNotification(title, options);
 					});
 				});
 			}
