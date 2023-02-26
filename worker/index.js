@@ -17,7 +17,7 @@ firebase.messaging().onBackgroundMessage((payload) => {
   const { title, body, tag } = payload.notification;
   var options = {
     body,
-    tag,
+    tag:title,
     icon: '/icons/apple-touch-icon.png',
   };
   registration.showNotification(title, options);
