@@ -3,7 +3,8 @@
 		"source": "^/service-worker.js$",
 		"destination": "/_next/static/service-worker.js"
 	}],
-	"headers": [{
+	"headers": [
+		{
 			"source": "^/service-worker.js$",
 			"headers": [{
 					"key": "Cache-Control",
