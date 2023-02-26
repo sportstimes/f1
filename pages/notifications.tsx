@@ -132,7 +132,12 @@ function Notifications() {
 	
 	const handleRequestPermission = async () => {
 	  await Notification.requestPermission();
-	  await checkNotification();
+	  
+	  const status = Notification.permission;
+	  setPermission(status)
+	  
+	  await getToken();
+	  await getSubscriptions();
 	}
 	
 	const renderDeniedNotificationBlock = () => (
