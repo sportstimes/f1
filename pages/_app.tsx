@@ -34,7 +34,7 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 				try {
 					const token = await firebaseCloudMessaging.init();
 					if (token) {
-						//getMessage();
+						getMessage();
 					}
 				} catch (error) {
 					console.log(error);
@@ -50,7 +50,7 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 					};
 				
 					navigator.serviceWorker.ready.then((registration) => {
-						//registration.showNotification(title, options);
+						registration.showNotification(title, options);
 					});
 				});
 			}
