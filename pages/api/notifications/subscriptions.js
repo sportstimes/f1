@@ -9,29 +9,28 @@ export default async (req, res) => {
 		});
 	}
 	
-	// For now fetch the topics which contains the subscriptions.
-	// Novu has a card for retrieving just the topics for a particular subscriber.
-	const response = await fetch('https://api.novu.co/v1/topics', {
-	  method: 'GET',
-	  headers: {
-		'Content-Type': 'application/json',
-		'Authorization': `ApiKey ${process.env.NEXT_PUBLIC_NOVU_API}`,
-	  }
-	});
-	
-	const data = await response.json();
-	const topics = data.data;
-	
 	const config = await import(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)  
 	let sessions = config.sessions;
 	
 	var subscriptions = {};
-	sessions.forEach(function (session, index) {
-		let topic = topics.find(o => o.key === `${process.env.NEXT_PUBLIC_SITE_KEY}-${session}`);
-		let subscribers = topic.subscribers;
+	for await (const session of sessions) {
+		let topicKey = `${process.env.NEXT_PUBLIC_SITE_KEY}-${session}`;
 				
-		subscriptions[session] = subscribers.includes(req.query.identifier);		
-	});
+		// For now fetch the topics which contains the subscriptions.
+		// Novu has a card for retrieving just the topics for a particular subscriber.
+		const response = await fetch(`https://api.novu.co/v1/topics/${topicKey}`, {
+		  method: 'GET',
+		  headers: {
+			'Content-Type': 'application/json',
+			'Authorization': `ApiKey ${process.env.NEXT_PUBLIC_NOVU_API}`,
+		  }
+		});
+		
+		const json = await response.json();
+		let subscribers = json.data.subscribers;
+		
+		subscriptions[session] = subscribers.includes(req.query.identifier);	
+	}
 	
 	return res.json({success:true, subscriptions:subscriptions});
 }

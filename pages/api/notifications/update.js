@@ -19,12 +19,14 @@ export default async (req, res) => {
 	var subscriptions = {};
 	for await (const session of sessions) {
 		
-		const sessionKey = `${process.env.NEXT_PUBLIC_SITE_KEY}-${session}`;
+		const topicKey = `${process.env.NEXT_PUBLIC_SITE_KEY}-${session}`;
 		
 		if(req.body.topics.includes(session)){
 			
+			console.log("Add user? " +topicKey);
+			
 			// Subscribe...
-			const response = await fetch(`https://api.novu.co/v1/topics/${sessionKey}/subscribers`, {
+			const response = await fetch(`https://api.novu.co/v1/topics/${topicKey}/subscribers`, {
 			  method: 'POST',
 			  headers: {
 				'Content-Type': 'application/json',
@@ -35,11 +37,15 @@ export default async (req, res) => {
 			  }),
 			});
 			const data = await response.json();
+			
+			console.log(data);
+			
 		} else {
 			
+			console.log("Remove user? " +topicKey);
 			// Unsubscribe...
 			try {
-				const response2 = await fetch(`https://api.novu.co/v1/topics/${sessionKey}/subscribers/removal`, {
+				const response2 = await fetch(`https://api.novu.co/v1/topics/${topicKey}/subscribers/removal`, {
 			  		method: 'POST',
 			  		headers: {
 						'Content-Type': 'application/json',
