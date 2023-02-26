@@ -41,12 +41,6 @@ export default async (req, res) => {
 	const localizationSchedule = localization.schedule;
 	const localizationRaces = localization.races;
 
-	console.log(localizationSite)
-
-	res.json({ success: true })
-
-	return;
-
 	// Get this years calendar
 	const data = await import(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NEXT_PUBLIC_CURRENT_YEAR}.json`)
 	const races = data.races;
@@ -65,6 +59,14 @@ export default async (req, res) => {
 		}
 	});
 	
+	
+	console.log(nextRace)
+	
+	// res.json({ race:nextRace })
+	// 
+	// return;
+
+	
 	// Figure out the first and last sessions.
 	let firstEventSessionKey = Object.keys(nextRace.sessions)[0];
 	let lastEventSessionKey = Object.keys(nextRace.sessions)[
@@ -75,6 +77,7 @@ export default async (req, res) => {
 	const lastSession = dayjs(nextRace.sessions[lastEventSessionKey]);
 	
 	// Are we within a weekend?
+	// Or within 10 minutes of the first session?
 	if(firstSession.isBefore(Date()) && lastSession.isAfter(Date()) || firstSession.diff(Date(), 'minutes') < 10){
 		// Within a weekend. So lets check if we need to send a session reminder...
 		// Within 10 minutes of the first session, so lets send out a push reminder...
@@ -124,7 +127,7 @@ export default async (req, res) => {
 			// If so, send the race weekend email.
 			await novu.trigger('emailreminder', {
 				to: [{ type: TriggerRecipientsTypeEnum.TOPIC, topicKey: reminderTopic }],
-				payload: nextRace,
+				payload: {race: nextRace},
 			});
 			
 			docRef.set({'email-reminder':Date()}, { merge: true });
