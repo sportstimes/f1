@@ -77,22 +77,16 @@ function Notifications() {
 		  if (token) {
 			setFcmToken(token)
 			
-			if(!localStorage.getItem('tokenSubscribed') || (localStorage.getItem('tokenSubscribed') != token)){				
-				const res = await fetch('/api/notifications/subscribe', {
-				  body: JSON.stringify({
-					identifier: localStorage.getItem("uuid"),
-					token: token
-				  }),
-				  headers: {
-					'Content-Type': 'application/json'
-				  },
-				  method: 'POST'
-				});
-				
-				const result = await res.json()
-				
-				localStorage.setItem("tokenSubscribed", String(token));
-			}
+			const res = await fetch('/api/notifications/subscribe', {
+			  body: JSON.stringify({
+				identifier: localStorage.getItem("uuid"),
+				token: token
+			  }),
+			  headers: {
+				'Content-Type': 'application/json'
+			  },
+			  method: 'POST'
+			});
 		  }
 		} catch (error) {
 		  console.log("err1:" +error)
@@ -138,7 +132,6 @@ function Notifications() {
 	
 	const handleRequestPermission = async () => {
 	  await Notification.requestPermission();
-	  await checkNotification();
 	}
 	
 	const renderDeniedNotificationBlock = () => (
