@@ -46,7 +46,6 @@
         "australian-grand-prix": "澳大利亚大奖赛",
         "bahrain-grand-prix": "巴林大奖赛",
         "vietnamese-grand-prix": "越南大奖赛",
-        "china-grand-prix": "中国大奖赛",
         "dutch-grand-prix": "荷兰大奖赛",
         "monaco-grand-prix": "摩纳哥大奖赛",
         "azerbaijan-grand-prix": "阿塞拜疆大奖赛",
@@ -73,7 +72,7 @@
     },
     "options": {
         "calendar": "在你的日历App中添加赛程信息",
-        "email": "接受邮件提醒",
+        "email": "接收邮件提醒",
         "timezonePicker": {
             "showing": "当前显示的时间，时区为",
             "pick": "选择时区",
@@ -126,7 +125,7 @@
     },
     "subscribe": {
         "title": "订阅",
-        "description": "在比赛日之前接受邮件提醒服务。",
+        "description": "在比赛日之前接收邮件提醒。",
         "label": "邮箱地址",
         "button": "确认订阅"
     },
