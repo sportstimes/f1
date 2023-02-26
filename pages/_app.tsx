@@ -24,7 +24,7 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
 	
 	useEffect(() => {
-		if (!('Notification' in window)) {
+		if ('Notification' in window) {
 			const status = Notification.permission;
 			if(status === 'granted') {
 				setToken();
