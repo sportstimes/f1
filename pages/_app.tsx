@@ -43,18 +43,17 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 			function getMessage() {
 				const messaging = getMessaging();
 				onMessage(messaging, (message) => {
-					
-					console.log("onMessage "+message);
-					
-					const { title, body, tag } = message.notification;
-					var options = {
-						body,
-						tag,
-					};
-				
-					navigator.serviceWorker.ready.then((registration) => {
-						registration.showNotification(title, options);
-					});
+					// if (!document.hidden) {
+					// 	const { title, body, tag } = message.notification;
+					// 	var options = {
+					// 		body,
+					// 		tag,
+					// 	};
+					// 
+					// 	navigator.serviceWorker.ready.then((registration) => {
+					// 		registration.showNotification(title, options);
+					// 	});
+					// }
 				});
 			}
 		}
