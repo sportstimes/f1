@@ -74,9 +74,7 @@ function Notifications() {
 	const getToken = async () => {
 		try {
 		  const token = await firebaseCloudMessaging.init()
-		  if (token) {
-			setFcmToken(token)
-			
+		  if (token) {			
 			const res = await fetch('/api/notifications/subscribe', {
 			  body: JSON.stringify({
 				identifier: localStorage.getItem("uuid"),
@@ -87,6 +85,8 @@ function Notifications() {
 			  },
 			  method: 'POST'
 			});
+			
+			setFcmToken(token)
 		  }
 		} catch (error) {
 		  console.log("err1:" +error)
@@ -132,6 +132,7 @@ function Notifications() {
 	
 	const handleRequestPermission = async () => {
 	  await Notification.requestPermission();
+	  await checkNotification();
 	}
 	
 	const renderDeniedNotificationBlock = () => (
