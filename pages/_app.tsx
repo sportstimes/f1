@@ -24,33 +24,35 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
 	
 	useEffect(() => {
-		const status = Notification.permission;
-		if(status === 'granted') {
-			setToken();
-		}
-		
-		async function setToken() {
-			try {
-				const token = await firebaseCloudMessaging.init();
-				if (token) {
-					getMessage();
-				}
-			} catch (error) {
-				console.log(error);
+		if (!('Notification' in window)) {
+			const status = Notification.permission;
+			if(status === 'granted') {
+				setToken();
 			}
-		}
-		function getMessage() {
-			const messaging = getMessaging();
-			onMessage(messaging, (message) => {
-				const { title, body } = message.notification;
-				var options = {
-					body,
-				};
 			
-				navigator.serviceWorker.ready.then((registration) => {
-					registration.showNotification(title, options);
+			async function setToken() {
+				try {
+					const token = await firebaseCloudMessaging.init();
+					if (token) {
+						getMessage();
+					}
+				} catch (error) {
+					console.log(error);
+				}
+			}
+			function getMessage() {
+				const messaging = getMessaging();
+				onMessage(messaging, (message) => {
+					const { title, body } = message.notification;
+					var options = {
+						body,
+					};
+				
+					navigator.serviceWorker.ready.then((registration) => {
+						registration.showNotification(title, options);
+					});
 				});
-			});
+			}
 		}
 	});
 	
