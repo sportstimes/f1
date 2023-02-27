@@ -133,7 +133,10 @@ function Notifications() {
 		async function initialize() {
 			await checkNotification()
 		}
-		initialize()
+		
+		navigator.serviceWorker.ready.then(function(reg) {
+			initialize()
+		});
 	}, [])
 	
 	const delay = time => new Promise(res=>setTimeout(res,time));
