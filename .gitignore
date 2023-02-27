@@ -75,8 +75,6 @@ jspm_packages
 **/public/workbox-*.js.map
 **/public/worker-*.js.map
 **/public/fallback-*.js
-/public/firebase-messaging-sw.js
 /public/manifest.json
 /public/service-worker.js
 /public/service-worker.js.map
-/public/firebase-messaging-sw.js.map

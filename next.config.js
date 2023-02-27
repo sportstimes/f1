@@ -17,11 +17,10 @@ module.exports = (phase) => {
   
   const withPWA = require('next-pwa')({
     // disable: !isProd,
-    dest: "public",
+    dest: 'public',
     skipWaiting: false,
     register: true,
-    sw: 'firebase-messaging-sw.js',
-    customWorkerDir: 'worker'
+    importScripts: ['firebase-messaging-sw.js']
   })
   
   return withPWA(nextTranslate({

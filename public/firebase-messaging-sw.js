@@ -10,4 +10,8 @@ firebase.initializeApp({
   appId: "1:1086945121867:web:86b2bbac85cad3c2c95fce"
 });
 
-firebase.messaging();
+// Retrieve an instance of Firebase Messaging so that it can handle background
+// messages.
+const messaging = firebase.messaging.isSupported()
+  ? firebase.messaging()
+  : Promise.reject();
