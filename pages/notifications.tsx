@@ -73,10 +73,25 @@ function Notifications() {
 
 	const getToken = async () => {
 		try {
-		  const token = await firebaseCloudMessaging.init()
-		  if (token) {			
-			setFcmToken(token)
-		  }
+			const token = await firebaseCloudMessaging.init()
+			if (token) {
+			  
+				console.log("getSubscriptions1");
+			  
+			  
+				const subscribeRes = await fetch('/api/notifications/subscribe', {
+					body: JSON.stringify({
+					identifier: localStorage.getItem("uuid"),
+					token: token
+					}),
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					method: 'POST'
+				});
+			  
+				setFcmToken(token)
+			}
 		} catch (error) {
 		  console.log("err1:" +error)
 		}
@@ -84,18 +99,7 @@ function Notifications() {
 	
 	const getSubscriptions = async () => {
 		try {
-			if(fcmToken){
-				const subscribeRes = await fetch('/api/notifications/subscribe', {
-				  body: JSON.stringify({
-					identifier: localStorage.getItem("uuid"),
-					token: fcmToken
-				  }),
-				  headers: {
-					'Content-Type': 'application/json'
-				  },
-				  method: 'POST'
-				});
-			}
+			console.log("getSubscriptions");
 			
 			const res = await fetch(`/api/notifications/subscriptions?identifier=${localStorage.getItem("uuid")}`);
 			const result = await res.json()
@@ -109,6 +113,10 @@ function Notifications() {
 	}
 
 	const checkNotification = useCallback(async () => {
+		
+		
+		console.log("checkNotification");
+		
 		const status = Notification.permission;
 		setPermission(status)
 		
@@ -119,25 +127,43 @@ function Notifications() {
 			await getToken();
 			await getSubscriptions();
 		}
-	}, [getToken])
+	}, [getToken, getSubscriptions])
 	
 	useEffect(() => {
+		
+		console.log("useEffect");
+
+		
 		if ('permissions' in navigator) {
+			console.log("useEffect1");
+
 			navigator.permissions.query({ name: 'notifications' }).then(function (notificationPerm) {
+				console.log("useEffect2");
+
 				notificationPerm.onchange = async function () {
+					console.log("useEffect3");
+
 					await checkNotification()
 				};
 			});
 		}
 		async function initialize() {
+			console.log("useEffect4");
+
 			await checkNotification()
 		}
 		initialize()
 	}, [])
 	
 	const handleRequestPermission = async () => {
-	  await Notification.requestPermission();
-	  await checkNotification()
+		console.log("Hello 1");
+		
+		await Notification.requestPermission();
+		
+		
+		console.log("Hello 2");
+		
+		await checkNotification()
 	}
 	
 	const renderDeniedNotificationBlock = () => (
