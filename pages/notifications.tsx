@@ -141,9 +141,6 @@ function Notifications() {
 
 	const handleRequestPermission = async () => {
 		await Notification.requestPermission();
-		await delay(2000);
-		
-		
 		
 		if ('serviceWorker' in navigator) {
 		  navigator.serviceWorker.ready.then((registration) => {
