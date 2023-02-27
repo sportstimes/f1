@@ -134,17 +134,27 @@ function Notifications() {
 			await checkNotification()
 		}
 		
-		navigator.serviceWorker.ready.then(function(reg) {
-			initialize()
-		});
+		initialize()
 	}, [])
 	
 	const delay = time => new Promise(res=>setTimeout(res,time));
 
 	const handleRequestPermission = async () => {
 		await Notification.requestPermission();
-		await delay(1000);
-		await checkNotification()
+		await delay(2000);
+		
+		
+		
+		if ('serviceWorker' in navigator) {
+		  navigator.serviceWorker.ready.then((registration) => {
+			console.log(`A service worker is active: ${registration.active}`);
+		
+			checkNotification()
+		  });
+		} else {
+		  console.error('Service workers are not supported.');
+		}
+		
 	}
 	
 	const renderDeniedNotificationBlock = () => (
