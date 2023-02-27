@@ -118,7 +118,11 @@ function Notifications() {
 		setPermission(status)
 		
 		if(status === 'granted') {
-			await getToken();
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.ready.then((registration) => {
+					getToken();
+				});
+			}
 		}
 	}, [getToken])
 	
@@ -141,17 +145,7 @@ function Notifications() {
 
 	const handleRequestPermission = async () => {
 		await Notification.requestPermission();
-		
-		if ('serviceWorker' in navigator) {
-		  navigator.serviceWorker.ready.then((registration) => {
-			console.log(`A service worker is active: ${registration.active}`);
-		
-			checkNotification()
-		  });
-		} else {
-		  console.error('Service workers are not supported.');
-		}
-		
+		checkNotification()
 	}
 	
 	const renderDeniedNotificationBlock = () => (
