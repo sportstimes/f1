@@ -76,9 +76,6 @@ function Notifications() {
 			const token = await firebaseCloudMessaging.init()
 			if (token) {
 			  
-				console.log("getSubscriptions1");
-			  
-			  
 				const subscribeRes = await fetch('/api/notifications/subscribe', {
 					body: JSON.stringify({
 					identifier: localStorage.getItem("uuid"),
@@ -91,16 +88,19 @@ function Notifications() {
 				});
 			  
 				setFcmToken(token)
+				
+				await getSubscriptions();
+			} else {
+				alert("No token?!?");
 			}
 		} catch (error) {
 		  console.log("err1:" +error)
+		  alert("err1: " + error);
 		}
 	}
 	
 	const getSubscriptions = async () => {
 		try {
-			console.log("getSubscriptions");
-			
 			const res = await fetch(`/api/notifications/subscriptions?identifier=${localStorage.getItem("uuid")}`);
 			const result = await res.json()
 			const subscriptions = result.subscriptions
@@ -109,60 +109,35 @@ function Notifications() {
 			setLoaded(true);
 		} catch (error) {
 		  console.log("err2:" + error)
+		  alert("err2: " + error);
 		}
 	}
 
 	const checkNotification = useCallback(async () => {
-		
-		
-		console.log("checkNotification");
-		
 		const status = Notification.permission;
 		setPermission(status)
 		
-		console.log("status")
-		console.log(status)
-		
 		if(status === 'granted') {
 			await getToken();
-			await getSubscriptions();
 		}
-	}, [getToken, getSubscriptions])
+	}, [getToken])
 	
 	useEffect(() => {
-		
-		console.log("useEffect");
-
-		
 		if ('permissions' in navigator) {
-			console.log("useEffect1");
-
 			navigator.permissions.query({ name: 'notifications' }).then(function (notificationPerm) {
-				console.log("useEffect2");
-
 				notificationPerm.onchange = async function () {
-					console.log("useEffect3");
-
 					await checkNotification()
 				};
 			});
 		}
 		async function initialize() {
-			console.log("useEffect4");
-
 			await checkNotification()
 		}
 		initialize()
 	}, [])
 	
 	const handleRequestPermission = async () => {
-		console.log("Hello 1");
-		
 		await Notification.requestPermission();
-		
-		
-		console.log("Hello 2");
-		
 		await checkNotification()
 	}
 	
