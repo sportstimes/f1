@@ -88,7 +88,7 @@ export default async (req, res) => {
 		
 		if(nextSessionDate.diff(date, 'minutes') <= 1){
 			// Ensure we're not about to send a duplicate trigger to Novu...
-			if (!docData.exists || (docData.exists && docData.data()[nextSession] == null) || (docData.exists && dayjs(Date()).diff(dayjs(docData.data()[nextSession]), 'minutes') > 60)) {
+			if ((docData.exists && dayjs(Date()).diff(dayjs(docData.data()[nextSession]), 'minutes') > 60)) {
 				console.log("Trigger Topic: pushReminder, " + nextSession);
 				
 				const sessionTopic = `${process.env.NEXT_PUBLIC_SITE_KEY}-${nextSession}`;
@@ -110,9 +110,9 @@ export default async (req, res) => {
 		}
 	}
 	
-	if(firstSession.diff(Date(), 'minutes') < 60){
+	if(firstSession.diff(Date(), 'minutes') < 60 && firstSession.diff(Date(), 'minutes') > 55){
 		// Ensure we're not about to send a duplicate trigger to Novu...
-		if (!docData.exists || (docData.exists && docData.data()['email-reminder'] == null) || (docData.exists && dayjs(Date()).diff(dayjs(docData.data()['email-reminder']), 'minutes') > 120)) {
+		if ((docData.exists && dayjs(Date()).diff(dayjs(docData.data()['email-reminder']), 'minutes') > 60)) {
 			const reminderTopic = `${process.env.NEXT_PUBLIC_SITE_KEY}-reminder`;
 
 			console.log("Trigger Topic: email-weekend, " + JSON.stringify(nextRace));
