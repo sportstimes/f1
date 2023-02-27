@@ -21,57 +21,36 @@ const firebaseCloudMessaging = {
 					messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_ID,
 					appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 				})
+			}
 				
-				try {
-					const messaging = getMessaging()
-					const tokenInLocalForage = await this.tokenInlocalforage()
-					//if FCM token is already there just return the token
-					if (tokenInLocalForage !== null) {
-						return tokenInLocalForage
-					}
-					//requesting notification permission from browser
-					const status = await Notification.requestPermission()
-					if (status && status === 'granted') {
-						//getting token from FCM
-						const fcm_token = await getToken(messaging,{
-							vapidKey: process.env.NEXT_PUBLIC_FIREBASE_VAPID
-						})
-						if (fcm_token) {
-							//setting FCM token in indexed db using localforage
-							localStorage.setItem('fcm_token', fcm_token)
-							//return the FCM token after saving it
-							return fcm_token
-						}
-					}
-				} catch (error) {
-					console.error(error)
-					return null
+			try {
+				const messaging = getMessaging()
+				const tokenInLocalForage = await this.tokenInlocalforage()
+				
+				// If we have the token in storage, return it.
+				if (tokenInLocalForage !== null) {
+					return tokenInLocalForage
 				}
-			} else {
-				try {
-					const tokenInLocalForage = await this.tokenInlocalforage()
-					//if FCM token is already there just return the token
-					if (tokenInLocalForage !== null) {
-						return tokenInLocalForage
+				
+				// If permission is granted, then fetch a token from FCM
+				const status = Notification.permission;
+				if (status && status === 'granted') {
+					const fcm_token = await getToken(messaging,{
+						vapidKey: process.env.NEXT_PUBLIC_FIREBASE_VAPID
+					})
+					
+					if (fcm_token) {
+						// Store the token
+						localStorage.setItem('fcm_token', fcm_token)
+						
+						// return the token
+						return fcm_token
 					}
-					const messaging = getMessaging()
-					const status = await Notification.requestPermission()
-					if (status && status === 'granted') {
-						//getting token from FCM
-						const fcm_token = await getToken(messaging,{
-							vapidKey: process.env.NEXT_PUBLIC_VAPID_KEY
-						})
-						if (fcm_token) {
-							//setting FCM token in indexed db using localforage
-							localStorage.setItem('fcm_token', fcm_token)
-							//return the FCM token after saving it
-							return fcm_token
-						}
-					}
-				} catch (error) {
-					console.error(error)
-					return null;
 				}
+			} catch (error) {
+				console.error(error)
+				alert("FCM Error " + error);
+				return null
 			}
 		}
 	},

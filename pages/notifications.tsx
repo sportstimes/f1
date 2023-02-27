@@ -136,8 +136,11 @@ function Notifications() {
 		initialize()
 	}, [])
 	
+	const delay = time => new Promise(res=>setTimeout(res,time));
+
 	const handleRequestPermission = async () => {
 		await Notification.requestPermission();
+		await delay(1000);
 		await checkNotification()
 	}
 	
