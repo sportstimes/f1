@@ -16,10 +16,6 @@ function Notifications() {
 	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, { year: currentYear }) + ' | ' + t("localization:form.title");
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
-	if(!config.supportsWebPush){
-		return <NextError statusCode={404} />
-	}
-
 	// Sessions
 	var sessions = config.sessions;
 	
@@ -217,6 +213,11 @@ function Notifications() {
 			</form>
 		</>
 	)
+	
+	
+	if(!config.supportsWebPush){
+		return <NextError statusCode={404} />
+	}
 	
 	return (
 		<Layout year={currentYear}>
