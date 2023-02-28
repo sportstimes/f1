@@ -114,7 +114,7 @@ function Notifications() {
 		}
 	}
 
-	const checkNotification = async () => {
+	const checkNotification = useCallback(async () => {
 		const status = Notification.permission;
 		setPermission(status)
 		
@@ -125,7 +125,7 @@ function Notifications() {
 				});
 			}
 		}
-	}
+	}, [getToken])
 	
 	useEffect(() => {
 		if ('permissions' in navigator) {
