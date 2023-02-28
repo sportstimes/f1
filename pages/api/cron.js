@@ -113,12 +113,13 @@ export default async (req, res) => {
 				console.log("Already sent! " + nextSession);
 			}
 		} else {
-			console.log("Not within 10 minutes of a session");
+			console.log("Not within 5 minutes of a session");
 		}
 	}
 	
 	if(firstSession.diff(Date(), 'minutes') < 60 && firstSession.diff(Date(), 'minutes') > 57){
 		// Ensure we're not about to send a duplicate trigger to Novu...
+		// Did we send an email within the last hour?
 		if (docData.exists && dayjs(Date()).diff(dayjs(docData.data()['email-reminder']), 'minutes') > 60) {
 			const reminderTopic = `${process.env.NEXT_PUBLIC_SITE_KEY}-reminder`;
 
