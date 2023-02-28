@@ -4,6 +4,7 @@ import {NextSeo} from "next-seo";
 import useTranslation from "next-translate/useTranslation";
 import Card from "../components/Card/Card";
 import {usePlausible} from "next-plausible";
+import NextError from 'next/error'
 
 import {firebaseCloudMessaging} from "../config/firebase";
 
@@ -14,6 +15,10 @@ function Notifications() {
 
 	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, { year: currentYear }) + ' | ' + t("localization:form.title");
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+
+	if(!config.supportsWebPush){
+		return <NextError statusCode={404} />
+	}
 
 	// Sessions
 	var sessions = config.sessions;
