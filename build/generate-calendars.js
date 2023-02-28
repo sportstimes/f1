@@ -33,6 +33,7 @@ function generateCalendars(siteKey){
 	let year = config.availableYears.slice(-1);
 	let rawdata = fs.readFileSync(`_db/${siteKey}/${year}.json`);
 	let data = JSON.parse(rawdata);
+	let prefix = siteKey.toUpperCase();
 	
 	// Calendar Options
 	let calendarOptions = [];
@@ -155,8 +156,10 @@ function generateCalendars(siteKey){
 						if(!config.featuredSessions[sessionKey] || (config.featuredSessions[sessionKey] && config.featuredSessions.length > 1)){
 							let sessionTitle = localizedStrings.schedule[sessionKey];
 							
-							title = `${sessionTitle} (${title})`;
+							title = `${prefix}: ${sessionTitle} (${title})`;
 							category = sessionTitle;
+						} else {
+							title = `${prefix}: ${title}`;
 						}
 						
 						// Session Length
@@ -216,7 +219,7 @@ function generateCalendars(siteKey){
 							location: race.location,
 							productId: config.url,
 							uid: "http://" + year + "." + config.url + "/#GP" + i + "_" + year + "_" + sessionKey,
-							categories: [category],
+							categories: [category, prefix],
 							start: start,
 							end: end,
 							geo: {lat: race.latitude, lon: race.longitude},
