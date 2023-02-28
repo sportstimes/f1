@@ -93,11 +93,18 @@ export default async (req, res) => {
 				
 				const sessionTopic = `${process.env.NEXT_PUBLIC_SITE_KEY}-${nextSession}`;
 				
+				var title = nextRace.name;
+				if(localizationRaces[nextRace['localeKey']]){
+					title = localizationRaces[nextRace['localeKey']];
+				}
+				
+				const body = `${localizationSchedule[nextSession]} starts shortly.`;
+				
 				await novu.trigger('pushreminder', {
 					to: [{ type: TriggerRecipientsTypeEnum.TOPIC, topicKey: sessionTopic }],
 					payload: {
-						title:nextRace.name,
-						content:`${nextSession}`
+						title:title,
+						content:body
 					},
 				});
 				
@@ -117,11 +124,16 @@ export default async (req, res) => {
 
 			console.log("Trigger Topic: email-weekend, " + JSON.stringify(nextRace));
 			
+			var title = nextRace.name;
+			if(localizationRaces[nextRace['localeKey']]){
+				title = localizationRaces[nextRace['localeKey']];
+			}
+			
 			// Is the first session within the next hour
 			// If so, send the race weekend email.
 			await novu.trigger('emailreminder', {
 				to: [{ type: TriggerRecipientsTypeEnum.TOPIC, topicKey: reminderTopic }],
-				payload: {race: nextRace},
+				payload: {title: title},
 			});
 			
 			await docRef.set({'email-reminder':Date()}, { merge: true });
