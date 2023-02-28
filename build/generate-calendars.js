@@ -33,6 +33,7 @@ function generateCalendars(siteKey){
 	let year = config.availableYears.slice(-1);
 	let rawdata = fs.readFileSync(`_db/${siteKey}/${year}.json`);
 	let data = JSON.parse(rawdata);
+	let prefix = siteKey.toUpperCase();
 	
 	// Calendar Options
 	let calendarOptions = [];
@@ -144,8 +145,10 @@ function generateCalendars(siteKey){
 						if(!sessionArray.includes(sessionMap[sessionKey])) continue;
 						
 						let title = race.name;
+						let description = race.name;
 						if (localizedStrings.races[race.localeKey]) {
 							title = localizedStrings.races[race.localeKey];
+							description = localizedStrings.races[race.localeKey];
 						}
 	
 						let category = "Grand Prix";
@@ -154,9 +157,10 @@ function generateCalendars(siteKey){
 						// Or if there are multiple featured sessions then add the session name in front (sprint, feature etc)...
 						if(!config.featuredSessions[sessionKey] || (config.featuredSessions[sessionKey] && config.featuredSessions.length > 1)){
 							let sessionTitle = localizedStrings.schedule[sessionKey];
-							
-							title = `${sessionTitle} (${title})`;
+							title = `${prefix}: ${sessionTitle}`;
 							category = sessionTitle;
+						} else {
+							title = `${prefix}: ${title}`;
 						}
 						
 						// Session Length
@@ -213,10 +217,11 @@ function generateCalendars(siteKey){
 	
 						let event = {
 							title: title,
+							description: description,
 							location: race.location,
 							productId: config.url,
 							uid: "http://" + year + "." + config.url + "/#GP" + i + "_" + year + "_" + sessionKey,
-							categories: [category],
+							categories: [category, prefix],
 							start: start,
 							end: end,
 							geo: {lat: race.latitude, lon: race.longitude},
