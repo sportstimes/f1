@@ -1,6 +1,7 @@
 import Link from "next/link"
 import useTranslation from "next-translate/useTranslation"
 import F1Logo from "../Logo/Logos/F1Logo"
+import F1AcademyLogo from "../Logo/Logos/F1AcademyLogo"
 import F2Logo from "../Logo/Logos/F2Logo"
 import F3Logo from "../Logo/Logos/F3Logo"
 import FELogo from "../Logo/Logos/FELogo"
@@ -29,6 +30,8 @@ export default function Logo() {
 			return (<MotoGPLogo />);
 		case "indycar":
 			return (<IndyCarLogo />);
+		case "f1academy":
+			return (<F1AcademyLogo />);
 		default:
 			return <div></div>;
 	}

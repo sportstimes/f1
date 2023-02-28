@@ -1,0 +1,22 @@
+{
+	"races": [
+		{
+			"name": "Spielberg",
+			"location": "Austria",
+			"latitude": 0,
+			"longitude": 0,
+			"round": 1,
+			"slug": "spielberg",
+			"localeKey": "spielberg",
+			"sessions": {
+				"fp1": "2023-03-03T11:30:00Z",
+				"fp2": "2023-03-03T15:00:00Z",
+				"q1": "2023-03-04T11:30:00Z",
+				"q2": "2023-03-04T11:30:00Z",
+				"race1": "2023-03-04T15:00:00Z",
+				"race2": "2023-03-04T15:00:00Z",
+				"race3": "2023-03-04T15:00:00Z"
+			}
+		}
+	]
+}
