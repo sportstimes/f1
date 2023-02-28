@@ -51,7 +51,9 @@ function Subscribe() {
 						onSubmit={async event => {
 							event.preventDefault();
 							
-							if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(event.target.EMAIL.value)){
+							var emailRegex = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
+
+							if (!emailRegex.test(event.target.EMAIL.value)){
 								alert("You have entered an invalid email address!")
 								return;
 							}
