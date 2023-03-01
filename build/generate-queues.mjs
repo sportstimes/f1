@@ -83,7 +83,7 @@ async function generateQueue(siteKey){
 					body = localizedStrings['schedule'][session];
 				}
 				
-				body = `${body} will start soon!`;
+				body = `${body} will start soon! 🏎️`;
 				
 				const scheduledAt = dayjs(race.sessions[session]).subtract(5, 'minutes');
 
@@ -95,6 +95,14 @@ async function generateQueue(siteKey){
 					body: body,
 					type: 'push',
 					topic: `${siteKey}-${session}`
+				})
+				
+				const ref2 = `${scheduledAt.unix()}-${race.slug}-${session}-buffer`;
+				const tweet = `${title}: ${body} https://f1calendar.com`;
+				await collectionRef.doc(ref2).set({
+					scheduledAt: scheduledAt.toDate(),
+					title: tweet,
+					type: 'buffer'
 				})
 			}
 		}
