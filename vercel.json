@@ -23,5 +23,11 @@
 				"value": "no-cache"
 			}]
 		}
+	],
+	"crons": [
+		{
+		  "path": "/api/cron",
+		  "schedule": "* * * * *"
+		}
 	]
 }
