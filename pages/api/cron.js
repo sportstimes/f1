@@ -20,6 +20,7 @@ export default async (req, res) => {
 	const docRef = db.collection(process.env.NEXT_PUBLIC_SITE_KEY).where('scheduledAt', '<', new Date())
 	const docSnapshot = await docRef.get()
 	
+	
 	if (docSnapshot.empty) {
 		console.log("Nothing to send");
 		res.json({ success: true, message: "Nothing to send!" })
@@ -54,8 +55,19 @@ export default async (req, res) => {
 		
 			// Remove the document so we don't send it again!	
 			await item.ref.delete();
+		} else if(scheduledItem.type == "buffer"){
+			const response = await fetch(`https://api.bufferapp.com/1/updates/create.json?access_token=${encodeURI(process.env.NEXT_PUBLIC_BUFFER_TOKEN)}`, {
+			  method: 'POST',
+			  headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			  body: `text=${encodeURIComponent(scheduledItem.title)}&profile_ids[]=619c7b8130121400e3079bf2`,
+			});
+			const data = await response.json();
+			
+			// Remove the document so we don't send it again!	
+			await item.ref.delete();
 		}
 	}
 	
 	res.json({ success: true })
 }
+
