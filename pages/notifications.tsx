@@ -223,7 +223,7 @@ function Notifications() {
 		<Layout year={currentYear}>
 			<NextSeo title={title} />
 			<h3 className="text-xl mb-4">
-				{t("localization:notifications.title")}
+				{t("localization:notifications.title")} (Beta)
 			</h3>
 			<Card>
 				{permission === "denied" && renderDeniedNotificationBlock()}
