@@ -39,11 +39,6 @@
       "name": "MotoGP",
       "url": "https://motogpcal.com",
       "siteKey": "motogp"
-    },
-    {
-      "name": "F1 Academy",
-      "url": "https://f1academycalendar.com",
-      "siteKey": "f1academy"
     }
   ]
 }
