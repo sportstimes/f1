@@ -15,7 +15,6 @@ async function generateQueue(siteKey){
 		appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 	})
 	
-	
 	// Where we store the dates of the last send, used to protect against sending extra notifications etc.
 	const db = firebase.firestore();
 	const collectionRef = db.collection(siteKey)
