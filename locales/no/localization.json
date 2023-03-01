@@ -219,5 +219,15 @@
     "notice": {
         "text": "tekst",
         "link": "lenke"
+    },
+    "f1academy": {
+        "title": "F1 Academy Calendar",
+        "subtitle": "Races, Qualifying & Practice Sessions",
+        "seo": {
+            "title": "F1 Academy Calendar {{year}} - Formula One Race Times and Dates",
+            "description": "Formula One Academy Calendar for {{year}} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+            "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+        },
+        "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }
 }
