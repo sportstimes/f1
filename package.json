@@ -11,7 +11,8 @@
 		"build": "next build",
 		"start": "next start",
 		"setPublicAssets": "node build/public-assets.js",
-		"generateCalendars": "node build/generate-calendars.js"
+		"generateCalendars": "node build/generate-calendars.js",
+		"generateQueues": "node build/generate-queues.mjs"
 	},
 	"repository": {
 		"type": "git",
