@@ -18,7 +18,7 @@ module.exports = (phase) => {
   const withPWA = require('next-pwa')({
     // disable: !isProd,
     dest: 'public',
-    skipWaiting: false,
+    skipWaiting: true,
     register: true,
     importScripts: ['firebase-messaging-sw.js']
   })
