@@ -92,11 +92,10 @@ function Notifications() {
 				
 				await getSubscriptions();
 			} else {
-				alert("No token?!?");
+				console.log("No token?!?");
 			}
 		} catch (error) {
 		  console.log("err1:" +error)
-		  alert("err1: " + error);
 		}
 	}
 	

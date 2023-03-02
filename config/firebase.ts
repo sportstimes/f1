@@ -49,7 +49,6 @@ const firebaseCloudMessaging = {
 				}
 			} catch (error) {
 				console.error(error)
-				alert("FCM Error " + error);
 				return null
 			}
 		}
@@ -62,7 +61,7 @@ const firebaseCloudMessaging = {
 					console.log("Message Received", payload)
 				} )
 
-			}catch (error) {
+			} catch (error) {
 
 			}
 		}
