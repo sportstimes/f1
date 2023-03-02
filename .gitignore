@@ -62,7 +62,7 @@ jspm_packages
 /public/safari-pinned-tab.svg
 /public/share.png
 /public/site.webmanifest
-
+/public/email-header.png
 .vscode
 
 **/public/precache.*.*.js
