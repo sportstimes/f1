@@ -1,22 +1,17 @@
 import dayjs from "dayjs";
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore';
+import admin from 'firebase-admin';
 import { Novu } from '@novu/node';
 import { TriggerRecipientsTypeEnum } from '@novu/shared';
 
 export default async (req, res) => {
-	// Initialize Firebase
-	firebase.initializeApp({
-		apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-		authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-		projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-		storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-		messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_ID,
-		appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
-	})
+	if (!admin.apps.length) {
+	  admin.initializeApp({
+		credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_CREDENTIALS))
+	  })
+	}
+	const db = admin.firestore()
 	
 	// Grab any documents which have a scheduledAt date in the past, which means we should send them...
-	const db = firebase.firestore();
 	const docRef = db.collection(process.env.NEXT_PUBLIC_SITE_KEY).where('scheduledAt', '<', new Date())
 	const docSnapshot = await docRef.get()
 	
