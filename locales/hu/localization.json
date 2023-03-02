@@ -99,7 +99,8 @@
             "openSourcedOn": "Nyílt forráskód a",
             "spottedIssue": "Hibát találtál?",
             "spottedReport": "Jelentsd be"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Naptár generálása",

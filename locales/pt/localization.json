@@ -98,7 +98,8 @@
 			"openSourcedOn": "Código aberto em",
 			"spottedIssue": "Encontrou um erro?",
 			"spottedReport": "Reporte"
-		}
+		},
+		"homescreen":"Add to your Home Screen and get an App like experience."
 	},
 	"form": {
 		"title": "Gerar Calendário",

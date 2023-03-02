@@ -99,7 +99,8 @@
             "openSourcedOn": "Otvorenog koda na",
             "spottedIssue": "Primjetili ste grešku?",
             "spottedReport": "Prijavite"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Napravi kalendar",

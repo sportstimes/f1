@@ -99,7 +99,8 @@
             "openSourcedOn": "Zdrojový kód na",
             "spottedIssue": "Našli jste chybu?",
             "spottedReport": "Nahlašte"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Generovat Kalendář",

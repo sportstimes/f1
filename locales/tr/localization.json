@@ -99,7 +99,8 @@
             "openSourcedOn": "Kaynak kodumuz için",
             "spottedIssue": "Sorun mu gördünüz?",
             "spottedReport": "Bildirin"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Takvim oluşturun",

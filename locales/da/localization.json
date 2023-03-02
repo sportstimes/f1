@@ -99,7 +99,8 @@
             "openSourcedOn": "Open Source på",
             "spottedIssue": "Fandt du et problem?",
             "spottedReport": "Rapportér"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Generér kalender",

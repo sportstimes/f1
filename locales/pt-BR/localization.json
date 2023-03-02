@@ -99,7 +99,8 @@
             "openSourcedOn": "Código aberto no",
             "spottedIssue": "Detectou um problema?",
             "spottedReport": "Reporte"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Criar Calendário",

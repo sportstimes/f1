@@ -99,7 +99,8 @@
             "openSourcedOn": "Odprta koda na",
             "spottedIssue": "Opaziš napako?",
             "spottedReport": "Prijavi"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Generiraj koledar",

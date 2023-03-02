@@ -98,7 +98,8 @@
 			"openSourcedOn": "Open Sourced on",
 			"spottedIssue": "Spotted an issue?",
 			"spottedReport": "Report"
-		}
+		},
+		"homescreen":"Add to your Home Screen and get an App like experience."
 	},
 	"form": {
 		"title": "Napravite kalendar",

@@ -94,7 +94,8 @@
             "openSourcedOn": "Sursă deschisă pe",
             "spottedIssue": "Ai întâmpinat o problemă?",
             "spottedReport": "Raportează"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Generează calendar",

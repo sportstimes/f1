@@ -99,7 +99,8 @@
             "openSourcedOn": "Logiciel libre sur",
             "spottedIssue": "Vous avez trouvé une erreur ?",
             "spottedReport": "Dites-le nous."
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Génerer un calendrier",

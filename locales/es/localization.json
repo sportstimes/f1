@@ -99,7 +99,8 @@
             "openSourcedOn": "Código abierto en",
             "spottedIssue": "¿Encontraste un error?",
             "spottedReport": "Reportar"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Generar Calendario",

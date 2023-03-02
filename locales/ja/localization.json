@@ -98,7 +98,8 @@
 			"openSourcedOn": "ソース公開中",
 			"spottedIssue": "問題を見つけたら",
 			"spottedReport": "報告"
-		}
+		},
+		"homescreen":"Add to your Home Screen and get an App like experience."
 	},
 	"form": {
 		"title": "カレンダー生成",

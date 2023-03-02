@@ -99,7 +99,8 @@
             "openSourcedOn": "Quellcode auf",
             "spottedIssue": "Einen Fehler gefunden?",
             "spottedReport": "Hier melden"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Kalender generieren",

@@ -98,7 +98,8 @@
             "openSourcedOn": "Sumber Terbuka di",
             "spottedIssue": "Menemukan masalah?",
             "spottedReport": "Laporkan"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Buat Kalendar",

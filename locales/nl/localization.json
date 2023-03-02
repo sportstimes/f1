@@ -99,7 +99,8 @@
             "openSourcedOn": "Open Source op",
             "spottedIssue": "Een probleem gevonden?",
             "spottedReport": "Rapporteer"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Genereer agenda",

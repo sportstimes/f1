@@ -98,7 +98,8 @@
             "openSourcedOn": "在...上開源",
             "spottedIssue": "發現問題？",
             "spottedReport": "向我們報告"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "生成日曆",

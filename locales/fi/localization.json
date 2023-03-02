@@ -99,7 +99,8 @@
             "openSourcedOn": "Avoin lähdekoodi",
             "spottedIssue": "Ongelmia?",
             "spottedReport": "Raportoi"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Luo kalenteri",

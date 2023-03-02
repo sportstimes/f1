@@ -6,6 +6,8 @@ import {usePlausible} from "next-plausible";
 import type { I18n } from 'next-translate'
 import EmailIcon from '../Icons/EmailIcon'
 
+const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+
 interface Props {
 	i18n: I18n;
 }
@@ -24,7 +26,7 @@ class Footer extends React.Component<Props> {
 		var iOS = /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
 		var prompt = window.localStorage.a2hs_message;
 			
-		if (iOS && !standalone && !prompt) {
+		if (iOS && !standalone && !prompt && config.supportsWebPush) {
 			this.setState({ showHomeScreenPrompt: true })
 		}
 	}
@@ -192,7 +194,7 @@ class Footer extends React.Component<Props> {
 								<div class="sm:flex sm:items-start">
 							  	<div class="mt-2 text-center sm:mt-0 sm:text-left">
 									<div class="mt-2">
-								  	<p class="text-sm text-gray-500 mb-4">Install F1 Calendar on your device: tap share and &quot;Add to Home Screen&quot;.</p>
+								  	<p class="text-sm text-gray-500 mb-4">{t(`localization:footer.homescreen`)}</p>
 									</div>
 							  	</div>
 								</div>

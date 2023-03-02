@@ -99,7 +99,8 @@
             "openSourcedOn": "Открыть исходный код на",
             "spottedIssue": "Обнаружили проблему?",
             "spottedReport": "Создать отчет"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Создать календарь",
