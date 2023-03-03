@@ -37,10 +37,6 @@ jobs:
       - name: Site Selection
         run: |
           echo "${{ env.SITE }}"
-      
-      - name: Key
-        run: |
-          echo "${{ env.FIREBASE_CREDENTIALS }}"
           
       - name: Cache node modules
         uses: actions/cache@v2
@@ -64,7 +60,11 @@ jobs:
         run: |
           touch .env
           echo FIREBASE_CREDENTIALS=${{ secrets.FIREBASE_CREDENTIALS }} >> .env
+        env:
+          FIREBASE_CREDENTIALS: ${{ secrets.FIREBASE_CREDENTIALS }}
           
       - name: Generate Specific Queues
         run: |
           sudo node build/generate-queues.mjs ${{env.SITE}}
+        env:
+          FIREBASE_CREDENTIALS: ${{ secrets.FIREBASE_CREDENTIALS }}
