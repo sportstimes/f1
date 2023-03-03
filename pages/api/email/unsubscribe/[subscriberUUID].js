@@ -29,8 +29,6 @@ export default async (req, res) => {
 		subscribers: [subscriberUUID]
 	  }),
 	});
-	
-	const data = await response.json();
 		
 	return res.status(200).json({success:true});
 }
