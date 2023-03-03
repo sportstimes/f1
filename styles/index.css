@@ -1,12 +1,5 @@
 @tailwind components;
 
-@font-face {
-	font-family: "LeagueSpartan";
-	src: url("/fonts/leaguespartan-bold-webfont.woff2") format("woff2"),
-		url("/fonts/leaguespartan-bold-webfont.woff") format("woff");
-	font-display: swap;
-}
-
 body {
 	margin: 0;
 	font-size: 14px;
@@ -42,27 +35,27 @@ body {
 	}
 
 	h6 {
-		@apply text-base font-bold font-title text-white;
+		@apply text-base font-bold font-league-spartan font-bold text-white;
 	}
 
 	h5 {
-		@apply text-lg font-bold font-title text-white;
+		@apply text-lg font-bold font-league-spartan font-bold text-white;
 	}
 
 	h4 {
-		@apply text-xl font-bold font-title text-white;
+		@apply text-xl font-bold font-league-spartan font-bold text-white;
 	}
 
 	h3 {
-		@apply text-2xl font-bold font-title text-white uppercase;
+		@apply text-2xl font-bold font-league-spartan font-bold text-white uppercase;
 	}
 
 	h2 {
-		@apply text-3xl font-bold tracking-normal font-title text-white uppercase;
+		@apply text-3xl font-bold tracking-normal font-league-spartan font-bold text-white uppercase;
 	}
 
 	h1 {
-		@apply text-4xl font-bold tracking-normal font-title text-white uppercase;
+		@apply text-4xl font-bold tracking-normal font-league-spartan font-extrabold text-white uppercase;
 	}
 
 	.btn {

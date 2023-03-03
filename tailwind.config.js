@@ -10,10 +10,13 @@ module.exports = {
 			},
 			fontSize: {
 				'xxs': '.65rem',
-			}
+			},
+			fontFamily: {
+				'league-spartan': ['"League Spartan"', 'sans-serif'],
+			},
 		},
 		fontFamily: {
-			title: ["LeagueSpartan"]
+			title: ["League Spartan"]
 		}
 	},
 	plugins: [require("@tailwindcss/forms"), require('@tailwindcss/typography')]
