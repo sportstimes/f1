@@ -6,7 +6,7 @@ import { TriggerRecipientsTypeEnum } from '@novu/shared';
 export default async (req, res) => {
 	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
-	if(!config.supportsWebPush && config.supportsEmailReminders){
+	if(!config.supportsWebPush && !config.supportsEmailReminders){
 		res.json({ success: true, message: "Doesn't support web push or email." })
 	}
 	
