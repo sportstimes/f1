@@ -7,10 +7,9 @@ async function generateQueue(siteKey){
 	console.log('Generating queue! ' + siteKey);
 	
 	if (!admin.apps.length) {
+		console.log('Generating queue! ' + process.env.FIREBASE_CREDENTIALS);
+	  
 	  admin.initializeApp({
-		  console.log('Generating queue! ' + process.env.FIREBASE_CREDENTIALS);
-			  
-		  
 		credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_CREDENTIALS))
 	  })
 	}
