@@ -7,7 +7,7 @@ async function generateQueue(siteKey){
 	console.log('Generating queue! ' + siteKey);
 	
 	if (!admin.apps.length) {
-		if(import.meta.env.VITE_INTERNAL){
+		if(import.meta.env.FIREBASE_CREDENTIALS){
 			admin.initializeApp({
 				credential: admin.credential.cert(JSON.parse(import.meta.env.FIREBASE_CREDENTIALS))
 			})
