@@ -23,5 +23,5 @@
 		"gp":120
 	},
 	"supportsEmailReminders": true,
-	"supportsWebPush": false
+	"supportsWebPush": true
 }
