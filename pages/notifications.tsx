@@ -66,6 +66,8 @@ function Notifications() {
 			...form,
 			saved: true,
 		});
+		
+		plausible("Saved Notification Settings");
 	};
 
 	const [permission, setPermission] = useState<"denied" | "default" | "granted">("denied")
@@ -144,6 +146,8 @@ function Notifications() {
 	const delay = time => new Promise(res=>setTimeout(res,time));
 
 	const handleRequestPermission = async () => {
+		plausible("Enabled Notifications");
+		
 		await Notification.requestPermission();
 		checkNotification()
 	}
