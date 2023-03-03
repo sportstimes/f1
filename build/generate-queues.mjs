@@ -7,11 +7,15 @@ async function generateQueue(siteKey){
 	console.log('Generating queue! ' + siteKey);
 	
 	if (!admin.apps.length) {
-		console.log('Generating queue! ' + process.env.FIREBASE_CREDENTIALS);
-	  
-	  admin.initializeApp({
-		credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_CREDENTIALS))
-	  })
+		if(import.meta.env.VITE_INTERNAL){
+			admin.initializeApp({
+				credential: admin.credential.cert(JSON.parse(import.meta.env.FIREBASE_CREDENTIALS))
+			})
+		} else {
+			admin.initializeApp({
+				credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_CREDENTIALS))
+			})
+		}
 	}
 	const db = admin.firestore()
 	const collectionRef = db.collection(siteKey)
