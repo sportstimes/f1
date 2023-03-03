@@ -30,7 +30,7 @@ export default function Logo() {
 			return (<MotoGPLogo />);
 		case "indycar":
 			return (<IndyCarLogo />);
-		case "f1academy":
+		case "f1-academy":
 			return (<F1AcademyLogo />);
 		default:
 			return <div></div>;

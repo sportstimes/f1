@@ -2,7 +2,7 @@
 	"siteKey": "indycar",
 	"url": "indycarcalendar.com",
 	"calendarCDN": "files-indycar.motorsportcalendars.com",
-	"availableYears": [2021, 2022],
+	"availableYears": [2021, 2022, 2023],
 	"sessions": ["practice1", "practice2", "practice3", "qualifying", "warmup", "race"],
 	"featuredSessions": ["race"],
 	"collapsedSessions": ["practice1", "practice2", "practice3", "qualifying"],
@@ -23,5 +23,5 @@
 		"race": 57
 	},
 	"supportsEmailReminders": false,
-	"notice": "All Dates & Times are TBC. Shown times are placeholder. Calendar will be updated once details are confirmed."
+	"notice": "Most sessions are still TBC. Calendar will be updated as details are confirmed."
 }
