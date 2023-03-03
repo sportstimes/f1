@@ -8,7 +8,13 @@ export default async (req, res) => {
 		});
 	}
 	
-	const config = await import(`../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)  
+	const config = await import(`../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`) 
+	if(!config.supportsEmailReminders){
+		return res.status(400).json({
+			success: false,
+			message: "Site doesn't support email reminders."
+		});
+	}
 	
 	let subscriberUUID = req.query.subscriberUUID;
 	let topic = `${process.env.NEXT_PUBLIC_SITE_KEY}-reminder`;
@@ -23,8 +29,6 @@ export default async (req, res) => {
 		subscribers: [subscriberUUID]
 	  }),
 	});
-	
-	const data = await response.json();
 		
 	return res.status(200).json({success:true});
 }
