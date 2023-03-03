@@ -15,6 +15,7 @@ on:
         - motogp
         - wseries
         - extremee
+        - f1-academy
   workflow_call:
     inputs:
       site:
