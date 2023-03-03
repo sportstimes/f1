@@ -22,6 +22,6 @@
 		"sprint":60,
 		"gp":120
 	},
-	"supportsEmailReminders": true,
-	"supportsWebPush": true
+	"supportsEmailReminders": false,
+	"supportsWebPush": false
 }
