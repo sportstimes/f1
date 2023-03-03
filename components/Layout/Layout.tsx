@@ -13,6 +13,7 @@ type Props = PropsWithChildren<{
 
 const Layout: FunctionComponent<Props> = ({ showCTABar, children, year }: Props) => {
 	const { t, lang } = useTranslation();
+	const title = t(`localization:` + process.env.NEXT_PUBLIC_SITE_KEY + `.title`);
 
 	return (
 		<>
@@ -47,6 +48,12 @@ const Layout: FunctionComponent<Props> = ({ showCTABar, children, year }: Props)
 				
 				<meta name="msapplication-TileColor" content="#000000" />
 				<meta name="theme-color" content="#03120f" />
+				
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+				<meta name="apple-mobile-web-app-title" content={title} />
+				<meta name="format-detection" content="telephone=no" />
+				<meta name="mobile-web-app-capable" content="yes" />
 
 				{process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION && (
 					<meta

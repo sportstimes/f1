@@ -11,7 +11,7 @@ const Custom404 = () => {
 		<Layout showCTABar={false} year={Number(currentYear)} >
 			<h3 className="text-xl mb-4">404</h3>
 			<Card>
-				<p>*waves red flags* We couldn't find that page!</p>
+				<p>*waves red flags* We couldn&apos;t find that page!</p>
 			</Card>
 		</Layout>
 	);

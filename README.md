@@ -2,7 +2,11 @@
     <a href="https://f1calendar.com"><img src="https://f1calendar.com/share.png" width="600" alt="F1 Calendar" /></a>
 </p>
 
-_The second edition of [f1calendar.com](https://f1calendar.com)_
+Codebase that powers the fan run & built [F1Calendar.com](https://f1calendar.com) along with its various offshoots. Includes support for email reminders & now Web Push Notifications.
+
+Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajhiggs](https://twitter.com/aajhiggs) and [@si](https://twitter.com/si).
+
+Graciously hosted by [Vercel](https://vercel.com/?utm_source=sportstimes).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-46-orange.svg?style=flat-square)](#contributors-)
@@ -24,8 +28,6 @@ npm run dev
 If there is a language you'd like to see F1 Calendar localized to but we haven't got around to it yet, and you have some spare time, head on over to our new localization project [here](https://poeditor.com/join/project?hash=JrDs3Vfc92).
 
 ## Contributors ✨
-
-Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajhiggs](https://twitter.com/aajhiggs) and [@si](https://twitter.com/si).
 
 Thanks goes to these wonderful people who have also contributed. ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 

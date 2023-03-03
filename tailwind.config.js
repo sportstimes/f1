@@ -1,6 +1,5 @@
 module.exports = {
-	purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
-	darkMode: "media",
+	content: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
 			colors: {
@@ -15,11 +14,6 @@ module.exports = {
 		},
 		fontFamily: {
 			title: ["LeagueSpartan"]
-		}
-	},
-	variants: {
-		extend: {
-			backgroundColor: ["checked"]
 		}
 	},
 	plugins: [require("@tailwindcss/forms"), require('@tailwindcss/typography')]

@@ -93,7 +93,7 @@ const Races: FunctionComponent<Props> = ({ year, races }: Props) => {
 								{title}
 							</th>
 							{config.featuredSessions.map((item:string, index:number) => {
-								return <th scope="col"></th>;
+								return <th scope="col" key={`${item}-col`}></th>;
 							})}
 						</tr>
 					</thead>
@@ -135,7 +135,7 @@ const Races: FunctionComponent<Props> = ({ year, races }: Props) => {
 					};
 					
 					return (
-						<Race {...race} />
+						<Race {...race} key={`${item.slug}-race`} />
 					);
 				})}
 			</table>

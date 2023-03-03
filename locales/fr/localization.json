@@ -77,7 +77,7 @@
         "timezonePicker": {
             "detect": "Detect",
             "showing": "Montrer les horaires pour",
-            "pick": "Choisissez un fuseau horaire..."
+            "pick": "Choisissez un fuseau horaire"
         },
         "formatPicker": {
             "title": "Format de l'heure",
@@ -99,7 +99,8 @@
             "openSourcedOn": "Logiciel libre sur",
             "spottedIssue": "Vous avez trouvé une erreur ?",
             "spottedReport": "Dites-le nous."
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Génerer un calendrier",
@@ -128,6 +129,18 @@
         "description": "Recevez un e-mail de rappel avant chaque week-end de Grand Prix.",
         "label": "Adresse e-mail",
         "button": "S'abonner"
+    },
+    "notifications": {
+        "title": "Notifications",
+        "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
+        "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
+        "button": "Save",
+        "buttonSubmitted": "Saved",
+        "permissions": {
+            "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
+            "button": "Allow Notifications",
+            "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+        }
     },
     "timezones": {
         "title": "Sélectionnez un fuseau horaire..."

@@ -167,6 +167,7 @@ function Generate() {
 							<a
 								href="https://support.google.com/calendar/answer/37100"
 								target="_blank"
+								rel="noreferrer"
 								className="text-green-100"
 							>
 								{t("localization:download.gcalDescriptionLink")}
@@ -219,7 +220,7 @@ function Generate() {
 							<fieldset className="mb-6" key="options">
 								{sessions.map((item, index) => {
 									return (
-										<div className="mb-4">
+										<div className="mb-4" key={item}>
 											<input
 												type="checkbox"
 												className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
@@ -269,6 +270,7 @@ function Generate() {
 									<select
 										name="mins"
 										id="alarm-mins"
+										defaultValue="30"
 										className="mx-2 text-gray-900 pl-3 pr-10 py-0 text-base
 									border-gray-300 focus:outline-none focus:ring-indigo-500
 									focus:border-indigo-500 sm:text-sm rounded-md"
@@ -280,9 +282,7 @@ function Generate() {
 										}
 									>
 										<option value="0">0</option>
-										<option selected="selected" value="30">
-											30
-										</option>
+										<option value="30">30</option>
 										<option value="60">60</option>
 										<option value="90">90</option>
 										<option value="120">120</option>

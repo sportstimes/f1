@@ -75,7 +75,7 @@
         "email": "Terima pengingat email",
         "timezonePicker": {
             "showing": "Menampilkan waktu untuk",
-            "pick": "Pilih zona waktu...",
+            "pick": "Pilih zona waktu",
             "detect": "Deteksi"
         },
         "formatPicker": {
@@ -98,7 +98,8 @@
             "openSourcedOn": "Sumber Terbuka di",
             "spottedIssue": "Menemukan masalah?",
             "spottedReport": "Laporkan"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "Buat Kalendar",
@@ -128,6 +129,18 @@
         "description": "Terima email pengingat sebelum setiap akhir pekan balapan.",
         "label": "Alamat email",
         "button": "Berlangganan"
+    },
+    "notifications": {
+        "title": "Notifications",
+        "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
+        "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
+        "button": "Save",
+        "buttonSubmitted": "Saved",
+        "permissions": {
+            "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
+            "button": "Allow Notifications",
+            "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+        }
     },
     "timezones": {
         "title": "Pilih zona waktu..."

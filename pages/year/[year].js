@@ -1,4 +1,5 @@
 import FullWidthLayout from "components/Layout/FullWidthLayout";
+import Layout from "components/Layout/Layout";
 import Races from "components/Races/Races";
 import {NextSeo} from "next-seo";
 import useTranslation from "next-translate/useTranslation";

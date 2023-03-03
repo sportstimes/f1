@@ -1,5 +1,5 @@
 const withPWA = require("next-pwa")
-const nextTranslate = require('next-translate')
+const nextTranslate = require('next-translate-plugin')
 
 const {
   PHASE_DEVELOPMENT_SERVER,
@@ -16,10 +16,11 @@ module.exports = (phase) => {
   require('./build/public-assets');
   
   const withPWA = require('next-pwa')({
-    disable: !isProd,
-    dest: "public",
-    publicExcludes: ['!download/*', '!download/**/*'],
-    buildExcludes: ['!download/*', '!download/**/*'],
+    // disable: !isProd,
+    dest: 'public',
+    skipWaiting: true,
+    register: true,
+    importScripts: ['firebase-messaging-sw.js']
   })
   
   return withPWA(nextTranslate({
@@ -38,15 +39,6 @@ module.exports = (phase) => {
     redirects: async function redirects() {
       const rules = [];
       
-      if(process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"){
-        rules.push(
-            {
-              source: "/*",
-              destination: "/maintenance",
-              permanent: false,
-            }
-        );
-      }
       
       // Handle 2022 adjustment to separate sprint races out as a separate session.
       // This allows users who generated a url prior to 2022 to get sprint sessions

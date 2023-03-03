@@ -1,0 +1,68 @@
+name: Generate Email/Push Queues
+
+on:
+  workflow_dispatch:
+    inputs:
+      site:
+        type: choice
+        description: Which site?
+        options:
+        - f1
+        - f2
+        - f3
+        - fe
+        - indycar
+        - motogp
+        - wseries
+        - extremee
+  workflow_call:
+    inputs:
+      site:
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    env:
+      SITE: ${{ github.event.inputs.site || inputs.site }}
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+  
+      - name: Site Selection
+        run: |
+          echo "${{ env.SITE }}"
+          
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          # npm cache files are stored in `~/.npm` on Linux/macOS
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+    
+      - name: Install Dependencies
+        run: |
+          npm i firebase
+          npm i dayjs
+          
+      - name: Generate Specific Queues
+        run: |
+          sudo node build/generate-queues.mjs ${{env.SITE}}
+        env:
+        NEXT_PUBLIC_FIREBASE_API_KEY: ${{ secrets.NEXT_PUBLIC_FIREBASE_API_KEY }}
+        NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{ secrets.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN }}
+        NEXT_PUBLIC_FIREBASE_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_PROJECT_ID }}
+        NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: ${{ secrets.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET }}
+        NEXT_PUBLIC_FIREBASE_MESSAGING_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_MESSAGING_ID }}
+        NEXT_PUBLIC_FIREBASE_APP_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_APP_ID }}

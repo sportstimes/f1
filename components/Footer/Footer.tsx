@@ -4,6 +4,9 @@ import LanguageSelector from "../../components/LanguageSelector/LanguageSelector
 import SiteSelector from "../../components/SiteSelector/SiteSelector";
 import {usePlausible} from "next-plausible";
 import type { I18n } from 'next-translate'
+import EmailIcon from '../Icons/EmailIcon'
+
+const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 interface Props {
 	i18n: I18n;
@@ -11,16 +14,36 @@ interface Props {
 
 class Footer extends React.Component<Props> {
 	
-	// TODO: Shift Icons to Components
-	// TODO: Tidy up
+	constructor(props) {
+		super(props);
+		this.state = {
+		  showHomeScreenPrompt: false
+		};
+	}
+	
+	componentDidMount() {
+		var standalone = "standalone" in window.navigator && window.navigator.standalone;
+		var iOS = /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+		var prompt = window.localStorage.a2hs_message;
+			
+		if (iOS && !standalone && !prompt && config.supportsWebPush) {
+			this.setState({ showHomeScreenPrompt: true })
+		}
+	}
+	
+	dismissPrompt = () => {
+		localStorage.setItem("a2hs_message", true);
+		this.setState({ showHomeScreenPrompt: false })
+	};
 	
 	render() {
 		const { t, lang } = this.props.i18n
 		
 		return (
 			<>
-				<footer className="mt-2 md:mt-6">
-					<div className="max-w-7xl mx-auto py-6 md:py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+				<footer className="max-w-screen-lg mx-auto mt-2 md:mt-10 px-0 sm:px-2">
+					
+					<div className="max-w-7xl mx-auto overflow-hidden md:hidden">
 						<div className="mt-1 mb-6 flex justify-center space-x-6">
 							<LanguageSelector />
 						</div>
@@ -28,12 +51,45 @@ class Footer extends React.Component<Props> {
 						<div className="mt-1 mb-6 flex justify-center space-x-6">
 							<SiteSelector />
 						</div>
-		
-						<p className="mb-10 text-center text-base text-gray-400">
-							{ t('localization:footer.links.spottedIssue') } <a href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue..." className="text-gray-300">{ t('localization:footer.links.spottedReport') }	</a>
-						</p>
+					</div>
+					
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 px-2 text-center md:text-left">
+						<div>
+							<p className="text-base text-gray-400 mb-2">
+								&copy; {new Date().getFullYear()}{" "}
+								<a
+									href="https://andydev.co.uk"
+									rel="author developer"
+									className="text-gray-300"
+								>
+									Andrew Yates
+								</a>
+								,&nbsp;
+								<a
+									href="https://andyhiggs.uk/"
+									rel="author designer"
+									className="text-gray-300"
+								>
+									Andy Higgs
+								</a>
+								,&nbsp;
+								<a
+									href="https://sijobling.com"
+									rel="author developer"
+									className="text-gray-300"
+								>
+									Si Jobling
+								</a>{" "}
+							</p>
+							
+							<p className="text-base text-gray-400 text-xs px-2 md:px-0">
+								{t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.footnote`)}
+							</p>
+							
+						</div>
 						
-						<div className="mb-8 flex justify-center space-x-6">
+						
+						<div className="flex justify-center md:justify-end space-x-6 pt-2">
 							<a
 								href="https://twitter.com/f1cal"
 								className="text-gray-400 hover:text-gray-500"
@@ -83,39 +139,20 @@ class Footer extends React.Component<Props> {
 									/>
 								</svg>
 							</a>
+							
+							<a href="https://www.andydev.co.uk/contact" className="text-gray-400 hover:text-gray-500">
+								<span className="sr-only">Email</span>
+								<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6"
+								fill="currentColor" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+							</a>
+							
+							
 						</div>
-		
-						<p className="mt-8 text-center text-base text-gray-400">
-							&copy;{" "}
-							<a
-								href="https://andydev.co.uk"
-								rel="author developer"
-								className="text-gray-300"
-							>
-								Andrew Yates
-							</a>
-							,&nbsp;
-							<a
-								href="https://andyhiggs.uk/"
-								rel="author designer"
-								className="text-gray-300"
-							>
-								Andy Higgs
-							</a>
-							,&nbsp;
-							<a
-								href="https://sijobling.com"
-								rel="author developer"
-								className="text-gray-300"
-							>
-								Si Jobling
-							</a>{" "}
-							{new Date().getFullYear()}
-						</p>
-						<p className="mb-10 text-center text-base text-gray-400">
-							{t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.footnote`)}
-						</p>
-		
+					</div>
+					
+					
+					<div className="max-w-7xl mx-auto overflow-hidden pb-8 pt-2">
+						
 						<p className="text-center mt-8">
 							<a
 								href="https://vercel.com?utm_source=sportstimes"
@@ -146,6 +183,29 @@ class Footer extends React.Component<Props> {
 						</p>
 					</div>
 				</footer>
+				
+				{ this.state.showHomeScreenPrompt && (
+					<div class="relative z-99999" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+						<div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
+						
+					  	<div class="fixed inset-0 z-10 overflow-y-auto">
+							<div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+						  	<div class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
+								<div class="sm:flex sm:items-start">
+							  	<div class="mt-2 text-center sm:mt-0 sm:text-left">
+									<div class="mt-2">
+								  	<p class="text-sm text-gray-500 mb-4">{t(`localization:footer.homescreen`)}</p>
+									</div>
+							  	</div>
+								</div>
+								<div class="mt-5 sm:mt-4">
+							  	<button type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm" onClick={this.dismissPrompt}>Got it</button>
+								</div>
+						  	</div>
+							</div>
+					  	</div>
+					</div>
+				)}
 			</>
 		);
   	}

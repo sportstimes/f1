@@ -4,7 +4,6 @@
 	"es2021": true
   },
   "extends": [
-	"plugin:@typescript-eslint/recommended",
 	"next",
 	"next/core-web-vitals",
 	"prettier"
@@ -17,5 +16,5 @@
 	"ecmaVersion": 12,
 	"sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "plugin:react-hooks/recommended"]
+  "plugins": ["@typescript-eslint"]
 }

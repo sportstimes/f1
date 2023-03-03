@@ -75,7 +75,7 @@
         "email": "接收邮件提醒",
         "timezonePicker": {
             "showing": "当前显示的时间，时区为",
-            "pick": "选择时区...",
+            "pick": "选择时区",
             "detect": "Detect"
         },
         "formatPicker": {
@@ -98,7 +98,8 @@
             "openSourcedOn": "Open Sourced on",
             "spottedIssue": "Spotted an issue?",
             "spottedReport": "Report"
-        }
+        },
+        "homescreen":"Add to your Home Screen and get an App like experience."
     },
     "form": {
         "title": "生成日历",
@@ -128,6 +129,18 @@
         "description": "在比赛日之前接收邮件提醒。",
         "label": "邮箱地址",
         "button": "确认订阅"
+    },
+    "notifications": {
+        "title": "Notifications",
+        "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
+        "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
+        "button": "Save",
+        "buttonSubmitted": "Saved",
+        "permissions": {
+            "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
+            "button": "Allow Notifications",
+            "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+        }
     },
     "timezones": {
         "title": "选择时区..."
