@@ -14,8 +14,8 @@
         "fp1": "Pierwszy trening",
         "fp2": "Drugi trening",
         "fp3": "Trzeci trening",
-        "fp4": "Free Practive 4",
-        "shakedown": "Shakedown",
+        "fp4": "Czwarty trening",
+        "shakedown": "Odcinek testowy",
         "practice1": "Trening 1",
         "practice2": "Trening 2",
         "practice3": "Trening 3",
@@ -67,15 +67,15 @@
         "turkish-grand-prix": "Grand Prix Turcji",
         "saudi-arabia-grand-prix": "Grand Prix Arabii Saudyjskiej",
         "qatar-grand-prix" : "Grand Prix Kataru",
-	    "miami-grand-prix" : "Grand Prix Miami",
+	"miami-grand-prix" : "Grand Prix Miami",
         "chinese-grand-prix" : "Grand Prix Chin",
-        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
+        "las-vegas-grand-prix" : "Grand Prix Las Vegas"
 	},
 	"options": {
         "calendar": "Dodaj daty wyścigów do Twojego Kalendarza",
         "email": "Otrzymuj powiadomienia email",
         "timezonePicker": {
-            "detect": "Detect",
+            "detect": "Wykryj",
             "showing": "Wyświetlaj w strefie czasowej",
             "pick": "Wybierz strefę czasową"
         },
@@ -100,7 +100,7 @@
             "spottedIssue": "Znalazłeś błąd?",
             "spottedReport": "Zgłoś"
         },
-        "homescreen":"Add to your Home Screen and get an App like experience."
+        "homescreen":"Dodaj do ekranu głównego i uzyskaj wrażenia jak z aplikacji."
     },
     "form": {
         "title": "Generuj Kalendarz",
@@ -131,15 +131,15 @@
         "button": "Subskrybuj"
     },
     "notifications": {
-        "title": "Notifications",
-        "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
-        "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
-        "button": "Save",
-        "buttonSubmitted": "Saved",
+        "title": "Powiadomienia",
+        "description": "Zapisz się, aby otrzymywać przypomnienie w formie powiadomień Push przed sesją. Wróć do tego formularza, aby dostosować swoje subskrypcje w dowolnym momencie.",
+        "statement": "Nigdy nie będziemy wysyłać Ci reklam ani niechcianych powiadomień, które nie są przypomnieniami o sesji.",
+        "button": "Zapisz",
+        "buttonSubmitted": "Zapisano",
         "permissions": {
-            "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
-            "button": "Allow Notifications",
-            "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+            "prompt": "Możesz zdecydować się na otrzymywanie przypomnień Push przed rozpoczęciem sesji. Kliknij przycisk, aby pozwolić nam na wysyłanie powiadomień, następnie będziesz mógł wybrać, dla których sesji chcesz otrzymywać przypomnienia.",
+            "button": "Zezwól na powiadomienia",
+            "denied": "Wygląda na to, że nie przyznałeś uprawnień. Zresetuj swoje uprawnienia za pomocą przeglądarki i spróbuj ponownie."
         }
     },
     "timezones": {
@@ -152,7 +152,7 @@
         "title": "Kalendarz F1",
         "subtitle": "Wyścigi, kwalifikacje i sesje treningowe.",
         "seo": {
-            "title": "Kalendarz F1 {{year}} - Formula One Race Times and Dates",
+            "title": "Kalendarz F1 {{year}} - Godziny i daty weekendów Formuły 1",
             "description": "Kalendarz Formuły 1 na sezon  {{year}}  z wszystkimi wyścigami, treningami oraz kwalifikacjami. Ustaw przypomnienia. Wszystkie strefy czasowe. Pobierz lub zasubskrybuj.",
             "keywords": "F1, formula one, formuła 1, godziny wyścigów, wyścigi, przypomnienia, powiadomienia, grands prix, grand prix, kalendarz, daty, godziny startów, kwalifikacje, treningi, London, Europe, {{year}}"
         },
