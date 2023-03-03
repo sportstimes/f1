@@ -24,11 +24,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      FIREBASE_CREDENTIALS: ${{ secrets.FIREBASE_CREDENTIALS }}
     
     env:
       SITE: ${{ github.event.inputs.site || inputs.site }}
+      FIREBASE_CREDENTIALS: ${{ secrets.FIREBASE_CREDENTIALS }}
     
     steps:
       - uses: actions/checkout@v2
