@@ -37,6 +37,10 @@ jobs:
       - name: Site Selection
         run: |
           echo "${{ env.SITE }}"
+      
+      - name: Key
+        run: |
+          echo "${{ env.FIREBASE_CREDENTIALS }}"
           
       - name: Cache node modules
         uses: actions/cache@v2
@@ -53,7 +57,7 @@ jobs:
     
       - name: Install Dependencies
         run: |
-          npm i firebase
+          npm i firebase-admin
           npm i dayjs
           
       - name: Generate Specific Queues
