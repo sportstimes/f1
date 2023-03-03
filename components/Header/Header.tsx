@@ -36,9 +36,9 @@ class Header extends React.Component<Props> {
 								<Logo style={{width: "60px"}}  />
 							</Link>	
 							
-							<div className="text-center md:text-left font-title uppercase mt-4 md:mt-0 md:ml-4">
+							<div className="text-center md:text-left uppercase mt-4 md:mt-0 md:ml-4">
 								<h1 className="mb-1 text-lg tracking-wider">
-									<Link href="/" title={title} className="text-white hover:text-white font-bold text-lg"
+									<Link href="/" title={title} className="text-white hover:text-white font-bold text-xl"
 										>
 										{title}&nbsp;
 										{this.props.year && (
@@ -49,7 +49,7 @@ class Header extends React.Component<Props> {
 										)}
 									</Link>
 								</h1>
-								<h2 className="text-xs font-normal tracking-wider">
+								<h2 className="text-sm font-normal tracking-wider">
 									<Link href="/" title={title} className="text-light-green hover:text-light-green">
 										{subtitle}
 									</Link>
