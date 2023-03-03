@@ -121,7 +121,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 					</>
 				) : (
 					<td className={`${titleRowClasses(race)}`}>
-						<div className="text-right md:text-left pr-2 md:pr-0">
+						<div className="text-right pr-2 md:pr-4">
 							{item.sessions &&
 							dayjs(item.sessions[firstEventSessionKey])
 								.tz(timezone)

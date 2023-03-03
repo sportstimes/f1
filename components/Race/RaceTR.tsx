@@ -40,7 +40,7 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 				<td className=""></td>
 				<td className="p-4">{t(titleKey)}</td>
 				<td className="text-right">
-					<div className="">
+					<div className="pr-2 md:pr-4">
 						{dayjs(date)
 							.tz(timezone)
 							.format(
