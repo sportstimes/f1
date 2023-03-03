@@ -27,14 +27,13 @@ jobs:
     
     env:
       SITE: ${{ github.event.inputs.site || inputs.site }}
-      FIREBASE_CREDENTIALS: ${{ secrets.FIREBASE_CREDENTIALS }}
     
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-  
+          
       - name: Site Selection
         run: |
           echo "${{ env.SITE }}"
@@ -59,4 +58,8 @@ jobs:
           
       - name: Generate Specific Queues
         run: |
+          touch .env
+          echo FIREBASE_CREDENTIALS=$FIREBASE_CREDENTIALS >> .env
           sudo node build/generate-queues.mjs ${{env.SITE}}
+        env:
+          FIREBASE_CREDENTIALS: ${{ secrets.FIREBASE_CREDENTIALS }}
