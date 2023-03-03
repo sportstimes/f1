@@ -39,3 +39,7 @@ route = "files-motogp.motorsportcalendars.com/*"
 [env.wseries]
 name = "files-wseries"
 route = "files-wseries.motorsportcalendars.com/*"
+
+[env.f1-academy]
+name = "files-f1-academy"
+route = "files-f1-academy.motorsportcalendars.com/*"
