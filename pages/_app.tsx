@@ -63,20 +63,20 @@ export default function CalendarApp({ Component, pageProps }: AppProps) {
 				<DefaultSeo
 					title={title}
 					description={description}
-					canonical={`https://www.${config.url}/`}
+					canonical={`https://${config.url}/`}
 					twitter={{
 						handle: "@f1cal",
 						site: "@f1cal",
 						cardType: "summary_large_image"
 					}}
 					openGraph={{
-						url: `https://www.${config.url}/`,
+						url: `https://${config.url}/`,
 						title: `${title}`,
 						description: `${description}`,
 						site_name: `${title}`,
 						images: [
 							{
-								url: `https://www.${config.url}/share.png`,
+								url: `https://${config.url}/share.png`,
 								width: 1200,
 								height: 628,
 								alt: `${title}`
