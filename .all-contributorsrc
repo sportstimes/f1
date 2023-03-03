@@ -419,6 +419,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "vincent-uden",
+      "name": "Vincent Uden",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28573826?v=4",
+      "profile": "https://github.com/vincent-uden",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
