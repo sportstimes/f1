@@ -60,8 +60,11 @@ jobs:
           npm i firebase-admin
           npm i dayjs
           
+      - name: create env file
+        run: |
+          touch .env
+          echo FIREBASE_CREDENTIALS=${{ secrets.FIREBASE_CREDENTIALS }} >> .env
+          
       - name: Generate Specific Queues
         run: |
           sudo node build/generate-queues.mjs ${{env.SITE}}
-        env:
-          FIREBASE_CREDENTIALS: ${{ secrets.FIREBASE_CREDENTIALS }}
