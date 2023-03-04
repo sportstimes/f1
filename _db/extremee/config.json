@@ -10,15 +10,15 @@
 		"shakedown": "shakedown",
 		"qualifying1": "qualifying1",
 		"qualifying2": "qualifying2",
-		"semifinal": "semifinal",
-		"race": "race"
+		"race1": "race1",
+		"race2": "race2"
 	},
 	"sessionLengths": {
 		"shakedown": 30,
 		"qualifying1": 90,
 		"qualifying2": 90,
-		"semifinal": 90,
-		"race": 120
+		"race1": 90,
+		"race2": 120
 	},
 	"supportsEmailReminders": false,
 	"notice": "Sessions are still TBC. Calendar will be updated as details are confirmed."
