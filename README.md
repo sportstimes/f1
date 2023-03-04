@@ -9,7 +9,7 @@ Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajh
 Graciously hosted by [Vercel](https://vercel.com/?utm_source=sportstimes).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-47-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-48-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -96,6 +96,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
       <td align="center" valign="top" width="14.28%"><a href="https://alimoncul.github.io/"><img src="https://avatars.githubusercontent.com/u/15328038?v=4?s=100" width="100px;" alt="Alim Öncül"/><br /><sub><b>Alim Öncül</b></sub></a><br /><a href="#translation-alimoncul" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sergioalmela"><img src="https://avatars.githubusercontent.com/u/9079106?v=4?s=100" width="100px;" alt="Sergio"/><br /><sub><b>Sergio</b></sub></a><br /><a href="#translation-sergioalmela" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/vincent-uden"><img src="https://avatars.githubusercontent.com/u/28573826?v=4?s=100" width="100px;" alt="Vincent Uden"/><br /><sub><b>Vincent Uden</b></sub></a><br /><a href="#content-vincent-uden" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mzso"><img src="https://avatars.githubusercontent.com/u/4479090?v=4?s=100" width="100px;" alt="mzso"/><br /><sub><b>mzso</b></sub></a><br /><a href="#translation-mzso" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
