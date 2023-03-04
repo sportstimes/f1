@@ -8,6 +8,7 @@ export default async (req, res) => {
 
 	if(!config.supportsWebPush && !config.supportsEmailReminders){
 		res.json({ success: true, message: "Doesn't support web push or email." })
+		return
 	}
 	
 	if (!admin.apps.length) {
