@@ -47,7 +47,7 @@
 		"nextjs": "0.0.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"terser-webpack-plugin": "^5.2.4",
+		"terser-webpack-plugin": "^5.3.7",
 		"uuid": "^9.0.0"
 	},
 	"devDependencies": {
