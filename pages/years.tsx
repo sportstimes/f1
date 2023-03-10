@@ -46,8 +46,7 @@ function Years() {
 
 export async function getStaticProps() {
 	return {
-		props: {},
-		revalidate: 3600
+		props: {}
 	}
 }
 

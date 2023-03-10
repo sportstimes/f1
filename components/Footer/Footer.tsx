@@ -82,7 +82,7 @@ class Footer extends React.Component<Props> {
 								</a>{" "}
 							</p>
 							
-							<p className="text-base text-gray-400 text-xs px-2 md:px-0">
+							<p className="text-base text-gray-400 text-xsm px-2 md:px-0">
 								{t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.footnote`)}
 							</p>
 							
