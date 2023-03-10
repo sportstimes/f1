@@ -15,6 +15,8 @@ class RaceSchema extends React.Component<Props> {
 		const {t} = this.props.i18n
 		const localeKey = 'localization:races.' + this.props.race.localeKey;
 		
+		const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+		
 		let name = this.props.race.name;
 		if (t(`localization:races.${this.props.race.localeKey}`) != localeKey) {
 			name = t(`localization:races.${this.props.race.localeKey}`);
@@ -41,7 +43,7 @@ class RaceSchema extends React.Component<Props> {
 				"name": eventName,
 				"description": eventDescription,
 				"startdate": dayjs(sessions[session]).toJSON(),
-				"enddate": dayjs(sessions[session]).add(1.5, 'hours').toJSON(),
+				"enddate": dayjs(sessions[session]).add(config.sessionLengths[session], 'minutes').toJSON(),
 				"location": {
 					"@type": "Place",
 					"name": location,
