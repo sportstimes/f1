@@ -177,6 +177,8 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 						hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
 						hasOccured={hasOccured}
 						isFeaturedSession={config.featuredSessions.includes(session)}
+						event={props.item.name}
+						eventLocaleKey={`localization:races.${props.item.localeKey}`}
 					/>
 				);
 			});

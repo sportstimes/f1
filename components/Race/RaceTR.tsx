@@ -7,7 +7,6 @@ import type { I18n } from 'next-translate'
 import useTranslation from 'next-translate/useTranslation'
 import {useUserContext} from "../../components/UserContext";
 
-
 export interface RaceRowTR {
 	collapsed: Boolean;
 	hasOccured: boolean;
@@ -16,10 +15,11 @@ export interface RaceRowTR {
 	title: string;
 	date: string;
 	isFeaturedSession: boolean;
+	event: string;
+	eventLocaleKey: string;
 }
 
-
-const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace }: RaceRowTR) => {
+const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace, event, eventLocaleKey }: RaceRowTR) => {
 
 	const {t, lang} = useTranslation();
 
@@ -27,8 +27,13 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 		dayjs.locale(lang);
 	}
 	
-
 	const titleKey = "localization:schedule." + title;
+	
+	var eventName = event;
+	if(t(eventLocaleKey)){
+		eventName = t(eventLocaleKey)
+	}
+
 
 	let {timezone, timeFormat} = useUserContext();
 	
@@ -56,7 +61,7 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 		return (
 			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""} ${!hasOccured && isFeaturedSession ? "font-bold" : ""} ${isNextRace && isFeaturedSession ? "text-yellow-600" : ""}`}>
 				<td className=""></td>
-				<td className="p-4">{t(titleKey)}</td>
+				<td className="p-4"><span className="hidden">{eventName}</span> {t(titleKey)}</td>
 				<td className="text-right md:text-left">
 					{dayjs(date)
 						.tz(timezone)
