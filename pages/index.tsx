@@ -29,8 +29,7 @@ const Index = (props) => {
 
 export async function getStaticProps() {
 	return {
-		props: {},
-		revalidate: 3600
+		props: {}
 	}
 }
 

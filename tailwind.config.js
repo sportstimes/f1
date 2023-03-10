@@ -1,4 +1,5 @@
 module.exports = {
+	important: true,
 	content: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
@@ -9,7 +10,7 @@ module.exports = {
 				"row-gray": "#151515"
 			},
 			fontSize: {
-				'xxs': '.65rem',
+				'xsm': '.65rem',
 			},
 			fontFamily: {
 				'league-spartan': ['"League Spartan"', 'sans-serif'],
