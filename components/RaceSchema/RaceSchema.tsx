@@ -52,12 +52,13 @@ class RaceSchema extends React.Component<Props> {
 			});
 		});
 
-		// { __html: JSON.stringify(rows) }
-
 		return (
-			<div>
-				
-			</div>
+			<>
+			  <script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(rows) }}
+			  />
+			</>
 		);
 	}
 }
