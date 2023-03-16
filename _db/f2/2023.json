@@ -24,10 +24,10 @@
 			"slug": "saudi-arabia",
 			"localeKey": "saudi-arabia",
 			"sessions": {
-				"practice": "2023-03-17T10:55:00Z",
-				"qualifying": "2023-03-17T15:00:00Z",
-				"sprint": "2023-03-18T15:10:00Z",
-				"feature": "2023-03-19T13:35:00Z"
+				"practice": "2023-03-17T10:55:00Z", 
+				"qualifying": "2023-03-17T15:00:00Z", 
+				"sprint": "2023-03-18T15:10:00Z", 
+				"feature": "2023-03-19T13:15:00Z"
 			}
 		},
 		{
@@ -39,10 +39,10 @@
 			"slug": "melbourne",
 			"localeKey": "melbourne",
 			"sessions": {
-				"practice": "2023-03-30T23:00:00Z",
-				"qualifying": "2023-03-31T06:30:00Z",
-				"sprint": "2023-04-01T03:25:00Z",
-				"feature": "2023-04-02T01:35:00Z"
+				"practice": "2023-03-31T00:55:00Z", 
+				"qualifying": "2023-03-31T04:55:00Z", 
+				"sprint": "2023-03-31T23:35:00Z", 
+				"feature": "2023-04-02T00:40:00Z"
 			}
 		},
 		{
@@ -55,10 +55,10 @@
 			"localeKey": "azerbaijan",
 			"tbc": true,
 			"sessions": {
-				"practice": "2023-04-28T08:35:00Z",
-				"qualifying": "2023-04-28T12:30:00Z",
-				"sprint": "2023-04-29T09:30:00Z",
-				"feature": "2023-04-30T07:05:00Z"
+				"practice": "2023-04-28T07:55:00Z", 
+				"qualifying": "2023-04-28T11:55:00Z", 
+				"sprint": "2023-04-29T06:35:00Z", 
+				"feature": "2023-04-30T06:40:00Z"
 			}
 		},
 		{
@@ -71,10 +71,10 @@
 			"localeKey": "emilia-romagna",
 			"tbc": true,
 			"sessions": {
-				"practice": "2023-05-19T09:05:00Z",
-				"qualifying": "2023-05-19T13:55:00Z",
-				"sprint": "2023-05-20T15:55:00Z",
-				"feature": "2023-05-21T08:20:00Z"
+				"practice": "2023-05-19T09:55:00Z", 
+				"qualifying": "2023-05-19T13:55:00Z", 
+				"sprint": "2023-05-20T08:35:00Z", 
+				"feature": "2023-05-21T08:40:00Z" 
 			}
 		},
 		{
