@@ -24,10 +24,10 @@
 			"slug": "melbourne",
 			"localeKey": "melbourne",
 			"sessions": {
-				"practice": "2023-03-30T23:00:00Z",
-				"qualifying": "2023-03-31T03:00:00Z",
-				"sprint": "2023-04-01T00:00:00Z",
-				"feature": "2023-04-01T23:05:00Z"
+				"practice": "2023-03-30T21:50:00Z", 
+				"qualifying": "2023-03-31T03:00:00Z", 
+				"sprint": "2023-04-01T05:45:00Z", 
+				"feature": "2023-04-01T23:20:00Z"
 			}
 		},
 		{
