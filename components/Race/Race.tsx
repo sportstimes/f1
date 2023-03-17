@@ -76,9 +76,11 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 				</td>
 				<td className={`flex p-4`}>
 					<span className={`${titleRowClasses(race)} flex`}>
-						{t(`localization:races.${item.localeKey}`) != localeKey
+						<span className={titleRowTextClasses(race)}>
+							{t(`localization:races.${item.localeKey}`) != localeKey
 							? t(`localization:races.${item.localeKey}`)
 							: item.name}
+						</span>
 							
 						{isNextRace &&
 							!item.tbc &&
@@ -98,6 +100,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 				{!hasMultipleFeaturedEvents ? (
 					<>
 						<td className={`text-right md:text-left ${titleRowClasses(race)}`}>
+							<span className={titleRowTextClasses(race)}>
 							{collapsed && item.sessions &&
 								item.sessions[config.featuredSessions[0]] &&
 								dayjs(
@@ -105,23 +108,27 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 								)
 									.tz(timezone)
 									.format("D MMM")}
+							</span>
 						</td>
 						<td className={`${titleRowClasses(race)}`}>
 							<div className="text-right md:text-left pr-2 md:pr-0">
-								{collapsed && item.sessions &&
-									item.sessions[config.featuredSessions[0]] &&
-									dayjs(
-										item.sessions[config.featuredSessions[0]]
-									)
-										.tz(timezone)
-										.format(timeFormat == 12 ? "h:mm A" : "HH:mm")
-								}
+								<span className={titleRowTextClasses(race)}>
+									{collapsed && item.sessions &&
+										item.sessions[config.featuredSessions[0]] &&
+										dayjs(
+											item.sessions[config.featuredSessions[0]]
+										)
+											.tz(timezone)
+											.format(timeFormat == 12 ? "h:mm A" : "HH:mm")
+									}
+								</span>
 							</div>
 						</td>
 					</>
 				) : (
 					<td className={`${titleRowClasses(race)}`}>
 						<div className="text-right pr-2 md:pr-4">
+							<span className={titleRowTextClasses(race)}>
 							{item.sessions &&
 							dayjs(item.sessions[firstEventSessionKey])
 								.tz(timezone)
@@ -143,6 +150,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 								  )
 										.tz(timezone)
 										.format("D MMM")}`}
+							</span>
 						</div>
 					</td>
 				)}
@@ -249,12 +257,6 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 		if (props.isNextRace) {
 			classes += "text-yellow-600 ";
 		}
-
-		// Strike out cancelled races
-		if (props.item.canceled) {
-			classes += "line-through text-gray-300 ";
-		}
-		
 		
 		if (props.item.sessions != null) {
 			lastEventSessionKey = Object.keys(props.item.sessions)[
@@ -269,6 +271,17 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 			) {
 				classes += "font-semibold ";
 			}
+		}
+		
+		return classes;
+	}
+	
+	function titleRowTextClasses(props:RaceRow) {
+		var classes = "";
+		
+		// Strike out cancelled races
+		if (props.item.canceled) {
+			classes += "line-through text-gray-300 ";
 		}
 		
 		return classes;

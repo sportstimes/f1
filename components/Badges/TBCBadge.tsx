@@ -12,7 +12,7 @@ class TBCBadge extends React.Component<Props> {
 	const { t, lang } = this.props.i18n
 
 	return (
-		<span title={t("localization:badges.tbc_title")} className={`bg-yellow-400 rounded px-1 md:px-2 py-1 text-xxs sm:text-xs text-black font-normal sm:font-bold ml-2 ${this.props.mobileOnly ? "display sm:hidden" : ""}`}>
+		<span title={t("localization:badges.tbc_title")} className={`bg-yellow-400 rounded px-1 md:px-2 py-1 text-xsm text-black font-bold ml-2 ${this.props.mobileOnly ? "display sm:hidden" : ""}`}>
 			{t(`localization:badges.tbc`)}
 		</span>
 	);

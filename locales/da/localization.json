@@ -120,6 +120,7 @@
         "gcalDescription": "For at tilføje denne kalender skal du klippe/klistre denne URL ind i din Google Kalender",
         "gcalDescriptionLink": "detaljerede instruktioner",
         "gcalNotificationNotice": "Google Kalender honorerer ikke påmindelserne på fjernkalendere. Sessionsnotifikationer kan konfigureres i kalenderens indstillinger, efter at den er blevet tilføjet.",
+		"gcalAddToGoogleCalendar": "Add to Google Calendar",
 		"icsTitle": "Download ICS Fil",
         "icsDescription": "Ikke-opdaterende kalender (.ics) til kalendere der ikke kan håndtere opdaterende abonnementer.",
         "icsButton": "Download"

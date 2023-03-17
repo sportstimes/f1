@@ -120,7 +120,8 @@
         "gcalDescription": "För att lägga till den här kalendern, klipp och klistra länken nedan till din Google Calendar",
         "gcalDescriptionLink": "detaljerade instruktioner",
         "gcalNotificationNotice": "Google Kalender följer inte påminnelser på fjärrkalendrar. Evenemangspåminnelser kan läggas till inom kalenderinställningarna efter att den har lagts till.",
-        "icsTitle": "Ladda ner ICS-fil",
+        "gcalAddToGoogleCalendar": "Add to Google Calendar",
+		"icsTitle": "Ladda ner ICS-fil",
         "icsDescription": "Statisk kalender (.ics) som inte uppdateras automatiskt. Används för kalenderprogram som inte stödjer automatiskt uppdaterande kalendrar.",
         "icsButton": "Ladda ner"
     },

@@ -119,7 +119,8 @@
         "gcalTitle": "Pre Google Valendar",
         "gcalDescription": "Ak chcete pridať tento kalendár, skopírujte a prilepte túto webovú adresu do Kalendára Google",
         "gcalDescriptionLink": "detailné inštrukcie",
-        "icsTitle": "Stiahnuť ICS súbor",
+        "gcalAddToGoogleCalendar": "Add to Google Calendar",
+		"icsTitle": "Stiahnuť ICS súbor",
         "icsDescription": "Neaktualizovaný kalendár (.ics) pre kalendáre, ktoré nedokážu spracovať aktualizáciu odberov.",
         "icsButton": "Stiahnuť",
         "gcalNotificationNotice": "Kalendár Google nerešpektuje pripomienky vo vzdialených kalendároch.  Upozornenia na udalosti je možné nakonfigurovať v nastaveniach kalendára po jeho pridaní."
