@@ -120,6 +120,7 @@
         "gcalDescription": "Aby dodać ten kalendarz, skopiuj i wklej ten adres do Google Calendar",
         "gcalDescriptionLink": "szczegółowe instrukcje",
         "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"gcalAddToGoogleCalendar": "Add to Google Calendar",
 		"icsTitle": "Pobierz plik ICS",
         "icsDescription": "Nie samoaktualizacujący się kalendarz (.ics) dla kalendarzy, które nie obsługują aktualizacji subskrypcji.",
         "icsButton": "Pobierz"

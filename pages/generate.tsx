@@ -162,20 +162,10 @@ function Generate() {
 								</span>
 							</p>
 						</div>}
-						<p className="mb-4">
-							{t("localization:download.gcalDescription")} (
-							<a
-								href="https://support.google.com/calendar/answer/37100"
-								target="_blank"
-								rel="noreferrer"
-								className="text-green-100"
-							>
-								{t("localization:download.gcalDescriptionLink")}
-							</a>
-							):
-						</p>
-						<p
-							className="copyable bg-black p-2"
+						
+						<a
+							href={`https://www.google.com/calendar/render?cid=${form.webcalURL}`}
+							className="btn"
 							onClick={() =>
 								plausible("Downloaded Calendar", {
 									props: {
@@ -184,8 +174,8 @@ function Generate() {
 								})
 							}
 						>
-							{form.googleURL}
-						</p>
+							{t("localization:download.gcalAddToGoogleCalendar")}
+						</a>
 					</Card>
 
 					<Card id="download_option">

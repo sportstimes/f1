@@ -119,6 +119,7 @@
 		"gcalTitle": "Za Google Kalendar",
 		"gcalDescription": "Da biste dodali ovaj kalendar, kopirajte i nalepite ovaj link u Google Kalendar",
 		"gcalDescriptionLink": "Detaljna uputstva ",
+		"gcalAddToGoogleCalendar": "Add to Google Calendar",
 		"icsTitle": "Preuzmite ICS fajl",
 		"icsDescription": "Nesamoobnavljajući kalendar (.ics) za kalendare koji ne podržavaju obnavljanje.",
 		"icsButton": "Preuzimanje",

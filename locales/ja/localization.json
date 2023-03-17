@@ -119,6 +119,7 @@
 		"gcalTitle": "Googleカレンダー用",
 		"gcalDescription": "このカレンダーを追加するには、下記URLをコピペしてください。",
 		"gcalDescriptionLink": "詳細な説明",
+		"gcalAddToGoogleCalendar": "Add to Google Calendar",
 		"icsTitle": "ICSファイルをダウンロード",
 		"icsDescription": "購読の更新を処理できないカレンダー用の非更新カレンダー（.ics）です。",
 		"icsButton": "ダウンロード",

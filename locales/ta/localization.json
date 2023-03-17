@@ -119,6 +119,7 @@
 		"gcalTitle": "கூகிள் நாட்காட்டிக்காக",
 		"gcalDescription": "இந்த நாட்காட்டியை தெரிவு செய்ய, இந்த URL-ஐ காப்பி செய்து கூகிள் நாட்காட்டியில் பேஸ்ட் செய்யவும்",
 		"gcalDescriptionLink": "நீக்கப்பட்ட அறிவுறுத்தல்கள்",
+		"gcalAddToGoogleCalendar": "Add to Google Calendar",
 		"icsTitle": "ICS ஃபைலை பதிவிறக்கம் செய்க",
 		"icsDescription": "தானாக மேம்படுத்த இயலாத நாட்காட்டிக்கான (.ics) நாட்காட்டி.",
 		"icsButton": "பதிவிறக்கம் செய்க",

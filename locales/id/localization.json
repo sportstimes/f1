@@ -119,7 +119,8 @@
         "gcalTitle": "Untuk Google Kalender",
         "gcalDescription": "Untuk menambahkan kalender ini, salin dan tempel URL ini ke Google Kalender",
         "gcalDescriptionLink": "Instruksi lebih lanjut",
-        "icsTitle": "Unduh file ICS",
+        "gcalAddToGoogleCalendar": "Add to Google Calendar",
+		"icsTitle": "Unduh file ICS",
         "icsDescription": "Kalender yang tidak diperbarui (.ics) untuk kalender yang tidak dapat menangani pembaruan langganan.",
         "icsButton": "Unduh",
         "gcalNotificationNotice": "Google Kalender tidak menghormati pengingat pada kalender jarak jauh. Pemberitahuan acara dapat dikonfigurasi dalam pengaturan kalender setelah ditambahkan."

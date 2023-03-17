@@ -120,6 +120,7 @@
         "gcalDescription": "Kopioi ja liitä tämä URL Google-kalenteriin",
         "gcalDescriptionLink": "tarkemmat ohjeet",
         "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"gcalAddToGoogleCalendar": "Add to Google Calendar",
 		"icsTitle": "Lataa ICS -tiedosto",
         "icsDescription": "Ei-päivittyvä kalenteri (.ics) sovelluksille, joissa ei ole automaattista päivitystä.",
         "icsButton": "Lataa"

@@ -119,7 +119,8 @@
         "gcalTitle": "Per Google Calendar",
         "gcalDescription": "Per aggiungere questo calendario, copia e incolla questo link in Google Calendar",
         "gcalDescriptionLink": "istruzioni dettagliate",
-        "icsTitle": "Scarica file ICS",
+        "gcalAddToGoogleCalendar": "Add to Google Calendar",
+		"icsTitle": "Scarica file ICS",
         "icsDescription": "Calendario non autoaggiornante (.ics) per le applicazioni di calendario che non possono gestire sottoscrizioni autoaggiornanti.",
         "icsButton": "Scarica",
         "gcalNotificationNotice": "Google Calendar non rispetta i promemoria dei calendari remoti. Le notifiche degli eventi possono essere configurate nelle impostazioni del calendario dopo che è stato aggiunto."

@@ -119,7 +119,8 @@
         "gcalTitle": "適用於Google Calendar",
         "gcalDescription": "如要訂閱日曆，複製並粘貼此連結到 Google Calendar 中",
         "gcalDescriptionLink": "詳細指導",
-        "icsTitle": "下載ICS檔案",
+        "gcalAddToGoogleCalendar": "Add to Google Calendar",
+		"icsTitle": "下載ICS檔案",
         "icsDescription": "ICS 檔案(.ics) 將無法自動獲取最新信息",
         "icsButton": "下載",
         "gcalNotificationNotice": "Google Calendar 不接受遠程日曆上的提醒。在添加日曆後，你可以在設定中設定賽程提示。"

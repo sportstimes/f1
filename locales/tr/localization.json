@@ -120,7 +120,8 @@
         "gcalDescription": "Bu takvimi eklemek için aşağıdaki adresi kopyalayıp Google Takvim'e yapıştırın",
         "gcalDescriptionLink": "Diğer takvimler -> URL ile",
         "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
-        "icsTitle": "ICS Dosyası İndirin",
+        "gcalAddToGoogleCalendar": "Add to Google Calendar",
+		"icsTitle": "ICS Dosyası İndirin",
         "icsDescription": "Güncellemelere abone olunamayan takvimler için kendini güncelleştirmeyen takvim dosyası (.ics).",
         "icsButton": "İndirin"
     },

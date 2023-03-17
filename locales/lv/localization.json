@@ -119,6 +119,7 @@
 		"gcalTitle": "For Google Calendar",
 		"gcalDescription": "To add this calendar, copy and paste this URL into Google Calendar",
 		"gcalDescriptionLink": "detailed instructions",
+		"gcalAddToGoogleCalendar": "Add to Google Calendar",
 		"icsTitle": "Download ICS File",
 		"icsDescription": "Non-updating calendar (.ics) for calendars that can’t handle updating subscriptions.",
 		"icsButton": "Download",

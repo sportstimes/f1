@@ -120,6 +120,7 @@
         "gcalDescription": "Om deze agenda toe te voegen, gelieve de link te kopiëren en te plakken in Google Agenda",
         "gcalDescriptionLink": "gedetailleerde instructies",
         "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		"gcalAddToGoogleCalendar": "Add to Google Calendar",
 		"icsTitle": "Download ICS Bestand",
         "icsDescription": "Agenda die niet automatisch wordt bijgewerkt (.ics). Voor digitale agenda's die niet overweg kunnen met automatische updates.",
         "icsButton": "Download"
