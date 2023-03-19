@@ -182,7 +182,7 @@ const OptionsBar: FunctionComponent = () => {
 						<div className="mb-8 md:mb-8">
 							<form action="/" method="GET" id="previous-races">
 								<label
-									htmlFor="format"
+									htmlFor="previousRaces"
 									className="pickerLabel block md:inline-block mr-2 font-semibold pb-2 md:pb-0"
 								>
 									{t("localization:hidePreviousRaces")}
