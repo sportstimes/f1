@@ -12,7 +12,7 @@ const OptionsBar: FunctionComponent = () => {
 	
 	const [pickerShowing, setPickerShowing] = useState(false);
 	const { t, lang } = useTranslation();
-	const { timezone, timeFormat, updateTimezone, updateTimeFormat } = useUserContext();
+	const { timezone, timeFormat, updateTimezone, updateTimeFormat, collapsePastRaces, updateCollapsePastRaces } = useUserContext();
 
 	const plausible = usePlausible();
 
@@ -153,7 +153,7 @@ const OptionsBar: FunctionComponent = () => {
 								</Link>
 							</noscript>
 						</div>
-						<div className="mb-2 md:mb-8">
+						<div className="mb-8 md:mb-8">
 							<form action="/" method="GET" id="format-picker">
 								<label
 									htmlFor="format"
@@ -178,11 +178,35 @@ const OptionsBar: FunctionComponent = () => {
 							</form>
 						</div>
 		
+						
+						<div className="mb-8 md:mb-8">
+							<form action="/" method="GET" id="previous-races">
+								<label
+									htmlFor="format"
+									className="pickerLabel block md:inline-block mr-2 font-semibold pb-2 md:pb-0"
+								>
+									{t("localization:hidePreviousRaces")}
+								</label>
+								<input
+									type="checkbox"
+									className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
+									name="previousRaces"
+									id="previousRaces"
+									defaultValue={collapsePastRaces ? 'on': 'off'}
+									defaultChecked="checked"
+									onChange={async event => {
+										updateCollapsePastRaces(event.target.checked)
+									}}
+								/>
+							</form>
+						</div>
+						
+						
 						<div>
 							<button
 								onClick={togglePicker}
 								type="submit"
-								className="inline-block py-0.5 btn"
+								className="inline-block py-2 btn"
 							>
 								{t("localization:options.button")}
 							</button>

@@ -49,26 +49,6 @@ const Races: FunctionComponent<Props> = ({ year, races }: Props) => {
 	return (
 		<div className="px-0 md:px-2">
 		
-			{racesOccured < 1 || racesOccured != races.length && (
-				shouldCollapsePastRaces == true ? (
-					<div className="mt-8 mb-4 grid">
-						<button onClick={() => {
-							updateCollapsePastRaces(false)
-							shouldCollapsePastRaces = false
-						}} className="inline-block py-1 collapse-btn justify-self-center">
-						{t("localization:showPreviousRaces")}</button>
-					</div>
-				) : (
-					<div className="mt-8 mb-4 grid">
-						<button onClick={() => {
-							updateCollapsePastRaces(true)
-							shouldCollapsePastRaces = true
-						}} className="inline-block py-1 collapse-btn justify-self-center">
-						{t("localization:hidePreviousRaces")}</button>
-					</div>
-				)
-			)}
-		
 			<table id="events-table" className="w-full">
 				{config.featuredSessions.length === 1 ? (
 					<thead className="hidden">
