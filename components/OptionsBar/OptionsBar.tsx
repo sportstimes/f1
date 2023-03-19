@@ -193,7 +193,7 @@ const OptionsBar: FunctionComponent = () => {
 									name="previousRaces"
 									id="previousRaces"
 									defaultValue={collapsePastRaces ? 'on': 'off'}
-									defaultChecked="checked"
+									defaultChecked={collapsePastRaces ? 'checked': ''}
 									onChange={async event => {
 										updateCollapsePastRaces(event.target.checked)
 									}}
