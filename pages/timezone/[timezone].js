@@ -81,6 +81,7 @@ export async function getStaticProps({params}) {
     }
 
     return {
+      revalidate: 3600,
       props: {
         races: data.races,
         timezone: timezone
@@ -88,6 +89,7 @@ export async function getStaticProps({params}) {
     }
   } catch (error) {
     return {
+      revalidate: 3600,
       props: {
         year: currentYear
       }
