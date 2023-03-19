@@ -65,12 +65,9 @@ export function UserContextProvider({ children }: Props) {
         }
         
         // Store whether to collapse or show the past races.
-        const storedCollapsedState = localStorage.getItem("collapasePastRaces");
-        if (storedCollapsedState) {
-            updateStateCollapsePastRaces(Boolean(storedCollapsedState));
-        } else {
-            updateStateCollapsePastRaces(true);
-        }
+        const storedCollapsedState = localStorage.getItem("collapsePastRaces");
+        updateStateCollapsePastRaces(storedCollapsedState == "true");
+        
         
         // Fetch the stored UUID, utilized to configure web push notifications.
         const storedUUID = localStorage.getItem("uuid");
@@ -95,7 +92,7 @@ export function UserContextProvider({ children }: Props) {
     };
     
     const updateCollapsePastRaces = (bool:Boolean) => {
-        updateStateCollapsePastRaces(Boolean(bool));
+        updateStateCollapsePastRaces(bool);
         localStorage.setItem("collapsePastRaces", String(bool));
     };
     
