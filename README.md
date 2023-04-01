@@ -9,7 +9,7 @@ Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajh
 Graciously hosted by [Vercel](https://vercel.com/?utm_source=sportstimes).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-49-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-50-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -98,6 +98,9 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/vincent-uden"><img src="https://avatars.githubusercontent.com/u/28573826?v=4?s=100" width="100px;" alt="Vincent Uden"/><br /><sub><b>Vincent Uden</b></sub></a><br /><a href="#content-vincent-uden" title="Content">🖋</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mzso"><img src="https://avatars.githubusercontent.com/u/4479090?v=4?s=100" width="100px;" alt="mzso"/><br /><sub><b>mzso</b></sub></a><br /><a href="#translation-mzso" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/NomadNaomie"><img src="https://avatars.githubusercontent.com/u/89711830?v=4?s=100" width="100px;" alt="Nao"/><br /><sub><b>Nao</b></sub></a><br /><a href="#content-NomadNaomie" title="Content">🖋</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/maxgubler"><img src="https://avatars.githubusercontent.com/u/14025364?v=4?s=100" width="100px;" alt="Maxwell Gubler"/><br /><sub><b>Maxwell Gubler</b></sub></a><br /><a href="#content-maxgubler" title="Content">🖋</a></td>
     </tr>
   </tbody>
 </table>
