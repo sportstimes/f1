@@ -446,6 +446,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "maxgubler",
+      "name": "Maxwell Gubler",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14025364?v=4",
+      "profile": "https://www.linkedin.com/in/maxgubler",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
