@@ -9,11 +9,11 @@
 			"slug": "grand-prix-of-st-petersburg",
 			"localeKey": "grand-prix-of-st-petersburg",
 			"sessions": {
-				"practice1":  "2023-03-03T20:00:00Z",
-				"practice2":  "2023-03-04T15:00:00Z",
+				"practice1": "2023-03-03T20:00:00Z",
+				"practice2": "2023-03-04T15:00:00Z",
 				"qualifying": "2023-03-04T19:15:00Z",
-				"warmup":     "2023-03-05T14:00:00Z",
-				"race":       "2023-03-05T17:00:00Z"
+				"warmup": "2023-03-05T14:00:00Z",
+				"race": "2023-03-05T17:00:00Z"
 			}
 		},
 		{
@@ -24,9 +24,11 @@
 			"round": 2,
 			"slug": "ppg-375",
 			"localeKey": "ppg-375",
-            "tbc": true,
 			"sessions": {
-				"race": "2023-04-02T16:00:00Z"
+				"practice1": "2023-04-01T13:00:00Z",
+				"qualifying": "2023-04-01T16:15:00Z",
+				"practice2": "2023-04-01T18:30:00Z",
+				"race": "2023-04-02T16:10:00Z"
 			}
 		},
 		{
@@ -37,9 +39,12 @@
 			"round": 3,
 			"slug": "acura-grand-prix-of-long-beach",
 			"localeKey": "acura-grand-prix-of-long-beach",
-            "tbc": true,
 			"sessions": {
-				"race": "2023-04-16T19:00:00Z"
+				"practice1": "2023-04-14T22:00:00Z",
+				"practice2": "2023-04-15T15:45:00Z",
+				"qualifying": "2023-04-15T19:05:00Z",
+				"warmup": "2023-04-16T16:00:00Z",
+				"race": "2023-04-16T19:30:00Z"
 			}
 		},
 		{
