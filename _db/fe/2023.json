@@ -1,247 +1,246 @@
 {
-	"races": [
-		{
-			"name": "Mexico City ePrix",
-			"location": "Mexico",
-			"latitude": 9.006710,
-			"longitude": -79.537200,
-			"round": 1,
-			"slug": "mexico-city-eprix",
-			"localeKey": "mexico-city-eprix",
-			"sessions": {
-				"practice1": "2023-01-13T22:25:00Z",
-				"practice2": "2023-01-14T13:25:00Z",
-				"qualifying": "2023-01-14T15:40:00Z",
-				"race": "2023-01-14T20:03:00Z"
-			}
-		},
-		{
-			"name": "Diriyah ePrix",
-			"location": "Diriyah",
-			"latitude": 25.31319,
-			"longitude": 55.512081,
-			"round": 2,
-			"slug": "diriyah-eprix",
-			"localeKey": "diriyah-eprix",
-			"sessions": {
-				"practice1": "2023-01-26T14:55:00Z",
-				"practice2": "2023-01-27T10:25:00Z",
-				"qualifying": "2023-01-27T12:40:00Z",
-				"race": "2023-01-27T17:03:00Z"
-			}
-		},
-		{
-			"name": "Diriyah ePrix",
-			"location": "Diriyah",
-			"latitude": 25.31319,
-			"longitude": 55.512081,
-			"round": 3,
-			"slug": "diriyah-eprix",
-			"localeKey": "diriyah-eprix",
-			"sessions": {
-				"practice3": "2023-01-28T10:25:00Z",
-				"qualifying": "2023-01-28T12:40:00Z",
-				"race": "2023-01-28T17:03:00Z"
-			}
-		},
-		{
-			"name": "Hyderabad ePrix",
-			"location": "Hyderabad",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 4,
-			"slug": "hyderabad-eprix",
-			"localeKey": "hyderabad-eprix",
-			"sessions": {
-				"practice1": "2023-02-10T10:55:00Z",
-				"practice2": "2023-02-11T02:35:00Z",
-				"qualifying": "2023-02-11T05:10:00Z",
-				"race": "2023-02-11T09:33:00Z"
-			}
-		},
-		{
-			"name": "Cape Town ePrix",
-			"location": "Cape Town",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 5,
-			"slug": "cape-town-eprix",
-			"localeKey": "cape-town-eprix",
-			"sessions": {
-				"practice1": "2023-02-24T14:55:00Z",
-				"practice2": "2023-02-25T07:05:00Z",
-				"qualifying": "2023-02-25T09:40:00Z",
-				"race": "2023-02-25T14:03:00Z"
-			}
-		},
-		{
-			"name": "Sao Paulo ePrix",
-			"location": "Sao Paulo",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 6,
-			"slug": "sao-paulo-eprix",
-			"localeKey": "sao-paulo-eprix",
-			"sessions": {
-				"practice1": "2023-03-24T19:25:00Z",
-				"practice2": "2023-03-25T10:25:00Z",
-				"qualifying": "2023-03-25T12:40:00Z",
-				"race": "2023-03-25T17:03:00Z"
-			}
-		},
-		{
-			"name": "Berlin ePrix",
-			"location": "Berlin",
-			"latitude": 52.482258,
-			"longitude": 13.389437,
-			"round": 7,
-			"slug": "berlin-eprix",
-			"localeKey": "berlin-eprix",
-			"sessions": {
-				"practice1": "2023-04-21T14:55:00Z",
-				"practice2": "2023-04-22T06:05:00Z",
-				"qualifying": "2023-04-22T08:40:00Z",
-				"race": "2023-04-22T13:03:00Z"
-			}
-		},
-		{
-			"name": "Berlin ePrix",
-			"location": "Berlin",
-			"latitude": 52.482258,
-			"longitude": 13.389437,
-			"round": 8,
-			"slug": "berlin-eprix",
-			"localeKey": "berlin-eprix",
-			"sessions": {
-				"practice3": "2023-04-23T06:05:00Z",
-				"qualifying": "2023-04-23T08:40:00Z",
-				"race": "2023-04-23T13:03:00Z"
-			}
-		},
-		{
-			"name": "Monaco ePrix",
-			"location": "Monte Carlo",
-			"latitude": 43.7338,
-			"longitude": 7.4215,
-			"round": 9,
-			"slug": "monaco-eprix",
-			"localeKey": "monaco-eprix",
-			"tbc":true,
-			"sessions": {
-				"practice1": "2023-05-06T05:25:00Z",
-				"practice2": "2023-05-06T07:05:00Z",
-				"qualifying": "2023-05-06T08:40:00Z",
-				"race": "2023-05-06T13:03:00Z"
-			}
-		},
-		{
-			"name": "Jakarta ePrix",
-			"location": "Indonesia",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 10,
-			"slug": "jakarta-eprix",
-			"localeKey": "jakarta-eprix",
-			"tbc":true,
-			"sessions": {
-				"practice1": "2023-06-02T08:25:00Z",
-				"practice2": "2023-06-03T01:05:00Z",
-				"qualifying": "2023-06-03T03:40:00Z",
-				"race": "2023-06-03T08:03:00Z"
-			}
-		},
-		{
-			"name": "Jakarta ePrix",
-			"location": "Indonesia",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 11,
-			"slug": "jakarta-eprix",
-			"localeKey": "jakarta-eprix",
-			"tbc":true,
-			"sessions": {
-				"practice3": "2023-06-04T01:05:00Z",
-				"qualifying": "2023-06-04T03:40:00Z",
-				"race": "2023-06-04T08:03:00Z"
-			}
-		},
-		{
-			"name": "Portland ePrix",
-			"location": "Portland",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 12,
-			"slug": "portland-eprix",
-			"localeKey": "portland-eprix",
-			"tbc":true,
-			"sessions": {
-				"practice1": "2023-06-23T07:00:00Z",
-				"qualifying": "2023-06-24T07:00:00Z",
-				"practice2": "2023-06-24T07:00:00Z",
-				"race": "2023-06-24T07:00:00Z"
-			}
-		},
-		{
-			"name": "Rome ePrix",
-			"location": "Rome",
-			"latitude": 41.901983,
-			"longitude": 12.494953,
-			"round": 13,
-			"slug": "rome-eprix",
-			"localeKey": "rome-eprix",
-			"tbc": true,
-			"sessions": {
-				"practice1": "2023-07-14T15:25:00Z",
-				"practice2": "2023-07-15T06:05:00Z",
-				"qualifying": "2023-07-15T08:40:00Z",
-				"race": "2023-07-15T13:03:00Z"
-			}
-		},
-		{
-			"name": "Rome ePrix",
-			"location": "Rome",
-			"latitude": 41.901983,
-			"longitude": 12.494953,
-			"round": 14,
-			"slug": "rome-eprix",
-			"localeKey": "rome-eprix",
-			"tbc": true,
-			"sessions": {
-				"practice3": "2023-07-16T06:05:00Z",
-				"qualifying": "2023-07-16T08:40:00Z",
-				"race": "2023-07-16T13:03:00Z"
-			}
-		},
-		{
-			"name": "London ePrix",
-			"location": "GB",
-			"latitude": 51.500149,
-			"longitude": -0.126240,
-			"tbc": true,
-			"round": 15,
-			"slug": "london-eprix",
-			"localeKey": "london-eprix",
-			"sessions": {
-				"practice1": "2023-07-28T15:55:00Z",
-				"practice2": "2023-07-29T09:25:00Z",
-				"qualifying": "2023-07-29T11:40:00Z",
-				"race": "2023-07-29T16:03:00Z"
-			}
-		},
-		{
-			"name": "London ePrix",
-			"location": "GB",
-			"latitude": 51.500149,
-			"longitude": -0.126240,
-			"tbc": true,
-			"round": 16,
-			"slug": "london-eprix",
-			"localeKey": "london-eprix",
-			"sessions": {
-				"practice3": "2023-07-30T09:25:00Z",
-				"qualifying": "2023-07-30T11:40:00Z",
-				"race": "2023-07-30T16:03:00Z"
-			}
-		}
-	]
+  "races": [
+    {
+      "name": "Mexico City ePrix",
+      "location": "Mexico",
+      "latitude": 9.00671,
+      "longitude": -79.5372,
+      "round": 1,
+      "slug": "mexico-city-eprix",
+      "localeKey": "mexico-city-eprix",
+      "sessions": {
+        "practice3": "2023-07-30T09:25:00Z",
+        "qualifying": "2023-07-30T11:40:00Z",
+        "race": "2023-07-30T16:03:00Z"
+      }
+    },
+    {
+      "name": "Diriyah ePrix",
+      "location": "Diriyah",
+      "latitude": 25.31319,
+      "longitude": 55.512081,
+      "round": 2,
+      "slug": "diriyah-eprix",
+      "localeKey": "diriyah-eprix",
+      "sessions": {
+        "practice1": "2023-01-26T14:55:00Z",
+        "practice2": "2023-01-27T10:25:00Z",
+        "qualifying": "2023-01-27T12:40:00Z",
+        "race": "2023-01-27T17:03:00Z"
+      }
+    },
+    {
+      "name": "Diriyah ePrix",
+      "location": "Diriyah",
+      "latitude": 25.31319,
+      "longitude": 55.512081,
+      "round": 3,
+      "slug": "diriyah-eprix",
+      "localeKey": "diriyah-eprix",
+      "sessions": {
+        "practice3": "2023-01-28T10:25:00Z",
+        "qualifying": "2023-01-28T12:40:00Z",
+        "race": "2023-01-28T17:03:00Z"
+      }
+    },
+    {
+      "name": "Hyderabad ePrix",
+      "location": "Hyderabad",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 4,
+      "slug": "hyderabad-eprix",
+      "localeKey": "hyderabad-eprix",
+      "sessions": {
+        "practice1": "2023-02-10T10:55:00Z",
+        "practice2": "2023-02-11T02:35:00Z",
+        "qualifying": "2023-02-11T05:10:00Z",
+        "race": "2023-02-11T09:33:00Z"
+      }
+    },
+    {
+      "name": "Cape Town ePrix",
+      "location": "Cape Town",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 5,
+      "slug": "cape-town-eprix",
+      "localeKey": "cape-town-eprix",
+      "sessions": {
+        "practice1": "2023-02-24T14:55:00Z",
+        "practice2": "2023-02-25T07:05:00Z",
+        "qualifying": "2023-02-25T09:40:00Z",
+        "race": "2023-02-25T14:03:00Z"
+      }
+    },
+    {
+      "name": "Sao Paulo ePrix",
+      "location": "Sao Paulo",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 6,
+      "slug": "sao-paulo-eprix",
+      "localeKey": "sao-paulo-eprix",
+      "sessions": {
+        "practice1": "2023-03-24T19:25:00Z",
+        "practice2": "2023-03-25T10:25:00Z",
+        "qualifying": "2023-03-25T12:40:00Z",
+        "race": "2023-03-25T17:03:00Z"
+      }
+    },
+    {
+      "name": "Berlin ePrix",
+      "location": "Berlin",
+      "latitude": 52.482258,
+      "longitude": 13.389437,
+      "round": 7,
+      "slug": "berlin-eprix",
+      "localeKey": "berlin-eprix",
+      "sessions": {
+        "practice1": "2023-04-21T14:55:00Z",
+        "practice2": "2023-04-22T06:05:00Z",
+        "qualifying": "2023-04-22T08:40:00Z",
+        "race": "2023-04-22T13:03:00Z"
+      }
+    },
+    {
+      "name": "Berlin ePrix",
+      "location": "Berlin",
+      "latitude": 52.482258,
+      "longitude": 13.389437,
+      "round": 8,
+      "slug": "berlin-eprix",
+      "localeKey": "berlin-eprix",
+      "sessions": {
+        "practice3": "2023-04-23T06:05:00Z",
+        "qualifying": "2023-04-23T08:40:00Z",
+        "race": "2023-04-23T13:03:00Z"
+      }
+    },
+    {
+      "name": "Monaco ePrix",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 9,
+      "slug": "monaco-eprix",
+      "localeKey": "monaco-eprix",
+      "tbc": true,
+      "sessions": {
+        "practice1": "2023-05-06T05:25:00Z",
+        "practice2": "2023-05-06T07:05:00Z",
+        "qualifying": "2023-05-06T08:40:00Z",
+        "race": "2023-05-06T13:03:00Z"
+      }
+    },
+    {
+      "name": "Jakarta ePrix",
+      "location": "Indonesia",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 10,
+      "slug": "jakarta-eprix",
+      "localeKey": "jakarta-eprix",
+      "tbc": true,
+      "sessions": {
+        "practice1": "2023-06-02T08:25:00Z",
+        "practice2": "2023-06-03T01:05:00Z",
+        "qualifying": "2023-06-03T03:40:00Z",
+        "race": "2023-06-03T08:03:00Z"
+      }
+    },
+    {
+      "name": "Jakarta ePrix",
+      "location": "Indonesia",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 11,
+      "slug": "jakarta-eprix",
+      "localeKey": "jakarta-eprix",
+      "tbc": true,
+      "sessions": {
+        "practice3": "2023-06-04T01:05:00Z",
+        "qualifying": "2023-06-04T03:40:00Z",
+        "race": "2023-06-04T08:03:00Z"
+      }
+    },
+    {
+      "name": "Portland ePrix",
+      "location": "Portland",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 12,
+      "slug": "portland-eprix",
+      "localeKey": "portland-eprix",
+      "tbc": true,
+      "sessions": {
+        "practice1": "2023-06-23T07:00:00Z",
+        "qualifying": "2023-06-24T07:00:00Z",
+        "practice2": "2023-06-24T07:00:00Z",
+        "race": "2023-06-24T07:00:00Z"
+      }
+    },
+    {
+      "name": "Rome ePrix",
+      "location": "Rome",
+      "latitude": 41.901983,
+      "longitude": 12.494953,
+      "round": 13,
+      "slug": "rome-eprix",
+      "localeKey": "rome-eprix",
+      "tbc": true,
+      "sessions": {
+        "practice1": "2023-07-14T15:25:00Z",
+        "practice2": "2023-07-15T06:05:00Z",
+        "qualifying": "2023-07-15T08:40:00Z",
+        "race": "2023-07-15T13:03:00Z"
+      }
+    },
+    {
+      "name": "Rome ePrix",
+      "location": "Rome",
+      "latitude": 41.901983,
+      "longitude": 12.494953,
+      "round": 14,
+      "slug": "rome-eprix",
+      "localeKey": "rome-eprix",
+      "tbc": true,
+      "sessions": {
+        "practice3": "2023-07-16T06:05:00Z",
+        "qualifying": "2023-07-16T08:40:00Z",
+        "race": "2023-07-16T13:03:00Z"
+      }
+    },
+    {
+      "name": "London ePrix",
+      "location": "GB",
+      "latitude": 51.500149,
+      "longitude": -0.12624,
+      "tbc": true,
+      "round": 15,
+      "slug": "london-eprix",
+      "localeKey": "london-eprix",
+      "sessions": {
+        "practice1": "2023-07-28T15:55:00Z",
+        "practice2": "2023-07-29T09:25:00Z",
+        "qualifying": "2023-07-29T11:40:00Z",
+        "race": "2023-07-29T16:03:00Z"
+      }
+    },
+    {
+      "name": "London ePrix",
+      "location": "GB",
+      "latitude": 51.500149,
+      "longitude": -0.12624,
+      "tbc": true,
+      "round": 16,
+      "slug": "london-eprix",
+      "localeKey": "london-eprix",
+      "sessions": {
+        "practice3": "2023-07-30T09:25:00Z",
+        "qualifying": "2023-07-30T11:40:00Z",
+        "race": "2023-07-30T16:03:00Z"
+      }
+    }
+  ]
 }
