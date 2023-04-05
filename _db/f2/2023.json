@@ -1,225 +1,223 @@
 {
-	"races": [
-		{
-			"name": "Bahrain",
-			"location": "Sakhir",
-			"latitude": 26.037,
-			"longitude": 50.5112,
-			"round": 1,
-			"slug": "bahrain",
-			"localeKey": "bahrain",
-			"sessions": {
-				"practice": "2023-03-03T09:05:00Z",
-				"qualifying": "2023-03-03T16:30:00Z",
-				"sprint": "2023-03-04T13:15:00Z",
-				"feature": "2023-03-05T10:20:00Z"
-			}
-		},
-		{
-			"name": "Saudi Arabian",
-			"location": "Jeddah",
-			"latitude": 21.485811,
-			"longitude": 39.192505,
-			"round": 2,
-			"slug": "saudi-arabia",
-			"localeKey": "saudi-arabia",
-			"sessions": {
-				"practice": "2023-03-17T10:55:00Z", 
-				"qualifying": "2023-03-17T15:00:00Z", 
-				"sprint": "2023-03-18T15:10:00Z", 
-				"feature": "2023-03-19T13:15:00Z"
-			}
-		},
-		{
-			"name": "Australian",
-			"location": "Melbourne",
-			"latitude": -37.8373,
-			"longitude": 144.9666,
-			"round": 3,
-			"slug": "melbourne",
-			"localeKey": "melbourne",
-			"sessions": {
-				"practice": "2023-03-30T23:00:00Z", 
-				"qualifying": "2023-03-31T06:30:00Z", 
-				"sprint": "2023-04-01T03:20:00Z", 
-				"feature": "2023-04-02T01:35:00Z"
-			}
-		},
-		{
-			"name": "Azerbaijan",
-			"location": "Baku",
-			"latitude": 40.3699,
-			"longitude": 49.8433,
-			"round": 4,
-			"slug": "azerbaijan",
-			"localeKey": "azerbaijan",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-04-28T07:55:00Z", 
-				"qualifying": "2023-04-28T11:55:00Z", 
-				"sprint": "2023-04-29T06:35:00Z", 
-				"feature": "2023-04-30T06:40:00Z"
-			}
-		},
-		{
-			"name": "Emilia Romagna",
-			"location": "Imola",
-			"latitude": 44.344576,
-			"longitude": 11.713808,
-			"round": 5,
-			"slug": "emilia-romagna",
-			"localeKey": "emilia-romagna",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-05-19T09:55:00Z", 
-				"qualifying": "2023-05-19T13:55:00Z", 
-				"sprint": "2023-05-20T08:35:00Z", 
-				"feature": "2023-05-21T08:40:00Z" 
-			}
-		},
-		{
-			"name": "Monaco",
-			"location": "Monte Carlo",
-			"latitude": 43.7338,
-			"longitude": 7.4215,
-			"round": 6,
-			"slug": "monaco",
-			"localeKey": "monaco",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-05-25T15:05:00Z",
-				"qualifying": "2023-05-25T09:40:00Z",
-				"sprint": "2023-05-26T15:40:00Z",
-				"feature": "2023-05-27T07:50:00Z"
-			}
-		},
-		{
-			"name": "Spanish",
-			"location": "Barcelona",
-			"latitude": 41.5638,
-			"longitude": 2.2585,
-			"round": 7,
-			"slug": "spanish",
-			"localeKey": "spanish",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-06-02T09:35:00Z",
-				"qualifying": "2023-06-02T16:30:00Z",
-				"sprint": "2023-06-03T15:40:00Z",
-				"feature": "2023-06-04T09:35:00Z"
-			}
-		},
-		{
-			"name": "Austrian",
-			"location": "Spielberg",
-			"latitude": 47.2225,
-			"longitude": 14.7607,
-			"round": 8,
-			"slug": "austrian",
-			"localeKey": "austrian",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-06-30T09:05:00Z",
-				"qualifying": "2023-06-30T13:55:00Z",
-				"sprint": "2023-07-01T15:55:00Z",
-				"feature": "2023-07-02T08:05:00Z"
-			}
-		},
-		{
-			"name": "British",
-			"location": "Silverstone",
-			"latitude": 52.0706,
-			"longitude": -1.0174,
-			"round": 9,
-			"slug": "british",
-			"localeKey": "british",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-07-07T09:45:00Z",
-				"qualifying": "2023-07-07T16:30:00Z",
-				"sprint": "2023-07-08T16:00:00Z",
-				"feature": "2023-07-09T09:05:00Z"
-			}
-		},
-		{
-			"name": "Hungarian",
-			"location": "Budapest",
-			"latitude": 47.583,
-			"longitude": 19.2526,
-			"round": 10,
-			"slug": "hungarian",
-			"localeKey": "hungarian",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-07-21T08:40:00Z",
-				"qualifying": "2023-07-21T16:30:00Z",
-				"sprint": "2023-07-22T16:00:00Z",
-				"feature": "2023-07-23T09:35:00Z"
-			}
-		},
-		{
-			"name": "Belgian",
-			"location": "Spa-Francorchamps",
-			"latitude": 50.444,
-			"longitude": 5.9687,
-			"round": 11,
-			"slug": "belgian",
-			"localeKey": "belgian",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-07-28T09:35:00Z",
-				"qualifying": "2023-07-28T16:30:00Z",
-				"sprint": "2023-07-29T16:00:00Z",
-				"feature": "2023-07-30T08:20:00Z"
-			}
-		},
-		{
-			"name": "Dutch",
-			"location": "Zandvoort",
-			"latitude": 52.388408,
-			"longitude": 4.547122,
-			"round": 12,
-			"slug": "dutch",
-			"localeKey": "dutch",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-08-25T08:05:00Z",
-				"qualifying": "2023-08-25T13:00:00Z",
-				"sprint": "2023-08-26T15:00:00Z",
-				"feature": "2023-08-27T08:20:00Z"
-			}
-		},
-		{
-			"name": "Italian",
-			"location": "Monza",
-			"latitude": 45.6169,
-			"longitude": 9.2825,
-			"round": 13,
-			"slug": "italian",
-			"localeKey": "italian",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-09-01T08:25:00Z",
-				"qualifying": "2023-09-01T16:30:00Z",
-				"sprint": "2023-09-02T16:00:00Z",
-				"feature": "2023-09-03T08:05:00Z"
-			}
-		},
-		{
-			"name": "Abu Dhabi",
-			"location": "Yas Marina",
-			"latitude": 24.4821,
-			"longitude": 54.3482,
-			"round": 14,
-			"slug": "abu-dhabi",
-			"localeKey": "abu-dhabi",
-			"tbc": true,
-			"sessions": {
-				"practice": "2023-11-24T07:35:00Z",
-				"qualifying": "2023-11-24T11:30:00Z",
-				"sprint": "2023-11-25T12:20:00Z",
-				"feature": "2023-11-26T09:00:00Z"
-			}
-		}
-	]
+  "races": [
+    {
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "round": 1,
+      "slug": "bahrain",
+      "localeKey": "bahrain",
+      "sessions": {
+        "practice": "2023-03-03T09:05:00Z",
+        "qualifying": "2023-03-03T16:30:00Z",
+        "sprint": "2023-03-04T13:15:00Z",
+        "feature": "2023-03-05T10:20:00Z"
+      }
+    },
+    {
+      "name": "Saudi Arabian",
+      "location": "Jeddah",
+      "latitude": 21.485811,
+      "longitude": 39.192505,
+      "round": 2,
+      "slug": "saudi-arabia",
+      "localeKey": "saudi-arabia",
+      "sessions": {
+        "practice": "2023-03-17T10:55:00Z",
+        "qualifying": "2023-03-17T15:00:00Z",
+        "sprint": "2023-03-18T15:10:00Z",
+        "feature": "2023-03-19T13:15:00Z"
+      }
+    },
+    {
+      "name": "Australian",
+      "location": "Melbourne",
+      "latitude": -37.8373,
+      "longitude": 144.9666,
+      "round": 3,
+      "slug": "melbourne",
+      "localeKey": "melbourne",
+      "sessions": {
+        "practice": "2023-03-30T23:00:00Z",
+        "qualifying": "2023-03-31T06:30:00Z",
+        "sprint": "2023-04-01T03:20:00Z",
+        "feature": "2023-04-02T01:35:00Z"
+      }
+    },
+    {
+      "name": "Azerbaijan",
+      "location": "Baku",
+      "latitude": 40.3699,
+      "longitude": 49.8433,
+      "round": 4,
+      "slug": "azerbaijan",
+      "localeKey": "azerbaijan",
+      "sessions": {
+        "practice": "2023-04-28T07:55:00Z",
+        "qualifying": "2023-04-28T11:55:00Z",
+        "sprint": "2023-04-29T06:35:00Z",
+        "feature": "2023-04-30T06:40:00Z"
+      }
+    },
+    {
+      "name": "Emilia Romagna",
+      "location": "Imola",
+      "latitude": 44.344576,
+      "longitude": 11.713808,
+      "round": 5,
+      "slug": "emilia-romagna",
+      "localeKey": "emilia-romagna",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-05-19T09:55:00Z",
+        "qualifying": "2023-05-19T13:55:00Z",
+        "sprint": "2023-05-20T08:35:00Z",
+        "feature": "2023-05-21T08:40:00Z"
+      }
+    },
+    {
+      "name": "Monaco",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 6,
+      "slug": "monaco",
+      "localeKey": "monaco",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-05-25T09:55:00Z",
+        "sprint": "2023-05-26T08:35:00Z",
+        "feature": "2023-05-28T08:40:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Barcelona",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "round": 7,
+      "slug": "spanish",
+      "localeKey": "spanish",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-06-02T09:55:00Z",
+        "qualifying": "2023-06-02T13:55:00Z",
+        "sprint": "2023-06-03T08:35:00Z",
+        "feature": "2023-06-04T08:40:00Z"
+      }
+    },
+    {
+      "name": "Austrian",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "round": 8,
+      "slug": "austrian",
+      "localeKey": "austrian",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-06-30T09:55:00Z",
+        "qualifying": "2023-06-30T13:55:00Z",
+        "sprint": "2023-07-01T08:35:00Z",
+        "feature": "2023-07-02T08:40:00Z"
+      }
+    },
+    {
+      "name": "British",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "round": 9,
+      "slug": "british",
+      "localeKey": "british",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-07-07T10:55:00Z",
+        "qualifying": "2023-07-07T14:55:00Z",
+        "sprint": "2023-07-08T09:35:00Z",
+        "feature": "2023-07-09T09:40:00Z"
+      }
+    },
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "round": 10,
+      "slug": "hungarian",
+      "localeKey": "hungarian",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-07-21T01:55:00Z",
+        "qualifying": "2023-07-21T05:55:00Z",
+        "sprint": "2023-07-22T00:35:00Z",
+        "feature": "2023-07-23T00:40:00Z"
+      }
+    },
+    {
+      "name": "Belgian",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.444,
+      "longitude": 5.9687,
+      "round": 11,
+      "slug": "belgian",
+      "localeKey": "belgian",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-07-28T09:55:00Z",
+        "qualifying": "2023-07-28T13:55:00Z",
+        "sprint": "2023-07-29T08:35:00Z",
+        "feature": "2023-07-30T08:40:00Z"
+      }
+    },
+    {
+      "name": "Dutch",
+      "location": "Zandvoort",
+      "latitude": 52.388408,
+      "longitude": 4.547122,
+      "round": 12,
+      "slug": "dutch",
+      "localeKey": "dutch",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-08-25T09:55:00Z",
+        "qualifying": "2023-08-25T13:55:00Z",
+        "sprint": "2023-08-26T08:35:00Z",
+        "feature": "2023-08-27T08:40:00Z"
+      }
+    },
+    {
+      "name": "Italian",
+      "location": "Monza",
+      "latitude": 45.6169,
+      "longitude": 9.2825,
+      "round": 13,
+      "slug": "italian",
+      "localeKey": "italian",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-09-01T09:55:00Z",
+        "qualifying": "2023-09-01T13:55:00Z",
+        "sprint": "2023-09-02T08:35:00Z",
+        "feature": "2023-09-03T08:40:00Z"
+      }
+    },
+    {
+      "name": "Abu Dhabi",
+      "location": "Yas Marina",
+      "latitude": 24.4821,
+      "longitude": 54.3482,
+      "round": 14,
+      "slug": "abu-dhabi",
+      "localeKey": "abu-dhabi",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-11-24T07:55:00Z",
+        "qualifying": "2023-11-24T11:55:00Z",
+        "sprint": "2023-11-25T06:35:00Z",
+        "feature": "2023-11-26T06:40:00Z"
+      }
+    }
+  ]
 }
