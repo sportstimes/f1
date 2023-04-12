@@ -1,138 +1,130 @@
 {
-	"races": [
-		{
-			"name": "Spielberg",
-			"location": "Austria",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 1,
-			"slug": "spielberg",
-			"localeKey": "spielberg",
-			"tbc": true,
-			"sessions": {
-				"fp1": "2023-04-28T12:00:00Z",
-				"fp2": "2023-04-28T12:00:00Z",
-				"qualifying1": "2023-04-28T12:00:00Z",
-				"qualifying2": "2023-04-28T12:00:00Z",
-				"race1": "2023-04-29T12:00:00Z",
-				"race2": "2023-04-29T12:00:00Z",
-				"race3": "2023-04-29T12:00:00Z"
-			}
-		},
-		{
-			"name": "Valenvia",
-			"location": "Spain",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 2,
-			"slug": "valenvia",
-			"localeKey": "valenvia",
-			"tbc": true,
-			"sessions": {
-				"fp1": "2023-05-05T12:00:00Z",
-				"fp2": "2023-05-05T12:00:00Z",
-				"qualifying1": "2023-05-06T12:00:00Z",
-				"qualifying2": "2023-05-06T12:00:00Z",
-				"race1": "2023-05-07T12:00:00Z",
-				"race2": "2023-05-07T12:00:00Z",
-				"race3": "2023-05-07T12:00:00Z"
-			}
-		},
-		{
-			"name": "Barcelona",
-			"location": "Spain",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 3,
-			"slug": "barcelona",
-			"localeKey": "barcelona",
-			"tbc": true,
-			"sessions": {
-				"fp1": "2023-05-19T12:00:00Z",
-				"fp2": "2023-05-19T12:00:00Z",
-				"qualifying1": "2023-05-20T12:00:00Z",
-				"qualifying2": "2023-05-20T12:00:00Z",
-				"race1": "2023-05-21T12:00:00Z",
-				"race2": "2023-05-21T12:00:00Z",
-				"race3": "2023-05-21T12:00:00Z"
-			}
-		},
-		{
-			"name": "Zandvoort",
-			"location": "Netherlands",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 4,
-			"slug": "zandvoort",
-			"localeKey": "zandvoort",
-			"tbc": true,
-			"sessions": {
-				"fp1": "2023-06-23T12:00:00Z",
-				"fp2": "2023-06-23T12:00:00Z",
-				"qualifying1": "2023-06-24T12:00:00Z",
-				"qualifying2": "2023-06-24T12:00:00Z",
-				"race1": "2023-06-25T12:00:00Z",
-				"race2": "2023-06-25T12:00:00Z",
-				"race3": "2023-06-25T12:00:00Z"
-			}
-		}
-		,
-		{
-			"name": "Monza",
-			"location": "Italy",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 5,
-			"slug": "monza",
-			"localeKey": "monza",
-			"tbc": true,
-			"sessions": {
-				"fp1": "2023-07-07T12:00:00Z",
-				"fp2": "2023-07-07T12:00:00Z",
-				"qualifying1": "2023-07-08T12:00:00Z",
-				"qualifying2": "2023-07-08T12:00:00Z",
-				"race1": "2023-07-09T12:00:00Z",
-				"race2": "2023-07-09T12:00:00Z",
-				"race3": "2023-07-09T12:00:00Z"
-			}
-		},
-		{
-			"name": "La Castellet",
-			"location": "France",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 6,
-			"slug": "la-castellet",
-			"localeKey": "la-castellet",
-			"tbc": true,
-			"sessions": {
-				"fp1": "2023-07-29T12:00:00Z",
-				"fp2": "2023-07-29T12:00:00Z",
-				"qualifying1": "2023-07-29T12:00:00Z",
-				"qualifying2": "2023-07-29T12:00:00Z",
-				"race1": "2023-07-20T12:00:00Z",
-				"race2": "2023-07-30T12:00:00Z",
-				"race3": "2023-07-30T12:00:00Z"
-			}
-		},
-		{
-			"name": "Austin",
-			"location": "USA",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 7,
-			"slug": "austin",
-			"localeKey": "austin",
-			"tbc": true,
-			"sessions": {
-				"fp1": "2023-10-20T12:00:00Z",
-				"fp2": "2023-10-20T12:00:00Z",
-				"qualifying1": "2023-10-21T12:00:00Z",
-				"qualifying2": "2023-10-21T12:00:00Z",
-				"race1": "2023-10-22T12:00:00Z",
-				"race2": "2023-10-22T12:00:00Z",
-				"race3": "2023-10-22T12:00:00Z"
-			}
-		}
-	]
+  "races": [
+    {
+      "name": "Spielberg",
+      "location": "Austria",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 1,
+      "slug": "spielberg",
+      "localeKey": "spielberg",
+      "sessions": {
+        "fp1": "2023-04-28T10:00:00Z",
+        "fp2": "2023-04-28T12:38:00Z",
+        "qualifying1": "2023-04-28T14:00:00Z",
+        "qualifying2": "2023-04-28T14:15:00Z",
+        "race1": "2023-04-29T10:00:00Z",
+        "race2": "2023-04-29T12:00:00Z",
+        "race3": "2023-04-29T14:00:00Z"
+      }
+    },
+    {
+      "name": "Valenvia",
+      "location": "Spain",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 2,
+      "slug": "valenvia",
+      "localeKey": "valenvia",
+      "sessions": {
+        "fp1": "2023-05-05T10:00:00Z",
+        "fp2": "2023-05-05T11:00:00Z",
+        "qualifying1": "2023-05-05T12:00:00Z",
+        "qualifying2": "2023-05-05T12:30:00Z",
+        "race1": "2023-05-06T10:00:00Z",
+        "race2": "2023-05-06T14:00:00Z",
+        "race3": "2023-05-07T10:00:00Z"
+      }
+    },
+    {
+      "name": "Barcelona",
+      "location": "Spain",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 3,
+      "slug": "barcelona",
+      "localeKey": "barcelona",
+      "sessions": {
+        "fp1": "2023-05-19T10:00:00Z",
+        "fp2": "2023-05-19T11:00:00Z",
+        "qualifying1": "2023-05-19T12:00:00Z",
+        "qualifying2": "2023-05-19T12:30:00Z",
+        "race1": "2023-05-20T10:00:00Z",
+        "race2": "2023-05-20T14:00:00Z",
+        "race3": "2023-05-21T10:00:00Z"
+      }
+    },
+    {
+      "name": "Zandvoort",
+      "location": "Netherlands",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 4,
+      "slug": "zandvoort",
+      "localeKey": "zandvoort",
+      "sessions": {
+        "fp1": "2023-06-23T10:00:00Z",
+        "fp2": "2023-06-23T11:00:00Z",
+        "qualifying1": "2023-06-23T12:00:00Z",
+        "qualifying2": "2023-06-23T12:30:00Z",
+        "race1": "2023-06-24T10:00:00Z",
+        "race2": "2023-06-24T14:00:00Z",
+        "race3": "2023-06-25T10:00:00Z"
+      }
+    },
+    {
+      "name": "Monza",
+      "location": "Italy",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 5,
+      "slug": "monza",
+      "localeKey": "monza",
+      "sessions": {
+        "fp1": "2023-07-07T10:00:00Z",
+        "fp2": "2023-07-07T11:00:00Z",
+        "qualifying1": "2023-07-07T12:00:00Z",
+        "qualifying2": "2023-07-07T12:30:00Z",
+        "race1": "2023-07-08T10:30:00Z",
+        "race2": "2023-07-08T14:00:00Z",
+        "race3": "2023-07-09T10:30:00Z"
+      }
+    },
+    {
+      "name": "La Castellet",
+      "location": "France",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 6,
+      "slug": "la-castellet",
+      "localeKey": "la-castellet",
+      "sessions": {
+        "fp1": "2023-07-29T10:00:00Z",
+        "fp2": "2023-07-29T11:00:00Z",
+        "qualifying1": "2023-07-29T12:00:00Z",
+        "qualifying2": "2023-07-29T12:30:00Z",
+        "race1": "2023-07-30T10:00:00Z",
+        "race2": "2023-07-30T12:00:00Z",
+        "race3": "2023-07-30T14:00:00Z"
+      }
+    },
+    {
+      "name": "Austin",
+      "location": "USA",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 7,
+      "slug": "austin",
+      "localeKey": "austin",
+      "sessions": {
+        "fp1": "2023-10-20T10:00:00Z",
+        "fp2": "2023-10-20T11:00:00Z",
+        "qualifying1": "2023-10-20T12:00:00Z",
+        "qualifying2": "2023-10-20T12:30:00Z",
+        "race1": "2023-10-21T10:00:00Z",
+        "race2": "2023-10-21T12:00:00Z",
+        "race3": "2023-10-22T10:00:00Z"
+      }
+    }
+  ]
 }
