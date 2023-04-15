@@ -55,8 +55,11 @@
 			"round": 4,
 			"slug": "grand-prix-of-alabama",
 			"localeKey": "grand-prix-of-alabama",
-			"tbc": true,
 			"sessions": {
+				"practice1": "2023-04-28T19:40:00Z",
+				"practice2": "2023-04-29T16:00:00Z",
+				"qualifying": "2023-04-29T19:00:00Z",
+				"warmup": "2023-04-30T16:00:00Z",
 				"race": "2023-04-30T19:00:00Z"
 			}
 		},
