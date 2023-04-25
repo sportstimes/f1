@@ -23,6 +23,7 @@
         "qualifying": "Aika-ajot",
         "qualifying1": "Aika-ajot 1",
         "qualifying2": "Aika-ajot 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
@@ -109,7 +110,8 @@
         "reminderContinued": "minuuttia ennen jokaista tapahtumaa.",
         "button": "Luo kalenteri",
         "buttonSubmitted": "Luotu",
-        "nonOptionsSelected": "Valitse vähintään yksi tapahtuma."
+        "nonOptionsSelected": "Valitse vähintään yksi tapahtuma.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Valitse kalenterityyppi",

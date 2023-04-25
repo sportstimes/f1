@@ -23,6 +23,7 @@
         "qualifying": "Kualifikimet",
         "qualifying1": "Kualifikimet 1",
         "qualifying2": "Kualifikimet 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Ngrohje",
@@ -109,7 +110,8 @@
         "reminderContinued": "minuta para secilit event në kalendarin tuaj me sesione.",
         "button": "Shkarko Kalendarin",
         "buttonSubmitted": "E dërguar",
-        "nonOptionsSelected": "Ju lutem zgjedhni të paktën një sesion për kalendarin tuaj."
+        "nonOptionsSelected": "Ju lutem zgjedhni të paktën një sesion për kalendarin tuaj.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Zgjedhni llojin e kalendarit",

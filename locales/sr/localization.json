@@ -21,6 +21,7 @@
 		"qualifying1": "Kvalifikacija 1",
 		"qualifying2": "Kvalifikacija 2",
 		"sprintQualifying": "Sprint Kvalifikacija",
+		"sprint": "Sprint",
 		"semifinal": "Polufinale",
 		"warmup": "Zagrevanje",
 		"race": "Trka",
@@ -109,7 +110,7 @@
 		"button": "Preuzmite kalendar",
 		"buttonSubmitted": "Podnešeno",
 		"nonOptionsSelected": "Molimo Vas izbarite makar jednu sesiju za Vaš kalendar",
-		"attention": ""
+		"attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
 	},
 	"download": {
 		"title": "Izaberite tip kalendara",

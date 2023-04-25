@@ -23,6 +23,7 @@
         "qualifying": "Időmérő",
         "qualifying1": "1. Időmérő",
         "qualifying2": "2. Időmérő",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Sprint kvalifikáció",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
@@ -109,7 +110,8 @@
         "reminderContinued": "perccel minden esemény előtt a naptáradban.",
         "button": "Naptár kérése",
         "buttonSubmitted": "Elküldve",
-        "nonOptionsSelected": "Kérlek válassz legalább egy eseményt a naptáradhoz."
+        "nonOptionsSelected": "Kérlek válassz legalább egy eseményt a naptáradhoz.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Válassz naptár típust",

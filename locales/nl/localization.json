@@ -23,6 +23,7 @@
         "qualifying": "Kwalificatie",
         "qualifying1": "Kwalificatie 1",
         "qualifying2": "Kwalificatie 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Sprintkwalificatie",
         "semifinal": "Halve finale",
         "warmup": "Formatieronde",
@@ -109,7 +110,8 @@
         "reminderContinued": "enkele minuten voor elk evenement in je seizoensagenda.",
         "button": "Haal de agenda op",
         "buttonSubmitted": "Ingediend",
-        "nonOptionsSelected": "Gelieve minstens één sessie te selecteren voor je agenda."
+        "nonOptionsSelected": "Gelieve minstens één sessie te selecteren voor je agenda.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Selecteer het type agenda",

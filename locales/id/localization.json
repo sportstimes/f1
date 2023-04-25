@@ -21,6 +21,7 @@
         "qualifying1": "Kualifikasi 1",
         "qualifying2": "Kuailifikasi 2",
         "sprintQualifying": "Kualifikasi Sprint",
+        "sprint": "Sprint",
         "semifinal": "Semi final",
         "warmup": "Pemanasan",
         "race": "Balapan",
@@ -109,7 +110,7 @@
         "button": "Dapatkan Kalender",
         "buttonSubmitted": "Dikirim",
         "nonOptionsSelected": "Harap pilih setidaknya satu sesi untuk kalender Anda.",
-        "attention": "perhatian"
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Pilih Jenis Kalender",

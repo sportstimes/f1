@@ -21,6 +21,7 @@
 		"qualifying1": "தகுதி போட்டி 1",
 		"qualifying2": "தகுதி போட்டி 2",
 		"sprintQualifying": "விரைவோட்ட தகுதி போட்டி",
+		"sprint": "Sprint",
 		"semifinal": "அரை இறுதி",
 		"warmup": "தயார் செய்தல்",
 		"race": "பந்தயம்",
@@ -109,7 +110,7 @@
 		"button": "நாட்காட்டியை தெரிவுசெய்",
 		"buttonSubmitted": "சமர்ப்பிக்கப்பட்டது",
 		"nonOptionsSelected": "குறைந்தது ஒரு சீசனை தெரிவு செய்யவும்.",
-		"attention": ""
+		"attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
 	},
 	"download": {
 		"title": "நாட்காட்டி வகையை தெரிவுசெய்",

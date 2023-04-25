@@ -43,6 +43,10 @@ function generateCalendars(siteKey){
 		calendarOptions.push(sessionMap[session]);
 	}
 	
+	// Site specific logic...
+	// F1: Remove Sprint Qualifying for 2023.
+	calendarOptions = calendarOptions.filter(item => item !== "sprintQualifying");
+	
 	// Add the alarm suffix.
 	calendarOptions.push("alarm");
 	
@@ -142,7 +146,13 @@ function generateCalendars(siteKey){
 						let session = race.sessions[sessionKey];
 	
 						// Skip
-						if(!sessionArray.includes(sessionMap[sessionKey])) continue;
+						// F1: Some logic to include Sprint Qualifying Races when "Sprint" is selected.
+						// Adjustment for the Baku GP 2023 with the new Sprint weekend format.
+						if(siteKey == "f1"){
+							if(!sessionArray.includes(sessionMap[sessionKey]) && !(sessionMap[sessionKey] == "sprintQualifying" && (sessionArray.includes("sprint") && !sessionArray.includes("sprintQualifying"))))  continue;
+						} else {
+							if(!sessionArray.includes(sessionMap[sessionKey])) continue;
+						}
 						
 						let title = race.name;
 						if (localizedStrings.races[race.localeKey]) {

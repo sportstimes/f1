@@ -23,6 +23,7 @@
         "qualifying": "Kvalifisering",
         "qualifying1": "Kvalifisering 1",
         "qualifying2": "Kvalifisering 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
@@ -109,7 +110,8 @@
         "reminderContinued": "minutter før hver hendelse i din kalender.",
         "button": "Få kalender",
         "buttonSubmitted": "Sendt inn",
-        "nonOptionsSelected": "Vennligst velg minst økt å legge til i din kalender."
+        "nonOptionsSelected": "Vennligst velg minst økt å legge til i din kalender.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Velg kalender-type",

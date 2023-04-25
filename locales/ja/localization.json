@@ -21,6 +21,7 @@
 		"qualifying1": "予選1",
 		"qualifying2": "予選2",
 		"sprintQualifying": "スプリント予選",
+		"sprint": "Sprint",
 		"semifinal": "準決勝",
 		"warmup": "ウォームアップ",
 		"race": "決勝",
@@ -109,7 +110,7 @@
 		"button": "カレンダーを取得",
 		"buttonSubmitted": "送信済み",
 		"nonOptionsSelected": "少なくとも1つはセッションを選んでください。",
-		"attention": "注意"
+		"attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
 	},
 	"download": {
 		"title": "カレンダーの種類を選択",

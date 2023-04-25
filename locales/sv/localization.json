@@ -23,6 +23,7 @@
         "qualifying": "Kvalificering",
         "qualifying1": "Kvalificering 1",
         "qualifying2": "Kvalificering 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Sprintkvalificering",
         "semifinal": "Semifinal",
         "warmup": "Uppvärmning",
@@ -109,7 +110,8 @@
         "reminderContinued": "minuter innan varje session i din säsongskalender.",
         "button": "Skapa Kalender",
         "buttonSubmitted": "Inlämnad",
-        "nonOptionsSelected": "Välj minst en session till din kalender."
+        "nonOptionsSelected": "Välj minst en session till din kalender.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Välj kalendertyp",
