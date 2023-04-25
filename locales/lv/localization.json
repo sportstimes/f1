@@ -21,6 +21,7 @@
 		"qualifying1": "Kvalifkācija 1",
 		"qualifying2": "Kvalifkācija 2",
 		"sprintQualifying": "Sprinta kvalifkācija",
+		"sprint": "Sprint",
 		"semifinal": "Pusfināls",
 		"warmup": "Iesildīšanās",
 		"race": "Sacīkste",
@@ -109,7 +110,7 @@
 		"button": "Get Calendar",
 		"buttonSubmitted": "Submitted",
 		"nonOptionsSelected": "Please select at least one session for your calendar.",
-		"attention": ""
+		"attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
 	},
 	"download": {
 		"title": "Select Calendar Type",

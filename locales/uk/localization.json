@@ -23,6 +23,7 @@
         "qualifying": "Кваліфікація",
         "qualifying1": "Кваліфікація 1",
         "qualifying2": "Кваліфікація 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Спринтерська гонка",
         "semifinal": "Півфінал",
         "warmup": "Розминка",
@@ -109,7 +110,8 @@
         "reminderContinued": "хвилин до початку події в Вашому календарі.",
         "button": "Згенерувати календар",
         "buttonSubmitted": "Відправлено",
-        "nonOptionsSelected": "Будь ласка, виберіть хоча б одну сесію, щоб додати до Вашого календаря."
+        "nonOptionsSelected": "Будь ласка, виберіть хоча б одну сесію, щоб додати до Вашого календаря.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Виберіть тип календаря",

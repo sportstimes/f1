@@ -23,6 +23,7 @@
         "qualifying": "Sıralama turları",
         "qualifying1": "Sıralama turları 1",
         "qualifying2": "Sıralama turları 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Sprint",
         "semifinal": "Yarı Final",
         "warmup": "Isınma",
@@ -109,7 +110,8 @@
         "reminderContinued": "dakika kala hatırlatma gelsin.",
         "button": "Takvimi oluştur",
         "buttonSubmitted": "İşlem tamamlandı",
-        "nonOptionsSelected": "Lütfen listeden en az bir seans seçin."
+        "nonOptionsSelected": "Lütfen listeden en az bir seans seçin.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Takvim Türünü Seçin",

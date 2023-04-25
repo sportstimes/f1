@@ -21,6 +21,7 @@
         "qualifying1": "排位赛 1",
         "qualifying2": "排位赛 2",
         "sprintQualifying": "冲刺排位赛",
+        "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "正赛",
@@ -109,7 +110,7 @@
         "button": "确认",
         "buttonSubmitted": "已提交",
         "nonOptionsSelected": "请至少选择一个赛程信息.",
-        "attention": "注意"
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "选择日历的类型",

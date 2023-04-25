@@ -23,6 +23,7 @@
         "qualifying": "Квалификация",
         "qualifying1": "Квалификация 1",
         "qualifying2": "Квалификация 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Квалификационный спринт",
         "semifinal": "Полуфинал",
         "warmup": "Разминка",
@@ -109,7 +110,8 @@
         "reminderContinued": "минут до наступления события в Вашем календаре.",
         "button": "Создать календарь",
         "buttonSubmitted": "Отправлено",
-        "nonOptionsSelected": "Пожалуйста, выберите хотя бы одну сессию для своего календаря."
+        "nonOptionsSelected": "Пожалуйста, выберите хотя бы одну сессию для своего календаря.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Выберите тип календаря",

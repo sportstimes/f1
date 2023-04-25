@@ -21,6 +21,7 @@
         "qualifying1": "Κατατακτήριες Δοκιμές 1",
         "qualifying2": "Κατατακτήριες Δοκιμές 2",
         "sprintQualifying": "Σπριντ Κατατακτήριες",
+        "sprint": "Sprint",
         "semifinal": "Ημιτελικός",
         "warmup": "Προθέρμανση",
         "race": "Αγώνας",
@@ -109,7 +110,7 @@
         "button": "Λήψη Ημερολογίου",
         "buttonSubmitted": "Έγινε υποβολή",
         "nonOptionsSelected": "Επιλέξτε τουλάχιστον μία περίοδο για το ημερολόγιό σας",
-        "attention": "προσοχή"
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Επιλογή Τύπου Ημερολογίου",

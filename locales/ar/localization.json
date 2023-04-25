@@ -23,6 +23,7 @@
         "qualifying": "التجارب التأهيلية",
         "qualifying1": "التجارب التأهيلية 1",
         "qualifying2": "التجارب التأهيلية 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "التجارب التأهيلية السريعة",
         "semifinal": "نصف النهائي",
         "warmup": "الإحماء",
@@ -109,7 +110,8 @@
         "reminderContinued": "دقائق قبل كل حدث في التقويم.",
         "button": "التقويم",
         "buttonSubmitted": "تم التسجيل",
-        "nonOptionsSelected": "من فضلك اختر علي الأقل حدث واحد للتقويم"
+        "nonOptionsSelected": "من فضلك اختر علي الأقل حدث واحد للتقويم",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "نوع التقويم",

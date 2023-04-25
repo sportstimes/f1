@@ -23,6 +23,7 @@
         "qualifying": "Kvalifikace",
         "qualifying1": "Kvalifikace 1",
         "qualifying2": "Kvalifikace 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
@@ -109,7 +110,8 @@
         "reminderContinued": "minut před každou událostí ve vašem kalendáři sezóny.",
         "button": "Získejte kalendář",
         "buttonSubmitted": "Odesláno",
-        "nonOptionsSelected": "Vyberte prosím alespoň jednu relaci pro váš kalendář."
+        "nonOptionsSelected": "Vyberte prosím alespoň jednu relaci pro váš kalendář.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Vyberte typ kalendáře",

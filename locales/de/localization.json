@@ -23,6 +23,7 @@
         "qualifying": "Qualifying",
         "qualifying1": "Qualifying 1",
         "qualifying2": "Qualifying 2",
+        "sprintQualifying": "Sprint Shootout",
         "sprint": "Sprint",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
@@ -109,7 +110,8 @@
         "reminderContinued": "Minuten vor einem Event in deinem Saisonkalender.",
         "button": "Kalender beziehen",
         "buttonSubmitted": "Bestätigen",
-        "nonOptionsSelected": "Bitte wähle mindestens eine Session für deinen Kalender aus."
+        "nonOptionsSelected": "Bitte wähle mindestens eine Session für deinen Kalender aus.",
+        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
         "title": "Wähle den Kalendertyp",
