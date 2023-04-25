@@ -24,6 +24,9 @@ function Notifications() {
 		submitted: false
 	};
 	
+	// Remove Sprint Qualifying
+	sessions = sessions.filter(item => item !== "sprintQualifying");
+	
 	// Add sessions from config...
 	sessions.forEach(function (session:String, index:Number) {
 		defaults[session] = false;
@@ -111,7 +114,6 @@ function Notifications() {
 			setLoaded(true);
 		} catch (error) {
 		  console.log("err2:" + error)
-		  alert("err2: " + error);
 		}
 	}
 
