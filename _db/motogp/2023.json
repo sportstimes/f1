@@ -153,25 +153,6 @@
       "localeKey": "motul-tt-assen"
     },
     {
-      "name": "Grand Prix of Kazakhstan",
-      "location": "Kazakhstan",
-      "track": "Sokol International Racetrack",
-      "round": 9,
-      "sessions": {
-        "fp1": "2023-07-07T05:15:00Z",
-        "fp2": "2023-07-07T09:30:00Z",
-        "fp3": "2023-07-08T05:10:00Z",
-        "qualifying1": "2023-07-08T05:50:00Z",
-        "qualifying2": "2023-07-08T06:15:00Z",
-        "sprint": "2023-07-08T10:00:00Z",
-        "race": "2023-07-09T09:00:00Z"
-      },
-      "latitude": 42.33651,
-      "longitude": -76.924843,
-      "slug": "grand-prix-of-kazakhstan",
-      "localeKey": "grand-prix-of-kazakhstan"
-    },
-    {
       "name": "Monster Energy British Grand Prix",
       "location": "Great britain",
       "track": "Silverstone Circuit",
