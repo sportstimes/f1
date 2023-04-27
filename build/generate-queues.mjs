@@ -6,20 +6,24 @@ async function generateQueue(siteKey){
 	
 	console.log('Generating queue! ' + siteKey);
 	
-	if (!admin.apps.length) {	  
-	  admin.initializeApp({
-		credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_CREDENTIALS))
-	  })
-	}
-	const db = admin.firestore()
-	const collectionRef = db.collection(siteKey)
+	var debug = false;
 	
 	// Remove all items from the collection...
-	await collectionRef.get().then((snapshot) => {
-		snapshot.docs.forEach((doc) => {
-			doc.ref.delete();
+	if(!debug){
+		if (!admin.apps.length) {	  
+		  admin.initializeApp({
+			credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_CREDENTIALS))
+		  })
+		}
+		const db = admin.firestore()
+		const collectionRef = db.collection(siteKey)
+		
+		await collectionRef.get().then((snapshot) => {
+			snapshot.docs.forEach((doc) => {
+				doc.ref.delete();
+			});
 		});
-	});
+	}
 	
 	
 	// Create new items...
@@ -61,19 +65,22 @@ async function generateQueue(siteKey){
 		if(dayjs(hourBeforeFirstSession).isAfter(Date())){
 			const ref = `${hourBeforeFirstSession.unix()}-${race.slug}-email`;
 			
-			await collectionRef.doc(ref).set({
-				scheduledAt: hourBeforeFirstSession.toDate(),
-				title: title,
-				type: 'email',
-				topic: `${siteKey}-reminder`
-			})
+			if(debug){
+				
+			} else {
+				await collectionRef.doc(ref).set({
+					scheduledAt: hourBeforeFirstSession.toDate(),
+					title: title,
+					type: 'email',
+					topic: `${siteKey}-reminder`
+				})
+			}
 		}
 		
 		// Schedule session notifications...
 			
 		for (const session of Object.keys(race.sessions)) {
 			if (dayjs(race.sessions[session]).isAfter(Date())) {
-				
 				var body = session;
 				if(localizedStrings['schedule'][session]){
 					body = localizedStrings['schedule'][session];
@@ -84,22 +91,47 @@ async function generateQueue(siteKey){
 				const scheduledAt = dayjs(race.sessions[session]).subtract(5, 'minutes');
 
 				const ref = `${scheduledAt.unix()}-${race.slug}-${session}`;
-								
-				await collectionRef.doc(ref).set({
-					scheduledAt: scheduledAt.toDate(),
-					title: title,
-					body: body,
-					type: 'push',
-					topic: `${siteKey}-${session}`
-				})
+				var topic = `${siteKey}-${session}`;
 				
-				const ref2 = `${scheduledAt.unix()}-${race.slug}-${session}-buffer`;
-				const tweet = `${title}: ${body} https://f1calendar.com`;
-				await collectionRef.doc(ref2).set({
-					scheduledAt: scheduledAt.toDate(),
-					title: tweet,
-					type: 'buffer'
-				})
+				if(session == 'sprintQualifying'){
+					topic = `${siteKey}-sprint`;
+				}
+				
+				if(debug){
+					console.log({
+						scheduledAt: scheduledAt.toDate(),
+						title: title,
+						body: body,
+						type: 'push',
+						topic: topic
+					});
+					
+					
+					const tweet = `${title}: ${body} https://f1calendar.com`;
+
+					console.log({
+						scheduledAt: scheduledAt.toDate(),
+						title: tweet,
+						type: 'buffer'
+					});
+					
+				} else {
+					await collectionRef.doc(ref).set({
+						scheduledAt: scheduledAt.toDate(),
+						title: title,
+						body: body,
+						type: 'push',
+						topic: `${siteKey}-${session}`
+					})
+					
+					const ref2 = `${scheduledAt.unix()}-${race.slug}-${session}-buffer`;
+					const tweet = `${title}: ${body} https://f1calendar.com`;
+					await collectionRef.doc(ref2).set({
+						scheduledAt: scheduledAt.toDate(),
+						title: tweet,
+						type: 'buffer'
+					})
+				}
 			}
 		}
 	}
