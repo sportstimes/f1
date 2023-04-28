@@ -25,6 +25,5 @@
 		"gp":120
 	},
 	"supportsEmailReminders": true,
-	"supportsWebPush": true,
-	"notice": "Calendar updates will be available shortly to reflect the Sprint Shootout adjustment. No need to regenerate your Calendar if you've subscribed with Sprint sessions selected."
+	"supportsWebPush": true
 }
