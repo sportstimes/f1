@@ -165,7 +165,7 @@ function generateCalendars(siteKey){
 						// Or if there are multiple featured sessions then add the session name in front (sprint, feature etc)...
 						if(!config.featuredSessions[sessionKey] || (config.featuredSessions[sessionKey] && config.featuredSessions.length > 1)){
 							let sessionTitle = localizedStrings.schedule[sessionKey];
-							if(localizedStrings.scheduleAbbreviated){
+							if(localizedStrings.scheduleAbbreviated && localizedStrings.scheduleAbbreviated[sessionKey]){
 								sessionTitle = localizedStrings.scheduleAbbreviated[sessionKey];
 							}
 							
