@@ -68,7 +68,6 @@
       "round": 5,
       "slug": "emilia-romagna",
       "localeKey": "emilia-romagna",
-      "tbc": true,
       "sessions": {
         "practice": "2023-05-19T09:05:00Z",
         "qualifying": "2023-05-19T13:55:00Z",
@@ -84,10 +83,9 @@
       "round": 6,
       "slug": "monaco",
       "localeKey": "monaco",
-      "tbc": true,
       "sessions": {
         "practice": "2023-05-25T09:55:00Z",
-        "sprint": "2023-05-26T08:35:00Z",
+        "sprint": "2023-05-27T08:35:00Z",
         "feature": "2023-05-28T08:40:00Z"
       }
     },
@@ -99,7 +97,6 @@
       "round": 7,
       "slug": "spanish",
       "localeKey": "spanish",
-      "tbc": true,
       "sessions": {
         "practice": "2023-06-02T09:55:00Z",
         "qualifying": "2023-06-02T13:55:00Z",
@@ -115,7 +112,6 @@
       "round": 8,
       "slug": "austrian",
       "localeKey": "austrian",
-      "tbc": true,
       "sessions": {
         "practice": "2023-06-30T09:55:00Z",
         "qualifying": "2023-06-30T13:55:00Z",
@@ -147,7 +143,6 @@
       "round": 10,
       "slug": "hungarian",
       "localeKey": "hungarian",
-      "tbc": true,
       "sessions": {
         "practice": "2023-07-21T01:55:00Z",
         "qualifying": "2023-07-21T05:55:00Z",
@@ -163,7 +158,6 @@
       "round": 11,
       "slug": "belgian",
       "localeKey": "belgian",
-      "tbc": true,
       "sessions": {
         "practice": "2023-07-28T09:55:00Z",
         "qualifying": "2023-07-28T13:55:00Z",
@@ -179,7 +173,6 @@
       "round": 12,
       "slug": "dutch",
       "localeKey": "dutch",
-      "tbc": true,
       "sessions": {
         "practice": "2023-08-25T09:55:00Z",
         "qualifying": "2023-08-25T13:55:00Z",
@@ -195,7 +188,6 @@
       "round": 13,
       "slug": "italian",
       "localeKey": "italian",
-      "tbc": true,
       "sessions": {
         "practice": "2023-09-01T09:55:00Z",
         "qualifying": "2023-09-01T13:55:00Z",
@@ -211,7 +203,6 @@
       "round": 14,
       "slug": "abu-dhabi",
       "localeKey": "abu-dhabi",
-      "tbc": true,
       "sessions": {
         "practice": "2023-11-24T07:55:00Z",
         "qualifying": "2023-11-24T11:55:00Z",
