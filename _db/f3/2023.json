@@ -38,7 +38,6 @@
       "round": 3,
       "slug": "emilia-romagna",
       "localeKey": "emilia-romagna",
-      "tbc": true,
       "sessions": {
         "practice": "2023-05-19T07:55:00Z",
         "qualifying": "2023-05-19T13:00:00Z",
@@ -54,7 +53,6 @@
       "round": 4,
       "slug": "monaco",
       "localeKey": "monaco",
-      "tbc": true,
       "sessions": {
         "practice": "2023-05-25T06:45:00Z",
         "sprint": "2023-05-27T14:45:00Z",
@@ -69,7 +67,6 @@
       "round": 5,
       "slug": "spanish",
       "localeKey": "spanish",
-      "tbc": true,
       "sessions": {
         "practice": "2023-06-02T06:45:00Z",
         "qualifying": "2023-06-02T09:55:00Z",
@@ -100,7 +97,6 @@
       "round": 7,
       "slug": "british",
       "localeKey": "british",
-      "tbc": true,
       "sessions": {
         "practice": "2023-07-07T07:45:00Z",
         "qualifying": "2023-07-07T10:55:00Z",
@@ -116,7 +112,6 @@
       "round": 8,
       "slug": "hungarian",
       "localeKey": "hungarian",
-      "tbc": true,
       "sessions": {
         "practice": "2023-07-21T06:45:00Z",
         "qualifying": "2023-07-21T09:55:00Z",
@@ -132,7 +127,6 @@
       "round": 9,
       "slug": "belgian",
       "localeKey": "belgian",
-      "tbc": true,
       "sessions": {
         "practice": "2023-07-28T06:45:00Z",
         "qualifying": "2023-07-28T09:55:00Z",
@@ -148,7 +142,6 @@
       "round": 10,
       "slug": "italian",
       "localeKey": "italian",
-      "tbc": true,
       "sessions": {
         "practice": "2023-09-01T06:45:00Z",
         "qualifying": "2023-09-01T09:55:00Z",
