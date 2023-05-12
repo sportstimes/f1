@@ -4,8 +4,8 @@
 	"calendarCDN": "files-extremee.motorsportcalendars.com",
 	"availableYears": [2021, 2022, 2023],
 	"sessions": ["shakedown", "qualifying1", "qualifying2", "semifinal", "race"],
-	"featuredSessions": ["race"],
-	"collapsedSessions": ["shakedown", "qualifying1", "qualifying2", "semifinal"],
+	"featuredSessions": ["race1", "race2"],
+	"collapsedSessions": ["shakedown", "qualifying1", "qualifying2", "race1", "race2"],
 	"sessionMap": {
 		"shakedown": "shakedown",
 		"qualifying1": "qualifying1",
@@ -21,5 +21,5 @@
 		"race2": 120
 	},
 	"supportsEmailReminders": false,
-	"notice": "Sessions are still TBC. Calendar will be updated as details are confirmed."
+	"notice": "Unfortunately it's not possible to attain times for individual sessions unlike previous years. Sessions will show with duplicate times for now."
 }

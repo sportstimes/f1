@@ -8,7 +8,6 @@
 			"round": 1,
 			"slug": "desert-xprix",
 			"localeKey": "desert-xprix",
-			"tbc": true,
 			"sessions": {
 				"shakedown": "2023-03-10T00:00:00Z",
 				"qualifying1": "2023-03-11T05:00:00Z",
@@ -25,7 +24,6 @@
 			"round": 2,
 			"slug": "desert-xprix",
 			"localeKey": "desert-xprix",
-			"tbc": true,
 			"sessions": {
 				"qualifying1": "2023-03-12T05:00:00Z",
 				"qualifying2": "2023-03-12T05:00:00Z",
@@ -35,35 +33,33 @@
 		},
 		{
 			"name": "Hydro X Prix",
-			"location": "TBC, Scotland",
+			"location": "Dumfries & Galloway, Scotland",
 			"latitude": 0,
 			"longitude": 0,
 			"round": 3,
 			"slug": "hydro-xprix",
 			"localeKey": "hydro-xprix",
-			"tbc": true,
 			"sessions": {
 				"shakedown": "2023-05-12T00:00:00Z",
-				"qualifying1": "2023-05-13T00:00:00Z",
-				"qualifying2": "2023-05-13T00:00:00Z",
-				"race1": "2023-05-13T00:00:00Z",
-				"race2": "2023-05-13T00:00:00Z"
+				"qualifying1": "2023-05-13T06:00:00Z",
+				"qualifying2": "2023-05-13T06:00:00Z",
+				"race1": "2023-05-13T12:00:00Z",
+				"race2": "2023-05-13T12:00:00Z"
 			}
 		},
 		{
 			"name": "Hydro X Prix",
-			"location": "TBC, Scotland",
+			"location": "Dumfries & Galloway, Scotland",
 			"latitude": 0,
 			"longitude": 0,
 			"round": 4,
 			"slug": "hydro-xprix",
 			"localeKey": "hydro-xprix",
-			"tbc": true,
 			"sessions": {
-				"qualifying1": "2023-05-14T00:00:00Z",
-				"qualifying2": "2023-05-14T00:00:00Z",
-				"race1": "2023-05-14T00:00:00Z",
-				"race2": "2023-05-14T00:00:00Z"
+				"qualifying1": "2023-05-14T06:00:00Z",
+				"qualifying2": "2023-05-14T06:00:00Z",
+				"race1": "2023-05-14T12:00:00Z",
+				"race2": "2023-05-14T12:00:00Z"
 			}
 		},
 		{
