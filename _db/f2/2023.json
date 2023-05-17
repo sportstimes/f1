@@ -68,6 +68,7 @@
       "round": 5,
       "slug": "emilia-romagna",
       "localeKey": "emilia-romagna",
+      "canceled":true,
       "sessions": {
         "practice": "2023-05-19T09:05:00Z",
         "qualifying": "2023-05-19T13:55:00Z",
