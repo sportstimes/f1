@@ -82,20 +82,20 @@
         "russian-grand-prix": "GP da Rússia",
         "japanese-grand-prix": "GP do Japão",
         "us-grand-prix": "GP dos Estados Unidos",
-        "mexico-grand-prix": "GP da México",
-        "brazilian-grand-prix": "GP da Brasil",
+        "mexico-grand-prix": "GP do México",
+        "brazilian-grand-prix": "GP do Brasil",
         "abu-dhabi-grand-prix": "GP de Abu Dhabi",
         "tuscan-grand-prix": "GP da Toscana Ferrari 1000",
-        "eifel-grand-prix": "GP do Eifel",
+        "eifel-grand-prix": "GP de Eifel",
         "portuguese-grand-prix": "GP de Portugal",
         "emilia-romagna-grand-prix": "GP da Emilia Romagna",
         "sakhir-grand-prix": "GP de Sakhir (Barein)",
         "turkish-grand-prix": "GP da Turquia",
         "saudi-arabia-grand-prix": "GP da Arábia Saudita",
-        "qatar-grand-prix" : "Qatar Grand Prix",
-		"miami-grand-prix" : "Miami Grand Prix",
+        "qatar-grand-prix" : "GP do Catar",
+	"miami-grand-prix" : "Miami Grand Prix",
         "chinese-grand-prix" : "GP da China",
-        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
+        "las-vegas-grand-prix" : "GP de Las Vegas"
 	},
 	"options": {
         "calendar": "Adicione essas datas e horários da corrida ao seu Calendário",
@@ -137,7 +137,7 @@
         "buttonSubmitted": "Submetido",
         "nonOptionsSelected": "Selecione pelo menos uma temporada para o seu calendário.",
         "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
-    },
+	},
     "download": {
         "title": "Selecione Tipo do Calendário",
         "webcalTitle": "Para Celular ou Computador",
@@ -165,9 +165,9 @@
         "button": "Save",
         "buttonSubmitted": "Saved",
         "permissions": {
-            "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
-            "button": "Allow Notifications",
-            "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+            "prompt": "Você pode optar por receber Lembretes em Notificações antes de uma sessão começar. Toque no botão para nos autorizar a enviar notificações para você, e então poderá escolher quais sessões você quer ser notificado.",
+            "button": "Permitir Notificações",
+            "denied": "Parece que você bloqueou as permissões. Resete suas permissões no navegador e tente novamente."
         }
     },
     "timezones": {
@@ -181,8 +181,8 @@
         "subtitle": "Corridas, Classificaçāo e Treinos Livres",
         "seo": {
             "title": "Calendário da F1 {{year}} - Datas e horários das corridas",
-            "description": "Calendário da Fórmula 1 para temporada de {{year}} com todos as corridas, treinos livres e classificaçāo da F1. Recurso para definir lembretes. Todos os fuseos horários do mundo. Baixe ou assine.",
-            "keywords": "F1, fórmula 1, horário das corridas, corridas, avisos, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {{year}}"
+            "description": "Calendário da Fórmula 1 para temporada de {{year}} com todas as corridas, treinos livres e classificaçāo da F1. Recurso para definir lembretes. Todos os fusos horários do mundo. Baixe ou assine.",
+            "keywords": "F1, fórmula 1, horário das corridas, corridas, avisos, alertas, grandes prêmios, grande prêmio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {{year}}"
         },
         "footnote": "Formula One, Formula 1, F1 & Grand Prix são marcas registradas de Formula One Licensing BV."
     },
