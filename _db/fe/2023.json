@@ -9,9 +9,9 @@
       "slug": "mexico-city-eprix",
       "localeKey": "mexico-city-eprix",
       "sessions": {
-        "practice3": "2023-07-30T09:25:00Z",
-        "qualifying": "2023-07-30T11:40:00Z",
-        "race": "2023-07-30T16:03:00Z"
+        "practice3": "2023-01-14:25:00Z",
+        "qualifying": "2023-01-14T11:40:00Z",
+        "race": "2023-01-14T16:03:00Z"
       }
     },
     {
@@ -125,7 +125,6 @@
       "round": 9,
       "slug": "monaco-eprix",
       "localeKey": "monaco-eprix",
-      "tbc": true,
       "sessions": {
         "practice1": "2023-05-06T05:25:00Z",
         "practice2": "2023-05-06T07:05:00Z",
@@ -141,7 +140,6 @@
       "round": 10,
       "slug": "jakarta-eprix",
       "localeKey": "jakarta-eprix",
-      "tbc": true,
       "sessions": {
         "practice1": "2023-06-02T08:25:00Z",
         "practice2": "2023-06-03T01:05:00Z",
@@ -157,7 +155,6 @@
       "round": 11,
       "slug": "jakarta-eprix",
       "localeKey": "jakarta-eprix",
-      "tbc": true,
       "sessions": {
         "practice3": "2023-06-04T01:05:00Z",
         "qualifying": "2023-06-04T03:40:00Z",
@@ -172,12 +169,11 @@
       "round": 12,
       "slug": "portland-eprix",
       "localeKey": "portland-eprix",
-      "tbc": true,
       "sessions": {
-        "practice1": "2023-06-23T07:00:00Z",
-        "qualifying": "2023-06-24T07:00:00Z",
-        "practice2": "2023-06-24T07:00:00Z",
-        "race": "2023-06-24T07:00:00Z"
+        "practice1": "2023-06-24T00:25:00Z",
+        "qualifying": "2023-06-24T17:25:00Z",
+        "practice2": "2023-06-24T19:40:00Z",
+        "race": "2023-06-25T00:03:00Z"
       }
     },
     {
@@ -188,7 +184,6 @@
       "round": 13,
       "slug": "rome-eprix",
       "localeKey": "rome-eprix",
-      "tbc": true,
       "sessions": {
         "practice1": "2023-07-14T15:25:00Z",
         "practice2": "2023-07-15T06:05:00Z",
@@ -204,7 +199,6 @@
       "round": 14,
       "slug": "rome-eprix",
       "localeKey": "rome-eprix",
-      "tbc": true,
       "sessions": {
         "practice3": "2023-07-16T06:05:00Z",
         "qualifying": "2023-07-16T08:40:00Z",
@@ -216,7 +210,6 @@
       "location": "GB",
       "latitude": 51.500149,
       "longitude": -0.12624,
-      "tbc": true,
       "round": 15,
       "slug": "london-eprix",
       "localeKey": "london-eprix",
@@ -232,7 +225,6 @@
       "location": "GB",
       "latitude": 51.500149,
       "longitude": -0.12624,
-      "tbc": true,
       "round": 16,
       "slug": "london-eprix",
       "localeKey": "london-eprix",
