@@ -71,7 +71,6 @@
 			"round": 5,
 			"slug": "gmr-grand-prix",
 			"localeKey": "gmr-grand-prix",
-			"tbc": true,
 			"sessions": {
 				"race": "2023-05-13T19:30:00Z"
 			}
@@ -84,7 +83,6 @@
 			"round": 6,
 			"slug": "indy-500",
 			"localeKey": "indy-500",
-			"tbc": true,
 			"sessions": {
 				"race": "2023-05-28T15:00:00Z"
 			}
@@ -97,8 +95,10 @@
 			"round": 7,
 			"slug": "chevrolet-detroit-grand-prix",
 			"localeKey": "chevrolet-detroit-grand-prix",
-			"tbc": true,
 			"sessions": {
+				"practice1": "2023-06-02T22:00:00Z",
+				"practice2": "2023-06-03T13:05:00Z",
+				"qualifying": "2023-06-03T17:20:00Z",
 				"race": "2023-06-04T19:00:00Z"
 			}
 		},
