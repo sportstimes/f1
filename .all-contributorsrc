@@ -455,6 +455,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "Zandor300",
+      "name": "Zandor Smith",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6069593?v=4",
+      "profile": "https://zandorsmith.com",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -463,5 +472,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true,
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }
