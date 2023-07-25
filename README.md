@@ -9,7 +9,7 @@ Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajh
 Graciously hosted by [Vercel](https://vercel.com/?utm_source=sportstimes).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-50-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-51-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -101,6 +101,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/maxgubler"><img src="https://avatars.githubusercontent.com/u/14025364?v=4?s=100" width="100px;" alt="Maxwell Gubler"/><br /><sub><b>Maxwell Gubler</b></sub></a><br /><a href="#content-maxgubler" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://zandorsmith.com"><img src="https://avatars.githubusercontent.com/u/6069593?v=4?s=100" width="100px;" alt="Zandor Smith"/><br /><sub><b>Zandor Smith</b></sub></a><br /><a href="#translation-Zandor300" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
