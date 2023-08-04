@@ -27,9 +27,11 @@ export default async (req, res) => {
 		});
 		
 		const json = await response.json();
-		let subscribers = json.data.subscribers;
 		
-		subscriptions[session] = subscribers.includes(req.query.identifier);	
+		if(json.data != null && json.data.subscribers != null){
+			let subscribers = json.data.subscribers;
+			subscriptions[session] = subscribers.includes(req.query.identifier);
+		}
 	}
 	
 	return res.json({success:true, subscriptions:subscriptions});
