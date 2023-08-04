@@ -9,9 +9,10 @@
       "slug": "mexico-city-eprix",
       "localeKey": "mexico-city-eprix",
       "sessions": {
-        "practice3": "2023-01-14:25:00Z",
-        "qualifying": "2023-01-14T11:40:00Z",
-        "race": "2023-01-14T16:03:00Z"
+        "practice1": "2023-01-13T22:25:00Z",
+        "practice2": "2023-01-14T13:25:00Z",
+        "qualifying": "2023-01-14T15:40:00Z",
+        "race": "2023-01-14T20:03:00Z"
       }
     },
     {
@@ -170,9 +171,9 @@
       "slug": "portland-eprix",
       "localeKey": "portland-eprix",
       "sessions": {
-        "practice1": "2023-06-24T00:25:00Z",
-        "qualifying": "2023-06-24T17:25:00Z",
-        "practice2": "2023-06-24T19:40:00Z",
+        "practice1": "2023-06-24T00:00:00Z",
+        "practice2": "2023-06-24T17:30:00Z",
+        "qualifying": "2023-06-24T19:40:00Z",
         "race": "2023-06-25T00:03:00Z"
       }
     },
@@ -185,8 +186,8 @@
       "slug": "rome-eprix",
       "localeKey": "rome-eprix",
       "sessions": {
-        "practice1": "2023-07-14T15:25:00Z",
-        "practice2": "2023-07-15T06:05:00Z",
+        "practice1": "2023-07-14T15:00:00Z",
+        "practice2": "2023-07-15T06:10:00Z",
         "qualifying": "2023-07-15T08:40:00Z",
         "race": "2023-07-15T13:03:00Z"
       }
@@ -200,7 +201,7 @@
       "slug": "rome-eprix",
       "localeKey": "rome-eprix",
       "sessions": {
-        "practice3": "2023-07-16T06:05:00Z",
+        "practice3": "2023-07-16T06:10:00Z",
         "qualifying": "2023-07-16T08:40:00Z",
         "race": "2023-07-16T13:03:00Z"
       }
@@ -214,8 +215,8 @@
       "slug": "london-eprix",
       "localeKey": "london-eprix",
       "sessions": {
-        "practice1": "2023-07-28T15:55:00Z",
-        "practice2": "2023-07-29T09:25:00Z",
+        "practice1": "2023-07-28T16:00:00Z",
+        "practice2": "2023-07-29T09:30:00Z",
         "qualifying": "2023-07-29T11:40:00Z",
         "race": "2023-07-29T16:03:00Z"
       }
@@ -229,7 +230,7 @@
       "slug": "london-eprix",
       "localeKey": "london-eprix",
       "sessions": {
-        "practice3": "2023-07-30T09:25:00Z",
+        "practice3": "2023-07-30T09:30:00Z",
         "qualifying": "2023-07-30T11:40:00Z",
         "race": "2023-07-30T16:03:00Z"
       }
