@@ -163,7 +163,7 @@
       "sessions": {
         "practice": "2023-07-28T09:05:00Z",
         "qualifying": "2023-07-28T13:55:00Z",
-        "sprint": "2023-07-29T11:45:00Z",
+        "sprint": "2023-07-29T12:20:00Z",
         "feature": "2023-07-30T08:00:00Z"
       }
     },
@@ -176,10 +176,10 @@
       "slug": "dutch",
       "localeKey": "dutch",
       "sessions": {
-        "practice": "2023-08-25T09:55:00Z",
-        "qualifying": "2023-08-25T13:55:00Z",
-        "sprint": "2023-08-26T08:35:00Z",
-        "feature": "2023-08-27T08:40:00Z"
+        "practice": "2023-08-25T08:05:00Z",
+        "qualifying": "2023-08-25T12:00:00Z",
+        "sprint": "2023-08-26T11:15:00Z",
+        "feature": "2023-08-27T08:00:00Z"
       }
     },
     {
@@ -191,10 +191,10 @@
       "slug": "italian",
       "localeKey": "italian",
       "sessions": {
-        "practice": "2023-09-01T09:55:00Z",
-        "qualifying": "2023-09-01T13:55:00Z",
-        "sprint": "2023-09-02T08:35:00Z",
-        "feature": "2023-09-03T08:40:00Z"
+        "practice": "2023-09-01T09:05:00Z",
+        "qualifying": "2023-09-01T14:00:00Z",
+        "sprint": "2023-09-02T12:15:00Z",
+        "feature": "2023-09-03T07:55:00Z"
       }
     },
     {
