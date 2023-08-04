@@ -15,10 +15,8 @@ export default async (req, res) => {
 	var subscriptions = {};
 	for await (const session of sessions) {
 		let topicKey = `${process.env.NEXT_PUBLIC_SITE_KEY}-${session}`;
-				
-		// For now fetch the topics which contains the subscriptions.
-		// Novu has a card for retrieving just the topics for a particular subscriber.
-		const response = await fetch(`https://api.novu.co/v1/topics/${topicKey}`, {
+		
+		const response = await fetch(`https://api.novu.co/v1/topics/${topicKey}/subscribers/${req.query.identifier}`, {
 		  method: 'GET',
 		  headers: {
 			'Content-Type': 'application/json',
@@ -28,9 +26,10 @@ export default async (req, res) => {
 		
 		const json = await response.json();
 		
-		if(json.data != null && json.data.subscribers != null){
-			let subscribers = json.data.subscribers;
-			subscriptions[session] = subscribers.includes(req.query.identifier);
+		if(json.data != null && json.data.externalSubscriberId != null){
+			subscriptions[session] = true;
+		} else {
+			subscriptions[session] = false;
 		}
 	}
 	
