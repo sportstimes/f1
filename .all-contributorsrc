@@ -464,6 +464,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "jiprastyo",
+      "name": "Prastyo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65061729?v=4",
+      "profile": "https://github.com/jiprastyo",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
