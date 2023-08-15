@@ -30,7 +30,7 @@
 		"@novu/node": "^0.17.1",
 		"countries-and-timezones": "^3.2.3",
 		"dayjs": "^1.11.5",
-		"eslint-config-next": "^13.4.12",
+		"eslint-config-next": "^13.4.16",
 		"eslint-plugin-react": "^7.33.1",
 		"firebase": "^10.1.0",
 		"firebase-admin": "^11.5.0",
