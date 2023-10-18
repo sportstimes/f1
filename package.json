@@ -40,7 +40,7 @@
 		"loader-utils": "^3.2.1",
 		"localforage": "^1.10.0",
 		"next": "^13.4.18",
-		"next-plausible": "^3.10.2",
+		"next-plausible": "^3.11.2",
 		"next-pwa": "^5.5.4",
 		"next-seo": "^6.0.0",
 		"next-translate": "^2.0.2",
