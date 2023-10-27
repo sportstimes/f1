@@ -23,7 +23,7 @@ module.exports = (phase) => {
     importScripts: ['firebase-messaging-sw.js']
   })
   
-  return withPWA(nextTranslate({
+  return nextTranslate(withPWA({
     typescript: {
       ignoreBuildErrors: true,
     },

@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import useTranslation from 'next-translate/useTranslation'
-import i18nConfig from "../../i18n.json";
+import i18nConfig from "../../i18n.js";
 import Router from "next/router";
 import {usePlausible} from "next-plausible";
 
