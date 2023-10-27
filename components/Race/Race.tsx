@@ -74,7 +74,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 						<Toggle collapsed={collapsed} />
 					</div>
 				</td>
-				<td className={`flex p-4`}>
+				<th className={`flex p-4`}>
 					<span className={`${titleRowClasses(race)} flex`}>
 						<span className={titleRowTextClasses(race)}>
 							{t(`localization:races.${item.localeKey}`) != localeKey
@@ -96,7 +96,7 @@ const Race: FunctionComponent<RaceRow> = ({ item, index, shouldCollapsePastRaces
 							<CanceledBadge />
 						)}
 					</span>	
-				</td>
+				</th>
 				{!hasMultipleFeaturedEvents ? (
 					<>
 						<td className={`text-right md:text-left ${titleRowClasses(race)}`}>
