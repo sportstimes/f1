@@ -110,10 +110,8 @@ export function UserContextProvider({ children }: Props) {
     };
 
     return (
-        <>
-            <UserContext.Provider value={value}>
-                {children}
-            </UserContext.Provider>
-        </>
+        <UserContext.Provider value={value}>
+            {children}
+        </UserContext.Provider>
     );
 }
