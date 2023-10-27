@@ -1,4 +1,4 @@
-{
+module.exports = {
 	"locales": [
 		"ar",
 		"cs",
@@ -69,6 +69,8 @@
 	},
 	"defaultLocale": "en",
 	"loadLocaleFrom": "locales",
+	loadLocaleFrom: async (locale, namespace) =>
+		import(`./locales/${locale}/${namespace}`).then((r) => r.default),
 	"pages": {
 		"*": ["localization"]
 	}

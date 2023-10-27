@@ -3,7 +3,7 @@ const ics = require("ics");
 const dayjs = require("dayjs");
 
 // Grab the current i18n config
-let i18nConfig = fs.readFileSync("i18n.json");
+let i18nConfig = fs.readFileSync("i18n.js");
 let i18n = JSON.parse(i18nConfig);
 
 // Functions

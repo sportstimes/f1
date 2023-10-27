@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import withTranslation from "next-translate/withTranslation"
 import type { I18n } from 'next-translate'
-import i18nConfig from "../../i18n.json";
+import i18nConfig from "../../i18n.js";
 import Router from "next/router";
 import Link from "next/link";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
