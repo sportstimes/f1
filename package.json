@@ -4,7 +4,7 @@
 	"description": "_The second edition of [f1calendar.com](https://f1calendar.com)_",
 	"main": "index.js",
 	"engines": {
-		"node": "16.x"
+		"node": "18.x"
 	},
 	"scripts": {
 		"dev": "next dev",
