@@ -57,7 +57,7 @@ const SiteSelector: FunctionComponent = ({}) => {
 
 	return (
 		<div>
-			<label htmlFor="languageSelector" className="sr-only">
+			<label htmlFor="site" className="sr-only">
 				{t("localization:languageSelector")}
 			</label>
 			<select
