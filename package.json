@@ -42,7 +42,7 @@
 		"next": "^14.0.0",
 		"next-plausible": "^3.11.3",
 		"next-pwa": "^5.5.4",
-		"next-seo": "^6.0.0",
+		"next-seo": "^6.4.0",
 		"next-translate": "^2.6.1",
 		"nextjs": "0.0.3",
 		"react": "^18.2.0",
