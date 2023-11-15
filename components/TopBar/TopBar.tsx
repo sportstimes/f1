@@ -20,7 +20,7 @@ class TopBar extends React.Component<Props> {
 			<>
 				<div className="w-full bg-dark-green hidden md:block">
 					<div className="max-w-screen-lg mx-auto py-4 px-2 md:flex md:items-center md:justify-between">
-						<div className="flex justify-center md:order-2">
+						<div className="flex justify-center md:order-2 gap-2">
 							<SiteSelector />
 							<LanguageSelector />
 						</div>

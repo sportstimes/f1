@@ -88,6 +88,7 @@
         "button": "Klar"
     },
     "contribute": "Bidra",
+    "yearSelector": "Year",
     "languageSelector": "Välj Språk",
     "javascript": "F1 Kalender fungerar bäst om Javascript är tillåtet.",
     "footer": {

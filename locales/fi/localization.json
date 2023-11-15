@@ -88,6 +88,7 @@
         "button": "Valmis"
     },
     "contribute": "Osallistu",
+    "yearSelector": "Year",
     "languageSelector": "Valitse kieli",
     "javascript": "F1 Kalenteri toimii parhaiten Javascriptin kanssa.",
     "footer": {

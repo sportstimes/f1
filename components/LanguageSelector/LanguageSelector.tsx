@@ -64,7 +64,7 @@ const LanguageSelector: FunctionComponent = ({}) => {
 				name="language"
 				onChange={onChange}
 				value={lang}
-				className="mx-2 text-gray-900 pl-3 pr-10 py-0 text-base
+				className="text-gray-900 pl-3 pr-10 py-0 text-base
 				border-gray-300 focus:outline-none focus:ring-indigo-500
 				focus:border-indigo-500 sm:text-sm rounded-md"
 			>

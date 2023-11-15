@@ -113,6 +113,7 @@
         "button": "Finalizar"
     },
     "contribute": "Colaborar",
+    "yearSelector": "Year",
     "languageSelector": "Selecione o Idioma",
     "javascript": "O calendário F1 funciona melhor com Javascript ativado.",
     "footer": {
