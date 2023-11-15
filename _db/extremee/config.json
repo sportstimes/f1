@@ -2,6 +2,7 @@
 	"siteKey": "extremee",
 	"url": "extremeecalendar.com",
 	"calendarCDN": "files-extremee.motorsportcalendars.com",
+	"calendarOutputYear": 2023,
 	"availableYears": [2021, 2022, 2023],
 	"sessions": ["shakedown", "qualifying1", "qualifying2", "semifinal", "race"],
 	"featuredSessions": ["race1", "race2"],

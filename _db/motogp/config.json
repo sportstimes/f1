@@ -2,6 +2,7 @@
 	"siteKey": "motogp",
 	"url": "motogpcal.com",
 	"calendarCDN": "files-motogp.motorsportcalendars.com",
+	"calendarOutputYear": 2023,
 	"availableYears": [2021, 2022, 2023],
 	"sessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2", "sprint", "race"],
 	"featuredSessions": ["race"],

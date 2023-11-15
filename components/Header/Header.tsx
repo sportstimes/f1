@@ -85,32 +85,6 @@ class Header extends React.Component<Props> {
 					</div>
 					
 					{this.props.showCTABar && <CTABar />}
-					
-					{ /*
-					<div className="md:hidden fixed right-4 bottom-4 z-50" >
-						<a
-							href="https://www.buymeacoffee.com/f1cal"
-							className="support-btn-rounded mt-3"
-							onClick={() => {
-								const plausible = usePlausible();
-								
-								plausible("Support", {
-									props: {
-										buttonId: "mobile"
-									}
-								})
-							}}
-						>
-							<img
-								src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-								width="15"
-								height="15"
-								alt="buymeacoffee"
-							/>
-						</a>
-					</div>
-					*/
-					}
 				</header>
 			</div>
 		);
