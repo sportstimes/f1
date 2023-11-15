@@ -3,7 +3,7 @@ const ics = require("ics");
 const dayjs = require("dayjs");
 
 // Grab the current i18n config
-let i18nConfig = fs.readFileSync("i18n.js");
+let i18nConfig = fs.readFileSync("i18n.json");
 let i18n = JSON.parse(i18nConfig);
 
 // Functions
@@ -30,7 +30,7 @@ function generateCalendars(siteKey){
 	let config = JSON.parse(rawConfig);
 	
 	// Determine year to generate based off config...
-	let year = config.availableYears.slice(-1);
+	let year = config.calendarOutputYear;
 	let rawdata = fs.readFileSync(`_db/${siteKey}/${year}.json`);
 	let data = JSON.parse(rawdata);
 	let prefix = siteKey.toUpperCase();

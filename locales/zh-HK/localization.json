@@ -87,6 +87,7 @@
         "button": "完成"
     },
     "contribute": "貢獻",
+    "yearSelector": "Year",
     "languageSelector": "選擇語言",
     "javascript": "在啟用 Javascript 的情況下效果更佳。",
     "footer": {

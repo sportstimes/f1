@@ -2,6 +2,7 @@ import React from "react";
 import withTranslation from 'next-translate/withTranslation'
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 import SiteSelector from "../../components/SiteSelector/SiteSelector";
+import YearSelector from "../../components/YearSelector/YearSelector";
 import {usePlausible} from "next-plausible";
 import type { I18n } from 'next-translate'
 import EmailIcon from '../Icons/EmailIcon'
@@ -51,6 +52,10 @@ class Footer extends React.Component<Props> {
 						<div className="mt-1 mb-6 flex justify-center space-x-6">
 							<SiteSelector />
 						</div>
+						
+						<div className="mt-1 mb-6 flex justify-center space-x-6">
+							<YearSelector />
+						</div>
 					</div>
 					
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 px-2 text-center md:text-left">
@@ -85,7 +90,6 @@ class Footer extends React.Component<Props> {
 							<p className="text-base text-gray-400 text-xsm px-2 md:px-0">
 								{t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.footnote`)}
 							</p>
-							
 						</div>
 						
 						
@@ -152,6 +156,11 @@ class Footer extends React.Component<Props> {
 					
 					
 					<div className="max-w-7xl mx-auto overflow-hidden pb-8 pt-2">
+						
+						
+						<div className="hidden md:block text-center mt-8">
+							<YearSelector />
+						</div>
 						
 						<p className="text-center mt-8">
 							<a

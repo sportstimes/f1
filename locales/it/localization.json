@@ -87,6 +87,7 @@
         "button": "Conferma"
     },
     "contribute": "Contribuisci",
+    "yearSelector": "Year",
     "languageSelector": "Scegli una lingua",
     "javascript": "F1 Calendar funziona meglio con Javascript attivato.",
     "footer": {

@@ -2,6 +2,7 @@
 	"siteKey": "f2",
 	"url": "f2cal.com",
 	"calendarCDN": "files-f2.motorsportcalendars.com",
+	"calendarOutputYear": 2023,
 	"availableYears": [2021, 2022, 2023],
 	"sessions": ["practice", "qualifying", "sprint", "feature"],
 	"featuredSessions": ["feature"],

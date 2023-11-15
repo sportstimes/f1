@@ -23,8 +23,8 @@
         "qualifying": "Időmérő",
         "qualifying1": "1. Időmérő",
         "qualifying2": "2. Időmérő",
-        "sprintQualifying": "Sprint Shootout",
-        "sprint": "Sprint kvalifikáció",
+        "sprintQualifying": "Sprint Időmérő",
+        "sprint": "Sprintfutam",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Futam",
@@ -88,6 +88,7 @@
         "button": "Kész"
     },
     "contribute": "Közreműködés",
+    "yearSelector": "Year",
     "languageSelector": "Nyelv választása",
     "javascript": "Az F1 Calendar bekapcsolt Javascripttel nyújtja a legjobb élményt.",
     "footer": {
