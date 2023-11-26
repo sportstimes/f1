@@ -2,7 +2,7 @@
 	"siteKey": "f1",
 	"url": "f1calendar.com",
 	"calendarCDN": "files-f1.motorsportcalendars.com",
-	"calendarOutputYear": 2023,
+	"calendarOutputYear": 2024,
 	"availableYears": [2018, 2019, 2020, 2021, 2022, 2023, 2024],
 	"sessions": ["fp1", "fp2", "fp3", "qualifying", "sprintQualifying", "sprint", "gp"],
 	"featuredSessions": ["gp"],
@@ -26,5 +26,6 @@
 		"gp":120
 	},
 	"supportsEmailReminders": true,
-	"supportsWebPush": true
+	"supportsWebPush": true,
+	"notice": "That's a wrap on 2023. Our 2024 Calendar will be updated as details are confirmed in the coming months."
 }
