@@ -39,6 +39,21 @@
       "name": "F1 Academy",
       "url": "https://f1academycalendar.com",
       "siteKey": "f1-academy"
+    },
+    {
+      "name": "WEC",
+      "url": "/wec/2023",
+      "siteKey": "wec"
+    },
+    {
+      "name": "IMSA",
+      "url": "/imsa/2023",
+      "siteKey": "imsa"
+    },
+    {
+      "name": "gtworld",
+      "url": "/gtworld/2023",
+      "siteKey": "gtworld"
     }
   ]
 }
