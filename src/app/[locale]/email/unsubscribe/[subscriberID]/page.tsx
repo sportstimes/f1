@@ -1,7 +1,6 @@
-import Notice from "../components/Notice/Notice";
-import OptionsBar from "../components/OptionsBar/OptionsBar";
-import Races from "../components/Races/Races";
-import RaceSchemas from '../components/RaceSchemas/RaceSchemas';
+import Layout from "components/Layout/Layout";
+import {useTranslations} from 'next-intl';
+import Card from "components/Card/Card";
 
 export interface Props {
   params: { subscriberID: string };
@@ -10,7 +9,7 @@ export interface Props {
 export default async function Unsubscribe({params}: Props) {
   const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
   
-  const res = await fetch(`https://${config.url}/api/email/unsubscribe/${context.query.subscriberID}`, {
+  const res = await fetch(`https://${config.url}/api/email/unsubscribe/${params.subscriberID}`, {
     headers: {
       'Content-Type': 'application/json'
     }

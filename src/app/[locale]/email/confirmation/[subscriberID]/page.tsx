@@ -1,7 +1,6 @@
-import Notice from "../components/Notice/Notice";
-import OptionsBar from "../components/OptionsBar/OptionsBar";
-import Races from "../components/Races/Races";
-import RaceSchemas from '../components/RaceSchemas/RaceSchemas';
+import Layout from "components/Layout/Layout";
+import {useTranslations} from 'next-intl';
+import Card from "components/Card/Card";
 
 export interface Props {
   params: { subscriberID: string };
