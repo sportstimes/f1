@@ -1,4 +1,5 @@
 import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import Link from "next/link";
@@ -7,6 +8,18 @@ import Races from "components/Races/Races";
 
 export interface Props {
   params: { year: string };
+}
+
+export async function generateMetadata({
+  params: {year}
+}: Omit<Props, 'children'>): Promise<Metadata> {
+  const t = await getTranslations('All');
+
+  return {
+    title: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {year: year}),
+    description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {year: year}),
+    keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {year: year}),
+  }
 }
 
 export default function Year({params}: Props) {

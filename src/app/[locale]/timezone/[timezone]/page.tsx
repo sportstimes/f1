@@ -1,4 +1,5 @@
 import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import Link from "next/link";
@@ -8,6 +9,19 @@ import RaceSchemas from 'components/RaceSchemas/RaceSchemas';
 
 export interface Props {
   params: { timezone: string };
+}
+
+export async function generateMetadata({
+  params: {timezone}
+}: Omit<Props, 'children'>): Promise<Metadata> {
+  const t = await getTranslations('All');
+  const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
+
+  return {
+    title: `${timezone} - ${t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {year: currentYear})}`,
+    description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {year: currentYear}),
+    keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {year: currentYear}),
+  }
 }
 
 export default function Year({params}: Props) {
@@ -25,7 +39,7 @@ export default function Year({params}: Props) {
   const data = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${currentYear}.json`);
 
   return (
-    <Layout year={currentYear}>
+    <Layout showCTABar={true} year={currentYear} timezone={timezone}>
       {data.races &&
         <Races year={currentYear} races={data.races} timezone={timezone}/>
       }
