@@ -8,7 +8,7 @@ import EmailIcon from '../Icons/EmailIcon';
 import NotificationIcon from '../Icons/NotificationIcon';
 import {useLocale, useTranslations} from 'next-intl';
 
-const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 const CTABar = () => {
 	const [supportsWebPush, setSupportsWebPush] = useState(false);

@@ -5,6 +5,7 @@ import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import {usePlausible} from "next-plausible";
 import {useTranslations} from 'next-intl';
+import {firebaseCloudMessaging} from "../../../../config/firebase";
 
 export default function Notifications() {
   
@@ -12,7 +13,7 @@ export default function Notifications() {
   const plausible = usePlausible();
   const t = useTranslations('All');
   
-  const config = require(`../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
   
   // Sessions
   var sessions = config.sessions;

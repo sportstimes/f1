@@ -2,7 +2,7 @@ import React, {useState, FunctionComponent} from "react";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
 import dayjstimezone from "dayjs/plugin/timezone";
-const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 import {useLocale, useTranslations} from 'next-intl';
 import {useUserContext} from "../../components/UserContext";
 

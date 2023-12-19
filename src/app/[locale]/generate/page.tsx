@@ -13,7 +13,7 @@ export default function Generate() {
   const locale = useLocale();
 
   const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, { year: currentYear }) + ' | ' + t("form.title");
-  const config = require(`../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
   
   var sessions = config.sessions;
   

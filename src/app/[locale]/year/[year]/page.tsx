@@ -13,8 +13,8 @@ export default function Year({params}: Props) {
   const t = useTranslations('All');
   
   const year = params.year;
-  const config = require(`../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
-  const data = require(`../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${year}.json`);
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+  const data = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${year}.json`);
 
   if(data.races){
     return (

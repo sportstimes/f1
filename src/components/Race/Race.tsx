@@ -14,7 +14,7 @@ import Toggle from "../Toggle/Toggle"
 import RaceTR from "../Race/RaceTR"
 import RaceModel from "../../models/RaceModel"
 
-const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 export interface RaceRow {
   isNextRace: boolean;

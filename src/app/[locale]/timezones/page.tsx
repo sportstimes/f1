@@ -6,6 +6,8 @@ import ct from "countries-and-timezones";
 export default function Timezones() {
   const t = useTranslations('All');
   
+  const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
+
   // Picker Items
   const timezoneItems = [];
   
@@ -29,13 +31,13 @@ export default function Timezones() {
   }
 
   return (
-    <>
+    <Layout year={currentYear}>
       <h3 className="text-xl mb-4">
         {t("timezones.title")}
       </h3>
       <Card>
         <ul>{timezoneItems}</ul>
       </Card>
-    </>
+    </Layout>
   )
 }

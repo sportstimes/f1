@@ -19,10 +19,10 @@ const SiteSelector: FunctionComponent = ({}) => {
 	const router = useRouter()
 	const t = useTranslations('All');
 
-	const sitesConfig = require(`../../../_db/sites.json`);
+	const sitesConfig = require(`/_db/sites.json`);
 	const sites = sitesConfig.sites;
 	
-	const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+	const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 	
 	// Picker Items
 	const siteItems: React.ReactElement[] = [];

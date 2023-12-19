@@ -8,7 +8,7 @@ export default async (req, res) => {
 		});
 	}
 	
-	const config = await import(`../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`) 
+	const config = await import(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`) 
 	if(!config.supportsEmailReminders){
 		return res.status(400).json({
 			success: false,

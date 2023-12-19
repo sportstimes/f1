@@ -8,7 +8,7 @@ import YearSelector from "../../components/YearSelector/YearSelector";
 import {usePlausible} from "next-plausible";
 import EmailIcon from '../Icons/EmailIcon'
 
-const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 const Footer = () => {
 	const t = useTranslations('All');

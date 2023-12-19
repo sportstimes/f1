@@ -7,7 +7,7 @@ export default async (req, res) => {
 	}
 	
 	// Get the Config
-	const config = await import(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)  
+	const config = await import(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)  
 	let sessions = config.sessions;
 	
 	// Get the current state for the user...

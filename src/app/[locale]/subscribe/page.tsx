@@ -12,7 +12,7 @@ export default function Subscribe() {
   const plausible = usePlausible();
   const t = useTranslations('All');
   
-  const config = require(`../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
   
   const [showSuccess, setShowSuccess] = useState(false);
   const [showSubmitting, setShowSubmitting] = useState(false);

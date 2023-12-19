@@ -11,20 +11,16 @@ const LanguageSelector: FunctionComponent = ({}) => {
 	const t = useTranslations('All');
 	const locale = useLocale();
 	const router = useRouter()
-
-	console.log(locale)
 	
 	const plausible = usePlausible();
 
 	const onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		
+	
 		if (event.target.value === "add") {
 			document.location.href =
 				"https://poeditor.com/join/project?hash=JrDs3Vfc92";
 			return;
 		}
-		
-		console.log(event.target.value)
 		
 		router.push(`/${event.target.value}`);
 		

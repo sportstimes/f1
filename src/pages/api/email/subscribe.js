@@ -15,7 +15,7 @@ export default async (req, res) => {
 		});
 	}
 	
-	const config = await import(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)  
+	const config = await import(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)  
 	
 	let email = req.body.email;
 	

@@ -1,4 +1,5 @@
 import {useTranslations} from 'next-intl';
+import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import Link from "next/link";
 import OptionsBar from "components/OptionsBar/OptionsBar";
@@ -20,16 +21,16 @@ export default function Year({params}: Props) {
   }
   
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
-  const config = require(`../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
-  const data = require(`../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${currentYear}.json`);
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+  const data = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${currentYear}.json`);
 
   return (
-    <>
+    <Layout year={currentYear}>
       {data.races &&
         <Races year={currentYear} races={data.races} timezone={timezone}/>
       }
       
       {/* // TODO <RaceSchemas races={data.races} />*/}
-    </>
+    </Layout>
   )
 }

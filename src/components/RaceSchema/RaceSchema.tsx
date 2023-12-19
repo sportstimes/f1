@@ -14,7 +14,7 @@ class RaceSchema extends React.Component<Props> {
 		const {t} = this.props.i18n
 		const localeKey = 'races.' + this.props.race.localeKey;
 		
-		const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+		const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 		
 		let name = this.props.race.name;
 		if (t(`races.${this.props.race.localeKey}`) != localeKey) {

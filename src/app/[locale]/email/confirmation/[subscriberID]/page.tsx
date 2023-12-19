@@ -8,7 +8,7 @@ export interface Props {
 }
 
 export default async function Confirmation({params}: Props) {
-  const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
   
   const res = await fetch(`https://${config.url}/api/email/confirmation/${params.subscriberID}`, {
     headers: {

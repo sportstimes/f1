@@ -1,10 +1,10 @@
 "use client"
 
 import React, {useContext, FunctionComponent} from "react";
-import {useUserContext} from "../../components/UserContext";
+import {useUserContext} from "components/UserContext";
 import dayjs from "dayjs";
-import Race, {RaceRow} from "../../components/Race/Race";
-const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+import Race, {RaceRow} from "components/Race/Race";
+const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 import RaceModel from "../../models/RaceModel"
 import {useTranslations} from 'next-intl';
 
