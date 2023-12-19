@@ -15,7 +15,7 @@ export default async function Unsubscribe({params}: Props) {
     }
   });
   
-  const result = await res.json()
+  //const result = await res.json()
   
   return (
     <Layout>
