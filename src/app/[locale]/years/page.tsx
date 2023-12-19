@@ -8,7 +8,7 @@ export default function Years() {
   
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
   
-  const config = require(`_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
   
   let availableYears = config.availableYears;
   
