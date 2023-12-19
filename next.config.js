@@ -13,7 +13,7 @@ module.exports = (phase) => {
       phase === PHASE_PRODUCTION_BUILD && process.env.STAGING === '1'
 
   // Move _public/:site_key to public
-  require('./_build/public-assets');
+  require('./build/public-assets');
   
   const withPWA = require('next-pwa')({
     // disable: !isProd,
