@@ -5,7 +5,7 @@ import {useTranslations} from 'next-intl';
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 import SiteSelector from "../../components/SiteSelector/SiteSelector";
 import YearSelector from "../../components/YearSelector/YearSelector";
-import {usePlausible} from "next-plausible";
+//import {usePlausible} from "next-plausible";
 import EmailIcon from '../Icons/EmailIcon'
 
 const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
@@ -157,8 +157,8 @@ const Footer = () => {
 						<a
 							href="https://vercel.com?utm_source=sportstimes"
 							onClick={() => {
-								const plausible = usePlausible();
-								plausible("Visit Vercel")
+								// const plausible = usePlausible();
+								// plausible("Visit Vercel")
 							}}
 						>
 							<svg

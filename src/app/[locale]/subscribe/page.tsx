@@ -5,6 +5,7 @@ import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import {usePlausible} from "next-plausible";
 import {useTranslations} from 'next-intl';
+import { notFound } from 'next/navigation'
 
 export default function Subscribe() {
   
@@ -18,7 +19,7 @@ export default function Subscribe() {
   const [showSubmitting, setShowSubmitting] = useState(false);
   
   if(!config.supportsEmailReminders){
-    return <NextError statusCode={404} />
+    notFound()
   }
   
   return (

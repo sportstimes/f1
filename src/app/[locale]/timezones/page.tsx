@@ -1,4 +1,5 @@
 import {useTranslations} from 'next-intl';
+import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import Link from "next/link";
 import ct from "countries-and-timezones";

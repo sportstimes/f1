@@ -13,13 +13,13 @@ const SupportButton = () => {
 			href="https://www.buymeacoffee.com/f1cal"
 			className="support-btn mt-3"
 			onClick={() => {
-				const plausible = usePlausible();
-				
-				plausible("Support", {
-					props: {
-						buttonId: "header"
-					}
-				})
+				// const plausible = usePlausible();
+				// 
+				// plausible("Support", {
+				// 	props: {
+				// 		buttonId: "header"
+				// 	}
+				// })
 			}}
 		>
 			<Image
