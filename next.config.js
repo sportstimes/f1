@@ -1,5 +1,5 @@
 const withPWA = require("next-pwa")
-const nextTranslate = require('next-translate-plugin')
+const withNextIntl = require('next-intl/plugin')();
 
 const {
   PHASE_DEVELOPMENT_SERVER,
@@ -13,7 +13,7 @@ module.exports = (phase) => {
       phase === PHASE_PRODUCTION_BUILD && process.env.STAGING === '1'
 
   // Move _public/:site_key to public
-  require('./build/public-assets');
+  require('./_build/public-assets');
   
   const withPWA = require('next-pwa')({
     // disable: !isProd,
@@ -23,7 +23,7 @@ module.exports = (phase) => {
     importScripts: ['firebase-messaging-sw.js']
   })
   
-  return nextTranslate(withPWA({
+  return withNextIntl(withPWA({
     typescript: {
       ignoreBuildErrors: true,
     },
