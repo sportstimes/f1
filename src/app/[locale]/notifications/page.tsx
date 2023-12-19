@@ -6,9 +6,9 @@ import Card from "components/Card/Card";
 import {usePlausible} from "next-plausible";
 import {useTranslations} from 'next-intl';
 import {firebaseCloudMessaging} from "../../../../config/firebase";
+import { notFound } from 'next/navigation'
 
 export default function Notifications() {
-  
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
   const plausible = usePlausible();
   const t = useTranslations('All');
@@ -220,7 +220,7 @@ export default function Notifications() {
   
   
   if(!config.supportsWebPush){
-    return <NextError statusCode={404} />
+    notFound()
   }
   
   return (
