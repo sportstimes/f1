@@ -6,16 +6,12 @@ interface Props {
 	races: [RaceModel]
 }
 
-class RaceSchemas extends React.Component<Props> {
-	render() {
-		return (
-			<>
-				{this.props.races.map((race) => (
-				  <RaceSchema race={race} key={race.slug} />
-				))}
-			</>
-		);	
-	}
+export default function RaceSchemas({races}: Props) {
+	return (
+		<>
+			{races.map((race) => (
+			  <RaceSchema race={race} key={race.slug} />
+			))}
+		</>
+	);
 }
-
-export default RaceSchemas
