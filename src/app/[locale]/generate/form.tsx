@@ -213,11 +213,11 @@ export default function Form() {
 					<Card>
 						<p className="mb-4">{t("form.description")}</p>
 						
-						{config.siteKey == "f1" &&
+						{/*config.siteKey == "f1" &&
 							<div className="bg-yellow-200 rounded-md shadow py-4 mb-4 px-4 text-black font-bold mb-8">
 								{t("form.attention")}
 							</div>
-						}
+						*/}
 			
 						<form id="download_subscribe" onSubmit={handleOnSubmit}>
 							<fieldset className="mb-6" key="options">

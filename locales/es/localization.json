@@ -1,4 +1,5 @@
 {
+"All": {
     "date": "Fecha",
     "time": "Hora",
     "showPreviousRaces": "Mostrar carreras anteriores",
@@ -242,4 +243,5 @@
         },
         "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }
+}
 }

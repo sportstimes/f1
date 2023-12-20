@@ -1,4 +1,5 @@
 {
+"All": {
     "date": "日期",
     "time": "时间",
     "badges": {
@@ -248,4 +249,5 @@
         },
         "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }
+}
 }

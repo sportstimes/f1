@@ -1,4 +1,5 @@
 {
+"All": {
     "date": "Data",
     "time": "Horário",
     "showPreviousRaces": "Show Previous Races",
@@ -267,4 +268,5 @@
         },
         "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }
+}
 }

@@ -44,7 +44,7 @@ export default function Year({params}: Props) {
         <Races year={currentYear} races={data.races} timezone={timezone}/>
       }
       
-      {/* // TODO <RaceSchemas races={data.races} />*/}
+      <RaceSchemas races={data.races} />
     </Layout>
   )
 }

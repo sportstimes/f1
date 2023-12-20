@@ -1,4 +1,5 @@
 {
+"All": {
     "date": "Дата",
     "time": "Час",
     "showPreviousRaces": "Показати Попередні Гонки",
@@ -242,4 +243,5 @@
         },
         "footnote": "Formula One, Formula 1, F1 & Grand Prix є товарними знаками Formula One Licensing BV."
     }
+}
 }

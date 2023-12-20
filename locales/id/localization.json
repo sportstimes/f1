@@ -1,4 +1,5 @@
 {
+"All": {
     "date": "Tanggal",
     "time": "Jam",
     "badges": {
@@ -241,4 +242,5 @@
         },
         "footnote": "Formula One, Formula 1, F1 &amp; Grand Prix adalah merek dagang dari Formula One Licensing BV."
     }
+}
 }
