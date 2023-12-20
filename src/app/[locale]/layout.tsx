@@ -8,6 +8,7 @@ import Script from 'next/script'
 import {UserContextProvider} from "components/UserContext";
 import { League_Spartan } from 'next/font/google'
 import {NextIntlClientProvider, useMessages} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
 export const metadata: Metadata = {
 	title: '',
@@ -57,6 +58,8 @@ const locales = [
 
 export default function RootLayoutt({children, params: {locale}}) {
 	if (!locales.includes(locale as any)) notFound();
+	
+	unstable_setRequestLocale(locale);
 	
 	const messages = useMessages();
 	
