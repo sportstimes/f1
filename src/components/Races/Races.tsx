@@ -49,8 +49,7 @@ const Races = ({ year, races }: Props) => {
 	}
 
 	return (
-		<div className="px-0 md:px-2">
-		
+		<div>
 			<table id="events-table" className="w-full">
 				{config.featuredSessions.length === 1 ? (
 					<thead className="hidden">

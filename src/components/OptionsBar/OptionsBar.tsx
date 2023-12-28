@@ -119,7 +119,7 @@ const OptionsBar: FunctionComponent = () => {
 	
 	return (
 		<>
-		<div className="px-2">
+		<div>
 			<div className="bg-red-600 rounded-md shadow py-4 mb-4 px-4">
 				{pickerShowing ? (
 					<>

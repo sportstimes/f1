@@ -15,7 +15,7 @@ const Header = ({ year, showCTABar }) => {
 
 	return (
 		<div className="w-full bg-dark-green mb-4">
-			<header className="max-w-screen-lg mx-auto font-sans px-2 py-4">
+			<header className="max-w-screen-lg mx-auto font-sans py-4 px-2">
 				<div className="flex md:justify-between">
 					<div className="flex flex-col md:flex-row justify-center items-center md:justify-between w-screen md:w-auto mb-4">
 						<Link href="/" className="" style={{width: "60px"}} title={title}>

@@ -55,7 +55,7 @@ const CTABar = () => {
 				<div className="h-12">
 					<Link href="/notifications" locale={locale as any} className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative" title={t("options.notifications")}>
 						<NotificationIcon className="absolute left-3.5 self-center" />
-						<span className="visible md:hidden"></span>
+						<span className="visible md:hidden">{t("options.notifications")}</span>
 						<ChevronRightIcon className="visible md:hidden absolute right-3 top-4" />
 					</Link>
 				</div>
