@@ -1,14 +1,15 @@
 import {useTranslations} from 'next-intl';
-import {getTranslations} from 'next-intl/server';
+import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import Link from "next/link";
 import OptionsBar from "components/OptionsBar/OptionsBar";
 import Races from "components/Races/Races";
 import RaceSchemas from 'components/RaceSchemas/RaceSchemas';
+import ct from "countries-and-timezones";
 
 export interface Props {
-  params: { timezone: string };
+  params: { timezone: string, locale: string };
 }
 
 export async function generateMetadata({
@@ -24,7 +25,26 @@ export async function generateMetadata({
   }
 }
 
+export async function generateStaticParams() {  
+  const timezoneItems = [];
+  let zoneslist = Object.keys(ct.getAllTimezones());
+  
+  for (let zone in zoneslist) {
+    let timezoneName = zoneslist[zone];
+    if(timezoneName == "Europe/Kiev"){
+      timezoneName = "Europe/Kyiv";
+    }
+    
+    let timezoneSlug = timezoneName.replace(/\//g, "-");
+    timezoneItems.push(timezoneSlug);
+  }
+  
+  return timezoneItems
+}
+
 export default function Year({params}: Props) {
+  unstable_setRequestLocale(params.locale)
+  
   const t = useTranslations('All');
     
   var timezone = params.timezone ? params.timezone.replace("-", "/") : "";

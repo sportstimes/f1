@@ -1,5 +1,5 @@
 import {useTranslations} from 'next-intl';
-import {getTranslations} from 'next-intl/server';
+import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import Layout from "components/Layout/Layout";
 import Notice from "components/Notice/Notice";
 import OptionsBar from "components/OptionsBar/OptionsBar";
@@ -17,7 +17,13 @@ export async function generateMetadata() {
   }
 }
 
-export default function Page() {
+export async function generateStaticParams() {
+  return [];
+}
+
+export default function Page({children, params: {locale}}) {
+  unstable_setRequestLocale(locale);
+
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
   const year = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${currentYear}.json`);
 

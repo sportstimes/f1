@@ -1,5 +1,5 @@
 import {useTranslations} from 'next-intl';
-import {getTranslations} from 'next-intl/server';
+import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import Link from "next/link";
@@ -7,7 +7,7 @@ import OptionsBar from "components/OptionsBar/OptionsBar";
 import Races from "components/Races/Races";
 
 export interface Props {
-  params: { year: string };
+  params: { year: string, locale: string };
 }
 
 export async function generateMetadata({
@@ -22,7 +22,22 @@ export async function generateMetadata({
   }
 }
 
+export async function generateStaticParams() {  
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+  
+  let availableYears = config.availableYears;
+  
+  const yearItems = [];
+  for (let year in availableYears) {
+    yearItems.push(config.availableYears[year]);
+  }
+  
+  return yearItems;
+}
+
 export default function Year({params}: Props) {
+  unstable_setRequestLocale(params.locale);
+
   const t = useTranslations('All');
   
   const year = params.year;

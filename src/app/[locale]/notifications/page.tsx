@@ -1,5 +1,5 @@
 import {useTranslations} from 'next-intl';
-import {getTranslations} from 'next-intl/server';
+import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import {usePlausible} from "next-plausible";
@@ -17,7 +17,13 @@ export async function generateMetadata()  {
   }
 }
 
-export default function Notifications() {
+export async function generateStaticParams() {
+  return [];
+}
+
+export default function Notifications({children, params: {locale}}) {
+  unstable_setRequestLocale(locale);
+
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
   const plausible = usePlausible();
   const t = useTranslations('All');

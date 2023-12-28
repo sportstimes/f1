@@ -1,5 +1,5 @@
 import {useTranslations} from 'next-intl';
-import {getTranslations} from 'next-intl/server';
+import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import Layout from "components/Layout/Layout";
 import Card from "components/Card/Card";
 import Link from "next/link";
@@ -16,7 +16,13 @@ export async function generateMetadata() {
   }
 }
 
-export default function Timezones() {
+export async function generateStaticParams() {
+  return [];
+}
+
+export default function Timezones({params: {locale}}) {
+  unstable_setRequestLocale(locale);
+  
   const t = useTranslations('All');
   
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
