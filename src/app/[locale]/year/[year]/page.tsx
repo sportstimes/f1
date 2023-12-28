@@ -1,3 +1,4 @@
+import {notFound} from 'next/navigation';
 import {useTranslations} from 'next-intl';
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import Layout from "components/Layout/Layout";
@@ -36,12 +37,18 @@ export async function generateStaticParams() {
 }
 
 export default function Year({params}: Props) {
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+  
+  let availableYears = config.availableYears;
+  if(!availableYears.includes(parseInt(params.year))){
+    notFound();
+  }
+  
   unstable_setRequestLocale(params.locale);
 
   const t = useTranslations('All');
   
   const year = params.year;
-  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
   const data = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${year}.json`);
 
   if(data.races){
