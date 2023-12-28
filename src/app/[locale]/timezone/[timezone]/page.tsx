@@ -1,3 +1,4 @@
+import {notFound} from 'next/navigation';
 import {useTranslations} from 'next-intl';
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import Layout from "components/Layout/Layout";
@@ -49,9 +50,14 @@ export default function Year({params}: Props) {
     
   var timezone = params.timezone ? params.timezone.replace("-", "/") : "";
   var displayTimezone = timezone;
-  
   if(timezone == "Europe/Kyiv"){
     timezone = "Europe/Kiev";
+  }
+  
+  
+  let zoneslist = Object.keys(ct.getAllTimezones());
+  if(!zoneslist.includes(timezone)){
+    notFound();
   }
   
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
