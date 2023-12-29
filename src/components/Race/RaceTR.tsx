@@ -67,7 +67,7 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 						.tz(timezone)
 						.format("D MMM")}
 				</td>
-				<td className="" headers={`time_header ${slug}-header`}>>
+				<td className="" headers={`time_header ${slug}-header`}>
 					<div className={`text-right md:text-left pr-2 md:pr-0`}>
 						{dayjs(date)
 							.tz(timezone)
