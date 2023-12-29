@@ -9,15 +9,11 @@ export interface Props {
 class Toggle extends React.Component<Props> {
 	
 	render() {
-		return (
-			<>
-				{this.props.collapsed ? (
-					<CollapsedIcon className="" aria-expanded="false" aria-label="Toggle Row" />
-				) : (
-					<OpenIcon className="" aria-expanded="true" aria-label="Toggle Row" />
-				)}
-			</>
-		);
+		if(this.props.collapsed){
+			return (<CollapsedIcon className="" aria-expanded="false" aria-label="Toggle Row" />);
+		} else {
+			return (<OpenIcon className="" aria-expanded="true" aria-label="Toggle Row" />);
+		}
 	}
 }
 
