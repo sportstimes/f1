@@ -235,8 +235,10 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 			];
 			
 			// Strikethrough past races
-			if (props.hasOccured) {
+			if (props.hasOccured && !props.item.canceled) {
 				classes += "line-through text-gray-400 ";
+			} else if(props.hasOccured && props.item.canceled){
+				classes += "text-gray-400 ";
 			} else {
 				classes += "text-white ";
 			}
@@ -282,7 +284,11 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 		
 		// Strike out cancelled races
 		if (props.item.canceled) {
-			classes += "line-through text-gray-300 ";
+			if(props.hasOccured){
+				classes += "line-through text-gray-500 ";
+			} else {
+				classes += "line-through text-gray-400 ";
+			}
 		}
 		
 		return classes;
