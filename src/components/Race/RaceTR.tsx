@@ -16,9 +16,10 @@ export interface RaceRowTR {
 	isFeaturedSession: boolean;
 	event: string;
 	eventLocaleKey: string;
+	slug: string;
 }
 
-const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace, event, eventLocaleKey }: Props) => {
+const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace, event, eventLocaleKey, slug }: Props) => {
 
 	const t = useTranslations('All');
 	const locale = useLocale();
@@ -61,12 +62,12 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""} ${!hasOccured && isFeaturedSession ? "font-bold" : ""} ${isNextRace && isFeaturedSession ? "text-yellow-600" : ""}`}>
 				<td className=""></td>
 				<td className="p-4"><span className="hidden">{eventName}</span> {t(titleKey)}</td>
-				<td className="text-right md:text-left">
+				<td className="text-right md:text-left" headers={`date_header ${slug}-header`}>
 					{dayjs(date)
 						.tz(timezone)
 						.format("D MMM")}
 				</td>
-				<td className="">
+				<td className="" headers={`time_header ${slug}-header`}>>
 					<div className={`text-right md:text-left pr-2 md:pr-0`}>
 						{dayjs(date)
 							.tz(timezone)

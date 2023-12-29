@@ -74,7 +74,7 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 						<Toggle collapsed={collapsed} />
 					</div>
 				</td>
-				<th className={`flex p-4`}>
+				<th className={`flex p-4`} id={`${item.slug}-header`}>
 					<span className={`${titleRowClasses(race)} flex`}>
 						<span className={titleRowTextClasses(race)}>
 							{item.localeKey && t(`races.${item.localeKey}`)
@@ -99,7 +99,7 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 				</th>
 				{!hasMultipleFeaturedEvents ? (
 					<>
-						<td className={`text-right md:text-left ${titleRowClasses(race)}`}>
+						<td className={`text-right md:text-left ${titleRowClasses(race)}`} headers={`date_header ${item.slug}-header`}>
 							<span className={titleRowTextClasses(race)}>
 							{collapsed && item.sessions &&
 								item.sessions[config.featuredSessions[0]] &&
@@ -110,7 +110,7 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 									.format("D MMM")}
 							</span>
 						</td>
-						<td className={`${titleRowClasses(race)}`}>
+						<td className={`${titleRowClasses(race)}`} headers={`time_header ${item.slug}-header`}>
 							<div className="text-right md:text-left pr-2 md:pr-0">
 								<span className={titleRowTextClasses(race)}>
 									{collapsed && item.sessions &&
@@ -187,6 +187,7 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 						isFeaturedSession={config.featuredSessions.includes(session)}
 						event={props.item.name}
 						eventLocaleKey={`races.${props.item.localeKey}`}
+						slug={item.slug}
 					/>
 				);
 			});

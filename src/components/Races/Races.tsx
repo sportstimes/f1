@@ -58,10 +58,10 @@ const Races = ({ year, races }: Props) => {
 							<th scope="col">
 								{title}
 							</th>
-							<th scope="col">
+							<th scope="col" id="date_header">
 								{t("date")}
 							</th>
-							<th scope="col">
+							<th scope="col" id="time_header">
 								{t("time")}
 							</th>
 						</tr>
