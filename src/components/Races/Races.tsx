@@ -54,7 +54,7 @@ const Races = ({ year, races }: Props) => {
 				{config.featuredSessions.length === 1 ? (
 					<thead className="hidden">
 						<tr>
-							<th scope="col" className="w-8"></th>
+							<th scope="col" className="w-8" id="toggle_header">Toggle</th>
 							<th scope="col">
 								{title}
 							</th>

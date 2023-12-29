@@ -12,9 +12,9 @@ class Toggle extends React.Component<Props> {
 		return (
 			<>
 				{this.props.collapsed ? (
-					<CollapsedIcon className="" />
+					<CollapsedIcon className="" aria-expanded="false" aria-label="Toggle Row" />
 				) : (
-					<OpenIcon className="" />
+					<OpenIcon className="" aria-expanded="true" aria-label="Toggle Row" />
 				)}
 			</>
 		);
