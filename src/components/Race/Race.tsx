@@ -69,7 +69,7 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 	return (
 		<tbody id={item.slug} key={`${item.slug}-body`} className={`${rowClasses(race)}`}>
 			<tr key={`${item.slug}-tr`} className="cursor-pointer" onClick={handleRowClick}>
-				<td className="w-4 lg:w-8" headers={`${item.slug}-header toggle-header`}>
+				<td className="w-4 lg:w-8" headers={`${item.slug}-header toggle_header`}>
 					<div className="relative left-2 lg:left-4 w-0">
 						<Toggle collapsed={collapsed} />
 					</div>
