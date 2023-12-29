@@ -61,6 +61,7 @@ const YearSelector: FunctionComponent = ({}) => {
 				{t("years.title")}
 			</label>
 			<select
+				aria-label="Year"
 				name="year"
 				onChange={onChange}
 				value={currentValue}

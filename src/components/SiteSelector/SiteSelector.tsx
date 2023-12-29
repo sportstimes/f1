@@ -58,6 +58,7 @@ const SiteSelector: FunctionComponent = ({}) => {
 				Select Site
 			</label>
 			<select
+				aria-label="Motorsport"
 				name="site"
 				onChange={onChange}
 				value={currentValue}

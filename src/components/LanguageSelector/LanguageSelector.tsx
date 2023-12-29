@@ -58,6 +58,7 @@ const LanguageSelector: FunctionComponent = ({}) => {
 				{t("languageSelector")}
 			</label>
 			<select
+				aria-label="Language"
 				name="language"
 				onChange={onChange}
 				value={locale}
