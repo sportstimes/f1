@@ -110,6 +110,7 @@ export default function Form() {
 	  	setState(subscriptions);
 	  	setLoaded(true);
 		} catch (error) {
+			setLoaded(true);
 	  	console.log("err2:" + error)
 		}
   }
@@ -120,9 +121,9 @@ export default function Form() {
 		
 		if(status === 'granted') {
 	  	if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.ready.then((registration) => {
-		  	getToken();
-			});
+				navigator.serviceWorker.ready.then((registration) => {
+		  		getToken();
+				});
 	  	}
 		}
   }, [getToken])
@@ -130,11 +131,12 @@ export default function Form() {
   useEffect(() => {
 		if ('permissions' in navigator) {
 	  	navigator.permissions.query({ name: 'notifications' }).then(function (notificationPerm) {
-			notificationPerm.onchange = async function () {
-		  	await checkNotification()
-			};
+				notificationPerm.onchange = async function () {
+		  		await checkNotification()
+				};
 	  	});
 		}
+		
 		async function initialize() {
 	  	await checkNotification()
 		}
@@ -176,32 +178,32 @@ export default function Form() {
 	  	<form id="download_subscribe" onSubmit={handleOnSubmit}>
 			<fieldset className="mb-6" key="options">
 		  	{sessions.map((item, index) => {
-				let defaultValue = form[item] ? "on" : "off";
-				let defaultChecked = form[item] ? "checked" : "";
-				
-				return (
-			  	<div className="mb-4" key={item}>
-					<input
-				  	type="checkbox"
-				  	className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
-				  	name={item}
-				  	id={item}
-				  	checked={defaultChecked}
-				  	onChange={async event => {
-						setState({
-					  	...form,
-					  	[item]: event.target.checked
-						})
-				  	}}
-					/>
-					<label
-				  	htmlFor={item}
-				  	className="inline-block align-middle text-base"
-					>
-				  	{t(`schedule.${item}`)}
-					</label>
-			  	</div>
-				);
+					let defaultValue = form[item] ? "on" : "off";
+					let defaultChecked = form[item] ? "checked" : "";
+					
+					return (
+			  		<div className="mb-4" key={item}>
+						<input
+				  		type="checkbox"
+				  		className="form-tick mr-3 bg-white appearance-none checked:bg-light-green checked:border-transparent w-6 h-6 rounded-md border inline-block align-middle"
+				  		name={item}
+				  		id={item}
+				  		checked={defaultChecked}
+				  		onChange={async event => {
+							setState({
+					  		...form,
+					  		[item]: event.target.checked
+							})
+				  		}}
+						/>
+						<label
+				  		htmlFor={item}
+				  		className="inline-block align-middle text-base"
+						>
+				  		{t(`schedule.${item}`)}
+						</label>
+			  		</div>
+					);
 		  	})}
 			</fieldset>
 	  	
