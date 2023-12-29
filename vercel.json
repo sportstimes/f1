@@ -15,13 +15,6 @@
 					"value": "/"
 				}
 			]
-		},
-		{
-			"source": "/timezone/(.*)",
-			"headers": [{
-				"key": "Cache-Control",
-				"value": "no-cache"
-			}]
 		}
 	],
 	"crons": [
