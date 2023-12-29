@@ -55,7 +55,7 @@ const SiteSelector: FunctionComponent = ({}) => {
 	return (
 		<div>
 			<label htmlFor="site" className="sr-only">
-				{t("languageSelector")}
+				Select Site
 			</label>
 			<select
 				name="site"
