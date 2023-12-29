@@ -77,7 +77,7 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 				<th className={`flex p-4`} id={`${item.slug}-header`}>
 					<span className={`${titleRowClasses(race)} flex`}>
 						<span className={titleRowTextClasses(race)}>
-							{item.localeKey && t(`races.${item.localeKey}`)
+							{item.localeKey && t(`races.${item.localeKey}`) != `All.races.${item.localeKey}`
 							? t(`races.${item.localeKey}`)
 							: item.name}
 						</span>

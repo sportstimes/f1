@@ -56,11 +56,9 @@ const locales = [
 	"zh-HK"
 ];
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
-}
+// export function generatZ
 
-export default function RootLayoutt({children, params: {locale}}) {
+export default function RootLayout({children, params: {locale}}) {
 	if (!locales.includes(locale as any)) notFound();
 	
 	unstable_setRequestLocale(locale);
