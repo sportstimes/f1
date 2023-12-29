@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import {useTranslations} from 'next-intl';
 
 interface Props {
 	mobileOnly?: boolean;
