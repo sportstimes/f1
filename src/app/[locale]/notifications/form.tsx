@@ -75,32 +75,31 @@ export default function Form() {
 	const [fcmToken, setFcmToken] = useState<string|undefined>(undefined);
   const [loaded, setLoaded] = useState<Boolean>(false)
   
-  const getToken = async () => {
+  const getToken = useCallback(async () => {
 		try {
-	  	const token = await firebaseCloudMessaging.init()
-	  	if (token) {
-			
-			const subscribeRes = await fetch('/api/notifications/subscribe', {
-		  	body: JSON.stringify({
-		  	identifier: localStorage.getItem("uuid"),
-		  	token: token
-		  	}),
-		  	headers: {
-				'Content-Type': 'application/json'
-		  	},
-		  	method: 'POST'
-			});
-			
-			setFcmToken(token)
-			
-			await getSubscriptions();
-	  	} else {
-			console.log("No token?!?");
-	  	}
+			const token = await firebaseCloudMessaging.init();
+			if (token) {
+				const subscribeRes = await fetch('/api/notifications/subscribe', {
+					body: JSON.stringify({
+						identifier: localStorage.getItem("uuid"),
+						token: token
+					}),
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					method: 'POST'
+				});
+	
+				setFcmToken(token);
+	
+				await getSubscriptions();
+			} else {
+				console.log("No token?!?");
+			}
 		} catch (error) {
-	  	console.log("err1:" +error)
+			console.log("err1:" + error);
 		}
-  }
+	}, []);
   
   const getSubscriptions = async () => {
 		try {
@@ -141,7 +140,7 @@ export default function Form() {
 		}
 		
 		initialize()
-  }, [])
+  }, [checkNotification])
   
   const delay = time => new Promise(res=>setTimeout(res,time));
   

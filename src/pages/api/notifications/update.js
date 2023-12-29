@@ -10,12 +10,6 @@ export default async (req, res) => {
 	const config = await import(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)  
 	let sessions = config.sessions;
 	
-	// Get the current state for the user...
-	// const existingRes = await fetch(`http://localhost:3000/api/notifications/subscriptions?identifier=${req.body.identifier}`);
-	// const existingResult = await existingRes.json()
-	// const existingSubscriptions = existingResult.subscriptions
-	
-	
 	var subscriptions = {};
 	for await (const session of sessions) {
 		
