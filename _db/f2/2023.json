@@ -9,10 +9,10 @@
       "slug": "bahrain",
       "localeKey": "bahrain",
       "sessions": {
-        "practice": "2023-03-03T09:05:00Z",
-        "qualifying": "2023-03-03T16:30:00Z",
-        "sprint": "2023-03-04T13:15:00Z",
-        "feature": "2023-03-05T10:20:00Z"
+        "practice": "2024-02-29T08:55:00Z",
+        "qualifying": "2024-02-29T12:55:00Z",
+        "sprint": "2024-03-01T07:35:00Z",
+        "feature": "2024-03-02T07:40:00Z"
       }
     },
     {
@@ -24,10 +24,10 @@
       "slug": "saudi-arabia",
       "localeKey": "saudi-arabia",
       "sessions": {
-        "practice": "2023-03-17T10:55:00Z",
-        "qualifying": "2023-03-17T15:00:00Z",
-        "sprint": "2023-03-18T15:10:00Z",
-        "feature": "2023-03-19T13:15:00Z"
+        "practice": "2024-03-07T08:55:00Z",
+        "qualifying": "2024-03-07T12:55:00Z",
+        "sprint": "2024-03-08T07:35:00Z",
+        "feature": "2024-03-09T07:40:00Z"
       }
     },
     {
@@ -39,10 +39,10 @@
       "slug": "melbourne",
       "localeKey": "melbourne",
       "sessions": {
-        "practice": "2023-03-30T23:00:00Z",
-        "qualifying": "2023-03-31T06:30:00Z",
-        "sprint": "2023-04-01T03:20:00Z",
-        "feature": "2023-04-02T01:35:00Z"
+        "practice": "2024-03-22T00:55:00Z",
+        "qualifying": "2024-03-22T04:55:00Z",
+        "sprint": "2024-03-22T23:35:00Z",
+        "feature": "2024-03-23T23:40:00Z"
       }
     },
     {
@@ -54,10 +54,10 @@
       "slug": "azerbaijan",
       "localeKey": "azerbaijan",
       "sessions": {
-        "practice": "2023-04-28T07:05:00Z",
-        "qualifying": "2023-04-28T11:10:00Z",
-        "sprint": "2023-04-29T11:00:00Z",
-        "feature": "2023-04-30T07:25:00Z"
+        "practice": "2024-05-17T09:55:00Z",
+        "qualifying": "2024-05-17T13:55:00Z",
+        "sprint": "2024-05-18T08:35:00Z",
+        "feature": "2024-05-19T08:40:00Z"
       }
     },
     {
@@ -70,10 +70,10 @@
       "localeKey": "emilia-romagna",
       "canceled": true,
       "sessions": {
-        "practice": "2023-05-19T09:05:00Z",
-        "qualifying": "2023-05-19T13:55:00Z",
-        "sprint": "2023-05-20T12:15:00Z",
-        "feature": "2023-05-21T08:10:00Z"
+        "practice": "2024-05-23T09:55:00Z",
+        "qualifying": "2024-05-24T13:55:00Z",
+        "sprint": "2024-05-25T08:35:00Z",
+        "feature": "2024-05-26T08:40:00Z"
       }
     },
     {
@@ -85,10 +85,10 @@
       "slug": "monaco",
       "localeKey": "monaco",
       "sessions": {
-        "practice": "2023-05-25T13:00:00Z",
-        "qualifying": "2023-05-26T13:10:00Z",
-        "sprint": "2023-05-27T12:15:00Z",
-        "feature": "2023-05-28T07:40:00Z"
+        "practice": "2024-06-21T09:55:00Z",
+        "qualifying": "2024-06-21T13:55:00Z",
+        "sprint": "2024-06-22T08:35:00Z",
+        "feature": "2024-06-23T08:40:00Z"
       }
     },
     {
@@ -100,10 +100,10 @@
       "slug": "spanish",
       "localeKey": "spanish",
       "sessions": {
-        "practice": "2023-06-02T09:05:00Z",
-        "qualifying": "2023-06-02T13:55:00Z",
-        "sprint": "2023-06-03T12:15:00Z",
-        "feature": "2023-06-04T09:25:00Z"
+        "practice": "2024-06-28T10:55:00Z",
+        "qualifying": "2024-06-28T14:55:00Z",
+        "sprint": "2024-06-29T09:35:00Z",
+        "feature": "2024-06-30T09:40:00Z"
       }
     },
     {
@@ -115,10 +115,10 @@
       "slug": "austrian",
       "localeKey": "austrian",
       "sessions": {
-        "practice": "2023-06-30T09:05:00Z",
-        "qualifying": "2023-06-30T13:55:00Z",
-        "sprint": "2023-07-01T11:45:00Z",
-        "feature": "2023-07-02T07:55:00Z"
+        "practice": "2024-07-05T10:55:00Z",
+        "qualifying": "2024-07-05T14:55:00Z",
+        "sprint": "2024-07-06T09:35:00Z",
+        "feature": "2024-07-07T09:40:00Z"
       }
     },
     {
@@ -130,10 +130,10 @@
       "slug": "british",
       "localeKey": "british",
       "sessions": {
-        "practice": "2023-07-07T09:05:00Z",
-        "qualifying": "2023-07-07T14:05:00Z",
-        "sprint": "2023-07-08T12:15:00Z",
-        "feature": "2023-07-09T08:55:00Z"
+        "practice": "2024-07-19T09:55:00Z",
+        "qualifying": "2024-07-19T13:55:00Z",
+        "sprint": "2024-07-20T08:35:00Z",
+        "feature": "2024-07-21T08:40:00Z"
       }
     },
     {
@@ -145,10 +145,10 @@
       "slug": "hungarian",
       "localeKey": "hungarian",
       "sessions": {
-        "practice": "2023-07-21T09:05:00Z",
-        "qualifying": "2023-07-21T14:00:00Z",
-        "sprint": "2023-07-22T12:15:00Z",
-        "feature": "2023-07-23T08:05:00Z"
+        "practice": "2024-07-26T09:55:00Z",
+        "qualifying": "2024-07-26T13:55:00Z",
+        "sprint": "2024-07-27T08:35:00Z",
+        "feature": "2024-07-28T08:40:00Z"
       }
     },
     {
@@ -160,10 +160,10 @@
       "slug": "belgian",
       "localeKey": "belgian",
       "sessions": {
-        "practice": "2023-07-28T09:05:00Z",
-        "qualifying": "2023-07-28T13:55:00Z",
-        "sprint": "2023-07-29T12:20:00Z",
-        "feature": "2023-07-30T08:00:00Z"
+        "practice": "2024-08-30T09:55:00Z",
+        "qualifying": "2024-08-30T13:55:00Z",
+        "sprint": "2024-08-31T08:35:00Z",
+        "feature": "2024-09-01T08:40:00Z"
       }
     },
     {
@@ -175,10 +175,10 @@
       "slug": "dutch",
       "localeKey": "dutch",
       "sessions": {
-        "practice": "2023-08-25T08:05:00Z",
-        "qualifying": "2023-08-25T12:05:00Z",
-        "sprint": "2023-08-26T11:15:00Z",
-        "feature": "2023-08-27T08:00:00Z"
+        "practice": "2024-09-13T07:55:00Z",
+        "qualifying": "2024-09-13T11:55:00Z",
+        "sprint": "2024-09-14T06:35:00Z",
+        "feature": "2024-09-15T06:40:00Z"
       }
     },
     {
@@ -190,10 +190,10 @@
       "slug": "italian",
       "localeKey": "italian",
       "sessions": {
-        "practice": "2023-09-01T09:05:00Z",
-        "qualifying": "2023-09-01T14:00:00Z",
-        "sprint": "2023-09-02T12:15:00Z",
-        "feature": "2023-09-03T07:55:00Z"
+        "practice": "2024-11-29T08:55:00Z",
+        "qualifying": "2024-11-29T12:55:00Z",
+        "sprint": "2024-11-30T07:35:00Z",
+        "feature": "2024-12-01T07:40:00Z"
       }
     },
     {
@@ -205,10 +205,10 @@
       "slug": "abu-dhabi",
       "localeKey": "abu-dhabi",
       "sessions": {
-        "practice": "2023-11-24T07:05:00Z",
-        "qualifying": "2023-11-24T11:00:00Z",
-        "sprint": "2023-11-25T12:20:00Z",
-        "feature": "2023-11-26T09:15:00Z"
+        "practice": "2024-12-06T07:55:00Z",
+        "qualifying": "2024-12-06T11:55:00Z",
+        "sprint": "2024-12-07T06:35:00Z",
+        "feature": "2024-12-08T06:40:00Z"
       }
     }
   ]
