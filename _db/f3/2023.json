@@ -9,10 +9,10 @@
       "slug": "bahrain",
       "localeKey": "bahrain",
       "sessions": {
-        "practice": "2023-03-03T07:55:00Z",
-        "qualifying": "2023-03-03T13:00:00Z",
-        "sprint": "2023-03-04T09:15:00Z",
-        "feature": "2023-03-05T08:50:00Z"
+        "practice": "2024-02-29T05:45:00Z",
+        "qualifying": "2024-02-29T08:55:00Z",
+        "sprint": "2024-03-01T13:45:00Z",
+        "feature": "2024-03-02T06:20:00Z"
       }
     },
     {
@@ -24,10 +24,10 @@
       "slug": "melbourne",
       "localeKey": "melbourne",
       "sessions": {
-        "practice": "2023-03-30T21:50:00Z",
-        "qualifying": "2023-03-31T03:00:00Z",
-        "sprint": "2023-03-31T23:45:00Z",
-        "feature": "2023-04-01T23:05:00Z"
+        "practice": "2024-03-21T21:45:00Z",
+        "qualifying": "2024-03-22T00:55:00Z",
+        "sprint": "2024-03-23T05:45:00Z",
+        "feature": "2024-03-23T22:20:00Z"
       }
     },
     {
@@ -40,10 +40,10 @@
       "localeKey": "emilia-romagna",
       "canceled": true,
       "sessions": {
-        "practice": "2023-05-19T07:55:00Z",
-        "qualifying": "2023-05-19T13:00:00Z",
-        "sprint": "2023-05-20T08:05:00Z",
-        "feature": "2023-05-21T06:40:00Z"
+        "practice": "2024-05-17T06:45:00Z",
+        "qualifying": "2024-05-17T09:55:00Z",
+        "sprint": "2024-05-18T14:45:00Z",
+        "feature": "2024-05-19T07:20:00Z"
       }
     },
     {
@@ -55,9 +55,9 @@
       "slug": "monaco",
       "localeKey": "monaco",
       "sessions": {
-        "practice": "2023-05-25T11:30:00Z",
-        "sprint": "2023-05-27T09:00:00Z",
-        "feature": "2023-05-28T06:00:00Z"
+        "practice": "2024-05-23T06:45:00Z",
+        "sprint": "2024-05-25T14:45:00Z",
+        "feature": "2024-05-26T07:20:00Z"
       }
     },
     {
@@ -69,10 +69,10 @@
       "slug": "spanish",
       "localeKey": "spanish",
       "sessions": {
-        "practice": "2023-06-02T07:55:00Z",
-        "qualifying": "2023-06-02T13:00:00Z",
-        "sprint": "2023-06-03T08:30:00Z",
-        "feature": "2023-06-04T07:55:00Z"
+        "practice": "2024-06-21T06:45:00Z",
+        "qualifying": "2024-06-21T09:55:00Z",
+        "sprint": "2024-06-22T14:45:00Z",
+        "feature": "2024-06-23T07:20:00Z"
       }
     },
     {
@@ -84,10 +84,10 @@
       "slug": "austrian",
       "localeKey": "austrian",
       "sessions": {
-        "practice": "2023-06-30T07:55:00Z",
-        "qualifying": "2023-06-30T13:00:00Z",
-        "sprint": "2023-07-01T08:00:00Z",
-        "feature": "2023-07-02T06:25:00Z"
+        "practice": "2024-06-28T06:45:00Z",
+        "qualifying": "2024-06-28T09:55:00Z",
+        "sprint": "2024-06-29T14:45:00Z",
+        "feature": "2024-06-30T07:20:00Z"
       }
     },
     {
@@ -99,10 +99,10 @@
       "slug": "british",
       "localeKey": "british",
       "sessions": {
-        "practice": "2023-07-07T07:45:00Z",
-        "qualifying": "2023-07-07T13:10:00Z",
-        "sprint": "2023-07-08T08:20:00Z",
-        "feature": "2023-07-09T07:20:00Z"
+        "practice": "2024-07-05T07:45:00Z",
+        "qualifying": "2024-07-05T10:55:00Z",
+        "sprint": "2024-07-06T15:45:00Z",
+        "feature": "2024-07-07T08:20:00Z"
       }
     },
     {
@@ -114,10 +114,10 @@
       "slug": "hungarian",
       "localeKey": "hungarian",
       "sessions": {
-        "practice": "2023-07-21T07:55:00Z",
-        "qualifying": "2023-07-21T13:05:00Z",
-        "sprint": "2023-07-22T07:50:00Z",
-        "feature": "2023-07-23T06:25:00Z"
+        "practice": "2024-07-19T06:45:00Z",
+        "qualifying": "2024-07-19T09:55:00Z",
+        "sprint": "2024-07-20T14:45:00Z",
+        "feature": "2024-07-21T07:20:00Z"
       }
     },
     {
@@ -129,10 +129,10 @@
       "slug": "belgian",
       "localeKey": "belgian",
       "sessions": {
-        "practice": "2023-07-28T07:55:00Z",
-        "qualifying": "2023-07-28T13:00:00Z",
-        "sprint": "2023-07-29T08:00:00Z",
-        "feature": "2023-07-30T06:30:00Z"
+        "practice": "2024-07-26T06:45:00Z",
+        "qualifying": "2024-07-26T09:55:00Z",
+        "sprint": "2024-07-27T14:45:00Z",
+        "feature": "2024-07-28T07:20:00Z"
       }
     },
     {
@@ -144,10 +144,10 @@
       "slug": "italian",
       "localeKey": "italian",
       "sessions": {
-        "practice": "2023-09-01T07:40:00Z",
-        "qualifying": "2023-09-01T13:05:00Z",
-        "sprint": "2023-09-02T07:25:00Z",
-        "feature": "2023-09-03T06:15:00Z"
+        "practice": "2024-08-30T06:45:00Z",
+        "qualifying": "2024-08-30T09:55:00Z",
+        "sprint": "2024-08-31T14:45:00Z",
+        "feature": "2024-09-01T07:20:00Z"
       }
     }
   ]
