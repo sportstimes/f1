@@ -2,8 +2,8 @@
 	"siteKey": "f3",
 	"url": "f3calendar.com",
 	"calendarCDN": "files-f3.motorsportcalendars.com",
-	"calendarOutputYear": 2023,
-	"availableYears": [2021, 2022, 2023],
+	"calendarOutputYear": 2024,
+	"availableYears": [2021, 2022, 2023, 2024],
 	"sessions": ["practice", "qualifying", "sprint", "feature"],
 	"featuredSessions": ["feature"],
 	"collapsedSessions": [
@@ -25,5 +25,5 @@
 		"feature": 45
 	},
 	"supportsEmailReminders": false,
-	"notice": "Most sessions are still TBC. Calendar will be updated as details are confirmed."
+	"notice": "Session times will be updated once confirmed by the FIA."
 }

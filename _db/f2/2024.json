@@ -1,0 +1,228 @@
+{
+  "races": [
+    {
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "round": 1,
+      "slug": "bahrain",
+      "localeKey": "bahrain",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-02-28T09:05:00Z",
+        "qualifying": "2024-02-28T16:30:00Z",
+        "sprint": "2024-02-29T13:15:00Z",
+        "feature": "2024-04-01T10:20:00Z"
+      }
+    },
+    {
+      "name": "Saudi Arabian",
+      "location": "Jeddah",
+      "latitude": 21.485811,
+      "longitude": 39.192505,
+      "round": 2,
+      "slug": "saudi-arabia",
+      "localeKey": "saudi-arabia",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-03-06T10:55:00Z",
+        "qualifying": "2024-03-06T15:00:00Z",
+        "sprint": "2024-03-07T15:10:00Z",
+        "feature": "2024-03-08T13:15:00Z"
+      }
+    },
+    {
+      "name": "Australian",
+      "location": "Melbourne",
+      "latitude": -37.8373,
+      "longitude": 144.9666,
+      "round": 3,
+      "slug": "melbourne",
+      "localeKey": "melbourne",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-03-21T23:00:00Z",
+        "qualifying": "2024-03-21T06:30:00Z",
+        "sprint": "2024-03-22T03:20:00Z",
+        "feature": "2024-03-23T01:35:00Z"
+      }
+    },
+    {
+      "name": "Emilia Romagna",
+      "location": "Imola",
+      "latitude": 44.344576,
+      "longitude": 11.713808,
+      "round": 4,
+      "slug": "emilia-romagna",
+      "localeKey": "emilia-romagna",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-05-16T09:05:00Z",
+        "qualifying": "2024-05-16T13:55:00Z",
+        "sprint": "2024-05-17T12:15:00Z",
+        "feature": "2024-05-18T08:10:00Z"
+      }
+    },
+    {
+      "name": "Monaco",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 5,
+      "slug": "monaco",
+      "localeKey": "monaco",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-05-22T13:00:00Z",
+        "qualifying": "2024-05-23T13:10:00Z",
+        "sprint": "2024-05-24T12:15:00Z",
+        "feature": "2024-05-25T07:40:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Barcelona",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "round": 6,
+      "slug": "spanish",
+      "localeKey": "spanish",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-06-20T09:05:00Z",
+        "qualifying": "2024-06-20T13:55:00Z",
+        "sprint": "2024-06-21T12:15:00Z",
+        "feature": "2024-06-22T09:25:00Z"
+      }
+    },
+    {
+      "name": "Austrian",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "round": 7,
+      "slug": "austrian",
+      "localeKey": "austrian",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-06-27T09:05:00Z",
+        "qualifying": "2024-06-27T13:55:00Z",
+        "sprint": "2024-06-28T11:45:00Z",
+        "feature": "2024-06-29T07:55:00Z"
+      }
+    },
+    {
+      "name": "British",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "round": 8,
+      "slug": "british",
+      "localeKey": "british",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-07-04T09:05:00Z",
+        "qualifying": "2024-07-04T14:05:00Z",
+        "sprint": "2024-07-05T12:15:00Z",
+        "feature": "2024-07-06T08:55:00Z"
+      }
+    },
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "round": 9,
+      "slug": "hungarian",
+      "localeKey": "hungarian",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-07-18T09:05:00Z",
+        "qualifying": "2024-07-18T14:00:00Z",
+        "sprint": "2024-07-19T12:15:00Z",
+        "feature": "2024-07-20T08:05:00Z"
+      }
+    },
+    {
+      "name": "Belgian",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.444,
+      "longitude": 5.9687,
+      "round": 10,
+      "slug": "belgian",
+      "localeKey": "belgian",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-07-25T09:05:00Z",
+        "qualifying": "2024-07-25T13:55:00Z",
+        "sprint": "2024-07-26T12:20:00Z",
+        "feature": "2024-07-27T08:00:00Z"
+      }
+    },
+    {
+      "name": "Italian",
+      "location": "Monza",
+      "latitude": 45.6169,
+      "longitude": 9.2825,
+      "round": 11,
+      "slug": "italian",
+      "localeKey": "italian",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-08-29T09:05:00Z",
+        "qualifying": "2024-08-29T14:00:00Z",
+        "sprint": "2024-08-30T12:15:00Z",
+        "feature": "2024-08-31T07:55:00Z"
+      }
+    },
+    {
+      "name": "Azerbaijan",
+      "location": "Baku",
+      "latitude": 40.3699,
+      "longitude": 49.8433,
+      "round": 12,
+      "slug": "azerbaijan",
+      "localeKey": "azerbaijan",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-09-12T07:05:00Z",
+        "qualifying": "2023-09-12T11:10:00Z",
+        "sprint": "2023-09-13T11:00:00Z",
+        "feature": "2023-09-14T07:25:00Z"
+      }
+    },
+    {
+      "name": "Qatar",
+      "location": "Doha",
+      "latitude": 25.490292,
+      "longitude": 51.45303,
+      "round": 13,
+      "slug": "qatar",
+      "localeKey": "qatar",
+      "tbc": true,
+      "sessions": {
+        "practice": "2023-11-28T07:05:00Z",
+        "qualifying": "2023-11-28T11:10:00Z",
+        "sprint": "2023-11-29T11:00:00Z",
+        "feature": "2023-11-30T07:25:00Z"
+      }
+    },
+    {
+      "name": "Abu Dhabi",
+      "location": "Yas Marina",
+      "latitude": 24.4821,
+      "longitude": 54.3482,
+      "round": 14,
+      "slug": "abu-dhabi",
+      "localeKey": "abu-dhabi",
+      "tbc": true,
+      "sessions": {
+        "practice": "2024-12-05T07:05:00Z",
+        "qualifying": "2024-12-05T11:00:00Z",
+        "sprint": "2024-12-06T12:20:00Z",
+        "feature": "2024-12-07T09:15:00Z"
+      }
+    }
+  ]
+}
