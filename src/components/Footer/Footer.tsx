@@ -25,12 +25,11 @@ const Footer = () => {
 		}
 	}, []);
 	
-	const onSupportClick = () => {
+	const dismissPrompt = () => {
 		localStorage.setItem("a2hs_message", true);
 		setShowHomeScreenPrompt(false);
 	};
 	
-
 	return (
 		<>
 			<footer className="max-w-screen-lg mx-auto mt-2 md:mt-10 px-0 sm:px-2">
@@ -199,7 +198,7 @@ const Footer = () => {
 							  </div>
 							</div>
 							<div class="mt-5 sm:mt-4">
-							  <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm" onClick={this.dismissPrompt}>Got it</button>
+							  <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm" onClick={dismissPrompt}>Got it</button>
 							</div>
 						  </div>
 						</div>
