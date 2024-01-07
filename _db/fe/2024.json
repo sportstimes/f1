@@ -52,7 +52,7 @@
       "round": 4,
       "slug": "hyderabad-eprix",
       "localeKey": "hyderabad-eprix",
-      "tbc": true,
+      "canceled": true,
       "sessions": {
         "practice1": "2024-02-09T10:55:00Z",
         "practice2": "2024-02-10T02:35:00Z",
