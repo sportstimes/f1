@@ -14,6 +14,7 @@ export async function generateMetadata() {
     title: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {year: currentYear}),
     description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {year: currentYear}),
     keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {year: currentYear}),
+    manifest: '/manifest.json'
   }
 }
 
