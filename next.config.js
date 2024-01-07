@@ -51,6 +51,19 @@ module.exports = (phase) => {
               destination: `https://files-${process.env.NEXT_PUBLIC_SITE_KEY}.motorsportcalendars.com/:prefix*_qualifying_sprint_\:suffix`,
             }
         );
+        
+        rules.push(
+          {
+            source: '/f1_p1_p2_p3_q_gp.ics',
+            permanent: true,
+            destination: 'https://files-f1.motorsportcalendars.com/f1-calendar_p1_p2_p3_qualifying_sprint_gp.ics'
+          },
+          {
+            source: '/download.php',
+            permanent: true,
+            destination: 'https://files-f1.motorsportcalendars.com/f1-calendar_p1_p2_p3_qualifying_sprint_gp.ics'
+          }
+        )
       }
       
       rules.push(
