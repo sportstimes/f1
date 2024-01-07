@@ -57,6 +57,11 @@ module.exports = (phase) => {
             source: '/f1_p1_p2_p3_q_gp.ics',
             permanent: true,
             destination: 'https://files-f1.motorsportcalendars.com/f1-calendar_p1_p2_p3_qualifying_sprint_gp.ics'
+          },
+          {
+            source: '/download.php',
+            permanent: true,
+            destination: 'https://files-f1.motorsportcalendars.com/f1-calendar_p1_p2_p3_qualifying_sprint_gp.ics'
           }
         )
       }
