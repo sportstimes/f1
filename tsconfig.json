@@ -21,13 +21,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
       "@components/*": [
         "components/*"
       ],
       "@models/*": [
         "models/*"
+      ],
+      "@_db/*": [
+        "_db/*"
       ]
     },
     "incremental": true,

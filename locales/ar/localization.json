@@ -1,250 +1,252 @@
 {
-    "date": "التاريخ",
-    "time": "الوقت",
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
-    "badges": {
-        "tbc": "يتم تأكيده",
-        "tbc_title": "يتم تأكيده",
-        "tickets": "التذاكر",
-        "canceled": "ألغيت",
-        "next": "التالي"
-    },
-    "schedule": {
-        "fp1": "التجارب الحرة 1",
-        "fp2": "التجارب الحرة 2",
-        "fp3": "التجارب الحرة 3",
-        "fp4": "التجارب الحرة 4",
-        "shakedown": "اعادة تعيين",
-        "practice1": "التجارب 1",
-        "practice2": "التجارب 2",
-        "practice3": "التجارب 3",
-        "practice": "التجارب",
-        "qualifying": "التجارب التأهيلية",
-        "qualifying1": "التجارب التأهيلية 1",
-        "qualifying2": "التجارب التأهيلية 2",
-        "sprintQualifying": "Sprint Shootout",
-        "sprint": "التجارب التأهيلية السريعة",
-        "semifinal": "نصف النهائي",
-        "warmup": "الإحماء",
-        "race": "السباق",
-        "race1": "السباق 1",
-        "race2": "السباق 2",
-        "race3": "السباق 3",
-        "gp": "الجائزة الكبري",
-        "sprint1": "السباق السريع 1",
-        "sprint2": "السباق السريع 2",
-        "feature": "موضوع"
-    },
-    "races": {
-        "austrian-grand-prix": "جائزة النمسا الكبري",
-        "steiermark-grand-prix": "جائزة ستيريا (النمسا) الكبري",
-        "hungarian-grand-prix": "جائزة المجر الكبري",
-        "british-grand-prix": "جائزة بريطانيا الكبري",
-        "anniversary-british-grand-prix": "جائزة الذكري 70 (بريطانيا) الكبري",
-        "spanish-grand-prix": "جائزة اسبانيا الكبري",
-        "belgian-grand-prix": "جائزة بلجيكا الكبري",
-        "italian-grand-prix": "جائزة اطاليا الكبري",
-        "australian-grand-prix": "جائزة استراليا الكبري",
-        "bahrain-grand-prix": "جائزة البحرين الكبري",
-        "vietnamese-grand-prix": "جائزة فيتنام الكبري",
-        "dutch-grand-prix": "جائزة هولندا الكبري",
-        "monaco-grand-prix": "جائزة موناكو الكبري",
-        "azerbaijan-grand-prix": "جائزة أذربيجان الكبري",
-        "canadian-grand-prix": "جائزة كندا الكبري",
-        "french-grand-prix": "جائزة فرنسا الكبري",
-        "singapore-grand-prix": "جائزة سنغافورة الكبري",
-        "russian-grand-prix": "جائزة روسيا الكبري",
-        "japanese-grand-prix": "جائزة اليابان الكبري",
-        "us-grand-prix": "جائزة الولايات المتحدة الكبري",
-        "mexico-grand-prix": "جائزة المكسيك الكبري",
-        "brazilian-grand-prix": "جائزة البرازيل الكبري",
-        "abu-dhabi-grand-prix": "جائزة أبوظبي الكبري",
-        "tuscan-grand-prix": "جائزة توسكان الكبري",
-        "eifel-grand-prix": "جائزة ايفل الكبري",
-        "portuguese-grand-prix": "جائزة البرتغال الكبري",
-        "emilia-romagna-grand-prix": "جائزة اميليا رومانيا الكبري",
-        "sakhir-grand-prix": "جائزة صخير (البحرين) الكبري",
-        "turkish-grand-prix": "جائزة تركيا الكبري",
-        "saudi-arabia-grand-prix": "جائزة السعودية الكبري",
-        "qatar-grand-prix" : "Qatar Grand Prix",
-		"miami-grand-prix" : "Miami Grand Prix",
-        "chinese-grand-prix" : "جائزة الصين الكبري",
-        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
-	},
-	"options": {
-        "calendar": "اضف مواعيد السباقات الي تقويمك",
-        "email": "استقبل اشعارات عبر البريد الإلكتروني",
-        "timezonePicker": {
-            "detect": "Detect",
-            "showing": "اظهر المواعيد لـ",
-            "pick": "اختر منطقة زمنية"
+    "All": {
+        "date": "التاريخ",
+        "time": "الوقت",
+        "showPreviousRaces": "Show Previous Races",
+        "hidePreviousRaces": "Hide Previous Races",
+        "badges": {
+            "tbc": "يتم تأكيده",
+            "tbc_title": "يتم تأكيده",
+            "tickets": "التذاكر",
+            "canceled": "ألغيت",
+            "next": "التالي"
         },
-        "formatPicker": {
-            "title": "صيغة الوقت",
-            "12hr": "12 ساعة",
-            "24hr": "24 ساعة"
+        "schedule": {
+            "fp1": "التجارب الحرة 1",
+            "fp2": "التجارب الحرة 2",
+            "fp3": "التجارب الحرة 3",
+            "fp4": "التجارب الحرة 4",
+            "shakedown": "اعادة تعيين",
+            "practice1": "التجارب 1",
+            "practice2": "التجارب 2",
+            "practice3": "التجارب 3",
+            "practice": "التجارب",
+            "qualifying": "التجارب التأهيلية",
+            "qualifying1": "التجارب التأهيلية 1",
+            "qualifying2": "التجارب التأهيلية 2",
+            "sprintQualifying": "Sprint Shootout",
+            "sprint": "التجارب التأهيلية السريعة",
+            "semifinal": "نصف النهائي",
+            "warmup": "الإحماء",
+            "race": "السباق",
+            "race1": "السباق 1",
+            "race2": "السباق 2",
+            "race3": "السباق 3",
+            "gp": "الجائزة الكبري",
+            "sprint1": "السباق السريع 1",
+            "sprint2": "السباق السريع 2",
+            "feature": "موضوع"
         },
-        "button": "تم"
-    },
-    "contribute": "ساهم",
-    "yearSelector": "Year",
-    "languageSelector": "اختر اللغة",
-    "javascript": "هذا الموقع يعمل بشكل أفضل بتفعيل Javascript",
-    "footer": {
-        "coffee": "ادعم الموقع و اشتر لنا كوب قهوة",
-        "twitter": "نحن علي تويتر",
-        "github": "مفتوح المصدر علي Github",
-        "issue": "مشكلة ؟ ابلغ عنها",
-        "links": {
-            "wereOn": "نحن علي",
-            "openSourcedOn": "مفتوح المصدر علي",
-            "spottedIssue": "مشكلة ؟",
-            "spottedReport": "ابلغ"
+        "races": {
+            "austrian-grand-prix": "جائزة النمسا الكبري",
+            "steiermark-grand-prix": "جائزة ستيريا (النمسا) الكبري",
+            "hungarian-grand-prix": "جائزة المجر الكبري",
+            "british-grand-prix": "جائزة بريطانيا الكبري",
+            "anniversary-british-grand-prix": "جائزة الذكري 70 (بريطانيا) الكبري",
+            "spanish-grand-prix": "جائزة اسبانيا الكبري",
+            "belgian-grand-prix": "جائزة بلجيكا الكبري",
+            "italian-grand-prix": "جائزة اطاليا الكبري",
+            "australian-grand-prix": "جائزة استراليا الكبري",
+            "bahrain-grand-prix": "جائزة البحرين الكبري",
+            "vietnamese-grand-prix": "جائزة فيتنام الكبري",
+            "dutch-grand-prix": "جائزة هولندا الكبري",
+            "monaco-grand-prix": "جائزة موناكو الكبري",
+            "azerbaijan-grand-prix": "جائزة أذربيجان الكبري",
+            "canadian-grand-prix": "جائزة كندا الكبري",
+            "french-grand-prix": "جائزة فرنسا الكبري",
+            "singapore-grand-prix": "جائزة سنغافورة الكبري",
+            "russian-grand-prix": "جائزة روسيا الكبري",
+            "japanese-grand-prix": "جائزة اليابان الكبري",
+            "us-grand-prix": "جائزة الولايات المتحدة الكبري",
+            "mexico-grand-prix": "جائزة المكسيك الكبري",
+            "brazilian-grand-prix": "جائزة البرازيل الكبري",
+            "abu-dhabi-grand-prix": "جائزة أبوظبي الكبري",
+            "tuscan-grand-prix": "جائزة توسكان الكبري",
+            "eifel-grand-prix": "جائزة ايفل الكبري",
+            "portuguese-grand-prix": "جائزة البرتغال الكبري",
+            "emilia-romagna-grand-prix": "جائزة اميليا رومانيا الكبري",
+            "sakhir-grand-prix": "جائزة صخير (البحرين) الكبري",
+            "turkish-grand-prix": "جائزة تركيا الكبري",
+            "saudi-arabia-grand-prix": "جائزة السعودية الكبري",
+            "qatar-grand-prix" : "Qatar Grand Prix",
+		    "miami-grand-prix" : "Miami Grand Prix",
+            "chinese-grand-prix" : "جائزة الصين الكبري",
+            "las-vegas-grand-prix" : "Las Vegas Grand Prix"
+	    },
+	    "options": {
+            "calendar": "اضف مواعيد السباقات الي تقويمك",
+            "email": "استقبل اشعارات عبر البريد الإلكتروني",
+            "timezonePicker": {
+                "detect": "Detect",
+                "showing": "اظهر المواعيد لـ",
+                "pick": "اختر منطقة زمنية"
+            },
+            "formatPicker": {
+                "title": "صيغة الوقت",
+                "12hr": "12 ساعة",
+                "24hr": "24 ساعة"
+            },
+            "button": "تم"
         },
-        "homescreen":"Add to your Home Screen and get an App like experience."
-    },
-    "form": {
-        "title": "اصدار التقويم",
-        "description": "أولا. اختر أي المواسم تريد اضافتها الي التقويم الخاص بك",
-        "reminder": "تذكير",
-        "reminderContinued": "دقائق قبل كل حدث في التقويم.",
-        "button": "التقويم",
-        "buttonSubmitted": "تم التسجيل",
-        "nonOptionsSelected": "من فضلك اختر علي الأقل حدث واحد للتقويم",
-        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
-    },
-    "download": {
-        "title": "نوع التقويم",
-        "webcalTitle": "لأجهزة المحمول و الحاسب",
-        "webcalDescription": "تحديث تلقائي للتقويم للتطبيقات Outlook و macOS Calendar",
-        "webcalButton": "احصل",
-        "gcalTitle": "تقويم جوجل",
-        "gcalDescription": "قم بنسخ هذا الرابط الي تطبيق تقويم جوجل من أجل الإضافة",
-        "gcalDescriptionLink": "التعليمات المفصلة",
-        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
-		"gcalAddToGoogleCalendar": "Add to Google Calendar",
-		"icsTitle": "تحميل ملف ICS",
-        "icsDescription": "ملف ICS للتقويمات التي لا تدعم خاصية الاشتراكات",
-        "icsButton": "تحميل"
-    },
-    "subscribe": {
-        "title": "اشتراك",
-        "description": "احصل علي بريد الكتروني قبل كل اسبوع سباق.",
-        "label": "البريد الإلكتروني",
-        "button": "اشترك"
-    },
-    "notifications": {
-        "title": "Notifications",
-        "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
-        "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
-        "button": "Save",
-        "buttonSubmitted": "Saved",
-        "permissions": {
-            "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
-            "button": "Allow Notifications",
-            "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+        "contribute": "ساهم",
+        "yearSelector": "Year",
+        "languageSelector": "اختر اللغة",
+        "javascript": "هذا الموقع يعمل بشكل أفضل بتفعيل Javascript",
+        "footer": {
+            "coffee": "ادعم الموقع و اشتر لنا كوب قهوة",
+            "twitter": "نحن علي تويتر",
+            "github": "مفتوح المصدر علي Github",
+            "issue": "مشكلة ؟ ابلغ عنها",
+            "links": {
+                "wereOn": "نحن علي",
+                "openSourcedOn": "مفتوح المصدر علي",
+                "spottedIssue": "مشكلة ؟",
+                "spottedReport": "ابلغ"
+            },
+            "homescreen":"Add to your Home Screen and get an App like experience."
+        },
+        "form": {
+            "title": "اصدار التقويم",
+            "description": "أولا. اختر أي المواسم تريد اضافتها الي التقويم الخاص بك",
+            "reminder": "تذكير",
+            "reminderContinued": "دقائق قبل كل حدث في التقويم.",
+            "button": "التقويم",
+            "buttonSubmitted": "تم التسجيل",
+            "nonOptionsSelected": "من فضلك اختر علي الأقل حدث واحد للتقويم",
+            "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
+        },
+        "download": {
+            "title": "نوع التقويم",
+            "webcalTitle": "لأجهزة المحمول و الحاسب",
+            "webcalDescription": "تحديث تلقائي للتقويم للتطبيقات Outlook و macOS Calendar",
+            "webcalButton": "احصل",
+            "gcalTitle": "تقويم جوجل",
+            "gcalDescription": "قم بنسخ هذا الرابط الي تطبيق تقويم جوجل من أجل الإضافة",
+            "gcalDescriptionLink": "التعليمات المفصلة",
+            "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+		    "gcalAddToGoogleCalendar": "Add to Google Calendar",
+		    "icsTitle": "تحميل ملف ICS",
+            "icsDescription": "ملف ICS للتقويمات التي لا تدعم خاصية الاشتراكات",
+            "icsButton": "تحميل"
+        },
+        "subscribe": {
+            "title": "اشتراك",
+            "description": "احصل علي بريد الكتروني قبل كل اسبوع سباق.",
+            "label": "البريد الإلكتروني",
+            "button": "اشترك"
+        },
+        "notifications": {
+            "title": "Notifications",
+            "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
+            "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
+            "button": "Save",
+            "buttonSubmitted": "Saved",
+            "permissions": {
+                "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
+                "button": "Allow Notifications",
+                "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+            }
+        },
+        "timezones": {
+            "title": "اختر منطقة زمنية..."
+        },
+        "years": {
+            "title": "اختر السنة..."
+        },
+        "f1": {
+            "title": "جدول بطولة F1",
+            "subtitle": "السباقات و المراحل التجريبية و التأهيلية",
+            "seo": {
+                "title": "جدول بطولة F1 لعام {{year}} - مواعيد سباقات Formula One",
+                "description": "جدول بطولة Formula One لموسم {{year}} - كل مواعيد السباقات و المراحل التجريبية و التأهيلية - خاصية الإشعارات لجميع المناطق الزمنية - تحميل او اشتراك",
+                "keywords": "اف 1 , فورميلا 1 , مواعيد السباقات , السباقات , اشعارات , تنبيهات , الجائزة الكبري , الجوائز الكبري , جدول المواعيد , التاريخ , مواعيد الإنطلاق , التأهيل , التجارب , لندن , أوروبا , {{year}}"
+            },
+            "footnote": "علامات تجارية مرخصة من Formula One Licensing BV\nFormula One, Formula 1, F1 & Grand Prix"
+        },
+        "f2": {
+            "title": "جدول F2",
+            "subtitle": "السباقات و المراحيل التجريبية و التأهيلية",
+            "seo": {
+                "title": "جدول بطولة F2 لعام {{year}} - مواعيد سباقات الفورميلا 2",
+                "description": "جدول بطولة الفورميلا 2 لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية الإشعارات و التنبيهات , جميع المناطق الزمنية , تحميل و اشتراك",
+                "keywords": "placeholder"
+            },
+            "footnote": "علامات تجارية لـ FIA\nFIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2 , F2"
+        },
+        "f3": {
+            "title": "جدول F3",
+            "subtitle": "السباقات و المراحل التجريبية و التأهيلية",
+            "seo": {
+                "title": "جدول بطولة F3 لعام {{year}} - مواعيد السباقات",
+                "description": "جدول بطولة F3 لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية ,خاصية التنبيهات , جميع المناطق الزمنية , تحميل و اشتراك",
+                "keywords": "اف 3 , فورميلا 3 , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجوائز الكبري , الجائزة الكبري , جدول المواعيد , مواعيد الإنطلاق , التجارب الحرة , التجارب التأهيلية , التجارب , لندن , أوروبا ,  {{year}}"
+            },
+            "footnote": "علامات تجارية لـ FIA\nFIA FORMULA 3 CHAMPIONSHIP , FIA FORMULA 3 , FORMULA 3 , F3"
+        },
+        "fe": {
+            "title": "جدول Formula E",
+            "subtitle": "السباقات و التجارب التجريبية و التأهيلية",
+            "seo": {
+                "title": "جدول بطولة Formula E لعام {{year}} - مواعيد سباقات فورميلا E",
+                "description": "جدول بطولة فورميلا اي لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التنبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
+                "keywords": "اف اي , فورميلا اي , مواعيد السباقات , السباقات , تنبيهات , اشعارات , الجائزة الكهربائية , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التحارب الحرة , لندن , أوروبا , {{year}}"
+            },
+            "footnote": "علامات تجارية لـ FIA\nFormula-E , FIA , FORMULA-E CHAMPIONSHIP  & E-PRIX"
+        },
+        "indycar": {
+            "title": "جدول IndyCar",
+            "subtitle": "السباقات و التجارب الحرة و التأهيلية",
+            "seo": {
+                "title": "جدول بطولة IndyCar لعام {{year}} - مواعيد السباقات",
+                "description": "جدول بطولة IndyCar لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
+                "keywords": "اندي كار , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , {{year}}"
+            },
+            "footnote": "IndyCar هي علامة تجارية لـ Brickyard Trademarks, Inc"
+        },
+        "motogp": {
+            "title": "جدول MotoGP",
+            "subtitle": "السباقات و التجارب الحرة و التأهيلية",
+            "seo": {
+                "title": "جدول بطولة MotoGP لعام {{year}} - مواعيد السباقات",
+                "description": "جدول بطولة MotoGP لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية ,خاصية التنبيهات , جميع المناطق الزمنية , تحميل و اشتراك",
+                "keywords": "موتو جي بي , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {{year}}"
+            },
+            "footnote": "footnote"
+        },
+        "wseries": {
+            "title": "جدول بطولة W Series",
+            "subtitle": "السباقات و التجارب الحرة و التأهيلية",
+            "seo": {
+                "title": "جدول بطولة W Series لموسم {{year}} - مواعيد السباقات و التاريخ",
+                "description": "جدول بطولة W Series لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التنبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
+                "keywords": "دابيو سيريس , دابيو سيريس , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجائزة , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {{year}}"
+            },
+            "footnote": "هذا الموقع غير تباع لـ W Series"
+        },
+        "extremee": {
+            "title": "جدول Extreme E",
+            "subtitle": "السباقات و التجارب الحرة و التأهيلية",
+            "seo": {
+                "title": "جدول بطولة Extreme E لعام {{year}} - مواعيد السباقات",
+                "description": "جدول بطولة Extreme E لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التنبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
+                "keywords": "اكستريم اي , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجائزة اكس , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {{year}}"
+            },
+            "footnote": "footnote"
+        },
+        "f1-academy": {
+            "title": "F1 Academy Calendar",
+            "subtitle": "Races, Qualifying & Practice Sessions",
+            "seo": {
+                "title": "F1 Academy Calendar {{year}} - Formula One Race Times and Dates",
+                "description": "Formula One Academy Calendar for {{year}} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+                "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+            },
+            "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+        },
+        "event": "الحدث",
+        "notice": {
+            "text": "النص",
+            "link": "الرابط"
         }
-    },
-    "timezones": {
-        "title": "اختر منطقة زمنية..."
-    },
-    "years": {
-        "title": "اختر السنة..."
-    },
-    "f1": {
-        "title": "جدول بطولة F1",
-        "subtitle": "السباقات و المراحل التجريبية و التأهيلية",
-        "seo": {
-            "title": "جدول بطولة F1 لعام {{year}} - مواعيد سباقات Formula One",
-            "description": "جدول بطولة Formula One لموسم {{year}} - كل مواعيد السباقات و المراحل التجريبية و التأهيلية - خاصية الإشعارات لجميع المناطق الزمنية - تحميل او اشتراك",
-            "keywords": "اف 1 , فورميلا 1 , مواعيد السباقات , السباقات , اشعارات , تنبيهات , الجائزة الكبري , الجوائز الكبري , جدول المواعيد , التاريخ , مواعيد الإنطلاق , التأهيل , التجارب , لندن , أوروبا , {{year}}"
-        },
-        "footnote": "علامات تجارية مرخصة من Formula One Licensing BV\nFormula One, Formula 1, F1 & Grand Prix"
-    },
-    "f2": {
-        "title": "جدول F2",
-        "subtitle": "السباقات و المراحيل التجريبية و التأهيلية",
-        "seo": {
-            "title": "جدول بطولة F2 لعام {{year}} - مواعيد سباقات الفورميلا 2",
-            "description": "جدول بطولة الفورميلا 2 لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية الإشعارات و التنبيهات , جميع المناطق الزمنية , تحميل و اشتراك",
-            "keywords": "placeholder"
-        },
-        "footnote": "علامات تجارية لـ FIA\nFIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2 , F2"
-    },
-    "f3": {
-        "title": "جدول F3",
-        "subtitle": "السباقات و المراحل التجريبية و التأهيلية",
-        "seo": {
-            "title": "جدول بطولة F3 لعام {{year}} - مواعيد السباقات",
-            "description": "جدول بطولة F3 لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية ,خاصية التنبيهات , جميع المناطق الزمنية , تحميل و اشتراك",
-            "keywords": "اف 3 , فورميلا 3 , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجوائز الكبري , الجائزة الكبري , جدول المواعيد , مواعيد الإنطلاق , التجارب الحرة , التجارب التأهيلية , التجارب , لندن , أوروبا ,  {{year}}"
-        },
-        "footnote": "علامات تجارية لـ FIA\nFIA FORMULA 3 CHAMPIONSHIP , FIA FORMULA 3 , FORMULA 3 , F3"
-    },
-    "fe": {
-        "title": "جدول Formula E",
-        "subtitle": "السباقات و التجارب التجريبية و التأهيلية",
-        "seo": {
-            "title": "جدول بطولة Formula E لعام {{year}} - مواعيد سباقات فورميلا E",
-            "description": "جدول بطولة فورميلا اي لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التنبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
-            "keywords": "اف اي , فورميلا اي , مواعيد السباقات , السباقات , تنبيهات , اشعارات , الجائزة الكهربائية , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التحارب الحرة , لندن , أوروبا , {{year}}"
-        },
-        "footnote": "علامات تجارية لـ FIA\nFormula-E , FIA , FORMULA-E CHAMPIONSHIP  & E-PRIX"
-    },
-    "indycar": {
-        "title": "جدول IndyCar",
-        "subtitle": "السباقات و التجارب الحرة و التأهيلية",
-        "seo": {
-            "title": "جدول بطولة IndyCar لعام {{year}} - مواعيد السباقات",
-            "description": "جدول بطولة IndyCar لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
-            "keywords": "اندي كار , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , {{year}}"
-        },
-        "footnote": "IndyCar هي علامة تجارية لـ Brickyard Trademarks, Inc"
-    },
-    "motogp": {
-        "title": "جدول MotoGP",
-        "subtitle": "السباقات و التجارب الحرة و التأهيلية",
-        "seo": {
-            "title": "جدول بطولة MotoGP لعام {{year}} - مواعيد السباقات",
-            "description": "جدول بطولة MotoGP لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية ,خاصية التنبيهات , جميع المناطق الزمنية , تحميل و اشتراك",
-            "keywords": "موتو جي بي , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {{year}}"
-        },
-        "footnote": "footnote"
-    },
-    "wseries": {
-        "title": "جدول بطولة W Series",
-        "subtitle": "السباقات و التجارب الحرة و التأهيلية",
-        "seo": {
-            "title": "جدول بطولة W Series لموسم {{year}} - مواعيد السباقات و التاريخ",
-            "description": "جدول بطولة W Series لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التنبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
-            "keywords": "دابيو سيريس , دابيو سيريس , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجائزة , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {{year}}"
-        },
-        "footnote": "هذا الموقع غير تباع لـ W Series"
-    },
-    "extremee": {
-        "title": "جدول Extreme E",
-        "subtitle": "السباقات و التجارب الحرة و التأهيلية",
-        "seo": {
-            "title": "جدول بطولة Extreme E لعام {{year}} - مواعيد السباقات",
-            "description": "جدول بطولة Extreme E لموسم {{year}} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التنبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
-            "keywords": "اكستريم اي , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجائزة اكس , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {{year}}"
-        },
-        "footnote": "footnote"
-    },
-    "f1-academy": {
-        "title": "F1 Academy Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
-        "seo": {
-            "title": "F1 Academy Calendar {{year}} - Formula One Race Times and Dates",
-            "description": "Formula One Academy Calendar for {{year}} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
-        },
-        "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
-    },
-    "event": "الحدث",
-    "notice": {
-        "text": "النص",
-        "link": "الرابط"
     }
 }

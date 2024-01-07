@@ -1,0 +1,153 @@
+{
+  "races": [
+    {
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "round": 1,
+      "slug": "bahrain",
+      "localeKey": "bahrain",
+      "sessions": {
+        "practice": "2023-02-28T07:55:00Z",
+        "qualifying": "2023-02-29T13:00:00Z",
+        "sprint": "2023-02-29T09:15:00Z",
+        "feature": "2023-03-01T08:50:00Z"
+      }
+    },
+    {
+      "name": "Australian",
+      "location": "Melbourne",
+      "latitude": -37.8373,
+      "longitude": 144.9666,
+      "round": 2,
+      "slug": "melbourne",
+      "localeKey": "melbourne",
+      "sessions": {
+        "practice": "2023-03-21T21:50:00Z",
+        "qualifying": "2023-03-21T03:00:00Z",
+        "sprint": "2023-03-22T23:45:00Z",
+        "feature": "2023-03-23T23:05:00Z"
+      }
+    },
+    {
+      "name": "Emilia Romagna",
+      "location": "Imola",
+      "latitude": 44.344576,
+      "longitude": 11.713808,
+      "round": 3,
+      "slug": "emilia-romagna",
+      "localeKey": "emilia-romagna",
+      "sessions": {
+        "practice": "2023-05-16T07:55:00Z",
+        "qualifying": "2023-05-16T13:00:00Z",
+        "sprint": "2023-05-17T08:05:00Z",
+        "feature": "2023-05-18T06:40:00Z"
+      }
+    },
+    {
+      "name": "Monaco",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 4,
+      "slug": "monaco",
+      "localeKey": "monaco",
+      "sessions": {
+        "practice": "2023-05-22T11:30:00Z",
+        "sprint": "2023-05-24T09:00:00Z",
+        "feature": "2023-05-25T06:00:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Catalunya",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "round": 5,
+      "slug": "spanish",
+      "localeKey": "spanish",
+      "sessions": {
+        "practice": "2023-06-20T07:55:00Z",
+        "qualifying": "2023-06-20T13:00:00Z",
+        "sprint": "2023-06-21T08:30:00Z",
+        "feature": "2023-06-22T07:55:00Z"
+      }
+    },
+    {
+      "name": "Austrian",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "round": 6,
+      "slug": "austrian",
+      "localeKey": "austrian",
+      "sessions": {
+        "practice": "2023-06-27T07:55:00Z",
+        "qualifying": "2023-06-27T13:00:00Z",
+        "sprint": "2023-06-28T08:00:00Z",
+        "feature": "2023-06-29T06:25:00Z"
+      }
+    },
+    {
+      "name": "British",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "round": 7,
+      "slug": "british",
+      "localeKey": "british",
+      "sessions": {
+        "practice": "2023-07-04T07:45:00Z",
+        "qualifying": "2023-07-04T13:10:00Z",
+        "sprint": "2023-07-05T08:20:00Z",
+        "feature": "2023-07-06T07:20:00Z"
+      }
+    },
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "round": 8,
+      "slug": "hungarian",
+      "localeKey": "hungarian",
+      "sessions": {
+        "practice": "2023-07-18T07:55:00Z",
+        "qualifying": "2023-07-18T13:05:00Z",
+        "sprint": "2023-07-19T07:50:00Z",
+        "feature": "2023-07-20T06:25:00Z"
+      }
+    },
+    {
+      "name": "Belgian",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.444,
+      "longitude": 5.9687,
+      "round": 9,
+      "slug": "belgian",
+      "localeKey": "belgian",
+      "sessions": {
+        "practice": "2023-07-25T07:55:00Z",
+        "qualifying": "2023-07-25T13:00:00Z",
+        "sprint": "2023-07-26T08:00:00Z",
+        "feature": "2023-07-27T06:30:00Z"
+      }
+    },
+    {
+      "name": "Italian",
+      "location": "Monza",
+      "latitude": 45.6169,
+      "longitude": 9.2825,
+      "round": 10,
+      "slug": "italian",
+      "localeKey": "italian",
+      "sessions": {
+        "practice": "2023-08-29T07:40:00Z",
+        "qualifying": "2023-08-29T13:05:00Z",
+        "sprint": "2023-08-30T07:25:00Z",
+        "feature": "2023-08-31T06:15:00Z"
+      }
+    }
+  ]
+}
