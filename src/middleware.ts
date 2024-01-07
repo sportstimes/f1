@@ -44,5 +44,5 @@ export default createMiddleware({
  
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/((?!api|_next|_vercel|robots.txt|sw.js|.*\\..*).*)']
+  matcher: ['/((?!api|_next|_vercel|robots.txt|workbox-\\w+\\.js|sw.js|.*\\..*).*)']
 };
