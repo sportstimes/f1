@@ -1,0 +1,226 @@
+{
+	"races": [
+		{
+			"name": "Firestone Grand Prix of St. Petersburg",
+			"location": "St. Petersburg, Florida",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 1,
+			"slug": "grand-prix-of-st-petersburg",
+			"localeKey": "grand-prix-of-st-petersburg",
+			"sessions": {
+				"practice1": "2023-03-03T20:00:00Z",
+				"practice2": "2023-03-04T15:00:00Z",
+				"qualifying": "2023-03-04T19:15:00Z",
+				"warmup": "2023-03-05T14:00:00Z",
+				"race": "2023-03-05T17:00:00Z"
+			}
+		},
+		{
+			"name": "PPG 375",
+			"location": "Fort Worth, Texas",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 2,
+			"slug": "ppg-375",
+			"localeKey": "ppg-375",
+			"sessions": {
+				"practice1": "2023-04-01T13:00:00Z",
+				"qualifying": "2023-04-01T16:15:00Z",
+				"practice2": "2023-04-01T18:30:00Z",
+				"race": "2023-04-02T16:10:00Z"
+			}
+		},
+		{
+			"name": "Acura Grand Prix of Long Beach",
+			"location": "Long Beach, California",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 3,
+			"slug": "acura-grand-prix-of-long-beach",
+			"localeKey": "acura-grand-prix-of-long-beach",
+			"sessions": {
+				"practice1": "2023-04-14T22:00:00Z",
+				"practice2": "2023-04-15T15:45:00Z",
+				"qualifying": "2023-04-15T19:05:00Z",
+				"warmup": "2023-04-16T16:00:00Z",
+				"race": "2023-04-16T19:30:00Z"
+			}
+		},
+		{
+			"name": "Children's of Alabama Indy Grand Prix",
+			"location": "Birmingham, Alabama",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 4,
+			"slug": "grand-prix-of-alabama",
+			"localeKey": "grand-prix-of-alabama",
+			"sessions": {
+				"practice1": "2023-04-28T19:40:00Z",
+				"practice2": "2023-04-29T16:00:00Z",
+				"qualifying": "2023-04-29T19:00:00Z",
+				"warmup": "2023-04-30T16:00:00Z",
+				"race": "2023-04-30T19:00:00Z"
+			}
+		},
+		{
+			"name": "GMR Grand Prix",
+			"location": "Speedway, Indiana",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 5,
+			"slug": "gmr-grand-prix",
+			"localeKey": "gmr-grand-prix",
+			"sessions": {
+				"race": "2023-05-13T19:30:00Z"
+			}
+		},
+		{
+			"name": "107th Running of the Indianapolis 500",
+			"location": "Speedway, Indiana",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 6,
+			"slug": "indy-500",
+			"localeKey": "indy-500",
+			"sessions": {
+				"race": "2023-05-28T15:00:00Z"
+			}
+		},
+		{
+			"name": "Chevrolet Detroit Grand Prix",
+			"location": "Detroit, Michigan",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 7,
+			"slug": "chevrolet-detroit-grand-prix",
+			"localeKey": "chevrolet-detroit-grand-prix",
+			"sessions": {
+				"practice1": "2023-06-02T22:00:00Z",
+				"practice2": "2023-06-03T13:05:00Z",
+				"qualifying": "2023-06-03T17:20:00Z",
+				"race": "2023-06-04T19:00:00Z"
+			}
+		},
+		{
+			"name": "Sonsio Grand Prix At Road America",
+			"location": "Road America",
+			"latitude": 0,
+			"longitude": 0,
+			"round": 8,
+			"slug": "sonsio",
+			"localeKey": "sonsio",
+			"sessions": {
+				"race": "2023-06-18T17:00:00Z"
+			}
+		},
+		{
+			"name": "Honda Indy 200 at Mid-Ohio",
+			"location": "Mid-Ohio",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 9,
+			"slug": "honda-indy-200-mid-ohio",
+			"localeKey": "honda-indy-200-mid-ohio",
+			"sessions": {
+				"race": "2023-07-02T17:30:00Z"
+			}
+		},
+		{
+			"name": "Honda Indy Toronto",
+			"location": "Toronto",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 10,
+			"slug": "honda-indy-toronto",
+			"localeKey": "honda-indy-toronto",
+			"sessions": {
+				"race": "2023-07-16T17:30:00Z"
+			}
+		},
+		{
+			"name": "HY-VEE Indycar Race Weekend Race 1",
+			"location": "",
+			"latitude": 0,
+			"longitude": 0,
+			"round": 11,
+			"slug": "music-city-grand-prix",
+			"localeKey": "music-city-grand-prix",
+			"sessions": {
+				"race": "2023-07-22T19:00:00Z"
+			}
+		},
+		{
+			"name": "HY-VEE Indycar Race Weekend Race 2",
+			"location": "",
+			"latitude": 0,
+			"longitude": 0,
+			"round": 12,
+			"slug": "music-city-grand-prix",
+			"localeKey": "music-city-grand-prix",
+			"sessions": {
+				"race": "2023-07-23T18:00:00Z"
+			}
+		},
+		{
+			"name": "Big Machine Music City Grand Prix",
+			"location": "Nashville",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 13,
+			"slug": "music-city-grand-prix",
+			"localeKey": "music-city-grand-prix",
+			"sessions": {
+				"race": "2023-08-06T16:00:00Z"
+			}
+		},
+		{
+			"name": "Gallagher Grand Prix",
+			"location": "Indianapolis",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 14,
+			"slug": "indianapolis-motor-speedway-road-course",
+			"localeKey": "indianapolis-motor-speedway-road-course",
+			"sessions": {
+				"race": "2023-08-12T18:00:00Z"
+			}
+		},
+		{
+			"name": "Bommarito Automotive Group 500",
+			"location": "Madison, Illinois",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 15,
+			"slug": "bommarito-automotive-group-500",
+			"localeKey": "bommarito-automotive-group-500",
+			"sessions": {
+				"race": "2023-08-27T19:30:00Z"
+			}
+		},
+		{
+			"name": "Grand Prix of Portland",
+			"location": "Portland, Oregon",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 16,
+			"slug": "grand-prix-of-portland",
+			"localeKey": "grand-prix-of-portland",
+			"sessions": {
+				"race": "2023-09-03T19:00:00Z"
+			}
+		},
+		{
+			"name": "Firestone Grand Prix of Monterey",
+			"location": "Monterey, California",
+			"latitude": 25.31319,
+			"longitude": 55.512081,
+			"round": 17,
+			"slug": "firestone-grand-prix-of-monterey",
+			"localeKey": "firestone-grand-prix-of-monterey",
+			"sessions": {
+				"race": "2023-09-10T18:30:00Z"
+			}
+		}
+	]
+}
