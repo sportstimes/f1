@@ -9,15 +9,7 @@
       "slug": "jeddah",
       "localeKey": "jeddah",
       "tbc": true,
-      "sessions": {
-        "fp1": "2024-03-28T06:15:00Z",
-        "fp2": "2024-03-28T08:40:00Z",
-        "qualifying1": "2024-03-28T13:10:00Z",
-        "qualifying2": "2024-03-28T13:30:00Z",
-        "race1": "2024-03-29T08:45:00Z",
-        "race2": "2024-03-29T12:05:00Z",
-        "race3": "2024-03-29T15:20:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Miami",
@@ -28,15 +20,7 @@
       "slug": "miami",
       "localeKey": "miami",
       "tbc": true,
-      "sessions": {
-        "fp1": "2024-05-02T13:15:00Z",
-        "fp2": "2024-05-02T18:55:00Z",
-        "qualifying1": "2024-05-03T22:30:00Z",
-        "qualifying2": "2024-10-03T22:55:00Z",
-        "race1": "2024-05-03T13:45:00Z",
-        "race2": "2024-05-04T20:30:00Z",
-        "race3": "2024-05-04T14:40:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Barcelona",
@@ -47,15 +31,7 @@
       "slug": "barcelona",
       "localeKey": "barcelona",
       "tbc": true,
-      "sessions": {
-        "fp1": "2024-06-20T12:55:00Z",
-        "fp2": "2024-06-20T15:00:00Z",
-        "qualifying1": "2024-06-21T09:20:00Z",
-        "qualifying2": "2024-06-21T09:40:00Z",
-        "race1": "2024-06-21T13:05:00Z",
-        "race2": "2024-06-21T16:59:00Z",
-        "race3": "2024-06-22T09:06:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Zandvoort",
@@ -66,15 +42,7 @@
       "slug": "zandvoort",
       "localeKey": "zandvoort",
       "tbc": true,
-      "sessions": {
-        "fp1": "2024-06-22T07:40:00Z",
-        "fp2": "2024-06-22T14:55:00Z",
-        "qualifying1": "2024-06-23T06:00:00Z",
-        "qualifying2": "2024-06-23T06:20:00Z",
-        "race1": "2024-06-23T14:30:00Z",
-        "race2": "2024-06-24T06:40:00Z",
-        "race3": "2024-06-24T15:25:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Singapore",
@@ -85,15 +53,7 @@
       "slug": "singapore",
       "localeKey": "singapore",
       "tbc": true,
-      "sessions": {
-        "fp1": "2024-09-19T07:40:00Z",
-        "fp2": "2024-09-19T14:55:00Z",
-        "qualifying1": "2024-09-20T06:00:00Z",
-        "qualifying2": "2024-09-20T06:20:00Z",
-        "race1": "2024-09-20T14:30:00Z",
-        "race2": "2024-09-21T06:40:00Z",
-        "race3": "2024-09-21T15:25:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Qatar",
@@ -104,15 +64,7 @@
       "slug": "qatar",
       "localeKey": "qatar",
       "tbc": true,
-      "sessions": {
-        "fp1": "2024-11-28T07:40:00Z",
-        "fp2": "2024-11-28T14:55:00Z",
-        "qualifying1": "2024-11-29T06:00:00Z",
-        "qualifying2": "2024-11-29T06:20:00Z",
-        "race1": "2024-11-29T14:30:00Z",
-        "race2": "2024-11-30T06:40:00Z",
-        "race3": "2024-11-30T15:25:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Abu Dhabi",
@@ -123,15 +75,7 @@
       "slug": "abu-dhabi",
       "localeKey": "abu-dhabi",
       "tbc": true,
-      "sessions": {
-        "fp1": "2024-12-05T07:40:00Z",
-        "fp2": "2024-12-05T14:55:00Z",
-        "qualifying1": "2024-12-06T06:00:00Z",
-        "qualifying2": "2024-12-06T06:20:00Z",
-        "race1": "2024-12-06T14:30:00Z",
-        "race2": "2024-12-07T06:40:00Z",
-        "race3": "2024-12-07T15:25:00Z"
-      }
+      "sessions": {}
     }
   ]
 }
