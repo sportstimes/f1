@@ -53,12 +53,7 @@
       "slug": "hyderabad-eprix",
       "localeKey": "hyderabad-eprix",
       "canceled": true,
-      "sessions": {
-        "practice1": "2024-02-09T10:55:00Z",
-        "practice2": "2024-02-10T02:35:00Z",
-        "qualifying": "2024-02-10T05:10:00Z",
-        "race": "2024-02-10T09:33:00Z"
-      }
+      "sessions": { "race": "2024-03-16T18:00:00Z" }
     },
     {
       "name": "Sao Paulo ePrix",
@@ -69,12 +64,7 @@
       "slug": "sao-paulo-eprix",
       "localeKey": "sao-paulo-eprix",
       "tbc": true,
-      "sessions": {
-        "practice1": "2024-03-15T19:25:00Z",
-        "practice2": "2024-03-16T10:25:00Z",
-        "qualifying": "2024-03-16T12:40:00Z",
-        "race": "2024-03-16T17:03:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Tokyo ePrix",
@@ -85,12 +75,7 @@
       "slug": "tokyo-eprix",
       "localeKey": "tokyo-eprix",
       "tbc": true,
-      "sessions": {
-        "practice1": "2024-03-29T14:55:00Z",
-        "practice2": "2024-03-30T07:05:00Z",
-        "qualifying": "2024-03-30T09:40:00Z",
-        "race": "2024-03-30T14:03:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Misano ePrix",
@@ -101,12 +86,7 @@
       "slug": "misano-eprix",
       "localeKey": "misano-eprix",
       "tbc": true,
-      "sessions": {
-        "practice1": "2024-04-12T14:55:00Z",
-        "practice2": "2024-04-13T07:05:00Z",
-        "qualifying": "2024-04-13T09:40:00Z",
-        "race": "2024-04-13T14:03:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Misano ePrix",
@@ -117,11 +97,7 @@
       "slug": "misano-eprix",
       "localeKey": "misano-eprix",
       "tbc": true,
-      "sessions": {
-        "practice3": "2024-04-14T07:05:00Z",
-        "qualifying": "2024-04-14T09:40:00Z",
-        "race": "2024-04-14T14:03:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Monaco ePrix",
@@ -132,12 +108,7 @@
       "slug": "monaco-eprix",
       "localeKey": "monaco-eprix",
       "tbc": true,
-      "sessions": {
-        "practice1": "2024-04-26T05:25:00Z",
-        "practice2": "2024-04-27T07:05:00Z",
-        "qualifying": "2024-04-27T08:40:00Z",
-        "race": "2024-04-27T13:03:00Z"
-      }
+      "sessions": { "race": "2024-05-11T13:00:00Z" }
     },
     {
       "name": "Berlin ePrix",
@@ -148,12 +119,7 @@
       "slug": "berlin-eprix",
       "localeKey": "berlin-eprix",
       "tbc": true,
-      "sessions": {
-        "practice1": "2024-05-10T14:55:00Z",
-        "practice2": "2024-05-11T06:05:00Z",
-        "qualifying": "2024-05-11T08:40:00Z",
-        "race": "2024-05-11T13:03:00Z"
-      }
+      "sessions": { "race": "2024-05-12T13:00:00Z" }
     },
     {
       "name": "Berlin ePrix",
@@ -164,11 +130,7 @@
       "slug": "berlin-eprix",
       "localeKey": "berlin-eprix",
       "tbc": true,
-      "sessions": {
-        "practice3": "2024-04-12T06:05:00Z",
-        "qualifying": "2024-04-12T08:40:00Z",
-        "race": "2024-04-12T13:03:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Shanghai ePrix",
@@ -179,12 +141,7 @@
       "slug": "shanghai-eprix",
       "localeKey": "shanghai-eprix",
       "tbc": true,
-      "sessions": {
-        "practice1": "2024-05-24T05:25:00Z",
-        "practice2": "2024-05-25T07:05:00Z",
-        "qualifying": "2024-05-25T08:40:00Z",
-        "race": "2024-05-25T13:03:00Z"
-      }
+      "sessions": { "race": "2024-05-25T15:00:00Z" }
     },
     {
       "name": "Shanghai ePrix",
@@ -195,11 +152,7 @@
       "slug": "shanghai-eprix",
       "localeKey": "shanghai-eprix",
       "tbc": true,
-      "sessions": {
-        "practice3": "2024-05-26T07:05:00Z",
-        "qualifying": "2024-05-26T08:40:00Z",
-        "race": "2024-05-26T13:03:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Portland ePrix",
@@ -210,12 +163,7 @@
       "slug": "portland-eprix",
       "localeKey": "portland-eprix",
       "tbc": true,
-      "sessions": {
-        "practice1": "2024-06-28T00:00:00Z",
-        "practice2": "2024-06-29T17:30:00Z",
-        "qualifying": "2024-06-29T19:40:00Z",
-        "race": "2024-06-29T00:03:00Z"
-      }
+      "sessions": {}
     },
     {
       "name": "Portland ePrix",
@@ -226,11 +174,7 @@
       "slug": "portland-eprix",
       "localeKey": "portland-eprix",
       "tbc": true,
-      "sessions": {
-        "practice3": "2024-06-30T17:30:00Z",
-        "qualifying": "2024-06-30T19:40:00Z",
-        "race": "2024-06-30T00:03:00Z"
-      }
+      "sessions": { "race": "2024-07-20T13:00:00Z" }
     },
     {
       "name": "London ePrix",
@@ -241,12 +185,7 @@
       "slug": "london-eprix",
       "localeKey": "london-eprix",
       "tbc": true,
-      "sessions": {
-        "practice1": "2024-07-19T16:00:00Z",
-        "practice2": "2024-07-20T09:30:00Z",
-        "qualifying": "2024-07-20T11:40:00Z",
-        "race": "2024-07-20T16:03:00Z"
-      }
+      "sessions": { "race": "2024-07-21T13:00:00Z" }
     },
     {
       "name": "London ePrix",
