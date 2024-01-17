@@ -93,11 +93,11 @@ export default function Form() {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${calendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
-				googleURL: `https://${calendarBaseURL}/${lang}/${
+				webcalURL: `webcal://${calendarBaseURL}/${locale}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				googleURL: `https://${calendarBaseURL}/${locale}/${
 					process.env.NEXT_PUBLIC_SITE_KEY
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${calendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${calendarBaseURL}/${locale}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
 			});
 		} else {
 			setState({
