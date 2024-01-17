@@ -482,6 +482,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "Knulon",
+      "name": "Knulon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93202145?v=4",
+      "profile": "https://github.com/Knulon",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

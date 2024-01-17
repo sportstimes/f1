@@ -9,7 +9,7 @@ Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajh
 Graciously hosted by [Vercel](https://vercel.com/?utm_source=sportstimes).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-53-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-54-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -104,6 +104,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
       <td align="center" valign="top" width="14.28%"><a href="https://zandorsmith.com"><img src="https://avatars.githubusercontent.com/u/6069593?v=4?s=100" width="100px;" alt="Zandor Smith"/><br /><sub><b>Zandor Smith</b></sub></a><br /><a href="#translation-Zandor300" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jiprastyo"><img src="https://avatars.githubusercontent.com/u/65061729?v=4?s=100" width="100px;" alt="Prastyo"/><br /><sub><b>Prastyo</b></sub></a><br /><a href="#translation-jiprastyo" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nikitadubyk"><img src="https://avatars.githubusercontent.com/u/73419198?v=4?s=100" width="100px;" alt="Nikita Dubyk"/><br /><sub><b>Nikita Dubyk</b></sub></a><br /><a href="#translation-nikitadubyk" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Knulon"><img src="https://avatars.githubusercontent.com/u/93202145?v=4?s=100" width="100px;" alt="Knulon"/><br /><sub><b>Knulon</b></sub></a><br /><a href="https://github.com/sportstimes/f1/issues?q=author%3AKnulon" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
