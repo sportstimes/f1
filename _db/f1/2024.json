@@ -8,11 +8,10 @@
       "round": 1,
       "slug": "bahrain-grand-prix",
       "localeKey": "bahrain-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-02-29T11:30:00Z",
         "fp2": "2024-02-29T15:00:00Z",
-        "fp3": "2024-03-01T11:30:00Z",
+        "fp3": "2024-03-01T12:30:00Z",
         "qualifying": "2024-03-01T15:00:00Z",
         "gp": "2024-03-02T15:00:00Z"
       }
@@ -25,7 +24,6 @@
       "round": 2,
       "slug": "saudi-arabia-grand-prix",
       "localeKey": "saudi-arabia-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-03-07T13:30:00Z",
         "fp2": "2024-03-07T17:00:00Z",
@@ -42,7 +40,6 @@
       "round": 3,
       "slug": "australian-grand-prix",
       "localeKey": "australian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-03-22T01:30:00Z",
         "fp2": "2024-03-22T05:00:00Z",
@@ -59,7 +56,6 @@
       "round": 18,
       "slug": "japanese-grand-prix",
       "localeKey": "japanese-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-04-05T02:30:00Z",
         "fp2": "2024-04-05T06:00:00Z",
@@ -110,12 +106,11 @@
       "round": 4,
       "slug": "emilia-romagna-grand-prix",
       "localeKey": "emilia-romagna-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-05-17T11:30:00Z",
         "fp2": "2024-05-17T15:00:00Z",
         "fp3": "2024-05-18T10:30:00Z",
-        "qualifying": "2024-05-18T14:30:00Z",
+        "qualifying": "2024-05-18T14:00:00Z",
         "gp": "2024-05-19T13:00:00Z"
       }
     },
@@ -127,7 +122,6 @@
       "round": 8,
       "slug": "monaco-grand-prix",
       "localeKey": "monaco-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-05-24T11:30:00Z",
         "fp2": "2024-05-24T15:00:00Z",
@@ -144,10 +138,9 @@
       "round": 10,
       "slug": "canadian-grand-prix",
       "localeKey": "canadian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-06-07T17:30:00Z",
-        "fp2": "2024-06-07T20:30:00Z",
+        "fp2": "2024-06-07T21:00:00Z",
         "fp3": "2024-06-08T16:30:00Z",
         "qualifying": "2024-06-08T20:00:00Z",
         "gp": "2024-06-09T18:00:00Z"
@@ -161,7 +154,6 @@
       "round": 9,
       "slug": "spanish-grand-prix",
       "localeKey": "spanish-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-06-21T11:30:00Z",
         "fp2": "2024-06-21T15:00:00Z",
@@ -195,7 +187,6 @@
       "round": 12,
       "slug": "british-grand-prix",
       "localeKey": "british-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-07-05T11:30:00Z",
         "fp2": "2024-07-05T15:00:00Z",
@@ -212,7 +203,6 @@
       "round": 13,
       "slug": "hungarian-grand-prix",
       "localeKey": "hungarian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-07-19T11:30:00Z",
         "fp2": "2024-07-19T15:00:00Z",
@@ -229,12 +219,11 @@
       "round": 14,
       "slug": "belgian-grand-prix",
       "localeKey": "belgian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-07-26T11:30:00Z",
         "fp2": "2024-07-26T15:00:00Z",
-        "fp3": "2024-07-27T10:00:00Z",
-        "qualifying": "2024-07-27T15:05:00Z",
+        "fp3": "2024-07-27T10:30:00Z",
+        "qualifying": "2024-07-27T14:00:00Z",
         "gp": "2024-07-28T13:00:00Z"
       }
     },
@@ -246,7 +235,6 @@
       "round": 15,
       "slug": "dutch-grand-prix",
       "localeKey": "dutch-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-08-23T10:30:00Z",
         "fp2": "2024-08-23T14:00:00Z",
@@ -263,7 +251,6 @@
       "round": 16,
       "slug": "italian-grand-prix",
       "localeKey": "italian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-08-30T11:30:00Z",
         "fp2": "2024-08-30T15:00:00Z",
@@ -280,12 +267,11 @@
       "round": 5,
       "slug": "azerbaijan-grand-prix",
       "localeKey": "azerbaijan-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-09-13T09:30:00Z",
         "fp2": "2024-09-13T13:00:00Z",
         "fp3": "2024-09-14T08:30:00Z",
-        "qualifying": "2024-09-14T13:30:00Z",
+        "qualifying": "2024-09-14T12:00:00Z",
         "gp": "2024-09-15T11:00:00Z"
       }
     },
@@ -297,7 +283,6 @@
       "round": 17,
       "slug": "singapore-grand-prix",
       "localeKey": "singapore-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-09-20T09:30:00Z",
         "fp2": "2024-09-20T13:00:00Z",
@@ -331,7 +316,6 @@
       "round": 21,
       "slug": "mexican-grand-prix",
       "localeKey": "mexico-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-10-25T18:30:00Z",
         "fp2": "2024-10-25T22:00:00Z",
@@ -399,7 +383,6 @@
       "round": 24,
       "slug": "abu-dhabi-grand-prix",
       "localeKey": "abu-dhabi-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-12-06T09:30:00Z",
         "fp2": "2024-12-06T13:00:00Z",
