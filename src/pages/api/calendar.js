@@ -10,7 +10,10 @@ export default async (req, res) => {
     const data = await import(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${config.calendarOutputYear}.json`)
     const races = data['races'];
     
+    let index = -1;
     const augmentedRaces = races.map((race) => {
+      index++;
+      
       let name = race.name;
       if(i18nRaces[race.localeKey]){
         name = i18nRaces[race.localeKey];
@@ -24,7 +27,7 @@ export default async (req, res) => {
         augmentedSessions[name] = race.sessions[key]
       });
       
-      return {...race, sessions:augmentedSessions, name:name};
+      return {...race, sessions:augmentedSessions, name:name, index:index};
     });
     
     let output = {races:augmentedRaces};
