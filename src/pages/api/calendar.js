@@ -11,8 +11,9 @@ export default async (req, res) => {
     const races = data['races'];
     
     const augmentedRaces = races.map((race) => {
+      let name = race.name;
       if(i18nRaces[race.localeKey]){
-        race.name = i18nRaces[race.localeKey];
+        name = i18nRaces[race.localeKey];
       }
       
       let sessions = race.sessions;
@@ -20,18 +21,23 @@ export default async (req, res) => {
       
       Object.keys(sessions).forEach((key, index) => {
         let name = i18nSchedule[key];
-        augmentedSessions[name] = sessions[key]
+        augmentedSessions[name] = race.sessions[key]
       });
       
-      race.sessions = augmentedSessions
-      
-      return race;
+      return {...race, sessions:augmentedSessions, name:name};
     });
     
+    let output = {races:augmentedRaces};
+    
+    if(config.notice){
+      output.notice = config.notice;
+    }
+    
+    res.json(output)
     res.statusCode = 200
     res.setHeader('Content-Type', 'application/json')
     res.setHeader('Cache-Control', 's-maxage=80000, stale-while-revalidate');
-    res.json({races:augmentedRaces})
+    res.json(data["default"])
   } catch (err) { 
     res.statusCode = 404
     res.setHeader('Content-Type', 'application/json')
