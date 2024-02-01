@@ -28,11 +28,10 @@ export default async (req, res) => {
       return race;
     });
     
-    res.json({races:augmentedRaces})
     res.statusCode = 200
     res.setHeader('Content-Type', 'application/json')
     res.setHeader('Cache-Control', 's-maxage=80000, stale-while-revalidate');
-    res.json(data["default"])
+    res.json({races:augmentedRaces})
   } catch (err) { 
     res.statusCode = 404
     res.setHeader('Content-Type', 'application/json')
