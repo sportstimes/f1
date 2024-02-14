@@ -8,12 +8,11 @@
       "round": 1,
       "slug": "bahrain",
       "localeKey": "bahrain",
-      "tbc": true,
       "sessions": {
         "practice": "2024-02-29T09:05:00Z",
-        "qualifying": "2024-02-29T16:30:00Z",
+        "qualifying": "2024-02-29T13:55:00Z",
         "sprint": "2024-03-01T14:15:00Z",
-        "feature": "2024-03-02T10:40:00Z"
+        "feature": "2024-03-02T10:30:00Z"
       }
     },
     {
@@ -24,7 +23,6 @@
       "round": 2,
       "slug": "saudi-arabia",
       "localeKey": "saudi-arabia",
-      "tbc": true,
       "sessions": {
         "practice": "2024-03-07T08:55:00Z",
         "qualifying": "2024-03-07T12:55:00Z",
@@ -40,7 +38,6 @@
       "round": 3,
       "slug": "melbourne",
       "localeKey": "melbourne",
-      "tbc": true,
       "sessions": {
         "practice": "2024-03-22T00:55:00Z",
         "qualifying": "2024-03-22T04:55:00Z",
@@ -56,7 +53,6 @@
       "round": 4,
       "slug": "emilia-romagna",
       "localeKey": "emilia-romagna",
-      "tbc": true,
       "sessions": {
         "practice": "2024-05-17T09:55:00Z",
         "qualifying": "2024-05-17T13:55:00Z",
@@ -72,7 +68,6 @@
       "round": 5,
       "slug": "monaco",
       "localeKey": "monaco",
-      "tbc": true,
       "sessions": {
         "practice": "2024-05-23T09:55:00Z",
         "qualifying": "2024-05-24T13:55:00Z",
@@ -88,7 +83,6 @@
       "round": 6,
       "slug": "spanish",
       "localeKey": "spanish",
-      "tbc": true,
       "sessions": {
         "practice": "2024-06-21T09:55:00Z",
         "qualifying": "2024-06-21T13:55:00Z",
@@ -104,7 +98,6 @@
       "round": 7,
       "slug": "austrian",
       "localeKey": "austrian",
-      "tbc": true,
       "sessions": {
         "practice": "2024-06-28T10:55:00Z",
         "qualifying": "2024-06-28T14:55:00Z",
@@ -120,7 +113,6 @@
       "round": 8,
       "slug": "british",
       "localeKey": "british",
-      "tbc": true,
       "sessions": {
         "practice": "2024-07-05T10:55:00Z",
         "qualifying": "2024-07-05T14:55:00Z",
@@ -136,7 +128,6 @@
       "round": 9,
       "slug": "hungarian",
       "localeKey": "hungarian",
-      "tbc": true,
       "sessions": {
         "practice": "2024-07-19T09:55:00Z",
         "qualifying": "2024-07-19T13:55:00Z",
@@ -152,7 +143,6 @@
       "round": 10,
       "slug": "belgian",
       "localeKey": "belgian",
-      "tbc": true,
       "sessions": {
         "practice": "2024-07-26T09:55:00Z",
         "qualifying": "2024-07-26T13:55:00Z",
@@ -168,7 +158,6 @@
       "round": 11,
       "slug": "italian",
       "localeKey": "italian",
-      "tbc": true,
       "sessions": {
         "practice": "2024-08-30T09:55:00Z",
         "qualifying": "2024-08-30T13:55:00Z",
@@ -184,7 +173,6 @@
       "round": 12,
       "slug": "azerbaijan",
       "localeKey": "azerbaijan",
-      "tbc": true,
       "sessions": {
         "practice": "2024-09-13T07:55:00Z",
         "qualifying": "2024-09-13T11:55:00Z",
@@ -200,7 +188,6 @@
       "round": 13,
       "slug": "qatar",
       "localeKey": "qatar",
-      "tbc": true,
       "sessions": {
         "practice": "2024-11-29T08:55:00Z",
         "qualifying": "2024-11-29T12:55:00Z",
@@ -216,7 +203,6 @@
       "round": 14,
       "slug": "abu-dhabi",
       "localeKey": "abu-dhabi",
-      "tbc": true,
       "sessions": {
         "practice": "2024-12-06T07:55:00Z",
         "qualifying": "2024-12-06T11:55:00Z",
