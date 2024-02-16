@@ -9,12 +9,31 @@ import RaceSchemas from 'components/RaceSchemas/RaceSchemas';
 export async function generateMetadata() {
   const t = await getTranslations('All');
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
+  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
 
   return {
     title: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {year: currentYear}),
     description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {year: currentYear}),
     keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {year: currentYear}),
-    manifest: '/manifest.json'
+    manifest: '/manifest.json',
+    twitter: {
+      card: 'summary_large_image',
+      creator: '@f1cal',
+      creatorId: '1467726470533754880',
+      images: [`https://${config.url}/share.png`],
+    },
+    openGraph: {
+      title: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {year: currentYear}),
+      description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {year: currentYear}),
+      url: `https://${config.url}/`,
+      siteName: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {year: currentYear}),
+      images: [`https://${config.url}/share.png`],
+      type: 'website'
+    },
+    appleWebApp: {
+      title: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {year: currentYear}),
+      statusBarStyle: 'black-translucent',
+    }
   }
 }
 
