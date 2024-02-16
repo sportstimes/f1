@@ -491,6 +491,16 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "FBloembergen",
+      "name": "Ferry Bloembergen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19857894?v=4",
+      "profile": "https://github.com/FBloembergen",
+      "contributions": [
+        "bug",
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
