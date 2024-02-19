@@ -27,6 +27,5 @@
 		"sprint": 60,
 		"race": 60
 	},
-	"supportsEmailReminders": false,
-	"notice": "Calendar will be updated as details are confirmed. We appreciate contributions to keep MotoGP Calendar up to date."
+	"supportsEmailReminders": false
 }
