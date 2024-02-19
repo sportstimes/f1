@@ -45,22 +45,6 @@
       }
     },
     {
-      "name": "Hyderabad ePrix",
-      "location": "Hyderabad",
-      "latitude": 0,
-      "longitude": 0,
-      "round": 4,
-      "slug": "hyderabad-eprix",
-      "localeKey": "hyderabad-eprix",
-      "canceled": true,
-      "sessions": {
-        "practice1": "2024-02-09T10:55:00Z",
-        "practice2": "2024-02-10T02:35:00Z",
-        "qualifying": "2024-02-10T05:10:00Z",
-        "race": "2024-02-10T09:33:00Z"
-      }
-    },
-    {
       "name": "Sao Paulo ePrix",
       "location": "Sao Paulo",
       "latitude": 0,
