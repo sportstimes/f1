@@ -12,7 +12,7 @@
         "practice1": "2024-01-12T22:25:00Z",
         "practice2": "2024-01-13T13:25:00Z",
         "qualifying": "2024-01-13T15:40:00Z",
-        "race": "2024-01-13T20:03:00Z"
+        "race": "2024-01-13T20:04:00Z"
       }
     },
     {
@@ -27,7 +27,7 @@
         "practice1": "2024-01-25T14:55:00Z",
         "practice2": "2024-01-26T09:55:00Z",
         "qualifying": "2024-01-26T12:20:00Z",
-        "race": "2024-01-26T17:03:00Z"
+        "race": "2024-01-26T17:04:00Z"
       }
     },
     {
@@ -41,7 +41,7 @@
       "sessions": {
         "practice3": "2024-01-27T09:55:00Z",
         "qualifying": "2024-01-27T12:20:00Z",
-        "race": "2024-01-27T17:03:00Z"
+        "race": "2024-01-27T17:04:00Z"
       }
     },
     {
@@ -52,7 +52,6 @@
       "round": 5,
       "slug": "sao-paulo-eprix",
       "localeKey": "sao-paulo-eprix",
-      "tbc": true,
       "sessions": {
         "practice1": "2024-03-15T19:25:00Z",
         "practice2": "2024-03-16T10:25:00Z",
@@ -68,12 +67,11 @@
       "round": 6,
       "slug": "tokyo-eprix",
       "localeKey": "tokyo-eprix",
-      "tbc": true,
       "sessions": {
-        "practice1": "2024-03-29T14:55:00Z",
-        "practice2": "2024-03-30T07:05:00Z",
-        "qualifying": "2024-03-30T09:40:00Z",
-        "race": "2024-03-30T14:03:00Z"
+        "practice1": "2024-03-29T07:25:00Z",
+        "practice2": "2024-03-29T22:55:00Z",
+        "qualifying": "2024-03-30T01:20:00Z",
+        "race": "2024-03-30T06:03:00Z"
       }
     },
     {
@@ -84,12 +82,11 @@
       "round": 7,
       "slug": "misano-eprix",
       "localeKey": "misano-eprix",
-      "tbc": true,
       "sessions": {
         "practice1": "2024-04-12T14:55:00Z",
-        "practice2": "2024-04-13T07:05:00Z",
-        "qualifying": "2024-04-13T09:40:00Z",
-        "race": "2024-04-13T14:03:00Z"
+        "practice2": "2024-04-13T05:55:00Z",
+        "qualifying": "2024-04-13T08:20:00Z",
+        "race": "2024-04-13T13:03:00Z"
       }
     },
     {
@@ -100,11 +97,10 @@
       "round": 8,
       "slug": "misano-eprix",
       "localeKey": "misano-eprix",
-      "tbc": true,
       "sessions": {
-        "practice3": "2024-04-14T07:05:00Z",
-        "qualifying": "2024-04-14T09:40:00Z",
-        "race": "2024-04-14T14:03:00Z"
+        "practice3": "2024-04-14T05:55:00Z",
+        "qualifying": "2024-04-14T08:20:00Z",
+        "race": "2024-04-14T13:03:00Z"
       }
     },
     {
@@ -115,9 +111,8 @@
       "round": 9,
       "slug": "monaco-eprix",
       "localeKey": "monaco-eprix",
-      "tbc": true,
       "sessions": {
-        "practice1": "2024-04-26T05:25:00Z",
+        "practice1": "2024-04-27T05:25:00Z",
         "practice2": "2024-04-27T07:05:00Z",
         "qualifying": "2024-04-27T08:40:00Z",
         "race": "2024-04-27T13:03:00Z"
@@ -134,8 +129,8 @@
       "tbc": true,
       "sessions": {
         "practice1": "2024-05-10T14:55:00Z",
-        "practice2": "2024-05-11T06:05:00Z",
-        "qualifying": "2024-05-11T08:40:00Z",
+        "practice2": "2024-05-11T05:55:00Z",
+        "qualifying": "2024-05-11T08:20:00Z",
         "race": "2024-05-11T13:03:00Z"
       }
     },
@@ -147,11 +142,10 @@
       "round": 11,
       "slug": "berlin-eprix",
       "localeKey": "berlin-eprix",
-      "tbc": true,
       "sessions": {
-        "practice3": "2024-04-12T06:05:00Z",
-        "qualifying": "2024-04-12T08:40:00Z",
-        "race": "2024-04-12T13:03:00Z"
+        "practice3": "2024-05-12T05:55:00Z",
+        "qualifying": "2024-05-12T08:20:00Z",
+        "race": "2024-05-12T13:03:00Z"
       }
     },
     {
@@ -162,12 +156,11 @@
       "round": 12,
       "slug": "shanghai-eprix",
       "localeKey": "shanghai-eprix",
-      "tbc": true,
       "sessions": {
-        "practice1": "2024-05-24T05:25:00Z",
-        "practice2": "2024-05-25T07:05:00Z",
-        "qualifying": "2024-05-25T08:40:00Z",
-        "race": "2024-05-25T13:03:00Z"
+        "practice1": "2024-05-24T08:55:00Z",
+        "practice2": "2024-05-24T23:55:00Z",
+        "qualifying": "2024-05-25T02:20:00Z",
+        "race": "2024-05-25T07:03:00Z"
       }
     },
     {
@@ -178,11 +171,10 @@
       "round": 13,
       "slug": "shanghai-eprix",
       "localeKey": "shanghai-eprix",
-      "tbc": true,
       "sessions": {
-        "practice3": "2024-05-26T07:05:00Z",
-        "qualifying": "2024-05-26T08:40:00Z",
-        "race": "2024-05-26T13:03:00Z"
+        "practice3": "2024-05-25T23:55:00Z",
+        "qualifying": "2024-05-26T02:20:00Z",
+        "race": "2024-05-26T07:03:00Z"
       }
     },
     {
@@ -193,12 +185,11 @@
       "round": 14,
       "slug": "portland-eprix",
       "localeKey": "portland-eprix",
-      "tbc": true,
       "sessions": {
-        "practice1": "2024-06-28T00:00:00Z",
-        "practice2": "2024-06-29T17:30:00Z",
-        "qualifying": "2024-06-29T19:40:00Z",
-        "race": "2024-06-29T00:03:00Z"
+        "practice1": "2024-06-28T23:55:00Z",
+        "practice2": "2024-06-29T14:25:00Z",
+        "qualifying": "2024-06-29T16:40:00Z",
+        "race": "2024-06-29T21:03:00Z"
       }
     },
     {
@@ -209,11 +200,10 @@
       "round": 15,
       "slug": "portland-eprix",
       "localeKey": "portland-eprix",
-      "tbc": true,
       "sessions": {
-        "practice3": "2024-06-30T17:30:00Z",
-        "qualifying": "2024-06-30T19:40:00Z",
-        "race": "2024-06-30T00:03:00Z"
+        "practice3": "2024-06-30T14:25:00Z",
+        "qualifying": "2024-06-30T16:40:00Z",
+        "race": "2024-06-30T21:03:00Z"
       }
     },
     {
@@ -224,11 +214,10 @@
       "round": 16,
       "slug": "london-eprix",
       "localeKey": "london-eprix",
-      "tbc": true,
       "sessions": {
-        "practice1": "2024-07-19T16:00:00Z",
-        "practice2": "2024-07-20T09:30:00Z",
-        "qualifying": "2024-07-20T11:40:00Z",
+        "practice1": "2024-07-19T15:55:00Z",
+        "practice2": "2024-07-20T08:55:00Z",
+        "qualifying": "2024-07-20T11:20:00Z",
         "race": "2024-07-20T16:03:00Z"
       }
     },
@@ -240,10 +229,9 @@
       "round": 17,
       "slug": "london-eprix",
       "localeKey": "london-eprix",
-      "tbc": true,
       "sessions": {
-        "practice3": "2024-07-21T09:30:00Z",
-        "qualifying": "2024-07-21T11:40:00Z",
+        "practice3": "2024-07-21T08:55:00Z",
+        "qualifying": "2024-07-21T11:20:00Z",
         "race": "2024-07-21T16:03:00Z"
       }
     }
