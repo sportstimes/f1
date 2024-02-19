@@ -5,7 +5,6 @@
       "location": "Qatar",
       "track": "Lusail International Circuit",
       "round": 1,
-      "tbc": true,
       "sessions": {
         "fp1": "2024-03-08T12:45:00Z",
         "fp2": "2024-03-09T11:00:00Z",
@@ -24,7 +23,6 @@
       "location": "Portugal",
       "track": "Autódromo Internacional do Algarve",
       "round": 2,
-      "tbc": true,
       "sessions": {
         "fp1": "2024-03-22T10:45:00Z",
         "fp2": "2024-03-23T10:10:00Z",
@@ -42,8 +40,7 @@
       "name": "Red Bull Grand Prix of the Americas",
       "location": "United states",
       "track": "Circuit Of The Americas",
-      "round": 4,
-      "tbc": true,
+      "round": 3,
       "sessions": {
         "fp1": "2024-04-12T15:45:00Z",
         "fp2": "2024-04-13T15:10:00Z",
@@ -61,8 +58,7 @@
       "name": "Gran Premio de España",
       "location": "Spain",
       "track": "Circuito de Jerez - Angel Nieto",
-      "round": 5,
-      "tbc": true,
+      "round": 4,
       "sessions": {
         "fp1": "2024-04-26T08:45:00Z",
         "fp2": "2024-04-27T08:10:00Z",
@@ -80,8 +76,7 @@
       "name": "Grand Prix de France",
       "location": "France",
       "track": "Le Mans",
-      "round": 6,
-      "tbc": true,
+      "round": 5,
       "sessions": {
         "fp1": "2024-05-10T08:45:00Z",
         "fp2": "2024-05-11T08:10:00Z",
@@ -99,8 +94,7 @@
       "name": "Gran Premi Monster Energy de Catalunya",
       "location": "Spain",
       "track": "Circuit de Barcelona-Catalunya",
-      "round": 7,
-      "tbc": true,
+      "round": 6,
       "sessions": {
         "fp1": "2024-05-24T08:45:00Z",
         "fp2": "2024-05-25T08:10:00Z",
@@ -118,8 +112,7 @@
       "name": "Gran Premio d’Italia",
       "location": "Italy",
       "track": "Autodromo Internazionale del Mugello",
-      "round": 8,
-      "tbc": true,
+      "round": 7,
       "sessions": {
         "fp1": "2024-05-31T08:45:00Z",
         "fp2": "2024-06-01T08:10:00Z",
@@ -137,8 +130,7 @@
       "name": "Grand Prix of Kazakhstan",
       "location": "Kazakhstan",
       "track": "Sokol International Racetrack",
-      "round": 9,
-      "tbc": true,
+      "round": 8,
       "sessions": {
         "fp1": "2024-06-14T05:15:00Z",
         "fp2": "2024-06-15T04:10:00Z",
@@ -156,8 +148,7 @@
       "name": "Motul TT Assen",
       "location": "Netherlands",
       "track": "TT Circuit Assen",
-      "round": 10,
-      "tbc": true,
+      "round": 9,
       "sessions": {
         "fp1": "2024-06-28T08:45:00Z",
         "fp2": "2024-06-29T08:10:00Z",
@@ -175,8 +166,7 @@
       "name": "Liqui Moly Motorrad Grand Prix Deutschland",
       "location": "Germany",
       "track": "Sachsenring",
-      "round": 11,
-      "tbc": true,
+      "round": 10,
       "sessions": {
         "fp1": "2024-07-05T08:45:00Z",
         "fp2": "2024-07-06T08:10:00Z",
@@ -194,8 +184,7 @@
       "name": "Monster Energy British Grand Prix",
       "location": "Great britain",
       "track": "Silverstone Circuit",
-      "round": 12,
-      "tbc": true,
+      "round": 11,
       "sessions": {
         "fp1": "2024-08-02T09:45:00Z",
         "fp2": "2024-08-03T09:10:00Z",
@@ -213,8 +202,7 @@
       "name": "Motorrad Grand Prix von Österreich",
       "location": "Austria",
       "track": "Red Bull Ring - Spielberg",
-      "round": 13,
-      "tbc": true,
+      "round": 12,
       "sessions": {
         "fp1": "2024-08-16T08:45:00Z",
         "fp2": "2024-08-17T08:10:00Z",
@@ -232,8 +220,7 @@
       "name": "Gran Premio de Aragón",
       "location": "Spain",
       "track": "MotorLand Aragón",
-      "round": 14,
-      "tbc": true,
+      "round": 13,
       "sessions": {
         "fp1": "2024-08-30T08:45:00Z",
         "fp2": "2024-08-31T08:10:00Z",
@@ -251,8 +238,7 @@
       "name": "Gran Premio Red Bull di San Marino e della Riviera di Rimini",
       "location": "Italy",
       "track": "Misano World Circuit Marco Simoncelli",
-      "round": 15,
-      "tbc": true,
+      "round": 14,
       "sessions": {
         "fp1": "2024-09-06T08:45:00Z",
         "fp2": "2024-09-07T08:10:00Z",
@@ -270,8 +256,7 @@
       "name": "Gran Prix of India",
       "location": "India",
       "track": "Buddh International Circuit",
-      "round": 16,
-      "tbc": true,
+      "round": 15,
       "sessions": {
         "fp1": "2024-09-20T06:15:00Z",
         "fp2": "2024-09-21T05:10:00Z",
@@ -289,8 +274,7 @@
       "name": "Pertamina Grand Prix of Indonesia",
       "location": "Indonesia",
       "track": "Pertamina Mandalika Circuit",
-      "round": 17,
-      "tbc": true,
+      "round": 16,
       "sessions": {
         "fp1": "2024-09-27T02:45:00Z",
         "fp2": "2024-09-28T02:10:00Z",
@@ -308,8 +292,7 @@
       "name": "Motul Grand Prix of Japan",
       "location": "Japan",
       "track": "Twin Ring Motegi",
-      "round": 18,
-      "tbc": true,
+      "round": 17,
       "sessions": {
         "fp1": "2024-10-04T01:45:00Z",
         "fp2": "2024-10-05T01:10:00Z",
@@ -327,8 +310,7 @@
       "name": "Australian Motorcycle Grand Prix",
       "location": "Australia",
       "track": "Phillip Island",
-      "round": 19,
-      "tbc": true,
+      "round": 18,
       "sessions": {
         "fp1": "2024-10-17T23:45:00Z",
         "fp2": "2024-10-18T23:10:00Z",
@@ -346,8 +328,7 @@
       "name": "Thailand Grand Prix",
       "location": "Thailand",
       "track": "Chang International Circuit",
-      "round": 20,
-      "tbc": true,
+      "round": 19,
       "sessions": {
         "fp1": "2024-10-25T03:45:00Z",
         "fp2": "2024-10-26T03:10:00Z",
@@ -365,8 +346,7 @@
       "name": "PETRONAS Grand Prix of Malaysia",
       "location": "Malaysia",
       "track": "Sepang International Circuit",
-      "round": 21,
-      "tbc": true,
+      "round": 20,
       "sessions": {
         "fp1": "2024-11-01T02:45:00Z",
         "fp2": "2024-11-02T02:10:00Z",
@@ -384,8 +364,7 @@
       "name": "Gran Premio Motul de la Comunitat Valenciana",
       "location": "Spain",
       "track": "Circuit Ricardo Tormo",
-      "round": 22,
-      "tbc": true,
+      "round": 21,
       "sessions": {
         "fp1": "2024-11-15T09:45:00Z",
         "fp2": "2024-11-16T09:10:00Z",
