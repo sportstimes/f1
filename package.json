@@ -27,7 +27,7 @@
 	"homepage": "https://github.com/sportstimes/f1#readme",
 	"dependencies": {
 		"@eslint/eslintrc": "^3.0.0",
-		"@novu/node": "^0.22.0",
+		"@novu/node": "^0.23.1",
 		"countries-and-timezones": "^3.2.3",
 		"dayjs": "^1.11.5",
 		"eslint-config-next": "^14.0.0",
