@@ -86,6 +86,7 @@ export default function RootLayout({ children, params: { locale } }) {
                 data-position="Right"
                 data-x_margin="18"
                 data-y_margin="18"
+                defer
               />
 
               <meta
