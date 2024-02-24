@@ -455,6 +455,52 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "Zandor300",
+      "name": "Zandor Smith",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6069593?v=4",
+      "profile": "https://zandorsmith.com",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "jiprastyo",
+      "name": "Prastyo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65061729?v=4",
+      "profile": "https://github.com/jiprastyo",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "nikitadubyk",
+      "name": "Nikita Dubyk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73419198?v=4",
+      "profile": "https://github.com/nikitadubyk",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "Knulon",
+      "name": "Knulon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93202145?v=4",
+      "profile": "https://github.com/Knulon",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "FBloembergen",
+      "name": "Ferry Bloembergen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19857894?v=4",
+      "profile": "https://github.com/FBloembergen",
+      "contributions": [
+        "bug",
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -463,5 +509,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true,
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }

@@ -1,0 +1,1 @@
+Folder containing the assets required for each deployment. The build script will grab the relevant folder contents and move them to /public/.

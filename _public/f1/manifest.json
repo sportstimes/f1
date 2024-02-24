@@ -1,26 +1,46 @@
 {
-    "name": "F1 Calendar",
-    "short_name": "F1 Calendar",
-    "icons": [
-        {
-            "src": "/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        },
-        {
-          "src": "/maskable_icon_x512.png",
-          "sizes": "512x512",
-          "type": "image/png",
-          "purpose": "maskable"
-        },
-    ],
-    "theme_color": "#03120f",
-    "background_color": "#000000",
-    "start_url": "/",
-    "display": "standalone"
+  "name": "F1 Calendar",
+  "short_name": "F1 Calendar",
+  "start_url": "/",
+  "description": "Formula One Calendar for 2024 season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/maskable_icon_x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#03120f",
+  "background_color": "#000000",
+  "start_url": "/",
+  "display": "standalone",
+  "screenshots": [
+    {
+      "src": "wide.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "F1 Calendar"
+    },
+    {
+      "src": "narrow.jpg",
+      "sizes": "540x720",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "F1 Calendar"
+    }
+  ]
 }

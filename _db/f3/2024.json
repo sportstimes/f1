@@ -1,0 +1,153 @@
+{
+  "races": [
+    {
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "round": 1,
+      "slug": "bahrain",
+      "localeKey": "bahrain",
+      "sessions": {
+        "practice": "2024-02-29T07:55:00Z",
+        "qualifying": "2024-02-29T13:00:00Z",
+        "sprint": "2024-03-01T10:15:00Z",
+        "feature": "2024-03-02T09:00:00Z"
+      }
+    },
+    {
+      "name": "Australian",
+      "location": "Melbourne",
+      "latitude": -37.8373,
+      "longitude": 144.9666,
+      "round": 2,
+      "slug": "melbourne",
+      "localeKey": "melbourne",
+      "sessions": {
+        "practice": "2024-03-21T21:45:00Z",
+        "qualifying": "2024-03-22T00:55:00Z",
+        "sprint": "2024-03-23T05:45:00Z",
+        "feature": "2024-03-23T22:20:00Z"
+      }
+    },
+    {
+      "name": "Emilia Romagna",
+      "location": "Imola",
+      "latitude": 44.344576,
+      "longitude": 11.713808,
+      "round": 3,
+      "slug": "emilia-romagna",
+      "localeKey": "emilia-romagna",
+      "sessions": {
+        "practice": "2024-05-17T06:45:00Z",
+        "qualifying": "2024-05-17T09:55:00Z",
+        "sprint": "2024-05-18T14:45:00Z",
+        "feature": "2024-05-19T07:20:00Z"
+      }
+    },
+    {
+      "name": "Monaco",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 4,
+      "slug": "monaco",
+      "localeKey": "monaco",
+      "sessions": {
+        "practice": "2024-05-23T06:45:00Z",
+        "sprint": "2024-05-25T14:45:00Z",
+        "feature": "2024-05-26T07:20:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Catalunya",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "round": 5,
+      "slug": "spanish",
+      "localeKey": "spanish",
+      "sessions": {
+        "practice": "2024-06-21T06:45:00Z",
+        "qualifying": "2024-06-21T09:55:00Z",
+        "sprint": "2024-06-22T14:45:00Z",
+        "feature": "2024-06-23T07:20:00Z"
+      }
+    },
+    {
+      "name": "Austrian",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "round": 6,
+      "slug": "austrian",
+      "localeKey": "austrian",
+      "sessions": {
+        "practice": "2024-06-28T06:45:00Z",
+        "qualifying": "2024-06-28T09:55:00Z",
+        "sprint": "2024-06-29T14:45:00Z",
+        "feature": "2024-06-30T07:20:00Z"
+      }
+    },
+    {
+      "name": "British",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "round": 7,
+      "slug": "british",
+      "localeKey": "british",
+      "sessions": {
+        "practice": "2024-07-05T07:45:00Z",
+        "qualifying": "2024-07-05T10:55:00Z",
+        "sprint": "2024-07-06T15:45:00Z",
+        "feature": "2024-07-07T08:20:00Z"
+      }
+    },
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "round": 8,
+      "slug": "hungarian",
+      "localeKey": "hungarian",
+      "sessions": {
+        "practice": "2024-07-19T06:45:00Z",
+        "qualifying": "2024-07-19T09:55:00Z",
+        "sprint": "2024-07-20T14:45:00Z",
+        "feature": "2024-07-21T07:20:00Z"
+      }
+    },
+    {
+      "name": "Belgian",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.444,
+      "longitude": 5.9687,
+      "round": 9,
+      "slug": "belgian",
+      "localeKey": "belgian",
+      "sessions": {
+        "practice": "2024-07-26T06:45:00Z",
+        "qualifying": "2024-07-26T09:55:00Z",
+        "sprint": "2024-07-27T14:45:00Z",
+        "feature": "2024-07-28T07:20:00Z"
+      }
+    },
+    {
+      "name": "Italian",
+      "location": "Monza",
+      "latitude": 45.6169,
+      "longitude": 9.2825,
+      "round": 10,
+      "slug": "italian",
+      "localeKey": "italian",
+      "sessions": {
+        "practice": "2024-08-30T06:45:00Z",
+        "qualifying": "2024-08-30T09:55:00Z",
+        "sprint": "2024-08-31T14:45:00Z",
+        "feature": "2024-09-01T07:20:00Z"
+      }
+    }
+  ]
+}

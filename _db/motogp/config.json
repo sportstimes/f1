@@ -2,7 +2,8 @@
 	"siteKey": "motogp",
 	"url": "motogpcal.com",
 	"calendarCDN": "files-motogp.motorsportcalendars.com",
-	"availableYears": [2021, 2022, 2023],
+	"calendarOutputYear": 2024,
+	"availableYears": [2021, 2022, 2023, 2024],
 	"sessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2", "sprint", "race"],
 	"featuredSessions": ["race"],
 	"collapsedSessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2", "sprint"],
@@ -26,6 +27,5 @@
 		"sprint": 60,
 		"race": 60
 	},
-	"supportsEmailReminders": false,
-	"notice": "Calendar will be updated as details are confirmed. We appreciate contributions to keep MotoGP Calendar up to date."
+	"supportsEmailReminders": false
 }

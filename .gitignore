@@ -79,3 +79,6 @@ jspm_packages
 /public/service-worker.js
 /public/service-worker.js.map
 /public/maskable_icon_x512.png
+/src/app/apple-icon.png
+/src/app/favicon.ico
+/src/app/icon.ico

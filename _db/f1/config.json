@@ -2,7 +2,8 @@
 	"siteKey": "f1",
 	"url": "f1calendar.com",
 	"calendarCDN": "files-f1.motorsportcalendars.com",
-	"availableYears": [2018, 2019, 2020, 2021, 2022, 2023],
+	"calendarOutputYear": 2024,
+	"availableYears": [2018, 2019, 2020, 2021, 2022, 2023, 2024],
 	"sessions": ["fp1", "fp2", "fp3", "qualifying", "sprintQualifying", "sprint", "gp"],
 	"featuredSessions": ["gp"],
 	"collapsedSessions": ["fp1", "fp2", "fp3", "qualifying", "sprintQualifying", "sprint"],
@@ -25,5 +26,6 @@
 		"gp":120
 	},
 	"supportsEmailReminders": true,
-	"supportsWebPush": true
+	"supportsWebPush": true,
+	"notice": "Note: The first two races will occur on Saturday for the majority of timezones."
 }

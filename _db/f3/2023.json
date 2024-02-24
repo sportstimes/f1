@@ -84,10 +84,10 @@
       "slug": "austrian",
       "localeKey": "austrian",
       "sessions": {
-        "practice": "2023-06-30T06:45:00Z",
-        "qualifying": "2023-06-30T09:55:00Z",
-        "sprint": "2023-07-01T14:45:00Z",
-        "feature": "2023-07-02T07:20:00Z"
+        "practice": "2023-06-30T07:55:00Z",
+        "qualifying": "2023-06-30T13:00:00Z",
+        "sprint": "2023-07-01T08:00:00Z",
+        "feature": "2023-07-02T06:25:00Z"
       }
     },
     {
@@ -100,9 +100,9 @@
       "localeKey": "british",
       "sessions": {
         "practice": "2023-07-07T07:45:00Z",
-        "qualifying": "2023-07-07T10:55:00Z",
-        "sprint": "2023-07-08T15:45:00Z",
-        "feature": "2023-07-09T08:20:00Z"
+        "qualifying": "2023-07-07T13:10:00Z",
+        "sprint": "2023-07-08T08:20:00Z",
+        "feature": "2023-07-09T07:20:00Z"
       }
     },
     {
@@ -114,10 +114,10 @@
       "slug": "hungarian",
       "localeKey": "hungarian",
       "sessions": {
-        "practice": "2023-07-21T06:45:00Z",
-        "qualifying": "2023-07-21T09:55:00Z",
-        "sprint": "2023-07-22T14:45:00Z",
-        "feature": "2023-07-23T07:20:00Z"
+        "practice": "2023-07-21T07:55:00Z",
+        "qualifying": "2023-07-21T13:05:00Z",
+        "sprint": "2023-07-22T07:50:00Z",
+        "feature": "2023-07-23T06:25:00Z"
       }
     },
     {
@@ -129,10 +129,10 @@
       "slug": "belgian",
       "localeKey": "belgian",
       "sessions": {
-        "practice": "2023-07-28T06:45:00Z",
-        "qualifying": "2023-07-28T09:55:00Z",
-        "sprint": "2023-07-29T14:45:00Z",
-        "feature": "2023-07-30T07:20:00Z"
+        "practice": "2023-07-28T07:55:00Z",
+        "qualifying": "2023-07-28T13:00:00Z",
+        "sprint": "2023-07-29T08:00:00Z",
+        "feature": "2023-07-30T06:30:00Z"
       }
     },
     {
@@ -144,10 +144,10 @@
       "slug": "italian",
       "localeKey": "italian",
       "sessions": {
-        "practice": "2023-09-01T06:45:00Z",
-        "qualifying": "2023-09-01T09:55:00Z",
-        "sprint": "2023-09-02T14:45:00Z",
-        "feature": "2023-09-03T07:20:00Z"
+        "practice": "2023-09-01T07:40:00Z",
+        "qualifying": "2023-09-01T13:05:00Z",
+        "sprint": "2023-09-02T07:25:00Z",
+        "feature": "2023-09-03T06:15:00Z"
       }
     }
   ]

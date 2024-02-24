@@ -1,4 +1,5 @@
 {
+    "All": {
     "date": "Datum",
     "time": "Čas",
     "showPreviousRaces": "Show Previous Races",
@@ -88,6 +89,7 @@
         "button": "Hotovo"
     },
     "contribute": "Přispějte",
+    "yearSelector": "Year",
     "languageSelector": "Select Language",
     "javascript": "Kalendář F1 funguje nejlépe s povoleným Javascriptem.",
     "footer": {
@@ -239,6 +241,7 @@
             "description": "Formula One Academy Calendar for {{year}} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
             "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
         },
-        "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+        "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }
+}
 }

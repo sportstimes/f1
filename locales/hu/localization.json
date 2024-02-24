@@ -1,4 +1,5 @@
 {
+"All": {
     "date": "Dátum",
     "time": "Idő",
     "showPreviousRaces": "Show Previous Races",
@@ -23,8 +24,8 @@
         "qualifying": "Időmérő",
         "qualifying1": "1. Időmérő",
         "qualifying2": "2. Időmérő",
-        "sprintQualifying": "Sprint Shootout",
-        "sprint": "Sprint kvalifikáció",
+        "sprintQualifying": "Sprint Időmérő",
+        "sprint": "Sprintfutam",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "Futam",
@@ -88,6 +89,7 @@
         "button": "Kész"
     },
     "contribute": "Közreműködés",
+    "yearSelector": "Year",
     "languageSelector": "Nyelv választása",
     "javascript": "Az F1 Calendar bekapcsolt Javascripttel nyújtja a legjobb élményt.",
     "footer": {
@@ -239,6 +241,7 @@
             "description": "Formula One Academy Calendar for {{year}} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
             "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
         },
-        "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+        "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }
+}
 }
