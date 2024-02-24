@@ -1,89 +1,88 @@
 {
-	"races": [
-		{
-			"name": "Jeddah, Saudi Arabia",
-			"location": "Jeddah, Saudi Arabia",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 1,
-			"slug": "jeddah",
-			"localeKey": "jeddah",
-			"tbc": true,
-			"sessions": {
-				"shakedown": "2024-02-16T00:00:00Z",
-				"qualifying1": "2024-02-17T05:00:00Z",
-				"qualifying2": "2024-02-17T05:00:00Z",
-				"race1": "2024-02-18T12:00:00Z",
-				"race2": "2024-02-18T12:00:00Z"
-			}
-		},
-		{
-			"name": "Europe, TBC",
-			"location": "TBC",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 2,
-			"slug": "europe",
-			"localeKey": "europe",
-			"tbc": true,
-			"sessions": {
-				"shakedown": "2024-07-12T00:00:00Z",
-				"qualifying1": "2024-07-13T05:00:00Z",
-				"qualifying2": "2024-07-13T05:00:00Z",
-				"race1": "2024-07-14T13:00:00Z",
-				"race2": "2024-07-14T13:00:00Z"
-			}
-		},
-		{
-			"name": "Sardinia, Italy",
-			"location": "Sardinia, Italy",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 3,
-			"slug": "italy",
-			"localeKey": "italy",
-			"tbc": true,
-			"sessions": {
-				"shakedown": "2024-09-13T00:00:00Z",
-				"qualifying1": "2024-09-14T00:00:00Z",
-				"qualifying2": "2024-09-14T00:00:00Z",
-				"race1": "2024-09-15T00:00:00Z",
-				"race2": "2024-09-15T00:00:00Z"
-			}
-		},
-		{
-			"name": "Sardinia, Italy",
-			"location": "Sardinia, Italy",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 4,
-			"slug": "italy",
-			"localeKey": "italy",
-			"tbc": true,
-			"sessions": {
-				"shakedown": "2024-09-20T00:00:00Z",
-				"qualifying1": "2024-09-21T00:00:00Z",
-				"qualifying2": "2024-09-21T00:00:00Z",
-				"race1": "2024-09-22T00:00:00Z",
-				"race2": "2024-09-22T00:00:00Z"
-			}
-		},
-		{
-			"name": "Phoenix, USA",
-			"location": "Phoenix, USA",
-			"latitude": 0,
-			"longitude": 0,
-			"round": 5,
-			"slug": "phoenix",
-			"localeKey": "phoenix",
-			"tbc": true,
-			"sessions": {
-				"shakedown": "2024-11-22T00:00:00Z",
-				"qualifying1": "2024-11-23T00:00:00Z",
-				"qualifying2": "2024-11-23T00:00:00Z",
-				"race1": "2024-11-24T00:00:00Z",
-				"race2": "2024-11-24T00:00:00Z"
-			}
-		}
-	]
+  "races": [
+    {
+      "name": "Jeddah, Saudi Arabia",
+      "location": "Jeddah, Saudi Arabia",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 1,
+      "slug": "jeddah",
+      "localeKey": "jeddah",
+      "sessions": {
+        "shakedown": "2024-02-16T00:00:00Z",
+        "qualifying1": "2024-02-17T05:00:00Z",
+        "race1": "2024-02-17T12:00:00Z",
+        "qualifying2": "2024-02-18T05:00:00Z",
+        "race2": "2024-02-18T12:00:00Z"
+      }
+    },
+    {
+      "name": "Europe, TBC",
+      "location": "TBC",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 2,
+      "slug": "europe",
+      "localeKey": "europe",
+      "tbc": true,
+      "sessions": {
+        "shakedown": "2024-07-12T00:00:00Z",
+        "qualifying1": "2024-07-13T05:00:00Z",
+        "race1": "2024-07-13T13:00:00Z",
+        "qualifying2": "2024-07-14T05:00:00Z",
+        "race2": "2024-07-14T13:00:00Z"
+      }
+    },
+    {
+      "name": "Sardinia, Italy",
+      "location": "Sardinia, Italy",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 3,
+      "slug": "italy",
+      "localeKey": "italy",
+      "tbc": true,
+      "sessions": {
+        "shakedown": "2024-09-13T00:00:00Z",
+        "qualifying1": "2024-09-14T00:00:00Z",
+        "race1": "2024-09-13T00:00:00Z",
+        "qualifying2": "2024-09-15T00:00:00Z",
+        "race2": "2024-09-15T00:00:00Z"
+      }
+    },
+    {
+      "name": "Sardinia, Italy",
+      "location": "Sardinia, Italy",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 4,
+      "slug": "italy",
+      "localeKey": "italy",
+      "tbc": true,
+      "sessions": {
+        "shakedown": "2024-09-20T00:00:00Z",
+        "qualifying1": "2024-09-21T00:00:00Z",
+        "race1": "2024-09-21T00:00:00Z",
+        "qualifying2": "2024-09-22T00:00:00Z",
+        "race2": "2024-09-22T00:00:00Z"
+      }
+    },
+    {
+      "name": "Phoenix, USA",
+      "location": "Phoenix, USA",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 5,
+      "slug": "phoenix",
+      "localeKey": "phoenix",
+      "tbc": true,
+      "sessions": {
+        "shakedown": "2024-11-22T00:00:00Z",
+        "qualifying1": "2024-11-23T00:00:00Z",
+        "race1": "2024-11-23T00:00:00Z",
+        "qualifying2": "2024-11-24T00:00:00Z",
+        "race2": "2024-11-24T00:00:00Z"
+      }
+    }
+  ]
 }

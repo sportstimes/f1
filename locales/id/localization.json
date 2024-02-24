@@ -157,7 +157,7 @@
         "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
         "seo": {
             "title": "Kalender F1 {{tahun}} - Waktu Balap Formula 1",
-            "description": "Kalender Formula 1 untuk musim {{year}} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
+            "description": "Kalender Formula 1 untuk musim {year} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
             "keywords": "F1, formula satu, waktu balapan, balapan, pengingat, notifikasi, grand prix, grand prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
         },
         "footnote": "Formula One, Formula 1, F1 &amp; Grand Prix adalah merek dagang dari Formula One Licensing BV."
@@ -167,7 +167,7 @@
         "subtitle": "Balapan, Kualifikasi & Sesi uji coba",
         "seo": {
             "title": "Kalender F2 {{tahun}} - Waktu Balap Formula 2",
-            "description": "Kalender Formula 2 untuk musim {{year}} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
+            "description": "Kalender Formula 2 untuk musim {year} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
             "keywords": "tempat penampung"
         },
         "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 adalah merek dagang dari FIA."
@@ -177,7 +177,7 @@
         "subtitle": "Balapan, Kualifikasi & Sesi uji coba",
         "seo": {
             "title": "Kalender F3 {{tahun}} - Waktu Balap Formula 3",
-            "description": "Kalender Formula 3 untuk musim {{year}} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
+            "description": "Kalender Formula 3 untuk musim {year} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
             "keywords": "F3, formula tiga, waktu balapan, balapan, pengingat, notifikasi, grand prix, grand prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
         },
         "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 adalah merek dagang dari FIA."
@@ -187,7 +187,7 @@
         "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
         "seo": {
             "title": "Kalender Formula E {{tahun}} - Waktu Balap Formula E",
-            "description": "Kalender Formula E untuk musim {{year}} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
+            "description": "Kalender Formula E untuk musim {year} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
             "keywords": "FE, formula e, waktu balapan, balapan, pengingat, notifikasi, e prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
         },
         "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP &amp; E-Prix adalah merek dagang dari FIA."
@@ -197,7 +197,7 @@
         "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
         "seo": {
             "title": "Kalender IndyCar {{tahun}} - Waktu Balap IndyCar",
-            "description": "Kalender IndyCar untuk musim {{year}} dengan semua balapan IndyCar, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
+            "description": "Kalender IndyCar untuk musim {year} dengan semua balapan IndyCar, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
             "keywords": "IndyCar, waktu balapan, balapan, pengingat, notifikasi, kalender, tanggal, waktu mulai, kualifikasi, latihan, {{tahun}}"
         },
         "footnote": "IndyCar adalah merek dagang terdaftar dari Brickyard Trademarks, Inc"
@@ -207,7 +207,7 @@
         "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
         "seo": {
             "title": "Kalender MotoGP {{tahun}} - Waktu Balap MotoGP",
-            "description": "Kalender MotoGP untuk musim {{year}} dengan semua balapan MotoGP, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
+            "description": "Kalender MotoGP untuk musim {year} dengan semua balapan MotoGP, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
             "keywords": "MotoGP, waktu balapan, balapan, pengingat, notifikasi, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
         },
         "footnote": ""
@@ -217,7 +217,7 @@
         "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
         "seo": {
             "title": "Kalender Seri W {{tahun}} - Waktu Balap Seri W",
-            "description": "Kalender Seri W untuk musim {{year}} dengan semua balapan Seri W, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
+            "description": "Kalender Seri W untuk musim {year} dengan semua balapan Seri W, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
             "keywords": "wseries, w-series, waktu balapan, balapan, pengingat, notifikasi, prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
         },
         "footnote": "Kalender Seri W ini tidak berafiliasi dengan W series."
@@ -227,7 +227,7 @@
         "subtitle": "Sesi Balap, Kualifikasi &amp; Latihan",
         "seo": {
             "title": "Kalender Extreme E {{tahun}} - Waktu Balap Extreme E",
-            "description": "Kalender Extreme E untuk musim {{year}} dengan semua balapan Extreme E xprix, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
+            "description": "Kalender Extreme E untuk musim {year} dengan semua balapan Extreme E xprix, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
             "keywords": "Extreme E, waktu balapan, balapan, pengingat, notifikasi, x prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{tahun}}"
         },
         "footnote": ""
@@ -236,9 +236,9 @@
         "title": "Kalender Akademi F1",
         "subtitle": "Races, Qualifying & Practice Sessions",
         "seo": {
-            "title": "Kalender Akademi F1 {{year}} - Waktu Balap Akademi F1",
-            "description": "Kalendar Akademi Formula One untuk musim {{year}} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
-            "keywords": "F1, formula one, waktu balapan, balapan, pengingat, notifikasi, grand prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {{year}}"
+            "title": "Kalender Akademi F1 {year} - Waktu Balap Akademi F1",
+            "description": "Kalendar Akademi Formula One untuk musim {year} dengan semua balapan, sesi latihan &amp; kualifikasi. Atur pengingat. Semua zona waktu dunia. Unduh atau langganan.",
+            "keywords": "F1, formula one, waktu balapan, balapan, pengingat, notifikasi, grand prix, kalender, tanggal, waktu mulai, kualifikasi, latihan, London, Eropa, {year}"
         },
         "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }
