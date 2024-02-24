@@ -155,9 +155,9 @@
 		"title": "F1カレンダー",
 		"subtitle": "レース、予選、プラクティス",
 		"seo": {
-			"title": "F1カレンダー {{year}} フォーミュラ1レーススケジュール",
-			"description": "{{year}}年のF1カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "F1, フォーミュラ1, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {{year}}"
+			"title": "F1カレンダー {year} フォーミュラ1レーススケジュール",
+			"description": "{year}年のF1カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+			"keywords": "F1, フォーミュラ1, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
 		},
 		"footnote": "Formula One, Formula 1, F1 & Grand PrixはFormula One Licensing BVの商標です。"
 	},
@@ -165,8 +165,8 @@
 		"title": "F2カレンダー",
 		"subtitle": "レース、予選、プラクティス",
 		"seo": {
-			"title": "F2カレンダー {{year}} - フォーミュラ2レーススケジュール",
-			"description": "{{year}}年のF2カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+			"title": "F2カレンダー {year} - フォーミュラ2レーススケジュール",
+			"description": "{year}年のF2カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
 			"keywords": "プレースホルダー"
 		},
 		"footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 はFIAの商標です。"
@@ -175,9 +175,9 @@
 		"title": "F3カレンダー",
 		"subtitle": "レース、予選、プラクティス",
 		"seo": {
-			"title": "F3カレンダー {{year}} - フォーミュラ3レーススケジュール",
-			"description": "{{year}}年のF3カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "F3, フォーミュラ3, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {{year}}"
+			"title": "F3カレンダー {year} - フォーミュラ3レーススケジュール",
+			"description": "{year}年のF3カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+			"keywords": "F3, フォーミュラ3, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
 		},
 		"footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 はFIAの商標です。"
 	},
@@ -185,9 +185,9 @@
 		"title": "フォーミュラEカレンダー",
 		"subtitle": "レース、予選、プラクティス",
 		"seo": {
-			"title": "フォーミュラEカレンダー {{year}} - フォーミュラEレーススケジュール",
-			"description": "{{year}}年のフォーミュラEカレンダー。全e-Prixのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "FE, フォーミュラE, レース時間, レース, 通知, アラーム, e-Prix, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {{year}}"
+			"title": "フォーミュラEカレンダー {year} - フォーミュラEレーススケジュール",
+			"description": "{year}年のフォーミュラEカレンダー。全e-Prixのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+			"keywords": "FE, フォーミュラE, レース時間, レース, 通知, アラーム, e-Prix, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
 		},
 		"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix はFIAの商標です。"
 	},
@@ -195,9 +195,9 @@
 		"title": "インディカー・カレンダー",
 		"subtitle": "レース、予選、プラクティス",
 		"seo": {
-			"title": "インディカー・カレンダー {{year}} - レーススケジュール",
-			"description": "{{year}}年のインディカーカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "インディカー, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {{year}}"
+			"title": "インディカー・カレンダー {year} - レーススケジュール",
+			"description": "{year}年のインディカーカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+			"keywords": "インディカー, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
 		},
 		"footnote": "IndyCarは、Brickyard Trademarks, Inc.の商標です。"
 	},
@@ -205,9 +205,9 @@
 		"title": "MotoGPカレンダー",
 		"subtitle": "レース、予選、プラクティス",
 		"seo": {
-			"title": "MotoGPカレンダー {{year}} - レーススケジュール",
-			"description": "{{year}}年のMotoGPカレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "MotoGP, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {{year}}"
+			"title": "MotoGPカレンダー {year} - レーススケジュール",
+			"description": "{year}年のMotoGPカレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+			"keywords": "MotoGP, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
 		},
 		"footnote": "脚注"
 	},
@@ -215,9 +215,9 @@
 		"title": "Wシリーズカレンダー",
 		"subtitle": "レース、予選、プラクティス",
 		"seo": {
-			"title": "Wシリーズカレンダー {{year}} - レーススケジュール",
-			"description": "{{year}}年のWシリーズカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "wseries, w-series, Wシリーズ, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {{year}}"
+			"title": "Wシリーズカレンダー {year} - レーススケジュール",
+			"description": "{year}年のWシリーズカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+			"keywords": "wseries, w-series, Wシリーズ, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
 		},
 		"footnote": "W Series Calendar is not affiliated with W Series."
 	},
@@ -225,9 +225,9 @@
 		"title": "Extreme Eカレンダー",
 		"subtitle": "レース、予選、プラクティス",
 		"seo": {
-			"title": "Extreme Eカレンダー {{year}} - Extreme Eレーススケジュール",
-			"description": "{{year}}年のExtreme Eカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "Extreme E, レース時間, レース, 通知, アラーム, x-Prix, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {{year}}"
+			"title": "Extreme Eカレンダー {year} - Extreme Eレーススケジュール",
+			"description": "{year}年のExtreme Eカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+			"keywords": "Extreme E, レース時間, レース, 通知, アラーム, x-Prix, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
 		},
 		"footnote": "脚注"
 	},
@@ -242,9 +242,9 @@
 		"title": "F1 Academy Calendar",
 		"subtitle": "Races, Qualifying & Practice Sessions",
 		"seo": {
-			"title": "F1 Academy Calendar {{year}} - Formula One Race Times and Dates",
-			"description": "Formula One Academy Calendar for {{year}} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-			"keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+			"title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
+			"description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+			"keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
 		},
 		"footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
 	}
