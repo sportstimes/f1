@@ -9,7 +9,7 @@ Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajh
 Graciously hosted by [Vercel](https://vercel.com/?utm_source=sportstimes).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-55-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-56-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -106,6 +106,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nikitadubyk"><img src="https://avatars.githubusercontent.com/u/73419198?v=4?s=100" width="100px;" alt="Nikita Dubyk"/><br /><sub><b>Nikita Dubyk</b></sub></a><br /><a href="#translation-nikitadubyk" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Knulon"><img src="https://avatars.githubusercontent.com/u/93202145?v=4?s=100" width="100px;" alt="Knulon"/><br /><sub><b>Knulon</b></sub></a><br /><a href="https://github.com/sportstimes/f1/issues?q=author%3AKnulon" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/FBloembergen"><img src="https://avatars.githubusercontent.com/u/19857894?v=4?s=100" width="100px;" alt="Ferry Bloembergen"/><br /><sub><b>Ferry Bloembergen</b></sub></a><br /><a href="https://github.com/sportstimes/f1/issues?q=author%3AFBloembergen" title="Bug reports">🐛</a> <a href="#translation-FBloembergen" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/agez0s"><img src="https://avatars.githubusercontent.com/u/83829973?v=4?s=100" width="100px;" alt="Eduardo Cordeiro"/><br /><sub><b>Eduardo Cordeiro</b></sub></a><br /><a href="#translation-agez0s" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
