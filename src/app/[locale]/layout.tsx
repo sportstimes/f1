@@ -74,7 +74,7 @@ export default function RootLayout({ children, params: { locale } }) {
               <PlausibleProvider
                 domain={process.env.NEXT_PUBLIC_PLAUSIBLE_KEY}
               />
-              <Script
+              <script
                 strategy="lazyOnload"
                 data-name="BMC-Widget"
                 data-cfasync="false"
@@ -86,6 +86,7 @@ export default function RootLayout({ children, params: { locale } }) {
                 data-position="Right"
                 data-x_margin="18"
                 data-y_margin="18"
+                defer
               />
 
               <meta
