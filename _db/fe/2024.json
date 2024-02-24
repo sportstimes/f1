@@ -126,7 +126,6 @@
       "round": 10,
       "slug": "berlin-eprix",
       "localeKey": "berlin-eprix",
-      "tbc": true,
       "sessions": {
         "practice1": "2024-05-10T14:55:00Z",
         "practice2": "2024-05-11T05:55:00Z",
