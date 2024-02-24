@@ -1,29 +1,23 @@
 {
-	"siteKey": "f2",
-	"url": "f2cal.com",
-	"calendarCDN": "files-f2.motorsportcalendars.com",
-	"calendarOutputYear": 2024,
-	"availableYears": [2021, 2022, 2023, 2024],
-	"sessions": ["practice", "qualifying", "sprint", "feature"],
-	"featuredSessions": ["feature"],
-	"collapsedSessions": [
-		"practice",
-		"qualifying",
-		"sprint*",
-		"feature"
-	],
-	"sessionMap": {
-		"practice": "p",
-		"qualifying": "q",
-		"sprint": "sprint",
-		"feature": "feature"
-	},
-	"sessionLengths": {
-		"practice": 45,
-		"qualifying": 30,
-		"sprint": 45,
-		"feature": 60
-	},
-	"supportsEmailReminders": false,
-	"notice": "Session times will be updated once confirmed by the FIA."
+  "siteKey": "f2",
+  "url": "f2cal.com",
+  "calendarCDN": "files-f2.motorsportcalendars.com",
+  "calendarOutputYear": 2024,
+  "availableYears": [2021, 2022, 2023, 2024],
+  "sessions": ["practice", "qualifying", "sprint", "feature"],
+  "featuredSessions": ["feature"],
+  "collapsedSessions": ["practice", "qualifying", "sprint*", "feature"],
+  "sessionMap": {
+    "practice": "p",
+    "qualifying": "q",
+    "sprint": "sprint",
+    "feature": "feature"
+  },
+  "sessionLengths": {
+    "practice": 45,
+    "qualifying": 30,
+    "sprint": 45,
+    "feature": 60
+  },
+  "supportsEmailReminders": false
 }
