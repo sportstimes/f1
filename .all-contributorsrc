@@ -501,6 +501,15 @@
         "bug",
         "translation"
       ]
+    },
+    {
+      "login": "agez0s",
+      "name": "Eduardo Cordeiro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83829973?v=4",
+      "profile": "https://github.com/agez0s",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
