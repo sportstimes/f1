@@ -19,6 +19,10 @@ export interface RaceRowTR {
 	slug: string;
 }
 
+const STYLES = {
+	border: 'border-solit border-b border-gray-700 last-of-type:border-none'
+}
+
 const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace, event, eventLocaleKey, slug }: Props) => {
 
 	const t = useTranslations('All');
@@ -41,7 +45,7 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 		var blankColumnCount = config.featuredSessions.length - 1;
 
 		return (
-			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""}`}>
+			<tr className={`${STYLES.border} ${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""}`}>
 				<td className=""></td>
 				<td className="p-4">{t(titleKey)}</td>
 				<td className="text-right">
@@ -59,7 +63,7 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 		);
 	} else {
 		return (
-			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""} ${!hasOccured && isFeaturedSession ? "font-bold" : ""} ${isNextRace && isFeaturedSession ? "text-yellow-600" : ""}`}>
+			<tr className={`${STYLES.border} ${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""} ${!hasOccured && isFeaturedSession ? "font-bold" : ""} ${isNextRace && isFeaturedSession ? "text-yellow-600" : ""}`}>
 				<td className=""></td>
 				<td className="p-4"><span className="hidden">{eventName}</span> {t(titleKey)}</td>
 				<td className="text-right md:text-left" headers={`date_header ${slug}-header`}>
