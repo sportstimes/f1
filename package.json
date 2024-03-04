@@ -58,7 +58,7 @@
 		"@types/react": "^18.2.58",
 		"@typescript-eslint/eslint-plugin": "^7.0.2",
 		"@typescript-eslint/parser": "^7.0.2",
-		"autoprefixer": "^10.4.15",
+		"autoprefixer": "^10.4.18",
 		"eslint": "^8.52.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-import-resolver-typescript": "^3.6.0",
