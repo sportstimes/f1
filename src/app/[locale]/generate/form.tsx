@@ -63,11 +63,13 @@ export default function Form() {
 	
 		let calendarSuffix = "";
 		sessions.forEach(function (session, index) {
+            // Use "other" if session key is not found in sessionMap
+            let calendarSessionType = sessionMap[session] || "other";
 			if (form[session]) {
-				calendarSuffix += `_${sessionMap[session]}`;
-				plausibleProps[sessionMap[session]] = true;
+				calendarSuffix += `_${calendarSessionType}`;
+				plausibleProps[calendarSessionType] = true;
 			} else {
-				plausibleProps[sessionMap[session]] = false;
+				plausibleProps[calendarSessionType] = false;
 			}
 		});
 	

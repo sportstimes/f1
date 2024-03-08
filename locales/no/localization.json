@@ -35,7 +35,8 @@
         "gp": "Race",
         "sprint1": "Sprint 1",
         "sprint2": "Sprint 2",
-        "feature": "Feature"
+        "feature": "Feature",
+        "other": "Annen"
     },
     "races": {
         "austrian-grand-prix": "Østerrikes Grand Prix",

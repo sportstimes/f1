@@ -35,7 +35,8 @@
       "gp": "Grande Prêmio",
       "sprint1": "Corrida de Sprint 1",
       "sprint2": "Corrida de Sprint 2",
-      "feature": "Corrida Principal"
+      "feature": "Corrida Principal",
+      "other": "Outra"
     },
     "scheduleAbbreviated": {
       "fp1": "TL1",
@@ -60,7 +61,8 @@
       "gp": "Grande Prêmio",
       "sprint1": "Sprint 1",
       "sprint2": "Sprint 2",
-      "feature": "Destaque"
+      "feature": "Destaque",
+      "other": "Outra"
     },
     "races": {
       "austrian-grand-prix": "GP da Áustria",

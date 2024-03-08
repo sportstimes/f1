@@ -35,7 +35,8 @@
         "gp": "Velika nagrada",
         "sprint1": "Sprint 1",
         "sprint2": "Sprint 2",
-        "feature": "Feature"
+        "feature": "Feature",
+        "other": "Ostalo"
     },
     "races": {
         "austrian-grand-prix": "Velika nagrada Austrije",

@@ -32,7 +32,8 @@
         "gp": "Marele Premiu",
         "sprint1": "Sprint 1",
         "sprint2": "Sprint 2",
-        "feature": "Posibilitate"
+        "feature": "Posibilitate",
+        "other": "Alte"
     },
     "races": {
         "austrian-grand-prix": "Marele Premiu al Austriei",

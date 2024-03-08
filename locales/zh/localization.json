@@ -22,7 +22,7 @@
         "qualifying1": "排位赛 1",
         "qualifying2": "排位赛 2",
         "sprintQualifying": "冲刺排位赛",
-        "sprint": "Sprint",
+        "sprint": "冲刺赛",
         "semifinal": "Semi Final",
         "warmup": "Warmup",
         "race": "正赛",
@@ -34,7 +34,7 @@
         "sprint2": "冲刺赛 2",
         "feature": "Feature",
         "fp4": "第4次自由练习",
-        "sprint": "冲刺赛"
+        "other": "其他"
     },
     "races": {
         "austrian-grand-prix": "奥地利大奖赛",

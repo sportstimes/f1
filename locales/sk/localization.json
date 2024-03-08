@@ -22,7 +22,7 @@
         "qualifying1": "Kvalifikácia 1",
         "qualifying2": "Kvalifikácia 2",
         "sprintQualifying": "Kvalifikácia šprintu",
-        "sprint": "Sprint",
+        "sprint": "Šprint",
         "semifinal": "Semifinále",
         "warmup": "Zahrievanie",
         "race": "Preteky",
@@ -34,7 +34,7 @@
         "sprint2": "Šprint 2",
         "feature": "Funkcia",
         "fp4": "Voľný tréning 4",
-        "sprint": "Šprint"
+        "other": "Iné"
     },
     "races": {
         "austrian-grand-prix": "Veľká cena Rakúska",

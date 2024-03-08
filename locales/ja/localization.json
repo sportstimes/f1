@@ -22,7 +22,7 @@
 		"qualifying1": "予選1",
 		"qualifying2": "予選2",
 		"sprintQualifying": "スプリント予選",
-		"sprint": "Sprint",
+		"sprint": "スプリント",
 		"semifinal": "準決勝",
 		"warmup": "ウォームアップ",
 		"race": "決勝",
@@ -34,7 +34,7 @@
 		"sprint2": "スプリントレース2",
 		"feature": "フューチャーレース",
 		"fp4": "フリープラクティス4",
-		"sprint": "スプリント"
+        "other": "他の"
 	},
 	"races": {
 		"austrian-grand-prix": "オーストリアGP",

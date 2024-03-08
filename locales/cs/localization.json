@@ -35,7 +35,8 @@
         "gp": "Velká cena",
         "sprint1": "Sprint 1",
         "sprint2": "Sprint 2",
-        "feature": "Feature"
+        "feature": "Feature",
+        "other": "Jiný"
     },
     "races": {
         "austrian-grand-prix": "Velká cena Rakouska",

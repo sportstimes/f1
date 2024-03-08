@@ -22,7 +22,7 @@
         "qualifying1": "第一節排位賽",
         "qualifying2": "第二節排位賽",
         "sprintQualifying": "衝刺排位賽",
-        "sprint": "Sprint",
+        "sprint": "衝刺排位賽",
         "semifinal": "半決賽",
         "warmup": "熱身",
         "race": "正賽",
@@ -34,7 +34,7 @@
         "sprint2": "第二節衝刺排位賽",
         "feature": "功能",
         "fp4": "第四節練習賽",
-        "sprint": "衝刺排位賽"
+        "other": "其他"
     },
     "races": {
         "austrian-grand-prix": "奧地利大獎賽",

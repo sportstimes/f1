@@ -1,17 +1,16 @@
-import React, {useState, FunctionComponent} from "react";
 import dayjs from "dayjs";
-import dayjsutc from "dayjs/plugin/utc";
-import dayjstimezone from "dayjs/plugin/timezone";
+import { useLocale, useTranslations } from 'next-intl';
+import { FunctionComponent } from "react";
+import { useUserContext } from "../../components/UserContext";
+
 const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
-import {useLocale, useTranslations} from 'next-intl';
-import {useUserContext} from "../../components/UserContext";
 
 export interface RaceRowTR {
 	collapsed: Boolean;
 	hasOccured: boolean;
 	hasMultipleFeaturedEvents: boolean;
 	isNextRace: boolean;
-	title: string;
+	sessionTitle: string;
 	date: string;
 	isFeaturedSession: boolean;
 	event: string;
@@ -19,7 +18,7 @@ export interface RaceRowTR {
 	slug: string;
 }
 
-const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title, collapsed, hasOccured, isFeaturedSession, date, isNextRace, event, eventLocaleKey, slug }: Props) => {
+const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, sessionTitle, collapsed, hasOccured, isFeaturedSession, date, isNextRace, event, eventLocaleKey, slug }: Props) => {
 
 	const t = useTranslations('All');
 	const locale = useLocale();
@@ -27,8 +26,6 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 	if (locale != "en") {
 		dayjs.locale(locale);
 	}
-	
-	const titleKey = "schedule." + title;
 	
 	var eventName = event;
 	if(t(eventLocaleKey)){
@@ -43,7 +40,7 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 		return (
 			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""}`}>
 				<td className=""></td>
-				<td className="p-4">{t(titleKey)}</td>
+				<td className="p-4">{sessionTitle}</td>
 				<td className="text-right">
 					<div className="pr-2 md:pr-4">
 						{dayjs(date)
@@ -61,7 +58,7 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({ hasMultipleFeaturedEvents, title
 		return (
 			<tr className={`${collapsed ? "hidden" : ""} ${hasOccured ? "line-through text-gray-400" : ""} ${!hasOccured && isFeaturedSession ? "font-bold" : ""} ${isNextRace && isFeaturedSession ? "text-yellow-600" : ""}`}>
 				<td className=""></td>
-				<td className="p-4"><span className="hidden">{eventName}</span> {t(titleKey)}</td>
+				<td className="p-4"><span className="hidden">{eventName}</span> {sessionTitle}</td>
 				<td className="text-right md:text-left" headers={`date_header ${slug}-header`}>
 					{dayjs(date)
 						.tz(timezone)
