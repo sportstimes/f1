@@ -35,7 +35,8 @@
         "gp": "Nagydíj",
         "sprint1": "1. sprint futam",
         "sprint2": "2. sprint futam",
-        "feature": "Betétfutam"
+        "feature": "Betétfutam",
+        "other": "Egyéb"
     },
     "races": {
         "austrian-grand-prix": "Osztrák Nagydíj",

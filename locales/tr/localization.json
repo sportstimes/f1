@@ -35,7 +35,8 @@
         "gp": "Yarış",
         "sprint1": "Sprint 1",
         "sprint2": "Sprint 2",
-        "feature": "Feature"
+        "feature": "Feature",
+        "other": "Diğer"
     },
     "races": {
         "austrian-grand-prix": "Avusturya Grand Prix'si",

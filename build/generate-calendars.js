@@ -47,6 +47,11 @@ function generateCalendars(siteKey){
 	// F1: Remove Sprint Qualifying for 2023.
 	calendarOptions = calendarOptions.filter(item => item !== "sprintQualifying");
 	
+	// Add support for other when session key is not in the sessionMap (as frequently seen in indycar)
+	if (config.sessions.includes("other") && !calendarOptions.includes("other")) {
+		calendarOptions.push("other");
+    }
+
 	// Add the alarm suffix.
 	calendarOptions.push("alarm");
 	
@@ -68,6 +73,7 @@ function generateCalendars(siteKey){
 		const filename = permutation.join("_");
 	
 		// If the filename contains alarm then add each of the alarm permutations.
+		// TODO: Handle / ignore filename that ends with alarm (having no -{alarmOption})
 		if (filename != "alarm") {
 			// Add the filenames pre-alarm options
 			fileNames.push(filename);
@@ -119,7 +125,7 @@ function generateCalendars(siteKey){
 		var languageFilesnames = language == "en" ? fileNames : localizedFilenames;
 	
 		for (request of languageFilesnames) {
-			let sessionArray = request.split("_");
+			let sessionArray = request.split("_");  // Calendar session types
 			let alarmEnabled = request.includes("alarm");
 	
 			let alarmOffset = 30;
@@ -142,16 +148,18 @@ function generateCalendars(siteKey){
 					// Sessions
 					let s = 0;
 					for (s = 0; s < Object.keys(race.sessions).length; s++) {
-						let sessionKey = Object.keys(race.sessions)[s];
-						let session = race.sessions[sessionKey];
+						let sessionsKey = Object.keys(race.sessions)[s];
+						let sessionStart = race.sessions[sessionsKey];
+						// Use "other" if session key is not found in sessionMap
+						let calendarSessionType = sessionMap[sessionsKey] || "other";
 	
 						// Skip
 						// F1: Some logic to include Sprint Qualifying Races when "Sprint" is selected.
 						// Adjustment for the Baku GP 2023 with the new Sprint weekend format.
 						if(siteKey == "f1"){
-							if(!sessionArray.includes(sessionMap[sessionKey]) && !(sessionMap[sessionKey] == "sprintQualifying" && (sessionArray.includes("sprint") && !sessionArray.includes("sprintQualifying"))))  continue;
+							if(!sessionArray.includes(calendarSessionType) && !(calendarSessionType == "sprintQualifying" && (sessionArray.includes("sprint") && !sessionArray.includes("sprintQualifying"))))  continue;
 						} else {
-							if(!sessionArray.includes(sessionMap[sessionKey])) continue;
+							if(!sessionArray.includes(calendarSessionType)) continue;
 						}
 						
 						let title = race.name;
@@ -163,10 +171,10 @@ function generateCalendars(siteKey){
 						
 						// If the session isn't featured then add the session name in front...
 						// Or if there are multiple featured sessions then add the session name in front (sprint, feature etc)...
-						if(!config.featuredSessions[sessionKey] || (config.featuredSessions[sessionKey] && config.featuredSessions.length > 1)){
-							let sessionTitle = localizedStrings.schedule[sessionKey];
-							if(localizedStrings.scheduleAbbreviated && localizedStrings.scheduleAbbreviated[sessionKey]){
-								sessionTitle = localizedStrings.scheduleAbbreviated[sessionKey];
+						if(!config.featuredSessions[sessionsKey] || (config.featuredSessions[sessionsKey] && config.featuredSessions.length > 1)){
+							let sessionTitle = localizedStrings.schedule[sessionsKey];
+							if(localizedStrings.scheduleAbbreviated && localizedStrings.scheduleAbbreviated[sessionsKey]){
+								sessionTitle = localizedStrings.scheduleAbbreviated[sessionsKey];
 							}
 							
 							title = `${prefix}: ${sessionTitle} (${title})`;
@@ -179,8 +187,8 @@ function generateCalendars(siteKey){
 						let sessionLength = 120;
 	
 						if(config.sessionLengths != null){
-							if(config.sessionLengths[sessionKey] != null){
-								sessionLength = config.sessionLengths[sessionKey];
+							if(config.sessionLengths[sessionsKey] != null){
+								sessionLength = config.sessionLengths[sessionsKey];
 							}
 						}
 						
@@ -197,12 +205,12 @@ function generateCalendars(siteKey){
 							});
 						}
 	
-						let start = dayjs(session)
+						let start = dayjs(sessionStart)
 							.format("YYYY-M-D-H-m")
 							.split("-")
 							.map(function(t){return parseInt(t)});
 							
-						let end = dayjs(session)
+						let end = dayjs(sessionStart)
 							.add(sessionLength, "minutes")
 							.format("YYYY-M-D-H-m")
 							.split("-")
@@ -231,7 +239,7 @@ function generateCalendars(siteKey){
 							title: title,
 							location: race.location,
 							productId: config.url,
-							uid: "http://" + year + "." + config.url + "/#GP" + i + "_" + year + "_" + sessionKey,
+							uid: "http://" + year + "." + config.url + "/#GP" + i + "_" + year + "_" + sessionsKey,
 							categories: [category, prefix],
 							start: start,
 							end: end,
@@ -306,4 +314,3 @@ if(process.argv.length > 2){
 } else {
 	generateAllCalendars();
 }
-

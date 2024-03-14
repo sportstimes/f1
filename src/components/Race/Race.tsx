@@ -1,18 +1,18 @@
 "use client"
 
-import React, {useState, useEffect, FunctionComponent} from "react";
-import {useTranslations} from 'next-intl';
-import {useUserContext} from "../../components/UserContext";
 import dayjs from "dayjs";
+import dayjstimezone from "dayjs/plugin/timezone";
 import dayjsutc from "dayjs/plugin/utc";
-import dayjstimezone from "dayjs/plugin/timezone"
-import {usePlausible} from "next-plausible"
-import TBCBadge from "../Badges/TBCBadge"
-import CanceledBadge from "../Badges/CanceledBadge"
-import NextBadge from "../Badges/NextBadge"
-import Toggle from "../Toggle/Toggle"
-import RaceTR from "../Race/RaceTR"
-import RaceModel from "../../models/RaceModel"
+import { useTranslations } from 'next-intl';
+import { usePlausible } from "next-plausible";
+import React, { useEffect, useState } from "react";
+import { useUserContext } from "../../components/UserContext";
+import RaceModel from "../../models/RaceModel";
+import CanceledBadge from "../Badges/CanceledBadge";
+import NextBadge from "../Badges/NextBadge";
+import TBCBadge from "../Badges/TBCBadge";
+import RaceTR from "../Race/RaceTR";
+import Toggle from "../Toggle/Toggle";
 
 const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
@@ -50,7 +50,11 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 		setCollapsed(!collapsed);
 	}
 
-	const localeKey = "races." + item.localeKey;
+    // Translate race title or fall back to name
+    const raceTitle =
+        item.localeKey && t(`races.${item.localeKey}`) != `All.races.${item.localeKey}`
+            ? t(`races.${item.localeKey}`)
+            : item.name;
 
 	const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
 
@@ -77,9 +81,7 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 				<th className={`flex p-4`} id={`${item.slug}-header`}>
 					<span className={`${titleRowClasses(race)} flex`}>
 						<span className={titleRowTextClasses(race)}>
-							{item.localeKey && t(`races.${item.localeKey}`) != `All.races.${item.localeKey}`
-							? t(`races.${item.localeKey}`)
-							: item.name}
+							{raceTitle}
 						</span>
 							
 						{isNextRace &&
@@ -168,23 +170,26 @@ const Race = ({ item, index, shouldCollapsePastRaces, hasOccured, isNextRace }: 
 			
 			var keys = Object.keys(props.item.sessions);
 			
-			keys.forEach(function (session, index) {
-				var hasOccured = false;
-				
-				if(dayjs(props.item.sessions[session]).add(2, "hours").isBefore(Date())){
-					hasOccured = true;
-				}
-					
+			keys.forEach(function (sessionKey, index) {
+                // Tranlate session title or fallback to session key
+                const sessionTitle = t(`schedule.${sessionKey}`) != `All.schedule.${sessionKey}`
+                    ? t(`schedule.${sessionKey}`)
+                    : sessionKey;
+
+				const hasOccured = dayjs(props.item.sessions[sessionKey])
+                    .add(2, 'hours')
+                    .isBefore(Date());
+
 				rows.push(
 					<RaceTR
-						key={`${props.item.localeKey}-${session}`}
-						date={props.item.sessions[session]}
+						key={`${props.item.localeKey}-${sessionKey}`}
+						date={props.item.sessions[sessionKey]}
 						isNextRace={isNextRace}
-						title={session}
+						sessionTitle={sessionTitle}
 						collapsed={collapsed}
 						hasMultipleFeaturedEvents={hasMultipleFeaturedEvents}
 						hasOccured={hasOccured}
-						isFeaturedSession={config.featuredSessions.includes(session)}
+						isFeaturedSession={config.featuredSessions.includes(sessionKey)}
 						event={props.item.name}
 						eventLocaleKey={`races.${props.item.localeKey}`}
 						slug={item.slug}
