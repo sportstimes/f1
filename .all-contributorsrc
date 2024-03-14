@@ -512,6 +512,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "giovanniRodighiero",
+      "name": "Giovanni Rodighiero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15871923?v=4",
+      "profile": "https://github.com/giovanniRodighiero",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
