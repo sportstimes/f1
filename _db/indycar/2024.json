@@ -36,9 +36,13 @@
     {
       "name": "Acura Grand Prix of Long Beach",
       "sessions": {
-        "race": "2024-04-21T19:00:00Z"
+        "practice1": "2024-04-19T21:50:00Z",
+        "practice2": "2024-04-20T15:25:00Z",
+        "qualifying": "2024-04-20T18:25:00Z",
+        "warmup": "2024-04-21T16:00:00Z",
+        "race": "2024-04-21T19:30:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 3,
       "slug": "acura-grand-prix-of-long-beach",
       "localeKey": "acura-grand-prix-of-long-beach",
@@ -50,7 +54,7 @@
       "sessions": {
         "race": "2024-04-28T17:30:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 4,
       "slug": "childrens-of-alabama-indy-grand-prix",
       "localeKey": "childrens-of-alabama-indy-grand-prix",
@@ -154,14 +158,14 @@
       "latitude": 0
     },
     {
-      "name": "Honda Indy Toronto",
+      "name": "Ontario Honda Dealers Indy Toronto",
       "sessions": {
         "race": "2024-07-21T17:00:00Z"
       },
       "tbc": true,
       "round": 13,
-      "slug": "honda-indy-toronto",
-      "localeKey": "honda-indy-toronto",
+      "slug": "ontario-honda-dealers-indy-toronto",
+      "localeKey": "ontario-honda-dealers-indy-toronto",
       "longitude": 0,
       "latitude": 0
     },
