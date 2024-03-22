@@ -51,7 +51,7 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({
 
     return (
       <tr
-        className={`${collapsed ? 'hidden' : ''} ${hasOccured ? 'line-through text-gray-400' : ''} divide-y divide-dotted divide-white/10`}
+        className={`${collapsed ? 'hidden' : ''} ${hasOccured ? 'line-through text-gray-400' : ''} divide-y divide-white/5`}
       >
         <td className=""></td>
         <td className="p-4">{sessionTitle}</td>
@@ -67,7 +67,7 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({
   } else {
     return (
       <tr
-        className={`${collapsed ? 'hidden' : ''} ${hasOccured ? 'line-through text-gray-400' : ''} ${!hasOccured && isFeaturedSession ? 'font-bold' : ''} ${isNextRace && isFeaturedSession ? 'text-yellow-600' : ''} divide-y divide-dotted divide-white/10`}
+        className={`${collapsed ? 'hidden' : ''} ${hasOccured ? 'line-through text-gray-400' : ''} ${!hasOccured && isFeaturedSession ? 'font-bold' : ''} ${isNextRace && isFeaturedSession ? 'text-yellow-600' : ''} divide-y divide-white/5`}
       >
         <td className=""></td>
         <td className="p-4">
