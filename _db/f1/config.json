@@ -26,6 +26,5 @@
 		"gp":120
 	},
 	"supportsEmailReminders": true,
-	"supportsWebPush": true,
-	"notice": "Note: The first two races will occur on Saturday for the majority of timezones."
+	"supportsWebPush": true
 }
