@@ -63,6 +63,7 @@ jspm_packages
 /public/share.png
 /public/site.webmanifest
 /public/email-header.png
+/public/icon.ico
 .vscode
 
 **/public/precache.*.*.js
