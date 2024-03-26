@@ -19,10 +19,6 @@
     {
       "name": "$1 Million Challenge",
       "sessions": {
-        "Open Test Session 1": "2024-03-22T16:00:00Z",
-        "Open Test Session 2": "2024-03-22T21:00:00Z",
-        "Open Test Session 3": "2024-03-23T16:00:00Z",
-        "Open Test Session 4": "2024-03-23T20:00:00Z",
         "qualifying": "2024-03-24T00:00:00Z",
         "race": "2024-03-24T16:15:00Z"
       },
