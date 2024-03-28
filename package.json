@@ -66,7 +66,7 @@
 		"next-translate-plugin": "^2.6.1",
 		"postcss": "^8.4.28",
 		"prettier": "^3.0.2",
-		"tailwindcss": "^3.3.5",
+		"tailwindcss": "^3.4.3",
 		"typescript": "^5.0.4",
 		"webpack": "^5.90.3"
 	}
