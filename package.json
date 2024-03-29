@@ -33,7 +33,7 @@
 		"dayjs": "^1.11.5",
 		"eslint-config-next": "^14.0.0",
 		"eslint-plugin-react": "^7.33.2",
-		"firebase": "^10.5.2",
+		"firebase": "^10.10.0",
 		"firebase-admin": "^12.0.0",
 		"i": "^0.3.7",
 		"ics": "^3.4.0",
