@@ -83,8 +83,8 @@
       "slug": "misano-eprix",
       "localeKey": "misano-eprix",
       "sessions": {
-        "practice1": "2024-04-12T14:55:00Z",
-        "practice2": "2024-04-13T05:55:00Z",
+        "practice1": "2024-04-12T15:00:00Z",
+        "practice2": "2024-04-13T06:00:00Z",
         "qualifying": "2024-04-13T08:20:00Z",
         "race": "2024-04-13T13:03:00Z"
       }
@@ -98,7 +98,7 @@
       "slug": "misano-eprix",
       "localeKey": "misano-eprix",
       "sessions": {
-        "practice3": "2024-04-14T05:55:00Z",
+        "practice3": "2024-04-14T06:00:00Z",
         "qualifying": "2024-04-14T08:20:00Z",
         "race": "2024-04-14T13:03:00Z"
       }
