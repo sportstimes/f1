@@ -52,6 +52,10 @@
     {
       "name": "Children\u2019s of Alabama Indy Grand Prix",
       "sessions": {
+        "practice1": "2024-04-26T19:55:00Z",
+        "practice2": "2024-04-27T16:15:00Z",
+        "qualifying": "2024-04-27T19:30:00Z",
+        "warmup": "2024-04-28T14:15:00Z",
         "race": "2024-04-28T17:30:00Z"
       },
       "tbc": false,
@@ -64,9 +68,13 @@
     {
       "name": "Sonsio Grand Prix",
       "sessions": {
-        "race": "2024-05-11T19:00:00Z"
+        "practice1": "2024-05-10T13:30:00Z",
+        "practice2": "2024-05-10T17:10:00Z",
+        "qualifying": "2024-05-10T20:20:00Z",
+        "warmup": "2024-05-11T15:15:00Z",
+        "race": "2024-05-11T19:30:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 5,
       "slug": "sonsio-grand-prix",
       "localeKey": "sonsio-grand-prix",
