@@ -24,7 +24,6 @@
       "round": 2,
       "slug": "miami",
       "localeKey": "miami",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-05-03T14:00:00Z",
         "fp2": "2024-05-03T19:20:00Z",
@@ -41,7 +40,6 @@
       "round": 3,
       "slug": "barcelona",
       "localeKey": "barcelona",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-06-20T23:23:00Z",
         "qualifying1": "2024-06-20T23:23:00Z",
@@ -57,7 +55,6 @@
       "round": 4,
       "slug": "zandvoort",
       "localeKey": "zandvoort",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-08-22T23:29:00Z",
         "qualifying1": "2024-08-22T23:29:00Z",
@@ -73,7 +70,6 @@
       "round": 5,
       "slug": "singapore",
       "localeKey": "singapore",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-09-19T16:29:00Z",
         "qualifying1": "2024-09-19T16:34:00Z",
@@ -89,7 +85,6 @@
       "round": 6,
       "slug": "qatar",
       "localeKey": "qatar",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-11-28T21:31:00Z",
         "qualifying1": "2024-11-28T21:33:00Z",
@@ -105,7 +100,6 @@
       "round": 7,
       "slug": "abu-dhabi",
       "localeKey": "abu-dhabi",
-      "tbc": true,
       "sessions": {
         "fp1": "2024-12-05T20:34:00Z",
         "qualifying1": "2024-12-05T20:36:00Z",
