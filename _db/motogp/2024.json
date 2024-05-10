@@ -127,24 +127,6 @@
       "localeKey": "gran-premio-d’italia"
     },
     {
-      "name": "Grand Prix of Kazakhstan",
-      "location": "Kazakhstan",
-      "track": "Sokol International Racetrack",
-      "round": 8,
-      "sessions": {
-        "fp1": "2024-06-14T05:15:00Z",
-        "fp2": "2024-06-15T04:10:00Z",
-        "qualifying1": "2024-06-15T04:50:00Z",
-        "qualifying2": "2024-06-15T05:15:00Z",
-        "sprint": "2024-06-15T09:00:00Z",
-        "race": "2024-06-16T08:00:00Z"
-      },
-      "latitude": 42.33651,
-      "longitude": -76.924843,
-      "slug": "grand-prix-of-kazakhstan",
-      "localeKey": "grand-prix-of-kazakhstan"
-    },
-    {
       "name": "Motul TT Assen",
       "location": "Netherlands",
       "track": "TT Circuit Assen",
@@ -377,6 +359,25 @@
       "longitude": -0.6289116,
       "slug": "gran-premio-motul-de-la-comunitat-valenciana",
       "localeKey": "gran-premio-motul-de-la-comunitat-valenciana"
-    }
+    },
+    {
+      "name": "Grand Prix of Kazakhstan",
+      "location": "Kazakhstan",
+      "track": "Sokol International Racetrack",
+      "round": 8,
+      "tbc": true,
+      "sessions": {
+        "fp1": "2024-11-20T05:15:00Z",
+        "fp2": "2024-11-21T04:10:00Z",
+        "qualifying1": "2024-11-21T04:50:00Z",
+        "qualifying2": "2024-11-21T05:15:00Z",
+        "sprint": "2024-11-21T09:00:00Z",
+        "race": "2024-11-22T08:00:00Z"
+      },
+      "latitude": 42.33651,
+      "longitude": -76.924843,
+      "slug": "grand-prix-of-kazakhstan",
+      "localeKey": "grand-prix-of-kazakhstan"
+    },
   ]
 }
