@@ -85,18 +85,17 @@
       "name": "108th Running of the Indianapolis 500",
       "sessions": {
         "practice1": "2024-05-14T13:00:00Z",
-        "Oval Refresher Program": "2024-05-14T17:00:00Z",
-        "practice2": "2024-05-14T19:00:00Z",
-        "practice3": "2024-05-15T16:00:00Z",
+        "practice2": "2024-05-14T17:00:00Z",
+        "practice3": "2024-05-15T14:00:00Z",
         "practice4": "2024-05-16T16:00:00Z",
         "practice5": "2024-05-17T16:00:00Z",
         "practice6": "2024-05-18T12:30:00Z",
         "qualifying1": "2024-05-18T15:00:00Z",
         "practice7": "2024-05-19T16:00:00Z",
-        "qualifying2": "2024-05-19T19:00:00Z",
+        "qualifying2": "2024-05-19T19:05:00Z",
         "practice8": "2024-05-20T17:00:00Z",
         "practice9": "2024-05-24T15:00:00Z",
-        "race": "2024-05-26T15:00:00Z"
+        "race": "2024-05-26T16:38:00Z"
       },
       "tbc": false,
       "round": 6,
@@ -108,9 +107,13 @@
     {
       "name": "Chevrolet Detroit Grand Prix",
       "sessions": {
-        "race": "2024-06-02T16:00:00Z"
+        "practice1": "2024-05-31T19:00:00Z",
+        "practice2": "2024-06-01T13:10:00Z",
+        "qualifying": "2024-06-01T16:15:00Z",
+        "warmup": "2024-06-02T13:30:00Z",
+        "race": "2024-06-02T16:30:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 7,
       "slug": "chevrolet-detroit-grand-prix",
       "localeKey": "chevrolet-detroit-grand-prix",
@@ -120,9 +123,13 @@
     {
       "name": "XPEL Grand Prix at Road America",
       "sessions": {
-        "race": "2024-06-09T19:30:00Z"
+        "practice1": "2024-06-07T20:00:00Z",
+        "practice2": "2024-06-08T15:00:00Z",
+        "qualifying": "2024-06-08T19:15:00Z",
+        "warmup": "2024-06-09T16:15:00Z",
+        "race": "2024-06-09T19:35:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 8,
       "slug": "xpel-grand-prix-at-road-america",
       "localeKey": "xpel-grand-prix-at-road-america",
@@ -154,26 +161,26 @@
       "latitude": 0
     },
     {
-      "name": "Hy-Vee INDYCAR Race Weekend Race 1",
+      "name": "Hy-Vee Homefront 250",
       "sessions": {
         "race": "2024-07-14T00:00:00Z"
       },
       "tbc": true,
       "round": 11,
-      "slug": "hyvee-indycar-race-weekend-race-1",
-      "localeKey": "hyvee-indycar-race-weekend-race-1",
+      "slug": "hyvee-homefront-250",
+      "localeKey": "hyvee-homefront-250",
       "longitude": 0,
       "latitude": 0
     },
     {
-      "name": "Hy-Vee INDYCAR Race Weekend Race 2",
+      "name": "Hy-Vee One Step 250",
       "sessions": {
         "race": "2024-07-14T16:00:00Z"
       },
       "tbc": true,
       "round": 12,
-      "slug": "hyvee-indycar-race-weekend-race-2",
-      "localeKey": "hyvee-indycar-race-weekend-race-2",
+      "slug": "hyvee-one-step-250",
+      "localeKey": "hyvee-one-step-250",
       "longitude": 0,
       "latitude": 0
     },
