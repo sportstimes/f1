@@ -178,11 +178,14 @@ const Race = ({
       var keys = Object.keys(props.item.sessions);
 
       keys.forEach(function (sessionKey, index) {
-        // Tranlate session title or fallback to session key
+        // Translate session title or fallback to session key
+        
+        
+        
         const sessionTitle =
           t(`schedule.${sessionKey}`) != `All.schedule.${sessionKey}`
             ? t(`schedule.${sessionKey}`)
-            : sessionKey;
+            : sessionKey.replace(/./,x=>x.toUpperCase())
 
         const hasOccured = dayjs(props.item.sessions[sessionKey])
           .add(2, 'hours')
