@@ -156,8 +156,8 @@
       "slug": "shanghai-eprix",
       "localeKey": "shanghai-eprix",
       "sessions": {
-        "practice1": "2024-05-24T08:55:00Z",
-        "practice2": "2024-05-24T23:55:00Z",
+        "practice1": "2024-05-24T09:00:00Z",
+        "practice2": "2024-05-25T00:00:00Z",
         "qualifying": "2024-05-25T02:20:00Z",
         "race": "2024-05-25T07:03:00Z"
       }
@@ -171,7 +171,7 @@
       "slug": "shanghai-eprix",
       "localeKey": "shanghai-eprix",
       "sessions": {
-        "practice3": "2024-05-25T23:55:00Z",
+        "practice3": "2024-05-26T00:00:00Z",
         "qualifying": "2024-05-26T02:20:00Z",
         "race": "2024-05-26T07:03:00Z"
       }
