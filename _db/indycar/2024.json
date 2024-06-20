@@ -86,16 +86,16 @@
       "sessions": {
         "practice1": "2024-05-14T13:00:00Z",
         "practice2": "2024-05-14T17:00:00Z",
-        "practice3": "2024-05-15T14:00:00Z",
-        "practice4": "2024-05-16T16:00:00Z",
+        "practice3": "2024-05-15T19:00:00Z",
+        "practice4": "2024-05-16T14:00:00Z",
         "practice5": "2024-05-17T16:00:00Z",
-        "practice6": "2024-05-18T12:30:00Z",
+        "practice6": "2024-05-18T13:00:00Z",
         "qualifying1": "2024-05-18T15:00:00Z",
         "practice7": "2024-05-19T16:00:00Z",
         "qualifying2": "2024-05-19T19:05:00Z",
         "practice8": "2024-05-20T17:00:00Z",
         "practice9": "2024-05-24T15:00:00Z",
-        "race": "2024-05-26T16:38:00Z"
+        "race": "2024-05-26T20:45:00Z"
       },
       "tbc": false,
       "round": 6,
@@ -124,8 +124,8 @@
       "name": "XPEL Grand Prix at Road America",
       "sessions": {
         "practice1": "2024-06-07T20:00:00Z",
-        "practice2": "2024-06-08T15:00:00Z",
-        "qualifying": "2024-06-08T19:15:00Z",
+        "practice2": "2024-06-08T15:10:00Z",
+        "qualifying": "2024-06-08T19:25:00Z",
         "warmup": "2024-06-09T16:15:00Z",
         "race": "2024-06-09T19:35:00Z"
       },
@@ -139,9 +139,13 @@
     {
       "name": "Firestone Grand Prix of Monterey",
       "sessions": {
-        "race": "2024-06-23T22:00:00Z"
+        "practice1": "2024-06-21T21:00:00Z",
+        "practice2": "2024-06-22T17:00:00Z",
+        "qualifying": "2024-06-22T21:15:00Z",
+        "warmup": "2024-06-23T19:00:00Z",
+        "race": "2024-06-23T22:15:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 9,
       "slug": "firestone-grand-prix-of-monterey",
       "localeKey": "firestone-grand-prix-of-monterey",
