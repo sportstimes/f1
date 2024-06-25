@@ -77,7 +77,7 @@ export default async (req, res) => {
 			const response = await fetch(`https://api.bufferapp.com/1/updates/create.json?access_token=${encodeURI(process.env.NEXT_PUBLIC_BUFFER_TOKEN)}`, {
 			  method: 'POST',
 			  headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			  body: `text=${encodeURIComponent(scheduledItem.title)}&profile_ids[]=63ff8ab4a439208bacf17292&profile_ids[]=63ff8acfa439208bacf26e2a&now=1`,
+			  body: `text=${encodeURIComponent(scheduledItem.title)}&profile_ids[]=63ff8ab4a439208bacf17292&profile_ids[]=63ff8acfa439208bacf26e2a&profile_ids[]=667b2a5c7839e9e8795ef3bf&now=1`,
 			});
 			const data = await response.json();
 			
