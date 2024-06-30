@@ -185,8 +185,8 @@
       "slug": "portland-eprix",
       "localeKey": "portland-eprix",
       "sessions": {
-        "practice1": "2024-06-28T23:55:00Z",
-        "practice2": "2024-06-29T14:25:00Z",
+        "practice1": "2024-06-29T00:00:00Z",
+        "practice2": "2024-06-29T14:30:00Z",
         "qualifying": "2024-06-29T16:40:00Z",
         "race": "2024-06-29T21:03:00Z"
       }
@@ -200,7 +200,7 @@
       "slug": "portland-eprix",
       "localeKey": "portland-eprix",
       "sessions": {
-        "practice3": "2024-06-30T14:25:00Z",
+        "practice3": "2024-06-30T14:30:00Z",
         "qualifying": "2024-06-30T16:40:00Z",
         "race": "2024-06-30T21:03:00Z"
       }
