@@ -115,7 +115,7 @@
       "localeKey": "british",
       "sessions": {
         "practice": "2024-07-05T09:00:00Z",
-        "qualifying": "2024-07-05T14:05:00Z",
+        "qualifying": "2024-07-05T14:00:00Z",
         "sprint": "2024-07-06T12:15:00Z",
         "feature": "2024-07-07T08:55:00Z"
       }
@@ -129,10 +129,10 @@
       "slug": "hungarian",
       "localeKey": "hungarian",
       "sessions": {
-        "practice": "2024-07-19T09:55:00Z",
-        "qualifying": "2024-07-19T13:55:00Z",
-        "sprint": "2024-07-20T08:35:00Z",
-        "feature": "2024-07-21T08:40:00Z"
+        "practice": "2024-07-19T09:05:00Z",
+        "qualifying": "2024-07-19T14:00:00Z",
+        "sprint": "2024-07-20T12:15:00Z",
+        "feature": "2024-07-21T08:05:00Z"
       }
     },
     {
