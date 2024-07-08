@@ -155,9 +155,13 @@
     {
       "name": "Honda Indy 200 at Mid-Ohio",
       "sessions": {
-        "race": "2024-07-07T17:30:00Z"
+        "practice1": "2024-07-05T19:20:00Z",
+        "practice2": "2024-07-06T14:50:00Z",
+        "qualifying": "2024-07-06T19:00:00Z",
+        "warmup": "2024-07-07T14:25:00Z",
+        "race": "2024-07-07T17:45:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 10,
       "slug": "honda-indy-200-at-midohio",
       "localeKey": "honda-indy-200-at-midohio",
@@ -167,9 +171,11 @@
     {
       "name": "Hy-Vee Homefront 250",
       "sessions": {
-        "race": "2024-07-14T00:00:00Z"
+        "practice1": "2024-07-12T20:30:00Z",
+        "race1": "2024-07-13T19:45:00Z",
+        "race2": "2024-07-14T00:00:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 11,
       "slug": "hyvee-homefront-250",
       "localeKey": "hyvee-homefront-250",
@@ -179,9 +185,10 @@
     {
       "name": "Hy-Vee One Step 250",
       "sessions": {
-        "race": "2024-07-14T16:00:00Z"
+        "race1": "2024-07-13T19:45:00Z",
+        "race2": "2024-07-14T16:15:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 12,
       "slug": "hyvee-one-step-250",
       "localeKey": "hyvee-one-step-250",
@@ -191,6 +198,10 @@
     {
       "name": "Ontario Honda Dealers Indy Toronto",
       "sessions": {
+        "practice1": "2024-07-19T19:00:00Z",
+        "practice2": "2024-07-20T14:30:00Z",
+        "qualifying": "2024-07-20T18:45:00Z",
+        "warmup": "2024-07-21T14:00:00Z",
         "race": "2024-07-21T17:00:00Z"
       },
       "tbc": true,
@@ -203,9 +214,12 @@
     {
       "name": "Bommarito Automotive Group 500",
       "sessions": {
-        "race": "2024-08-17T22:00:00Z"
+        "practice1": "2024-08-16T17:30:00Z",
+        "qualifying": "2024-08-16T21:00:00Z",
+        "practice2": "2024-08-17T00:30:00Z",
+        "race": "2024-08-17T22:15:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 14,
       "slug": "bommarito-automotive-group-500",
       "localeKey": "bommarito-automotive-group-500",
