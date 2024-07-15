@@ -239,14 +239,7 @@
       "location": "India",
       "track": "Buddh International Circuit",
       "round": 15,
-      "sessions": {
-        "fp1": "2024-09-20T05:15:00Z",
-        "fp2": "2024-09-21T04:10:00Z",
-        "qualifying1": "2024-09-21T05:45:00Z",
-        "qualifying2": "2024-09-21T06:15:00Z",
-        "sprint": "2024-09-21T09:00:00Z",
-        "race": "2024-09-22T08:00:00Z"
-      },
+      "sessions": {},
       "latitude": 40.901192,
       "longitude": -74.723549,
       "slug": "grand-prix-of-india",
