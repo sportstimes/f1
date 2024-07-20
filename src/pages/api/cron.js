@@ -81,7 +81,7 @@ export default async (req, res) => {
 			});
 			const data = await response.json();
 
-			let threadsText = scheduledItem.title.replace('', '#F1Threads')
+			let threadsText = scheduledItem.title.replace('#f1 #formula1', '#F1Threads')
 			
 			const response2 = await fetch(`https://api.bufferapp.com/1/updates/create.json?access_token=${encodeURI(process.env.NEXT_PUBLIC_BUFFER_TOKEN)}`, {
 			  method: 'POST',
