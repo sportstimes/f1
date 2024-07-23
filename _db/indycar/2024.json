@@ -199,12 +199,14 @@
       "name": "Ontario Honda Dealers Indy Toronto",
       "sessions": {
         "practice1": "2024-07-19T19:00:00Z",
-        "practice2": "2024-07-20T14:30:00Z",
+        "practice2": "2024-07-19T19:50:00Z",
+        "practice3": "2024-07-19T20:05:00Z",
+        "practice4": "2024-07-20T14:30:00Z",
         "qualifying": "2024-07-20T18:45:00Z",
         "warmup": "2024-07-21T14:00:00Z",
-        "race": "2024-07-21T17:00:00Z"
+        "race": "2024-07-21T17:30:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 13,
       "slug": "ontario-honda-dealers-indy-toronto",
       "localeKey": "ontario-honda-dealers-indy-toronto",
