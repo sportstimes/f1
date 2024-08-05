@@ -231,9 +231,13 @@
     {
       "name": "BITNILE.COM Grand Prix of Portland",
       "sessions": {
-        "race": "2024-08-25T19:00:00Z"
+        "practice1": "2024-08-23T21:55:00Z",
+        "practice2": "2024-08-24T16:00:00Z",
+        "qualifying": "2024-08-24T19:30:00Z",
+        "practice3": "2024-08-25T00:15:00Z",
+        "race": "2024-08-25T19:30:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 15,
       "slug": "bitnilecom-grand-prix-of-portland",
       "localeKey": "bitnilecom-grand-prix-of-portland",
@@ -267,9 +271,12 @@
     {
       "name": "Big Machine Music City Grand Prix",
       "sessions": {
-        "race": "2024-09-15T19:00:00Z"
+        "practice1": "2024-09-14T15:30:00Z",
+        "qualifying": "2024-09-14T18:45:00Z",
+        "practice2": "2024-09-14T21:45:00Z",
+        "race": "2024-09-15T19:30:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 18,
       "slug": "big-machine-music-city-grand-prix",
       "localeKey": "big-machine-music-city-grand-prix",
