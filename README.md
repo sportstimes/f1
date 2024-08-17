@@ -9,7 +9,7 @@ Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajh
 Graciously hosted by [Vercel](https://vercel.com/?utm_source=sportstimes).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-57-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-58-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -110,6 +110,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/giovanniRodighiero"><img src="https://avatars.githubusercontent.com/u/15871923?v=4?s=100" width="100px;" alt="Giovanni Rodighiero"/><br /><sub><b>Giovanni Rodighiero</b></sub></a><br /><a href="https://github.com/sportstimes/f1/commits?author=giovanniRodighiero" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/brearleyt"><img src="https://avatars.githubusercontent.com/u/74654384?v=4?s=100" width="100px;" alt="brearleyt"/><br /><sub><b>brearleyt</b></sub></a><br /><a href="#translation-brearleyt" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
