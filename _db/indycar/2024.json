@@ -172,8 +172,8 @@
       "name": "Hy-Vee Homefront 250",
       "sessions": {
         "practice1": "2024-07-12T20:30:00Z",
-        "race1": "2024-07-13T19:45:00Z",
-        "race2": "2024-07-14T00:00:00Z"
+        "qualifying": "2024-07-13T19:45:00Z",
+        "race": "2024-07-14T00:00:00Z"
       },
       "tbc": false,
       "round": 11,
@@ -185,8 +185,8 @@
     {
       "name": "Hy-Vee One Step 250",
       "sessions": {
-        "race1": "2024-07-13T19:45:00Z",
-        "race2": "2024-07-14T16:15:00Z"
+        "qualifying": "2024-07-13T19:45:00Z",
+        "race": "2024-07-14T16:15:00Z"
       },
       "tbc": false,
       "round": 12,
@@ -249,8 +249,8 @@
       "sessions": {
         "practice1": "2024-08-30T19:35:00Z",
         "practice2": "2024-08-30T20:30:00Z",
-        "race1": "2024-08-31T18:15:00Z",
-        "race2": "2024-08-31T22:00:00Z"
+        "qualifying": "2024-08-31T18:15:00Z",
+        "race": "2024-08-31T22:00:00Z"
       },
       "tbc": false,
       "round": 16,
@@ -262,8 +262,8 @@
     {
       "name": "Hy-Vee Milwaukee Mile 250 - Race 2",
       "sessions": {
-        "race1": "2024-08-31T18:15:00Z",
-        "race2": "2024-09-01T18:50:00Z"
+        "qualifying": "2024-08-31T18:15:00Z",
+        "race": "2024-09-01T18:50:00Z"
       },
       "tbc": false,
       "round": 17,
