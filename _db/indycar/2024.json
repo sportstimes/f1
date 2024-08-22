@@ -172,8 +172,8 @@
       "name": "Hy-Vee Homefront 250",
       "sessions": {
         "practice1": "2024-07-12T20:30:00Z",
-        "race1": "2024-07-13T19:45:00Z",
-        "race2": "2024-07-14T00:00:00Z"
+        "qualifying": "2024-07-13T19:45:00Z",
+        "race": "2024-07-14T00:00:00Z"
       },
       "tbc": false,
       "round": 11,
@@ -185,8 +185,8 @@
     {
       "name": "Hy-Vee One Step 250",
       "sessions": {
-        "race1": "2024-07-13T19:45:00Z",
-        "race2": "2024-07-14T16:15:00Z"
+        "qualifying": "2024-07-13T19:45:00Z",
+        "race": "2024-07-14T16:15:00Z"
       },
       "tbc": false,
       "round": 12,
@@ -216,8 +216,8 @@
     {
       "name": "Bommarito Automotive Group 500",
       "sessions": {
-        "practice1": "2024-08-16T17:30:00Z",
-        "qualifying": "2024-08-16T21:00:00Z",
+        "practice1": "2024-08-16T16:45:00Z",
+        "qualifying": "2024-08-16T20:20:00Z",
         "practice2": "2024-08-17T00:30:00Z",
         "race": "2024-08-17T22:15:00Z"
       },
@@ -235,7 +235,7 @@
         "practice2": "2024-08-24T16:00:00Z",
         "qualifying": "2024-08-24T19:30:00Z",
         "practice3": "2024-08-25T00:15:00Z",
-        "race": "2024-08-25T19:30:00Z"
+        "race": "2024-08-25T19:20:00Z"
       },
       "tbc": false,
       "round": 15,
@@ -247,9 +247,12 @@
     {
       "name": "Hy-Vee Milwaukee Mile 250 - Race 1",
       "sessions": {
+        "practice1": "2024-08-30T19:35:00Z",
+        "practice2": "2024-08-30T20:30:00Z",
+        "qualifying": "2024-08-31T18:15:00Z",
         "race": "2024-08-31T22:00:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 16,
       "slug": "hyvee-milwaukee-mile-250-race-1",
       "localeKey": "hyvee-milwaukee-mile-250-race-1",
@@ -259,9 +262,10 @@
     {
       "name": "Hy-Vee Milwaukee Mile 250 - Race 2",
       "sessions": {
-        "race": "2024-09-01T18:30:00Z"
+        "qualifying": "2024-08-31T18:15:00Z",
+        "race": "2024-09-01T18:50:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 17,
       "slug": "hyvee-milwaukee-mile-250-race-2",
       "localeKey": "hyvee-milwaukee-mile-250-race-2",
