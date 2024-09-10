@@ -105,9 +105,9 @@
 		"email": "Receba lembretes no seu e-mail",
 		"notifications": "Receber notificações push",
 		"timezonePicker": {
-			"detect": "Detetar"
+			"detect": "Detetar",
 			"showing": "Horários de exibição para",
-			"pick": "Escolha um fuso horário",
+			"pick": "Escolha um fuso horário"
 		},
 		"formatPicker": {
 			"title": "Formato da hora",
@@ -150,11 +150,11 @@
 		"gcalTitle": "Para Google Calendário",
 		"gcalDescription": "Para adicionar este calendário, copie e cole este link no seu Google Calendário",
 		"gcalDescriptionLink": "instruções detalhadas",
-		"gcalNotificationNotice": "O Calendário Google não respeita os lembretes em calendários remotos. As notificações de eventos podem ser configuradas nas definições do calendário depois de este ter sido adicionado."
+		"gcalNotificationNotice": "O Calendário Google não respeita os lembretes em calendários remotos. As notificações de eventos podem ser configuradas nas definições do calendário depois de este ter sido adicionado.",
 		"gcalAddToGoogleCalendar": "Adicionar ao Calendário Google",
 		"icsTitle": "Transferir ficheiro ICS",
 		"icsDescription": "Calendário não atualizável (.ics) para calendários que não suportam a atualização de subscrições.",
-		"icsButton": "Transferir",
+		"icsButton": "Transferir"
 	},
 	"subscribe": {
 		"title": "Subscrever",
