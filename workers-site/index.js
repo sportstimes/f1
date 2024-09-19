@@ -1,13 +1,9 @@
 import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
 
-/**
- * The DEBUG flag will do two things that help during development:
- * 1. we will skip caching on the edge, which makes it easier to
- *    debug.
- * 2. we will return an error message on exception in your Response rather
- *    than the default 404.html page.
- */
-const DEBUG = false
+const DEBUG = false;
+
+// In-memory cache (temporary cache for the life of the worker instance)
+const memoryCache = new Map();
 
 addEventListener('fetch', event => {
   try {
@@ -25,27 +21,27 @@ addEventListener('fetch', event => {
 })
 
 async function handleEvent(event) {
-  const url = new URL(event.request.url)
-  let options = {}
+  const url = new URL(event.request.url);
+  const cacheKey = url.pathname;
+  const cache = caches.default;
 
-  /**
-   * You can add custom logic to how we fetch your assets
-   * by configuring the function `mapRequestToAsset`
-   */
-  // options.mapRequestToAsset = handlePrefix(/^\/docs/)
+  // Check global cache first
+  let cachedResponse = await cache.match(event.request);
+  if (cachedResponse) {
+    return cachedResponse;
+  }
+
+  // Check in-memory cache
+  cachedResponse = getCache(cacheKey);
+  if (cachedResponse) {
+    return cachedResponse;
+  }
 
   try {
-    if (DEBUG) {
-      // customize caching
-      options.cacheControl = {
-        bypassCache: true,
-      };
-    }
-    const page = await getAssetFromKV(event, options);
-
-    // allow headers to be altered
+    const page = await getAssetFromKV(event);
     const response = new Response(page.body, page);
 
+    // Set headers
     response.headers.set("X-XSS-Protection", "1; mode=block");
     response.headers.set("X-Content-Type-Options", "nosniff");
     response.headers.set("X-Frame-Options", "DENY");
@@ -53,22 +49,27 @@ async function handleEvent(event) {
     response.headers.set("Feature-Policy", "none");
     response.headers.set('Cache-Control', 'public, max-age=10800');
 
+    // Cache in both in-memory cache and global cache
+    setCache(cacheKey, response.clone());
+    event.waitUntil(cache.put(event.request, response.clone()));
+
     return response;
-
   } catch (e) {
-    // if an error is thrown try to serve the asset at 404.html
-    if (!DEBUG) {
-      try {
-        let notFoundResponse = await getAssetFromKV(event, {
-          mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/404.html`, req),
-        })
-
-        return new Response(notFoundResponse.body, { ...notFoundResponse, status: 404 })
-      } catch (e) {}
-    }
-
-    return new Response(e.message || e.toString(), { status: 500 })
+    logError(e);  // Log error
+    return new Response(e.message || e.toString(), { status: 500 });
   }
+}
+
+function setCache(key, response) {
+  memoryCache.set(key, { response: response.clone(), timestamp: Date.now() });
+}
+
+function getCache(key) {
+  return memoryCache.get(key)?.response;
+}
+
+function logError(e) {
+  console.error(`Error: ${e.message}`);
 }
 
 /**
