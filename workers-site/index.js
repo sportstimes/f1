@@ -65,7 +65,8 @@ function setCache(key, response) {
 }
 
 function getCache(key) {
-  return memoryCache.get(key)?.response;
+  const cacheEntry = memoryCache.get(key);
+  return cacheEntry ? cacheEntry.response : null;
 }
 
 function logError(e) {
