@@ -114,7 +114,7 @@
 			"12hr": "Formato 12-Horas",
 			"24hr": "Formato 24-Horas"
 		},
-		"button": "Feito"
+		"button": "Confirmar"
 	},
 	"contribute": "Contribua",
 	"languageSelector": "Selecione o idioma",
@@ -184,7 +184,7 @@
 		"title": "Calendário F1",
 		"subtitle": "Corridas, Qualificações e Sessões de Treino",
 		"seo": {
-			"title": "Calendário F1 {year} - Datas e Horas das corridas",
+			"title": "Calendário F1 {year} - Horários e datas das corridas",
 			"description": "Calendário Fórmula 1 para a época de {year} com todos os grandes prémios, treinos e qualificações. Defina a função de lembretes. Todos os fusos-horários. Transfira e subscreva.",
 			"keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
 		},
