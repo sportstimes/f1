@@ -111,8 +111,8 @@
 		},
 		"formatPicker": {
 			"title": "Formato da hora",
-			"12hr": "Formato 12-Horas",
-			"24hr": "Formato 24-Horas"
+			"12hr": "12-Horas",
+			"24hr": "24-Horas"
 		},
 		"button": "Confirmar"
 	},
