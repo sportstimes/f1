@@ -60,7 +60,7 @@ jobs:
     
       - name: Install Dependencies
         run: |
-          npm i @cloudflare/wrangler
+          npm i wrangler
           npm i ics
           npm i dayjs
           
