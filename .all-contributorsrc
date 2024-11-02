@@ -539,6 +539,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "rorylogue",
+      "name": "Rory Logue",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87331957?v=4",
+      "profile": "https://github.com/rorylogue",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
