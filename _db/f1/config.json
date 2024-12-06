@@ -1,30 +1,45 @@
 {
-	"siteKey": "f1",
-	"url": "f1calendar.com",
-	"calendarCDN": "files-f1.motorsportcalendars.com",
-	"calendarOutputYear": 2024,
-	"availableYears": [2018, 2019, 2020, 2021, 2022, 2023, 2024],
-	"sessions": ["fp1", "fp2", "fp3", "qualifying", "sprintQualifying", "sprint", "gp"],
-	"featuredSessions": ["gp"],
-	"collapsedSessions": ["fp1", "fp2", "fp3", "qualifying", "sprintQualifying", "sprint"],
-	"sessionMap": {
-		"fp1":"p1",
-		"fp2":"p2",
-		"fp3":"p3",
-		"qualifying":"qualifying",
-		"sprintQualifying":"sprintQualifying",
-		"sprint":"sprint",
-		"gp":"gp"
-	},
-	"sessionLengths": {
-		"fp1":60,
-		"fp2":60,
-		"fp3":60,
-		"qualifying":60,
-		"sprintQualifying":45,
-		"sprint":30,
-		"gp":120
-	},
-	"supportsEmailReminders": true,
-	"supportsWebPush": true
+  "siteKey": "f1",
+  "url": "f1calendar.com",
+  "calendarCDN": "files-f1.motorsportcalendars.com",
+  "calendarOutputYear": 2024,
+  "availableYears": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "sessions": [
+    "fp1",
+    "fp2",
+    "fp3",
+    "qualifying",
+    "sprintQualifying",
+    "sprint",
+    "gp"
+  ],
+  "featuredSessions": ["gp"],
+  "collapsedSessions": [
+    "fp1",
+    "fp2",
+    "fp3",
+    "qualifying",
+    "sprintQualifying",
+    "sprint"
+  ],
+  "sessionMap": {
+    "fp1": "p1",
+    "fp2": "p2",
+    "fp3": "p3",
+    "qualifying": "qualifying",
+    "sprintQualifying": "sprintQualifying",
+    "sprint": "sprint",
+    "gp": "gp"
+  },
+  "sessionLengths": {
+    "fp1": 60,
+    "fp2": 60,
+    "fp3": 60,
+    "qualifying": 60,
+    "sprintQualifying": 45,
+    "sprint": 30,
+    "gp": 120
+  },
+  "supportsEmailReminders": true,
+  "supportsWebPush": true
 }
