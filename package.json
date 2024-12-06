@@ -43,7 +43,7 @@
     "next-seo": "^6.0.0",
     "nextjs": "0.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^19.0.0",
     "terser-webpack-plugin": "^5.2.4",
     "uuid": "^10.0.0"
   },
