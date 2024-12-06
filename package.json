@@ -42,7 +42,7 @@
     "next-plausible": "^3.11.3",
     "next-seo": "^6.0.0",
     "nextjs": "0.0.3",
-    "react": "^18.2.0",
+    "react": "^19.0.0",
     "react-dom": "^18.2.0",
     "terser-webpack-plugin": "^5.2.4",
     "uuid": "^10.0.0"
@@ -52,7 +52,7 @@
     "@babel/preset-react": "^7.13.13",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.0",
-    "@types/react": "^18.2.58",
+    "@types/react": "^19.0.0",
     "autoprefixer": "^10.4.15",
     "next-translate-plugin": "^2.6.1",
     "postcss": "^8.4.28",
