@@ -7,14 +7,14 @@ on:
         type: choice
         description: Which site?
         options:
-        - f1
-        - f2
-        - f3
-        - fe
-        - indycar
-        - motogp
-        - extremee
-        - f1-academy
+          - f1
+          - f2
+          - f3
+          - fe
+          - indycar
+          - motogp
+          - extremee
+          - f1-academy
   workflow_call:
     inputs:
       site:
@@ -31,20 +31,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     env:
-      SITE: ${{ github.event.inputs.site || inputs.site }}
-    
+      SITE: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.site || inputs.site }}
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '22'
-  
+
       - name: Site Selection
         run: |
-          echo "${{ env.SITE }}"
-          
+          echo "Selected Site: ${{ env.SITE }}"
+
       - name: Cache node modules
         uses: actions/cache@v2
         env:
@@ -57,13 +57,13 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-    
+
       - name: Install Dependencies
         run: |
           npm i wrangler
           npm i ics
           npm i dayjs
-          
+
       - name: Generate Specific Calendars
         run: |
           sudo node build/generate-calendars.js ${{env.SITE}}
@@ -74,6 +74,6 @@ jobs:
           echo "api_token=\"${CF_API_TOKEN}\"" > ~/.wrangler/config/default.toml
           yarn wrangler publish --env ${{env.SITE}}
         env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
