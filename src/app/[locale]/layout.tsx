@@ -11,12 +11,8 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
-  metadataBase: process.env.VERCEL_URL
-    ? new URL(process.env.VERCEL_URL)
-    : new URL(`http://localhost:${process.env.PORT ?? 3000}`),
-  alternates: {
-    canonical: './',
-  },
+  title: '',
+  description: '',
 };
 
 const leagueSpartan = League_Spartan({
