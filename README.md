@@ -9,7 +9,7 @@ Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajh
 Graciously hosted by [Vercel](https://vercel.com/?utm_source=sportstimes).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-60-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-61-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -113,6 +113,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/brearleyt"><img src="https://avatars.githubusercontent.com/u/74654384?v=4?s=100" width="100px;" alt="brearleyt"/><br /><sub><b>brearleyt</b></sub></a><br /><a href="#translation-brearleyt" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Blackspirits"><img src="https://avatars.githubusercontent.com/u/11444904?v=4?s=100" width="100px;" alt="Blackspirits"/><br /><sub><b>Blackspirits</b></sub></a><br /><a href="#translation-Blackspirits" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/rorylogue"><img src="https://avatars.githubusercontent.com/u/87331957?v=4?s=100" width="100px;" alt="Rory Logue"/><br /><sub><b>Rory Logue</b></sub></a><br /><a href="#content-rorylogue" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/oarmstrong"><img src="https://avatars.githubusercontent.com/u/187195?v=4?s=100" width="100px;" alt="oarmstrong"/><br /><sub><b>oarmstrong</b></sub></a><br /><a href="#content-oarmstrong" title="Content">🖋</a></td>
     </tr>
   </tbody>
 </table>
