@@ -1,26 +1,26 @@
 {
-	"siteKey": "fe",
-	"url": "formulaecal.com",
-	"calendarCDN": "files-fe.motorsportcalendars.com",
-	"calendarOutputYear": 2024,
-	"availableYears": [2021, 2022, 2023, 2024],
-	"sessions": ["practice1", "practice2", "practice3", "qualifying", "race"],
-	"featuredSessions": ["race"],
-	"collapsedSessions": ["practice1", "practice2", "practice3", "qualifying"],
-	"sessionMap": {
-		"practice1": "p1",
-		"practice2": "p2",
-		"practice3": "p3",
-		"qualifying": "qualifying",
-		"race": "race"
-	},
-	"sessionLengths": {
-		"practice1": 45,
-		"practice2": 30,
-		"practice3": 45,
-		"qualifying": 60,
-		"race": 57
-	},
-	"supportsEmailReminders": false,
-	"notice": "Races marked with TBC are showing placeholder times. Calendar will be updated as details are confirmed."
+  "siteKey": "fe",
+  "url": "formulaecal.com",
+  "calendarCDN": "files-fe.motorsportcalendars.com",
+  "calendarOutputYear": 2025,
+  "availableYears": [2021, 2022, 2023, 2024, 2025],
+  "sessions": ["practice1", "practice2", "practice3", "qualifying", "race"],
+  "featuredSessions": ["race"],
+  "collapsedSessions": ["practice1", "practice2", "practice3", "qualifying"],
+  "sessionMap": {
+    "practice1": "p1",
+    "practice2": "p2",
+    "practice3": "p3",
+    "qualifying": "qualifying",
+    "race": "race"
+  },
+  "sessionLengths": {
+    "practice1": 45,
+    "practice2": 30,
+    "practice3": 45,
+    "qualifying": 60,
+    "race": 57
+  },
+  "supportsEmailReminders": false,
+  "notice": "Races marked with TBC are showing placeholder times. Calendar will be updated as details are confirmed."
 }
