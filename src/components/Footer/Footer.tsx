@@ -55,9 +55,9 @@ const Footer = () => {
               <a
                 href="https://bsky.app/profile/f1calendar.com"
                 rel="me"
-                class="text-gray-400 hover:text-gray-500"
+                className="text-gray-400 hover:text-gray-500"
               >
-                <span class="sr-only">Bluesky</span>
+                <span className="sr-only">Bluesky</span>
 
                 <svg
                   className="h-6 w-6"
@@ -73,13 +73,13 @@ const Footer = () => {
               <a
                 href="https://www.threads.net/@f1calendarapp"
                 rel="me"
-                class="text-gray-400 hover:text-gray-500"
+                className="text-gray-400 hover:text-gray-500"
               >
-                <span class="sr-only">Threads</span>
+                <span className="sr-only">Threads</span>
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="currentColor"
                   viewBox="0 0 512 512"
                 >
@@ -156,7 +156,7 @@ const Footer = () => {
               &copy; {new Date().getFullYear()}{' '}
               <a
                 href="https://andydev.co.uk"
-                rel="author developer"
+                rel="author"
                 className="text-gray-300"
               >
                 Andrew Yates
@@ -164,7 +164,7 @@ const Footer = () => {
               ,&nbsp;
               <a
                 href="https://andyhiggs.uk/"
-                rel="author designer"
+                rel="author"
                 className="text-gray-300"
               >
                 Andy Higgs
@@ -172,7 +172,7 @@ const Footer = () => {
               ,&nbsp;
               <a
                 href="https://sijobling.com"
-                rel="author developer"
+                rel="author"
                 className="text-gray-300"
               >
                 Si Jobling
@@ -200,29 +200,29 @@ const Footer = () => {
 
       {showHomeScreenPrompt && (
         <div
-          class="relative z-99999"
+          className="relative z-99999"
           aria-labelledby="modal-title"
           role="dialog"
           aria-modal="true"
         >
-          <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
+          <div className="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
 
-          <div class="fixed inset-0 z-10 overflow-y-auto">
-            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-              <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
-                <div class="sm:flex sm:items-start">
-                  <div class="mt-2 text-center sm:mt-0 sm:text-left">
-                    <div class="mt-2">
-                      <p class="text-sm text-gray-500 mb-4">
+          <div className="fixed inset-0 z-10 overflow-y-auto">
+            <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+              <div className="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
+                <div className="sm:flex sm:items-start">
+                  <div className="mt-2 text-center sm:mt-0 sm:text-left">
+                    <div className="mt-2">
+                      <p className="text-sm text-gray-500 mb-4">
                         {t(`footer.homescreen`)}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div class="mt-5 sm:mt-4">
+                <div className="mt-5 sm:mt-4">
                   <button
                     type="button"
-                    class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm"
+                    className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm"
                     onClick={dismissPrompt}
                   >
                     Got it

@@ -1,35 +1,41 @@
-import {useTranslations} from 'next-intl';
-import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
-import Layout from "components/Layout/Layout";
-import Card from "components/Card/Card";
-import Link from "next/link";
+import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import Layout from 'components/Layout/Layout';
+import Card from 'components/Card/Card';
+import Link from 'next/link';
 
 export async function generateMetadata() {
   const t = await getTranslations('All');
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
   return {
-    title: `Years - ${t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {year: currentYear})}`,
-    description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {year: currentYear}),
-    keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {year: currentYear}),
-  }
+    title: `Years - ${t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, { year: currentYear })}`,
+    description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
+      year: currentYear,
+    }),
+    keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
+      year: currentYear,
+    }),
+  };
 }
 
 export async function generateStaticParams() {
   return [];
 }
 
-export default function Years({children, params: {locale}}) {
-  unstable_setRequestLocale(locale);
+export default async function Years({ children, params }) {
+  const locale = (await params).locale;
 
-  const t = useTranslations('All');
-  
-  const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
-  
-  const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
-  
+  setRequestLocale(locale);
+
+  const t = await getTranslations('All');
+
+  const config = require(
+    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+  );
+
   let availableYears = config.availableYears;
-  
+
   const yearItems = [];
   for (let year in availableYears) {
     yearItems.push(
@@ -37,18 +43,16 @@ export default function Years({children, params: {locale}}) {
         <Link href={`year/${config.availableYears[year]}`}>
           {availableYears[year]}
         </Link>
-      </li>
+      </li>,
     );
   }
 
   return (
     <Layout>
-      <h3 className="text-xl mb-4">
-        {t("years.title")}
-      </h3>
+      <h3 className="text-xl mb-4">{t('years.title')}</h3>
       <Card>
         <ul>{yearItems}</ul>
       </Card>
     </Layout>
-  )
+  );
 }

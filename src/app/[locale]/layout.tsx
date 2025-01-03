@@ -7,8 +7,8 @@ import PlausibleProvider from 'next-plausible';
 import Script from 'next/script';
 import { UserContextProvider } from 'components/UserContext';
 import { League_Spartan } from 'next/font/google';
-import { NextIntlClientProvider, useMessages } from 'next-intl';
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: '',
@@ -56,14 +56,14 @@ const locales = [
   'zh-HK',
 ];
 
-// export function generatZ
+export default async function RootLayout({ children, params }) {
+  const { locale } = await params;
 
-export default function RootLayout({ children, params: { locale } }) {
   if (!locales.includes(locale as any)) notFound();
 
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
 
-  const messages = useMessages();
+  const messages = await getMessages();
 
   return (
     <PlausibleProvider>
