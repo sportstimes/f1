@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Layout from 'components/Layout/Layout';
 import Card from 'components/Card/Card';
 import Link from 'next/link';
@@ -12,8 +12,10 @@ export interface Props {
 }
 
 export async function generateMetadata({
-  params: { year },
+  params,
 }: Omit<Props, 'children'>): Promise<Metadata> {
+  const year = (await params).year;
+
   const t = await getTranslations('All');
 
   return {
@@ -42,21 +44,22 @@ export async function generateStaticParams() {
   return yearItems;
 }
 
-export default function Year({ params }: Props) {
+export default async function Year({ children, params }) {
+  const { locale, year } = await params;
+
+  setRequestLocale(locale);
+
+  const t = await getTranslations('All');
+
   const config = require(
     `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   let availableYears = config.availableYears;
-  if (!availableYears.includes(parseInt(params.year))) {
+  if (!availableYears.includes(parseInt(year))) {
     notFound();
   }
 
-  unstable_setRequestLocale(params.locale);
-
-  const t = useTranslations('All');
-
-  const year = params.year;
   const data = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${year}.json`);
 
   if (data.races) {
