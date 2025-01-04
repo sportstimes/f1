@@ -15,7 +15,7 @@ export interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { timezone, locale } = (await params).timezone;
+  const { timezone, locale } = await params;
 
   const { locales } = i18nConfig;
   const currentLocale = locale || 'en';
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
   return {
-    title: `${timezone} - ${t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, { year: currentYear })}`,
+    title: `${timezone} - ${t(`${process.env.NEXT_PUBLIC_SITE_KEY}.title`)} ${currentYear}`,
     description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
       year: currentYear,
     }),

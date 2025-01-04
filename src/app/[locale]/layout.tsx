@@ -8,12 +8,98 @@ import Script from 'next/script';
 import { UserContextProvider } from 'components/UserContext';
 import { League_Spartan } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import {
+  getTranslations,
+  getMessages,
+  setRequestLocale,
+} from 'next-intl/server';
+import i18nConfig from '../../i18nConfig.js';
 
-export const metadata: Metadata = {
-  title: '',
-  description: '',
-};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const t = await getTranslations('All');
+  const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
+  const config = require(
+    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+  );
+
+  const { locales } = i18nConfig;
+
+  const { locale } = await params;
+  const currentLocale = locale || 'en';
+
+  // Helper function to create language alternates
+  const createLanguageAlternates = (path: string = '') => {
+    const languages: { [key: string]: string } = {};
+
+    locales.forEach((locale: string) => {
+      // For the default locale (assuming it's 'en'), don't add the locale prefix
+      const localePath = locale === 'en' ? path : `/${locale}${path}`;
+      languages[locale] = `https://${config.url}${localePath}`;
+    });
+
+    languages['x-default'] = `https://${config.url}`;
+
+    return languages;
+  };
+
+  let ogDescription = t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
+    year: currentYear,
+  });
+
+  // Truncate if it exceeds 65 characters
+  if (ogDescription.length > 65) {
+    ogDescription = `${ogDescription.slice(0, 62)}...`;
+  }
+
+  // Generate canonical URL based on current locale
+  const canonicalPath = currentLocale === 'en' ? '' : `/${currentLocale}`;
+  const canonical = `https://${config.url}${canonicalPath}`;
+
+  return {
+    title: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
+      year: currentYear,
+    }),
+    description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
+      year: currentYear,
+    }),
+    keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
+      year: currentYear,
+    }),
+    alternates: {
+      canonical,
+      languages: createLanguageAlternates(),
+    },
+    manifest: '/manifest.json',
+    twitter: {
+      card: 'summary_large_image',
+      creator: '@f1cal',
+      creatorId: '1467726470533754880',
+      images: [`https://${config.url}/share.png`],
+    },
+    openGraph: {
+      title: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
+        year: currentYear,
+      }),
+      description: ogDescription,
+      url: `https://${config.url}/`,
+      siteName: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
+        year: currentYear,
+      }),
+      images: [`https://${config.url}/share.png`],
+      type: 'website',
+    },
+    appleWebApp: {
+      title: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
+        year: currentYear,
+      }),
+      statusBarStyle: 'black-translucent',
+      capable: true,
+    },
+    other: {
+      'twitter:site': '@f1cal',
+    },
+  };
+}
 
 const leagueSpartan = League_Spartan({
   display: 'swap',
