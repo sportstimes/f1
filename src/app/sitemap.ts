@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import i18nConfig from '../i18nConfig.js';
+import ct from 'countries-and-timezones';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const config = require(
@@ -69,6 +70,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.5,
       alternates: createAlternates('/subscribe'),
+    });
+  }
+
+  // Timezone Pages
+  const timezoneItems = [];
+
+  let zoneslist = Object.keys(ct.getAllTimezones());
+
+  for (let zone in zoneslist) {
+    let timezoneName = zoneslist[zone];
+    if (timezoneName == 'Europe/Kiev') {
+      timezoneName = 'Europe/Kyiv';
+    }
+
+    let timezoneSlug = timezoneName.replace(/\//g, '-');
+
+    items.push({
+      url: `https://${config.url}/timezone/${timezoneSlug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.3,
+      alternates: createAlternates(`/timezone/${timezoneSlug}`),
+    });
+  }
+
+  // Year Pages
+  let availableYears = config.availableYears;
+
+  for (let year in availableYears) {
+    items.push({
+      url: `https://${config.url}/year/${availableYears[year]}`,
+      lastModified: new Date(),
+      changeFrequency:
+        availableYears[year] == availableYears[availableYears.length - 1]
+          ? 'weekly'
+          : 'yearly',
+      priority: 0.3,
+      alternates: createAlternates(`/year/${availableYears[year]}`),
     });
   }
 

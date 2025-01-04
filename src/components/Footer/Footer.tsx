@@ -8,6 +8,7 @@ import YearSelector from '../../components/YearSelector/YearSelector';
 //import {usePlausible} from "next-plausible";
 import EmailIcon from '../Icons/EmailIcon';
 import SupportButton from '../SupportButton/SupportButton';
+import Link from 'next/link';
 
 const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
@@ -181,6 +182,12 @@ const Footer = () => {
 
             <p className="text-base text-gray-400 text-xsm px-2 md:px-0">
               {t(`${process.env.NEXT_PUBLIC_SITE_KEY}.footnote`)}
+            </p>
+
+            <p className="text-base text-gray-400 text-xsm px-2 md:px-0">
+              <Link href={`years`}>Years</Link>
+              {' • '}
+              <Link href={`timezones`}>Timezones</Link>
             </p>
           </div>
 

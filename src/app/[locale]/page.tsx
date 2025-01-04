@@ -15,7 +15,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   );
 
   const { locales } = i18nConfig;
-  const currentLocale = params.locale || 'en';
+
+  const { locale } = await params;
+  const currentLocale = locale || 'en';
 
   // Helper function to create language alternates
   const createLanguageAlternates = (path: string = '') => {
@@ -26,6 +28,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       const localePath = locale === 'en' ? path : `/${locale}${path}`;
       languages[locale] = `https://${config.url}${localePath}`;
     });
+
+    languages['x-default'] = `https://${config.url}`;
 
     return languages;
   };
