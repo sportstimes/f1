@@ -27,6 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages[locale] = `https://${config.url}${localePath}`;
     });
 
+    languages['x-default'] = `https://${config.url}`;
+
     return languages;
   };
 
