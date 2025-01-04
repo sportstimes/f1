@@ -9,7 +9,7 @@ export async function generateMetadata() {
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
   return {
-    title: `Years - ${t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, { year: currentYear })}`,
+    title: `Years - ${t(`${process.env.NEXT_PUBLIC_SITE_KEY}.title`)}`,
     description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
       year: currentYear,
     }),
