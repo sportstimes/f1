@@ -73,6 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
+  // Timezone Pages
   const timezoneItems = [];
 
   let zoneslist = Object.keys(ct.getAllTimezones());
@@ -89,8 +90,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `https://${config.url}/timezone/${timezoneSlug}`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.4,
+      priority: 0.3,
       alternates: createAlternates(`/timezone/${timezoneSlug}`),
+    });
+  }
+
+  // Year Pages
+  let availableYears = config.availableYears;
+
+  for (let year in availableYears) {
+    items.push({
+      url: `https://${config.url}/year/${availableYears[year]}`,
+      lastModified: new Date(),
+      changeFrequency:
+        availableYears[year] == availableYears[availableYears.length - 1]
+          ? 'weekly'
+          : 'yearly',
+      priority: 0.3,
+      alternates: createAlternates(`/year/${availableYears[year]}`),
     });
   }
 
