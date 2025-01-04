@@ -8,15 +8,39 @@ import OptionsBar from 'components/OptionsBar/OptionsBar';
 import Races from 'components/Races/Races';
 import RaceSchemas from 'components/RaceSchemas/RaceSchemas';
 import ct from 'countries-and-timezones';
+import i18nConfig from '../../../../i18nConfig.js';
 
 export interface Props {
   params: { timezone: string; locale: string };
 }
 
-export async function generateMetadata({
-  params,
-}: Omit<Props, 'children'>): Promise<Metadata> {
-  const timezone = (await params).timezone;
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { timezone, locale } = (await params).timezone;
+
+  const { locales } = i18nConfig;
+  const currentLocale = locale || 'en';
+
+  // Helper function to create language alternates
+  const createLanguageAlternates = (path: string = '') => {
+    const languages: { [key: string]: string } = {};
+
+    locales.forEach((locale: string) => {
+      // For the default locale (assuming it's 'en'), don't add the locale prefix
+      const localePath = locale === 'en' ? path : `/${locale}${path}`;
+      languages[locale] =
+        `https://${config.url}${localePath}/timezone/${timezone}`;
+    });
+
+    languages['x-default'] = `https://${config.url}/timezone/${timezone}`;
+
+    return languages;
+  };
+
+  const config = require(
+    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+  );
+  const canonicalPath = currentLocale === 'en' ? '' : `/${currentLocale}`;
+  const canonical = `https://${config.url}${canonicalPath}/timezone/${timezone}`;
 
   const t = await getTranslations('All');
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
@@ -29,6 +53,10 @@ export async function generateMetadata({
     keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
       year: currentYear,
     }),
+    alternates: {
+      canonical,
+      languages: createLanguageAlternates(),
+    },
   };
 }
 

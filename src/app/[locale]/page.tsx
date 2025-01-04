@@ -15,7 +15,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   );
 
   const { locales } = i18nConfig;
-  const currentLocale = params.locale || 'en';
+
+  const { locale } = await params;
+  const currentLocale = locale || 'en';
 
   // Helper function to create language alternates
   const createLanguageAlternates = (path: string = '') => {
