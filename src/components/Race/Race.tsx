@@ -98,16 +98,18 @@ const Race = ({
             <Toggle collapsed={collapsed} />
           </div>
         </td>
-        <th className={`flex p-4`} id={`${item.slug}-header`}>
-          <span className={`${titleRowClasses(race)} flex`}>
-            <span className={titleRowTextClasses(race)}>{raceTitle}</span>
+        <th
+          className={`flex p-4 flex justify-between lg:pr-8`}
+          id={`${item.slug}-header`}
+        >
+          <div className={`${titleRowClasses(race)}`}>
+            <div className={titleRowTextClasses(race)}>{raceTitle}</div>
+          </div>
+          {isNextRace && !item.tbc && !item.canceled && <NextBadge />}
 
-            {isNextRace && !item.tbc && !item.canceled && <NextBadge />}
+          {item.tbc && <TBCBadge />}
 
-            {item.tbc && <TBCBadge />}
-
-            {item.canceled && <CanceledBadge />}
-          </span>
+          {item.canceled && <CanceledBadge />}
         </th>
         {!hasMultipleFeaturedEvents ? (
           <>
@@ -179,13 +181,11 @@ const Race = ({
 
       keys.forEach(function (sessionKey, index) {
         // Translate session title or fallback to session key
-        
-        
-        
+
         const sessionTitle =
           t(`schedule.${sessionKey}`) != `All.schedule.${sessionKey}`
             ? t(`schedule.${sessionKey}`)
-            : sessionKey.replace(/./,x=>x.toUpperCase())
+            : sessionKey.replace(/./, (x) => x.toUpperCase());
 
         const hasOccured = dayjs(props.item.sessions[sessionKey])
           .add(2, 'hours')
