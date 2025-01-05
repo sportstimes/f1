@@ -1,253 +1,256 @@
 {
-"All": {
+  "All": {
     "date": "Ημερομηνία",
     "time": "Ώρα",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
     "badges": {
-        "tbc": "TBC",
-        "tbc_title": "Προς επιβεβαίωση",
-        "tickets": "Εισιτήρια",
-        "canceled": "Ακυρώθηκε",
-        "next": "ΕΠΟΜΕΝΟ"
+      "tbc": "TBC",
+      "tbc_title": "Προς επιβεβαίωση",
+      "tickets": "Εισιτήρια",
+      "canceled": "Ακυρώθηκε",
+      "next": "ΕΠΟΜΕΝΟ"
     },
     "schedule": {
-        "fp1": "Ελεύθερα Δοκιμαστικά 1",
-        "fp2": "Ελεύθερα Δοκιμαστικά 2",
-        "fp3": "Ελεύθερα Δοκιμαστικά 3",
-        "shakedown": "Δοκιμές",
-        "practice1": "Δοκιμαστικά 1",
-        "practice2": "Δοκιμαστικά 2",
-        "practice3": "Δοκιμαστικά 3",
-        "practice": "Δοκιμαστικά",
-        "qualifying": "Κατατακτήριες",
-        "qualifying1": "Κατατακτήριες Δοκιμές 1",
-        "qualifying2": "Κατατακτήριες Δοκιμές 2",
-        "sprintQualifying": "Σπριντ Κατατακτήριες",
-        "sprint": "Sprint",
-        "semifinal": "Ημιτελικός",
-        "warmup": "Προθέρμανση",
-        "race": "Αγώνας",
-        "race1": "Αγώνας 1",
-        "race2": "Αγώνας 2",
-        "race3": "Αγώνας 3",
-        "gp": "Γκραν Πρι",
-        "sprint1": "Σπριντ 1",
-        "sprint2": "Σπριντ 2",
-        "feature": "Κύριος",
-        "fp4": "Free Practice 4",
-        "other": "Αλλα"
+      "fp1": "Ελεύθερα Δοκιμαστικά 1",
+      "fp2": "Ελεύθερα Δοκιμαστικά 2",
+      "fp3": "Ελεύθερα Δοκιμαστικά 3",
+      "shakedown": "Δοκιμές",
+      "practice1": "Δοκιμαστικά 1",
+      "practice2": "Δοκιμαστικά 2",
+      "practice3": "Δοκιμαστικά 3",
+      "practice": "Δοκιμαστικά",
+      "qualifying": "Κατατακτήριες",
+      "qualifying1": "Κατατακτήριες Δοκιμές 1",
+      "qualifying2": "Κατατακτήριες Δοκιμές 2",
+      "sprintQualifying": "Σπριντ Κατατακτήριες",
+      "sprint": "Sprint",
+      "semifinal": "Ημιτελικός",
+      "warmup": "Προθέρμανση",
+      "race": "Αγώνας",
+      "race1": "Αγώνας 1",
+      "race2": "Αγώνας 2",
+      "race3": "Αγώνας 3",
+      "gp": "Γκραν Πρι",
+      "sprint1": "Σπριντ 1",
+      "sprint2": "Σπριντ 2",
+      "feature": "Κύριος",
+      "fp4": "Free Practice 4",
+      "other": "Αλλα"
     },
     "races": {
-        "austrian-grand-prix": "Γκραν Πρι Αυστρίας",
-        "steiermark-grand-prix": "Γκραν Πρι Στυρίας (Αυστρίας)",
-        "hungarian-grand-prix": "Γκραν Πρι Ουγγαρίας",
-        "british-grand-prix": "Γκραν Πρι Μεγάλης Βρετανίας",
-        "anniversary-british-grand-prix": "Γκραν Πρι 70ης Επετείου (Μεγάλης Βρετανίας)",
-        "spanish-grand-prix": "Γκραν Πρι Ισπανίας",
-        "belgian-grand-prix": "Γκραν Πρι Βελγίου",
-        "italian-grand-prix": "Γκραν Πρι Ιταλίας",
-        "australian-grand-prix": "Γκραν Πρι Αυστραλίας",
-        "bahrain-grand-prix": "Γκραν Πρι Μπαχρέιν",
-        "vietnamese-grand-prix": "Γκραν Πρι Βιετνάμ",
-        "dutch-grand-prix": "Γκραν Πρι Ολλανδίας",
-        "monaco-grand-prix": "Γκραν Πρι Μονακό",
-        "azerbaijan-grand-prix": "Γκραν Πρι Αζερμπαϊτζάν",
-        "canadian-grand-prix": "Γκραν Πρι Καναδά",
-        "french-grand-prix": "Γκραν Πρι Γαλλίας",
-        "singapore-grand-prix": "Γκραν Πρι Σινγκαπούρης",
-        "russian-grand-prix": "Γκραν Πρι Ρωσιας",
-        "japanese-grand-prix": "Γκραν Πρι Ιαπωνίας",
-        "us-grand-prix": "Γκραν Πρι Ηνωμένων Πολιτειών",
-        "mexico-grand-prix": "Γκραν Πρι της Πόλης του Μεξικού",
-        "brazilian-grand-prix": "Γκραν Πρι Βραζιλίας",
-        "abu-dhabi-grand-prix": "Γκραν Πρι Άμπου Ντάμπι",
-        "tuscan-grand-prix": "Γκραν Πρι Τοσκάνης",
-        "eifel-grand-prix": "Γκραν Πρι Άιφελ",
-        "portuguese-grand-prix": "Γκραν Πρι Πορτογαλίας",
-        "emilia-romagna-grand-prix": "Γκραν Πρι Εμίλια Ρομάνα",
-        "sakhir-grand-prix": "Γκραν Πρι Σακχίρ (Μπαχρέιν)",
-        "turkish-grand-prix": "Γκραν Πρι Τουρκίας",
-        "saudi-arabia-grand-prix": "Γκραν Πρι Σαουδικής Αραβίας",
-        "qatar-grand-prix": "Γκραν Πρι Κατάρ",
-        "miami-grand-prix": "Γκραν Πρι Μαϊάμι",
-        "chinese-grand-prix" : "Γκραν Πρι Κίνας",
-        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
+      "austrian-grand-prix": "Γκραν Πρι Αυστρίας",
+      "steiermark-grand-prix": "Γκραν Πρι Στυρίας (Αυστρίας)",
+      "hungarian-grand-prix": "Γκραν Πρι Ουγγαρίας",
+      "british-grand-prix": "Γκραν Πρι Μεγάλης Βρετανίας",
+      "anniversary-british-grand-prix": "Γκραν Πρι 70ης Επετείου (Μεγάλης Βρετανίας)",
+      "spanish-grand-prix": "Γκραν Πρι Ισπανίας",
+      "belgian-grand-prix": "Γκραν Πρι Βελγίου",
+      "italian-grand-prix": "Γκραν Πρι Ιταλίας",
+      "australian-grand-prix": "Γκραν Πρι Αυστραλίας",
+      "bahrain-grand-prix": "Γκραν Πρι Μπαχρέιν",
+      "vietnamese-grand-prix": "Γκραν Πρι Βιετνάμ",
+      "dutch-grand-prix": "Γκραν Πρι Ολλανδίας",
+      "monaco-grand-prix": "Γκραν Πρι Μονακό",
+      "azerbaijan-grand-prix": "Γκραν Πρι Αζερμπαϊτζάν",
+      "canadian-grand-prix": "Γκραν Πρι Καναδά",
+      "french-grand-prix": "Γκραν Πρι Γαλλίας",
+      "singapore-grand-prix": "Γκραν Πρι Σινγκαπούρης",
+      "russian-grand-prix": "Γκραν Πρι Ρωσιας",
+      "japanese-grand-prix": "Γκραν Πρι Ιαπωνίας",
+      "us-grand-prix": "Γκραν Πρι Ηνωμένων Πολιτειών",
+      "mexico-grand-prix": "Γκραν Πρι της Πόλης του Μεξικού",
+      "brazilian-grand-prix": "Γκραν Πρι Βραζιλίας",
+      "abu-dhabi-grand-prix": "Γκραν Πρι Άμπου Ντάμπι",
+      "tuscan-grand-prix": "Γκραν Πρι Τοσκάνης",
+      "eifel-grand-prix": "Γκραν Πρι Άιφελ",
+      "portuguese-grand-prix": "Γκραν Πρι Πορτογαλίας",
+      "emilia-romagna-grand-prix": "Γκραν Πρι Εμίλια Ρομάνα",
+      "sakhir-grand-prix": "Γκραν Πρι Σακχίρ (Μπαχρέιν)",
+      "turkish-grand-prix": "Γκραν Πρι Τουρκίας",
+      "saudi-arabia-grand-prix": "Γκραν Πρι Σαουδικής Αραβίας",
+      "qatar-grand-prix": "Γκραν Πρι Κατάρ",
+      "miami-grand-prix": "Γκραν Πρι Μαϊάμι",
+      "chinese-grand-prix": "Γκραν Πρι Κίνας",
+      "las-vegas-grand-prix": "Las Vegas Grand Prix"
     },
     "options": {
-        "calendar": "Προσθήκη ημερομηνιών και ωρών αγώνων στο Ημερολόγιό σας",
-        "email": "Να λαμβάνω ειδοποιήσεις μέσω email",
-        "timezonePicker": {
-            "showing": "Αναφέρονται ώρες",
-            "pick": "Επιλογή ζώνης ώρας",
-            "detect": "Detect"
-        },
-        "formatPicker": {
-            "title": "Μορφή Ώρας",
-            "12hr": "Μορφή 12 Ωρών",
-            "24hr": "Μορφή 24 Ωρών"
-        },
-        "button": "Τέλος"
+      "calendar": "Προσθήκη ημερομηνιών και ωρών αγώνων στο Ημερολόγιό σας",
+      "email": "Να λαμβάνω ειδοποιήσεις μέσω email",
+      "notifications": "Receive Push Notifications",
+      "timezonePicker": {
+        "showing": "Αναφέρονται ώρες",
+        "pick": "Επιλογή ζώνης ώρας",
+        "detect": "Detect"
+      },
+      "formatPicker": {
+        "title": "Μορφή Ώρας",
+        "12hr": "Μορφή 12 Ωρών",
+        "24hr": "Μορφή 24 Ωρών"
+      },
+      "button": "Τέλος"
     },
     "contribute": "Συνεισφέρετε",
     "yearSelector": "Year",
     "languageSelector": "Επιλογή Γλώσσας",
     "javascript": "Ιστοσελίδα λειτουργεί καλύτερα με ενεργοποιημένο το Javascript",
     "footer": {
-        "coffee": "Υποστηρίξτε μας αγοράζοντας μας έναν καφέ",
-        "twitter": "Είμαστε στο Twitter",
-        "github": "Ανοιχτός κώδικας από το GitHub",
-        "issue": "Βρήκατε πρόβλημα; Αναφορά",
-        "links": {
-            "wereOn": "Είμαστε στα",
-            "openSourcedOn": "Ανοιχτός κώδικας από το",
-            "spottedIssue": "Βρήκατε πρόβλημα;",
-            "spottedReport": "Αναφορά"
-        },
-        "homescreen":"Add to your Home Screen and get an App like experience."
+      "coffee": "Υποστηρίξτε μας αγοράζοντας μας έναν καφέ",
+      "twitter": "Είμαστε στο Twitter",
+      "github": "Ανοιχτός κώδικας από το GitHub",
+      "issue": "Βρήκατε πρόβλημα; Αναφορά",
+      "links": {
+        "wereOn": "Είμαστε στα",
+        "openSourcedOn": "Ανοιχτός κώδικας από το",
+        "spottedIssue": "Βρήκατε πρόβλημα;",
+        "spottedReport": "Αναφορά"
+      },
+      "homescreen": "Add to your Home Screen and get an App like experience."
     },
     "form": {
-        "title": "Δημιουργία Ημερολογίου",
-        "description": "Αρχικά επιλέξτε ποιες περιόδους θα θέλετε να προσθέσετε στο ημερολόγιο σας:",
-        "reminder": "Υπενθύμιση",
-        "reminderContinued": "Λεπτά πριν κάθε περίοδο του ημερολογίου",
-        "button": "Λήψη Ημερολογίου",
-        "buttonSubmitted": "Έγινε υποβολή",
-        "nonOptionsSelected": "Επιλέξτε τουλάχιστον μία περίοδο για το ημερολόγιό σας",
-        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
+      "title": "Δημιουργία Ημερολογίου",
+      "description": "Αρχικά επιλέξτε ποιες περιόδους θα θέλετε να προσθέσετε στο ημερολόγιο σας:",
+      "reminder": "Υπενθύμιση",
+      "reminderContinued": "Λεπτά πριν κάθε περίοδο του ημερολογίου",
+      "button": "Λήψη Ημερολογίου",
+      "buttonSubmitted": "Έγινε υποβολή",
+      "nonOptionsSelected": "Επιλέξτε τουλάχιστον μία περίοδο για το ημερολόγιό σας",
+      "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
-        "title": "Επιλογή Τύπου Ημερολογίου",
-        "webcalTitle": "Για Κινητό ή Υπολογιστή",
-        "webcalDescription": "Αυτόματη ενημέρωση του ημερολογίου για εφαρμογές όπως το Outlook και το Ημερολόγιο macOS",
-        "webcalButton": "Λήψη",
-        "gcalTitle": "Για το Ημερολόγιο Google",
-        "gcalDescription": "Για την προσθήκη αυτού του ημερολογίου κάντε αντιγραφή και επικόλληση αυτο το url στο Ημερολόγιο Google",
-        "gcalDescriptionLink": "Λεπτομερείς οδηγίες",
-        "gcalAddToGoogleCalendar": "Add to Google Calendar",
-		"icsTitle": "Κατεβάστε το αρχείο ICS",
-        "icsDescription": "Ημερολόγιο χωρίς την δυνατότητα ενημέρωσης (.ics) για ημερολόγια που δεν υποστηρίζουμε ενημερώσεις",
-        "icsButton": "Λήξη",
-        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added."
+      "title": "Επιλογή Τύπου Ημερολογίου",
+      "webcalTitle": "Για Κινητό ή Υπολογιστή",
+      "webcalDescription": "Αυτόματη ενημέρωση του ημερολογίου για εφαρμογές όπως το Outlook και το Ημερολόγιο macOS",
+      "webcalButton": "Λήψη",
+      "gcalTitle": "Για το Ημερολόγιο Google",
+      "gcalDescription": "Για την προσθήκη αυτού του ημερολογίου κάντε αντιγραφή και επικόλληση αυτο το url στο Ημερολόγιο Google",
+      "gcalDescriptionLink": "Λεπτομερείς οδηγίες",
+      "gcalAddToGoogleCalendar": "Add to Google Calendar",
+      "icsTitle": "Κατεβάστε το αρχείο ICS",
+      "icsDescription": "Ημερολόγιο χωρίς την δυνατότητα ενημέρωσης (.ics) για ημερολόγια που δεν υποστηρίζουμε ενημερώσεις",
+      "icsButton": "Λήξη",
+      "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added."
     },
     "subscribe": {
-        "title": "Συνδρομή",
-        "description": "Να λαμβάνετε υπενθύμιση μέσω email πριν από κάθε αγωνιστικό Σαββατοκύριακο",
-        "label": "Διεύθυνση email",
-        "button": "Συνδρομή"
+      "title": "Συνδρομή",
+      "description": "Να λαμβάνετε υπενθύμιση μέσω email πριν από κάθε αγωνιστικό Σαββατοκύριακο",
+      "label": "Διεύθυνση email",
+      "button": "Συνδρομή"
     },
     "notifications": {
-        "title": "Notifications",
-        "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
-        "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
-        "button": "Save",
-        "buttonSubmitted": "Saved",
-        "permissions": {
-            "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
-            "button": "Allow Notifications",
-            "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
-        }
+      "title": "Notifications",
+      "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
+      "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
+      "button": "Save",
+      "buttonSubmitted": "Saved",
+      "permissions": {
+        "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
+        "button": "Allow Notifications",
+        "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+      }
     },
     "timezones": {
-        "title": "Επιλογή ζώνης ώρας"
+      "title": "Επιλογή ζώνης ώρας"
     },
     "years": {
-        "title": "Επιλογή έτους"
+      "title": "Επιλογή έτους"
     },
     "f1": {
-        "title": "Ημερολόγιο F1",
-        "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
-        "seo": {
-            "title": "Ημερολόγιο F1 {year} - Ώρες και Ημερομηνίες Αγώνων της Formula 1",
-            "description": "Ημερολόγιο για την σεζόν του {year} της Formula 1 με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητ ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-            "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
-        },
-        "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+      "title": "Ημερολόγιο F1",
+      "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
+      "seo": {
+        "title": "Ημερολόγιο F1 {year} - Ώρες και Ημερομηνίες Αγώνων της Formula 1",
+        "description": "Ημερολόγιο για την σεζόν του {year} της Formula 1 με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητ ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
+      },
+      "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     },
     "f2": {
-        "title": "Ημερολόγιο F2",
-        "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
-        "seo": {
-            "title": "Ημερολόγιο F2 {year} - Ώρες και Ημερομηνίες Αγώνων της Formula 2",
-            "description": "Ημερολόγιο για την σεζόν του {year} της Formula 2 με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-            "keywords": "συμβ. υποκατάστασης"
-        },
-        "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+      "title": "Ημερολόγιο F2",
+      "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
+      "seo": {
+        "title": "Ημερολόγιο F2 {year} - Ώρες και Ημερομηνίες Αγώνων της Formula 2",
+        "description": "Ημερολόγιο για την σεζόν του {year} της Formula 2 με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
+        "keywords": "συμβ. υποκατάστασης"
+      },
+      "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
     },
     "f3": {
-        "title": "Ημερολόγιο F3",
-        "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
-        "seo": {
-            "title": "Ημερολόγιο F3 {year} - Ώρες και Ημερομηνίες Αγώνων της Formula 3",
-            "description": "Ημερολόγιο για την σεζόν του {year} της Formula 3 με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-            "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
-        },
-        "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
+      "title": "Ημερολόγιο F3",
+      "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
+      "seo": {
+        "title": "Ημερολόγιο F3 {year} - Ώρες και Ημερομηνίες Αγώνων της Formula 3",
+        "description": "Ημερολόγιο για την σεζόν του {year} της Formula 3 με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
+        "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
+      },
+      "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
     },
     "fe": {
-        "title": "Ημερολόγιο Formula E",
-        "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
-        "seo": {
-            "title": "Ημερολόγιο Formula e {year} - Ώρες και Ημερομηνίες Αγώνων της Formula e",
-            "description": "Ημερολόγιο για την σεζόν του {year} της Formula e με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των e-prix. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-            "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
-        },
-        "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
+      "title": "Ημερολόγιο Formula E",
+      "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
+      "seo": {
+        "title": "Ημερολόγιο Formula e {year} - Ώρες και Ημερομηνίες Αγώνων της Formula e",
+        "description": "Ημερολόγιο για την σεζόν του {year} της Formula e με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των e-prix. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
+        "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
+      },
+      "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
     },
     "indycar": {
-        "title": "Ημερολόγιο IndyCar",
-        "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
-        "seo": {
-            "title": "Ημερολόγιο Indycar {year} - Ώρες και Ημερομηνίες Αγώνων",
-            "description": "Ημερολόγιο για την σεζόν του {year} του IndyCar με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {year}"
-        },
-        "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+      "title": "Ημερολόγιο IndyCar",
+      "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
+      "seo": {
+        "title": "Ημερολόγιο Indycar {year} - Ώρες και Ημερομηνίες Αγώνων",
+        "description": "Ημερολόγιο για την σεζόν του {year} του IndyCar με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
+        "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {year}"
+      },
+      "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
     },
     "motogp": {
-        "title": "Ημερολόγιο MotoGP",
-        "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
-        "seo": {
-            "title": "Ημερολόγιο MotoGP {year} - Ώρες και Ημερομηνίες Αγώνων",
-            "description": "Ημερολόγιο για την σεζόν του {year} του MotoGP με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
-        },
-        "footnote": "σημείωση"
+      "title": "Ημερολόγιο MotoGP",
+      "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
+      "seo": {
+        "title": "Ημερολόγιο MotoGP {year} - Ώρες και Ημερομηνίες Αγώνων",
+        "description": "Ημερολόγιο για την σεζόν του {year} του MotoGP με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
+        "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
+      },
+      "footnote": "σημείωση"
     },
     "wseries": {
-        "title": "Ημερολόγιο W Series",
-        "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
-        "seo": {
-            "title": "Ημερολόγιο W Series {year} - Ώρες και Ημερομηνίες Αγώνων",
-            "description": "Ημερολόγιο για την σεζόν του {year} του W Series με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-            "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": "W Series Calendar is not affiliated with W Series."
+      "title": "Ημερολόγιο W Series",
+      "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
+      "seo": {
+        "title": "Ημερολόγιο W Series {year} - Ώρες και Ημερομηνίες Αγώνων",
+        "description": "Ημερολόγιο για την σεζόν του {year} του W Series με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
+        "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": "W Series Calendar is not affiliated with W Series."
     },
     "extremee": {
-        "title": "Ημερολόγιο Extreme E",
-        "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
-        "seo": {
-            "title": "Ημερολόγιο Extreme E {year} - Ώρες και Ημερομηνίες Αγώνων",
-            "description": "Ημερολόγιο για την σεζόν του {year} του Extreme E με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": "σημείωση"
+      "title": "Ημερολόγιο Extreme E",
+      "subtitle": "Αγώνες, Κατατακτήριες και Ελεύθερα Δοκιμαστικά",
+      "seo": {
+        "title": "Ημερολόγιο Extreme E {year} - Ώρες και Ημερομηνίες Αγώνων",
+        "description": "Ημερολόγιο για την σεζόν του {year} του Extreme E με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
+        "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": "σημείωση"
     },
     "event": "γεγονός",
     "notice": {
-        "text": "κείμενο",
-        "link": "σύνδεσμος"
+      "text": "κείμενο",
+      "link": "σύνδεσμος"
     },
     "showPreviousRaces": "Προβολή Προηγ. Αγώνων",
     "hidePreviousRaces": "Προβολή Επόμ. Αγώνων",
     "f1-academy": {
-        "title": "F1 Academy Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
-        "seo": {
-            "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
-            "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+      "title": "F1 Academy Calendar",
+      "subtitle": "Races, Qualifying & Practice Sessions",
+      "seo": {
+        "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
+        "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }
-}
+  }
 }

@@ -1,252 +1,255 @@
 {
-"All": {
-	"date": "日付",
-	"time": "時刻",
-	"badges": {
-		"tbc": "未定",
-		"tbc_title": "未定",
-		"tickets": "チケット",
-		"canceled": "中止",
-		"next": "次"
-	},
-	"schedule": {
-		"fp1": "フリープラクティス1",
-		"fp2": "フリープラクティス2",
-		"fp3": "フリープラクティス3",
-		"shakedown": "シェイクダウン1",
-		"practice1": "プラクティス1",
-		"practice2": "プラクティス2",
-		"practice3": "プラクティス3",
-		"practice": "プラクティス",
-		"qualifying": "予選",
-		"qualifying1": "予選1",
-		"qualifying2": "予選2",
-		"sprintQualifying": "スプリント予選",
-		"sprint": "スプリント",
-		"semifinal": "準決勝",
-		"warmup": "ウォームアップ",
-		"race": "決勝",
-		"race1": "レース1",
-		"race2": "レース2",
-		"race3": "レース3",
-		"gp": "グランプリ",
-		"sprint1": "スプリントレース1",
-		"sprint2": "スプリントレース2",
-		"feature": "フューチャーレース",
-		"fp4": "フリープラクティス4",
-        "other": "他の"
-	},
-	"races": {
-		"austrian-grand-prix": "オーストリアGP",
-		"steiermark-grand-prix": "シュタイアーマルクGP",
-		"hungarian-grand-prix": "ハンガリーGP",
-		"british-grand-prix": "イギリスGP",
-		"anniversary-british-grand-prix": "70周年記念GP",
-		"spanish-grand-prix": "スペインGP",
-		"belgian-grand-prix": "ベルギーGP",
-		"italian-grand-prix": "イタリアGP",
-		"australian-grand-prix": "オーストラリアGP",
-		"bahrain-grand-prix": "バーレーンGP",
-		"vietnamese-grand-prix": "ベトナムGP",
-		"dutch-grand-prix": "オランダGP",
-		"monaco-grand-prix": "モナコGP",
-		"azerbaijan-grand-prix": "アゼルバイジャンGP",
-		"canadian-grand-prix": "カナダGP",
-		"french-grand-prix": "フランスGP",
-		"singapore-grand-prix": "シンガポールGP",
-		"russian-grand-prix": "ロシアGP",
-		"japanese-grand-prix": "日本GP",
-		"us-grand-prix": "アメリカGP",
-		"mexico-grand-prix": "メキシコGP",
-		"brazilian-grand-prix": "ブラジルGP",
-		"abu-dhabi-grand-prix": "アブダビGP",
-		"tuscan-grand-prix": "トスカーナGP",
-		"eifel-grand-prix": "アイフェルGP",
-		"portuguese-grand-prix": "ポルトガルGP",
-		"emilia-romagna-grand-prix": "エミリア・ロマーニャGP",
-		"sakhir-grand-prix": "サヒールGP",
-		"turkish-grand-prix": "トルコGP",
-		"saudi-arabia-grand-prix": "サウジアラビアGP",
-		"qatar-grand-prix": "カタールGP",
-		"miami-grand-prix": "マイアミGP",
-		"chinese-grand-prix" : "中国GP",
-		"las-vegas-grand-prix" : "Las Vegas Grand Prix"
-	},
-	"options": {
-		"calendar": "開催日程をカレンダーに追加",
-		"email": "メール通知を受信",
-		"timezonePicker": {
-			"showing": "表示中のタイムゾーン:",
-			"pick": "タイムゾーンを選択",
-			"detect": "自動判定"
-		},
-		"formatPicker": {
-			"title": "時間の書式",
-			"12hr": "12時間表示",
-			"24hr": "24時間表示"
-		},
-		"button": "完了"
-	},
-	"contribute": "協力する",
-	"languageSelector": "言語を選択",
-	"javascript": "サイト動作のためJavascript有効を推奨",
-	"footer": {
-		"coffee": "コーヒーをごちそうしていただけると励みになります",
-		"twitter": "Twitterやってます",
-		"github": "GitHubでソース公開中",
-		"issue": "問題を見つけたら報告お願いします",
-		"links": {
-			"wereOn": "やってます",
-			"openSourcedOn": "ソース公開中",
-			"spottedIssue": "問題を見つけたら",
-			"spottedReport": "報告"
-		},
-		"homescreen":"Add to your Home Screen and get an App like experience."
-	},
-	"form": {
-		"title": "カレンダー生成",
-		"description": "まずはカレンダーに追加したいセッションを選んでください。",
-		"reminder": "シーズンカレンダーにある各イベントの",
-		"reminderContinued": "分前に通知を行います。",
-		"button": "カレンダーを取得",
-		"buttonSubmitted": "送信済み",
-		"nonOptionsSelected": "少なくとも1つはセッションを選んでください。",
-		"attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
-	},
-	"download": {
-		"title": "カレンダーの種類を選択",
-		"webcalTitle": "モバイルとデスクトップアプリ用",
-		"webcalDescription": "OutlookやMacOSカレンダーなどのアプリでカレンダーを自動更新。",
-		"webcalButton": "取得",
-		"gcalTitle": "Googleカレンダー用",
-		"gcalDescription": "このカレンダーを追加するには、下記URLをコピペしてください。",
-		"gcalDescriptionLink": "詳細な説明",
-		"gcalAddToGoogleCalendar": "Add to Google Calendar",
-		"icsTitle": "ICSファイルをダウンロード",
-		"icsDescription": "購読の更新を処理できないカレンダー用の非更新カレンダー（.ics）です。",
-		"icsButton": "ダウンロード",
-		"gcalNotificationNotice": "Googleカレンダーでは外部カレンダーのリマインダーは反映されません。イベントの通知は追加後に、設定できます。"
-	},
-	"subscribe": {
-		"title": "購読",
-		"description": "レースがある週末は、事前にメール通知を受け取る。",
-		"label": "メールアドレス",
-		"button": "購読"
-	},
-	"notifications": {
-		"title": "Notifications",
-		"description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
-		"statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
-		"button": "Save",
-		"buttonSubmitted": "Saved",
-		"permissions": {
-			"prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
-			"button": "Allow Notifications",
-			"denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
-		}
-	},
-	"timezones": {
-		"title": "タイムゾーンを選択"
-	},
-	"years": {
-		"title": "年を選択"
-	},
-	"f1": {
-		"title": "F1カレンダー",
-		"subtitle": "レース、予選、プラクティス",
-		"seo": {
-			"title": "F1カレンダー {year} フォーミュラ1レーススケジュール",
-			"description": "{year}年のF1カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "F1, フォーミュラ1, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
-		},
-		"footnote": "Formula One, Formula 1, F1 & Grand PrixはFormula One Licensing BVの商標です。"
-	},
-	"f2": {
-		"title": "F2カレンダー",
-		"subtitle": "レース、予選、プラクティス",
-		"seo": {
-			"title": "F2カレンダー {year} - フォーミュラ2レーススケジュール",
-			"description": "{year}年のF2カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "プレースホルダー"
-		},
-		"footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 はFIAの商標です。"
-	},
-	"f3": {
-		"title": "F3カレンダー",
-		"subtitle": "レース、予選、プラクティス",
-		"seo": {
-			"title": "F3カレンダー {year} - フォーミュラ3レーススケジュール",
-			"description": "{year}年のF3カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "F3, フォーミュラ3, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
-		},
-		"footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 はFIAの商標です。"
-	},
-	"fe": {
-		"title": "フォーミュラEカレンダー",
-		"subtitle": "レース、予選、プラクティス",
-		"seo": {
-			"title": "フォーミュラEカレンダー {year} - フォーミュラEレーススケジュール",
-			"description": "{year}年のフォーミュラEカレンダー。全e-Prixのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "FE, フォーミュラE, レース時間, レース, 通知, アラーム, e-Prix, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
-		},
-		"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix はFIAの商標です。"
-	},
-	"indycar": {
-		"title": "インディカー・カレンダー",
-		"subtitle": "レース、予選、プラクティス",
-		"seo": {
-			"title": "インディカー・カレンダー {year} - レーススケジュール",
-			"description": "{year}年のインディカーカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "インディカー, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
-		},
-		"footnote": "IndyCarは、Brickyard Trademarks, Inc.の商標です。"
-	},
-	"motogp": {
-		"title": "MotoGPカレンダー",
-		"subtitle": "レース、予選、プラクティス",
-		"seo": {
-			"title": "MotoGPカレンダー {year} - レーススケジュール",
-			"description": "{year}年のMotoGPカレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "MotoGP, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
-		},
-		"footnote": "脚注"
-	},
-	"wseries": {
-		"title": "Wシリーズカレンダー",
-		"subtitle": "レース、予選、プラクティス",
-		"seo": {
-			"title": "Wシリーズカレンダー {year} - レーススケジュール",
-			"description": "{year}年のWシリーズカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "wseries, w-series, Wシリーズ, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
-		},
-		"footnote": "W Series Calendar is not affiliated with W Series."
-	},
-	"extremee": {
-		"title": "Extreme Eカレンダー",
-		"subtitle": "レース、予選、プラクティス",
-		"seo": {
-			"title": "Extreme Eカレンダー {year} - Extreme Eレーススケジュール",
-			"description": "{year}年のExtreme Eカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
-			"keywords": "Extreme E, レース時間, レース, 通知, アラーム, x-Prix, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
-		},
-		"footnote": "脚注"
-	},
-	"event": "Formula 1グランプリのイベント",
-	"notice": {
-		"text": "文章",
-		"link": "リンク"
-	},
-	"showPreviousRaces": "過去のレースを表示",
-	"hidePreviousRaces": "過去のレースを非表示",
-	"f1-academy": {
-		"title": "F1 Academy Calendar",
-		"subtitle": "Races, Qualifying & Practice Sessions",
-		"seo": {
-			"title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
-			"description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-			"keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-		},
-		"footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
-	}
-}
+  "All": {
+    "date": "日付",
+    "time": "時刻",
+    "showPreviousRaces": "Show Previous Races",
+    "hidePreviousRaces": "Hide Previous Races",
+    "badges": {
+      "tbc": "未定",
+      "tbc_title": "未定",
+      "tickets": "チケット",
+      "canceled": "中止",
+      "next": "次"
+    },
+    "schedule": {
+      "fp1": "フリープラクティス1",
+      "fp2": "フリープラクティス2",
+      "fp3": "フリープラクティス3",
+      "shakedown": "シェイクダウン1",
+      "practice1": "プラクティス1",
+      "practice2": "プラクティス2",
+      "practice3": "プラクティス3",
+      "practice": "プラクティス",
+      "qualifying": "予選",
+      "qualifying1": "予選1",
+      "qualifying2": "予選2",
+      "sprintQualifying": "スプリント予選",
+      "sprint": "スプリント",
+      "semifinal": "準決勝",
+      "warmup": "ウォームアップ",
+      "race": "決勝",
+      "race1": "レース1",
+      "race2": "レース2",
+      "race3": "レース3",
+      "gp": "グランプリ",
+      "sprint1": "スプリントレース1",
+      "sprint2": "スプリントレース2",
+      "feature": "フューチャーレース",
+      "fp4": "フリープラクティス4",
+      "other": "他の"
+    },
+    "races": {
+      "austrian-grand-prix": "オーストリアGP",
+      "steiermark-grand-prix": "シュタイアーマルクGP",
+      "hungarian-grand-prix": "ハンガリーGP",
+      "british-grand-prix": "イギリスGP",
+      "anniversary-british-grand-prix": "70周年記念GP",
+      "spanish-grand-prix": "スペインGP",
+      "belgian-grand-prix": "ベルギーGP",
+      "italian-grand-prix": "イタリアGP",
+      "australian-grand-prix": "オーストラリアGP",
+      "bahrain-grand-prix": "バーレーンGP",
+      "vietnamese-grand-prix": "ベトナムGP",
+      "dutch-grand-prix": "オランダGP",
+      "monaco-grand-prix": "モナコGP",
+      "azerbaijan-grand-prix": "アゼルバイジャンGP",
+      "canadian-grand-prix": "カナダGP",
+      "french-grand-prix": "フランスGP",
+      "singapore-grand-prix": "シンガポールGP",
+      "russian-grand-prix": "ロシアGP",
+      "japanese-grand-prix": "日本GP",
+      "us-grand-prix": "アメリカGP",
+      "mexico-grand-prix": "メキシコGP",
+      "brazilian-grand-prix": "ブラジルGP",
+      "abu-dhabi-grand-prix": "アブダビGP",
+      "tuscan-grand-prix": "トスカーナGP",
+      "eifel-grand-prix": "アイフェルGP",
+      "portuguese-grand-prix": "ポルトガルGP",
+      "emilia-romagna-grand-prix": "エミリア・ロマーニャGP",
+      "sakhir-grand-prix": "サヒールGP",
+      "turkish-grand-prix": "トルコGP",
+      "saudi-arabia-grand-prix": "サウジアラビアGP",
+      "qatar-grand-prix": "カタールGP",
+      "miami-grand-prix": "マイアミGP",
+      "chinese-grand-prix": "中国GP",
+      "las-vegas-grand-prix": "Las Vegas Grand Prix"
+    },
+    "options": {
+      "calendar": "開催日程をカレンダーに追加",
+      "email": "メール通知を受信",
+      "notifications": "Receive Push Notifications",
+      "timezonePicker": {
+        "showing": "表示中のタイムゾーン:",
+        "pick": "タイムゾーンを選択",
+        "detect": "自動判定"
+      },
+      "formatPicker": {
+        "title": "時間の書式",
+        "12hr": "12時間表示",
+        "24hr": "24時間表示"
+      },
+      "button": "完了"
+    },
+    "contribute": "協力する",
+    "languageSelector": "言語を選択",
+    "javascript": "サイト動作のためJavascript有効を推奨",
+    "footer": {
+      "coffee": "コーヒーをごちそうしていただけると励みになります",
+      "twitter": "Twitterやってます",
+      "github": "GitHubでソース公開中",
+      "issue": "問題を見つけたら報告お願いします",
+      "links": {
+        "wereOn": "やってます",
+        "openSourcedOn": "ソース公開中",
+        "spottedIssue": "問題を見つけたら",
+        "spottedReport": "報告"
+      },
+      "homescreen": "Add to your Home Screen and get an App like experience."
+    },
+    "form": {
+      "title": "カレンダー生成",
+      "description": "まずはカレンダーに追加したいセッションを選んでください。",
+      "reminder": "シーズンカレンダーにある各イベントの",
+      "reminderContinued": "分前に通知を行います。",
+      "button": "カレンダーを取得",
+      "buttonSubmitted": "送信済み",
+      "nonOptionsSelected": "少なくとも1つはセッションを選んでください。",
+      "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
+    },
+    "download": {
+      "title": "カレンダーの種類を選択",
+      "webcalTitle": "モバイルとデスクトップアプリ用",
+      "webcalDescription": "OutlookやMacOSカレンダーなどのアプリでカレンダーを自動更新。",
+      "webcalButton": "取得",
+      "gcalTitle": "Googleカレンダー用",
+      "gcalDescription": "このカレンダーを追加するには、下記URLをコピペしてください。",
+      "gcalDescriptionLink": "詳細な説明",
+      "gcalAddToGoogleCalendar": "Add to Google Calendar",
+      "icsTitle": "ICSファイルをダウンロード",
+      "icsDescription": "購読の更新を処理できないカレンダー用の非更新カレンダー（.ics）です。",
+      "icsButton": "ダウンロード",
+      "gcalNotificationNotice": "Googleカレンダーでは外部カレンダーのリマインダーは反映されません。イベントの通知は追加後に、設定できます。"
+    },
+    "subscribe": {
+      "title": "購読",
+      "description": "レースがある週末は、事前にメール通知を受け取る。",
+      "label": "メールアドレス",
+      "button": "購読"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
+      "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
+      "button": "Save",
+      "buttonSubmitted": "Saved",
+      "permissions": {
+        "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
+        "button": "Allow Notifications",
+        "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+      }
+    },
+    "timezones": {
+      "title": "タイムゾーンを選択"
+    },
+    "years": {
+      "title": "年を選択"
+    },
+    "f1": {
+      "title": "F1カレンダー",
+      "subtitle": "レース、予選、プラクティス",
+      "seo": {
+        "title": "F1カレンダー {year} フォーミュラ1レーススケジュール",
+        "description": "{year}年のF1カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+        "keywords": "F1, フォーミュラ1, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
+      },
+      "footnote": "Formula One, Formula 1, F1 & Grand PrixはFormula One Licensing BVの商標です。"
+    },
+    "f2": {
+      "title": "F2カレンダー",
+      "subtitle": "レース、予選、プラクティス",
+      "seo": {
+        "title": "F2カレンダー {year} - フォーミュラ2レーススケジュール",
+        "description": "{year}年のF2カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+        "keywords": "プレースホルダー"
+      },
+      "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 はFIAの商標です。"
+    },
+    "f3": {
+      "title": "F3カレンダー",
+      "subtitle": "レース、予選、プラクティス",
+      "seo": {
+        "title": "F3カレンダー {year} - フォーミュラ3レーススケジュール",
+        "description": "{year}年のF3カレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+        "keywords": "F3, フォーミュラ3, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
+      },
+      "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 はFIAの商標です。"
+    },
+    "fe": {
+      "title": "フォーミュラEカレンダー",
+      "subtitle": "レース、予選、プラクティス",
+      "seo": {
+        "title": "フォーミュラEカレンダー {year} - フォーミュラEレーススケジュール",
+        "description": "{year}年のフォーミュラEカレンダー。全e-Prixのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+        "keywords": "FE, フォーミュラE, レース時間, レース, 通知, アラーム, e-Prix, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
+      },
+      "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix はFIAの商標です。"
+    },
+    "indycar": {
+      "title": "インディカー・カレンダー",
+      "subtitle": "レース、予選、プラクティス",
+      "seo": {
+        "title": "インディカー・カレンダー {year} - レーススケジュール",
+        "description": "{year}年のインディカーカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+        "keywords": "インディカー, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
+      },
+      "footnote": "IndyCarは、Brickyard Trademarks, Inc.の商標です。"
+    },
+    "motogp": {
+      "title": "MotoGPカレンダー",
+      "subtitle": "レース、予選、プラクティス",
+      "seo": {
+        "title": "MotoGPカレンダー {year} - レーススケジュール",
+        "description": "{year}年のMotoGPカレンダー。全GPのレース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+        "keywords": "MotoGP, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
+      },
+      "footnote": "脚注"
+    },
+    "wseries": {
+      "title": "Wシリーズカレンダー",
+      "subtitle": "レース、予選、プラクティス",
+      "seo": {
+        "title": "Wシリーズカレンダー {year} - レーススケジュール",
+        "description": "{year}年のWシリーズカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+        "keywords": "wseries, w-series, Wシリーズ, レース時間, レース, 通知, アラーム, グランプリ, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
+      },
+      "footnote": "W Series Calendar is not affiliated with W Series."
+    },
+    "extremee": {
+      "title": "Extreme Eカレンダー",
+      "subtitle": "レース、予選、プラクティス",
+      "seo": {
+        "title": "Extreme Eカレンダー {year} - Extreme Eレーススケジュール",
+        "description": "{year}年のExtreme Eカレンダー。全レース、プラクティス、予選。リマインダー機能、タイムゾーン対応。ダウンロードまたは購読が可能。",
+        "keywords": "Extreme E, レース時間, レース, 通知, アラーム, x-Prix, カレンダー, 日付, スタート時刻, 予選, 練習, ロンドン, ヨーロッパ, {year}"
+      },
+      "footnote": "脚注"
+    },
+    "event": "Formula 1グランプリのイベント",
+    "notice": {
+      "text": "文章",
+      "link": "リンク"
+    },
+    "showPreviousRaces": "過去のレースを表示",
+    "hidePreviousRaces": "過去のレースを非表示",
+    "f1-academy": {
+      "title": "F1 Academy Calendar",
+      "subtitle": "Races, Qualifying & Practice Sessions",
+      "seo": {
+        "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
+        "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+    }
+  }
 }

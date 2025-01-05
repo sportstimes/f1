@@ -1,248 +1,249 @@
 {
-"All": {
+  "All": {
     "date": "Dátum",
     "time": "Idő",
     "showPreviousRaces": "Show Previous Races",
     "hidePreviousRaces": "Hide Previous Races",
     "badges": {
-        "tbc": "Nem megerősített",
-        "tbc_title": "Nem megerősített",
-        "tickets": "Jegyek",
-        "canceled": "Törölve",
-        "next": "KÖVETKEZŐ"
+      "tbc": "Nem megerősített",
+      "tbc_title": "Nem megerősített",
+      "tickets": "Jegyek",
+      "canceled": "Törölve",
+      "next": "KÖVETKEZŐ"
     },
     "schedule": {
-        "fp1": "1. szabadedzés",
-        "fp2": "2. szabadedzés",
-        "fp3": "3. szabadedzés",
-        "fp4": "4. szabadedzés",
-        "shakedown": "Shakedown",
-        "practice1": "1. edzés",
-        "practice2": "2. edzés",
-        "practice3": "3. edzés",
-        "practice": "Edzés",
-        "qualifying": "Időmérő",
-        "qualifying1": "1. Időmérő",
-        "qualifying2": "2. Időmérő",
-        "sprintQualifying": "Sprint Időmérő",
-        "sprint": "Sprintfutam",
-        "semifinal": "Semi Final",
-        "warmup": "Warmup",
-        "race": "Futam",
-        "race1": "1. futam",
-        "race2": "2. Futam",
-        "race3": "3. Futam",
-        "gp": "Nagydíj",
-        "sprint1": "1. sprint futam",
-        "sprint2": "2. sprint futam",
-        "feature": "Betétfutam",
-        "other": "Egyéb"
+      "fp1": "1. szabadedzés",
+      "fp2": "2. szabadedzés",
+      "fp3": "3. szabadedzés",
+      "fp4": "4. szabadedzés",
+      "shakedown": "Shakedown",
+      "practice1": "1. edzés",
+      "practice2": "2. edzés",
+      "practice3": "3. edzés",
+      "practice": "Edzés",
+      "qualifying": "Időmérő",
+      "qualifying1": "1. Időmérő",
+      "qualifying2": "2. Időmérő",
+      "sprintQualifying": "Sprint Időmérő",
+      "sprint": "Sprintfutam",
+      "semifinal": "Semi Final",
+      "warmup": "Warmup",
+      "race": "Futam",
+      "race1": "1. futam",
+      "race2": "2. Futam",
+      "race3": "3. Futam",
+      "gp": "Nagydíj",
+      "sprint1": "1. sprint futam",
+      "sprint2": "2. sprint futam",
+      "feature": "Betétfutam",
+      "other": "Egyéb"
     },
     "races": {
-        "austrian-grand-prix": "Osztrák Nagydíj",
-        "steiermark-grand-prix": "Stájer (Osztrák) Nagydíj",
-        "hungarian-grand-prix": "Magyar Nagydíj",
-        "british-grand-prix": "Brit Nagydíj",
-        "anniversary-british-grand-prix": "70. Évforduló (Brit) Nagydíja",
-        "spanish-grand-prix": "Spanyol Nagydíj",
-        "belgian-grand-prix": "Belga Nagydíj",
-        "italian-grand-prix": "Olasz Nagydíj",
-        "australian-grand-prix": "Ausztrál Nagydíj",
-        "bahrain-grand-prix": "Bahreini Nagydíj",
-        "vietnamese-grand-prix": "Vietnámi Nagydíj",
-        "dutch-grand-prix": "Holland Nagydíj",
-        "monaco-grand-prix": "Monacói Nagydíj",
-        "azerbaijan-grand-prix": "Azeri Nagydíj",
-        "canadian-grand-prix": "Kanadai Nagydíj",
-        "french-grand-prix": "Francia Nagydíj",
-        "singapore-grand-prix": "Szingapúri Nagydíj",
-        "russian-grand-prix": "Orosz Nagydíj",
-        "japanese-grand-prix": "Japán Nagydíj",
-        "us-grand-prix": "Amerikai Nagydíj",
-        "mexico-grand-prix": "Mexikóvárosi Nagydíj",
-        "brazilian-grand-prix": "Brazil Nagydíj",
-        "abu-dhabi-grand-prix": "Abu Dhabi Nagydíj",
-        "tuscan-grand-prix": "Toszkán Nagydíj",
-        "eifel-grand-prix": "Eifel Nagydíj",
-        "portuguese-grand-prix": "Portugál Nagydíj",
-        "emilia-romagna-grand-prix": "Emilia Romagna Nagydíj",
-        "sakhir-grand-prix": "Szakhír (Bahreini) Nagydíj",
-        "turkish-grand-prix": "Török Nagydíj",
-        "saudi-arabia-grand-prix": "Szaúd-Arábiai Nagydíj",
-        "qatar-grand-prix" : "Qatar Grand Prix",
-		"miami-grand-prix" : "Miami Grand Prix",
-        "chinese-grand-prix" : "Kínai Nagydíj",
-        "las-vegas-grand-prix" : "Las Vegas Grand Prix"
-	},
-	"options": {
-        "calendar": "Futam időpontok hozzáadása a saját Naptárhoz",
-        "email": "E-mail emlékeztetők kérése",
-        "timezonePicker": {
-            "detect": "Detect",
-            "showing": "Időpontok mutatása ebben az időzónában:",
-            "pick": "Időzóna választása"
-        },
-        "formatPicker": {
-            "title": "Időformátum",
-            "12hr": "12 órás időformátum",
-            "24hr": "24 órás időformátum"
-        },
-        "button": "Kész"
+      "austrian-grand-prix": "Osztrák Nagydíj",
+      "steiermark-grand-prix": "Stájer (Osztrák) Nagydíj",
+      "hungarian-grand-prix": "Magyar Nagydíj",
+      "british-grand-prix": "Brit Nagydíj",
+      "anniversary-british-grand-prix": "70. Évforduló (Brit) Nagydíja",
+      "spanish-grand-prix": "Spanyol Nagydíj",
+      "belgian-grand-prix": "Belga Nagydíj",
+      "italian-grand-prix": "Olasz Nagydíj",
+      "australian-grand-prix": "Ausztrál Nagydíj",
+      "bahrain-grand-prix": "Bahreini Nagydíj",
+      "vietnamese-grand-prix": "Vietnámi Nagydíj",
+      "dutch-grand-prix": "Holland Nagydíj",
+      "monaco-grand-prix": "Monacói Nagydíj",
+      "azerbaijan-grand-prix": "Azeri Nagydíj",
+      "canadian-grand-prix": "Kanadai Nagydíj",
+      "french-grand-prix": "Francia Nagydíj",
+      "singapore-grand-prix": "Szingapúri Nagydíj",
+      "russian-grand-prix": "Orosz Nagydíj",
+      "japanese-grand-prix": "Japán Nagydíj",
+      "us-grand-prix": "Amerikai Nagydíj",
+      "mexico-grand-prix": "Mexikóvárosi Nagydíj",
+      "brazilian-grand-prix": "Brazil Nagydíj",
+      "abu-dhabi-grand-prix": "Abu Dhabi Nagydíj",
+      "tuscan-grand-prix": "Toszkán Nagydíj",
+      "eifel-grand-prix": "Eifel Nagydíj",
+      "portuguese-grand-prix": "Portugál Nagydíj",
+      "emilia-romagna-grand-prix": "Emilia Romagna Nagydíj",
+      "sakhir-grand-prix": "Szakhír (Bahreini) Nagydíj",
+      "turkish-grand-prix": "Török Nagydíj",
+      "saudi-arabia-grand-prix": "Szaúd-Arábiai Nagydíj",
+      "qatar-grand-prix": "Qatar Grand Prix",
+      "miami-grand-prix": "Miami Grand Prix",
+      "chinese-grand-prix": "Kínai Nagydíj",
+      "las-vegas-grand-prix": "Las Vegas Grand Prix"
+    },
+    "options": {
+      "calendar": "Futam időpontok hozzáadása a saját Naptárhoz",
+      "email": "E-mail emlékeztetők kérése",
+      "notifications": "Receive Push Notifications",
+      "timezonePicker": {
+        "detect": "Detect",
+        "showing": "Időpontok mutatása ebben az időzónában:",
+        "pick": "Időzóna választása"
+      },
+      "formatPicker": {
+        "title": "Időformátum",
+        "12hr": "12 órás időformátum",
+        "24hr": "24 órás időformátum"
+      },
+      "button": "Kész"
     },
     "contribute": "Közreműködés",
     "yearSelector": "Year",
     "languageSelector": "Nyelv választása",
     "javascript": "Az F1 Calendar bekapcsolt Javascripttel nyújtja a legjobb élményt.",
     "footer": {
-        "coffee": "Támogass minket, hívj meg egy kávéra.",
-        "twitter": "Kövess a Twitteren",
-        "github": "Nyílt forráskód a GitHubon",
-        "issue": "Hibát találtál? Jelentsd be",
-        "links": {
-            "wereOn": "Kövess a",
-            "openSourcedOn": "Nyílt forráskód a",
-            "spottedIssue": "Hibát találtál?",
-            "spottedReport": "Jelentsd be"
-        },
-        "homescreen":"Add to your Home Screen and get an App like experience."
+      "coffee": "Támogass minket, hívj meg egy kávéra.",
+      "twitter": "Kövess a Twitteren",
+      "github": "Nyílt forráskód a GitHubon",
+      "issue": "Hibát találtál? Jelentsd be",
+      "links": {
+        "wereOn": "Kövess a",
+        "openSourcedOn": "Nyílt forráskód a",
+        "spottedIssue": "Hibát találtál?",
+        "spottedReport": "Jelentsd be"
+      },
+      "homescreen": "Add to your Home Screen and get an App like experience."
     },
     "form": {
-        "title": "Naptár generálása",
-        "description": "Elsőként válaszd ki, hogy mely eseményeket szeretnéd a naptáradhoz adni:",
-        "reminder": "Emlékeztető beállítása",
-        "reminderContinued": "perccel minden esemény előtt a naptáradban.",
-        "button": "Naptár kérése",
-        "buttonSubmitted": "Elküldve",
-        "nonOptionsSelected": "Kérlek válassz legalább egy eseményt a naptáradhoz.",
-        "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
+      "title": "Naptár generálása",
+      "description": "Elsőként válaszd ki, hogy mely eseményeket szeretnéd a naptáradhoz adni:",
+      "reminder": "Emlékeztető beállítása",
+      "reminderContinued": "perccel minden esemény előtt a naptáradban.",
+      "button": "Naptár kérése",
+      "buttonSubmitted": "Elküldve",
+      "nonOptionsSelected": "Kérlek válassz legalább egy eseményt a naptáradhoz.",
+      "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
     },
     "download": {
-        "title": "Válassz naptár típust",
-        "webcalTitle": "Mobil vagy asztali",
-        "webcalDescription": "Automatikus naptárfrissítés az olyan alkalmazásokhoz, mint az Outlook vagy a macOS Naptár.",
-        "webcalButton": "Kérés",
-        "gcalTitle": "Google Naptárakra",
-        "gcalDescription": "E naptár hozzáadásához másold be ezt a linket a Google Naptárakba",
-        "gcalDescriptionLink": "részletes leírás",
-        "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
-		"gcalAddToGoogleCalendar": "Add to Google Calendar",
-		"icsTitle": "ICS fájl letöltése",
-        "icsDescription": "Nem frissülő naptár (.ics) az olyan naptárakhoz, amelyek nem kezelik a frissülő feliratkozásokat.",
-        "icsButton": "Letöltés"
+      "title": "Válassz naptár típust",
+      "webcalTitle": "Mobil vagy asztali",
+      "webcalDescription": "Automatikus naptárfrissítés az olyan alkalmazásokhoz, mint az Outlook vagy a macOS Naptár.",
+      "webcalButton": "Kérés",
+      "gcalTitle": "Google Naptárakra",
+      "gcalDescription": "E naptár hozzáadásához másold be ezt a linket a Google Naptárakba",
+      "gcalDescriptionLink": "részletes leírás",
+      "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added.",
+      "gcalAddToGoogleCalendar": "Add to Google Calendar",
+      "icsTitle": "ICS fájl letöltése",
+      "icsDescription": "Nem frissülő naptár (.ics) az olyan naptárakhoz, amelyek nem kezelik a frissülő feliratkozásokat.",
+      "icsButton": "Letöltés"
     },
     "subscribe": {
-        "title": "Feliratkozás",
-        "description": "E-mail emlékeztető kérése a versenyhétvége előtt.",
-        "label": "E-mail cím",
-        "button": "Feliratkozás"
+      "title": "Feliratkozás",
+      "description": "E-mail emlékeztető kérése a versenyhétvége előtt.",
+      "label": "E-mail cím",
+      "button": "Feliratkozás"
     },
     "notifications": {
-        "title": "Notifications",
-        "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
-        "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
-        "button": "Save",
-        "buttonSubmitted": "Saved",
-        "permissions": {
-            "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
-            "button": "Allow Notifications",
-            "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
-        }
+      "title": "Notifications",
+      "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
+      "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
+      "button": "Save",
+      "buttonSubmitted": "Saved",
+      "permissions": {
+        "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
+        "button": "Allow Notifications",
+        "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+      }
     },
     "timezones": {
-        "title": "Válassz időzónát..."
+      "title": "Válassz időzónát..."
     },
     "years": {
-        "title": "Válassz évet..."
+      "title": "Válassz évet..."
     },
     "f1": {
-        "title": "F1 Naptár",
-        "subtitle": "Futamok, Időmérők és Szabadedzések",
-        "seo": {
-            "title": "F1 Naptár {year} - Forma 1 futam időpontok és dátumok",
-            "description": "A {year}. szezon Forma 1 naptár  az összes F1 nagydíjjal, szabadedzéssel és időmérővel. Emlékezetők is beállíthatók. A világ összes időzónájában. Letöltheted és fel is iratkozhatsz.",
-            "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": "A Formula One, Formula 1, F1 & Grand Prix a Formula One Licensing BV. bejegyzett védjegyei."
+      "title": "F1 Naptár",
+      "subtitle": "Futamok, Időmérők és Szabadedzések",
+      "seo": {
+        "title": "F1 Naptár {year} - Forma 1 futam időpontok és dátumok",
+        "description": "A {year}. szezon Forma 1 naptár  az összes F1 nagydíjjal, szabadedzéssel és időmérővel. Emlékezetők is beállíthatók. A világ összes időzónájában. Letöltheted és fel is iratkozhatsz.",
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": "A Formula One, Formula 1, F1 & Grand Prix a Formula One Licensing BV. bejegyzett védjegyei."
     },
     "f2": {
-        "title": "F2 Naptár",
-        "subtitle": "Futamok, időmérők és szabadedzések",
-        "seo": {
-            "title": "F2 Naptár {year} - Forma 2 Futam időpontok",
-            "description": "{year}. évi Forma 2 naptár az összes F2 nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
-            "keywords": "placeholder"
-        },
-        "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 az FIA bejegyzett védjegyei."
+      "title": "F2 Naptár",
+      "subtitle": "Futamok, időmérők és szabadedzések",
+      "seo": {
+        "title": "F2 Naptár {year} - Forma 2 Futam időpontok",
+        "description": "{year}. évi Forma 2 naptár az összes F2 nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+        "keywords": "placeholder"
+      },
+      "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 az FIA bejegyzett védjegyei."
     },
     "f3": {
-        "title": "F3 Naptár",
-        "subtitle": "Futamok, időmérők és szabadedzések",
-        "seo": {
-            "title": "F3 Naptár {year} - Forma 3 futam időpontok",
-            "description": "{year}. évi Forma 3 naptár az összes F3 nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
-            "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 az FIA bejegyzett védjegyei."
+      "title": "F3 Naptár",
+      "subtitle": "Futamok, időmérők és szabadedzések",
+      "seo": {
+        "title": "F3 Naptár {year} - Forma 3 futam időpontok",
+        "description": "{year}. évi Forma 3 naptár az összes F3 nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+        "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 az FIA bejegyzett védjegyei."
     },
     "fe": {
-        "title": "Formula E Naptár",
-        "subtitle": "Futamok, időmérők és szabadedzések",
-        "seo": {
-            "title": "Formula E Naptár {year} - Formula E futam időpontok",
-            "description": "{year}. évi Formula E naptár az összes FE nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
-            "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix az FIA bejegyzett védjegyei."
+      "title": "Formula E Naptár",
+      "subtitle": "Futamok, időmérők és szabadedzések",
+      "seo": {
+        "title": "Formula E Naptár {year} - Formula E futam időpontok",
+        "description": "{year}. évi Formula E naptár az összes FE nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+        "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix az FIA bejegyzett védjegyei."
     },
     "indycar": {
-        "title": "IndyCar Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
-        "seo": {
-            "title": "IndyCar Calendar {year} - Race Times and Dates",
-            "description": "IndyCar Calendar for {year} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {year}"
-        },
-        "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+      "title": "IndyCar Calendar",
+      "subtitle": "Races, Qualifying & Practice Sessions",
+      "seo": {
+        "title": "IndyCar Calendar {year} - Race Times and Dates",
+        "description": "IndyCar Calendar for {year} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+        "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {year}"
+      },
+      "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
     },
     "motogp": {
-        "title": "MotoGP Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
-        "seo": {
-            "title": "MotoGP Calendar {year} - Race Times and Dates",
-            "description": "MotoGP Calendar for {year} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": ""
+      "title": "MotoGP Calendar",
+      "subtitle": "Races, Qualifying & Practice Sessions",
+      "seo": {
+        "title": "MotoGP Calendar {year} - Race Times and Dates",
+        "description": "MotoGP Calendar for {year} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+        "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": ""
     },
     "wseries": {
-        "title": "W Series Naptár",
-        "subtitle": "Futamok, időmérők és szabadedzések",
-        "seo": {
-            "title": "W Series Naptár {year} - futam időpontok",
-            "description": "{year}. évi W Series naptár az összes W Series nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
-            "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": "W Series Calendar is not affiliated with W Series."
+      "title": "W Series Naptár",
+      "subtitle": "Futamok, időmérők és szabadedzések",
+      "seo": {
+        "title": "W Series Naptár {year} - futam időpontok",
+        "description": "{year}. évi W Series naptár az összes W Series nagydíjjal, szabadedzéssel és időmérővel. Emlékeztető is beállítható. A világ összes időzónája elérhető. Letöltheted és fel is iratkozhatsz.",
+        "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": "W Series Calendar is not affiliated with W Series."
     },
     "extremee": {
-        "title": "Extreme E Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
-        "seo": {
-            "title": "Extreme E Calendar {year} - Extreme E Race Times and Dates",
-            "description": "Extreme E Calendar for {year} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": ""
+      "title": "Extreme E Calendar",
+      "subtitle": "Races, Qualifying & Practice Sessions",
+      "seo": {
+        "title": "Extreme E Calendar {year} - Extreme E Race Times and Dates",
+        "description": "Extreme E Calendar for {year} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+        "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": ""
     },
     "f1-academy": {
-        "title": "F1 Academy Calendar",
-        "subtitle": "Races, Qualifying & Practice Sessions",
-        "seo": {
-            "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
-            "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-            "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
-        },
-        "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+      "title": "F1 Academy Calendar",
+      "subtitle": "Races, Qualifying & Practice Sessions",
+      "seo": {
+        "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
+        "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+      },
+      "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }
-}
+  }
 }
