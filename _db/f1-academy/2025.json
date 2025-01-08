@@ -1,0 +1,124 @@
+{
+  "races": [
+    {
+      "name": "Chinese",
+      "location": "Shanghai",
+      "latitude": 31.3807,
+      "longitude": 121.2498,
+      "round": 1,
+      "slug": "chinese",
+      "localeKey": "chinese",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2025-03-07T11:05:00Z",
+        "qualifying1": "2025-03-07T18:30:00Z",
+        "qualifying2": "2025-03-07T18:30:00Z",
+        "race1": "2025-03-08T12:10:00Z",
+        "race2": "2025-03-09T12:05:00Z"
+      }
+    },
+    {
+      "name": "Jeddah",
+      "location": "Jeddah",
+      "latitude": 21.485811,
+      "longitude": 39.192505,
+      "round": 2,
+      "slug": "jeddah",
+      "localeKey": "jeddah",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2025-03-07T11:05:00Z",
+        "qualifying1": "2025-03-07T18:30:00Z",
+        "qualifying2": "2025-03-07T18:30:00Z",
+        "race1": "2025-03-08T12:10:00Z",
+        "race2": "2025-03-09T12:05:00Z"
+      }
+    },
+    {
+      "name": "Miami",
+      "location": "USA",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 3,
+      "slug": "miami",
+      "localeKey": "miami",
+      "sessions": {
+        "fp1": "2025-05-03T14:00:00Z",
+        "fp2": "2025-05-03T19:20:00Z",
+        "qualifying1": "2025-05-04T14:25:00Z",
+        "qualifying2": "2025-05-04T14:25:00Z",
+        "race1": "2025-05-04T18:05:00Z",
+        "race2": "2025-05-05T17:05:00Z"
+      }
+    },
+    {
+      "name": "Canadian",
+      "location": "Montreal",
+      "latitude": 45.5034,
+      "longitude": -73.5267,
+      "round": 4,
+      "slug": "canadian",
+      "localeKey": "canadian",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2025-06-13T17:30:00Z",
+        "fp2": "2025-06-13T21:00:00Z",
+        "fp3": "2025-06-14T16:30:00Z",
+        "qualifying": "2025-06-14T20:00:00Z",
+        "gp": "2025-06-15T18:00:00Z"
+      }
+    },
+    {
+      "name": "Zandvoort",
+      "location": "Netherlands",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 5,
+      "slug": "zandvoort",
+      "localeKey": "zandvoort",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2025-08-23T08:10:00Z",
+        "fp2": "2025-08-23T15:30:00Z",
+        "qualifying1": "2025-08-24T08:15:00Z",
+        "qualifying2": "2025-08-24T08:15:00Z",
+        "race1": "2025-08-25T06:30:00Z",
+        "race2": "2025-08-25T08:40:00Z"
+      }
+    },
+    {
+      "name": "Singapore",
+      "location": "Singapore",
+      "latitude": 1.2857,
+      "longitude": 103.8575,
+      "round": 6,
+      "slug": "singapore",
+      "localeKey": "singapore",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2025-09-20T07:20:00Z",
+        "qualifying1": "2025-09-20T11:00:00Z",
+        "qualifying2": "2025-09-20T11:00:00Z",
+        "race1": "2025-09-21T07:05:00Z",
+        "race2": "2025-09-22T07:35:00Z"
+      }
+    },
+    {
+      "name": "Las Vegas",
+      "location": "Las Vegas",
+      "latitude": 36.166747,
+      "longitude": -115.148708,
+      "round": 7,
+      "slug": "las-vegas",
+      "localeKey": "las-vegas",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2025-11-20T02:30:00Z",
+        "fp2": "2025-11-20T06:00:00Z",
+        "fp3": "2025-11-21T02:30:00Z",
+        "qualifying": "2025-11-21T06:00:00Z",
+        "gp": "2025-11-22T06:00:00Z"
+      }
+    }
+  ]
+}

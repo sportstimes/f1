@@ -1,0 +1,155 @@
+{
+  "races": [
+    {
+      "name": "Australian",
+      "location": "Melbourne",
+      "latitude": -37.8373,
+      "longitude": 144.9666,
+      "round": 1,
+      "slug": "melbourne",
+      "localeKey": "melbourne",
+      "sessions": {
+        "practice": "2025-03-13T21:45:00Z",
+        "qualifying": "2025-03-14T00:55:00Z",
+        "sprint": "2025-03-15T05:45:00Z",
+        "feature": "2025-03-15T22:20:00Z"
+      }
+    },
+    {
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "round": 2,
+      "slug": "bahrain",
+      "localeKey": "bahrain",
+      "sessions": {
+        "practice": "2025-04-11T05:45:00Z",
+        "qualifying": "2025-04-11T08:55:00Z",
+        "sprint": "2025-04-12T13:45:00Z",
+        "feature": "2025-04-13T06:20:00Z"
+      }
+    },
+    {
+      "name": "Emilia Romagna",
+      "location": "Imola",
+      "latitude": 44.344576,
+      "longitude": 11.713808,
+      "round": 3,
+      "slug": "emilia-romagna",
+      "localeKey": "emilia-romagna",
+      "sessions": {
+        "practice": "2025-05-16T06:45:00Z",
+        "qualifying": "2025-05-16T09:55:00Z",
+        "sprint": "2025-05-17T14:45:00Z",
+        "feature": "2025-05-18T07:20:00Z"
+      }
+    },
+    {
+      "name": "Monaco",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 4,
+      "slug": "monaco",
+      "localeKey": "monaco",
+      "sessions": {
+        "practice": "2025-05-22T06:45:00Z",
+        "qualifying": "2025-05-23T13:55:00Z",
+        "sprint": "2025-05-24T14:45:00Z",
+        "feature": "2025-05-25T07:20:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Catalunya",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "round": 5,
+      "slug": "spanish",
+      "localeKey": "spanish",
+      "sessions": {
+        "practice": "2025-05-30T06:45:00Z",
+        "qualifying": "2025-05-30T09:55:00Z",
+        "sprint": "2025-05-31T14:45:00Z",
+        "feature": "2025-06-01T07:20:00Z"
+      }
+    },
+    {
+      "name": "Austrian",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "round": 6,
+      "slug": "austrian",
+      "localeKey": "austrian",
+      "sessions": {
+        "practice": "2025-06-27T06:45:00Z",
+        "qualifying": "2025-06-27T09:55:00Z",
+        "sprint": "2025-06-28T14:45:00Z",
+        "feature": "2025-06-29T07:20:00Z"
+      }
+    },
+    {
+      "name": "British",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "round": 7,
+      "slug": "british",
+      "localeKey": "british",
+      "sessions": {
+        "practice": "2025-07-04T07:45:00Z",
+        "qualifying": "2025-07-04T10:55:00Z",
+        "sprint": "2025-07-05T15:45:00Z",
+        "feature": "2025-07-06T08:20:00Z"
+      }
+    },
+    {
+      "name": "Belgian",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.444,
+      "longitude": 5.9687,
+      "round": 8,
+      "slug": "belgian",
+      "localeKey": "belgian",
+      "sessions": {
+        "practice": "2025-08-01T06:45:00Z",
+        "qualifying": "2025-08-01T09:55:00Z",
+        "sprint": "2025-08-02T14:45:00Z",
+        "feature": "2025-08-03T07:20:00Z"
+      }
+    },
+
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "round": 9,
+      "slug": "hungarian",
+      "localeKey": "hungarian",
+      "sessions": {
+        "practice": "2025-07-25T06:45:00Z",
+        "qualifying": "2025-07-25T09:55:00Z",
+        "sprint": "2025-07-26T14:45:00Z",
+        "feature": "2025-07-27T07:20:00Z"
+      }
+    },
+    {
+      "name": "Italian",
+      "location": "Monza",
+      "latitude": 45.6169,
+      "longitude": 9.2825,
+      "round": 10,
+      "slug": "italian",
+      "localeKey": "italian",
+      "sessions": {
+        "practice": "2025-09-05T06:45:00Z",
+        "qualifying": "2025-09-05T09:55:00Z",
+        "sprint": "2025-09-06T14:45:00Z",
+        "feature": "2025-09-07T07:20:00Z"
+      }
+    }
+  ]
+}

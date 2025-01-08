@@ -1,28 +1,36 @@
 {
-	"siteKey": "f1-academy",
-	"url": "f1academycalendar.com",
-	"calendarCDN": "files-f1-academy.motorsportcalendars.com",
-	"calendarOutputYear": 2024,
-	"availableYears": [2023, 2024],
-	"sessions": ["fp1", "fp2", "qualifying1", "qualifying2", "race1", "race2", "race3"],
-	"featuredSessions": ["race1", "race2", "race3"],
-	"collapsedSessions": ["fp1", "fp2", "qualifying1", "qualifying2"],
-	"sessionMap": {
-		"fp1":"fp1",
-		"fp2":"fp2",
-		"qualifying1":"qualifying1",
-		"qualifying2":"qualifying2",
-		"race1":"race1",
-		"race2":"race2",
-		"race3":"race3"
-	},
-	"sessionLengths": {
-		"fp1":40,
-		"fp2":40,
-		"qualifying1":15,
-		"qualifying2":15,
-		"race1":30,
-		"race2":20,
-		"race3":30
-	}
+  "siteKey": "f1-academy",
+  "url": "f1academycalendar.com",
+  "calendarCDN": "files-f1-academy.motorsportcalendars.com",
+  "calendarOutputYear": 2024,
+  "availableYears": [2023, 2024],
+  "sessions": [
+    "fp1",
+    "fp2",
+    "qualifying1",
+    "qualifying2",
+    "race1",
+    "race2",
+    "race3"
+  ],
+  "featuredSessions": ["race1", "race2", "race3"],
+  "collapsedSessions": ["fp1", "fp2", "qualifying1", "qualifying2"],
+  "sessionMap": {
+    "fp1": "fp1",
+    "fp2": "fp2",
+    "qualifying1": "qualifying1",
+    "qualifying2": "qualifying2",
+    "race1": "race1",
+    "race2": "race2",
+    "race3": "race3"
+  },
+  "sessionLengths": {
+    "fp1": 40,
+    "fp2": 40,
+    "qualifying1": 15,
+    "qualifying2": 15,
+    "race1": 30,
+    "race2": 20,
+    "race3": 30
+  }
 }
