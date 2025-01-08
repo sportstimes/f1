@@ -1,13 +1,14 @@
 {
   "races": [
     {
-      "name": "Jeddah",
-      "location": "Jeddah",
-      "latitude": 21.485811,
-      "longitude": 39.192505,
+      "name": "Chinese",
+      "location": "Shanghai",
+      "latitude": 31.3807,
+      "longitude": 121.2498,
       "round": 1,
-      "slug": "jeddah",
-      "localeKey": "jeddah",
+      "slug": "chinese",
+      "localeKey": "chinese",
+      "tbc": true,
       "sessions": {
         "fp1": "2024-03-07T11:05:00Z",
         "qualifying1": "2024-03-07T18:30:00Z",
@@ -17,13 +18,14 @@
       }
     },
     {
-      "name": "Miami",
-      "location": "USA",
-      "latitude": 0,
-      "longitude": 0,
+      "name": "Jeddah",
+      "location": "Jeddah",
+      "latitude": 21.485811,
+      "longitude": 39.192505,
       "round": 2,
-      "slug": "miami",
-      "localeKey": "miami",
+      "slug": "jeddah",
+      "localeKey": "jeddah",
+      "tbc": true,
       "sessions": {
         "fp1": "2024-05-03T14:00:00Z",
         "fp2": "2024-05-03T19:20:00Z",
@@ -34,13 +36,13 @@
       }
     },
     {
-      "name": "Barcelona",
-      "location": "Spain",
+      "name": "Miami",
+      "location": "USA",
       "latitude": 0,
       "longitude": 0,
       "round": 3,
-      "slug": "barcelona",
-      "localeKey": "barcelona",
+      "slug": "miami",
+      "localeKey": "miami",
       "sessions": {
         "fp1": "2024-06-21T06:50:00Z",
         "qualifying1": "2024-06-21T16:30:00Z",
@@ -50,13 +52,14 @@
       }
     },
     {
-      "name": "Zandvoort",
-      "location": "Netherlands",
-      "latitude": 0,
-      "longitude": 0,
+      "name": "Canadian",
+      "location": "Montreal",
+      "latitude": 45.5034,
+      "longitude": -73.5267,
       "round": 4,
-      "slug": "zandvoort",
-      "localeKey": "zandvoort",
+      "slug": "canadian",
+      "localeKey": "canadian",
+      "tbc": true,
       "sessions": {
         "fp1": "2024-08-23T08:10:00Z",
         "fp2": "2024-08-23T15:30:00Z",
@@ -67,13 +70,14 @@
       }
     },
     {
-      "name": "Singapore",
-      "location": "Singapore",
-      "latitude": 1.2857,
-      "longitude": 103.8575,
+      "name": "Zandvoort",
+      "location": "Netherlands",
+      "latitude": 0,
+      "longitude": 0,
       "round": 5,
-      "slug": "singapore",
-      "localeKey": "singapore",
+      "slug": "zandvoort",
+      "localeKey": "zandvoort",
+      "tbc": true,
       "sessions": {
         "fp1": "2024-09-20T07:20:00Z",
         "qualifying1": "2024-09-20T11:00:00Z",
@@ -83,31 +87,36 @@
       }
     },
     {
-      "name": "Qatar",
-      "location": "Doha",
-      "latitude": 25.490292,
-      "longitude": 51.45303,
+      "name": "Singapore",
+      "location": "Singapore",
+      "latitude": 1.2857,
+      "longitude": 103.8575,
       "round": 6,
-      "slug": "qatar",
-      "localeKey": "qatar",
+      "slug": "singapore",
+      "localeKey": "singapore",
+      "tbc": true,
       "sessions": {
         "fp1": "2024-11-29T10:00:00Z",
         "fp2": "2024-11-29T15:00:00Z",
         "qualifying1": "2024-11-30T12:20:00Z",
-        "race1": "2024-11-30T20:05:00Z"
+        "qualifying2": "2024-11-30T12:20:00Z",
+        "race1": "2024-11-30T20:05:00Z",
+        "race2": "2024-12-01T11:00:00Z"
       }
     },
     {
-      "name": "Abu Dhabi",
-      "location": "Yas Marina",
-      "latitude": 24.4821,
-      "longitude": 54.3482,
+      "name": "Las Vegas",
+      "location": "Las Vegas",
+      "latitude": 36.166747,
+      "longitude": -115.148708,
       "round": 7,
-      "slug": "abu-dhabi",
-      "localeKey": "abu-dhabi",
+      "slug": "las-vegas",
+      "localeKey": "las-vegas",
+      "tbc": true,
       "sessions": {
         "fp1": "2024-12-06T05:50:00Z",
         "qualifying1": "2024-12-06T14:35:00Z",
+        "qualifying2": "2024-12-06T14:35:00Z",
         "race1": "2024-12-07T08:15:00Z",
         "race2": "2024-12-07T16:15:00Z",
         "race3": "2024-12-08T07:15:00Z"
