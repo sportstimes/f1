@@ -1,18 +1,33 @@
 {
   "races": [
     {
+      "name": "Australian",
+      "location": "Melbourne",
+      "latitude": -37.8373,
+      "longitude": 144.9666,
+      "round": 1,
+      "slug": "melbourne",
+      "localeKey": "melbourne",
+      "sessions": {
+        "practice": "2025-03-14T00:55:00Z",
+        "qualifying": "2025-03-14T04:55:00Z",
+        "sprint": "2025-03-14T23:35:00Z",
+        "feature": "2025-03-15T23:40:00Z"
+      }
+    },
+    {
       "name": "Bahrain",
       "location": "Sakhir",
       "latitude": 26.037,
       "longitude": 50.5112,
-      "round": 1,
+      "round": 2,
       "slug": "bahrain",
       "localeKey": "bahrain",
       "sessions": {
-        "practice": "2024-02-29T09:05:00Z",
-        "qualifying": "2024-02-29T13:55:00Z",
-        "sprint": "2024-03-01T14:15:00Z",
-        "feature": "2024-03-02T10:30:00Z"
+        "practice": "2025-04-11T08:55:00Z",
+        "qualifying": "2025-04-11T12:55:00Z",
+        "sprint": "2025-04-12T07:35:00Z",
+        "feature": "2025-04-13T07:40:00Z"
       }
     },
     {
@@ -20,29 +35,14 @@
       "location": "Jeddah",
       "latitude": 21.485811,
       "longitude": 39.192505,
-      "round": 2,
+      "round": 3,
       "slug": "saudi-arabia",
       "localeKey": "saudi-arabia",
       "sessions": {
-        "practice": "2024-03-07T09:55:00Z",
-        "qualifying": "2024-03-07T15:00:00Z",
-        "sprint": "2024-03-08T15:10:00Z",
-        "feature": "2024-03-09T13:25:00Z"
-      }
-    },
-    {
-      "name": "Australian",
-      "location": "Melbourne",
-      "latitude": -37.8373,
-      "longitude": 144.9666,
-      "round": 3,
-      "slug": "melbourne",
-      "localeKey": "melbourne",
-      "sessions": {
-        "practice": "2024-03-21T23:00:00Z",
-        "qualifying": "2024-03-22T06:30:00Z",
-        "sprint": "2024-03-23T03:15:00Z",
-        "feature": "2024-03-24T00:35:00Z"
+        "practice": "2025-04-18T08:55:00Z",
+        "qualifying": "2025-04-18T12:55:00Z",
+        "sprint": "2025-04-19T07:35:00Z",
+        "feature": "2025-04-20T07:40:00Z"
       }
     },
     {
@@ -54,10 +54,10 @@
       "slug": "emilia-romagna",
       "localeKey": "emilia-romagna",
       "sessions": {
-        "practice": "2024-05-17T09:05:00Z",
-        "qualifying": "2024-05-17T14:00:00Z",
-        "sprint": "2024-05-18T12:15:00Z",
-        "feature": "2024-05-19T08:00:00Z"
+        "practice": "2025-05-16T01:55:00Z",
+        "qualifying": "2025-05-16T05:55:00Z",
+        "sprint": "2025-05-17T00:35:00Z",
+        "feature": "2025-05-18T00:40:00Z"
       }
     },
     {
@@ -69,10 +69,10 @@
       "slug": "monaco",
       "localeKey": "monaco",
       "sessions": {
-        "practice": "2024-05-23T13:00:00Z",
-        "qualifying": "2024-05-24T13:10:00Z",
-        "sprint": "2024-05-25T12:15:00Z",
-        "feature": "2024-05-26T07:40:00Z"
+        "practice": "2025-05-22T09:55:00Z",
+        "qualifying": "2025-05-23T13:55:00Z",
+        "sprint": "2025-05-24T08:35:00Z",
+        "feature": "2025-05-25T08:40:00Z"
       }
     },
     {
@@ -84,10 +84,10 @@
       "slug": "spanish",
       "localeKey": "spanish",
       "sessions": {
-        "practice": "2024-06-21T09:05:00Z",
-        "qualifying": "2024-06-21T13:55:00Z",
-        "sprint": "2024-06-22T12:15:00Z",
-        "feature": "2024-06-23T09:35:00Z"
+        "practice": "2025-05-30T09:55:00Z",
+        "qualifying": "2025-05-30T13:55:00Z",
+        "sprint": "2025-05-31T08:35:00Z",
+        "feature": "2025-06-01T08:40:00Z"
       }
     },
     {
@@ -99,10 +99,10 @@
       "slug": "austrian",
       "localeKey": "austrian",
       "sessions": {
-        "practice": "2024-06-28T08:05:00Z",
-        "qualifying": "2024-06-28T12:55:00Z",
-        "sprint": "2024-06-29T11:30:00Z",
-        "feature": "2024-06-30T08:00:00Z"
+        "practice": "2025-06-27T09:55:00Z",
+        "qualifying": "2025-06-27T13:55:00Z",
+        "sprint": "2025-06-28T08:35:00Z",
+        "feature": "2025-06-29T08:40:00Z"
       }
     },
     {
@@ -114,25 +114,10 @@
       "slug": "british",
       "localeKey": "british",
       "sessions": {
-        "practice": "2024-07-05T09:00:00Z",
-        "qualifying": "2024-07-05T14:00:00Z",
-        "sprint": "2024-07-06T12:15:00Z",
-        "feature": "2024-07-07T08:55:00Z"
-      }
-    },
-    {
-      "name": "Hungarian",
-      "location": "Budapest",
-      "latitude": 47.583,
-      "longitude": 19.2526,
-      "round": 9,
-      "slug": "hungarian",
-      "localeKey": "hungarian",
-      "sessions": {
-        "practice": "2024-07-19T09:05:00Z",
-        "qualifying": "2024-07-19T14:00:00Z",
-        "sprint": "2024-07-20T12:15:00Z",
-        "feature": "2024-07-21T08:05:00Z"
+        "practice": "2025-07-04T10:55:00Z",
+        "qualifying": "2025-07-04T14:55:00Z",
+        "sprint": "2025-07-05T09:35:00Z",
+        "feature": "2025-07-06T09:40:00Z"
       }
     },
     {
@@ -140,14 +125,29 @@
       "location": "Spa-Francorchamps",
       "latitude": 50.444,
       "longitude": 5.9687,
-      "round": 10,
+      "round": 9,
       "slug": "belgian",
       "localeKey": "belgian",
       "sessions": {
-        "practice": "2024-07-26T09:00:00Z",
-        "qualifying": "2024-07-26T14:00:00Z",
-        "sprint": "2024-07-27T16:15:00Z",
-        "feature": "2024-07-28T08:00:00Z"
+        "practice": "2025-07-25T09:55:00Z",
+        "qualifying": "2025-07-25T13:55:00Z",
+        "sprint": "2025-07-26T08:35:00Z",
+        "feature": "2025-07-27T08:40:00Z"
+      }
+    },
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "round": 10,
+      "slug": "hungarian",
+      "localeKey": "hungarian",
+      "sessions": {
+        "practice": "2025-08-01T09:55:00Z",
+        "qualifying": "2025-08-01T13:55:00Z",
+        "sprint": "2025-08-02T08:35:00Z",
+        "feature": "2025-08-03T08:40:00Z"
       }
     },
     {
@@ -159,10 +159,10 @@
       "slug": "italian",
       "localeKey": "italian",
       "sessions": {
-        "practice": "2024-08-30T09:00:00Z",
-        "qualifying": "2024-08-30T14:00:00Z",
-        "sprint": "2024-08-31T12:15:00Z",
-        "feature": "2024-09-01T08:05:00Z"
+        "practice": "2025-09-05T09:55:00Z",
+        "qualifying": "2025-09-05T13:55:00Z",
+        "sprint": "2025-09-06T08:35:00Z",
+        "feature": "2025-09-07T08:40:00Z"
       }
     },
     {
@@ -174,10 +174,10 @@
       "slug": "azerbaijan",
       "localeKey": "azerbaijan",
       "sessions": {
-        "practice": "2024-09-13T07:00:00Z",
-        "qualifying": "2024-09-13T11:00:00Z",
-        "sprint": "2024-09-14T10:15:00Z",
-        "feature": "2024-09-15T07:35:00Z"
+        "practice": "2025-09-19T07:55:00Z",
+        "qualifying": "2025-09-19T11:55:00Z",
+        "sprint": "2025-09-20T06:35:00Z",
+        "feature": "2025-09-21T06:40:00Z"
       }
     },
     {
@@ -189,10 +189,10 @@
       "slug": "qatar",
       "localeKey": "qatar",
       "sessions": {
-        "practice": "2024-11-29T11:05:00Z",
-        "qualifying": "2024-11-29T16:10:00Z",
-        "sprint": "2024-11-30T16:20:00Z",
-        "feature": "2024-12-01T12:20:00Z"
+        "practice": "2025-11-28T08:55:00Z",
+        "qualifying": "2025-11-28T12:55:00Z",
+        "sprint": "2025-11-29T07:35:00Z",
+        "feature": "2025-11-30T07:40:00Z"
       }
     },
     {
@@ -204,10 +204,10 @@
       "slug": "abu-dhabi",
       "localeKey": "abu-dhabi",
       "sessions": {
-        "practice": "2024-12-06T07:05:00Z",
-        "qualifying": "2024-12-06T11:00:00Z",
-        "sprint": "2024-12-07T12:15:00Z",
-        "feature": "2024-12-08T09:25:00Z"
+        "practice": "2025-12-05T07:55:00Z",
+        "qualifying": "2025-12-05T11:55:00Z",
+        "sprint": "2025-12-06T06:35:00Z",
+        "feature": "2025-12-07T06:40:00Z"
       }
     }
   ]
