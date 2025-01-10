@@ -68,10 +68,10 @@
       "slug": "miami-eprix",
       "localeKey": "miami-eprix",
       "sessions": {
-        "practice1": "2025-04-11T21:00:00Z",
-        "practice2": "2025-04-12T12:30:00Z",
-        "qualifying": "2025-04-12T14:40:00Z",
-        "race": "2025-04-12T19:05:00Z"
+        "practice1": "2025-04-11T20:00:00Z",
+        "practice2": "2025-04-12T11:30:00Z",
+        "qualifying": "2025-04-12T13:40:00Z",
+        "race": "2025-04-12T18:05:00Z"
       }
     },
     {
@@ -83,10 +83,10 @@
       "slug": "monaco-eprix",
       "localeKey": "monaco-eprix",
       "sessions": {
-        "practice1": "2025-05-03T06:30:00Z",
-        "practice2": "2025-05-03T08:10:00Z",
-        "qualifying": "2025-05-03T09:40:00Z",
-        "race": "2025-05-03T14:05:00Z"
+        "practice1": "2025-05-03T05:30:00Z",
+        "practice2": "2025-05-03T07:10:00Z",
+        "qualifying": "2025-05-03T08:40:00Z",
+        "race": "2025-05-03T13:05:00Z"
       }
     },
     {
@@ -98,9 +98,9 @@
       "slug": "monaco-eprix",
       "localeKey": "monaco-eprix",
       "sessions": {
-        "practice3": "2025-05-04T07:30:00Z",
-        "qualifying": "2025-05-04T09:40:00Z",
-        "race": "2025-05-04T14:05:00Z"
+        "practice3": "2025-05-04T06:30:00Z",
+        "qualifying": "2025-05-04T08:40:00Z",
+        "race": "2025-05-04T13:05:00Z"
       }
     },
     {
@@ -112,10 +112,10 @@
       "slug": "tokyo-eprix",
       "localeKey": "tokyo-eprix",
       "sessions": {
-        "practice1": "2025-05-16T08:00:00Z",
-        "practice2": "2025-05-17T00:00:00Z",
-        "qualifying": "2025-05-17T02:20:00Z",
-        "race": "2025-05-17T07:05:00Z"
+        "practice1": "2025-05-16T07:00:00Z",
+        "practice2": "2025-05-16T23:00:00Z",
+        "qualifying": "2025-05-17T01:20:00Z",
+        "race": "2025-05-17T06:05:00Z"
       }
     },
     {
@@ -127,9 +127,9 @@
       "slug": "tokyo-eprix",
       "localeKey": "tokyo-eprix",
       "sessions": {
-        "practice3": "2025-05-18T00:00:00Z",
-        "qualifying": "2025-05-18T02:20:00Z",
-        "race": "2025-05-18T07:05:00Z"
+        "practice3": "2025-05-17T23:00:00Z",
+        "qualifying": "2025-05-18T01:20:00Z",
+        "race": "2025-05-18T06:05:00Z"
       }
     },
     {
@@ -141,10 +141,10 @@
       "slug": "shanghai-eprix",
       "localeKey": "shanghai-eprix",
       "sessions": {
-        "practice1": "2025-05-30T09:00:00Z",
-        "practice2": "2025-05-31T01:00:00Z",
-        "qualifying": "2025-05-31T03:20:00Z",
-        "race": "2025-05-31T08:05:00Z"
+        "practice1": "2025-05-30T08:00:00Z",
+        "practice2": "2025-05-31T00:00:00Z",
+        "qualifying": "2025-05-31T02:20:00Z",
+        "race": "2025-05-31T07:05:00Z"
       }
     },
     {
@@ -156,9 +156,9 @@
       "slug": "shanghai-eprix",
       "localeKey": "shanghai-eprix",
       "sessions": {
-        "practice3": "2025-06-01T00:00:00Z",
-        "qualifying": "2025-06-01T02:20:00Z",
-        "race": "2025-06-01T07:05:00Z"
+        "practice3": "2025-05-31T23:00:00Z",
+        "qualifying": "2025-06-01T01:20:00Z",
+        "race": "2025-06-01T06:05:00Z"
       }
     },
     {
@@ -170,10 +170,10 @@
       "slug": "jakarta-eprix",
       "localeKey": "jakarta-eprix",
       "sessions": {
-        "practice1": "2025-06-20T10:00:00Z",
-        "practice2": "2025-06-21T02:00:00Z",
-        "qualifying": "2025-06-21T04:20:00Z",
-        "race": "2025-06-21T09:05:00Z"
+        "practice1": "2025-06-20T09:00:00Z",
+        "practice2": "2025-06-21T01:00:00Z",
+        "qualifying": "2025-06-21T03:20:00Z",
+        "race": "2025-06-21T08:05:00Z"
       }
     },
     {
@@ -185,10 +185,10 @@
       "slug": "berlin-eprix",
       "localeKey": "berlin-eprix",
       "sessions": {
-        "practice1": "2025-07-11T15:00:00Z",
-        "practice2": "2025-07-12T07:00:00Z",
-        "qualifying": "2025-07-12T09:20:00Z",
-        "race": "2025-07-12T14:05:00Z"
+        "practice1": "2025-07-11T14:00:00Z",
+        "practice2": "2025-07-12T06:00:00Z",
+        "qualifying": "2025-07-12T08:20:00Z",
+        "race": "2025-07-12T13:05:00Z"
       }
     },
     {
@@ -200,9 +200,9 @@
       "slug": "berlin-eprix",
       "localeKey": "berlin-eprix",
       "sessions": {
-        "practice3": "2025-07-13T07:00:00Z",
-        "qualifying": "2025-07-13T09:20:00Z",
-        "race": "2025-07-13T14:05:00Z"
+        "practice3": "2025-07-13T06:00:00Z",
+        "qualifying": "2025-07-13T08:20:00Z",
+        "race": "2025-07-13T13:05:00Z"
       }
     },
     {
@@ -214,10 +214,10 @@
       "slug": "london-eprix",
       "localeKey": "london-eprix",
       "sessions": {
-        "practice1": "2025-07-25T16:00:00Z",
-        "practice2": "2025-07-26T10:00:00Z",
-        "qualifying": "2025-07-26T12:20:00Z",
-        "race": "2025-07-26T17:05:00Z"
+        "practice1": "2025-07-25T15:00:00Z",
+        "practice2": "2025-07-26T09:00:00Z",
+        "qualifying": "2025-07-26T11:20:00Z",
+        "race": "2025-07-26T16:05:00Z"
       }
     },
     {
@@ -229,9 +229,9 @@
       "slug": "london-eprix",
       "localeKey": "london-eprix",
       "sessions": {
-        "practice3": "2025-07-27T10:00:00Z",
-        "qualifying": "2025-07-27T12:20:00Z",
-        "race": "2025-07-27T17:05:00Z"
+        "practice3": "2025-07-27T09:00:00Z",
+        "qualifying": "2025-07-27T11:20:00Z",
+        "race": "2025-07-27T16:05:00Z"
       }
     }
   ]
