@@ -1,29 +1,43 @@
 {
-	"siteKey": "indycar",
-	"url": "indycarcalendar.com",
-	"calendarCDN": "files-indycar.motorsportcalendars.com",
-	"calendarOutputYear": 2024,
-	"availableYears": [2021, 2022, 2023, 2024],
-	"sessions": ["practice1", "practice2", "practice3", "qualifying", "warmup", "race", "other"],
-	"featuredSessions": ["race"],
-	"collapsedSessions": ["practice1", "practice2", "practice3", "qualifying", "warmup"],
-	"sessionMap": {
-		"practice1": "p1",
-		"practice2": "p2",
-		"practice3": "p3",
-		"qualifying": "qualifying",
-		"warmup": "warmup",
-		"race": "race"
-	},
-	"sessionLengths": {
-		"practice1": 45,
-		"practice2": 30,
-		"practice3": 45,
-		"qualifying": 60,
-		"warmup": 30,
-		"race": 57,
-        "other": 45
-	},
-	"supportsEmailReminders": false,
-	"notice": "Most sessions are still TBC. Calendar will be updated as details are confirmed."
+  "siteKey": "indycar",
+  "url": "indycarcalendar.com",
+  "calendarCDN": "files-indycar.motorsportcalendars.com",
+  "calendarOutputYear": 2024,
+  "availableYears": [2021, 2022, 2023, 2024],
+  "sessions": [
+    "practice1",
+    "practice2",
+    "practice3",
+    "qualifying",
+    "warmup",
+    "race",
+    "other"
+  ],
+  "featuredSessions": ["race"],
+  "collapsedSessions": [
+    "practice1",
+    "practice2",
+    "practice3",
+    "qualifying",
+    "warmup"
+  ],
+  "sessionMap": {
+    "practice1": "p1",
+    "practice2": "p2",
+    "practice3": "p3",
+    "qualifying": "qualifying",
+    "warmup": "warmup",
+    "race": "race"
+  },
+  "sessionLengths": {
+    "practice1": 45,
+    "practice2": 30,
+    "practice3": 45,
+    "qualifying": 60,
+    "warmup": 30,
+    "race": 57,
+    "other": 45
+  },
+  "supportsEmailReminders": false,
+  "notice": "Most sessions are still TBC. Calendar will be updated as details are confirmed."
 }
