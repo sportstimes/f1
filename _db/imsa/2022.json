@@ -1,0 +1,147 @@
+{
+  "races": [
+    {
+      "name": "Roar Before The Rolex 24 Presented by INX",
+      "location": "Daytona International Speedway",
+      "sessions": {
+        "race": "2022-01-21T12:00:00Z"
+      },
+      "duration": "N/A",
+      "length": "3.56 miles",
+      "corners": 12,
+      "dates": "2022-01-21/2022-01-23"
+    },
+    {
+      "name": "Rolex 24 At Daytona",
+      "location": "Daytona International Speedway",
+      "sessions": {
+        "race": "2022-01-26T14:00:00Z"
+      },
+      "duration": "24 Hours",
+      "length": "3.56 miles",
+      "corners": 12,
+      "dates": "2022-01-26/2022-01-30"
+    },
+    {
+      "name": "Mobil 1 Twelve Hours of Sebring Presented by Advance Auto Parts",
+      "location": "Sebring International Raceway",
+      "sessions": {
+        "race": "2022-03-16T12:00:00Z"
+      },
+      "duration": "12 Hours",
+      "length": "3.74 miles",
+      "corners": 17,
+      "dates": "2022-03-16/2022-03-19"
+    },
+    {
+      "name": "Acura Grand Prix of Long Beach",
+      "location": "Long Beach Street Circuit",
+      "sessions": {
+        "race": "2022-04-08T12:00:00Z"
+      },
+      "duration": "100 Minutes",
+      "length": "1.968 miles",
+      "corners": 11,
+      "dates": "2022-04-08/2022-04-10"
+    },
+    {
+      "name": "Hyundai Monterey Sports Car Championship Presented by Motul",
+      "location": "WeatherTech Raceway Laguna Seca",
+      "sessions": {
+        "race": "2022-04-29T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "2.238 miles",
+      "corners": 11,
+      "dates": "2022-04-29/2022-05-01"
+    },
+    {
+      "name": "Lexus Grand Prix at Mid-Ohio",
+      "location": "Mid-Ohio Sports Car Course",
+      "sessions": {
+        "race": "2022-05-13T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "2.258 miles",
+      "corners": 13,
+      "dates": "2022-05-13/2022-05-15"
+    },
+    {
+      "name": "Chevrolet Detroit Grand Prix Presented by Lear",
+      "location": "Raceway at Belle Isle Park",
+      "sessions": {
+        "race": "2022-06-03T12:00:00Z"
+      },
+      "duration": "100 Minutes",
+      "length": "2.35 miles",
+      "corners": 14,
+      "dates": "2022-06-03/2022-06-04"
+    },
+    {
+      "name": "Sahlen's Six Hours of The Glen",
+      "location": "Watkins Glen International",
+      "sessions": {
+        "race": "2022-06-23T12:00:00Z"
+      },
+      "duration": "6 Hours",
+      "length": "3.4 miles",
+      "corners": 11,
+      "dates": "2022-06-23/2022-06-26"
+    },
+    {
+      "name": "Chevrolet Grand Prix",
+      "location": "Canadian Tire Motorsport Park",
+      "sessions": {
+        "race": "2022-07-01T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "2.459 miles",
+      "corners": 10,
+      "dates": "2022-07-01/2022-07-03"
+    },
+    {
+      "name": "FCP Euro Northeast Grand Prix",
+      "location": "Lime Rock Park",
+      "sessions": {
+        "race": "2022-07-15T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "1.50 miles",
+      "corners": 7,
+      "dates": "2022-07-15/2022-07-16"
+    },
+    {
+      "name": "IMSA Fastlane SportsCar Weekend",
+      "location": "Road America",
+      "sessions": {
+        "race": "2022-08-04T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "4.0 miles",
+      "corners": 14,
+      "dates": "2022-08-04/2022-08-07"
+    },
+    {
+      "name": "Michelin GT Challenge at VIR",
+      "location": "VIRginia International Raceway",
+      "sessions": {
+        "race": "2022-08-26T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "3.27 miles",
+      "corners": 18,
+      "dates": "2022-08-26/2022-08-28"
+    },
+    {
+      "name": "Motul Petit Le Mans",
+      "location": "Michelin Raceway Road Atlanta",
+      "sessions": {
+        "race": "2022-09-28T12:00:00Z"
+      },
+      "duration": "10 Hours",
+      "length": "2.54 miles",
+      "corners": 12,
+      "dates": "2022-09-28/2022-10-01"
+    }
+  ]
+}
