@@ -1,31 +1,48 @@
 {
-	"siteKey": "motogp",
-	"url": "motogpcal.com",
-	"calendarCDN": "files-motogp.motorsportcalendars.com",
-	"calendarOutputYear": 2024,
-	"availableYears": [2021, 2022, 2023, 2024],
-	"sessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2", "sprint", "race"],
-	"featuredSessions": ["race"],
-	"collapsedSessions": ["fp1", "fp2", "fp3", "fp4", "qualifying1", "qualifying2", "sprint"],
-	"sessionMap": {
-		"fp1": "p1",
-		"fp2": "p2",
-		"fp3": "p3",
-		"fp4": "p4",
-		"qualifying1": "qualifying1",
-		"qualifying2": "qualifying2",
-		"sprint": "sprint",
-		"race": "race"
-	},
-	"sessionLengths": {
-		"fp1": 45,
-		"fp2": 60,
-		"fp3": 30,
-		"fp4": 30,
-		"qualifying1": 15,
-		"qualifying2": 15,
-		"sprint": 60,
-		"race": 60
-	},
-	"supportsEmailReminders": false
+  "siteKey": "motogp",
+  "url": "motogpcal.com",
+  "calendarCDN": "files-motogp.motorsportcalendars.com",
+  "calendarOutputYear": 2024,
+  "availableYears": [2021, 2022, 2023, 2024],
+  "sessions": [
+    "fp1",
+    "fp2",
+    "fp3",
+    "fp4",
+    "qualifying1",
+    "qualifying2",
+    "sprint",
+    "race"
+  ],
+  "featuredSessions": ["race"],
+  "collapsedSessions": [
+    "fp1",
+    "fp2",
+    "fp3",
+    "fp4",
+    "qualifying1",
+    "qualifying2",
+    "sprint"
+  ],
+  "sessionMap": {
+    "fp1": "p1",
+    "fp2": "p2",
+    "fp3": "p3",
+    "fp4": "p4",
+    "qualifying1": "qualifying1",
+    "qualifying2": "qualifying2",
+    "sprint": "sprint",
+    "race": "race"
+  },
+  "sessionLengths": {
+    "fp1": 45,
+    "fp2": 60,
+    "fp3": 30,
+    "fp4": 30,
+    "qualifying1": 15,
+    "qualifying2": 15,
+    "sprint": 60,
+    "race": 60
+  },
+  "supportsEmailReminders": false
 }
