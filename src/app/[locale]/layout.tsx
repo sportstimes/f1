@@ -1,7 +1,5 @@
 import { notFound } from 'next/navigation';
-import '../../styles/tailwind.css';
-import '../../styles/tailwind-utils.css';
-import '../../styles/index.css';
+import './globals.css';
 import { Metadata } from 'next';
 import PlausibleProvider from 'next-plausible';
 import Script from 'next/script';
