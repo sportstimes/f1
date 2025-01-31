@@ -34,8 +34,7 @@
       "latitude": "-27.4985572",
       "longitude": "-64.8605362",
       "slug": "Argentina",
-      "localeKey": "Argentina",
-      "tbc": true
+      "localeKey": "Argentina"
     },
     {
       "name": "Americas",
@@ -53,8 +52,7 @@
       "latitude": "30.1327176",
       "longitude": "-97.6404876",
       "slug": "United States",
-      "localeKey": "United States",
-      "tbc": true
+      "localeKey": "United States"
     },
     {
       "name": "Qatar",
@@ -72,8 +70,7 @@
       "latitude": "25.4862831",
       "longitude": "51.4528912",
       "slug": "Qatar",
-      "localeKey": "Qatar",
-      "tbc": true
+      "localeKey": "Qatar"
     },
     {
       "name": "España",
@@ -91,8 +88,7 @@
       "latitude": "36.7104122",
       "longitude": "-6.0328725",
       "slug": "Spain",
-      "localeKey": "Spain",
-      "tbc": true
+      "localeKey": "Spain"
     },
     {
       "name": "France",
@@ -110,8 +106,7 @@
       "latitude": "48.00611",
       "longitude": "0.199556",
       "slug": "France",
-      "localeKey": "France",
-      "tbc": true
+      "localeKey": "France"
     },
     {
       "name": "Great Britain",
@@ -129,8 +124,7 @@
       "latitude": "52.0692786",
       "longitude": "-1.0213986",
       "slug": "United Kingdom",
-      "localeKey": "United Kingdom",
-      "tbc": true
+      "localeKey": "United Kingdom"
     },
     {
       "name": "Spain",
@@ -148,8 +142,7 @@
       "latitude": "41.0803413",
       "longitude": "-0.20437",
       "slug": "Spain",
-      "localeKey": "Spain",
-      "tbc": true
+      "localeKey": "Spain"
     },
     {
       "name": "Italy",
@@ -167,8 +160,7 @@
       "latitude": "43.9960588",
       "longitude": "11.3710716",
       "slug": "Italy",
-      "localeKey": "Italy",
-      "tbc": true
+      "localeKey": "Italy"
     },
     {
       "name": "Netherlands",
@@ -186,8 +178,7 @@
       "latitude": "52.9583015",
       "longitude": "6.522342",
       "slug": "Netherlands",
-      "localeKey": "Netherlands",
-      "tbc": true
+      "localeKey": "Netherlands"
     },
     {
       "name": "Germany",
@@ -205,8 +196,7 @@
       "latitude": "50.7897506",
       "longitude": "12.6953879",
       "slug": "Germany",
-      "localeKey": "Germany",
-      "tbc": true
+      "localeKey": "Germany"
     },
     {
       "name": "Czeck Republiky",
@@ -224,8 +214,7 @@
       "latitude": "49.2035779",
       "longitude": "16.4441283",
       "slug": "Czechia",
-      "localeKey": "Czechia",
-      "tbc": true
+      "localeKey": "Czechia"
     },
     {
       "name": "Austria",
@@ -243,8 +232,7 @@
       "latitude": "47.2196684",
       "longitude": "14.7651131",
       "slug": "Austria",
-      "localeKey": "Austria",
-      "tbc": true
+      "localeKey": "Austria"
     },
     {
       "name": "Hungria",
@@ -262,8 +250,7 @@
       "latitude": "47.0074027",
       "longitude": "18.1975649",
       "slug": "Hungary",
-      "localeKey": "Hungary",
-      "tbc": true
+      "localeKey": "Hungary"
     },
     {
       "name": "Catalunya",
@@ -281,8 +268,7 @@
       "latitude": "41.5693871",
       "longitude": "2.2578028",
       "slug": "Spain",
-      "localeKey": "Spain",
-      "tbc": true
+      "localeKey": "Spain"
     },
     {
       "name": "San Marino",
@@ -300,8 +286,7 @@
       "latitude": "43.9613671",
       "longitude": "12.685955",
       "slug": "Italy",
-      "localeKey": "Italy",
-      "tbc": true
+      "localeKey": "Italy"
     },
     {
       "name": "Japan",
@@ -319,8 +304,7 @@
       "latitude": "36.531954",
       "longitude": "140.2253966",
       "slug": "Japan",
-      "localeKey": "Japan",
-      "tbc": true
+      "localeKey": "Japan"
     },
     {
       "name": "Indonesia",
@@ -338,8 +322,7 @@
       "latitude": "-8.650979",
       "longitude": "116.3249438",
       "slug": "Indonesia",
-      "localeKey": "Indonesia",
-      "tbc": true
+      "localeKey": "Indonesia"
     },
     {
       "name": "Australia",
@@ -357,8 +340,7 @@
       "latitude": "-38.4898703",
       "longitude": "145.2038278",
       "slug": "Australia",
-      "localeKey": "Australia",
-      "tbc": true
+      "localeKey": "Australia"
     },
     {
       "name": "Malaysia",
@@ -376,15 +358,13 @@
       "latitude": "2.76101",
       "longitude": "101.7369094",
       "slug": "Malaysia",
-      "localeKey": "Malaysia",
-      "tbc": true
+      "localeKey": "Malaysia"
     },
     {
       "name": "Portugal",
       "location": "Portugal",
       "track": "Sokol International Racetrack",
       "round": 21,
-      "tbc": true,
       "sessions": {
         "fp1": "2025-11-07T10:45:00Z",
         "fp2": "2025-11-08T10:10:00Z",
@@ -399,7 +379,6 @@
       "localeKey": "Portugal"
     },
     {
-      "tbc": true,
       "sessions": {
         "fp1": "2025-11-14T09:45:00Z",
         "fp2": "2025-11-15T09:10:00Z",
