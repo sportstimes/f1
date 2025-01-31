@@ -35,7 +35,6 @@
       "longitude": "-64.8605362",
       "slug": "Argentina",
       "localeKey": "Argentina",
-      "tbc": true
     },
     {
       "name": "Americas",
@@ -54,7 +53,6 @@
       "longitude": "-97.6404876",
       "slug": "United States",
       "localeKey": "United States",
-      "tbc": true
     },
     {
       "name": "Qatar",
@@ -73,7 +71,6 @@
       "longitude": "51.4528912",
       "slug": "Qatar",
       "localeKey": "Qatar",
-      "tbc": true
     },
     {
       "name": "España",
@@ -92,7 +89,6 @@
       "longitude": "-6.0328725",
       "slug": "Spain",
       "localeKey": "Spain",
-      "tbc": true
     },
     {
       "name": "France",
@@ -111,7 +107,6 @@
       "longitude": "0.199556",
       "slug": "France",
       "localeKey": "France",
-      "tbc": true
     },
     {
       "name": "Great Britain",
@@ -130,7 +125,6 @@
       "longitude": "-1.0213986",
       "slug": "United Kingdom",
       "localeKey": "United Kingdom",
-      "tbc": true
     },
     {
       "name": "Spain",
@@ -149,7 +143,6 @@
       "longitude": "-0.20437",
       "slug": "Spain",
       "localeKey": "Spain",
-      "tbc": true
     },
     {
       "name": "Italy",
@@ -168,7 +161,6 @@
       "longitude": "11.3710716",
       "slug": "Italy",
       "localeKey": "Italy",
-      "tbc": true
     },
     {
       "name": "Netherlands",
@@ -187,7 +179,6 @@
       "longitude": "6.522342",
       "slug": "Netherlands",
       "localeKey": "Netherlands",
-      "tbc": true
     },
     {
       "name": "Germany",
@@ -206,7 +197,6 @@
       "longitude": "12.6953879",
       "slug": "Germany",
       "localeKey": "Germany",
-      "tbc": true
     },
     {
       "name": "Czeck Republiky",
@@ -225,7 +215,6 @@
       "longitude": "16.4441283",
       "slug": "Czechia",
       "localeKey": "Czechia",
-      "tbc": true
     },
     {
       "name": "Austria",
@@ -244,7 +233,6 @@
       "longitude": "14.7651131",
       "slug": "Austria",
       "localeKey": "Austria",
-      "tbc": true
     },
     {
       "name": "Hungria",
@@ -263,7 +251,6 @@
       "longitude": "18.1975649",
       "slug": "Hungary",
       "localeKey": "Hungary",
-      "tbc": true
     },
     {
       "name": "Catalunya",
@@ -282,7 +269,6 @@
       "longitude": "2.2578028",
       "slug": "Spain",
       "localeKey": "Spain",
-      "tbc": true
     },
     {
       "name": "San Marino",
@@ -301,7 +287,6 @@
       "longitude": "12.685955",
       "slug": "Italy",
       "localeKey": "Italy",
-      "tbc": true
     },
     {
       "name": "Japan",
@@ -320,7 +305,6 @@
       "longitude": "140.2253966",
       "slug": "Japan",
       "localeKey": "Japan",
-      "tbc": true
     },
     {
       "name": "Indonesia",
@@ -339,7 +323,6 @@
       "longitude": "116.3249438",
       "slug": "Indonesia",
       "localeKey": "Indonesia",
-      "tbc": true
     },
     {
       "name": "Australia",
@@ -358,7 +341,6 @@
       "longitude": "145.2038278",
       "slug": "Australia",
       "localeKey": "Australia",
-      "tbc": true
     },
     {
       "name": "Malaysia",
@@ -377,14 +359,12 @@
       "longitude": "101.7369094",
       "slug": "Malaysia",
       "localeKey": "Malaysia",
-      "tbc": true
     },
     {
       "name": "Portugal",
       "location": "Portugal",
       "track": "Sokol International Racetrack",
       "round": 21,
-      "tbc": true,
       "sessions": {
         "fp1": "2025-11-07T10:45:00Z",
         "fp2": "2025-11-08T10:10:00Z",
@@ -399,7 +379,6 @@
       "localeKey": "Portugal"
     },
     {
-      "tbc": true,
       "sessions": {
         "fp1": "2025-11-14T09:45:00Z",
         "fp2": "2025-11-15T09:10:00Z",
