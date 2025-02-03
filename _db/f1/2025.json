@@ -8,7 +8,6 @@
       "round": 1,
       "slug": "australian-grand-prix",
       "localeKey": "australian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-03-14T01:30:00Z",
         "fp2": "2025-03-14T05:00:00Z",
@@ -25,7 +24,6 @@
       "round": 2,
       "slug": "chinese-grand-prix",
       "localeKey": "chinese-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-03-21T03:30:00Z",
         "sprintQualifying": "2025-03-21T07:30:00Z",
@@ -42,7 +40,6 @@
       "round": 3,
       "slug": "japanese-grand-prix",
       "localeKey": "japanese-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-04-04T02:30:00Z",
         "fp2": "2025-04-04T06:00:00Z",
@@ -59,7 +56,6 @@
       "round": 1,
       "slug": "bahrain-grand-prix",
       "localeKey": "bahrain-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-04-11T11:30:00Z",
         "fp2": "2025-04-11T15:00:00Z",
@@ -76,7 +72,6 @@
       "round": 2,
       "slug": "saudi-arabia-grand-prix",
       "localeKey": "saudi-arabia-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-04-18T13:30:00Z",
         "fp2": "2025-04-18T17:00:00Z",
@@ -93,7 +88,6 @@
       "round": 6,
       "slug": "miami-grand-prix",
       "localeKey": "miami-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-05-02T16:30:00Z",
         "sprintQualifying": "2025-05-02T20:30:00Z",
@@ -110,7 +104,6 @@
       "round": 4,
       "slug": "emilia-romagna-grand-prix",
       "localeKey": "emilia-romagna-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-05-16T11:30:00Z",
         "fp2": "2025-05-16T15:00:00Z",
@@ -127,7 +120,6 @@
       "round": 8,
       "slug": "monaco-grand-prix",
       "localeKey": "monaco-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-05-23T11:30:00Z",
         "fp2": "2025-05-23T15:00:00Z",
@@ -144,7 +136,6 @@
       "round": 9,
       "slug": "spanish-grand-prix",
       "localeKey": "spanish-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-05-30T11:30:00Z",
         "fp2": "2025-05-30T15:00:00Z",
@@ -161,7 +152,6 @@
       "round": 10,
       "slug": "canadian-grand-prix",
       "localeKey": "canadian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-06-13T17:30:00Z",
         "fp2": "2025-06-13T21:00:00Z",
@@ -178,7 +168,6 @@
       "round": 11,
       "slug": "austrian-grand-prix",
       "localeKey": "austrian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-06-27T11:30:00Z",
         "fp2": "2025-06-27T15:00:00Z",
@@ -195,7 +184,6 @@
       "round": 12,
       "slug": "british-grand-prix",
       "localeKey": "british-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-07-04T11:30:00Z",
         "fp2": "2025-07-04T15:00:00Z",
@@ -212,7 +200,6 @@
       "round": 14,
       "slug": "belgian-grand-prix",
       "localeKey": "belgian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-07-25T10:30:00Z",
         "sprintQualifying": "2025-07-25T14:30:00Z",
@@ -229,7 +216,6 @@
       "round": 13,
       "slug": "hungarian-grand-prix",
       "localeKey": "hungarian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-08-01T11:30:00Z",
         "fp2": "2025-08-01T15:00:00Z",
@@ -246,7 +232,6 @@
       "round": 15,
       "slug": "dutch-grand-prix",
       "localeKey": "dutch-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-08-29T10:30:00Z",
         "fp2": "2025-08-29T14:00:00Z",
@@ -263,7 +248,6 @@
       "round": 16,
       "slug": "italian-grand-prix",
       "localeKey": "italian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-09-05T11:30:00Z",
         "fp2": "2025-09-05T15:00:00Z",
@@ -280,7 +264,6 @@
       "round": 5,
       "slug": "azerbaijan-grand-prix",
       "localeKey": "azerbaijan-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-09-19T08:30:00Z",
         "fp2": "2025-09-19T12:00:00Z",
@@ -297,7 +280,6 @@
       "round": 17,
       "slug": "singapore-grand-prix",
       "localeKey": "singapore-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-10-03T09:30:00Z",
         "fp2": "2025-10-03T13:00:00Z",
@@ -314,7 +296,6 @@
       "round": 20,
       "slug": "us-grand-prix",
       "localeKey": "us-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-10-17T17:30:00Z",
         "sprintQualifying": "2025-10-17T21:30:00Z",
@@ -331,7 +312,6 @@
       "round": 21,
       "slug": "mexican-grand-prix",
       "localeKey": "mexico-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-10-24T18:30:00Z",
         "fp2": "2025-10-24T22:00:00Z",
@@ -348,7 +328,6 @@
       "round": 22,
       "slug": "brazilian-grand-prix",
       "localeKey": "brazilian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-11-07T14:30:00Z",
         "sprintQualifying": "2025-11-07T18:30:00Z",
@@ -365,7 +344,6 @@
       "round": 23,
       "slug": "las-vegas-grand-prix",
       "localeKey": "las-vegas-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-11-21T00:30:00Z",
         "fp2": "2025-11-21T04:00:00Z",
@@ -382,7 +360,6 @@
       "round": 19,
       "slug": "qatar-grand-prix",
       "localeKey": "qatar-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-11-28T13:30:00Z",
         "sprintQualifying": "2025-11-28T17:30:00Z",
@@ -399,7 +376,6 @@
       "round": 24,
       "slug": "abu-dhabi-grand-prix",
       "localeKey": "abu-dhabi-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-12-05T09:30:00Z",
         "fp2": "2025-12-05T13:00:00Z",
