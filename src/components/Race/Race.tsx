@@ -83,7 +83,7 @@ const Race = ({
     <tbody
       id={item.slug}
       key={`${item.slug}-body`}
-      className={`${rowClasses(race)}`}
+      className={`${rowClasses(race)} ${!collapsed ? 'divide-y divide-white/4' : ''}`}
     >
       <tr
         key={`${item.slug}-tr`}
