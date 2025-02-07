@@ -23,6 +23,7 @@
       "round": 2,
       "slug": "jeddah",
       "localeKey": "jeddah",
+      "tbc":true,
       "sessions": {
         "fp1": "2025-04-18T13:51:00Z",
         "qualifying1": "2025-04-18T13:52:00Z",
@@ -38,6 +39,7 @@
       "round": 3,
       "slug": "miami",
       "localeKey": "miami",
+      "tbc":true,
       "sessions": {
         "fp1": "2025-05-02T13:52:00Z",
         "qualifying1": "2025-05-02T13:54:00Z",
@@ -53,6 +55,7 @@
       "round": 4,
       "slug": "canadian",
       "localeKey": "canadian",
+      "tbc":true,
       "sessions": {
         "fp1": "2025-06-13T13:53:00Z",
         "qualifying1": "2025-06-13T13:56:00Z",
@@ -68,6 +71,7 @@
       "round": 5,
       "slug": "zandvoort",
       "localeKey": "zandvoort",
+      "tbc":true,
       "sessions": {
         "fp1": "2025-08-29T13:55:00Z",
         "qualifying1": "2025-08-29T13:57:00Z",
@@ -83,6 +87,7 @@
       "round": 6,
       "slug": "singapore",
       "localeKey": "singapore",
+      "tbc":true,
       "sessions": {
         "fp1": "2025-10-03T13:56:00Z",
         "qualifying1": "2025-10-03T14:00:00Z",
@@ -98,6 +103,7 @@
       "round": 7,
       "slug": "las-vegas",
       "localeKey": "las-vegas",
+      "tbc":true,
       "sessions": {
         "fp1": "2025-11-20T13:57:00Z",
         "qualifying1": "2025-11-20T13:59:00Z",
