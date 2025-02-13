@@ -3,11 +3,11 @@
     {
       "name": "Firestone Grand Prix of St. Petersburg",
       "sessions": {
-        "practice1": "2025-03-08T19:45:00Z",
-        "practice2": "2025-03-09T14:35:00Z",
-        "qualifying": "2025-03-09T19:00:00Z",
-        "warmup": "2025-03-10T13:10:00Z",
-        "race": "2025-03-10T16:15:00Z"
+        "practice1": "2025-02-28T20:00:00Z",
+        "practice2": "2025-03-01T15:15:00Z",
+        "qualifying": "2025-03-01T19:30:00Z",
+        "warmup": "2025-03-02T14:00:00Z",
+        "race": "2025-03-02T17:00:00Z"
       },
       "tbc": false,
       "round": 1,
@@ -17,30 +17,21 @@
       "latitude": 0
     },
     {
-      "name": "$1 Million Challenge",
+      "name": "The Thermal Club INDYCAR Grand Prix",
       "sessions": {
-        "Open Test Session 1": "2025-03-22T16:00:00Z",
-        "Open Test Session 2": "2025-03-22T21:00:00Z",
-        "Open Test Session 3": "2025-03-23T16:00:00Z",
-        "Open Test Session 4": "2025-03-23T20:00:00Z",
-        "qualifying": "2025-03-24T00:00:00Z",
-        "race": "2025-03-24T16:15:00Z"
+        "race": "2025-03-23T19:00:00Z"
       },
       "tbc": false,
       "round": 2,
-      "slug": "1-million-challenge",
-      "localeKey": "1-million-challenge",
+      "slug": "the-thermal-club-indycar-grand-prix",
+      "localeKey": "the-thermal-club-indycar-grand-prix",
       "longitude": 0,
       "latitude": 0
     },
     {
       "name": "Acura Grand Prix of Long Beach",
       "sessions": {
-        "practice1": "2025-04-19T21:50:00Z",
-        "practice2": "2025-04-20T15:25:00Z",
-        "qualifying": "2025-04-20T18:25:00Z",
-        "warmup": "2025-04-21T16:00:00Z",
-        "race": "2025-04-21T19:30:00Z"
+        "race": "2025-04-13T20:30:00Z"
       },
       "tbc": false,
       "round": 3,
@@ -50,13 +41,9 @@
       "latitude": 0
     },
     {
-      "name": "Children\u2019s of Alabama Indy Grand Prix",
+      "name": "Children's of Alabama Indy Grand Prix",
       "sessions": {
-        "practice1": "2025-04-26T19:40:00Z",
-        "practice2": "2025-04-27T16:15:00Z",
-        "qualifying": "2025-04-27T19:30:00Z",
-        "warmup": "2025-04-28T14:15:00Z",
-        "race": "2025-04-28T17:30:00Z"
+        "race": "2025-05-04T17:30:00Z"
       },
       "tbc": false,
       "round": 4,
@@ -68,11 +55,7 @@
     {
       "name": "Sonsio Grand Prix",
       "sessions": {
-        "practice1": "2025-05-10T13:30:00Z",
-        "practice2": "2025-05-10T17:10:00Z",
-        "qualifying": "2025-05-10T20:20:00Z",
-        "warmup": "2025-05-11T15:15:00Z",
-        "race": "2025-05-11T19:30:00Z"
+        "race": "2025-05-10T20:30:00Z"
       },
       "tbc": false,
       "round": 5,
@@ -82,36 +65,21 @@
       "latitude": 0
     },
     {
-      "name": "108th Running of the Indianapolis 500",
+      "name": "109th Running of the Indianapolis 500",
       "sessions": {
-        "practice1": "2025-05-14T13:00:00Z",
-        "practice2": "2025-05-14T17:00:00Z",
-        "practice3": "2025-05-15T19:00:00Z",
-        "practice4": "2025-05-16T14:00:00Z",
-        "practice5": "2025-05-17T16:00:00Z",
-        "practice6": "2025-05-18T13:00:00Z",
-        "qualifying1": "2025-05-18T15:00:00Z",
-        "practice7": "2025-05-19T16:00:00Z",
-        "qualifying2": "2025-05-19T19:05:00Z",
-        "practice8": "2025-05-20T17:00:00Z",
-        "practice9": "2025-05-24T15:00:00Z",
-        "race": "2025-05-26T20:45:00Z"
+        "race": "2025-05-25T16:30:00Z"
       },
       "tbc": false,
       "round": 6,
-      "slug": "108th-running-of-the-indianapolis-500",
-      "localeKey": "108th-running-of-the-indianapolis-500",
+      "slug": "109th-running-of-the-indianapolis-500",
+      "localeKey": "109th-running-of-the-indianapolis-500",
       "longitude": 0,
       "latitude": 0
     },
     {
       "name": "Chevrolet Detroit Grand Prix",
       "sessions": {
-        "practice1": "2025-05-31T19:00:00Z",
-        "practice2": "2025-06-01T13:10:00Z",
-        "qualifying": "2025-06-01T16:15:00Z",
-        "warmup": "2025-06-02T13:30:00Z",
-        "race": "2025-06-02T16:30:00Z"
+        "race": "2025-06-01T16:30:00Z"
       },
       "tbc": false,
       "round": 7,
@@ -121,45 +89,33 @@
       "latitude": 0
     },
     {
-      "name": "XPEL Grand Prix at Road America",
+      "name": "Bommarito Automotive Group 500",
       "sessions": {
-        "practice1": "2025-06-07T20:00:00Z",
-        "practice2": "2025-06-08T15:10:00Z",
-        "qualifying": "2025-06-08T19:25:00Z",
-        "warmup": "2025-06-09T16:15:00Z",
-        "race": "2025-06-09T19:35:00Z"
+        "race": "2025-06-15T19:00:00Z"
       },
       "tbc": false,
       "round": 8,
+      "slug": "bommarito-automotive-group-500",
+      "localeKey": "bommarito-automotive-group-500",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "XPEL Grand Prix at Road America",
+      "sessions": {
+        "race": "2025-06-22T19:30:00Z"
+      },
+      "tbc": false,
+      "round": 9,
       "slug": "xpel-grand-prix-at-road-america",
       "localeKey": "xpel-grand-prix-at-road-america",
       "longitude": 0,
       "latitude": 0
     },
     {
-      "name": "Firestone Grand Prix of Monterey",
-      "sessions": {
-        "practice1": "2025-06-21T21:00:00Z",
-        "practice2": "2025-06-22T17:00:00Z",
-        "qualifying": "2025-06-22T21:15:00Z",
-        "warmup": "2025-06-23T19:00:00Z",
-        "race": "2025-06-23T22:15:00Z"
-      },
-      "tbc": false,
-      "round": 9,
-      "slug": "firestone-grand-prix-of-monterey",
-      "localeKey": "firestone-grand-prix-of-monterey",
-      "longitude": 0,
-      "latitude": 0
-    },
-    {
       "name": "Honda Indy 200 at Mid-Ohio",
       "sessions": {
-        "practice1": "2025-07-05T19:20:00Z",
-        "practice2": "2025-07-06T14:50:00Z",
-        "qualifying": "2025-07-06T19:00:00Z",
-        "warmup": "2025-07-07T14:25:00Z",
-        "race": "2025-07-07T17:45:00Z"
+        "race": "2025-07-06T18:00:00Z"
       },
       "tbc": false,
       "round": 10,
@@ -169,42 +125,33 @@
       "latitude": 0
     },
     {
-      "name": "Hy-Vee Homefront 250",
+      "name": "Hy-Vee INDYCAR Race Weekend Race 1",
       "sessions": {
-        "practice1": "2025-07-12T20:30:00Z",
-        "qualifying": "2025-07-13T19:45:00Z",
-        "race": "2025-07-14T00:00:00Z"
+        "race": "2025-07-12T21:00:00Z"
       },
       "tbc": false,
       "round": 11,
-      "slug": "hyvee-homefront-250",
-      "localeKey": "hyvee-homefront-250",
+      "slug": "hyvee-indycar-race-weekend-race-1",
+      "localeKey": "hyvee-indycar-race-weekend-race-1",
       "longitude": 0,
       "latitude": 0
     },
     {
-      "name": "Hy-Vee One Step 250",
+      "name": "Hy-Vee INDYCAR Race Weekend Race 2",
       "sessions": {
-        "qualifying": "2025-07-13T19:45:00Z",
-        "race": "2025-07-14T16:15:00Z"
+        "race": "2025-07-13T18:00:00Z"
       },
       "tbc": false,
       "round": 12,
-      "slug": "hyvee-one-step-250",
-      "localeKey": "hyvee-one-step-250",
+      "slug": "hyvee-indycar-race-weekend-race-2",
+      "localeKey": "hyvee-indycar-race-weekend-race-2",
       "longitude": 0,
       "latitude": 0
     },
     {
       "name": "Ontario Honda Dealers Indy Toronto",
       "sessions": {
-        "practice1": "2025-07-19T19:00:00Z",
-        "practice2": "2025-07-19T19:50:00Z",
-        "practice3": "2025-07-19T20:05:00Z",
-        "practice4": "2025-07-20T14:30:00Z",
-        "qualifying": "2025-07-20T18:45:00Z",
-        "warmup": "2025-07-21T14:00:00Z",
-        "race": "2025-07-21T17:30:00Z"
+        "race": "2025-07-20T18:00:00Z"
       },
       "tbc": false,
       "round": 13,
@@ -214,28 +161,21 @@
       "latitude": 0
     },
     {
-      "name": "Bommarito Automotive Group 500",
+      "name": "INDYCAR Grand Prix of Monterey",
       "sessions": {
-        "practice1": "2025-08-16T16:45:00Z",
-        "qualifying": "2025-08-16T20:20:00Z",
-        "practice2": "2025-08-17T00:30:00Z",
-        "race": "2025-08-17T22:15:00Z"
+        "race": "2025-07-27T19:00:00Z"
       },
       "tbc": false,
       "round": 14,
-      "slug": "bommarito-automotive-group-500",
-      "localeKey": "bommarito-automotive-group-500",
+      "slug": "indycar-grand-prix-of-monterey",
+      "localeKey": "indycar-grand-prix-of-monterey",
       "longitude": 0,
       "latitude": 0
     },
     {
-      "name": "BITNILE.COM Grand Prix of Portland",
+      "name": "BITNILE.com Grand Prix of Portland",
       "sessions": {
-        "practice1": "2025-08-23T21:55:00Z",
-        "practice2": "2025-08-24T16:00:00Z",
-        "qualifying": "2025-08-24T19:30:00Z",
-        "practice3": "2025-08-25T00:15:00Z",
-        "race": "2025-08-25T19:20:00Z"
+        "race": "2025-08-10T19:00:00Z"
       },
       "tbc": false,
       "round": 15,
@@ -245,43 +185,24 @@
       "latitude": 0
     },
     {
-      "name": "Hy-Vee Milwaukee Mile 250 - Race 1",
+      "name": "Milwaukee Mile",
       "sessions": {
-        "practice1": "2025-08-30T19:35:00Z",
-        "practice2": "2025-08-30T20:30:00Z",
-        "qualifying": "2025-08-31T18:15:00Z",
-        "race": "2025-08-31T22:00:00Z"
+        "race": "2025-08-24T18:00:00Z"
       },
       "tbc": false,
       "round": 16,
-      "slug": "hyvee-milwaukee-mile-250-race-1",
-      "localeKey": "hyvee-milwaukee-mile-250-race-1",
-      "longitude": 0,
-      "latitude": 0
-    },
-    {
-      "name": "Hy-Vee Milwaukee Mile 250 - Race 2",
-      "sessions": {
-        "qualifying": "2025-08-31T18:15:00Z",
-        "race": "2025-09-01T18:50:00Z"
-      },
-      "tbc": false,
-      "round": 17,
-      "slug": "hyvee-milwaukee-mile-250-race-2",
-      "localeKey": "hyvee-milwaukee-mile-250-race-2",
+      "slug": "milwaukee-mile",
+      "localeKey": "milwaukee-mile",
       "longitude": 0,
       "latitude": 0
     },
     {
       "name": "Big Machine Music City Grand Prix",
       "sessions": {
-        "practice1": "2025-09-14T15:30:00Z",
-        "qualifying": "2025-09-14T18:45:00Z",
-        "practice2": "2025-09-14T21:45:00Z",
-        "race": "2025-09-15T19:30:00Z"
+        "race": "2025-08-31T18:30:00Z"
       },
       "tbc": false,
-      "round": 18,
+      "round": 17,
       "slug": "big-machine-music-city-grand-prix",
       "localeKey": "big-machine-music-city-grand-prix",
       "longitude": 0,
