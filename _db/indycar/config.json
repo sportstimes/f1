@@ -2,8 +2,8 @@
   "siteKey": "indycar",
   "url": "indycarcalendar.com",
   "calendarCDN": "files-indycar.motorsportcalendars.com",
-  "calendarOutputYear": 2024,
-  "availableYears": [2021, 2022, 2023, 2024],
+  "calendarOutputYear": 2025,
+  "availableYears": [2021, 2022, 2023, 2024, 2025],
   "sessions": [
     "practice1",
     "practice2",
