@@ -38,6 +38,5 @@
     "race": 57,
     "other": 45
   },
-  "supportsEmailReminders": false,
-  "notice": "Most sessions are still TBC. Calendar will be updated as details are confirmed."
+  "supportsEmailReminders": false
 }
