@@ -7,7 +7,6 @@ export default async (req, res) => {
       message: 'No identifier defined.',
     });
   }
-
   if (!req.body.email) {
     return res.status(400).json({
       success: false,
@@ -22,20 +21,42 @@ export default async (req, res) => {
       ),
     });
   }
-  const db = admin.firestore();
 
-  let email = req.body.email;
+  const db = admin.firestore();
+  const email = req.body.email;
+  const collectionName = `${process.env.NEXT_PUBLIC_SITE_KEY}-subscriptions`;
 
   try {
-    // Add a document with an auto-generated ID
-    const docRef = await db
-      .collection(`${process.env.NEXT_PUBLIC_SITE_KEY}-subscriptions`)
-      .add({
-        email: email,
-      });
+    // Check if the email already exists in the collection
+    const querySnapshot = await db
+      .collection(collectionName)
+      .where('email', '==', email)
+      .get();
 
-    return res.json({ success: true });
+    if (!querySnapshot.empty) {
+      return res.status(409).json({
+        success: false,
+        message: 'Email already exists.',
+      });
+    }
+
+    // If email doesn't exist, add a new document
+    const docRef = await db.collection(collectionName).add({
+      email: email,
+      identifier: req.body.identifier,
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+
+    return res.json({
+      success: true,
+      message: 'Subscription added successfully.',
+      id: docRef.id,
+    });
   } catch (error) {
-    return res.json({ success: false });
+    console.error('Error adding subscription:', error);
+    return res.status(500).json({
+      success: false,
+      message: 'An error occurred while processing your request.',
+    });
   }
 };
