@@ -1,5 +1,4 @@
-import * as firebase from 'firebase/app';
-import { getMessaging } from 'firebase/messaging';
+const { JWT } = require('google-auth-library');
 
 export default async (req, res) => {
   // Only allow POST requests
@@ -18,6 +17,17 @@ export default async (req, res) => {
       message: 'Request is missing token parameter',
     });
   }
+
+  const MESSAGING_SCOPE = 'https://www.googleapis.com/auth/firebase.messaging';
+  const SCOPES = [MESSAGING_SCOPE];
+
+  var serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS);
+  const jwtClient = new JWT({
+    email: serviceAccount.client_email,
+    key: serviceAccount.private_key,
+    scopes: SCOPES,
+  });
+  const tokens = await jwtClient.authorize();
 
   try {
     const config = await import(
@@ -43,20 +53,6 @@ export default async (req, res) => {
     console.log('Topics to subscribe:', topicsToSubscribe);
     console.log('Topics to unsubscribe:', topicsToUnsubscribe);
 
-    // Adjust the topic subscriptions prefixed with the sitekey
-    if (!firebase.getApps().length) {
-      firebase.initializeApp({
-        apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-        authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-        projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-        storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-        messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_ID,
-        appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-      });
-    }
-
-    const messaging = getMessaging();
-
     // Create a results object to track success/failure
     const results = {
       subscribed: [],
@@ -67,7 +63,26 @@ export default async (req, res) => {
     // Process subscriptions
     for (const topic of topicsToSubscribe) {
       try {
-        await messaging.subscribeToTopic(token, `${siteKey}-${topic}`);
+        var subscribeData = {
+          to: `/topics/${siteKey}-${topic}`,
+          registration_tokens: [token],
+        };
+
+        const subscribeResponse = await fetch(
+          'https://iid.googleapis.com/iid/v1:batchAdd',
+          {
+            body: JSON.stringify(subscribeData),
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: 'Bearer ' + tokens.access_token,
+              access_token_auth: true,
+            },
+            method: 'POST',
+          },
+        );
+
+        const res = await subscribeResponse.text();
+
         results.subscribed.push(topic);
       } catch (error) {
         console.error(`Failed to subscribe to topic ${topic}:`, error);
@@ -82,7 +97,26 @@ export default async (req, res) => {
     // Process unsubscriptions
     for (const topic of topicsToUnsubscribe) {
       try {
-        await messaging.unsubscribeFromTopic(token, `${siteKey}-${topic}`);
+        var unsubscribeData = {
+          to: `/topics/${siteKey}-${topic}`,
+          registration_tokens: [token],
+        };
+
+        const unsubscribeResponse = await fetch(
+          'https://iid.googleapis.com/iid/v1:batchRemove',
+          {
+            body: JSON.stringify(unsubscribeData),
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: 'Bearer ' + tokens.access_token,
+              access_token_auth: true,
+            },
+            method: 'POST',
+          },
+        );
+
+        await unsubscribeResponse.text();
+
         results.unsubscribed.push(topic);
       } catch (error) {
         console.error(`Failed to unsubscribe from topic ${topic}:`, error);
