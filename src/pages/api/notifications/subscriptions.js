@@ -43,7 +43,11 @@ export default async (req, res) => {
   for await (const session of sessions) {
     let topicKey = `${process.env.NEXT_PUBLIC_SITE_KEY}-${session}`;
 
-    if (result.rel.topics[topicKey] != null) {
+    if (
+      result.rel != null &&
+      result.rel.topics != null &&
+      result.rel.topics[topicKey] != null
+    ) {
       subscriptions[session] = true;
     } else {
       subscriptions[session] = false;
