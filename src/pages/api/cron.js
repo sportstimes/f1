@@ -1,9 +1,10 @@
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 import admin from 'firebase-admin';
 import { Novu } from '@novu/node';
 import { TriggerRecipientsTypeEnum } from '@novu/shared';
 
 export default async (req, res) => {
+  /*
 	const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 	if(!config.supportsWebPush && !config.supportsEmailReminders){
@@ -94,7 +95,6 @@ export default async (req, res) => {
 			await item.ref.delete();
 		}
 	}
-	
-	res.json({ success: true })
-}
-
+	*/
+  res.json({ success: true });
+};
