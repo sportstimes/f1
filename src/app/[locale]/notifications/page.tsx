@@ -43,7 +43,7 @@ export default async function Notifications({ children, params }) {
 
   return (
     <Layout showCTABar={true} year={currentYear}>
-      <h3 className="text-xl mb-4">{t('notifications.title')} (Beta)</h3>
+      <h3 className="text-xl mb-4">{t('notifications.title')}</h3>
       <Card>
         <Form />
       </Card>
