@@ -8,23 +8,22 @@ async function generateQueue(siteKey) {
   var debug = false;
 
   // Remove all items from the collection...
-  if (!debug) {
-    if (!admin.apps.length) {
-      admin.initializeApp({
-        credential: admin.credential.cert(
-          JSON.parse(process.env.FIREBASE_CREDENTIALS),
-        ),
-      });
-    }
-    const db = admin.firestore();
-    const collectionRef = db.collection(siteKey);
-
-    await collectionRef.get().then((snapshot) => {
-      snapshot.docs.forEach((doc) => {
-        doc.ref.delete();
-      });
+  if (!admin.apps.length) {
+    admin.initializeApp({
+      credential: admin.credential.cert(
+        JSON.parse(process.env.FIREBASE_CREDENTIALS),
+      ),
     });
   }
+
+  const db = admin.firestore();
+  const collectionRef = db.collection(`${siteKey}-queue`);
+
+  await collectionRef.get().then((snapshot) => {
+    snapshot.docs.forEach((doc) => {
+      doc.ref.delete();
+    });
+  });
 
   // Create new items...
 
@@ -38,7 +37,7 @@ async function generateQueue(siteKey) {
 
   // Localization Strings
   let i18nStrings = fs.readFileSync(`locales/en/localization.json`);
-  let localizedStrings = JSON.parse(i18nStrings);
+  let localizedStrings = JSON.parse(i18nStrings)['All'];
 
   // Loop the races
   const races = data.races;
@@ -57,10 +56,12 @@ async function generateQueue(siteKey) {
 
     // Content
     var title = race.name;
-    if (
-      race.localeKey != null &&
-      localizedStrings['races'][race.localeKey] != null
-    ) {
+
+    if (siteKey != 'f1') {
+      title = `${race.name} - ${localizedStrings[siteKey]['title']}`;
+    }
+
+    if (race.localeKey != null && race.localeKey in localizedStrings['races']) {
       title = localizedStrings['races'][race.localeKey];
     }
 
@@ -80,7 +81,6 @@ async function generateQueue(siteKey) {
     }
 
     // Schedule session notifications...
-
     for (const session of Object.keys(race.sessions)) {
       if (dayjs(race.sessions[session]).isAfter(Date())) {
         var body = session;
@@ -111,7 +111,7 @@ async function generateQueue(siteKey) {
             topic: topic,
           });
 
-          const tweet = `${title}: ${body} https://f1calendar.com`;
+          const tweet = `${title}: ${body} https://${config.url}`;
 
           console.log({
             scheduledAt: scheduledAt.toDate(),
@@ -127,13 +127,15 @@ async function generateQueue(siteKey) {
             topic: `${siteKey}-${session}`,
           });
 
-          const ref2 = `${scheduledAt.unix()}-${race.slug}-${session}-buffer`;
-          const tweet = `${title}: ${body} https://f1calendar.com`;
-          await collectionRef.doc(ref2).set({
-            scheduledAt: scheduledAt.toDate(),
-            title: tweet,
-            type: 'buffer',
-          });
+          if (siteKey == 'f1') {
+            const ref2 = `${scheduledAt.unix()}-${race.slug}-${session}-buffer`;
+            const tweet = `${title}: ${body} https://f1calendar.com`;
+            await collectionRef.doc(ref2).set({
+              scheduledAt: scheduledAt.toDate(),
+              title: tweet,
+              type: 'buffer',
+            });
+          }
         }
       }
     }
