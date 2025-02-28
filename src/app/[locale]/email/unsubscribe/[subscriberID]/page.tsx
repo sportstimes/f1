@@ -8,22 +8,19 @@ export interface Props {
 }
 
 export default async function Unsubscribe({ params }: Props) {
-  setRequestLocale(params.locale);
+  const { subscriberID, locale } = await params;
+  setRequestLocale(locale);
 
-  const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
-  );
-
-  const res = await fetch(
-    `https://${config.url}/api/email/unsubscribe/${params.subscriberID}`,
-    {
-      headers: {
-        'Content-Type': 'application/json',
-      },
+  const { headers } = await import('next/headers');
+  const headersList = headers();
+  const host = headersList.get('host');
+  const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http';
+  const baseUrl = `${protocol}://${host}`;
+  const res = await fetch(`${baseUrl}/api/email/unsubscribe/${subscriberID}`, {
+    headers: {
+      'Content-Type': 'application/json',
     },
-  );
-
-  //const result = await res.json()
+  });
 
   return (
     <Layout>

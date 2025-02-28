@@ -8,22 +8,21 @@ export interface Props {
 }
 
 export default async function Confirmation({ params }: Props) {
-  setRequestLocale(params.locale);
+  const { subscriberID, locale } = await params;
+  setRequestLocale(locale);
 
   const config = require(
     `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   const res = await fetch(
-    `https://${config.url}/api/email/confirmation/${params.subscriberID}`,
+    `https://${config.url}/api/email/confirmation/${subscriberID}`,
     {
       headers: {
         'Content-Type': 'application/json',
       },
     },
   );
-
-  //const result = await res.json()
 
   return (
     <Layout>

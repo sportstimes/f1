@@ -13,7 +13,6 @@ on:
           - fe
           - indycar
           - motogp
-          - extremee
           - f1-academy
   workflow_call:
     inputs:

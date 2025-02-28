@@ -52,6 +52,7 @@ export default function Form() {
     const res = await fetch('/api/notifications/update', {
       body: JSON.stringify({
         identifier: localStorage.getItem('uuid'),
+        token: localStorage.getItem('fcm_token'),
         topics: topics,
       }),
       headers: {
@@ -77,17 +78,6 @@ export default function Form() {
     try {
       const token = await firebaseCloudMessaging.init();
       if (token) {
-        const subscribeRes = await fetch('/api/notifications/subscribe', {
-          body: JSON.stringify({
-            identifier: localStorage.getItem('uuid'),
-            token: token,
-          }),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          method: 'POST',
-        });
-
         setFcmToken(token);
 
         await getSubscriptions();
@@ -102,7 +92,7 @@ export default function Form() {
   const getSubscriptions = async () => {
     try {
       const res = await fetch(
-        `/api/notifications/subscriptions?identifier=${localStorage.getItem('uuid')}`,
+        `/api/notifications/subscriptions?identifier=${localStorage.getItem('fcm_token')}`,
       );
       const result = await res.json();
       const subscriptions = result.subscriptions;

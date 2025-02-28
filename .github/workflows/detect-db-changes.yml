@@ -1,0 +1,75 @@
+name: Detect DB Changes
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_db/**/2025.json'
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Determine changed site
+        id: determine-site
+        run: |
+          # Get the list of changed files
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep '_db/.*2025.json')
+          echo "Changed files: $CHANGED_FILES"
+
+          # Extract site name from path patterns
+          if echo "$CHANGED_FILES" | grep -q '_db/f1/'; then
+            echo "site=f1" >> $GITHUB_OUTPUT
+          elif echo "$CHANGED_FILES" | grep -q '_db/f2/'; then
+            echo "site=f2" >> $GITHUB_OUTPUT
+          elif echo "$CHANGED_FILES" | grep -q '_db/f3/'; then
+            echo "site=f3" >> $GITHUB_OUTPUT
+          elif echo "$CHANGED_FILES" | grep -q '_db/fe/'; then
+            echo "site=fe" >> $GITHUB_OUTPUT
+          elif echo "$CHANGED_FILES" | grep -q '_db/indycar/'; then
+            echo "site=indycar" >> $GITHUB_OUTPUT
+          elif echo "$CHANGED_FILES" | grep -q '_db/motogp/'; then
+            echo "site=motogp" >> $GITHUB_OUTPUT
+          elif echo "$CHANGED_FILES" | grep -q '_db/f1-academy/'; then
+            echo "site=f1-academy" >> $GITHUB_OUTPUT
+          else
+            echo "No matching site found in changed files"
+            exit 1
+          fi
+
+      - name: Trigger ICS Deployment Workflow
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.PAT_TOKEN }}
+          script: |
+            console.log("Triggering ICS deployment workflow for site: ${{ steps.determine-site.outputs.site }}");
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'deploy-ics.yml',
+              ref: 'main',
+              inputs: {
+                site: '${{ steps.determine-site.outputs.site }}'
+              }
+            })
+
+      - name: Wait for Queue Generation to Complete
+        run: |
+          # Wait a few seconds to ensure the first workflow has time to start
+          sleep 15
+
+      - name: Trigger Queue Generation Workflow
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.PAT_TOKEN }}
+          script: |
+            console.log("Triggering workflow for site: ${{ steps.determine-site.outputs.site }}");
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'generate-queues.yml',
+              ref: 'main',
+              inputs: {
+                site: '${{ steps.determine-site.outputs.site }}'
+              }
+            })
