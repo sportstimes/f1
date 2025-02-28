@@ -55,7 +55,7 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              workflow_id: 'deploy-ics.yml',
+              workflow_id: 'ics.yml',
               ref: 'main',
               inputs: {
                 site: '${{ steps.determine-site.outputs.site }}'
@@ -76,7 +76,7 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              workflow_id: 'generate-queues.yml',
+              workflow_id: 'queues.yml',
               ref: 'main',
               inputs: {
                 site: '${{ steps.determine-site.outputs.site }}'
