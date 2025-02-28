@@ -19,9 +19,9 @@ on:
       site:
         required: true
         type: string
-      secrets:
-        FIREBASE_CREDENTIALS:
-          required: true
+    secrets:
+      FIREBASE_CREDENTIALS:
+        required: true
 
 jobs:
   build:
