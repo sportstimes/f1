@@ -48,7 +48,7 @@ export default async (req, res) => {
     if (scheduledItem.type == 'push') {
       try {
         const payload = {
-          data: {
+          notification: {
             title: title,
             body: body,
           },
@@ -64,13 +64,103 @@ export default async (req, res) => {
       }
     } else if (scheduledItem.type == 'email') {
       try {
-        // Remove the document so we don't send it again!
-        await item.ref.delete();
+        var postmark = require('postmark');
+        var client = new postmark.ServerClient(
+          process.env.NEXT_PUBLIC_POSTMARK_KEY,
+        );
+
+        // Retrieve recipients...
+        const subscriptionsRef = db.collection(
+          `${process.env.NEXT_PUBLIC_SITE_KEY}-subscriptions`,
+        );
+        const subscriptionsSnapshot = await subscriptionsRef.get();
+
+        // Prepare all of the messages...
+        const messages = [];
+        for await (let subItem of subscriptionsSnapshot.docs) {
+          const subscriber = subItem.data();
+          messages.push({
+            From: 'F1 Calendar <hello@f1calendar.com>',
+            To: subscriber.email,
+            TemplateAlias: process.env.NEXT_PUBLIC_SITE_KEY,
+            TemplateModel: {
+              race: title,
+              identifier: subItem.id,
+            },
+            InlineCss: true,
+          });
+        }
+
+        // Send messages in batches of 500 with delay between batches
+        const batchSize = 500;
+        const delayBetweenBatches = 2000; // 2 seconds delay between batches
+
+        console.log(
+          `Sending ${messages.length} emails in batches of ${batchSize}`,
+        );
+
+        let queueItemDeleted = false;
+        let successCount = 0;
+
+        for (let i = 0; i < messages.length; i += batchSize) {
+          // Get current batch
+          const batch = messages.slice(i, i + batchSize);
+
+          // Log batch progress
+          console.log(
+            `Sending batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(messages.length / batchSize)} (${batch.length} emails)`,
+          );
+
+          try {
+            // Send current batch
+            await client.sendEmailBatchWithTemplates(batch);
+            successCount += batch.length;
+            console.log(
+              `Successfully sent batch ${Math.floor(i / batchSize) + 1}`,
+            );
+
+            // Delete the queue item after the first successful batch
+            if (!queueItemDeleted) {
+              await item.ref.delete();
+              queueItemDeleted = true;
+              console.log(`Queue item deleted after first successful batch`);
+            }
+          } catch (error) {
+            console.error(
+              `Error sending batch ${Math.floor(i / batchSize) + 1}:`,
+              error,
+            );
+            // Continue with next batch
+          }
+
+          // If this isn't the last batch, add delay before sending next batch
+          if (i + batchSize < messages.length) {
+            console.log(
+              `Waiting ${delayBetweenBatches}ms before sending next batch...`,
+            );
+            await new Promise((resolve) =>
+              setTimeout(resolve, delayBetweenBatches),
+            );
+          }
+        }
+
+        console.log(
+          `Email sending complete. Total emails sent: ${successCount}/${messages.length}`,
+        );
+
+        // If we somehow didn't delete the queue item yet (should be rare), delete it now
+        if (!queueItemDeleted) {
+          await item.ref.delete();
+          console.log(`Queue item deleted at completion`);
+        }
       } catch (error) {
-        console.log('email error:' + error);
+        console.log('Processing error:' + error);
+
+        // If there was an error and we didn't delete the queue item,
+        // we could optionally update it with error information here
+        // but we're leaving it as is since you want early deletion
       }
     } else if (scheduledItem.type == 'buffer') {
-      /*
       const response = await fetch(
         `https://api.bufferapp.com/1/updates/create.json?access_token=${encodeURI(process.env.NEXT_PUBLIC_BUFFER_TOKEN)}`,
         {
@@ -95,7 +185,6 @@ export default async (req, res) => {
         },
       );
       const data2 = await response2.json();
-      */
 
       // Remove the document so we don't send it again!
       await item.ref.delete();
