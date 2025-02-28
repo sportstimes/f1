@@ -65,9 +65,7 @@ export default async (req, res) => {
     } else if (scheduledItem.type == 'email') {
       try {
         var postmark = require('postmark');
-        var client = new postmark.ServerClient(
-          process.env.NEXT_PUBLIC_POSTMARK_KEY,
-        );
+        var client = new postmark.ServerClient(process.env.POSTMARK_KEY);
 
         // Retrieve recipients...
         const subscriptionsRef = db.collection(
@@ -162,7 +160,7 @@ export default async (req, res) => {
       }
     } else if (scheduledItem.type == 'buffer') {
       const response = await fetch(
-        `https://api.bufferapp.com/1/updates/create.json?access_token=${encodeURI(process.env.NEXT_PUBLIC_BUFFER_TOKEN)}`,
+        `https://api.bufferapp.com/1/updates/create.json?access_token=${encodeURI(process.env.BUFFER_TOKEN)}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -177,7 +175,7 @@ export default async (req, res) => {
       );
 
       const response2 = await fetch(
-        `https://api.bufferapp.com/1/updates/create.json?access_token=${encodeURI(process.env.NEXT_PUBLIC_BUFFER_TOKEN)}`,
+        `https://api.bufferapp.com/1/updates/create.json?access_token=${encodeURI(process.env.BUFFER_TOKEN)}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
