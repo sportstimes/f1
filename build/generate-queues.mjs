@@ -164,17 +164,13 @@ if (process.argv.length > 2) {
 
   if (site === 'all') {
     await generateAllQueues();
-    process.exit(22);
   } else if (site === 'build') {
     console.log('Generating Queue for ' + process.env.NEXT_PUBLIC_SITE_KEY);
     await generateQueue(process.env.NEXT_PUBLIC_SITE_KEY);
-    process.exit(22);
   } else {
     console.log('Generating Queue for ' + site);
     await generateQueue(site);
-    process.exit(22);
   }
 } else {
   await generateAllQueues();
-  process.exit(22);
 }
