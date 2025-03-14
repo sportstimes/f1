@@ -65,7 +65,9 @@ export default async (req, res) => {
     } else if (scheduledItem.type == 'email') {
       try {
         var postmark = require('postmark');
-        var client = new postmark.ServerClient(process.env.POSTMARK_KEY);
+        var client = new postmark.ServerClient(process.env.POSTMARK_KEY, {
+          timeout: 60,
+        });
 
         // Retrieve recipients...
         const subscriptionsRef = db.collection(
@@ -91,7 +93,7 @@ export default async (req, res) => {
 
         // Send messages in batches of 500 with delay between batches
         const batchSize = 500;
-        const delayBetweenBatches = 2000; // 2 seconds delay between batches
+        const delayBetweenBatches = 1000; // 1 seconds delay between batches
 
         console.log(
           `Sending ${messages.length} emails in batches of ${batchSize}`,
@@ -153,10 +155,6 @@ export default async (req, res) => {
         }
       } catch (error) {
         console.log('Processing error:' + error);
-
-        // If there was an error and we didn't delete the queue item,
-        // we could optionally update it with error information here
-        // but we're leaving it as is since you want early deletion
       }
     } else if (scheduledItem.type == 'buffer') {
       const response = await fetch(
