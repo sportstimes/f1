@@ -26,7 +26,7 @@
 		"qualifying2": "Qualificação 2",
 		"sprintQualifying": "Qualificação Sprint",
 		"sprint": "Sprint",
-		"semifinal": "Semi-Final",
+		"semifinal": "Semifinal",
 		"warmup": "Aquecimento (Warmup)",
 		"race": "Corrida",
 		"race1": "Corrida 1",
@@ -52,7 +52,7 @@
 		"qualifying1": "Qualificação 1",
 		"qualifying2": "Qualificação 2",
 		"sprint": "Sprint",
-		"semifinal": "Semi-Final",
+		"semifinal": "Semifinal",
 		"warmup": "Aquecimento (Warmup)",
 		"race": "Corrida",
 		"race1": "Corrida 1",
@@ -111,8 +111,8 @@
 		},
 		"formatPicker": {
 			"title": "Formato da hora",
-			"12hr": "12-Horas",
-			"24hr": "24-Horas"
+			"12hr": "12 Horas",
+			"24hr": "24 Horas"
 		},
 		"button": "Confirmar"
 	},
