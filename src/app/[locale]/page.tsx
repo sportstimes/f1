@@ -29,3 +29,5 @@ export default async function Page({ children, params }) {
     </Layout>
   );
 }
+
+export const revalidate = 3600;
