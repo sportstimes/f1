@@ -39,7 +39,7 @@
     "ignore-loader": "^0.1.2",
     "loader-utils": "^3.2.1",
     "localforage": "^1.10.0",
-    "next": "^15.0.4",
+    "next": "^15.2.3",
     "next-intl": "^3.9.1",
     "next-plausible": "^3.11.3",
     "next-seo": "^6.0.0",
