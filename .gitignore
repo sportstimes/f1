@@ -63,6 +63,7 @@ jspm_packages
 /public/share.png
 /public/site.webmanifest
 /public/email-header.png
+/public/apple-icon.png
 /public/icon.ico
 .vscode
 
@@ -83,3 +84,5 @@ jspm_packages
 /src/app/apple-icon.png
 /src/app/favicon.ico
 /src/app/icon.ico
+/public/narrow.jpg
+/public/wide.jpg
