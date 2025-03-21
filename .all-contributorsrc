@@ -557,6 +557,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "DevJogger",
+      "name": "Jerry",
+      "avatar_url": "https://avatars.githubusercontent.com/u/158173870?v=4",
+      "profile": "http://newpromise.dev",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
