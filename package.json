@@ -31,7 +31,7 @@
     "@tailwindcss/postcss": "^4.0.0",
     "countries-and-timezones": "^3.2.3",
     "dayjs": "^1.11.5",
-    "firebase": "^11.0.2",
+    "firebase": "^11.5.0",
     "firebase-admin": "^13.0.1",
     "google-auth-library": "^9.15.1",
     "i": "^0.3.7",
