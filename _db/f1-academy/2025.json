@@ -23,7 +23,6 @@
       "round": 2,
       "slug": "jeddah",
       "localeKey": "jeddah",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-04-18T11:05:00Z",
         "qualifying1": "2025-04-18T18:30:00Z",
@@ -39,7 +38,6 @@
       "round": 3,
       "slug": "miami",
       "localeKey": "miami",
-      "tbc": true,
       "sessions": {
         "fp1": "2025-05-02T14:05:00Z",
         "fp2": "2025-05-02T19:20:00Z",
