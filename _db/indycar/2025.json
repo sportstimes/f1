@@ -6,6 +6,7 @@
         "practice1": "2025-02-28T20:00:00Z",
         "practice2": "2025-03-01T15:15:00Z",
         "qualifying": "2025-03-01T19:30:00Z",
+        "practice3": "2025-03-02T14:00:00Z",
         "race": "2025-03-02T17:00:00Z"
       },
       "tbc": false,
@@ -18,9 +19,10 @@
     {
       "name": "The Thermal Club INDYCAR Grand Prix",
       "sessions": {
-        "practice1": "2025-03-21T21:05:00Z",
-        "practice2": "2025-03-22T15:25:00Z",
-        "qualifying": "2025-03-22T18:25:00Z",
+        "practice1": "2025-03-21T22:30:00Z",
+        "practice2": "2025-03-22T17:00:00Z",
+        "qualifying": "2025-03-22T21:00:00Z",
+        "practice3": "2025-03-23T15:00:00Z",
         "race": "2025-03-23T19:00:00Z"
       },
       "tbc": false,
@@ -33,9 +35,10 @@
     {
       "name": "Acura Grand Prix of Long Beach",
       "sessions": {
-        "practice1": "2025-04-11T21:05:00Z",
-        "practice2": "2025-04-12T15:25:00Z",
-        "qualifying": "2025-04-12T18:25:00Z",
+        "practice1": "2025-04-11T22:00:00Z",
+        "practice2": "2025-04-12T15:30:00Z",
+        "qualifying": "2025-04-12T18:30:00Z",
+        "practice3": "2025-04-13T16:00:00Z",
         "race": "2025-04-13T20:30:00Z"
       },
       "tbc": false,
@@ -48,9 +51,10 @@
     {
       "name": "Children's of Alabama Indy Grand Prix",
       "sessions": {
-        "practice1": "2025-05-02T18:45:00Z",
-        "practice2": "2025-05-03T15:05:00Z",
-        "qualifying": "2025-05-03T19:30:00Z",
+        "practice1": "2025-05-02T19:35:00Z",
+        "practice2": "2025-05-03T15:30:00Z",
+        "qualifying": "2025-05-03T18:30:00Z",
+        "practice3": "2025-05-04T14:02:00Z",
         "race": "2025-05-04T17:30:00Z"
       },
       "tbc": false,
@@ -159,7 +163,7 @@
       "latitude": 0
     },
     {
-      "name": "INDYCAR Race Weekend Race 1",
+      "name": "Sukup INDYCAR Race Weekend Race 1",
       "sessions": {
         "practice1": "2025-07-11T20:30:00Z",
         "qualifying": "2025-07-12T20:30:00Z",
@@ -167,31 +171,29 @@
       },
       "tbc": false,
       "round": 11,
-      "slug": "indycar-race-weekend-race-1",
-      "localeKey": "indycar-race-weekend-race-1",
+      "slug": "sukup-indycar-race-weekend-race-1",
+      "localeKey": "sukup-indycar-race-weekend-race-1",
       "longitude": 0,
       "latitude": 0
     },
     {
-      "name": "INDYCAR Race Weekend Race 2",
+      "name": "Sukup INDYCAR Race Weekend Race 2",
       "sessions": {
         "qualifying": "2025-07-12T15:15:00Z",
         "race": "2025-07-13T18:00:00Z"
       },
       "tbc": false,
       "round": 12,
-      "slug": "indycar-race-weekend-race-2",
-      "localeKey": "indycar-race-weekend-race-2",
+      "slug": "sukup-indycar-race-weekend-race-2",
+      "localeKey": "sukup-indycar-race-weekend-race-2",
       "longitude": 0,
       "latitude": 0
     },
     {
       "name": "Ontario Honda Dealers Indy Toronto",
       "sessions": {
-        "practice1": "2025-07-18T19:00:00Z",
         "qualifying": "2025-07-19T18:50:00Z",
-        "race": "2025-07-20T18:00:00Z",
-        "practice2": "2025-07-20T19:00:00Z"
+        "race": "2025-07-20T18:00:00Z"
       },
       "tbc": false,
       "round": 13,
@@ -232,7 +234,7 @@
       "latitude": 0
     },
     {
-      "name": "Snap-On Milwaukee Mile",
+      "name": "Snap-on Milwaukee Mile 250",
       "sessions": {
         "practice1": "2025-08-23T20:40:00Z",
         "practice2": "2025-08-24T14:00:00Z",
@@ -241,8 +243,8 @@
       },
       "tbc": false,
       "round": 16,
-      "slug": "snapon-milwaukee-mile",
-      "localeKey": "snapon-milwaukee-mile",
+      "slug": "snapon-milwaukee-mile-250",
+      "localeKey": "snapon-milwaukee-mile-250",
       "longitude": 0,
       "latitude": 0
     },
@@ -250,9 +252,6 @@
       "name": "Big Machine Music City Grand Prix",
       "sessions": {
         "qualifying": "2025-08-30T18:45:00Z",
-        "practice1": "2025-08-30T20:00:00Z",
-        "practice3": "2025-08-30T22:25:00Z",
-        "practice2": "2025-08-31T15:40:00Z",
         "race": "2025-08-31T18:30:00Z"
       },
       "tbc": false,
