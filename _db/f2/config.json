@@ -19,5 +19,6 @@
     "sprint": 45,
     "feature": 60
   },
-  "supportsEmailReminders": false
+  "supportsEmailReminders": false,
+  "trmnlPlugin": "https://usetrmnl.com/recipes/52472?ref=ay8s"
 }

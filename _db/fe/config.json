@@ -22,5 +22,5 @@
     "race": 57
   },
   "supportsEmailReminders": false,
-  "notice": "Races marked with TBC are showing placeholder times. Calendar will be updated as details are confirmed."
+  "trmnlPlugin": "https://usetrmnl.com/recipes/52910?ref=ay8s"
 }
