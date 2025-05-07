@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import LanguageSelector from '../../components/LanguageSelector/LanguageSelector';
 import SiteSelector from '../../components/SiteSelector/SiteSelector';
 import YearSelector from '../../components/YearSelector/YearSelector';
-import { usePlausible } from 'next-plausible';
 import EmailIcon from '../Icons/EmailIcon';
 import SupportButton from '../SupportButton/SupportButton';
 import Link from 'next/link';
@@ -192,16 +191,7 @@ const Footer = () => {
               {config.trmnlPlugin && (
                 <>
                   {' • '}
-                  <Link
-                    href={config.trmnlPlugin}
-                    onClick={() => {
-                      const plausible = usePlausible();
-
-                      plausible('TRMNL Plugin');
-                    }}
-                  >
-                    TRMNL Plugin
-                  </Link>
+                  <Link href={config.trmnlPlugin}>TRMNL Plugin</Link>
                 </>
               )}
             </p>
