@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import LanguageSelector from '../../components/LanguageSelector/LanguageSelector';
 import SiteSelector from '../../components/SiteSelector/SiteSelector';
 import YearSelector from '../../components/YearSelector/YearSelector';
-//import {usePlausible} from "next-plausible";
+import { usePlausible } from 'next-plausible';
 import EmailIcon from '../Icons/EmailIcon';
 import SupportButton from '../SupportButton/SupportButton';
 import Link from 'next/link';
@@ -188,6 +188,22 @@ const Footer = () => {
               <Link href={`years`}>Years</Link>
               {' • '}
               <Link href={`timezones`}>Timezones</Link>
+
+              {config.trmnlPlugin && (
+                <>
+                  {' • '}
+                  <Link
+                    href={config.trmnlPlugin}
+                    onClick={() => {
+                      const plausible = usePlausible();
+
+                      plausible('TRMNL Plugin');
+                    }}
+                  >
+                    TRMNL Plugin
+                  </Link>
+                </>
+              )}
             </p>
           </div>
 
