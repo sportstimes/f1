@@ -13,7 +13,7 @@ import NextBadge from '../Badges/NextBadge';
 import TBCBadge from '../Badges/TBCBadge';
 import RaceTR from '../Race/RaceTR';
 import Toggle from '../Toggle/Toggle';
-
+import NextEventCountDown from '../NextEventCountDown/NextEventCountDown';
 const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 export interface RaceRow {
@@ -168,10 +168,49 @@ const Race = ({
           </td>
         )}
       </tr>
-
+      <tr
+        key={`${item.slug}-tr`}
+        className="cursor-pointer"
+        onClick={handleRowClick}
+      >
+        <td colSpan={4} className="p-4">
+          {isNextRace && !collapsed ? (
+            <div className="flex justify-center">
+              <NextEventCountDown
+                nextSessionName={getNextNameSession(item)}
+                nextSessionTime={getNextTimeSession(item)}
+              />
+            </div>
+          ) : null}
+        </td>
+      </tr>
       {sessionRows(race, collapsed)}
     </tbody>
   );
+
+  function getNextNameSession(item: RaceModel) {
+    const sessionKey = Object.keys(item.sessions).find((sessionKey) =>
+      dayjs(item.sessions[sessionKey as keyof typeof item.sessions])
+        .add(2, 'hours')
+        .isAfter(new Date())
+    );
+
+    if (sessionKey) {
+      return t(`schedule.${sessionKey}`, {
+        fallback: sessionKey.replace(/^./, (x) => x.toUpperCase()),
+      });
+    }
+
+    return '';
+  }
+
+  function getNextTimeSession(item: RaceModel){
+    return Object.values(item.sessions).find((sessionTime) =>
+      dayjs(sessionTime)
+      .add(2, 'hour')
+      .isAfter(Date())
+    )?.toString();
+  }
 
   function sessionRows(props: RaceRow, collapsed: Boolean) {
     if (Object.keys(props.item.sessions).length != 0) {
@@ -193,7 +232,7 @@ const Race = ({
 
         rows.push(
           <RaceTR
-            key={`${props.item.localeKey}-${sessionKey}`}
+            key={`${props.item.localeKey}-${sessionKey}-${index}`}
             date={props.item.sessions[sessionKey]}
             isNextRace={isNextRace}
             sessionTitle={sessionTitle}
