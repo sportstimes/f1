@@ -42,5 +42,7 @@
   },
   "supportsEmailReminders": true,
   "supportsWebPush": true,
-  "trmnlPlugin": "https://usetrmnl.com/recipes/20507?ref=ay8s"
+  "trmnlPlugin": "https://usetrmnl.com/recipes/20507?ref=ay8s",
+  "banner": "Si, one of the team behind F1 Calendar, is taking on a half marathon this May to raise money for Dementia UK.",
+  "bannerLink": "https://www.justgiving.com/page/21km-for-dementia"
 }

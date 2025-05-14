@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Layout from 'components/Layout/Layout';
 import Notice from 'components/Notice/Notice';
+import Banner from 'components/Banner/Banner';
 import OptionsBar from 'components/OptionsBar/OptionsBar';
 import Races from 'components/Races/Races';
 import RaceSchemas from 'components/RaceSchemas/RaceSchemas';
@@ -22,11 +23,14 @@ export default async function Page({ children, params }) {
   );
 
   return (
-    <Layout showCTABar={true} year={currentYear}>
-      <OptionsBar pickerShowing={false} />
-      <Notice />
-      <Races year={currentYear} races={year.races} />
-    </Layout>
+    <>
+      <Banner />
+      <Layout showCTABar={true} year={currentYear}>
+        <OptionsBar pickerShowing={false} />
+        <Notice />
+        <Races year={currentYear} races={year.races} />
+      </Layout>
+    </>
   );
 }
 
