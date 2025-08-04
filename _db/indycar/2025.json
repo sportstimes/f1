@@ -215,7 +215,7 @@
         "practice1": "2025-07-25T21:00:00Z",
         "practice2": "2025-07-26T15:30:00Z",
         "qualifying": "2025-07-26T18:30:00Z",
-        "warmup": "2025-07-27T16:00:00Z",
+        "warmup": "2025-07-26T23:00:00Z",
         "race": "2025-07-27T19:00:00Z"
       },
       "tbc": false,
@@ -228,8 +228,11 @@
     {
       "name": "BITNILE.com Grand Prix of Portland",
       "sessions": {
-        "race": "2025-08-10T19:00:00Z",
-        "qualifying": "2025-08-10T19:30:00Z"
+        "practice1": "2025-08-08T21:30:00Z",
+        "practice2": "2025-08-09T16:00:00Z",
+        "practice3": "2025-08-10T00:30:00Z",
+        "qualifying": "2025-08-10T18:30:00Z",
+        "race": "2025-08-10T19:00:00Z"
       },
       "tbc": false,
       "round": 15,
@@ -241,6 +244,9 @@
     {
       "name": "Snap-on Milwaukee Mile 250",
       "sessions": {
+        "practice1": "2025-08-23T13:00:00Z",
+        "practice2": "2025-08-23T20:30:00Z",
+        "FinalPractice": "2025-08-23T21:30:00Z",
         "qualifying": "2025-08-24T17:30:00Z",
         "race": "2025-08-24T18:00:00Z"
       },
@@ -254,7 +260,10 @@
     {
       "name": "Borchetta Bourbon Music City Grand Prix",
       "sessions": {
+        "practice1": "2025-08-30T14:30:00Z",
         "qualifying": "2025-08-30T18:45:00Z",
+        "practice2": "2025-08-30T20:30:00Z",
+        "FinalPractice": "2025-08-30T21:30:00Z",
         "race": "2025-08-31T18:30:00Z"
       },
       "tbc": false,
