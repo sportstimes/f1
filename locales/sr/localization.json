@@ -2,8 +2,8 @@
   "All": {
     "date": "Datum",
     "time": "Vreme",
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
+    "showPreviousRaces": "Prikaži prethodne trke",
+    "hidePreviousRaces": "Sakrij prethodne trke",
     "badges": {
       "tbc": "NEPOTVRĐENO",
       "tbc_title": "Nepotvrđeno",
@@ -12,18 +12,19 @@
       "next": "SLEDEĆE"
     },
     "schedule": {
-      "fp1": "Priprema 1",
-      "fp2": "Priprema 2",
-      "fp3": "Priprema 3",
-      "shakedown": "Shakedown",
+      "fp1": "Slobodni trening 1",
+      "fp2": "Slobodni trening 2",
+      "fp3": "Slobodni trening 3",
+      "fp4": "Slobodni trening 4",
+      "shakedown": "Proba",
       "practice1": "Priprema 1",
       "practice2": "Priprema 2",
-      "practice3": "Vežba 3",
+      "practice3": "Priprema 3",
       "practice": "Priprema",
-      "qualifying": "Kvalifikacija",
-      "qualifying1": "Kvalifikacija 1",
-      "qualifying2": "Kvalifikacija 2",
-      "sprintQualifying": "Sprint Kvalifikacija",
+      "qualifying": "Kvalifikacije",
+      "qualifying1": "Kvalifikacije 1",
+      "qualifying2": "Kvalifikacije 2",
+      "sprintQualifying": "Sprint kvalifikacije",
       "sprint": "Sprint",
       "semifinal": "Polufinale",
       "warmup": "Zagrevanje",
@@ -31,57 +32,82 @@
       "race1": "Trka 1",
       "race2": "Trka 2",
       "race3": "Trka 3",
-      "gp": "Grand Prix",
+      "gp": "Velika nagrada",
       "sprint1": "Sprint 1",
       "sprint2": "Sprint 2",
       "feature": "Odlika",
-      "fp4": "Free Practice 4",
+      "other": "Ostalo"
+    },
+    "scheduleAbbreviated": {
+      "fp1": "ST1",
+      "fp2": "ST2",
+      "fp3": "ST3",
+      "fp4": "ST4",
+      "shakedown": "Proba",
+      "practice1": "Trening 1",
+      "practice2": "Trening 2",
+      "practice3": "Trening 3",
+      "practice": "Trening",
+      "qualifying": "Kvalifikacije",
+      "qualifying1": "Kvalifikacije 1",
+      "qualifying2": "Kvalifikacije 2",
+      "sprint": "Sprint",
+      "semifinal": "Polufinale",
+      "warmup": "Zagrevanje",
+      "race": "Trka",
+      "race1": "Trka 1",
+      "race2": "Trka 2",
+      "race3": "Trka 3",
+      "gp": "Velika nagrada",
+      "sprint1": "Sprint 1",
+      "sprint2": "Sprint 2",
+      "feature": "Odlika",
       "other": "Ostalo"
     },
     "races": {
-      "austrian-grand-prix": "Austrijski Grand Prix",
-      "steiermark-grand-prix": "Steiermark (Austrijski) Gran Prix",
-      "hungarian-grand-prix": "Mađarski Grand Prix",
-      "british-grand-prix": "Engleski Grand Prix",
-      "anniversary-british-grand-prix": "70ta Godišnjica Engleskog Grand Prixa",
-      "spanish-grand-prix": "Španski Grand Prix",
-      "belgian-grand-prix": "Belgijski Grand Prix",
-      "italian-grand-prix": "Italijanski Grand Prix",
-      "australian-grand-prix": "Australijski Grand Prix",
-      "bahrain-grand-prix": "Grand Prix Kraljevstva Bahrejn",
-      "vietnamese-grand-prix": "Vietnamski Grand Prix",
-      "dutch-grand-prix": "Nizozemski Grand Prix",
-      "monaco-grand-prix": "Monaški Grand Prix",
-      "azerbaijan-grand-prix": "Azerbađanski Grand Prix",
-      "canadian-grand-prix": "Kanadski Grand Prix",
-      "french-grand-prix": "Francuski Grand Prix",
-      "singapore-grand-prix": "Singaporški Grand Prix",
-      "russian-grand-prix": "Ruski Grand Prix",
-      "japanese-grand-prix": "Japanski Grand Prix",
-      "us-grand-prix": "Američki Grand Prix",
-      "mexico-grand-prix": "Meksički Grand Prix",
-      "brazilian-grand-prix": "Brazilski Grand Prix",
-      "abu-dhabi-grand-prix": "Abu Dhabi Grand Prix",
-      "tuscan-grand-prix": "Toskanski Grand Prix",
-      "eifel-grand-prix": "Eifel Grand Prix",
-      "portuguese-grand-prix": "Portugalski Grand Prix",
-      "emilia-romagna-grand-prix": "Emilia Romagna Grand Prix",
-      "sakhir-grand-prix": "Sakhir (Bahrain) Grand Prix",
-      "turkish-grand-prix": "Turski Grand Prix",
-      "saudi-arabia-grand-prix": "Saudi Arabijski Grand Prix",
-      "qatar-grand-prix": "Qatar Grand Prix",
-      "miami-grand-prix": "Miami Grand Prix",
-      "chinese-grand-prix": "Kineski Grand Prix",
-      "las-vegas-grand-prix": "Las Vegas Grand Prix"
+      "austrian-grand-prix": "Velika nagrada Austrije",
+      "steiermark-grand-prix": "Velika nagrada Štajerske (Austrija)",
+      "hungarian-grand-prix": "Velika nagrada Mađarske",
+      "british-grand-prix": "Velika nagrada Velike Britanije",
+      "anniversary-british-grand-prix": "70. godišnjica velike nagrade Velike Britanije",
+      "spanish-grand-prix": "Velika nagrada Španije",
+      "belgian-grand-prix": "Velika nagrada Belgije",
+      "italian-grand-prix": "Velika nagrada Italije",
+      "australian-grand-prix": "Velika nagrada Australije",
+      "bahrain-grand-prix": "Velika nagrada Bahreina",
+      "vietnamese-grand-prix": "Velika nagrada Vijetnama",
+      "dutch-grand-prix": "Velika nagrada Holandije",
+      "monaco-grand-prix": "Velika nagrada Monaka",
+      "azerbaijan-grand-prix": "Velika nagrada Azerbejdžana",
+      "canadian-grand-prix": "Velika nagrada Kanade",
+      "french-grand-prix": "Velika nagrada Francuske",
+      "singapore-grand-prix": "Velika nagrada Singapura",
+      "russian-grand-prix": "Velika nagrada Rusije",
+      "japanese-grand-prix": "Velika nagrada Japana",
+      "us-grand-prix": "Velika nagrada Sjedinjenih Američkih Država",
+      "mexico-grand-prix": "Velika nagrada Meksika",
+      "brazilian-grand-prix": "Velika nagrada Brazila",
+      "abu-dhabi-grand-prix": "Velika nagrada Abu Dabija",
+      "tuscan-grand-prix": "Velika nagrada Toskane",
+      "eifel-grand-prix": "Velika nagrada Eifela",
+      "portuguese-grand-prix": "Velika nagrada Portugalije",
+      "emilia-romagna-grand-prix": "Velika nagrada Emilije Romanje",
+      "sakhir-grand-prix": "Velika nagrada Sakhira (Bahrein)",
+      "turkish-grand-prix": "Velika nagrada Turske",
+      "saudi-arabia-grand-prix": "Velika nagrada Saudijske Arabije",
+      "qatar-grand-prix": "Velika nagrada Katara",
+      "miami-grand-prix": "Velika nagrada Majamija",
+      "chinese-grand-prix": "Velika nagrada Kine",
+      "las-vegas-grand-prix": "Velika nagrada Las Vegasa"
     },
     "options": {
-      "calendar": "Dodajte dane i vremena trka u Vašem kalendaru",
-      "email": "Želim podsetnike putem e-pošte",
-      "notifications": "Receive Push Notifications",
+      "calendar": "Dodaj dane i vremena trka u kalendar",
+      "email": "Želim podsetnike putem email-a",
+      "notifications": "Želim Push notifikacije",
       "timezonePicker": {
+        "detect": "Detektuj",
         "showing": "Prikazuju se vremena za",
-        "pick": "Izaberite vremensku zonu",
-        "detect": "Detect"
+        "pick": "Izaberi vremensku zonu"
       },
       "formatPicker": {
         "title": "Format sata",
@@ -90,166 +116,159 @@
       },
       "button": "Gotovo"
     },
-    "contribute": "Kontribuirajte",
-    "languageSelector": "Izaberite jezik",
-    "javascript": "This site works best with Javascript Enabled.",
+    "contribute": "Doprinesi",
+    "languageSelector": "Izaberi jezik",
+    "javascript": "Ovaj sajt najbolje radi kad je Javascript omogućen.",
     "footer": {
-      "coffee": "Support us, buy us a coffee.",
-      "twitter": "We’re on Twitter",
-      "github": "Open Sourced on GitHub",
-      "issue": "Spotted an issue? Report",
+      "coffee": "Podrži nas, kupi nam kafu.",
+      "twitter": "Mi smo na Twitter-u",
+      "github": "Otvoren kod na GitHub-u",
+      "issue": "Primetio si problem? Prijavi",
       "links": {
-        "wereOn": "We’re on",
-        "openSourcedOn": "Open Sourced on",
-        "spottedIssue": "Spotted an issue?",
-        "spottedReport": "Report"
+        "wereOn": "Mi smo na",
+        "openSourcedOn": "Otvoren kod na",
+        "spottedIssue": "Primetio si problem?",
+        "spottedReport": "Prijavi"
       },
-      "homescreen": "Add to your Home Screen and get an App like experience."
+      "homescreen": "Dodaj na početni ekran za iskustvo aplikacije."
     },
     "form": {
-      "title": "Napravite kalendar",
-      "description": "Prvo, izaberite koje sesije želite da dodate u kalendar",
-      "reminder": "Postavite podsetnik",
-      "reminderContinued": "minuta pre svakog događaja u Vašem kalendaru",
-      "button": "Preuzmite kalendar",
-      "buttonSubmitted": "Podnešeno",
-      "nonOptionsSelected": "Molimo Vas izbarite makar jednu sesiju za Vaš kalendar",
-      "attention": "Sprint Shootout Sessions will be included when Sprint is selected. We'll adjust our Calendar options if this Sprint Weekend format remains in 2024."
+      "title": "Napravi kalendar",
+      "description": "Prvo, izaberi koje sesije želiš da dodaš u kalendar:",
+      "reminder": "Postavi podsetnik",
+      "reminderContinued": "minuta pre svakog događaja u kalendaru",
+      "button": "Preuzmi kalendar",
+      "buttonSubmitted": "Podneseno",
+      "nonOptionsSelected": "Molimo izaberi barem jednu sesiju za kalendar",
+      "attention": "Sprint Shootout sesije će biti uključene kada je izabran sprint. Prilagodićemo opcije našeg kalendara ako ovaj format sprint vikenda ostaje u 2024."
     },
     "download": {
-      "title": "Izaberite tip kalendara",
+      "title": "Izaberi tip kalendara",
       "webcalTitle": "Za mobilni ili računar",
-      "webcalDescription": "Automatski obnovljiv kalendar za aplikacija poput Outlook ili macOS kalendar.",
-      "webcalButton": "Preuzimanje",
-      "gcalTitle": "Za Google Kalendar",
-      "gcalDescription": "Da biste dodali ovaj kalendar, kopirajte i nalepite ovaj link u Google Kalendar",
-      "gcalDescriptionLink": "Detaljna uputstva ",
-      "gcalAddToGoogleCalendar": "Add to Google Calendar",
-      "icsTitle": "Preuzmite ICS fajl",
-      "icsDescription": "Nesamoobnavljajući kalendar (.ics) za kalendare koji ne podržavaju obnavljanje.",
-      "icsButton": "Preuzimanje",
-      "gcalNotificationNotice": "Google Calendar doesn't honor the reminders on remote calendars. Event notifications can be configured within the calendar's settings after it's been added."
+      "webcalDescription": "Automatski ažurira kalendar za aplikacije poput Outlook-a ili iOS i macOS kalendara.",
+      "webcalButton": "Preuzmi",
+      "gcalTitle": "Za Google kalendar",
+      "gcalDescription": "Za dodavanje ovog kalendara, kopiraj i nalepi ovaj link u Google kalendar",
+      "gcalDescriptionLink": "detaljna uputstva",
+      "gcalNotificationNotice": "Google kalendar ne poštuje podsetnike na udaljenim kalendarima. Notifikacije za događaje se mogu konfigurisati unutar podešavanja kalendara nakon što se kalendar doda.",
+      "gcalAddToGoogleCalendar": "Dodaj u Google kalendar",
+      "icsTitle": "Preuzmi ICS fajl",
+      "icsDescription": "Kalendar koji se ne ažurira (.ics) za kalendare koji ne podržavaju ažuriranje.",
+      "icsButton": "Preuzmi"
     },
     "subscribe": {
-      "title": "Zapratite",
-      "description": "Podsetnik u vidu e-pošte pre svakog Grand Prix vikenda.",
-      "label": "E-mail adresa",
-      "button": "Zapratite"
+      "title": "Pretplati se",
+      "description": "Primaj email podsetnike pre svakog vikenda u kom se održava trka.",
+      "label": "Email adresa",
+      "button": "Pretplati se"
     },
     "notifications": {
-      "title": "Notifications",
-      "description": "Subscribe to receive a Push Notification reminder before a session. Return to this form to adjust your subscriptions at anytime.",
-      "statement": "We'll never send you advertisments or unsolicited notifications that aren't session reminders.",
-      "button": "Save",
-      "buttonSubmitted": "Saved",
+      "title": "Notifikacije",
+      "description": "Pretplati se da primaš podsetnik u vidu Push notifikacije pre sesije. Vrati se ovde da izmeniš podešavanja u svakom trenutku.",
+      "statement": "Nikada nećemo slati reklame niti nepoželjan sadržaj koji nije podsetnik za sesije.",
+      "button": "Sačuvaj",
+      "buttonSubmitted": "Sačuvano",
       "permissions": {
-        "prompt": "You can opt-in to receive Push Notification reminders before a session starts. Tap the button to allow us to send you notifications, you'll then be able to choose which sessions you want reminders for.",
-        "button": "Allow Notifications",
-        "denied": "It looks like you've denied permissions. Reset your permissions via your browser and try again."
+        "prompt": "Možeš izabrati da primaš podsetnike u vidu Push notifikacija pre početka sesije. Klikni dugme da dozvoliš da ti šaljemo notifikacije, a onda ćeš moći da odabereš za koje sesije želiš podsetnik.",
+        "button": "Dozvoli notifikacije",
+        "denied": "Izgleda da si odbio permisije. Resetuj permisije u pretraživaču i probaj ponovo."
       }
     },
     "timezones": {
-      "title": "Izaberite vremensku zonu…"
+      "title": "Izaberi vremensku zonu…"
     },
     "years": {
-      "title": "Izaberite godinu…"
+      "title": "Izaberi godinu…"
     },
     "f1": {
       "title": "F1 kalendar",
-      "subtitle": "Trkačke, Kvalifikacione i Pripremne sesije",
+      "subtitle": "Trke, kvalifikacione i pripremne sesije",
       "seo": {
-        "title": "F1 Kalendar {year} - Formula Jedan Dani i Vremena Trka",
-        "description": "Formula Jedan Kalendar za {year} sezonu sa svim F1 trkama, pripremama i kvalifikacijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "F1, formula jedan, vremena trka, podsetnik, obaveštenja, početno vreme, kvalifikacija, pripreme, London, Evropa, {year}"
+        "title": "F1 kalendar {year} - Dani i vremena trka formule jedan",
+        "description": "Formula jedan kalendar za {year} sezonu sa svim svim F1 trkama za veliku nagradu, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
+        "keywords": "F1, formula jedan, vremena trka, trke, podsetnik, obaveštenja, velike nagrade, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
       },
-      "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV.\n"
+      "footnote": "Formula One, Formula 1, F1 i Grand Prix su brendovi napravljeni od strane Formula One Licensing BV."
     },
     "f2": {
-      "title": "F2 Kalendar",
-      "subtitle": "Trkačke, Kvalifikacione i Pripremne Sesije",
+      "title": "F2 kalendar",
+      "subtitle": "Trke, kvalifikacione i pripremne sesije",
       "seo": {
-        "title": "F2 Kalendar {year} - Formula Dva Dani i Vremena Trka",
-        "description": "Formula Dva Kalendar za {year} sezonu sa svim sesijama. Postavi podsetnike. Sve vremenske zlne. Preuzmi ili zaprati.",
-        "keywords": "Čuvar mesta"
+        "title": "F2 kalendar {year} - Dani i vremena trka formule dva",
+        "description": "Formula dva kalendar za {year} sezonu sa svim F2 trkama za veliku nagradu, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
+        "keywords": "placeholder"
       },
-      "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
+      "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 su brendovi napravljeni od strane FIA."
     },
     "f3": {
-      "title": "F3 Kalendar",
-      "subtitle": "Trkačke, Kvalifikacione i Pripremne Sesije",
+      "title": "F3 kalendar",
+      "subtitle": "Trke, kvalifikacione i pripremne sesije",
       "seo": {
-        "title": "F3 Kalendar {year} - Formula Tri Dani i Vremena Trka",
-        "description": "Formula Tri Kalendar za {year} sezonu sa svim sesijama. Postavi podsetnike. Sve vremenske zlne. Preuzmi ili zaprati.",
-        "keywords": "F3, formula tri, vremena trka, podsetnik, obaveštenja, početno vreme, kvalifikacija, pripreme, London, Evropa, {year}"
+        "title": "F3 kalendar {year} - Dani i vremena trka formule tri",
+        "description": "Formula tri kalendar za {year} sezonu sa svim F3 trkama za veliku nagradu, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
+        "keywords": "F3, formula tri, vremena trka, trke, podsetnik, obaveštenja, velike nagrade, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
       },
-      "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
+      "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 su brendovi napravljeni od strane FIA."
     },
     "fe": {
-      "title": "Formula E Kalendar",
-      "subtitle": "Races, Qualifying & Practice Sessions",
+      "title": "Formula E kalendar",
+      "subtitle": "Trke, kvalifikacione i pripremne sesije",
       "seo": {
-        "title": "Formula E Calendar {year} - Formula E Race Times and Dates",
-        "description": "Formula E Calendar for {year} season with all Formula E e-prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "title": "Formula E kalendar {year} - Dani i vremena trka formule E",
+        "description": "Formula E kalendar za {year} sezonu sa svim Formula E e-prix trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
+        "keywords": "FE, formula e, vremena trka, trke, podsetnik, obaveštenja, e prix, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
       },
-      "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
+      "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP i E-Prix su brendovi napravljeni od strane FIA."
     },
     "indycar": {
-      "title": "IndyCar Calendar",
-      "subtitle": "Races, Qualifying & Practice Sessions",
+      "title": "IndyCar kalendar",
+      "subtitle": "Trke, kvalifikacione i pripremne sesije",
       "seo": {
-        "title": "IndyCar Calendar {year} - Race Times and Dates",
-        "description": "IndyCar Calendar for {year} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {year}"
+        "title": "IndyCar kalendar {year} - Dani i vremena trka",
+        "description": "IndyCar kalendar za {year} sezonu sa svim IndyCar trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
+        "keywords": "IndyCar, vremena trka, trke, podsetnik, obaveštenja, kalendar, datumi, početna vremena, kvalifikacije, pripreme, {year}"
       },
-      "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
+      "footnote": "IndyCar je registrovan brend od strane Brickyard Trademarks, Inc"
     },
     "motogp": {
-      "title": "MotoGP Calendar",
-      "subtitle": "Races, Qualifying & Practice Sessions",
+      "title": "MotoGP kalendar",
+      "subtitle": "Trke, kvalifikacione i pripremne sesije",
       "seo": {
-        "title": "MotoGP Calendar {year} - Race Times and Dates",
-        "description": "MotoGP Calendar for {year} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "title": "MotoGP kalendar {year} - Dani i vremena trka",
+        "description": "MotoGP kalendar za {year} sezonu sa svim MotoGP trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
+        "keywords": "MotoGP, vremena trka, trke, podsetnik, obaveštenja, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
       },
-      "footnote": ""
+      "footnote": "MOTOGP je brend od strane DORNA SPORTS, S.L."
     },
     "wseries": {
-      "title": "W Series Calendar",
-      "subtitle": "Races, Qualifying & Practice Sessions",
+      "title": "W Series kalendar",
+      "subtitle": "Trke, kvalifikacione i pripremne sesije",
       "seo": {
-        "title": "W Serija Kalendar {year} - Dani i Vremena Trka",
-        "description": "W Series Calendar for {year} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "title": "W Series kalendar {year} - Dani i vremena trka",
+        "description": "W Series kalendar za {year} sezonu sa svim W Series trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
+        "keywords": "wseries, w-series, vremena trka, trke, podsetnik, obaveštenja, prix, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
       },
-      "footnote": "W Series Calendar is not affiliated with W Series."
+      "footnote": "W Series kalendar nije povezan sa W Series."
     },
     "extremee": {
-      "title": "Extreme E Calendar",
-      "subtitle": "Races, Qualifying & Practice Sessions",
+      "title": "Extreme E kalendar",
+      "subtitle": "Trke, kvalifikacione i pripremne sesije",
       "seo": {
-        "title": "Extreme E Calendar {year} - Extreme E Race Times and Dates",
-        "description": "Extreme E Calendar for {year} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "title": "Extreme E kalendar {year} - Dani i vremena trka za Extreme E",
+        "description": "Extreme E kalendar za {year} sezonu sa svim Extreme E xprix trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
+        "keywords": "Extreme E, vremena trka, trke, podsetnik, obaveštenja, x prix, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
       },
       "footnote": ""
     },
-    "event": "Formula 1 Grand Prix Events",
-    "notice": {
-      "text": "",
-      "link": ""
-    },
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
     "f1-academy": {
-      "title": "F1 Academy Calendar",
-      "subtitle": "Races, Qualifying & Practice Sessions",
+      "title": "F1 Akademija kalendar",
+      "subtitle": "Trke, kvalifikacione i pripremne sesije",
       "seo": {
-        "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
-        "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "title": "F1 Akademija kalendar {year} - Dani i vremena trka formule jedan",
+        "description": "Formula jedan Akademija kalendar za {year} sezonu sa svim F1 Akademija trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
+        "keywords": "F1, formula jedan, vremena trka, trke, podsetnik, obaveštenja, velike nagrade, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
       },
-      "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
+      "footnote": "F1 Academy, Formula One, Formula 1, F1 i Grand Prix su brendovi napravljeni od strane Formula One Licensing BV."
     }
   }
 }
