@@ -167,17 +167,12 @@ export default async (req, res) => {
       );
       const data = await response.json();
 
-      let threadsText = scheduledItem.title.replace(
-        '#f1 #formula1',
-        '#F1Threads',
-      );
-
       const response2 = await fetch(
         `https://api.bufferapp.com/1/updates/create.json?access_token=${encodeURI(process.env.BUFFER_TOKEN)}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: `text=${encodeURIComponent(threadsText)}&profile_ids[]=667b2a5c7839e9e8795ef3bf&now=1`,
+          body: `text=${encodeURIComponent(scheduledItem.title)}&profile_ids[]=667b2a5c7839e9e8795ef3bf&now=1&channel_data[threads][topic]=F1%20Threads`,
         },
       );
       const data2 = await response2.json();
