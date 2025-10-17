@@ -181,6 +181,22 @@ function generateCalendars(siteKey) {
 
             let category = 'Grand Prix';
 
+            // Determine session title
+            let sessionTitle = sessionsKey.replace(/./, (x) =>
+              x.toUpperCase(),
+            );
+            if (localizedStrings.schedule[sessionsKey]) {
+              sessionTitle = localizedStrings.schedule[sessionsKey];
+            }
+
+            if (
+              localizedStrings.scheduleAbbreviated &&
+              localizedStrings.scheduleAbbreviated[sessionsKey]
+            ) {
+              sessionTitle =
+                localizedStrings.scheduleAbbreviated[sessionsKey];
+            }
+
             // If the session isn't featured then add the session name in front...
             // Or if there are multiple featured sessions then add the session name in front (sprint, feature etc)...
             if (
@@ -188,25 +204,10 @@ function generateCalendars(siteKey) {
               (config.featuredSessions[sessionsKey] &&
                 config.featuredSessions.length > 1)
             ) {
-              let sessionTitle = sessionsKey.replace(/./, (x) =>
-                x.toUpperCase(),
-              );
-              if (localizedStrings.schedule[sessionsKey]) {
-                sessionTitle = localizedStrings.schedule[sessionsKey];
-              }
-
-              if (
-                localizedStrings.scheduleAbbreviated &&
-                localizedStrings.scheduleAbbreviated[sessionsKey]
-              ) {
-                sessionTitle =
-                  localizedStrings.scheduleAbbreviated[sessionsKey];
-              }
-
               title = `${prefix}: ${sessionTitle} (${title})`;
               category = sessionTitle;
             } else {
-              title = `${prefix}: ${sessionTitle} (${title})`;
+              title = `${prefix}: ${title}`;
             }
 
             // Session Length
