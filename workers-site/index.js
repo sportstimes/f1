@@ -39,9 +39,9 @@ async function handleEvent(event) {
 
   try {
     const page = await getAssetFromKV(event);
-    const response = new Response(page.body, page);
 
-    // Set headers
+    // Create response with modified headers
+    const response = new Response(page.body, page);
     response.headers.set("X-XSS-Protection", "1; mode=block");
     response.headers.set("X-Content-Type-Options", "nosniff");
     response.headers.set("X-Frame-Options", "DENY");
@@ -49,9 +49,13 @@ async function handleEvent(event) {
     response.headers.set("Feature-Policy", "none");
     response.headers.set('Cache-Control', 'public, max-age=10800');
 
+    // Clone response before caching to avoid stream consumption issues
+    const responseForCache = response.clone();
+    const responseForMemory = response.clone();
+
     // Cache in both in-memory cache and global cache
-    setCache(cacheKey, response.clone());
-    event.waitUntil(cache.put(event.request, response.clone()));
+    setCache(cacheKey, responseForMemory);
+    event.waitUntil(cache.put(event.request, responseForCache));
 
     return response;
   } catch (e) {
@@ -61,7 +65,7 @@ async function handleEvent(event) {
 }
 
 function setCache(key, response) {
-  memoryCache.set(key, { response: response.clone(), timestamp: Date.now() });
+  memoryCache.set(key, { response: response, timestamp: Date.now() });
 }
 
 function getCache(key) {
