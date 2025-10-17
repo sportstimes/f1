@@ -575,6 +575,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "SpiffyEight77",
+      "name": "Wayne",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23716846?v=4",
+      "profile": "https://spiffyeight77.com",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
