@@ -1,8 +1,7 @@
 name = "calendar-worker"
-type = "webpack"
 workers_dev = true
 site = {bucket = "./static",entry-point = "workers-site"}
-compatibility_date = "2021-12-17"
+compatibility_date = "2024-01-01"
 
 [env.production]
 name = "calendar-worker-production"
