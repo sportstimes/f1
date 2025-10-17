@@ -22,6 +22,13 @@ addEventListener('fetch', event => {
 
 async function handleEvent(event) {
   const url = new URL(event.request.url);
+
+  // Redirect HTTP to HTTPS (but not webcal://)
+  if (url.protocol === 'http:') {
+    url.protocol = 'https:';
+    return Response.redirect(url.toString(), 301);
+  }
+
   const cacheKey = url.pathname;
   const cache = caches.default;
 
