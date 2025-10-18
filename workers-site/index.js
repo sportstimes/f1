@@ -2,9 +2,6 @@ import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
 
 const DEBUG = false;
 
-// In-memory cache (temporary cache for the life of the worker instance)
-const memoryCache = new Map();
-
 addEventListener('fetch', event => {
   try {
     event.respondWith(handleEvent(event))
@@ -29,17 +26,10 @@ async function handleEvent(event) {
     return Response.redirect(url.toString(), 301);
   }
 
-  const cacheKey = url.pathname;
   const cache = caches.default;
 
-  // Check global cache first
+  // Check cache first
   let cachedResponse = await cache.match(event.request);
-  if (cachedResponse) {
-    return cachedResponse;
-  }
-
-  // Check in-memory cache
-  cachedResponse = getCache(cacheKey);
   if (cachedResponse) {
     return cachedResponse;
   }
@@ -56,28 +46,14 @@ async function handleEvent(event) {
     response.headers.set("Feature-Policy", "none");
     response.headers.set('Cache-Control', 'public, max-age=10800');
 
-    // Clone response before caching to avoid stream consumption issues
-    const responseForCache = response.clone();
-    const responseForMemory = response.clone();
-
-    // Cache in both in-memory cache and global cache
-    setCache(cacheKey, responseForMemory);
-    event.waitUntil(cache.put(event.request, responseForCache));
+    // Cache the response
+    event.waitUntil(cache.put(event.request, response.clone()));
 
     return response;
   } catch (e) {
     logError(e);  // Log error
     return new Response(e.message || e.toString(), { status: 500 });
   }
-}
-
-function setCache(key, response) {
-  memoryCache.set(key, { response: response, timestamp: Date.now() });
-}
-
-function getCache(key) {
-  const cacheEntry = memoryCache.get(key);
-  return cacheEntry ? cacheEntry.response : null;
 }
 
 function logError(e) {
