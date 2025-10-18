@@ -26,6 +26,17 @@ async function handleEvent(event) {
     return Response.redirect(url.toString(), 301);
   }
 
+  // Replace _q_ with _qualifying_ in the URL path (only for files-f1)
+  if (url.hostname === 'files-f1.motorsportcalendars.com' && url.pathname.includes('_q_')) {
+    const newPathname = url.pathname.replace(/_q_/g, '_qualifying_');
+    url.pathname = newPathname;
+    // Create a new request with the modified URL
+    event = {
+      ...event,
+      request: new Request(url.toString(), event.request)
+    };
+  }
+
   const cache = caches.default;
 
   // Check cache first
