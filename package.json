@@ -42,7 +42,7 @@
     "next": "^15.0.4",
     "next-intl": "^3.9.1",
     "next-plausible": "^3.11.3",
-    "next-seo": "^6.0.0",
+    "next-seo": "^7.0.1",
     "nextjs": "0.0.3",
     "postmark": "^4.0.5",
     "react": "^19.0.0",
