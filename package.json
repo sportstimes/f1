@@ -33,7 +33,7 @@
     "dayjs": "^1.11.5",
     "firebase": "^12.4.0",
     "firebase-admin": "^13.0.1",
-    "google-auth-library": "^10.4.1",
+    "google-auth-library": "^10.4.2",
     "i": "^0.3.7",
     "ics": "^3.4.0",
     "ignore-loader": "^0.1.2",
