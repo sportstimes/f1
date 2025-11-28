@@ -1,0 +1,244 @@
+{
+  "races": [
+    {
+      "name": "Sao Paulo ePrix",
+      "location": "Sao Paulo",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 1,
+      "slug": "sao-paulo-eprix",
+      "localeKey": "sao-paulo-eprix",
+      "sessions": {
+        "practice1": "2025-12-05T19:30:00Z",
+        "practice2": "2025-12-06T10:30:00Z",
+        "qualifying": "2025-12-06T12:40:00Z",
+        "race": "2025-12-06T17:05:00Z"
+      }
+    },
+    {
+      "name": "Mexico City ePrix",
+      "location": "Mexico",
+      "latitude": 9.00671,
+      "longitude": -79.5372,
+      "round": 2,
+      "slug": "mexico-city-eprix",
+      "localeKey": "mexico-city-eprix",
+      "sessions": {
+        "practice1": "2026-01-09T22:00:00Z",
+        "practice2": "2026-01-10T13:30:00Z",
+        "qualifying": "2026-01-10T15:40:00Z",
+        "race": "2026-01-10T20:05:00Z"
+      }
+    },
+    {
+      "name": "Jeddah ePrix",
+      "location": "Jeddah",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 3,
+      "slug": "jeddah-eprix",
+      "localeKey": "jeddah-eprix",
+      "sessions": {
+        "practice1": "2026-01-30T21:00:00Z",
+        "practice2": "2026-01-31T11:30:00Z",
+        "qualifying": "2026-01-31T13:40:00Z",
+        "race": "2026-01-31T18:05:00Z"
+      }
+    },
+    {
+      "name": "Jeddah ePrix",
+      "location": "Jeddah",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 4,
+      "slug": "jeddah-eprix",
+      "localeKey": "jeddah-eprix",
+      "sessions": {
+        "practice1": "2026-02-12T17:00:00Z",
+        "practice2": "2026-02-13T10:30:00Z",
+        "qualifying": "2026-02-13T12:40:00Z",
+        "race": "2026-02-13T17:05:00Z"
+      }
+    },
+    {
+      "name": "Miami ePrix",
+      "location": "Miami",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 5,
+      "slug": "miami-eprix",
+      "localeKey": "miami-eprix",
+      "sessions": {
+        "practice3": "2026-02-14T10:30:00Z",
+        "qualifying": "2026-02-14T12:40:00Z",
+        "race": "2026-02-14T17:05:00Z"
+      }
+    },
+    {
+      "name": "Monaco ePrix",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 6,
+      "slug": "monaco-eprix",
+      "localeKey": "monaco-eprix",
+      "sessions": {
+        "practice1": "2026-03-20T14:30:00Z",
+        "practice2": "2026-03-21T07:30:00Z",
+        "qualifying": "2026-03-21T09:40:00Z",
+        "race": "2026-03-21T14:05:00Z"
+      }
+    },
+    {
+      "name": "Monaco ePrix",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 7,
+      "slug": "monaco-eprix",
+      "localeKey": "monaco-eprix",
+      "sessions": {
+        "practice1": "2026-05-01T14:00:00Z",
+        "practice2": "2026-05-02T07:30:00Z",
+        "qualifying": "2026-05-02T09:40:00Z",
+        "race": "2026-05-02T14:05:00Z"
+      }
+    },
+    {
+      "name": "Tokyo ePrix",
+      "location": "Tokyo",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 8,
+      "slug": "tokyo-eprix",
+      "localeKey": "tokyo-eprix",
+      "sessions": {
+        "practice3": "2026-05-03T07:30:00Z",
+        "qualifying": "2026-05-03T09:40:00Z",
+        "race": "2026-05-03T14:05:00Z"
+      }
+    },
+    {
+      "name": "Tokyo ePrix",
+      "location": "Tokyo",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 9,
+      "slug": "tokyo-eprix",
+      "localeKey": "tokyo-eprix",
+      "sessions": {
+        "practice1": "2026-05-16T05:30:00Z",
+        "practice2": "2026-05-16T07:10:00Z",
+        "qualifying": "2026-05-16T08:40:00Z",
+        "race": "2026-05-16T13:05:00Z"
+      }
+    },
+    {
+      "name": "Shanghai ePrix",
+      "location": "Shanghai",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 10,
+      "slug": "shanghai-eprix",
+      "localeKey": "shanghai-eprix",
+      "sessions": {
+        "practice3": "2026-05-17T06:30:00Z",
+        "qualifying": "2026-05-17T08:40:00Z",
+        "race": "2026-05-17T13:05:00Z"
+      }
+    },
+    {
+      "name": "Shanghai ePrix",
+      "location": "Shanghai",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 11,
+      "slug": "shanghai-eprix",
+      "localeKey": "shanghai-eprix",
+      "sessions": {
+        "practice1": "2026-06-19T08:30:00Z",
+        "practice2": "2026-06-20T00:30:00Z",
+        "qualifying": "2026-06-20T02:40:00Z",
+        "race": "2026-06-20T07:05:00Z"
+      }
+    },
+    {
+      "name": "Jakarta ePrix",
+      "location": "Jakarta",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 12,
+      "slug": "jakarta-eprix",
+      "localeKey": "jakarta-eprix",
+      "sessions": {
+        "practice1": "2026-07-03T08:00:00Z",
+        "practice2": "2026-07-04T00:30:00Z",
+        "qualifying": "2026-07-04T02:40:00Z",
+        "race": "2026-07-04T07:05:00Z"
+      }
+    },
+    {
+      "name": "Berlin ePrix",
+      "location": "Berlin",
+      "latitude": 52.482258,
+      "longitude": 13.389437,
+      "round": 13,
+      "slug": "berlin-eprix",
+      "localeKey": "berlin-eprix",
+      "sessions": {
+        "practice3": "2026-07-05T00:30:00Z",
+        "qualifying": "2026-07-05T02:40:00Z",
+        "race": "2026-07-05T07:05:00Z"
+      }
+    },
+    {
+      "name": "Berlin ePrix",
+      "location": "Berlin",
+      "latitude": 52.482258,
+      "longitude": 13.389437,
+      "round": 14,
+      "slug": "berlin-eprix",
+      "localeKey": "berlin-eprix",
+      "sessions": {}
+    },
+    {
+      "name": "London ePrix",
+      "location": "GB",
+      "latitude": 51.500149,
+      "longitude": -0.12624,
+      "round": 15,
+      "slug": "london-eprix",
+      "localeKey": "london-eprix",
+      "sessions": {}
+    },
+    {
+      "name": "London ePrix",
+      "location": "GB",
+      "latitude": 51.500149,
+      "longitude": -0.12624,
+      "round": 16,
+      "slug": "london-eprix",
+      "localeKey": "london-eprix",
+      "sessions": {
+        "practice1": "2026-08-14T15:00:00Z",
+        "practice2": "2026-08-15T07:30:00Z",
+        "qualifying": "2026-08-15T09:40:00Z",
+        "race": "2026-08-15T14:05:00Z"
+      }
+    },
+    {
+      "name": "London ePrix",
+      "location": "GB",
+      "latitude": 51.500149,
+      "longitude": -0.12624,
+      "round": 16,
+      "slug": "london-eprix",
+      "localeKey": "london-eprix",
+      "sessions": {
+        "practice3": "2026-08-16T07:30:00Z",
+        "qualifying": "2026-08-16T09:40:00Z",
+        "race": "2026-08-16T14:05:00Z"
+      }
+    }
+  ]
+}
