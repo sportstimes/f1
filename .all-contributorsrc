@@ -584,6 +584,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "rammba",
+      "name": "Radoš Milićev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40705899?v=4",
+      "profile": "https://github.com/rammba",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,

@@ -9,7 +9,7 @@ Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajh
 Graciously hosted by [Vercel](https://vercel.com/?utm_source=sportstimes).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-64-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-65-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -119,6 +119,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://spiffyeight77.com"><img src="https://avatars.githubusercontent.com/u/23716846?v=4?s=100" width="100px;" alt="Wayne"/><br /><sub><b>Wayne</b></sub></a><br /><a href="#translation-SpiffyEight77" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rammba"><img src="https://avatars.githubusercontent.com/u/40705899?v=4?s=100" width="100px;" alt="Radoš Milićev"/><br /><sub><b>Radoš Milićev</b></sub></a><br /><a href="#translation-rammba" title="Translation">🌍</a></td>
     </tr>
   </tbody>
 </table>
