@@ -32,6 +32,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     'sl',
     'sq',
     'sr',
+    'sr-Cyrl',
     'sv',
     'ta',
     'tr',
