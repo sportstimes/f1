@@ -26,6 +26,7 @@ module.exports = {
 		"sl",
 		"sq",
 		"sr",
+		"sr-Cyrl",
 		"sv",
 		"ta",
 		"tr",
@@ -59,7 +60,8 @@ module.exports = {
 		"sk": "Slovenčina",
 		"sl": "Slovenščina",
 		"sq": "Shqip",
-		"sr": "Српски",
+		"sr": "Srpski",
+		"sr-Cyrl": "Српски",
 		"sv": "Svenska",
 		"ta": "தமிழ்",
 		"tr": "Türkçe",
@@ -69,5 +71,3 @@ module.exports = {
 	},
 	"defaultLocale": "en"
 }
-
-
