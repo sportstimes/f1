@@ -8,7 +8,6 @@
       "round": 1,
       "slug": "australian-grand-prix",
       "localeKey": "australian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-03-06T01:30:00Z",
         "fp2": "2026-03-06T05:00:00Z",
@@ -25,7 +24,6 @@
       "round": 2,
       "slug": "chinese-grand-prix",
       "localeKey": "chinese-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-03-13T03:30:00Z",
         "sprintQualifying": "2026-03-13T07:30:00Z",
@@ -42,7 +40,6 @@
       "round": 3,
       "slug": "japanese-grand-prix",
       "localeKey": "japanese-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-03-27T02:30:00Z",
         "fp2": "2026-03-27T06:00:00Z",
@@ -59,7 +56,6 @@
       "round": 4,
       "slug": "bahrain-grand-prix",
       "localeKey": "bahrain-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-04-10T11:30:00Z",
         "fp2": "2026-04-10T15:00:00Z",
@@ -76,7 +72,6 @@
       "round": 5,
       "slug": "saudi-arabia-grand-prix",
       "localeKey": "saudi-arabia-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-04-17T13:30:00Z",
         "fp2": "2026-04-17T17:00:00Z",
@@ -93,7 +88,6 @@
       "round": 6,
       "slug": "miami-grand-prix",
       "localeKey": "miami-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-05-01T16:30:00Z",
         "sprintQualifying": "2026-05-01T20:30:00Z",
@@ -110,7 +104,6 @@
       "round": 7,
       "slug": "canadian-grand-prix",
       "localeKey": "canadian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-05-22T16:30:00Z",
         "sprintQualifying": "2026-05-22T20:30:00Z",
@@ -127,7 +120,6 @@
       "round": 8,
       "slug": "monaco-grand-prix",
       "localeKey": "monaco-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-06-05T11:30:00Z",
         "fp2": "2026-06-05T15:00:00Z",
@@ -144,7 +136,6 @@
       "round": 9,
       "slug": "barcelona-catalunya-grand-prix",
       "localeKey": "barcelona-catalunya-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-06-12T11:30:00Z",
         "fp2": "2026-06-12T15:00:00Z",
@@ -161,7 +152,6 @@
       "round": 10,
       "slug": "austrian-grand-prix",
       "localeKey": "austrian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-06-26T11:30:00Z",
         "fp2": "2026-06-26T15:00:00Z",
@@ -178,7 +168,6 @@
       "round": 11,
       "slug": "british-grand-prix",
       "localeKey": "british-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-07-03T11:30:00Z",
         "sprintQualifying": "2026-07-03T15:30:00Z",
@@ -195,7 +184,6 @@
       "round": 12,
       "slug": "belgian-grand-prix",
       "localeKey": "belgian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-07-17T11:30:00Z",
         "fp2": "2026-07-17T15:00:00Z",
@@ -212,7 +200,6 @@
       "round": 13,
       "slug": "hungarian-grand-prix",
       "localeKey": "hungarian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-07-24T11:30:00Z",
         "fp2": "2026-07-24T15:00:00Z",
@@ -229,7 +216,6 @@
       "round": 14,
       "slug": "dutch-grand-prix",
       "localeKey": "dutch-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-08-21T10:30:00Z",
         "sprintQualifying": "2026-08-21T14:30:00Z",
@@ -246,7 +232,6 @@
       "round": 15,
       "slug": "italian-grand-prix",
       "localeKey": "italian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-09-04T10:30:00Z",
         "fp2": "2026-09-04T14:00:00Z",
@@ -263,7 +248,6 @@
       "round": 16,
       "slug": "spanish-grand-prix",
       "localeKey": "spanish-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-09-11T11:30:00Z",
         "fp2": "2026-09-11T15:00:00Z",
@@ -280,7 +264,6 @@
       "round": 17,
       "slug": "azerbaijan-grand-prix",
       "localeKey": "azerbaijan-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-09-24T08:30:00Z",
         "fp2": "2026-09-24T12:00:00Z",
@@ -297,7 +280,6 @@
       "round": 18,
       "slug": "singapore-grand-prix",
       "localeKey": "singapore-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-10-09T09:30:00Z",
         "sprintQualifying": "2026-10-09T12:30:00Z",
@@ -314,7 +296,6 @@
       "round": 19,
       "slug": "us-grand-prix",
       "localeKey": "us-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-10-23T17:30:00Z",
         "fp2": "2026-10-23T21:00:00Z",
@@ -331,7 +312,6 @@
       "round": 20,
       "slug": "mexican-grand-prix",
       "localeKey": "mexico-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-10-30T18:30:00Z",
         "fp2": "2026-10-30T22:00:00Z",
@@ -348,7 +328,6 @@
       "round": 21,
       "slug": "brazilian-grand-prix",
       "localeKey": "brazilian-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-11-06T15:30:00Z",
         "fp2": "2026-11-06T19:00:00Z",
@@ -365,7 +344,6 @@
       "round": 22,
       "slug": "las-vegas-grand-prix",
       "localeKey": "las-vegas-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-11-20T00:30:00Z",
         "fp2": "2026-11-20T04:00:00Z",
@@ -382,7 +360,6 @@
       "round": 23,
       "slug": "qatar-grand-prix",
       "localeKey": "qatar-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-11-27T13:30:00Z",
         "fp2": "2026-11-27T17:00:00Z",
@@ -399,7 +376,6 @@
       "round": 24,
       "slug": "abu-dhabi-grand-prix",
       "localeKey": "abu-dhabi-grand-prix",
-      "tbc": true,
       "sessions": {
         "fp1": "2026-12-04T09:30:00Z",
         "fp2": "2026-12-04T13:00:00Z",
