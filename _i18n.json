@@ -26,6 +26,7 @@
 		"sl",
 		"sq",
 		"sr",
+		"sr-Cyrl",
 		"sv",
 		"ta",
 		"tr",
@@ -59,7 +60,8 @@
 		"sk": "Slovenčina",
 		"sl": "Slovenščina",
 		"sq": "Shqip",
-		"sr": "Српски",
+		"sr": "Srpski",
+		"sr-Cyrl": "Српски",
 		"sv": "Svenska",
 		"ta": "தமிழ்",
 		"tr": "Türkçe",
@@ -70,8 +72,8 @@
 	"defaultLocale": "en",
 	"loadLocaleFrom": "locales",
 	"pages": {
-		"*": ["localization"]
+		"*": [
+			"localization"
+		]
 	}
 }
-
-

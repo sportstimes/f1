@@ -132,6 +132,7 @@ const locales = [
   'sl',
   'sq',
   'sr',
+  'sr-Cyrl',
   'sv',
   'ta',
   'tr',
