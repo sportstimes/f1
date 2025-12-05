@@ -1,0 +1,412 @@
+{
+  "races": [
+    {
+      "name": "Australian",
+      "location": "Melbourne",
+      "latitude": -37.8373,
+      "longitude": 144.9666,
+      "round": 1,
+      "slug": "australian-grand-prix",
+      "localeKey": "australian-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-03-06T01:30:00Z",
+        "fp2": "2026-03-06T05:00:00Z",
+        "fp3": "2026-03-07T01:30:00Z",
+        "qualifying": "2026-03-07T05:00:00Z",
+        "gp": "2026-03-08T04:00:00Z"
+      }
+    },
+    {
+      "name": "Chinese",
+      "location": "Shanghai",
+      "latitude": 31.3807,
+      "longitude": 121.2498,
+      "round": 2,
+      "slug": "chinese-grand-prix",
+      "localeKey": "chinese-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-03-13T03:30:00Z",
+        "sprintQualifying": "2026-03-13T07:30:00Z",
+        "sprint": "2026-03-14T03:00:00Z",
+        "qualifying": "2026-03-14T07:00:00Z",
+        "gp": "2026-03-15T07:00:00Z"
+      }
+    },
+    {
+      "name": "Japanese",
+      "location": "Suzuka",
+      "latitude": 35.3689,
+      "longitude": 138.9256,
+      "round": 3,
+      "slug": "japanese-grand-prix",
+      "localeKey": "japanese-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-03-27T02:30:00Z",
+        "fp2": "2026-03-27T06:00:00Z",
+        "fp3": "2026-03-28T02:30:00Z",
+        "qualifying": "2026-03-28T06:00:00Z",
+        "gp": "2026-03-29T05:00:00Z"
+      }
+    },
+    {
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "round": 4,
+      "slug": "bahrain-grand-prix",
+      "localeKey": "bahrain-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-04-10T11:30:00Z",
+        "fp2": "2026-04-10T15:00:00Z",
+        "fp3": "2026-04-11T12:30:00Z",
+        "qualifying": "2026-04-11T16:00:00Z",
+        "gp": "2026-04-12T15:00:00Z"
+      }
+    },
+    {
+      "name": "Saudi Arabian",
+      "location": "Jeddah",
+      "latitude": 21.485811,
+      "longitude": 39.192505,
+      "round": 5,
+      "slug": "saudi-arabia-grand-prix",
+      "localeKey": "saudi-arabia-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-04-17T13:30:00Z",
+        "fp2": "2026-04-17T17:00:00Z",
+        "fp3": "2026-04-18T13:30:00Z",
+        "qualifying": "2026-04-18T17:00:00Z",
+        "gp": "2026-04-19T17:00:00Z"
+      }
+    },
+    {
+      "name": "Miami",
+      "location": "Miami",
+      "latitude": 25.957764,
+      "longitude": -80.238835,
+      "round": 6,
+      "slug": "miami-grand-prix",
+      "localeKey": "miami-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-05-01T16:30:00Z",
+        "sprintQualifying": "2026-05-01T20:30:00Z",
+        "sprint": "2026-05-02T16:00:00Z",
+        "qualifying": "2026-05-02T20:00:00Z",
+        "gp": "2026-05-03T20:00:00Z"
+      }
+    },
+    {
+      "name": "Canadian",
+      "location": "Montreal",
+      "latitude": 45.5034,
+      "longitude": -73.5267,
+      "round": 7,
+      "slug": "canadian-grand-prix",
+      "localeKey": "canadian-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-05-22T17:30:00Z",
+        "sprintQualifying": "2026-05-22T21:30:00Z",
+        "sprint": "2026-05-23T16:00:00Z",
+        "qualifying": "2026-05-23T20:00:00Z",
+        "gp": "2026-05-24T20:00:00Z"
+      }
+    },
+    {
+      "name": "Monaco",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 8,
+      "slug": "monaco-grand-prix",
+      "localeKey": "monaco-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-06-05T09:30:00Z",
+        "fp2": "2026-06-05T13:00:00Z",
+        "fp3": "2026-06-06T09:30:00Z",
+        "qualifying": "2026-06-06T14:00:00Z",
+        "gp": "2026-06-07T13:00:00Z"
+      }
+    },
+    {
+      "name": "Barcelona-Catalunya",
+      "location": "Barcelona",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "round": 9,
+      "slug": "barcelona-catalunya-grand-prix",
+      "localeKey": "barcelona-catalunya-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-06-12T09:30:00Z",
+        "fp2": "2026-06-12T13:00:00Z",
+        "fp3": "2026-06-13T09:30:00Z",
+        "qualifying": "2026-06-13T14:00:00Z",
+        "gp": "2026-06-14T13:00:00Z"
+      }
+    },
+    {
+      "name": "Austrian",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "round": 10,
+      "slug": "austrian-grand-prix",
+      "localeKey": "austrian-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-06-26T09:30:00Z",
+        "fp2": "2026-06-26T13:00:00Z",
+        "fp3": "2026-06-27T09:30:00Z",
+        "qualifying": "2026-06-27T14:00:00Z",
+        "gp": "2026-06-28T13:00:00Z"
+      }
+    },
+    {
+      "name": "British",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "round": 11,
+      "slug": "british-grand-prix",
+      "localeKey": "british-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-07-03T10:30:00Z",
+        "sprintQualifying": "2026-07-03T14:30:00Z",
+        "sprint": "2026-07-04T11:00:00Z",
+        "qualifying": "2026-07-04T15:00:00Z",
+        "gp": "2026-07-05T14:00:00Z"
+      }
+    },
+    {
+      "name": "Belgian",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.444,
+      "longitude": 5.9687,
+      "round": 12,
+      "slug": "belgian-grand-prix",
+      "localeKey": "belgian-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-07-17T09:30:00Z",
+        "fp2": "2026-07-17T13:00:00Z",
+        "fp3": "2026-07-18T09:30:00Z",
+        "qualifying": "2026-07-18T14:00:00Z",
+        "gp": "2026-07-19T13:00:00Z"
+      }
+    },
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "round": 13,
+      "slug": "hungarian-grand-prix",
+      "localeKey": "hungarian-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-07-24T09:30:00Z",
+        "fp2": "2026-07-24T13:00:00Z",
+        "fp3": "2026-07-25T09:30:00Z",
+        "qualifying": "2026-07-25T14:00:00Z",
+        "gp": "2026-07-26T13:00:00Z"
+      }
+    },
+    {
+      "name": "Dutch",
+      "location": "Zandvoort",
+      "latitude": 52.388408,
+      "longitude": 4.547122,
+      "round": 14,
+      "slug": "dutch-grand-prix",
+      "localeKey": "dutch-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-08-21T09:30:00Z",
+        "sprintQualifying": "2026-08-21T13:30:00Z",
+        "sprint": "2026-08-22T10:00:00Z",
+        "qualifying": "2026-08-22T14:00:00Z",
+        "gp": "2026-08-23T13:00:00Z"
+      }
+    },
+    {
+      "name": "Italian",
+      "location": "Monza",
+      "latitude": 45.6169,
+      "longitude": 9.2825,
+      "round": 15,
+      "slug": "italian-grand-prix",
+      "localeKey": "italian-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-09-04T09:30:00Z",
+        "fp2": "2026-09-04T13:00:00Z",
+        "fp3": "2026-09-05T09:30:00Z",
+        "qualifying": "2026-09-05T14:00:00Z",
+        "gp": "2026-09-06T13:00:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Madrid",
+      "latitude": 40.4168,
+      "longitude": -3.7038,
+      "round": 16,
+      "slug": "spanish-grand-prix",
+      "localeKey": "spanish-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-09-11T09:30:00Z",
+        "fp2": "2026-09-11T13:00:00Z",
+        "fp3": "2026-09-12T09:30:00Z",
+        "qualifying": "2026-09-12T14:00:00Z",
+        "gp": "2026-09-13T13:00:00Z"
+      }
+    },
+    {
+      "name": "Azerbaijan",
+      "location": "Baku",
+      "latitude": 40.3699,
+      "longitude": 49.8433,
+      "round": 17,
+      "slug": "azerbaijan-grand-prix",
+      "localeKey": "azerbaijan-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-09-24T08:30:00Z",
+        "fp2": "2026-09-24T12:00:00Z",
+        "fp3": "2026-09-25T08:30:00Z",
+        "qualifying": "2026-09-25T12:00:00Z",
+        "gp": "2026-09-26T11:00:00Z"
+      }
+    },
+    {
+      "name": "Singapore",
+      "location": "Singapore",
+      "latitude": 1.2857,
+      "longitude": 103.8575,
+      "round": 18,
+      "slug": "singapore-grand-prix",
+      "localeKey": "singapore-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-10-09T09:30:00Z",
+        "sprintQualifying": "2026-10-09T13:30:00Z",
+        "sprint": "2026-10-10T09:00:00Z",
+        "qualifying": "2026-10-10T13:00:00Z",
+        "gp": "2026-10-11T12:00:00Z"
+      }
+    },
+    {
+      "name": "United States",
+      "location": "Austin",
+      "latitude": 30.1328,
+      "longitude": -97.6411,
+      "round": 19,
+      "slug": "us-grand-prix",
+      "localeKey": "us-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-10-23T17:30:00Z",
+        "fp2": "2026-10-23T21:00:00Z",
+        "fp3": "2026-10-24T17:30:00Z",
+        "qualifying": "2026-10-24T21:00:00Z",
+        "gp": "2026-10-25T20:00:00Z"
+      }
+    },
+    {
+      "name": "Mexican",
+      "location": "Mexico City",
+      "latitude": 19.4028,
+      "longitude": -99.0986,
+      "round": 20,
+      "slug": "mexican-grand-prix",
+      "localeKey": "mexico-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-10-30T18:30:00Z",
+        "fp2": "2026-10-30T22:00:00Z",
+        "fp3": "2026-10-31T17:30:00Z",
+        "qualifying": "2026-10-31T21:00:00Z",
+        "gp": "2026-11-01T20:00:00Z"
+      }
+    },
+    {
+      "name": "Brazilian",
+      "location": "Sao Paulo",
+      "latitude": -23.7014,
+      "longitude": -46.6969,
+      "round": 21,
+      "slug": "brazilian-grand-prix",
+      "localeKey": "brazilian-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-11-06T14:30:00Z",
+        "fp2": "2026-11-06T18:00:00Z",
+        "fp3": "2026-11-07T14:30:00Z",
+        "qualifying": "2026-11-07T18:00:00Z",
+        "gp": "2026-11-08T17:00:00Z"
+      }
+    },
+    {
+      "name": "Las Vegas",
+      "location": "Las Vegas",
+      "latitude": 36.166747,
+      "longitude": -115.148708,
+      "round": 22,
+      "slug": "las-vegas-grand-prix",
+      "localeKey": "las-vegas-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-11-20T00:30:00Z",
+        "fp2": "2026-11-20T04:00:00Z",
+        "fp3": "2026-11-21T00:30:00Z",
+        "qualifying": "2026-11-21T04:00:00Z",
+        "gp": "2026-11-22T04:00:00Z"
+      }
+    },
+    {
+      "name": "Qatar",
+      "location": "Doha",
+      "latitude": 25.490292,
+      "longitude": 51.45303,
+      "round": 23,
+      "slug": "qatar-grand-prix",
+      "localeKey": "qatar-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-11-27T12:30:00Z",
+        "fp2": "2026-11-27T16:00:00Z",
+        "fp3": "2026-11-28T13:00:00Z",
+        "qualifying": "2026-11-28T18:00:00Z",
+        "gp": "2026-11-29T16:00:00Z"
+      }
+    },
+    {
+      "name": "Abu Dhabi",
+      "location": "Yas Marina",
+      "latitude": 24.4821,
+      "longitude": 54.3482,
+      "round": 24,
+      "slug": "abu-dhabi-grand-prix",
+      "localeKey": "abu-dhabi-grand-prix",
+      "tbc": true,
+      "sessions": {
+        "fp1": "2026-12-04T09:30:00Z",
+        "fp2": "2026-12-04T13:00:00Z",
+        "fp3": "2026-12-05T10:30:00Z",
+        "qualifying": "2026-12-05T14:00:00Z",
+        "gp": "2026-12-06T13:00:00Z"
+      }
+    }
+  ]
+}
