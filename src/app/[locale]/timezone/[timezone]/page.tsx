@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
   const canonicalPath = currentLocale === 'en' ? '' : `/${currentLocale}`;
   const canonical = `https://${config.url}${canonicalPath}/timezone/${timezone}`;
@@ -87,10 +87,10 @@ export default async function Timezone({ children, params }) {
 
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
   const data = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${currentYear}.json`,
+    `../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${currentYear}.json`,
   );
 
   return (

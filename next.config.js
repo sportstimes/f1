@@ -4,7 +4,7 @@ const withPWA = require('@ducanh2912/next-pwa').default({
   register: true,
   importScripts: ['firebase-messaging-sw.js'],
 });
-const withNextIntl = require('next-intl/plugin')();
+const withNextIntl = require('next-intl/plugin')('./src/i18n.ts');
 
 const {
   PHASE_DEVELOPMENT_SERVER,

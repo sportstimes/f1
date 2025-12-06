@@ -31,7 +31,7 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   let availableYears = config.availableYears;
@@ -52,7 +52,7 @@ export default async function Year({ children, params }) {
   const t = await getTranslations('All');
 
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   let availableYears = config.availableYears;
@@ -60,7 +60,7 @@ export default async function Year({ children, params }) {
     notFound();
   }
 
-  const data = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${year}.json`);
+  const data = require(`../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${year}.json`);
 
   if (data.races) {
     return (

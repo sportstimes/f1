@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations('All');
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   const { locales } = i18nConfig;

@@ -9,7 +9,7 @@ import NotificationIcon from '../Icons/NotificationIcon';
 import CoffeeIcon from '../Icons/CoffeeIcon';
 import { useLocale, useTranslations } from 'next-intl';
 
-const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 const CTABar = () => {
   const [supportsWebPush, setSupportsWebPush] = useState(false);

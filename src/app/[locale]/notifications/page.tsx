@@ -34,7 +34,7 @@ export default async function Notifications({ children, params }) {
   const t = await getTranslations('All');
 
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   if (!config.supportsWebPush) {

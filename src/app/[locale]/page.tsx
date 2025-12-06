@@ -19,7 +19,7 @@ export default async function Page({ children, params }) {
 
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
   const year = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${currentYear}.json`,
+    `../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${currentYear}.json`,
   );
 
   return (

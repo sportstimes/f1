@@ -14,7 +14,7 @@ import TBCBadge from '../Badges/TBCBadge';
 import RaceTR from '../Race/RaceTR';
 import Toggle from '../Toggle/Toggle';
 
-const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 export interface RaceRow {
   isNextRace: boolean;

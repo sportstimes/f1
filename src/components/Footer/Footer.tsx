@@ -9,7 +9,7 @@ import EmailIcon from '../Icons/EmailIcon';
 import SupportButton from '../SupportButton/SupportButton';
 import Link from 'next/link';
 
-const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 const Footer = () => {
   const t = useTranslations('All');
