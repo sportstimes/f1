@@ -1,7 +1,7 @@
 export default async (req, res) => {
   try {
     const data = await import(
-      `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NEXT_PUBLIC_CURRENT_YEAR}.json`
+      `../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${process.env.NEXT_PUBLIC_CURRENT_YEAR}.json`
     );
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');

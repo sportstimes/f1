@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
   const canonicalPath = currentLocale === 'en' ? '' : `/${currentLocale}`;
   const canonical = `https://${config.url}${canonicalPath}/timezones`;

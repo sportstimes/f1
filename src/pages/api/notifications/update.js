@@ -31,7 +31,7 @@ export default async (req, res) => {
 
   try {
     const config = await import(
-      `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`
+      `../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`
     );
 
     const siteKey = config.siteKey;

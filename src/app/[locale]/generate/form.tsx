@@ -13,7 +13,7 @@ export default function Form() {
   const locale = useLocale();
 
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   var sessions = config.sessions;

@@ -13,7 +13,7 @@ export default function Form() {
   const t = useTranslations('All');
 
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   // Sessions

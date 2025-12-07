@@ -3,7 +3,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { FunctionComponent } from 'react';
 import { useUserContext } from '../../components/UserContext';
 
-const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 export interface RaceRowTR {
   collapsed: Boolean;

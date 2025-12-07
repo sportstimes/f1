@@ -13,7 +13,7 @@ export default function RaceSchema({race}: Props) {
 	const t = useTranslations('All');
 	const localeKey = 'races.' + race.localeKey;
 	
-	const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+	const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 	
 	let name = race.name;
 	if (t(`races.${race.localeKey}`) != localeKey) {

@@ -4,7 +4,7 @@ import ct from 'countries-and-timezones';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   const { locales } = i18nConfig;

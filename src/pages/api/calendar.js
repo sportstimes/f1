@@ -1,13 +1,13 @@
 export default async (req, res) => {
   try {
-    const config = await import(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
-    
-    const localization = await import(`/locales/en/localization.json`)
+    const config = await import(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`)
+
+    const localization = await import(`../../../locales/en/localization.json`)
     const strings = localization['All']
     const i18nSchedule = strings['schedule']
     const i18nRaces = strings['races']
     
-    const data = await import(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${config.calendarOutputYear}.json`)
+    const data = await import(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/${config.calendarOutputYear}.json`)
     const races = data['races'];
     
     let index = -1;

@@ -12,7 +12,7 @@ export default async function Confirmation({ params }: Props) {
   setRequestLocale(locale);
 
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   const res = await fetch(

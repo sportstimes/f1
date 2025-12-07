@@ -20,11 +20,11 @@ const SiteSelector: FunctionComponent = ({}) => {
   const t = useTranslations('All');
   const locale = useLocale();
 
-  const sitesConfig = require(`/_db/sites.json`);
+  const sitesConfig = require(`../../../_db/sites.json`);
   const sites = sitesConfig.sites;
 
   const config = require(
-    `/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+    `../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
   );
 
   // Picker Items
