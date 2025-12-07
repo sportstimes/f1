@@ -14,11 +14,43 @@ export interface Props {
 	locale?: string;
 }
 
+const RacesSkeleton = ({ count }: { count: number }) => {
+	return (
+		<div className="animate-pulse">
+			<table className="w-full">
+				<tbody>
+					{Array.from({ length: count }).map((_, index) => (
+						<tr key={index} className={index % 2 === 1 ? 'bg-row-gray' : ''}>
+							<td className="w-4 lg:w-8 p-4">
+								<div className="w-4 h-4 bg-gray-700 rounded"></div>
+							</td>
+							<td className="p-4">
+								<div className="h-5 bg-gray-700 rounded w-48"></div>
+							</td>
+							<td className="p-4 text-right md:text-left">
+								<div className="h-5 bg-gray-700 rounded w-16 ml-auto md:ml-0"></div>
+							</td>
+							<td className="p-4">
+								<div className="h-5 bg-gray-700 rounded w-14 ml-auto md:ml-0"></div>
+							</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+		</div>
+	);
+};
+
 const Races = ({ year, races }: Props) => {
 	const t = useTranslations('All');
 	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}.title`);
 
-	let {timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces} = useUserContext();
+	let {timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces, isHydrated} = useUserContext();
+
+	// Show skeleton while hydrating to prevent CLS
+	if (!isHydrated) {
+		return <RacesSkeleton count={Math.min(races.length, 8)} />;
+	}
 
 	//if (props.locale) locale = props.locale;
 

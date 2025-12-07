@@ -14,6 +14,7 @@ type userContextType = {
     updateTimeFormat: (timeformat:number) => void;
     updateCollapsePastRaces: (state:boolean) => void;
     collapsePastRaces: boolean;
+    isHydrated: boolean;
 };
 
 const userContextDefaultValues: userContextType = {
@@ -23,6 +24,7 @@ const userContextDefaultValues: userContextType = {
     updateTimezone: () => {},
     collapsePastRaces: true,
     updateCollapsePastRaces: () => {},
+    isHydrated: false,
 };
 
 const UserContext = createContext<userContextType>(userContextDefaultValues);
@@ -39,37 +41,41 @@ export function UserContextProvider({ children }: Props) {
     const [timezone, updateStateTimezone] = useState<string>("Europe/London");
     const [timeFormat, updateStateTimeFormat] = useState<number>(24);
     const [collapsePastRaces, updateStateCollapsePastRaces] = useState(true);
+    const [isHydrated, setIsHydrated] = useState(false);
 
     useEffect(() => {
+        // Extend dayjs with timezone support
+        dayjs.extend(dayjsutc);
+        dayjs.extend(dayjstimezone);
+
         // Fetch the stored timezone, or guess it via dayjs and save it.
         const storedTimezone = localStorage.getItem("timezone");
         if (storedTimezone) {
-            updateTimezone(storedTimezone);
+            updateStateTimezone(storedTimezone === "Europe/Kyiv" ? "Europe/Kiev" : storedTimezone);
         } else {
-            dayjs.extend(dayjsutc);
-            dayjs.extend(dayjstimezone);
-            updateTimezone(dayjs.tz.guess());
+            const guessedTimezone = dayjs.tz.guess();
+            updateStateTimezone(guessedTimezone === "Europe/Kyiv" ? "Europe/Kiev" : guessedTimezone);
+            localStorage.setItem("timezone", guessedTimezone);
         }
-    
+
         // Fetch the stored time format (12hr/24hr)
         const storedFormat = localStorage.getItem("timeFormat");
         if (storedFormat) {
-            updateTimeFormat(Number(storedFormat));
-        } else {
-            updateTimeFormat(24);
+            updateStateTimeFormat(Number(storedFormat));
         }
-        
+
         // Store whether to collapse or show the past races.
         const storedCollapsedState = localStorage.getItem("collapsePastRaces");
-        updateStateCollapsePastRaces(storedCollapsedState == "true");
-        
-        
+        updateStateCollapsePastRaces(storedCollapsedState === "true");
+
         // Fetch the stored UUID, utilized to configure web push notifications.
         const storedUUID = localStorage.getItem("uuid");
         if(!storedUUID){
             setUUID();
         }
-        
+
+        // Mark as hydrated after all localStorage values are loaded
+        setIsHydrated(true);
     }, []);
 
     const updateTimeFormat = (format:number) => {
@@ -101,7 +107,8 @@ export function UserContextProvider({ children }: Props) {
         updateTimezone,
         updateTimeFormat,
         collapsePastRaces,
-        updateCollapsePastRaces
+        updateCollapsePastRaces,
+        isHydrated
     };
 
     return (

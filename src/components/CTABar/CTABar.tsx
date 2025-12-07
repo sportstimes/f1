@@ -14,6 +14,7 @@ const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 const CTABar = () => {
   const [supportsWebPush, setSupportsWebPush] = useState(false);
   const [isInstalled, setIsInstalled] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
   const t = useTranslations('All');
   const locale = useLocale();
 
@@ -30,7 +31,33 @@ const CTABar = () => {
       setSupportsWebPush(true);
       setIsInstalled(installed);
     }
+
+    setIsHydrated(true);
   }, []);
+
+  // Show skeleton buttons with fixed height while hydrating to prevent CLS
+  if (!isHydrated) {
+    return (
+      <div className="grid grid-col-1 md:flex pt-4 gap-3 gap-y-2">
+        <div className="h-12 grow">
+          <div className="bg-mid-green rounded-md shadow h-12 animate-pulse"></div>
+        </div>
+        {config.supportsEmailReminders > 0 && (
+          <div className="h-12 grow">
+            <div className="bg-mid-green rounded-md shadow h-12 animate-pulse"></div>
+          </div>
+        )}
+        {config.supportsWebPush > 0 && (
+          <div className="h-12">
+            <div className="bg-mid-green rounded-md shadow h-12 w-12 md:w-12 animate-pulse"></div>
+          </div>
+        )}
+        <div className="h-12 grow md:hidden">
+          <div className="bg-mid-green rounded-md shadow h-12 animate-pulse"></div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={`grid grid-col-1 md:flex pt-4 gap-3 gap-y-2`}>

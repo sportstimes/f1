@@ -8,9 +8,14 @@ import Link from 'next/link';
 import SiteSelector from '../../components/SiteSelector/SiteSelector';
 import dynamic from 'next/dynamic';
 
+// Placeholder with fixed dimensions to prevent CLS
+const LanguageSelectorSkeleton = () => (
+  <div className="w-[120px] h-[30px] bg-gray-200 rounded-md animate-pulse"></div>
+);
+
 const LanguageSelector = dynamic(
   () => import('../../components/LanguageSelector/LanguageSelector'),
-  { ssr: false },
+  { ssr: false, loading: () => <LanguageSelectorSkeleton /> },
 );
 
 function TopBar() {
