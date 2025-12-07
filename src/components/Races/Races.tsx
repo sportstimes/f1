@@ -14,28 +14,89 @@ export interface Props {
 	locale?: string;
 }
 
-const RacesSkeleton = ({ count }: { count: number }) => {
+const RacesSkeleton = ({ races }: { races: [RaceModel] }) => {
+	// Calculate which races are past and which is the first upcoming
+	// This mirrors the logic in the main Races component
+	let firstUpcomingIndex = -1;
+	const raceStates: { isPast: boolean }[] = [];
+
+	for (let i = 0; i < races.length; i++) {
+		const item = races[i];
+		let isPast = false;
+
+		if (item.sessions != null) {
+			const lastSessionKey = Object.keys(item.sessions)[Object.keys(item.sessions).length - 1];
+			isPast = dayjs(item.sessions[lastSessionKey]).add(2, "hours").isBefore(dayjs());
+
+			if (!isPast && firstUpcomingIndex === -1 && !item.canceled && !item.tbc) {
+				firstUpcomingIndex = i;
+			}
+		}
+
+		raceStates.push({ isPast });
+	}
+
+	// Default collapsePastRaces is true (matches initial React state)
+	// Count past races to determine if we should collapse them
+	const pastRacesCount = raceStates.filter(r => r.isPast).length;
+	const shouldCollapsePast = pastRacesCount > 1 && pastRacesCount < races.length;
+
+	// Build the list of races to show in skeleton
+	const visibleRaces: { index: number; isExpanded: boolean }[] = [];
+	for (let i = 0; i < races.length && visibleRaces.length < 8; i++) {
+		// Skip past races if collapsing
+		if (shouldCollapsePast && raceStates[i].isPast) {
+			continue;
+		}
+		visibleRaces.push({
+			index: i,
+			isExpanded: i === firstUpcomingIndex
+		});
+	}
+
 	return (
 		<div className="animate-pulse">
 			<table className="w-full">
-				<tbody>
-					{Array.from({ length: count }).map((_, index) => (
-						<tr key={index} className={index % 2 === 1 ? 'bg-row-gray' : ''}>
-							<td className="w-4 lg:w-8 p-4">
-								<div className="w-4 h-4 bg-gray-700 rounded"></div>
-							</td>
-							<td className="p-4">
-								<div className="h-5 bg-gray-700 rounded w-48"></div>
-							</td>
-							<td className="p-4 text-right md:text-left">
-								<div className="h-5 bg-gray-700 rounded w-16 ml-auto md:ml-0"></div>
-							</td>
-							<td className="p-4">
-								<div className="h-5 bg-gray-700 rounded w-14 ml-auto md:ml-0"></div>
-							</td>
-						</tr>
-					))}
-				</tbody>
+				{visibleRaces.map(({ index, isExpanded }, visibleIndex) => {
+					const sessionCount = isExpanded && races[index]?.sessions
+						? Object.keys(races[index].sessions).length
+						: 0;
+
+					return (
+						<tbody key={index} className={visibleIndex % 2 === 1 ? 'bg-row-gray' : ''}>
+							{/* Header row */}
+							<tr>
+								<td className="w-4 lg:w-8 p-4">
+									<div className="w-4 h-4 bg-gray-700 rounded"></div>
+								</td>
+								<td className="p-4">
+									<div className="h-5 bg-gray-700 rounded w-48"></div>
+								</td>
+								<td className="p-4 text-right md:text-left">
+									<div className="h-5 bg-gray-700 rounded w-16 ml-auto md:ml-0"></div>
+								</td>
+								<td className="p-4">
+									<div className="h-5 bg-gray-700 rounded w-14 ml-auto md:ml-0"></div>
+								</td>
+							</tr>
+							{/* Session rows for expanded race */}
+							{isExpanded && Array.from({ length: sessionCount }).map((_, sessionIndex) => (
+								<tr key={`session-${sessionIndex}`}>
+									<td className="w-4 lg:w-8"></td>
+									<td className="p-4">
+										<div className="h-4 bg-gray-700 rounded w-24"></div>
+									</td>
+									<td className="p-4 text-right md:text-left">
+										<div className="h-4 bg-gray-700 rounded w-16 ml-auto md:ml-0"></div>
+									</td>
+									<td className="p-4">
+										<div className="h-4 bg-gray-700 rounded w-14 ml-auto md:ml-0"></div>
+									</td>
+								</tr>
+							))}
+						</tbody>
+					);
+				})}
 			</table>
 		</div>
 	);
@@ -49,7 +110,7 @@ const Races = ({ year, races }: Props) => {
 
 	// Show skeleton while hydrating to prevent CLS
 	if (!isHydrated) {
-		return <RacesSkeleton count={Math.min(races.length, 8)} />;
+		return <RacesSkeleton races={races} />;
 	}
 
 	//if (props.locale) locale = props.locale;
