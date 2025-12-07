@@ -22,9 +22,9 @@ const Layout: FunctionComponent<Props> = ({ showCTABar, children, year }: Props)
 
 			<Header showCTABar={showCTABar} year={year} />
 
-			<div className="max-w-screen-lg mx-auto font-sans px-2">
+			<main className="max-w-screen-lg mx-auto font-sans px-2">
 				{children}
-			</div>
+			</main>
 
 			<Footer />
 		</>
