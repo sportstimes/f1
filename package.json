@@ -47,7 +47,7 @@
     "postmark": "^4.0.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "terser-webpack-plugin": "^5.2.4",
+    "terser-webpack-plugin": "^5.3.16",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
