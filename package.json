@@ -46,7 +46,7 @@
     "nextjs": "0.0.3",
     "postmark": "^4.0.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.2.3",
     "terser-webpack-plugin": "^5.2.4",
     "uuid": "^13.0.0"
   },
