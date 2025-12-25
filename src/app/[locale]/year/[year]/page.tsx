@@ -6,6 +6,8 @@ import Card from 'components/Card/Card';
 import Link from 'next/link';
 import OptionsBar from 'components/OptionsBar/OptionsBar';
 import Races from 'components/Races/Races';
+import i18nConfig from '../../../../i18nConfig.js';
+import { Metadata } from 'next';
 
 export interface Props {
   params: { year: string; locale: string };
@@ -14,9 +16,33 @@ export interface Props {
 export async function generateMetadata({
   params,
 }: Omit<Props, 'children'>): Promise<Metadata> {
-  const year = (await params).year;
+  const { year, locale } = await params;
 
   const t = await getTranslations('All');
+
+  const config = require(
+    `../../../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`,
+  );
+
+  const { locales } = i18nConfig;
+  const currentLocale = locale || 'en';
+
+  // Helper function to create language alternates
+  const createLanguageAlternates = (path: string = '') => {
+    const languages: { [key: string]: string } = {};
+
+    locales.forEach((loc: string) => {
+      const localePath = loc === 'en' ? path : `/${loc}${path}`;
+      languages[loc] = `https://${config.url}${localePath}`;
+    });
+
+    languages['x-default'] = `https://${config.url}${path}`;
+
+    return languages;
+  };
+
+  const canonicalPath = currentLocale === 'en' ? `/year/${year}` : `/${currentLocale}/year/${year}`;
+  const canonical = `https://${config.url}${canonicalPath}`;
 
   return {
     title: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, { year: year }),
@@ -26,6 +52,10 @@ export async function generateMetadata({
     keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
       year: year,
     }),
+    alternates: {
+      canonical,
+      languages: createLanguageAlternates(`/year/${year}`),
+    },
   };
 }
 

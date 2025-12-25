@@ -45,8 +45,11 @@ export default function RaceSchema({race}: Props) {
 			"location": {
 				"@type": "Place",
 				"name": location,
-				"latitude": latitude,
-				"longitude": latitude,
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": latitude,
+					"longitude": longitude
+				},
 				"address": location
 			}
 		});
