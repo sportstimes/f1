@@ -2,8 +2,8 @@
   "All": {
     "date": "Dată",
     "time": "Oră",
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
+    "showPreviousRaces": "Arată cursele precedente",
+    "hidePreviousRaces": "Ascunde cursele precedente",
     "badges": {
       "tbc": "AFC",
       "tbc_title": "Urmează a fi confirmat",
@@ -159,7 +159,9 @@
       "seo": {
         "title": "Calendar F1 {year} - Data și Ora Curselor Formula Unu",
         "description": "Calendar Formula Unu pentru sezonul {year} cu toate marele premii de F1, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
-        "keywords": "F1, formula unu, data și ora curselor, curse, notificări, alerte, marele premiu, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}"
+        "keywords": "F1, formula unu, data și ora curselor, curse, notificări, alerte, marele premiu, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}",
+        "timezoneTitle": "F1 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 {year} race schedule in {timezone} timezone. All Grand Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Formula Unu, Formula 1, F1 și Marele Premiu sunt mărci înregistrate Formula One Licensing BV."
     },
@@ -169,7 +171,9 @@
       "seo": {
         "title": "Calendar F2 {year} - Data și Ora Curselor Formula Doi",
         "description": "Calendar Formula Doi pentru sezonul {year} cu toate marele premii de F2, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
-        "keywords": "substituent"
+        "keywords": "substituent",
+        "timezoneTitle": "F2 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F2 {year} race schedule in {timezone} timezone. All Formula 2 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "CAMPIONATUL FIA FORMULA 2, FIA FORMULA 2, FORMULA 2, F2 sunt mărci înregistrate FIA."
     },
@@ -179,7 +183,9 @@
       "seo": {
         "title": "Calendar F3 {year} - Data și Ora Curselor Formula Trei",
         "description": "Calendar Formula Trei pentru sezonul {year} cu toate marele premii de F3, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
-        "keywords": "F3, formula trei, data și ora curselor, curse, notificări, alerte, marele premiu, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}"
+        "keywords": "F3, formula trei, data și ora curselor, curse, notificări, alerte, marele premiu, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}",
+        "timezoneTitle": "F3 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F3 {year} race schedule in {timezone} timezone. All Formula 3 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "CAMPIONATUL FIA FORMULA 3, FIA FORMULA 3, FORMULA 3, F3 sunt mărci înregistrate FIA."
     },
@@ -189,7 +195,9 @@
       "seo": {
         "title": "Calendar Formula E {year} - Data și Ora Curselor Formula E",
         "description": "Calendar Formula E pentru sezonul {year} cu toate e-premiile de Formula E, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
-        "keywords": "FE, formula e, data și ora curselor, curse, notificări, alerte, premiu e, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}"
+        "keywords": "FE, formula e, data și ora curselor, curse, notificări, alerte, premiu e, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}",
+        "timezoneTitle": "Formula E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Formula E {year} race schedule in {timezone} timezone. All E-Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Formula-E, CAMPIONATUL FIA FORMULA-E și E-Prix sunt mărci înregistrate FIA."
     },
@@ -199,7 +207,9 @@
       "seo": {
         "title": "Calendar IndyCar {year} - Data și Ora Curselor",
         "description": "Calendar IndyCar pentru sezonul {year} cu toate cursele de IndyCar, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
-        "keywords": "IndyCar, data și ora curselor, curse, notificări, alerte, calendar, dată, timp de începere, calificări, antrenament, {year}"
+        "keywords": "IndyCar, data și ora curselor, curse, notificări, alerte, calendar, dată, timp de începere, calificări, antrenament, {year}",
+        "timezoneTitle": "IndyCar Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "IndyCar {year} race schedule in {timezone} timezone. All IndyCar race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "IndyCar este marcă înregistrată Brickyard Trademarks, Inc"
     },
@@ -209,7 +219,9 @@
       "seo": {
         "title": "Calendar MotoGP {year} - Data și Ora Curselor",
         "description": "Calendar MotoGP pentru sezonul {year} cu toate cursele de MotoGP, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
-        "keywords": "MotoGP, data și ora curselor, curse, notificări, alerte, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}"
+        "keywords": "MotoGP, data și ora curselor, curse, notificări, alerte, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}",
+        "timezoneTitle": "MotoGP Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "MotoGP {year} race schedule in {timezone} timezone. All MotoGP race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "MotoGP este marcă înregistrată Dorna Sports, S.L"
     },
@@ -219,7 +231,9 @@
       "seo": {
         "title": "Calendar Seria W {year} - Data și Ora Curselor",
         "description": "Calendar Seria W pentru sezonul {year} cu toate cursele de Seria W, antrenamente &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
-        "keywords": "seriaw, seria-w, data și ora curselor, curse, notificări, alerte, premiu, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}"
+        "keywords": "seriaw, seria-w, data și ora curselor, curse, notificări, alerte, premiu, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}",
+        "timezoneTitle": "W Series Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "W Series {year} race schedule in {timezone} timezone. All W Series race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Calendarul Seriei W nu este afiliat cu Seria W."
     },
@@ -229,7 +243,9 @@
       "seo": {
         "title": "Calendar Extreme E {year} - Data și Ora Curselor Extreme E",
         "description": "Calendar Extreme E pentru sezonul {year} cu toate xpremiile de Extreme E, antrenamentele &amp; sesiunile de calificări. Posibilitatea de a seta notificări. Toate fusurile orare. Descarcă sau abonează-te.",
-        "keywords": "Extreme E, data și ora curselor, curse, notificări, alerte, premiu x, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}"
+        "keywords": "Extreme E, data și ora curselor, curse, notificări, alerte, premiu x, calendar, dată, timp de începere, calificări, antrenament, Londra, Europa, {year}",
+        "timezoneTitle": "Extreme E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Extreme E {year} race schedule in {timezone} timezone. All X Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Extreme E este marcă înregistrată."
     },
@@ -238,15 +254,15 @@
       "text": "text",
       "link": "Citește mai mult"
     },
-    "showPreviousRaces": "Arată cursele precedente",
-    "hidePreviousRaces": "Ascunde cursele precedente",
     "f1-academy": {
       "title": "F1 Academy Calendar",
       "subtitle": "Races, Qualifying & Practice Sessions",
       "seo": {
         "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
         "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "F1 Academy Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 Academy {year} race schedule in {timezone} timezone. All F1 Academy race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }

@@ -1,274 +1,292 @@
 {
-"All": {
-	"date": "Data",
-	"time": "Hora",
-	"showPreviousRaces": "Mostrar corridas anteriores",
-	"hidePreviousRaces": "Ocultar corridas anteriores",
-	"badges": {
-		"tbc": "TBC",
-		"tbc_title": "A confirmar",
-		"tickets": "Bilhetes",
-		"canceled": "Cancelado",
-		"next": "Próximo"
-	},
-	"schedule": {
-		"fp1": "Treino Livre 1",
-		"fp2": "Treino Livre 2",
-		"fp3": "Treino Livre 3",
-		"fp4": "Treino Livre 4",
-		"shakedown": "Shakedown",
-		"practice1": "Treino 1",
-		"practice2": "Treino 2",
-		"practice3": "Treino 3",
-		"practice": "Treino",
-		"qualifying": "Qualificação",
-		"qualifying1": "Qualificação 1",
-		"qualifying2": "Qualificação 2",
-		"sprintQualifying": "Qualificação Sprint",
-		"sprint": "Sprint",
-		"semifinal": "Semifinal",
-		"warmup": "Aquecimento (Warmup)",
-		"race": "Corrida",
-		"race1": "Corrida 1",
-		"race2": "Corrida 2",
-		"race3": "Corrida 3",
-		"gp": "Grande Prémio",
-		"sprint1": "Sprint 1",
-		"sprint2": "Sprint 2",
-		"feature": "Corrida Feature",
-		"other": "Outra"
-	},
-	"scheduleAbbreviated": {
-		"fp1": "TL1",
-		"fp2": "TL2",
-		"fp3": "TL3",
-		"fp4": "TL4",
-		"shakedown": "Shakedown",
-		"practice1": "Treino 1",
-		"practice2": "Treino 2",
-		"practice3": "Treino 3",
-		"practice": "Treino",
-		"qualifying": "Qualificação",
-		"qualifying1": "Qualificação 1",
-		"qualifying2": "Qualificação 2",
-		"sprint": "Sprint",
-		"semifinal": "Semifinal",
-		"warmup": "Aquecimento (Warmup)",
-		"race": "Corrida",
-		"race1": "Corrida 1",
-		"race2": "Corrida 2",
-		"race3": "Corrida 3",
-		"gp": "Grande Prémio",
-		"sprint1": "Sprint 1",
-		"sprint2": "Sprint 2",
-		"feature": "Corrida Feature",
-		"other": "Outra"
-		},
-	"races": {
-		"austrian-grand-prix": "Grande Prémio da Áustria",
-		"steiermark-grand-prix": "Grande Prémio da Estíria (Áustria)",
-		"hungarian-grand-prix": "Grande Prémio da Hungria",
-		"british-grand-prix": "Grande Prémio da Grã-Bretanha",
-		"anniversary-british-grand-prix": "70º Aniverário do Grande Prémio da Grã-Bretanha",
-		"spanish-grand-prix": "Grande Prémio da Espanha",
-		"belgian-grand-prix": "Grande Prémio da Bélgica",
-		"italian-grand-prix": "Grande Prémio da Itália",
-		"australian-grand-prix": "Grande Prémio da Autrália",
-		"bahrain-grand-prix": "Grande Prémio do Bahrain",
-		"vietnamese-grand-prix": "Grande Prémio do Vietname",
-		"dutch-grand-prix": "Grande Prémio dos Países Baixos",
-		"monaco-grand-prix": "Grande Prémio do Mónaco",
-		"azerbaijan-grand-prix": "Grande Prémio do Azerbaijão",
-		"canadian-grand-prix": "Grande Prémio do Canadá",
-		"french-grand-prix": "Grande Prémio de França",
-		"singapore-grand-prix": "Grande Prémio de Singapura",
-		"russian-grand-prix": "Grande Prémio da Rússia",
-		"japanese-grand-prix": "Grande Prémio do Japão",
-		"us-grand-prix": "Grande Prémio dos Estados Unidos",
-		"mexico-grand-prix": "Grande Prémio da Cidade do México",
-		"brazilian-grand-prix": "Grande Prémio do Brasil",
-		"abu-dhabi-grand-prix": "Grande Prémio de Abu Dhabi",
-		"tuscan-grand-prix": "Grande Prémio da Toscana",
-		"eifel-grand-prix": "Grande Prémio Eifel",
-		"portuguese-grand-prix": "Grande Prémio de Portugal",
-		"emilia-romagna-grand-prix": "Grande Prémio da Emília Romagna",
-		"sakhir-grand-prix": "Grande Prémio de Sakhir (Bahrain)",
-		"turkish-grand-prix": "Grande Prémio da Turquia",
-		"saudi-arabia-grand-prix": "Grande Prémio da Arábia Saudita",
-		"qatar-grand-prix": "Grande Prémio do Catar",
-		"miami-grand-prix": "Grande Prémio de Miami",
-		"chinese-grand-prix" : "Grande Prémio da China",
-		"las-vegas-grand-prix" : "Grande Prémio de Las Vegas"
-	},
-	"options": {
-		"calendar": "Adicione as datas e horas das corridas ao seu Calendário",
-		"email": "Receba lembretes no seu e-mail",
-		"notifications": "Receber notificações push",
-		"timezonePicker": {
-			"detect": "Detetar",
-			"showing": "Horários de exibição para",
-			"pick": "Escolha um fuso horário"
-		},
-		"formatPicker": {
-			"title": "Formato da hora",
-			"12hr": "12 Horas",
-			"24hr": "24 Horas"
-		},
-		"button": "Confirmar"
-	},
-	"contribute": "Contribua",
-	"languageSelector": "Selecione o idioma",
-	"javascript": "Este site funciona melhor com o Javascript ligado",
-	"footer": {
-		"coffee": "Ajude-nos, compre-nos um café",
-		"twitter": "Estamos no X (Twitter)",
-		"github": "Código aberto no GitHub",
-		"issue": "Encontrou um erro? Reporte-nos",
-		"links": {
-			"wereOn": "Estamos ligados",
-			"openSourcedOn": "Código aberto em",
-			"spottedIssue": "Encontrou um erro?",
-			"spottedReport": "Reporte"
-		},
-		"homescreen":"Adicione ao seu ecrã inicial e obtenha uma experiência semelhante à de uma aplicação."
-	},
-	"form": {
-		"title": "Gerar Calendário",
-		"description": "Primeiro, escolha as sessões que pretende adicionar ao seu calendário",
-		"reminder": "Definir um lembrete",
-		"reminderContinued": "minutos antes do evento",
-		"button": "Obter o Calendário",
-		"buttonSubmitted": "Submetido",
-		"nonOptionsSelected": "Selecione, por favor, pelo menos uma sessão no seu calendário",
-		"attention": "As sessões do Sprint Shootout serão incluídas quando o Sprint for selecionado. Ajustaremos as nossas opções de calendário se este formato de Sprint de fim de semana se mantiver em 2024."
-	},
-	"download": {
-		"title": "Selecione um tipo de Calendário",
-		"webcalTitle": "Para Telemóvel ou Computador",
-		"webcalDescription": "Calendário atualizado automaticamente para aplicações como o Outlook e Calendário macOS",
-		"webcalButton": "Obter",
-		"gcalTitle": "Para Google Calendário",
-		"gcalDescription": "Para adicionar este calendário, copie e cole este link no seu Google Calendário",
-		"gcalDescriptionLink": "instruções detalhadas",
-		"gcalNotificationNotice": "O Calendário Google não respeita os lembretes em calendários remotos. As notificações de eventos podem ser configuradas nas definições do calendário depois de este ter sido adicionado.",
-		"gcalAddToGoogleCalendar": "Adicionar ao Calendário Google",
-		"icsTitle": "Transferir ficheiro ICS",
-		"icsDescription": "Calendário não atualizável (.ics) para calendários que não suportam a atualização de subscrições.",
-		"icsButton": "Transferir"
-	},
-	"subscribe": {
-		"title": "Subscrever",
-		"description": "Receba um lembrete no seu e-mail antes de cada fim de semana de corrida",
-		"label": "E-mail",
-		"button": "Subscreva"
-	},
-	"notifications": {
-		"title": "Notificações",
-		"description": "Subscreva para receber um lembrete de notificação push antes de uma sessão. Regresse a este formulário para ajustar as suas subscrições em qualquer altura.",
-		"statement": "Nunca lhe enviaremos publicidade ou notificações não solicitadas que não sejam lembretes de sessões.",
-		"button": "Guardar",
-		"buttonSubmitted": "Guardado",
-		"permissions": {
-			"prompt": "Pode optar por receber lembretes de notificações push antes do início de uma sessão. Toque no botão para nos permitir enviar-lhe notificações. Poderá então escolher as sessões para as quais pretende receber lembretes.",
-			"button": "Permitir notificações",
-			"denied": "Parece que as suas permissões foram negadas. Reponha as suas permissões através do seu navegador e tente novamente."
-		}
-	},
-	"timezones": {
-		"title": "Escolha um fuso horário..."
-	},
-	"years": {
-		"title": "Escolha um ano..."
-	},
-	"f1": {
-		"title": "Calendário F1",
-		"subtitle": "Corridas, Qualificações e Sessões de Treino",
-		"seo": {
-			"title": "Calendário F1 {year} - Horários e datas das corridas",
-			"description": "Calendário Fórmula 1 para a época de {year} com todos os grandes prémios, treinos e qualificações. Defina a função de lembretes. Todos os fusos-horários. Transfira e subscreva.",
-			"keywords": "F1, fórmula 1, horário das corridas, corridas, lembretes, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}"
-		},
-		"footnote": "Formula One, Formula 1, F1 e Grand Prix são marcas registadas da Formula One Licensing BV."
-	},
-	"f2": {
-		"title": "Calendário F2",
-		"subtitle": "Corridas, Qualificações e Sessões de Treino",
-		"seo": {
-			"title": "Calendário F2 {year} - Horários e datas das corridas",
-			"description": "Calendário Fórmula 2 para a época de {year} com todos os grandes prémios, treinos e qualificações. Defina a função de lembretes. Todos os fusos-horários. Transfira e subscreva.",
-			"keywords": "F2, fórmula 2, horário das corridas, corridas, lembretes, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}"
-		},
-		"footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 são marcas registadas da FIA."
-	},
-	"f3": {
-		"title": "Calendário F3",
-		"subtitle": "Corridas, Qualificações e Sessões de Treino",
-		"seo": {
-			"title": "Calendário F3 {year} - Horários e datas das corridas",
-			"description": "Calendário Fórmula 3 para a época de {year} com todos os grandes prémios, treinos e qualificações. Defina a função de lembretes. Todos os fusos-horários. Transfira e subscreva.",
-			"keywords": "F3, fórmula 3, horário das corridas, corridas, lembretes, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}"
-		},
-		"footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 são marcas registadas da FIA."
-	},
-	"fe": {
-		"title": "Calendário Formula E",
-		"subtitle": "Corridas, Qualificações e Sessões de Treino",
-		"seo": {
-			"title": "Calendário Fórmula E {year} - Horários e datas das corridas",
-			"description": "Calendário da Fórmula E para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
-			"keywords": "FE, fórmula e, horário das corridas, corridas, lembretes, alertas, e prix, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}"
-		},
-		"footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP e E-Prix são marcas registadas da FIA."
-	},
-	"indycar": {
-		"title": "Calendário IndyCar",
-		"subtitle": "Corridas, Qualificações e Sessões de Treino",
-		"seo": {
-			"title": "Calendário IndyCar {year} - Horários e datas das corridas",
-			"description": "Calendário da IndyCar para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
-			"keywords": "IndyCar, horário das corridas, corridas, lembretes, alertas, calendário, datas, horário de início, qualificaçāo, treino livre, {year}"
-		},
-		"footnote": "IndyCar é uma marca registada da Brickyard Trademarks, Inc"
-	},
-	"motogp": {
-		"title": "Calendário MotoGP",
-		"subtitle": "Corridas, Qualificações e Sessões de Treino",
-		"seo": {
-			"title": "Calendário MotoGP {year} - Horários e datas das corridas",
-			"description": "Calendário da MotoGP para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
-			"keywords": "MotoGP, horário das corridas, corridas, lembretes, alertas, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}"
-		},
-		"footnote": "MOTOGP é uma marca registada da DORNA SPORTS, S.L."
-	},
-	"wseries": {
-		"title": "Calendário W Series",
-		"subtitle": "Corridas, Qualificações e Sessões de Treino",
-		"seo": {
-			"title": "Calendário W Series {year} - Horários e datas das corridas",
-			"description": "Calendário da W Series para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
-			"keywords": "wseries, w-series, horário das corridas, corridas, lembretes, alertas, prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}"
-		},
-		"footnote": "O Calendário da W Series não está afiliado à W Series."
-	},
-	"extremee": {
-		"title": "Calendário Extreme E",
-		"subtitle": "Corridas, Qualificações e Sessões de Treino",
-		"seo": {
-			"title": "Calendário Extreme E {year} - Horários e datas das corridas",
-			"description": "Calendário da Extreme E para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
-			"keywords": "Extreme E, horário das corridas, corridas, lembretes, alertas, x prix, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}"
-		},
-		"footnote": ""
-	},
-	"f1-academy": {
-		"title": "Calendário F1 Academy",
-		"subtitle": "Corridas, Qualificações e Sessões de Treino",
-		"seo": {
-			"title": "Calendário F1 Academy {year} - Horários e datas das corridas",
-			"description": "Calendário da Formula One Academy para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
-			"keywords": "F1, fórmula 1, horário das corridas, corridas, lembretes, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}"
-		},
-		"footnote": "F1 Academy, Formula One, Formula 1, F1 & Grand Prix são marcas comerciais da Formula One Licensing BV."
-	}
-}
+  "All": {
+    "date": "Data",
+    "time": "Hora",
+    "showPreviousRaces": "Mostrar corridas anteriores",
+    "hidePreviousRaces": "Ocultar corridas anteriores",
+    "badges": {
+      "tbc": "TBC",
+      "tbc_title": "A confirmar",
+      "tickets": "Bilhetes",
+      "canceled": "Cancelado",
+      "next": "Próximo"
+    },
+    "schedule": {
+      "fp1": "Treino Livre 1",
+      "fp2": "Treino Livre 2",
+      "fp3": "Treino Livre 3",
+      "fp4": "Treino Livre 4",
+      "shakedown": "Shakedown",
+      "practice1": "Treino 1",
+      "practice2": "Treino 2",
+      "practice3": "Treino 3",
+      "practice": "Treino",
+      "qualifying": "Qualificação",
+      "qualifying1": "Qualificação 1",
+      "qualifying2": "Qualificação 2",
+      "sprintQualifying": "Qualificação Sprint",
+      "sprint": "Sprint",
+      "semifinal": "Semifinal",
+      "warmup": "Aquecimento (Warmup)",
+      "race": "Corrida",
+      "race1": "Corrida 1",
+      "race2": "Corrida 2",
+      "race3": "Corrida 3",
+      "gp": "Grande Prémio",
+      "sprint1": "Sprint 1",
+      "sprint2": "Sprint 2",
+      "feature": "Corrida Feature",
+      "other": "Outra"
+    },
+    "scheduleAbbreviated": {
+      "fp1": "TL1",
+      "fp2": "TL2",
+      "fp3": "TL3",
+      "fp4": "TL4",
+      "shakedown": "Shakedown",
+      "practice1": "Treino 1",
+      "practice2": "Treino 2",
+      "practice3": "Treino 3",
+      "practice": "Treino",
+      "qualifying": "Qualificação",
+      "qualifying1": "Qualificação 1",
+      "qualifying2": "Qualificação 2",
+      "sprint": "Sprint",
+      "semifinal": "Semifinal",
+      "warmup": "Aquecimento (Warmup)",
+      "race": "Corrida",
+      "race1": "Corrida 1",
+      "race2": "Corrida 2",
+      "race3": "Corrida 3",
+      "gp": "Grande Prémio",
+      "sprint1": "Sprint 1",
+      "sprint2": "Sprint 2",
+      "feature": "Corrida Feature",
+      "other": "Outra"
+    },
+    "races": {
+      "austrian-grand-prix": "Grande Prémio da Áustria",
+      "steiermark-grand-prix": "Grande Prémio da Estíria (Áustria)",
+      "hungarian-grand-prix": "Grande Prémio da Hungria",
+      "british-grand-prix": "Grande Prémio da Grã-Bretanha",
+      "anniversary-british-grand-prix": "70º Aniverário do Grande Prémio da Grã-Bretanha",
+      "spanish-grand-prix": "Grande Prémio da Espanha",
+      "belgian-grand-prix": "Grande Prémio da Bélgica",
+      "italian-grand-prix": "Grande Prémio da Itália",
+      "australian-grand-prix": "Grande Prémio da Autrália",
+      "bahrain-grand-prix": "Grande Prémio do Bahrain",
+      "vietnamese-grand-prix": "Grande Prémio do Vietname",
+      "dutch-grand-prix": "Grande Prémio dos Países Baixos",
+      "monaco-grand-prix": "Grande Prémio do Mónaco",
+      "azerbaijan-grand-prix": "Grande Prémio do Azerbaijão",
+      "canadian-grand-prix": "Grande Prémio do Canadá",
+      "french-grand-prix": "Grande Prémio de França",
+      "singapore-grand-prix": "Grande Prémio de Singapura",
+      "russian-grand-prix": "Grande Prémio da Rússia",
+      "japanese-grand-prix": "Grande Prémio do Japão",
+      "us-grand-prix": "Grande Prémio dos Estados Unidos",
+      "mexico-grand-prix": "Grande Prémio da Cidade do México",
+      "brazilian-grand-prix": "Grande Prémio do Brasil",
+      "abu-dhabi-grand-prix": "Grande Prémio de Abu Dhabi",
+      "tuscan-grand-prix": "Grande Prémio da Toscana",
+      "eifel-grand-prix": "Grande Prémio Eifel",
+      "portuguese-grand-prix": "Grande Prémio de Portugal",
+      "emilia-romagna-grand-prix": "Grande Prémio da Emília Romagna",
+      "sakhir-grand-prix": "Grande Prémio de Sakhir (Bahrain)",
+      "turkish-grand-prix": "Grande Prémio da Turquia",
+      "saudi-arabia-grand-prix": "Grande Prémio da Arábia Saudita",
+      "qatar-grand-prix": "Grande Prémio do Catar",
+      "miami-grand-prix": "Grande Prémio de Miami",
+      "chinese-grand-prix": "Grande Prémio da China",
+      "las-vegas-grand-prix": "Grande Prémio de Las Vegas"
+    },
+    "options": {
+      "calendar": "Adicione as datas e horas das corridas ao seu Calendário",
+      "email": "Receba lembretes no seu e-mail",
+      "notifications": "Receber notificações push",
+      "timezonePicker": {
+        "detect": "Detetar",
+        "showing": "Horários de exibição para",
+        "pick": "Escolha um fuso horário"
+      },
+      "formatPicker": {
+        "title": "Formato da hora",
+        "12hr": "12 Horas",
+        "24hr": "24 Horas"
+      },
+      "button": "Confirmar"
+    },
+    "contribute": "Contribua",
+    "languageSelector": "Selecione o idioma",
+    "javascript": "Este site funciona melhor com o Javascript ligado",
+    "footer": {
+      "coffee": "Ajude-nos, compre-nos um café",
+      "twitter": "Estamos no X (Twitter)",
+      "github": "Código aberto no GitHub",
+      "issue": "Encontrou um erro? Reporte-nos",
+      "links": {
+        "wereOn": "Estamos ligados",
+        "openSourcedOn": "Código aberto em",
+        "spottedIssue": "Encontrou um erro?",
+        "spottedReport": "Reporte"
+      },
+      "homescreen": "Adicione ao seu ecrã inicial e obtenha uma experiência semelhante à de uma aplicação."
+    },
+    "form": {
+      "title": "Gerar Calendário",
+      "description": "Primeiro, escolha as sessões que pretende adicionar ao seu calendário",
+      "reminder": "Definir um lembrete",
+      "reminderContinued": "minutos antes do evento",
+      "button": "Obter o Calendário",
+      "buttonSubmitted": "Submetido",
+      "nonOptionsSelected": "Selecione, por favor, pelo menos uma sessão no seu calendário",
+      "attention": "As sessões do Sprint Shootout serão incluídas quando o Sprint for selecionado. Ajustaremos as nossas opções de calendário se este formato de Sprint de fim de semana se mantiver em 2024."
+    },
+    "download": {
+      "title": "Selecione um tipo de Calendário",
+      "webcalTitle": "Para Telemóvel ou Computador",
+      "webcalDescription": "Calendário atualizado automaticamente para aplicações como o Outlook e Calendário macOS",
+      "webcalButton": "Obter",
+      "gcalTitle": "Para Google Calendário",
+      "gcalDescription": "Para adicionar este calendário, copie e cole este link no seu Google Calendário",
+      "gcalDescriptionLink": "instruções detalhadas",
+      "gcalNotificationNotice": "O Calendário Google não respeita os lembretes em calendários remotos. As notificações de eventos podem ser configuradas nas definições do calendário depois de este ter sido adicionado.",
+      "gcalAddToGoogleCalendar": "Adicionar ao Calendário Google",
+      "icsTitle": "Transferir ficheiro ICS",
+      "icsDescription": "Calendário não atualizável (.ics) para calendários que não suportam a atualização de subscrições.",
+      "icsButton": "Transferir"
+    },
+    "subscribe": {
+      "title": "Subscrever",
+      "description": "Receba um lembrete no seu e-mail antes de cada fim de semana de corrida",
+      "label": "E-mail",
+      "button": "Subscreva"
+    },
+    "notifications": {
+      "title": "Notificações",
+      "description": "Subscreva para receber um lembrete de notificação push antes de uma sessão. Regresse a este formulário para ajustar as suas subscrições em qualquer altura.",
+      "statement": "Nunca lhe enviaremos publicidade ou notificações não solicitadas que não sejam lembretes de sessões.",
+      "button": "Guardar",
+      "buttonSubmitted": "Guardado",
+      "permissions": {
+        "prompt": "Pode optar por receber lembretes de notificações push antes do início de uma sessão. Toque no botão para nos permitir enviar-lhe notificações. Poderá então escolher as sessões para as quais pretende receber lembretes.",
+        "button": "Permitir notificações",
+        "denied": "Parece que as suas permissões foram negadas. Reponha as suas permissões através do seu navegador e tente novamente."
+      }
+    },
+    "timezones": {
+      "title": "Escolha um fuso horário..."
+    },
+    "years": {
+      "title": "Escolha um ano..."
+    },
+    "f1": {
+      "title": "Calendário F1",
+      "subtitle": "Corridas, Qualificações e Sessões de Treino",
+      "seo": {
+        "title": "Calendário F1 {year} - Horários e datas das corridas",
+        "description": "Calendário Fórmula 1 para a época de {year} com todos os grandes prémios, treinos e qualificações. Defina a função de lembretes. Todos os fusos-horários. Transfira e subscreva.",
+        "keywords": "F1, fórmula 1, horário das corridas, corridas, lembretes, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "F1 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 {year} race schedule in {timezone} timezone. All Grand Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+      },
+      "footnote": "Formula One, Formula 1, F1 e Grand Prix são marcas registadas da Formula One Licensing BV."
+    },
+    "f2": {
+      "title": "Calendário F2",
+      "subtitle": "Corridas, Qualificações e Sessões de Treino",
+      "seo": {
+        "title": "Calendário F2 {year} - Horários e datas das corridas",
+        "description": "Calendário Fórmula 2 para a época de {year} com todos os grandes prémios, treinos e qualificações. Defina a função de lembretes. Todos os fusos-horários. Transfira e subscreva.",
+        "keywords": "F2, fórmula 2, horário das corridas, corridas, lembretes, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "F2 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F2 {year} race schedule in {timezone} timezone. All Formula 2 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+      },
+      "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 são marcas registadas da FIA."
+    },
+    "f3": {
+      "title": "Calendário F3",
+      "subtitle": "Corridas, Qualificações e Sessões de Treino",
+      "seo": {
+        "title": "Calendário F3 {year} - Horários e datas das corridas",
+        "description": "Calendário Fórmula 3 para a época de {year} com todos os grandes prémios, treinos e qualificações. Defina a função de lembretes. Todos os fusos-horários. Transfira e subscreva.",
+        "keywords": "F3, fórmula 3, horário das corridas, corridas, lembretes, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "F3 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F3 {year} race schedule in {timezone} timezone. All Formula 3 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+      },
+      "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 são marcas registadas da FIA."
+    },
+    "fe": {
+      "title": "Calendário Formula E",
+      "subtitle": "Corridas, Qualificações e Sessões de Treino",
+      "seo": {
+        "title": "Calendário Fórmula E {year} - Horários e datas das corridas",
+        "description": "Calendário da Fórmula E para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
+        "keywords": "FE, fórmula e, horário das corridas, corridas, lembretes, alertas, e prix, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "Formula E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Formula E {year} race schedule in {timezone} timezone. All E-Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+      },
+      "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP e E-Prix são marcas registadas da FIA."
+    },
+    "indycar": {
+      "title": "Calendário IndyCar",
+      "subtitle": "Corridas, Qualificações e Sessões de Treino",
+      "seo": {
+        "title": "Calendário IndyCar {year} - Horários e datas das corridas",
+        "description": "Calendário da IndyCar para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
+        "keywords": "IndyCar, horário das corridas, corridas, lembretes, alertas, calendário, datas, horário de início, qualificaçāo, treino livre, {year}",
+        "timezoneTitle": "IndyCar Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "IndyCar {year} race schedule in {timezone} timezone. All IndyCar race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+      },
+      "footnote": "IndyCar é uma marca registada da Brickyard Trademarks, Inc"
+    },
+    "motogp": {
+      "title": "Calendário MotoGP",
+      "subtitle": "Corridas, Qualificações e Sessões de Treino",
+      "seo": {
+        "title": "Calendário MotoGP {year} - Horários e datas das corridas",
+        "description": "Calendário da MotoGP para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
+        "keywords": "MotoGP, horário das corridas, corridas, lembretes, alertas, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "MotoGP Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "MotoGP {year} race schedule in {timezone} timezone. All MotoGP race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+      },
+      "footnote": "MOTOGP é uma marca registada da DORNA SPORTS, S.L."
+    },
+    "wseries": {
+      "title": "Calendário W Series",
+      "subtitle": "Corridas, Qualificações e Sessões de Treino",
+      "seo": {
+        "title": "Calendário W Series {year} - Horários e datas das corridas",
+        "description": "Calendário da W Series para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
+        "keywords": "wseries, w-series, horário das corridas, corridas, lembretes, alertas, prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "W Series Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "W Series {year} race schedule in {timezone} timezone. All W Series race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+      },
+      "footnote": "O Calendário da W Series não está afiliado à W Series."
+    },
+    "extremee": {
+      "title": "Calendário Extreme E",
+      "subtitle": "Corridas, Qualificações e Sessões de Treino",
+      "seo": {
+        "title": "Calendário Extreme E {year} - Horários e datas das corridas",
+        "description": "Calendário da Extreme E para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
+        "keywords": "Extreme E, horário das corridas, corridas, lembretes, alertas, x prix, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "Extreme E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Extreme E {year} race schedule in {timezone} timezone. All X Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+      },
+      "footnote": ""
+    },
+    "f1-academy": {
+      "title": "Calendário F1 Academy",
+      "subtitle": "Corridas, Qualificações e Sessões de Treino",
+      "seo": {
+        "title": "Calendário F1 Academy {year} - Horários e datas das corridas",
+        "description": "Calendário da Formula One Academy para a época {ano} com todas as corridas, treinos e sessões de qualificação. Funcionalidade de definir lembretes. Todos os fusos horários mundiais. Descarregar ou subscrever.",
+        "keywords": "F1, fórmula 1, horário das corridas, corridas, lembretes, alertas, grandes prémios, grande prémio, calendário, datas, horário de início, qualificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "F1 Academy Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 Academy {year} race schedule in {timezone} timezone. All F1 Academy race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+      },
+      "footnote": "F1 Academy, Formula One, Formula 1, F1 & Grand Prix são marcas comerciais da Formula One Licensing BV."
+    }
+  }
 }

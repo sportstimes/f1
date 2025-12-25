@@ -161,7 +161,9 @@
       "seo": {
         "title": "Календар Ф1 {year} - Час та Дати Гонок Формули-1",
         "description": "Календар Формули-1 на сезон {year} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
-        "keywords": "F1, Ф1, Формула-1, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}"
+        "keywords": "F1, Ф1, Формула-1, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}",
+        "timezoneTitle": "F1 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 {year} race schedule in {timezone} timezone. All Grand Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Формула-1, Ф1 та Гран-Прі є торговими марками Formula One Licensing BV."
     },
@@ -171,7 +173,9 @@
       "seo": {
         "title": "Календар Ф2 {year} - Час та Дати Гонок Формули-2",
         "description": "Календар Формули-2 на сезон {year} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
-        "keywords": "F2, Ф2, Formula-2, Формула-2, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}"
+        "keywords": "F2, Ф2, Formula-2, Формула-2, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}",
+        "timezoneTitle": "F2 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F2 {year} race schedule in {timezone} timezone. All Formula 2 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Чемпіонат ФІА Формула-2, ФІА Формула-2, Формула-2 та Ф2 є торговими марками ФІА."
     },
@@ -181,7 +185,9 @@
       "seo": {
         "title": "Календар Ф3 {year} - Час та Дати Гонок Формули-3",
         "description": "Календар Формули-3 на сезон {year} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
-        "keywords": "Ф3, Формула-3, Формула-три, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}"
+        "keywords": "Ф3, Формула-3, Формула-три, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}",
+        "timezoneTitle": "F3 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F3 {year} race schedule in {timezone} timezone. All Formula 3 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Чемпіонат ФІА Формула-3, ФІА Формула-3, Формула-3, Ф3 є торговими марками ФІА."
     },
@@ -191,7 +197,9 @@
       "seo": {
         "title": "Календар Формули-Е {year} - Час та Дати Гонок Формули-Е",
         "description": "Календар Формули-Е на сезон {year} року зі всіма Гран-Прі, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
-        "keywords": "ФЕ, формула-е, час гонок, гонки, нагадування, сповіщення, е-гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}"
+        "keywords": "ФЕ, формула-е, час гонок, гонки, нагадування, сповіщення, е-гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}",
+        "timezoneTitle": "Formula E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Formula E {year} race schedule in {timezone} timezone. All E-Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Формула-Е, Чемпіонат ФІА Формула-Е та Е-Гран-Прі є торговими марками ФІА."
     },
@@ -201,7 +209,9 @@
       "seo": {
         "title": "Календар ІндіКар {year} - Час та Дати Гонок",
         "description": "Календар ІндіКар на сезон {year} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
-        "keywords": "IndyCar, ІндіКар, час гонок, гонки, нагадування, сповіщення, календар, дати, час стартів, кваліфікація, практика, {year}"
+        "keywords": "IndyCar, ІндіКар, час гонок, гонки, нагадування, сповіщення, календар, дати, час стартів, кваліфікація, практика, {year}",
+        "timezoneTitle": "IndyCar Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "IndyCar {year} race schedule in {timezone} timezone. All IndyCar race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "ІндіКар є торговою маркою Brickyard Trademarks, Inc"
     },
@@ -211,7 +221,9 @@
       "seo": {
         "title": "Календар MotoGP {year} - Час та Дати Гонок",
         "description": "Календар MotoGP на сезон {year} року зі всіма гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
-        "keywords": "MotoGP, МотоГП, час гонок, гонки, нагадування, сповіщення, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}"
+        "keywords": "MotoGP, МотоГП, час гонок, гонки, нагадування, сповіщення, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}",
+        "timezoneTitle": "MotoGP Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "MotoGP {year} race schedule in {timezone} timezone. All MotoGP race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": ""
     },
@@ -221,7 +233,9 @@
       "seo": {
         "title": "Календар W Series {year} - Час та Дати Гонок",
         "description": "Календар W Series на сезон {year} року зі всіма W Series гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
-        "keywords": "wseries, w-series, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}"
+        "keywords": "wseries, w-series, час гонок, гонки, нагадування, сповіщення, гран-прі, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}",
+        "timezoneTitle": "W Series Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "W Series {year} race schedule in {timezone} timezone. All W Series race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Календар W Series не пов’язаний із W Series."
     },
@@ -231,7 +245,9 @@
       "seo": {
         "title": "Календар Extreme E {year} - Час та Дати Гонок Extreme E",
         "description": "Календар Extreme E на сезон {year} року зі всіма X-Prix гонками, вільними практиками та кваліфікаціями. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
-        "keywords": "Extreme E, час гонок, гонки, нагадування, сповіщення, x prix, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}"
+        "keywords": "Extreme E, час гонок, гонки, нагадування, сповіщення, x prix, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}",
+        "timezoneTitle": "Extreme E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Extreme E {year} race schedule in {timezone} timezone. All X Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": ""
     },
@@ -241,7 +257,9 @@
       "seo": {
         "title": "Календар F1 Academy Calendar {year} - Час та Дати Гонок F1 Academy Calendar",
         "description": "Календар F1 Academy на {year} сезон із усіма гонками F1 Academy, тренуваннями та тренуваннями відбіркові сесії. Можливість встановлення нагадувань. Всі часові пояси. Скачати чи підписатися.",
-        "keywords": "F1 Academy, час гонок, гонки, нагадування, сповіщення, x prix, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}"
+        "keywords": "F1 Academy, час гонок, гонки, нагадування, сповіщення, x prix, календар, дати, час стартів, кваліфікація, практика, Лондон, Європа, {year}",
+        "timezoneTitle": "F1 Academy Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 Academy {year} race schedule in {timezone} timezone. All F1 Academy race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }

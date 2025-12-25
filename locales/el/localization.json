@@ -2,8 +2,8 @@
   "All": {
     "date": "Ημερομηνία",
     "time": "Ώρα",
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
+    "showPreviousRaces": "Προβολή Προηγ. Αγώνων",
+    "hidePreviousRaces": "Προβολή Επόμ. Αγώνων",
     "badges": {
       "tbc": "TBC",
       "tbc_title": "Προς επιβεβαίωση",
@@ -161,7 +161,9 @@
       "seo": {
         "title": "Ημερολόγιο F1 {year} - Ώρες και Ημερομηνίες Αγώνων της Formula 1",
         "description": "Ημερολόγιο για την σεζόν του {year} της Formula 1 με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητ ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n",
+        "timezoneTitle": "F1 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 {year} race schedule in {timezone} timezone. All Grand Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     },
@@ -171,7 +173,9 @@
       "seo": {
         "title": "Ημερολόγιο F2 {year} - Ώρες και Ημερομηνίες Αγώνων της Formula 2",
         "description": "Ημερολόγιο για την σεζόν του {year} της Formula 2 με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-        "keywords": "συμβ. υποκατάστασης"
+        "keywords": "συμβ. υποκατάστασης",
+        "timezoneTitle": "F2 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F2 {year} race schedule in {timezone} timezone. All Formula 2 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
     },
@@ -181,7 +185,9 @@
       "seo": {
         "title": "Ημερολόγιο F3 {year} - Ώρες και Ημερομηνίες Αγώνων της Formula 3",
         "description": "Ημερολόγιο για την σεζόν του {year} της Formula 3 με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-        "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
+        "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n",
+        "timezoneTitle": "F3 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F3 {year} race schedule in {timezone} timezone. All Formula 3 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
     },
@@ -191,7 +197,9 @@
       "seo": {
         "title": "Ημερολόγιο Formula e {year} - Ώρες και Ημερομηνίες Αγώνων της Formula e",
         "description": "Ημερολόγιο για την σεζόν του {year} της Formula e με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των e-prix. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-        "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
+        "keywords": "FE, formula e, race times, races, reminder, alerts, e prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n",
+        "timezoneTitle": "Formula E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Formula E {year} race schedule in {timezone} timezone. All E-Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP & E-Prix are trademarks of the FIA."
     },
@@ -201,7 +209,9 @@
       "seo": {
         "title": "Ημερολόγιο Indycar {year} - Ώρες και Ημερομηνίες Αγώνων",
         "description": "Ημερολόγιο για την σεζόν του {year} του IndyCar με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-        "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {year}"
+        "keywords": "IndyCar, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, {year}",
+        "timezoneTitle": "IndyCar Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "IndyCar {year} race schedule in {timezone} timezone. All IndyCar race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "IndyCar is a registered trademark of Brickyard Trademarks, Inc"
     },
@@ -211,7 +221,9 @@
       "seo": {
         "title": "Ημερολόγιο MotoGP {year} - Ώρες και Ημερομηνίες Αγώνων",
         "description": "Ημερολόγιο για την σεζόν του {year} του MotoGP με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές των γκραν πρι. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-        "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n"
+        "keywords": "MotoGP, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {year}\n",
+        "timezoneTitle": "MotoGP Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "MotoGP {year} race schedule in {timezone} timezone. All MotoGP race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "σημείωση"
     },
@@ -221,7 +233,9 @@
       "seo": {
         "title": "Ημερολόγιο W Series {year} - Ώρες και Ημερομηνίες Αγώνων",
         "description": "Ημερολόγιο για την σεζόν του {year} του W Series με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-        "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "W Series Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "W Series {year} race schedule in {timezone} timezone. All W Series race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "W Series Calendar is not affiliated with W Series."
     },
@@ -231,7 +245,9 @@
       "seo": {
         "title": "Ημερολόγιο Extreme E {year} - Ώρες και Ημερομηνίες Αγώνων",
         "description": "Ημερολόγιο για την σεζόν του {year} του Extreme E με όλους τους αγώνες, τις κατατακτήριες και τις ελεύθερες δοκιμές. Για όλες τις ζώνες ώρας. Δυνατότητα ρύθμισης υπενθυμίσεων. Λήψη ή συνδρομή.",
-        "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "Extreme E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Extreme E {year} race schedule in {timezone} timezone. All X Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "σημείωση"
     },
@@ -240,15 +256,15 @@
       "text": "κείμενο",
       "link": "σύνδεσμος"
     },
-    "showPreviousRaces": "Προβολή Προηγ. Αγώνων",
-    "hidePreviousRaces": "Προβολή Επόμ. Αγώνων",
     "f1-academy": {
       "title": "F1 Academy Calendar",
       "subtitle": "Races, Qualifying & Practice Sessions",
       "seo": {
         "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
         "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "F1 Academy Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 Academy {year} race schedule in {timezone} timezone. All F1 Academy race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }

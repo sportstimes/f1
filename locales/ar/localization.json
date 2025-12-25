@@ -161,7 +161,9 @@
       "seo": {
         "title": "جدول بطولة F1 لعام {year} - مواعيد سباقات Formula One",
         "description": "جدول بطولة Formula One لموسم {year} - كل مواعيد السباقات و المراحل التجريبية و التأهيلية - خاصية الإشعارات لجميع المناطق الزمنية - تحميل او اشتراك",
-        "keywords": "اف 1 , فورميلا 1 , مواعيد السباقات , السباقات , اشعارات , تنبيهات , الجائزة الكبري , الجوائز الكبري , جدول المواعيد , التاريخ , مواعيد الإنطلاق , التأهيل , التجارب , لندن , أوروبا , {year}"
+        "keywords": "اف 1 , فورميلا 1 , مواعيد السباقات , السباقات , اشعارات , تنبيهات , الجائزة الكبري , الجوائز الكبري , جدول المواعيد , التاريخ , مواعيد الإنطلاق , التأهيل , التجارب , لندن , أوروبا , {year}",
+        "timezoneTitle": "F1 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 {year} race schedule in {timezone} timezone. All Grand Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "علامات تجارية مرخصة من Formula One Licensing BV\nFormula One, Formula 1, F1 & Grand Prix"
     },
@@ -171,7 +173,9 @@
       "seo": {
         "title": "جدول بطولة F2 لعام {year} - مواعيد سباقات الفورميلا 2",
         "description": "جدول بطولة الفورميلا 2 لموسم {year} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية الإشعارات و التنبيهات , جميع المناطق الزمنية , تحميل و اشتراك",
-        "keywords": "placeholder"
+        "keywords": "placeholder",
+        "timezoneTitle": "F2 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F2 {year} race schedule in {timezone} timezone. All Formula 2 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "علامات تجارية لـ FIA\nFIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2 , F2"
     },
@@ -181,7 +185,9 @@
       "seo": {
         "title": "جدول بطولة F3 لعام {year} - مواعيد السباقات",
         "description": "جدول بطولة F3 لموسم {year} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية ,خاصية التنبيهات , جميع المناطق الزمنية , تحميل و اشتراك",
-        "keywords": "اف 3 , فورميلا 3 , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجوائز الكبري , الجائزة الكبري , جدول المواعيد , مواعيد الإنطلاق , التجارب الحرة , التجارب التأهيلية , التجارب , لندن , أوروبا ,  {year}"
+        "keywords": "اف 3 , فورميلا 3 , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجوائز الكبري , الجائزة الكبري , جدول المواعيد , مواعيد الإنطلاق , التجارب الحرة , التجارب التأهيلية , التجارب , لندن , أوروبا ,  {year}",
+        "timezoneTitle": "F3 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F3 {year} race schedule in {timezone} timezone. All Formula 3 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "علامات تجارية لـ FIA\nFIA FORMULA 3 CHAMPIONSHIP , FIA FORMULA 3 , FORMULA 3 , F3"
     },
@@ -191,7 +197,9 @@
       "seo": {
         "title": "جدول بطولة Formula E لعام {year} - مواعيد سباقات فورميلا E",
         "description": "جدول بطولة فورميلا اي لموسم {year} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التنبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
-        "keywords": "اف اي , فورميلا اي , مواعيد السباقات , السباقات , تنبيهات , اشعارات , الجائزة الكهربائية , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التحارب الحرة , لندن , أوروبا , {year}"
+        "keywords": "اف اي , فورميلا اي , مواعيد السباقات , السباقات , تنبيهات , اشعارات , الجائزة الكهربائية , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التحارب الحرة , لندن , أوروبا , {year}",
+        "timezoneTitle": "Formula E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Formula E {year} race schedule in {timezone} timezone. All E-Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "علامات تجارية لـ FIA\nFormula-E , FIA , FORMULA-E CHAMPIONSHIP  & E-PRIX"
     },
@@ -201,7 +209,9 @@
       "seo": {
         "title": "جدول بطولة IndyCar لعام {year} - مواعيد السباقات",
         "description": "جدول بطولة IndyCar لموسم {year} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
-        "keywords": "اندي كار , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , {year}"
+        "keywords": "اندي كار , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , {year}",
+        "timezoneTitle": "IndyCar Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "IndyCar {year} race schedule in {timezone} timezone. All IndyCar race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "IndyCar هي علامة تجارية لـ Brickyard Trademarks, Inc"
     },
@@ -211,7 +221,9 @@
       "seo": {
         "title": "جدول بطولة MotoGP لعام {year} - مواعيد السباقات",
         "description": "جدول بطولة MotoGP لموسم {year} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية ,خاصية التنبيهات , جميع المناطق الزمنية , تحميل و اشتراك",
-        "keywords": "موتو جي بي , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {year}"
+        "keywords": "موتو جي بي , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {year}",
+        "timezoneTitle": "MotoGP Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "MotoGP {year} race schedule in {timezone} timezone. All MotoGP race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "footnote"
     },
@@ -221,7 +233,9 @@
       "seo": {
         "title": "جدول بطولة W Series لموسم {year} - مواعيد السباقات و التاريخ",
         "description": "جدول بطولة W Series لموسم {year} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التنبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
-        "keywords": "دابيو سيريس , دابيو سيريس , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجائزة , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {year}"
+        "keywords": "دابيو سيريس , دابيو سيريس , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجائزة , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {year}",
+        "timezoneTitle": "W Series Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "W Series {year} race schedule in {timezone} timezone. All W Series race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "هذا الموقع غير تباع لـ W Series"
     },
@@ -231,7 +245,9 @@
       "seo": {
         "title": "جدول بطولة Extreme E لعام {year} - مواعيد السباقات",
         "description": "جدول بطولة Extreme E لموسم {year} بكل مواعيد السباقات , التجارب الحرة , التجارب التأهيلية , خاصية التنبيهات و الإشعارات , جميع المناطق الزمنية , تحميل و اشتراك",
-        "keywords": "اكستريم اي , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجائزة اكس , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {year}"
+        "keywords": "اكستريم اي , مواعيد السباقات , السباقات , التنبيهات , الإشعارات , الجائزة اكس , جدول , التاريخ , مواعيد الإنطلاق , التجارب التأهيلية , التجارب الحرة , لندن , أوروبا , {year}",
+        "timezoneTitle": "Extreme E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Extreme E {year} race schedule in {timezone} timezone. All X Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "footnote"
     },
@@ -241,7 +257,9 @@
       "seo": {
         "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
         "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "F1 Academy Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 Academy {year} race schedule in {timezone} timezone. All F1 Academy race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     },
