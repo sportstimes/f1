@@ -1,4 +1,4 @@
-import i18nConfig from '../../../i18nConfig.js';
+import i18nConfig from '../../i18nConfig.js';
 
 interface Props {
   locale: string;
