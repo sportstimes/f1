@@ -150,6 +150,12 @@ export default async function RootLayout({ children, params }) {
   setRequestLocale(locale);
 
   const messages = await getMessages();
+  const t = await getTranslations('All');
+  const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR || '2026';
+  const siteKey = process.env.NEXT_PUBLIC_SITE_KEY;
+
+  const siteName = t(`${siteKey}.title`);
+  const siteDescription = t(`${siteKey}.seo.description`, { year: currentYear });
 
   return (
     <PlausibleProvider>
@@ -159,7 +165,9 @@ export default async function RootLayout({ children, params }) {
             <head>
               <WebSiteSchema
                 locale={locale}
-                currentYear={process.env.NEXT_PUBLIC_CURRENT_YEAR || '2026'}
+                currentYear={currentYear}
+                siteName={siteName}
+                siteDescription={siteDescription}
               />
               <PlausibleProvider
                 domain={process.env.NEXT_PUBLIC_PLAUSIBLE_KEY}

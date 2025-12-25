@@ -3,19 +3,15 @@ import i18nConfig from '../../i18nConfig.js';
 interface Props {
   locale: string;
   currentYear: string;
+  siteName: string;
+  siteDescription: string;
 }
 
-export default function WebSiteSchema({ locale, currentYear }: Props) {
+export default function WebSiteSchema({ locale, currentYear, siteName, siteDescription }: Props) {
   const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
   const { locales } = i18nConfig;
 
   const siteUrl = `https://${config.url}`;
-
-  // Generate language URLs for potentialAction
-  const languageUrls = locales.map((loc: string) => {
-    const localePath = loc === 'en' ? '' : `/${loc}`;
-    return `${siteUrl}${localePath}`;
-  });
 
   const schema = [
     {
@@ -23,8 +19,8 @@ export default function WebSiteSchema({ locale, currentYear }: Props) {
       "@type": "WebSite",
       "@id": `${siteUrl}/#website`,
       "url": siteUrl,
-      "name": `F1 Calendar ${currentYear}`,
-      "description": `Formula 1 race times and schedule for the ${currentYear} season`,
+      "name": `${siteName} ${currentYear}`,
+      "description": siteDescription,
       "inLanguage": locales,
       "potentialAction": {
         "@type": "SearchAction",
@@ -39,16 +35,13 @@ export default function WebSiteSchema({ locale, currentYear }: Props) {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": `${siteUrl}/#organization`,
-      "name": "F1 Calendar",
+      "name": siteName,
       "url": siteUrl,
       "logo": {
         "@type": "ImageObject",
         "url": `${siteUrl}/logo.png`,
         "@id": `${siteUrl}/#logo`
-      },
-      "sameAs": [
-        "https://twitter.com/f1cal"
-      ]
+      }
     }
   ];
 
