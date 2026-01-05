@@ -9,10 +9,10 @@
       "slug": "melbourne",
       "localeKey": "melbourne",
       "sessions": {
-        "practice": "2025-03-13T21:50:00Z",
-        "qualifying": "2025-03-14T03:00:00Z",
-        "sprint": "2025-03-15T00:15:00Z",
-        "feature": "2025-03-15T22:00:00Z"
+        "practice": "2026-03-05T21:45:00Z",
+        "qualifying": "2026-03-06T00:55:00Z",
+        "sprint": "2026-03-07T05:45:00Z",
+        "feature": "2026-03-07T22:20:00Z"
       }
     },
     {
@@ -24,10 +24,10 @@
       "slug": "bahrain",
       "localeKey": "bahrain",
       "sessions": {
-        "practice": "2025-04-11T07:55:00Z",
-        "qualifying": "2025-04-11T13:00:00Z",
-        "sprint": "2025-04-12T10:15:00Z",
-        "feature": "2025-04-13T09:55:00Z"
+        "practice": "2026-04-10T05:45:00Z",
+        "qualifying": "2026-04-10T08:55:00Z",
+        "sprint": "2026-04-11T13:45:00Z",
+        "feature": "2026-04-12T06:20:00Z"
       }
     },
     {
@@ -39,10 +39,10 @@
       "slug": "emilia-romagna",
       "localeKey": "emilia-romagna",
       "sessions": {
-        "practice": "2025-05-16T07:55:00Z",
-        "qualifying": "2025-05-16T13:05:00Z",
-        "sprint": "2025-05-17T08:05:00Z",
-        "feature": "2025-05-18T06:30:00Z"
+        "practice": "2026-06-04T06:45:00Z",
+        "qualifying": "2026-06-05T13:55:00Z",
+        "sprint": "2026-06-06T14:45:00Z",
+        "feature": "2026-06-07T07:20:00Z"
       }
     },
     {
@@ -54,10 +54,10 @@
       "slug": "monaco",
       "localeKey": "monaco",
       "sessions": {
-        "practice": "2025-05-22T11:10:00Z",
-        "qualifying": "2025-05-23T09:05:00Z",
-        "sprint": "2025-05-24T08:45:00Z",
-        "feature": "2025-05-25T06:00:00Z"
+        "practice": "2026-06-12T06:45:00Z",
+        "qualifying": "2026-06-12T09:55:00Z",
+        "sprint": "2026-06-13T14:45:00Z",
+        "feature": "2026-06-14T07:20:00Z"
       }
     },
     {
@@ -69,10 +69,10 @@
       "slug": "spanish",
       "localeKey": "spanish",
       "sessions": {
-        "practice": "2025-05-30T07:55:00Z",
-        "qualifying": "2025-05-30T13:00:00Z",
-        "sprint": "2025-05-31T08:05:00Z",
-        "feature": "2025-06-01T06:30:00Z"
+        "practice": "2026-06-26T06:45:00Z",
+        "qualifying": "2026-06-26T09:55:00Z",
+        "sprint": "2026-06-27T14:45:00Z",
+        "feature": "2026-06-28T07:20:00Z"
       }
     },
     {
@@ -84,10 +84,10 @@
       "slug": "austrian",
       "localeKey": "austrian",
       "sessions": {
-        "practice": "2025-06-27T07:55:00Z",
-        "qualifying": "2025-06-27T13:00:00Z",
-        "sprint": "2025-06-28T08:05:00Z",
-        "feature": "2025-06-29T06:30:00Z"
+        "practice": "2026-07-03T07:45:00Z",
+        "qualifying": "2026-07-03T10:55:00Z",
+        "sprint": "2026-07-04T15:45:00Z",
+        "feature": "2026-07-05T08:20:00Z"
       }
     },
     {
@@ -99,10 +99,10 @@
       "slug": "british",
       "localeKey": "british",
       "sessions": {
-        "practice": "2025-07-04T07:45:00Z",
-        "qualifying": "2025-07-04T13:00:00Z",
-        "sprint": "2025-07-05T08:15:00Z",
-        "feature": "2025-07-06T08:30:00Z"
+        "practice": "2026-07-17T06:45:00Z",
+        "qualifying": "2026-07-17T09:55:00Z",
+        "sprint": "2026-07-18T14:45:00Z",
+        "feature": "2026-07-19T07:20:00Z"
       }
     },
     {
@@ -114,10 +114,10 @@
       "slug": "belgian",
       "localeKey": "belgian",
       "sessions": {
-        "practice": "2025-07-25T12:00:00Z",
-        "qualifying": "2025-07-25T17:10:00Z",
-        "sprint": "2025-07-26T07:15:00Z",
-        "feature": "2025-07-27T06:30:00Z"
+        "practice": "2026-07-24T06:45:00Z",
+        "qualifying": "2026-07-24T09:55:00Z",
+        "sprint": "2026-07-25T14:45:00Z",
+        "feature": "2026-07-26T07:20:00Z"
       }
     },
     {
@@ -129,10 +129,10 @@
       "slug": "hungarian",
       "localeKey": "hungarian",
       "sessions": {
-        "practice": "2025-08-01T07:55:00Z",
-        "qualifying": "2025-08-01T13:00:00Z",
-        "sprint": "2025-08-02T08:05:00Z",
-        "feature": "2025-08-03T06:30:00Z"
+        "practice": "2026-09-04T06:45:00Z",
+        "qualifying": "2026-09-04T13:00:00Z",
+        "sprint": "2026-09-05T14:45:00Z",
+        "feature": "2026-09-06T07:20:00Z"
       }
     },
     {
@@ -144,10 +144,10 @@
       "slug": "italian",
       "localeKey": "italian",
       "sessions": {
-        "practice": "2025-09-05T07:35:00Z",
-        "qualifying": "2025-09-05T13:00:00Z",
-        "sprint": "2025-09-06T07:15:00Z",
-        "feature": "2025-09-07T06:15:00Z"
+        "practice": "2026-09-11T06:45:00Z",
+        "qualifying": "2026-09-11T09:55:00Z",
+        "sprint": "2026-09-12T14:45:00Z",
+        "feature": "2026-09-13T07:20:00Z"
       }
     }
   ]
