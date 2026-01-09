@@ -1,0 +1,154 @@
+{
+  "races": [
+    {
+      "name": "Australian",
+      "location": "Melbourne",
+      "latitude": -37.8373,
+      "longitude": 144.9666,
+      "round": 1,
+      "slug": "melbourne",
+      "localeKey": "melbourne",
+      "sessions": {
+        "practice": "2026-03-05T21:45:00Z",
+        "qualifying": "2026-03-06T00:55:00Z",
+        "sprint": "2026-03-07T05:45:00Z",
+        "feature": "2026-03-07T22:20:00Z"
+      }
+    },
+    {
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "round": 2,
+      "slug": "bahrain",
+      "localeKey": "bahrain",
+      "sessions": {
+        "practice": "2026-04-10T05:45:00Z",
+        "qualifying": "2026-04-10T08:55:00Z",
+        "sprint": "2026-04-11T13:45:00Z",
+        "feature": "2026-04-12T06:20:00Z"
+      }
+    },
+    {
+      "name": "Monaco",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 3,
+      "slug": "monaco",
+      "localeKey": "monaco",
+      "sessions": {
+        "practice": "2026-06-04T06:45:00Z",
+        "qualifying": "2026-06-05T13:55:00Z",
+        "sprint": "2026-06-06T14:45:00Z",
+        "feature": "2026-06-07T07:20:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Catalunya",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "round": 4,
+      "slug": "spanish",
+      "localeKey": "spanish",
+      "sessions": {
+        "practice": "2026-06-12T06:45:00Z",
+        "qualifying": "2026-06-12T09:55:00Z",
+        "sprint": "2026-06-13T14:45:00Z",
+        "feature": "2026-06-14T07:20:00Z"
+      }
+    },
+    {
+      "name": "Austrian",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "round": 5,
+      "slug": "austrian",
+      "localeKey": "austrian",
+      "sessions": {
+        "practice": "2026-06-26T06:45:00Z",
+        "qualifying": "2026-06-26T09:55:00Z",
+        "sprint": "2026-06-27T14:45:00Z",
+        "feature": "2026-06-28T07:20:00Z"
+      }
+    },
+    {
+      "name": "British",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "round": 6,
+      "slug": "british",
+      "localeKey": "british",
+      "sessions": {
+        "practice": "2026-07-03T07:45:00Z",
+        "qualifying": "2026-07-03T10:55:00Z",
+        "sprint": "2026-07-04T15:45:00Z",
+        "feature": "2026-07-05T08:20:00Z"
+      }
+    },
+    {
+      "name": "Belgian",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.444,
+      "longitude": 5.9687,
+      "round": 7,
+      "slug": "belgian",
+      "localeKey": "belgian",
+      "sessions": {
+        "practice": "2026-07-17T06:45:00Z",
+        "qualifying": "2026-07-17T09:55:00Z",
+        "sprint": "2026-07-18T14:45:00Z",
+        "feature": "2026-07-19T07:20:00Z"
+      }
+    },
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "round": 8,
+      "slug": "hungarian",
+      "localeKey": "hungarian",
+      "sessions": {
+        "practice": "2026-07-24T06:45:00Z",
+        "qualifying": "2026-07-24T09:55:00Z",
+        "sprint": "2026-07-25T14:45:00Z",
+        "feature": "2026-07-26T07:20:00Z"
+      }
+    },
+    {
+      "name": "Italian",
+      "location": "Monza",
+      "latitude": 45.6169,
+      "longitude": 9.2825,
+      "round": 9,
+      "slug": "italian",
+      "localeKey": "italian",
+      "sessions": {
+        "practice": "2026-09-04T06:45:00Z",
+        "qualifying": "2026-09-04T13:00:00Z",
+        "sprint": "2026-09-05T14:45:00Z",
+        "feature": "2026-09-06T07:20:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Madrid",
+      "latitude": 40.4168,
+      "longitude": -3.7038,
+      "round": 10,
+      "slug": "spanish-grand-prix",
+      "localeKey": "spanish-grand-prix",
+      "sessions": {
+        "practice": "2026-09-11T06:45:00Z",
+        "qualifying": "2026-09-11T09:55:00Z",
+        "sprint": "2026-09-12T14:45:00Z",
+        "feature": "2026-09-13T07:20:00Z"
+      }
+    }
+  ]
+}
