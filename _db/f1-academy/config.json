@@ -2,8 +2,8 @@
   "siteKey": "f1-academy",
   "url": "f1academycalendar.com",
   "calendarCDN": "files-f1-academy.motorsportcalendars.com",
-  "calendarOutputYear": 2025,
-  "availableYears": [2023, 2024, 2025],
+  "calendarOutputYear": 2026,
+  "availableYears": [2023, 2024, 2025, 2026],
   "sessions": [
     "fp1",
     "fp2",
