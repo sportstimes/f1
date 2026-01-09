@@ -1,0 +1,214 @@
+{
+  "races": [
+    {
+      "name": "Australian",
+      "location": "Melbourne",
+      "latitude": -37.8373,
+      "longitude": 144.9666,
+      "round": 1,
+      "slug": "melbourne",
+      "localeKey": "melbourne",
+      "sessions": {
+        "practice": "2026-03-06T00:55:00Z",
+        "qualifying": "2026-03-06T04:55:00Z",
+        "sprint": "2026-03-06T23:35:00Z",
+        "feature": "2026-03-07T23:40:00Z"
+      }
+    },
+    {
+      "name": "Bahrain",
+      "location": "Sakhir",
+      "latitude": 26.037,
+      "longitude": 50.5112,
+      "round": 2,
+      "slug": "bahrain",
+      "localeKey": "bahrain",
+      "sessions": {
+        "practice": "2026-04-10T08:55:00Z",
+        "qualifying": "2026-04-10T12:55:00Z",
+        "sprint": "2026-04-11T07:35:00Z",
+        "feature": "2026-04-12T07:40:00Z"
+      }
+    },
+    {
+      "name": "Saudi Arabian",
+      "location": "Jeddah",
+      "latitude": 21.485811,
+      "longitude": 39.192505,
+      "round": 3,
+      "slug": "saudi-arabia",
+      "localeKey": "saudi-arabia",
+      "sessions": {
+        "practice": "2026-04-17T08:55:00Z",
+        "qualifying": "2026-04-17T12:55:00Z",
+        "sprint": "2026-04-18T07:35:00Z",
+        "feature": "2026-04-19T07:40:00Z"
+      }
+    },
+    {
+      "name": "Monaco",
+      "location": "Monte Carlo",
+      "latitude": 43.7338,
+      "longitude": 7.4215,
+      "round": 4,
+      "slug": "monaco",
+      "localeKey": "monaco",
+      "sessions": {
+        "practice": "2026-06-04T09:55:00Z",
+        "qualifying": "2026-06-05T13:55:00Z",
+        "sprint": "2026-06-06T08:35:00Z",
+        "feature": "2026-06-07T08:40:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Barcelona",
+      "latitude": 41.5638,
+      "longitude": 2.2585,
+      "round": 5,
+      "slug": "spanish",
+      "localeKey": "spanish",
+      "sessions": {
+        "practice": "2026-06-12T09:55:00Z",
+        "qualifying": "2026-06-12T13:55:00Z",
+        "sprint": "2026-06-13T08:35:00Z",
+        "feature": "2026-06-14T08:40:00Z"
+      }
+    },
+    {
+      "name": "Austrian",
+      "location": "Spielberg",
+      "latitude": 47.2225,
+      "longitude": 14.7607,
+      "round": 6,
+      "slug": "austrian",
+      "localeKey": "austrian",
+      "sessions": {
+        "practice": "2026-06-26T09:55:00Z",
+        "qualifying": "2026-06-26T13:55:00Z",
+        "sprint": "2026-06-27T08:35:00Z",
+        "feature": "2026-06-28T08:40:00Z"
+      }
+    },
+    {
+      "name": "British",
+      "location": "Silverstone",
+      "latitude": 52.0706,
+      "longitude": -1.0174,
+      "round": 7,
+      "slug": "british",
+      "localeKey": "british",
+      "sessions": {
+        "practice": "2026-07-03T10:55:00Z",
+        "qualifying": "2026-07-03T14:55:00Z",
+        "sprint": "2026-07-04T09:35:00Z",
+        "feature": "2026-07-05T09:40:00Z"
+      }
+    },
+    {
+      "name": "Belgian",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.444,
+      "longitude": 5.9687,
+      "round": 8,
+      "slug": "belgian",
+      "localeKey": "belgian",
+      "sessions": {
+        "practice": "2026-07-17T09:55:00Z",
+        "qualifying": "2026-07-17T13:55:00Z",
+        "sprint": "2026-07-18T08:35:00Z",
+        "feature": "2026-07-19T08:40:00Z"
+      }
+    },
+    {
+      "name": "Hungarian",
+      "location": "Budapest",
+      "latitude": 47.583,
+      "longitude": 19.2526,
+      "round": 9,
+      "slug": "hungarian",
+      "localeKey": "hungarian",
+      "sessions": {
+        "practice": "2026-07-24T09:55:00Z",
+        "qualifying": "2026-07-24T13:55:00Z",
+        "sprint": "2026-07-25T08:35:00Z",
+        "feature": "2026-07-26T08:40:00Z"
+      }
+    },
+    {
+      "name": "Italian",
+      "location": "Monza",
+      "latitude": 45.6169,
+      "longitude": 9.2825,
+      "round": 10,
+      "slug": "italian",
+      "localeKey": "italian",
+      "sessions": {
+        "practice": "2026-09-04T09:55:00Z",
+        "qualifying": "2026-09-04T13:55:00Z",
+        "sprint": "2026-09-05T08:35:00Z",
+        "feature": "2026-09-06T08:40:00Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "location": "Madrid",
+      "latitude": 40.4168,
+      "longitude": -3.7038,
+      "round": 11,
+      "slug": "spanish-grand-prix",
+      "localeKey": "spanish-grand-prix",
+      "sessions": {
+        "practice": "2026-09-11T09:55:00Z",
+        "qualifying": "2026-09-11T13:55:00Z",
+        "sprint": "2026-09-12T08:35:00Z",
+        "feature": "2026-09-13T08:40:00Z"
+      }
+    },
+    {
+      "name": "Azerbaijan",
+      "location": "Baku",
+      "latitude": 40.3699,
+      "longitude": 49.8433,
+      "round": 12,
+      "slug": "azerbaijan",
+      "localeKey": "azerbaijan",
+      "sessions": {
+        "practice": "2026-09-24T07:55:00Z",
+        "qualifying": "2026-09-24T11:55:00Z",
+        "sprint": "2026-09-25T06:35:00Z",
+        "feature": "2026-09-26T06:40:00Z"
+      }
+    },
+    {
+      "name": "Qatar",
+      "location": "Doha",
+      "latitude": 25.490292,
+      "longitude": 51.45303,
+      "round": 13,
+      "slug": "qatar",
+      "localeKey": "qatar",
+      "sessions": {
+        "practice": "2026-11-27T08:55:00Z",
+        "qualifying": "2026-11-27T12:55:00Z",
+        "sprint": "2026-11-28T07:35:00Z",
+        "feature": "2026-11-29T07:40:00Z"
+      }
+    },
+    {
+      "name": "Abu Dhabi",
+      "location": "Yas Marina",
+      "latitude": 24.4821,
+      "longitude": 54.3482,
+      "round": 14,
+      "slug": "abu-dhabi",
+      "localeKey": "abu-dhabi",
+      "sessions": {
+        "practice": "2026-12-04T07:55:00Z",
+        "qualifying": "2026-12-04T11:55:00Z",
+        "sprint": "2026-12-05T06:35:00Z",
+        "feature": "2026-12-06T06:40:00Z"
+      }
+    }
+  ]
+}
