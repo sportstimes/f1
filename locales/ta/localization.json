@@ -160,7 +160,9 @@
       "seo": {
         "title": "F1 Calendar {year} - Formula One Race Times and Dates",
         "description": "Formula One Calendar for {year} season with all F1 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "F1 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 {year} race schedule in {timezone} timezone. All Grand Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     },
@@ -170,7 +172,9 @@
       "seo": {
         "title": "F2 Calendar {year} - Formula Two Race Times and Dates",
         "description": "Formula Two Calendar for {year} season with all F2 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "placeholder"
+        "keywords": "placeholder",
+        "timezoneTitle": "F2 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F2 {year} race schedule in {timezone} timezone. All Formula 2 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 are trademarks of the FIA."
     },
@@ -180,7 +184,9 @@
       "seo": {
         "title": "F3 Calendar {year} - Formula Three Race Times and Dates",
         "description": "Formula Three Calendar for {year} season with all F3 grand prix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "F3, formula three, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "F3 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F3 {year} race schedule in {timezone} timezone. All Formula 3 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 are trademarks of the FIA."
     },
@@ -190,7 +196,9 @@
       "seo": {
         "title": "பார்முலா E நாட்காட்டி {{ஆண்டு}} - பார்முலா E பந்தயம் நேரம் மற்றும் தேதிகள்",
         "description": "அனைத்து பார்முலா E, E-பிரிக்ஸ் பந்தயங்கள், பயிற்சி மற்றும் தகுதி அமர்வுகளுடன் {{ஆண்டு}} சீசனுக்கான பார்முலா E நாட்காட்டி. நினைவூட்டல் அம்சத்தை அமைக்கவும். அனைத்து உலக நேர மண்டலங்கள். பதிவிறக்கவும் அல்லது குழுசேரவும்.",
-        "keywords": "FE, பார்முலா E, பந்தய நேரங்கள், பந்தயங்கள், நினைவூட்டல், விழிப்பூட்டல்கள், E பிரிக்ஸ், காலண்டர், தேதிகள், தொடக்க நேரங்கள், தகுதி, பயிற்சி, லண்டன், ஐரோப்பா, {{ஆண்டு}}"
+        "keywords": "FE, பார்முலா E, பந்தய நேரங்கள், பந்தயங்கள், நினைவூட்டல், விழிப்பூட்டல்கள், E பிரிக்ஸ், காலண்டர், தேதிகள், தொடக்க நேரங்கள், தகுதி, பயிற்சி, லண்டன், ஐரோப்பா, {{ஆண்டு}}",
+        "timezoneTitle": "Formula E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Formula E {year} race schedule in {timezone} timezone. All E-Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "பார்முலா-E, FIA பார்முலா-E சாம்பியன்ஷிப் & E-ப்ரிக்ஸ் ஆகியவை FIA இன் வர்த்தக முத்திரைகள்."
     },
@@ -200,7 +208,9 @@
       "seo": {
         "title": "IndyCar நாட்காட்டி {{ஆண்டு}} - பந்தய நேரங்கள் மற்றும் தேதிகள்",
         "description": "அனைத்து IndyCar பந்தயங்கள், பயிற்சி மற்றும் தகுதி அமர்வுகளுடன் {year} சீசனுக்கான IndyCar Calendar. நினைவூட்டல் அம்சத்தை அமைக்கவும். அனைத்து உலக நேர மண்டலங்கள். பதிவிறக்கவும் அல்லது குழுசேரவும்.",
-        "keywords": "IndyCar, பந்தய நேரங்கள், பந்தயங்கள், நினைவூட்டல், விழிப்பூட்டல்கள், காலண்டர், தேதிகள், தொடக்க நேரங்கள், தகுதி, பயிற்சி, {year}"
+        "keywords": "IndyCar, பந்தய நேரங்கள், பந்தயங்கள், நினைவூட்டல், விழிப்பூட்டல்கள், காலண்டர், தேதிகள், தொடக்க நேரங்கள், தகுதி, பயிற்சி, {year}",
+        "timezoneTitle": "IndyCar Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "IndyCar {year} race schedule in {timezone} timezone. All IndyCar race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "IndyCar என்பது Brickyard வர்த்தக முத்திரைகள், Inc இன் பதிவு செய்யப்பட்ட வர்த்தக முத்திரையாகும்"
     },
@@ -210,7 +220,9 @@
       "seo": {
         "title": "MotoGP நாட்காட்டி {year} - பந்தய நேரங்கள் மற்றும் தேதிகள்",
         "description": "அனைத்து MotoGP பந்தயங்கள், பயிற்சி மற்றும் தகுதி அமர்வுகளுடன் {year} பருவத்திற்கான MotoGP நாட்காட்டி. நினைவூட்டல் அம்சத்தை அமைக்கவும். அனைத்து உலக நேர மண்டலங்கள். பதிவிறக்கவும் அல்லது குழுசேரவும்.",
-        "keywords": "MotoGP, பந்தய நேரங்கள், பந்தயங்கள், நினைவூட்டல், எச்சரிக்கைகள், நாட்காட்டி, தேதிகள், தொடக்க நேரங்கள், தகுதி, பயிற்சி, லண்டன், ஐரோப்பா, {year}"
+        "keywords": "MotoGP, பந்தய நேரங்கள், பந்தயங்கள், நினைவூட்டல், எச்சரிக்கைகள், நாட்காட்டி, தேதிகள், தொடக்க நேரங்கள், தகுதி, பயிற்சி, லண்டன், ஐரோப்பா, {year}",
+        "timezoneTitle": "MotoGP Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "MotoGP {year} race schedule in {timezone} timezone. All MotoGP race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "அடிக்குறிப்பு"
     },
@@ -220,7 +232,9 @@
       "seo": {
         "title": "W Series Calendar {year} - Race Times and Dates",
         "description": "W Series Calendar for {year} season with all W Series races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "wseries, w-series, race times, races, reminder, alerts, prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "W Series Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "W Series {year} race schedule in {timezone} timezone. All W Series race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "W Series Calendar is not affiliated with W Series."
     },
@@ -230,7 +244,9 @@
       "seo": {
         "title": "Extreme E Calendar {year} - Extreme E Race Times and Dates",
         "description": "Extreme E Calendar for {year} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "Extreme E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Extreme E {year} race schedule in {timezone} timezone. All X Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": ""
     },
@@ -239,15 +255,15 @@
       "text": "",
       "link": ""
     },
-    "showPreviousRaces": "Show Previous Races",
-    "hidePreviousRaces": "Hide Previous Races",
     "f1-academy": {
       "title": "F1 Academy Calendar",
       "subtitle": "Races, Qualifying & Practice Sessions",
       "seo": {
         "title": "F1 Academy Calendar {year} - Formula One Race Times and Dates",
         "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}"
+        "keywords": "F1, formula one, race times, races, reminder, alerts, grands prix, grand prix, calendar, dates, start times, qualifying, practice, London, Europe, {year}",
+        "timezoneTitle": "F1 Academy Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 Academy {year} race schedule in {timezone} timezone. All F1 Academy race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "F1 Acadamy, Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."
     }

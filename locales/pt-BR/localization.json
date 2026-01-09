@@ -185,7 +185,9 @@
       "seo": {
         "title": "Calendário da F1 {year} - Datas e horários das corridas",
         "description": "Calendário da Fórmula 1 para temporada de {year} com todas as corridas, treinos livres e classificaçāo da F1. Recurso para definir lembretes. Todos os fusos horários do mundo. Baixe ou assine.",
-        "keywords": "F1, fórmula 1, horário das corridas, corridas, avisos, alertas, grandes prêmios, grande prêmio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}"
+        "keywords": "F1, fórmula 1, horário das corridas, corridas, avisos, alertas, grandes prêmios, grande prêmio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "F1 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 {year} race schedule in {timezone} timezone. All Grand Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Formula One, Formula 1, F1 & Grand Prix são marcas registradas da Formula One Licensing BV."
     },
@@ -195,7 +197,9 @@
       "seo": {
         "title": "Calendário da F2 {year} - Datas e horários das corridas",
         "description": "Calendário da Fórmula 2 para temporada de {year} com todos as corridas, treinos livres e classificaçāo da F1. Recurso para definir lembretes. Todos os fuseos horários do mundo. Baixe ou assine.",
-        "keywords": "F2, fórmula 2, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}"
+        "keywords": "F2, fórmula 2, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "F2 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F2 {year} race schedule in {timezone} timezone. All Formula 2 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Campeonato FIA de Fórmula 2, FIA FÓRMULA 2, FÓRMULA 2, F2 são marcas registradas da FIA."
     },
@@ -205,7 +209,9 @@
       "seo": {
         "title": "Calendário da F3 {year} - Datas e horários das corridas",
         "description": "Calendário da Fórmula 3 para temporada de {year} com todos as corridas, treinos livres e classificaçāo da F1. Recurso para definir lembretes. Todos os fuseos horários do mundo. Baixe ou assine.",
-        "keywords": "F3, fórmula 3, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}"
+        "keywords": "F3, fórmula 3, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "F3 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F3 {year} race schedule in {timezone} timezone. All Formula 3 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Campeonato FIA de Fórmula 3, FIA FÓRMULA 3, FÓRMULA 3, F3 são marcas registradas da FIA."
     },
@@ -215,7 +221,9 @@
       "seo": {
         "title": "Calendário da Fórmula E {year} - Datas e horários das corridas",
         "description": "Calendário da Fórmula 3 para temporada de {year} com todos as corridas, treinos livres e classificaçāo da F1. Recurso para definir lembretes. Todos os fuseos horários do mundo. Baixe ou assine.",
-        "keywords": "FE, fórmula E, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}"
+        "keywords": "FE, fórmula E, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "Formula E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Formula E {year} race schedule in {timezone} timezone. All E-Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Campeonato FIA de Fórmula E, FIA FÓRMULA E, FÓRMULA E & E-Prix são marcas registradas da FIA."
     },
@@ -225,7 +233,9 @@
       "seo": {
         "title": "Calendário da IndyCar {year} - Datas e horários das corridas",
         "description": "IndyCar Calendar for {year} season with all IndyCar races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "IndyCar, horário das corridas, corridas, avisos, alertas, datas, horário de início, classificaçāo, treino livre, {year}"
+        "keywords": "IndyCar, horário das corridas, corridas, avisos, alertas, datas, horário de início, classificaçāo, treino livre, {year}",
+        "timezoneTitle": "IndyCar Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "IndyCar {year} race schedule in {timezone} timezone. All IndyCar race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "IndyCar são marcas registradas da Brickyard Trademarks, Inc"
     },
@@ -235,7 +245,9 @@
       "seo": {
         "title": "Calendário da MotoGP {year} - Datas e horários das corridas",
         "description": "MotoGP Calendar for {year} season with all MotoGP races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "MotoGP, horário das corridas, corridas, avisos, alertas, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}"
+        "keywords": "MotoGP, horário das corridas, corridas, avisos, alertas, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "MotoGP Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "MotoGP {year} race schedule in {timezone} timezone. All MotoGP race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": ""
     },
@@ -245,7 +257,9 @@
       "seo": {
         "title": "Calendário da Serie W {year} - Datas e horários das corridas",
         "description": "Calendário da Serie W para temporada de {year} com todos as corridas, treinos livres e classificaçāo da F1. Recurso para definir lembretes. Todos os fuseos horários do mundo. Baixe ou assine.",
-        "keywords": "seriew, serie-w, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}"
+        "keywords": "seriew, serie-w, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prémio, calendário, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "W Series Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "W Series {year} race schedule in {timezone} timezone. All W Series race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Calendário da Serie W não é afiliada com a Serie W."
     },
@@ -255,7 +269,9 @@
       "seo": {
         "title": "Calendário da Extreme E {year} - Datas e horários das corridas",
         "description": "Extreme E Calendar for {year} season with all Extreme E xprix races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "Extreme E, horário das corridas, corridas, avisos, alertas, x prix, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}"
+        "keywords": "Extreme E, horário das corridas, corridas, avisos, alertas, x prix, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "Extreme E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Extreme E {year} race schedule in {timezone} timezone. All X Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": ""
     },
@@ -265,7 +281,9 @@
       "seo": {
         "title": "Calendário da F1 Academy {year} - Datas e horários das corridas",
         "description": "Formula One Academy Calendar for {year} season with all F1 Academy races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
-        "keywords": "F1, formula one, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prêmio, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}"
+        "keywords": "F1, formula one, horário das corridas, corridas, avisos, alertas, grande prêmios, grande prêmio, datas, horário de início, classificaçāo, treino livre, Londres, Europa, {year}",
+        "timezoneTitle": "F1 Academy Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 Academy {year} race schedule in {timezone} timezone. All F1 Academy race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Formula One, Formula 1, F1 & Grand Prix são marcas registradas da Formula One Licensing BV."
     }

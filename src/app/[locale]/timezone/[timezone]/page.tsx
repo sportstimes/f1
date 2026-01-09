@@ -45,12 +45,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations('All');
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 
+  // Format timezone for display (e.g., "Europe-London" -> "Europe/London")
+  const displayTimezone = timezone.replace('-', '/');
+
+  // Check if timezone-specific translations exist, fallback to generic
+  const siteKey = process.env.NEXT_PUBLIC_SITE_KEY;
+  const timezoneTitle = t(`${siteKey}.seo.timezoneTitle`, {
+    year: currentYear,
+    timezone: displayTimezone,
+  });
+  const timezoneDescription = t(`${siteKey}.seo.timezoneDescription`, {
+    year: currentYear,
+    timezone: displayTimezone,
+  });
+
   return {
-    title: `${timezone} - ${t(`${process.env.NEXT_PUBLIC_SITE_KEY}.title`)} ${currentYear}`,
-    description: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`, {
-      year: currentYear,
-    }),
-    keywords: t(`${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
+    title: timezoneTitle,
+    description: timezoneDescription,
+    keywords: t(`${siteKey}.seo.keywords`, {
       year: currentYear,
     }),
     alternates: {

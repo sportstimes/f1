@@ -186,7 +186,9 @@
       "seo": {
         "title": "F1 kalendar {year} - Dani i vremena trka formule jedan",
         "description": "Formula jedan kalendar za {year} sezonu sa svim F1 trkama za veliku nagradu, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "F1, formula jedan, vremena trka, trke, podsetnik, obaveštenja, velike nagrade, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
+        "keywords": "F1, formula jedan, vremena trka, trke, podsetnik, obaveštenja, velike nagrade, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}",
+        "timezoneTitle": "F1 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 {year} race schedule in {timezone} timezone. All Grand Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Formula One, Formula 1, F1 i Grand Prix su brendovi napravljeni od strane Formula One Licensing BV."
     },
@@ -196,7 +198,9 @@
       "seo": {
         "title": "F2 kalendar {year} - Dani i vremena trka formule dva",
         "description": "Formula dva kalendar za {year} sezonu sa svim F2 trkama za veliku nagradu, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "placeholder"
+        "keywords": "placeholder",
+        "timezoneTitle": "F2 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F2 {year} race schedule in {timezone} timezone. All Formula 2 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 su brendovi napravljeni od strane FIA."
     },
@@ -206,7 +210,9 @@
       "seo": {
         "title": "F3 kalendar {year} - Dani i vremena trka formule tri",
         "description": "Formula tri kalendar za {year} sezonu sa svim F3 trkama za veliku nagradu, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "F3, formula tri, vremena trka, trke, podsetnik, obaveštenja, velike nagrade, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
+        "keywords": "F3, formula tri, vremena trka, trke, podsetnik, obaveštenja, velike nagrade, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}",
+        "timezoneTitle": "F3 Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F3 {year} race schedule in {timezone} timezone. All Formula 3 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 su brendovi napravljeni od strane FIA."
     },
@@ -216,7 +222,9 @@
       "seo": {
         "title": "Formula E kalendar {year} - Dani i vremena trka formule E",
         "description": "Formula E kalendar za {year} sezonu sa svim Formula E e-prix trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "FE, formula e, vremena trka, trke, podsetnik, obaveštenja, e prix, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
+        "keywords": "FE, formula e, vremena trka, trke, podsetnik, obaveštenja, e prix, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}",
+        "timezoneTitle": "Formula E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Formula E {year} race schedule in {timezone} timezone. All E-Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP i E-Prix su brendovi napravljeni od strane FIA."
     },
@@ -226,7 +234,9 @@
       "seo": {
         "title": "IndyCar kalendar {year} - Dani i vremena trka",
         "description": "IndyCar kalendar za {year} sezonu sa svim IndyCar trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "IndyCar, vremena trka, trke, podsetnik, obaveštenja, kalendar, datumi, početna vremena, kvalifikacije, pripreme, {year}"
+        "keywords": "IndyCar, vremena trka, trke, podsetnik, obaveštenja, kalendar, datumi, početna vremena, kvalifikacije, pripreme, {year}",
+        "timezoneTitle": "IndyCar Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "IndyCar {year} race schedule in {timezone} timezone. All IndyCar race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "IndyCar je registrovan brend od strane Brickyard Trademarks, Inc"
     },
@@ -236,7 +246,9 @@
       "seo": {
         "title": "MotoGP kalendar {year} - Dani i vremena trka",
         "description": "MotoGP kalendar za {year} sezonu sa svim MotoGP trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "MotoGP, vremena trka, trke, podsetnik, obaveštenja, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
+        "keywords": "MotoGP, vremena trka, trke, podsetnik, obaveštenja, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}",
+        "timezoneTitle": "MotoGP Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "MotoGP {year} race schedule in {timezone} timezone. All MotoGP race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "MOTOGP je brend od strane DORNA SPORTS, S.L."
     },
@@ -246,7 +258,9 @@
       "seo": {
         "title": "W Series kalendar {year} - Dani i vremena trka",
         "description": "W Series kalendar za {year} sezonu sa svim W Series trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "wseries, w-series, vremena trka, trke, podsetnik, obaveštenja, prix, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
+        "keywords": "wseries, w-series, vremena trka, trke, podsetnik, obaveštenja, prix, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}",
+        "timezoneTitle": "W Series Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "W Series {year} race schedule in {timezone} timezone. All W Series race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "W Series kalendar nije povezan sa W Series."
     },
@@ -256,7 +270,9 @@
       "seo": {
         "title": "Extreme E kalendar {year} - Dani i vremena trka za Extreme E",
         "description": "Extreme E kalendar za {year} sezonu sa svim Extreme E xprix trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "Extreme E, vremena trka, trke, podsetnik, obaveštenja, x prix, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
+        "keywords": "Extreme E, vremena trka, trke, podsetnik, obaveštenja, x prix, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}",
+        "timezoneTitle": "Extreme E Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "Extreme E {year} race schedule in {timezone} timezone. All X Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": ""
     },
@@ -266,7 +282,9 @@
       "seo": {
         "title": "F1 Akademija kalendar {year} - Dani i vremena trka formule jedan",
         "description": "Formula jedan Akademija kalendar za {year} sezonu sa svim F1 Akademija trkama, pripremnim i kvalifikacionim sesijama. Postavi podsetnike. Sve vremenske zone. Preuzmi ili zaprati.",
-        "keywords": "F1, formula jedan, vremena trka, trke, podsetnik, obaveštenja, velike nagrade, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}"
+        "keywords": "F1, formula jedan, vremena trka, trke, podsetnik, obaveštenja, velike nagrade, kalendar, datumi, početna vremena, kvalifikacije, pripreme, London, Evropa, {year}",
+        "timezoneTitle": "F1 Academy Calendar {year} - Race Times in {timezone}",
+        "timezoneDescription": "F1 Academy {year} race schedule in {timezone} timezone. All F1 Academy race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
       },
       "footnote": "F1 Academy, Formula One, Formula 1, F1 i Grand Prix su brendovi napravljeni od strane Formula One Licensing BV."
     }
