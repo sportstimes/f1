@@ -65,8 +65,14 @@ export function UserContextProvider({ children }: Props) {
         }
 
         // Store whether to collapse or show the past races.
+        // Default to true (hide past races) for new users who haven't set a preference
         const storedCollapsedState = localStorage.getItem("collapsePastRaces");
-        updateStateCollapsePastRaces(storedCollapsedState === "true");
+        if (storedCollapsedState === null) {
+            updateStateCollapsePastRaces(true);
+            localStorage.setItem("collapsePastRaces", "true");
+        } else {
+            updateStateCollapsePastRaces(storedCollapsedState === "true");
+        }
 
         // Fetch the stored UUID, utilized to configure web push notifications.
         const storedUUID = localStorage.getItem("uuid");
