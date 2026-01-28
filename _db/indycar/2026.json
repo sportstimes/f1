@@ -1,0 +1,234 @@
+{
+  "races": [
+    {
+      "name": "Firestone Grand Prix of St. Petersburg",
+      "sessions": {
+        "practice1": "2026-02-27T18:35:00Z",
+        "practice2": "2026-02-28T14:35:00Z",
+        "qualifying": "2026-02-28T21:30:00Z",
+        "warmup": "2026-03-01T14:05:00Z",
+        "race": "2026-03-01T17:00:00Z"
+      },
+      "tbc": false,
+      "round": 1,
+      "slug": "firestone-grand-prix-of-st-petersburg",
+      "localeKey": "firestone-grand-prix-of-st-petersburg",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Good Ranchers 250",
+      "sessions": {
+        "practice1": "2026-03-06T15:00:00Z",
+        "qualifying": "2026-03-06T19:00:00Z",
+        "practice2": "2026-03-06T21:30:00Z",
+        "FinalPractice": "2026-03-06T22:00:00Z",
+        "race": "2026-03-07T20:00:00Z"
+      },
+      "tbc": false,
+      "round": 2,
+      "slug": "good-ranchers-250",
+      "localeKey": "good-ranchers-250",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Java House Grand Prix of Arlington",
+      "sessions": {
+        "practice1": "2026-03-13T20:00:00Z",
+        "practice2": "2026-03-14T13:30:00Z",
+        "qualifying": "2026-03-14T18:30:00Z",
+        "warmup": "2026-03-15T14:00:00Z",
+        "race": "2026-03-15T16:30:00Z"
+      },
+      "tbc": false,
+      "round": 3,
+      "slug": "java-house-grand-prix-of-arlington",
+      "localeKey": "java-house-grand-prix-of-arlington",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Children's of Alabama Indy Grand Prix",
+      "sessions": {
+        "qualifying": "2026-03-28T17:30:00Z",
+        "race": "2026-03-29T17:00:00Z"
+      },
+      "tbc": false,
+      "round": 4,
+      "slug": "childrens-of-alabama-indy-grand-prix",
+      "localeKey": "childrens-of-alabama-indy-grand-prix",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Acura Grand Prix of Long Beach",
+      "sessions": {
+        "qualifying": "2026-04-18T18:30:00Z",
+        "race": "2026-04-19T21:30:00Z"
+      },
+      "tbc": false,
+      "round": 5,
+      "slug": "acura-grand-prix-of-long-beach",
+      "localeKey": "acura-grand-prix-of-long-beach",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Sonsio Grand Prix",
+      "sessions": {
+        "qualifying": "2026-05-08T20:30:00Z",
+        "race": "2026-05-09T20:30:00Z"
+      },
+      "tbc": false,
+      "round": 6,
+      "slug": "sonsio-grand-prix",
+      "localeKey": "sonsio-grand-prix",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "110th Running of the Indianapolis 500",
+      "sessions": {
+        "qualifying": "2026-05-16T15:00:00Z",
+        "race": "2026-05-24T14:00:00Z"
+      },
+      "tbc": false,
+      "round": 7,
+      "slug": "110th-running-of-the-indianapolis-500",
+      "localeKey": "110th-running-of-the-indianapolis-500",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Chevrolet Detroit Grand Prix",
+      "sessions": {
+        "qualifying": "2026-05-30T16:00:00Z",
+        "race": "2026-05-31T16:30:00Z"
+      },
+      "tbc": false,
+      "round": 8,
+      "slug": "chevrolet-detroit-grand-prix",
+      "localeKey": "chevrolet-detroit-grand-prix",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Bommarito Automotive Group 500",
+      "sessions": {
+        "qualifying": "2026-06-06T23:00:00Z",
+        "race": "2026-06-08T01:00:00Z"
+      },
+      "tbc": false,
+      "round": 9,
+      "slug": "bommarito-automotive-group-500",
+      "localeKey": "bommarito-automotive-group-500",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "XPEL Grand Prix at Road America",
+      "sessions": {
+        "qualifying": "2026-06-20T18:30:00Z",
+        "race": "2026-06-21T18:00:00Z"
+      },
+      "tbc": false,
+      "round": 10,
+      "slug": "xpel-grand-prix-at-road-america",
+      "localeKey": "xpel-grand-prix-at-road-america",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Honda Indy 200 at Mid-Ohio",
+      "sessions": {
+        "qualifying": "2026-07-04T18:30:00Z",
+        "race": "2026-07-05T16:30:00Z"
+      },
+      "tbc": false,
+      "round": 11,
+      "slug": "honda-indy-200-at-midohio",
+      "localeKey": "honda-indy-200-at-midohio",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Borchetta Bourbon Music City Grand Prix",
+      "sessions": {
+        "qualifying": "2026-07-18T18:00:00Z",
+        "race": "2026-07-19T18:00:00Z"
+      },
+      "tbc": false,
+      "round": 12,
+      "slug": "borchetta-bourbon-music-city-grand-prix",
+      "localeKey": "borchetta-bourbon-music-city-grand-prix",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "BITNILE.com Grand Prix of Portland",
+      "sessions": {
+        "qualifying": "2026-08-08T18:30:00Z",
+        "race": "2026-08-09T20:00:00Z"
+      },
+      "tbc": false,
+      "round": 13,
+      "slug": "bitnilecom-grand-prix-of-portland",
+      "localeKey": "bitnilecom-grand-prix-of-portland",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Ontario Honda Dealers Indy at Markham",
+      "sessions": {
+        "qualifying": "2026-08-15T16:00:00Z",
+        "race": "2026-08-16T16:00:00Z"
+      },
+      "tbc": false,
+      "round": 14,
+      "slug": "ontario-honda-dealers-indy-at-markham",
+      "localeKey": "ontario-honda-dealers-indy-at-markham",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Milwaukee Mile Race 1",
+      "sessions": {
+        "qualifying": "2026-08-29T18:15:00Z",
+        "race": "2026-08-29T18:30:00Z"
+      },
+      "tbc": false,
+      "round": 15,
+      "slug": "milwaukee-mile-race-1",
+      "localeKey": "milwaukee-mile-race-1",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "Milwaukee Mile Race 2",
+      "sessions": {
+        "qualifying": "2026-08-30T15:15:00Z",
+        "race": "2026-08-30T17:00:00Z"
+      },
+      "tbc": false,
+      "round": 16,
+      "slug": "milwaukee-mile-race-2",
+      "localeKey": "milwaukee-mile-race-2",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
+      "name": "WeatherTech Raceway Laguna Seca",
+      "sessions": {
+        "qualifying": "2026-09-05T18:30:00Z",
+        "race": "2026-09-06T18:30:00Z"
+      },
+      "tbc": false,
+      "round": 17,
+      "slug": "weathertech-raceway-laguna-seca",
+      "localeKey": "weathertech-raceway-laguna-seca",
+      "longitude": 0,
+      "latitude": 0
+    }
+  ]
+}
