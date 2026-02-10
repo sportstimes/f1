@@ -187,8 +187,8 @@
         "title": "F1 календар {year} - Дани и времена трка формуле један",
         "description": "Формула један календар за {year} сезону са свим F1 тркама за велику награду, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
         "keywords": "F1, формула један, времена трка, трке, подсетник, обавештења, велике награде, календар, датуми, почетна времена, квалификације, припреме, Лондон, Европа, {year}",
-        "timezoneTitle": "F1 Calendar {year} - Race Times in {timezone}",
-        "timezoneDescription": "F1 {year} race schedule in {timezone} timezone. All Grand Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+        "timezoneTitle": "F1 календар {year} - Времена трка за {timezone}",
+        "timezoneDescription": "F1 {year} распоред трка у временској зони {timezone}. Сва времена великих награда, квалификационих и припремних сесија су конвертована у твоје локално време. Преузми календар или постави подсетнике."
       },
       "footnote": "Formula One, Formula 1, F1 и Grand Prix су брендови направљени од стране Formula One Licensing BV."
     },
@@ -199,8 +199,8 @@
         "title": "F2 календар {year} - Дани и времена трка формуле два",
         "description": "Формула два календар за {year} сезону са свим F2 тркама за велику награду, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
         "keywords": "placeholder",
-        "timezoneTitle": "F2 Calendar {year} - Race Times in {timezone}",
-        "timezoneDescription": "F2 {year} race schedule in {timezone} timezone. All Formula 2 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+        "timezoneTitle": "F2 календар {year} - Времена трка за {timezone}",
+        "timezoneDescription": "F2 {year} распоред трка у временској зони {timezone}. Сва времена формула два трка, квалификационих и припремних сесија су конвертована у твоје локално време. Преузми календар или постави подсетнике."
       },
       "footnote": "FIA FORMULA 2 CHAMPIONSHIP, FIA FORMULA 2, FORMULA 2, F2 су брендови направљени од стране FIA."
     },
@@ -211,20 +211,20 @@
         "title": "F3 календар {year} - Дани и времена трка формуле три",
         "description": "Формула три календар за {year} сезону са свим F3 тркама за велику награду, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
         "keywords": "F3, формула три, времена трка, трке, подсетник, обавештења, велике награде, календар, датуми, почетна времена, квалификације, припреме, Лондон, Европа, {year}",
-        "timezoneTitle": "F3 Calendar {year} - Race Times in {timezone}",
-        "timezoneDescription": "F3 {year} race schedule in {timezone} timezone. All Formula 3 race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+        "timezoneTitle": "F3 календар {year} - Времена трка за {timezone}",
+        "timezoneDescription": "F3 {year} распоред трка у временској зони {timezone}. Сва времена формула три трка, квалификационих и припремних сесија су конвертована у твоје локално време. Преузми календар или постави подсетнике."
       },
       "footnote": "FIA FORMULA 3 CHAMPIONSHIP, FIA FORMULA 3, FORMULA 3, F3 су брендови направљени од стране FIA."
     },
     "fe": {
-      "title": "Formula E календар",
+      "title": "Формула E календар",
       "subtitle": "Трке, квалификационе и припремне сесије",
       "seo": {
-        "title": "Formula E календар {year} - Дани и времена трка формуле E",
-        "description": "Формула E календар за {year} сезону са свим Formula E e-prix тркама, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
+        "title": "Формула E календар {year} - Дани и времена трка формуле E",
+        "description": "Формула E календар за {year} сезону са свим Формула E e-prix тркама, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
         "keywords": "FE, формула e, времена трка, трке, подсетник, обавештења, e prix, календар, датуми, почетна времена, квалификације, припреме, Лондон, Европа, {year}",
-        "timezoneTitle": "Formula E Calendar {year} - Race Times in {timezone}",
-        "timezoneDescription": "Formula E {year} race schedule in {timezone} timezone. All E-Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+        "timezoneTitle": "Формула E календар {year} - Времена трка за {timezone}",
+        "timezoneDescription": "Формула E {year} распоред трка у временској зони {timezone}. Сва времена e-prix трка, квалификационих и припремних сесија су конвертована у твоје локално време. Преузми календар или постави подсетнике."
       },
       "footnote": "Formula-E, FIA FORMULA-E CHAMPIONSHIP и E-Prix су брендови направљени од стране FIA."
     },
@@ -235,8 +235,8 @@
         "title": "IndyCar календар {year} - Дани и времена трка",
         "description": "IndyCar календар за {year} сезону са свим IndyCar тркама, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
         "keywords": "IndyCar, времена трка, трке, подсетник, обавештења, календар, датуми, почетна времена, квалификације, припреме, {year}",
-        "timezoneTitle": "IndyCar Calendar {year} - Race Times in {timezone}",
-        "timezoneDescription": "IndyCar {year} race schedule in {timezone} timezone. All IndyCar race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+        "timezoneTitle": "IndyCar календар {year} - Времена трка за {timezone}",
+        "timezoneDescription": "IndyCar {year} распоред трка у временској зони {timezone}. Сва времена IndyCar трка, квалификационих и припремних сесија су конвертована у твоје локално време. Преузми календар или постави подсетнике."
       },
       "footnote": "IndyCar је регистрован бренд од стране Brickyard Trademarks, Inc"
     },
@@ -247,8 +247,8 @@
         "title": "MotoGP календар {year} - Дани и времена трка",
         "description": "MotoGP календар за {year} сезону са свим MotoGP тркама, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
         "keywords": "MotoGP, времена трка, трке, подсетник, обавештења, календар, датуми, почетна времена, квалификације, припреме, Лондон, Европа, {year}",
-        "timezoneTitle": "MotoGP Calendar {year} - Race Times in {timezone}",
-        "timezoneDescription": "MotoGP {year} race schedule in {timezone} timezone. All MotoGP race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+        "timezoneTitle": "MotoGP календар {year} - Времена трка за {timezone}",
+        "timezoneDescription": "MotoGP {year} распоред трка у временској зони {timezone}. Сва времена MotoGP трка, квалификационих и припремних сесија су конвертована у твоје локално време. Преузми календар или постави подсетнике."
       },
       "footnote": "MOTOGP је бренд од стране DORNA SPORTS, S.L."
     },
@@ -259,8 +259,8 @@
         "title": "W Series календар {year} - Дани и времена трка",
         "description": "W Series календар за {year} сезону са свим W Series тркама, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
         "keywords": "wseries, w-series, времена трка, трке, подсетник, обавештења, prix, календар, датуми, почетна времена, квалификације, припреме, Лондон, Европа, {year}",
-        "timezoneTitle": "W Series Calendar {year} - Race Times in {timezone}",
-        "timezoneDescription": "W Series {year} race schedule in {timezone} timezone. All W Series race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+        "timezoneTitle": "W Series календар {year} - Времена трка за {timezone}",
+        "timezoneDescription": "W Series {year} распоред трка у временској зони {timezone}. Сва времена W Series трка, квалификационих и припремних сесија су конвертована у твоје локално време. Преузми календар или постави подсетнике."
       },
       "footnote": "W Series календар није повезан са W Series."
     },
@@ -271,8 +271,8 @@
         "title": "Extreme E календар {year} - Дани и времена трка za Extreme E",
         "description": "Extreme E календар за {year} сезону са свим Extreme E xprix тркама, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
         "keywords": "Extreme E, времена трка, трке, подсетник, обавештења, x prix, календар, датуми, почетна времена, квалификације, припреме, Лондон, Европа, {year}",
-        "timezoneTitle": "Extreme E Calendar {year} - Race Times in {timezone}",
-        "timezoneDescription": "Extreme E {year} race schedule in {timezone} timezone. All X Prix times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+        "timezoneTitle": "Extreme E календар {year} - Времена трка за {timezone}",
+        "timezoneDescription": "Extreme E {year} распоред трка у временској зони {timezone}. Сва времена X Prix трка, квалификационих и припремних сесија су конвертована у твоје локално време. Преузми календар или постави подсетнике."
       },
       "footnote": ""
     },
@@ -280,11 +280,11 @@
       "title": "F1 Академија календар",
       "subtitle": "Трке, квалификационе и припремне сесије",
       "seo": {
-        "title": "F1 Академија календар {year} - Дани и времена трка formule jedan",
+        "title": "F1 Академија календар {year} - Дани и времена трка формуле један",
         "description": "Формула један Академија календар за {year} сезону са свим F1 Академија тркама, припремним и квалификационим сесијама. Постави подсетнике. Све временске зоне. Преузми или запрати.",
         "keywords": "F1, формула један, времена трка, трке, подсетник, обавештења, велике награде, календар, датуми, почетна времена, квалификације, припреме, Лондон, Европа, {year}",
-        "timezoneTitle": "F1 Academy Calendar {year} - Race Times in {timezone}",
-        "timezoneDescription": "F1 Academy {year} race schedule in {timezone} timezone. All F1 Academy race times, qualifying and practice sessions converted to your local time. Download calendar or set reminders."
+        "timezoneTitle": "F1 Академија календар {year} - Времена трка за {timezone}",
+        "timezoneDescription": "F1 Academy {year} распоред трка у временској зони {timezone}. Сва времена F1 Академија трка, квалификационих и припремних сесија су конвертована у твоје локално време. Преузми календар или постави подсетнике."
       },
       "footnote": "F1 Academy, Formula One, Formula 1, F1 и Grand Prix су брендови направљени од стране Formula One Licensing BV."
     }
