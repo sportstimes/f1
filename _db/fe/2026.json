@@ -9,8 +9,7 @@
       "slug": "sao-paulo-eprix",
       "localeKey": "sao-paulo-eprix",
       "sessions": {
-        "practice1": "2025-12-05T19:30:00Z",
-        "practice2": "2025-12-06T10:30:00Z",
+        "practice2": "2025-12-06T10:10:00Z",
         "qualifying": "2025-12-06T12:40:00Z",
         "race": "2025-12-06T17:05:00Z"
       }
@@ -39,10 +38,10 @@
       "slug": "miami-eprix",
       "localeKey": "miami-eprix",
       "sessions": {
-        "practice1": "2026-01-30T21:00:00Z",
-        "practice2": "2026-01-31T11:30:00Z",
-        "qualifying": "2026-01-31T13:40:00Z",
-        "race": "2026-01-31T18:05:00Z"
+        "practice1": "2026-01-30T22:00:00Z",
+        "practice2": "2026-01-31T12:30:00Z",
+        "qualifying": "2026-01-31T14:40:00Z",
+        "race": "2026-01-31T19:05:00Z"
       }
     },
     {
@@ -83,7 +82,7 @@
       "slug": "madrid-eprix",
       "localeKey": "madrid-eprix",
       "sessions": {
-        "practice1": "2026-03-20T14:30:00Z",
+        "practice1": "2026-03-20T15:30:00Z",
         "practice2": "2026-03-21T07:30:00Z",
         "qualifying": "2026-03-21T09:40:00Z",
         "race": "2026-03-21T14:05:00Z"
@@ -200,9 +199,11 @@
       "slug": "tokyo-eprix",
       "localeKey": "tokyo-eprix",
       "sessions": {
-        "race": "2026-07-25T00:00:00Z"
-      },
-      "tbc": true
+        "practice1": "2026-07-24T10:00:00Z",
+        "practice2": "2026-07-25T04:30:00Z",
+        "qualifying": "2026-07-25T06:40:00Z",
+        "race": "2026-07-25T11:05:00Z"
+      }
     },
     {
       "name": "Tokyo ePrix",
@@ -213,9 +214,10 @@
       "slug": "tokyo-eprix",
       "localeKey": "tokyo-eprix",
       "sessions": {
-        "race": "2026-07-26T00:00:00Z"
-      },
-      "tbc": true
+        "practice3": "2026-07-26T04:30:00Z",
+        "qualifying": "2026-07-26T06:40:00Z",
+        "race": "2026-07-26T11:05:00Z"
+      }
     },
     {
       "name": "London ePrix",
