@@ -45,5 +45,6 @@
     "race": 60
   },
   "supportsEmailReminders": false,
-  "notice": "You may need to regenrate Calendar subscriptions, we've adjusted the site to support Practice and Warmup sessions."
+  "notice": "You may need to regenrate Calendar subscriptions, we've adjusted the site to support Practice and Warmup sessions.",
+  "trmnlPlugin": "https://usetrmnl.com/recipes/20507?ref=ay8s"
 }
