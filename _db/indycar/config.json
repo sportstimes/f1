@@ -47,5 +47,6 @@
     "race": 57,
     "other": 45
   },
-  "supportsEmailReminders": false
+  "supportsEmailReminders": false,
+  "trmnlPlugin": "https://trmnl.com/recipes/244852?ref=ay8s"
 }

@@ -51,7 +51,10 @@
     {
       "name": "Children's of Alabama Indy Grand Prix",
       "sessions": {
-        "qualifying": "2026-03-28T17:30:00Z",
+        "practice1": "2026-03-27T19:30:00Z",
+        "practice2": "2026-03-28T15:00:00Z",
+        "qualifying": "2026-03-28T18:30:00Z",
+        "warmup": "2026-03-29T14:05:00Z",
         "race": "2026-03-29T17:00:00Z"
       },
       "tbc": false,
@@ -64,7 +67,10 @@
     {
       "name": "Acura Grand Prix of Long Beach",
       "sessions": {
-        "qualifying": "2026-04-18T18:30:00Z",
+        "practice1": "2026-04-17T22:00:00Z",
+        "practice2": "2026-04-18T17:30:00Z",
+        "qualifying": "2026-04-18T22:30:00Z",
+        "warmup": "2026-04-19T17:00:00Z",
         "race": "2026-04-19T21:30:00Z"
       },
       "tbc": false,
@@ -192,13 +198,25 @@
       "latitude": 0
     },
     {
+      "name": "Freedom 250 Grand Prix of Washington, D.C.",
+      "sessions": {
+        "race": "2026-08-23T18:00:00Z"
+      },
+      "tbc": true,
+      "round": 15,
+      "slug": "freedom-250-grand-prix-of-washington-dc",
+      "localeKey": "freedom-250-grand-prix-of-washington-dc",
+      "longitude": 0,
+      "latitude": 0
+    },
+    {
       "name": "Milwaukee Mile Race 1",
       "sessions": {
         "qualifying": "2026-08-29T18:15:00Z",
         "race": "2026-08-29T18:30:00Z"
       },
       "tbc": false,
-      "round": 15,
+      "round": 16,
       "slug": "milwaukee-mile-race-1",
       "localeKey": "milwaukee-mile-race-1",
       "longitude": 0,
@@ -211,7 +229,7 @@
         "race": "2026-08-30T17:00:00Z"
       },
       "tbc": false,
-      "round": 16,
+      "round": 17,
       "slug": "milwaukee-mile-race-2",
       "localeKey": "milwaukee-mile-race-2",
       "longitude": 0,
@@ -224,7 +242,7 @@
         "race": "2026-09-06T18:30:00Z"
       },
       "tbc": false,
-      "round": 17,
+      "round": 18,
       "slug": "weathertech-raceway-laguna-seca",
       "localeKey": "weathertech-raceway-laguna-seca",
       "longitude": 0,
