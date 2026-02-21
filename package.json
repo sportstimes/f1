@@ -44,7 +44,7 @@
     "next-plausible": "^3.11.3",
     "next-seo": "^7.0.1",
     "nextjs": "0.0.3",
-    "postmark": "^4.0.5",
+    "postmark": "^4.0.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "terser-webpack-plugin": "^5.2.4",
