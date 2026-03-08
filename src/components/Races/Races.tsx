@@ -26,7 +26,8 @@ const RacesSkeleton = ({ races }: { races: [RaceModel] }) => {
 
 		if (item.sessions != null) {
 			const lastSessionKey = Object.keys(item.sessions)[Object.keys(item.sessions).length - 1];
-			isPast = dayjs(item.sessions[lastSessionKey]).add(2, "hours").isBefore(dayjs());
+			const sessionLength = config.sessionLengths[lastSessionKey] || 120;
+			isPast = dayjs(item.sessions[lastSessionKey]).add(sessionLength, "minutes").isBefore(dayjs());
 
 			if (!isPast && firstUpcomingIndex === -1 && !item.canceled && !item.tbc) {
 				firstUpcomingIndex = i;
@@ -126,8 +127,9 @@ const Races = ({ year, races }: Props) => {
 			let lastEventSessionKey = Object.keys(item.sessions)[
 				Object.keys(item.sessions).length - 1
 			];
-			
-			if (dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore(Date())) {
+
+			const sessionLength = config.sessionLengths[lastEventSessionKey] || 120;
+			if (dayjs(item.sessions[lastEventSessionKey]).add(sessionLength, "minutes").isBefore(Date())) {
 				racesOccured = racesOccured + 1;
 			}
 		}
@@ -186,11 +188,19 @@ const Races = ({ year, races }: Props) => {
 						}
 					}
 					
+					let featuredSessionKey: string;
+					if(hasMultipleFeaturedEvents){
+						featuredSessionKey = Object.keys(item.sessions)[Object.keys(item.sessions).length-1];
+					} else {
+						featuredSessionKey = config.featuredSessions[0];
+					}
+					const featuredSessionLength = config.sessionLengths[featuredSessionKey] || 120;
+
 					isNextRace = false;
-					
+
 					if (
 						item.sessions &&
-						sessionDate.isAfter(dayjs()) &&
+						sessionDate.add(featuredSessionLength, "minutes").isAfter(dayjs()) &&
 						!hasSetNextRace &&
 						!item.canceled &&
 						!item.tbc
@@ -198,10 +208,10 @@ const Races = ({ year, races }: Props) => {
 						isNextRace = true;
 						hasSetNextRace = true;
 					}
-					
+
 					const race: RaceRow = {
 						isNextRace: isNextRace,
-						hasOccured: sessionDate.isBefore(Date()),
+						hasOccured: sessionDate.add(featuredSessionLength, "minutes").isBefore(Date()),
 						shouldCollapsePastRaces: shouldCollapsePastRaces,
 						index,
 						item: item,
