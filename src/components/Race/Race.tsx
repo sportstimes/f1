@@ -70,9 +70,10 @@ const Race = ({
     Object.keys(item.sessions).length - 1
   ];
 
+  const lastSessionLength = config.sessionLengths[lastEventSessionKey] || 120;
   const race: RaceRow = {
     isNextRace: isNextRace,
-    hasOccured: dayjs(item.sessions[lastEventSessionKey]).isBefore(Date()),
+    hasOccured: dayjs(item.sessions[lastEventSessionKey]).add(lastSessionLength, 'minutes').isBefore(Date()),
     shouldCollapsePastRaces: shouldCollapsePastRaces,
     index,
     item: item,
@@ -187,8 +188,9 @@ const Race = ({
             ? t(`schedule.${sessionKey}`)
             : sessionKey.replace(/./, (x) => x.toUpperCase());
 
+        const sessionLength = config.sessionLengths[sessionKey] || 120;
         const hasOccured = dayjs(props.item.sessions[sessionKey])
-          .add(2, 'hours')
+          .add(sessionLength, 'minutes')
           .isBefore(Date());
 
         rows.push(
@@ -283,9 +285,10 @@ const Race = ({
         Object.keys(props.item.sessions).length - 1
       ];
 
+      const titleSessionLength = config.sessionLengths[lastEventSessionKey] || 120;
       if (
         !dayjs(props.item.sessions[lastEventSessionKey])
-          .add(2, 'hours')
+          .add(titleSessionLength, 'minutes')
           .isBefore(Date()) &&
         !props.item.canceled
       ) {
