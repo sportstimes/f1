@@ -188,19 +188,6 @@ const Races = ({ year, races }: Props) => {
 						}
 					}
 					
-					isNextRace = false;
-					
-					if (
-						item.sessions &&
-						sessionDate.isAfter(dayjs()) &&
-						!hasSetNextRace &&
-						!item.canceled &&
-						!item.tbc
-					) {
-						isNextRace = true;
-						hasSetNextRace = true;
-					}
-					
 					let featuredSessionKey: string;
 					if(hasMultipleFeaturedEvents){
 						featuredSessionKey = Object.keys(item.sessions)[Object.keys(item.sessions).length-1];
@@ -208,6 +195,19 @@ const Races = ({ year, races }: Props) => {
 						featuredSessionKey = config.featuredSessions[0];
 					}
 					const featuredSessionLength = config.sessionLengths[featuredSessionKey] || 120;
+
+					isNextRace = false;
+
+					if (
+						item.sessions &&
+						sessionDate.add(featuredSessionLength, "minutes").isAfter(dayjs()) &&
+						!hasSetNextRace &&
+						!item.canceled &&
+						!item.tbc
+					) {
+						isNextRace = true;
+						hasSetNextRace = true;
+					}
 
 					const race: RaceRow = {
 						isNextRace: isNextRace,
