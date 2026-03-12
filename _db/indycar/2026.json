@@ -3,10 +3,10 @@
     {
       "name": "Firestone Grand Prix of St. Petersburg",
       "sessions": {
-        "practice1": "2026-02-27T18:35:00Z",
-        "practice2": "2026-02-28T14:35:00Z",
+        "practice1": "2026-02-27T18:30:00Z",
+        "practice2": "2026-02-28T14:30:00Z",
         "qualifying": "2026-02-28T21:30:00Z",
-        "warmup": "2026-03-01T14:05:00Z",
+        "warmup": "2026-03-01T14:00:00Z",
         "race": "2026-03-01T17:00:00Z"
       },
       "tbc": false,
@@ -210,28 +210,28 @@
       "latitude": 0
     },
     {
-      "name": "Milwaukee Mile Race 1",
+      "name": "Snap-on Makers and Fixers 250",
       "sessions": {
         "qualifying": "2026-08-29T18:15:00Z",
         "race": "2026-08-29T18:30:00Z"
       },
       "tbc": false,
       "round": 16,
-      "slug": "milwaukee-mile-race-1",
-      "localeKey": "milwaukee-mile-race-1",
+      "slug": "snapon-makers-and-fixers-250",
+      "localeKey": "snapon-makers-and-fixers-250",
       "longitude": 0,
       "latitude": 0
     },
     {
-      "name": "Milwaukee Mile Race 2",
+      "name": "Snap-on Milwaukee Mile 250",
       "sessions": {
         "qualifying": "2026-08-30T15:15:00Z",
         "race": "2026-08-30T17:00:00Z"
       },
       "tbc": false,
       "round": 17,
-      "slug": "milwaukee-mile-race-2",
-      "localeKey": "milwaukee-mile-race-2",
+      "slug": "snapon-milwaukee-mile-250",
+      "localeKey": "snapon-milwaukee-mile-250",
       "longitude": 0,
       "latitude": 0
     },
