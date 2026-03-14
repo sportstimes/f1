@@ -56,6 +56,7 @@
       "round": 4,
       "slug": "bahrain-grand-prix",
       "localeKey": "bahrain-grand-prix",
+      "canceled": true,
       "sessions": {
         "fp1": "2026-04-10T11:30:00Z",
         "fp2": "2026-04-10T15:00:00Z",
@@ -72,6 +73,7 @@
       "round": 5,
       "slug": "saudi-arabia-grand-prix",
       "localeKey": "saudi-arabia-grand-prix",
+      "canceled": true,
       "sessions": {
         "fp1": "2026-04-17T13:30:00Z",
         "fp2": "2026-04-17T17:00:00Z",
