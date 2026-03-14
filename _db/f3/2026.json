@@ -23,6 +23,7 @@
       "round": 2,
       "slug": "bahrain",
       "localeKey": "bahrain",
+      "canceled": true,
       "sessions": {
         "practice": "2026-04-10T05:45:00Z",
         "qualifying": "2026-04-10T08:55:00Z",
