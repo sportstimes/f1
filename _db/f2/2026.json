@@ -23,6 +23,7 @@
       "round": 2,
       "slug": "bahrain",
       "localeKey": "bahrain",
+      "canceled": true,
       "sessions": {
         "practice": "2026-04-10T08:55:00Z",
         "qualifying": "2026-04-10T12:55:00Z",
@@ -38,6 +39,7 @@
       "round": 3,
       "slug": "saudi-arabia",
       "localeKey": "saudi-arabia",
+      "canceled": true,
       "sessions": {
         "practice": "2026-04-17T08:55:00Z",
         "qualifying": "2026-04-17T12:55:00Z",

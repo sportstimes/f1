@@ -23,6 +23,7 @@
       "round": 2,
       "slug": "jeddah",
       "localeKey": "jeddah",
+      "canceled": true,
       "sessions": {
         "fp1": "2026-04-16T22:00:00Z",
         "qualifying1": "2026-04-16T23:00:00Z",
