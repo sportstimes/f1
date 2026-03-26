@@ -16,27 +16,11 @@
       }
     },
     {
-      "name": "Jeddah",
-      "location": "Jeddah",
-      "latitude": 21.485811,
-      "longitude": 39.192505,
-      "round": 2,
-      "slug": "jeddah",
-      "localeKey": "jeddah",
-      "canceled": true,
-      "sessions": {
-        "fp1": "2026-04-16T22:00:00Z",
-        "qualifying1": "2026-04-16T23:00:00Z",
-        "race1": "2026-04-17T22:00:00Z",
-        "race2": "2026-04-18T22:00:00Z"
-      }
-    },
-    {
       "name": "Canadian",
       "location": "Montreal",
       "latitude": 45.5034,
       "longitude": -73.5267,
-      "round": 3,
+      "round": 2,
       "slug": "canadian",
       "localeKey": "canadian",
       "sessions": {
@@ -51,7 +35,7 @@
       "location": "Silverstone",
       "latitude": 52.0706,
       "longitude": -1.0174,
-      "round": 4,
+      "round": 3,
       "slug": "british",
       "localeKey": "british",
       "sessions": {
@@ -66,7 +50,7 @@
       "location": "Netherlands",
       "latitude": 0,
       "longitude": 0,
-      "round": 5,
+      "round": 4,
       "slug": "zandvoort",
       "localeKey": "zandvoort",
       "sessions": {
@@ -81,7 +65,7 @@
       "location": "Austin",
       "latitude": 30.1328,
       "longitude": -97.6411,
-      "round": 6,
+      "round": 5,
       "slug": "austin",
       "localeKey": "austin",
       "sessions": {
@@ -96,7 +80,7 @@
       "location": "Las Vegas",
       "latitude": 36.166747,
       "longitude": -115.148708,
-      "round": 7,
+      "round": 6,
       "slug": "las-vegas",
       "localeKey": "las-vegas",
       "sessions": {

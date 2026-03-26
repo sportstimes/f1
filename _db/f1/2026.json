@@ -35,8 +35,8 @@
     {
       "name": "Japanese",
       "location": "Suzuka",
-      "latitude": 35.3689,
-      "longitude": 138.9256,
+      "latitude": 34.8448408,
+      "longitude": 136.5334551,
       "round": 3,
       "slug": "japanese-grand-prix",
       "localeKey": "japanese-grand-prix",
@@ -49,45 +49,11 @@
       }
     },
     {
-      "name": "Bahrain",
-      "location": "Sakhir",
-      "latitude": 26.037,
-      "longitude": 50.5112,
-      "round": 4,
-      "slug": "bahrain-grand-prix",
-      "localeKey": "bahrain-grand-prix",
-      "canceled": true,
-      "sessions": {
-        "fp1": "2026-04-10T11:30:00Z",
-        "fp2": "2026-04-10T15:00:00Z",
-        "fp3": "2026-04-11T12:30:00Z",
-        "qualifying": "2026-04-11T16:00:00Z",
-        "gp": "2026-04-12T15:00:00Z"
-      }
-    },
-    {
-      "name": "Saudi Arabian",
-      "location": "Jeddah",
-      "latitude": 21.485811,
-      "longitude": 39.192505,
-      "round": 5,
-      "slug": "saudi-arabia-grand-prix",
-      "localeKey": "saudi-arabia-grand-prix",
-      "canceled": true,
-      "sessions": {
-        "fp1": "2026-04-17T13:30:00Z",
-        "fp2": "2026-04-17T17:00:00Z",
-        "fp3": "2026-04-18T13:30:00Z",
-        "qualifying": "2026-04-18T17:00:00Z",
-        "gp": "2026-04-19T17:00:00Z"
-      }
-    },
-    {
       "name": "Miami",
       "location": "Miami",
       "latitude": 25.957764,
       "longitude": -80.238835,
-      "round": 6,
+      "round": 4,
       "slug": "miami-grand-prix",
       "localeKey": "miami-grand-prix",
       "sessions": {
@@ -103,7 +69,7 @@
       "location": "Montreal",
       "latitude": 45.5034,
       "longitude": -73.5267,
-      "round": 7,
+      "round": 5,
       "slug": "canadian-grand-prix",
       "localeKey": "canadian-grand-prix",
       "sessions": {
@@ -119,7 +85,7 @@
       "location": "Monte Carlo",
       "latitude": 43.7338,
       "longitude": 7.4215,
-      "round": 8,
+      "round": 6,
       "slug": "monaco-grand-prix",
       "localeKey": "monaco-grand-prix",
       "sessions": {
@@ -135,7 +101,7 @@
       "location": "Barcelona",
       "latitude": 41.5638,
       "longitude": 2.2585,
-      "round": 9,
+      "round": 7,
       "slug": "barcelona-catalunya-grand-prix",
       "localeKey": "barcelona-catalunya-grand-prix",
       "sessions": {
@@ -151,7 +117,7 @@
       "location": "Spielberg",
       "latitude": 47.2225,
       "longitude": 14.7607,
-      "round": 10,
+      "round": 8,
       "slug": "austrian-grand-prix",
       "localeKey": "austrian-grand-prix",
       "sessions": {
@@ -167,7 +133,7 @@
       "location": "Silverstone",
       "latitude": 52.0706,
       "longitude": -1.0174,
-      "round": 11,
+      "round": 9,
       "slug": "british-grand-prix",
       "localeKey": "british-grand-prix",
       "sessions": {
@@ -183,7 +149,7 @@
       "location": "Spa-Francorchamps",
       "latitude": 50.444,
       "longitude": 5.9687,
-      "round": 12,
+      "round": 10,
       "slug": "belgian-grand-prix",
       "localeKey": "belgian-grand-prix",
       "sessions": {
@@ -199,7 +165,7 @@
       "location": "Budapest",
       "latitude": 47.583,
       "longitude": 19.2526,
-      "round": 13,
+      "round": 11,
       "slug": "hungarian-grand-prix",
       "localeKey": "hungarian-grand-prix",
       "sessions": {
@@ -215,7 +181,7 @@
       "location": "Zandvoort",
       "latitude": 52.388408,
       "longitude": 4.547122,
-      "round": 14,
+      "round": 12,
       "slug": "dutch-grand-prix",
       "localeKey": "dutch-grand-prix",
       "sessions": {
@@ -231,7 +197,7 @@
       "location": "Monza",
       "latitude": 45.6169,
       "longitude": 9.2825,
-      "round": 15,
+      "round": 13,
       "slug": "italian-grand-prix",
       "localeKey": "italian-grand-prix",
       "sessions": {
@@ -247,7 +213,7 @@
       "location": "Madrid",
       "latitude": 40.4168,
       "longitude": -3.7038,
-      "round": 16,
+      "round": 14,
       "slug": "spanish-grand-prix",
       "localeKey": "spanish-grand-prix",
       "sessions": {
@@ -263,7 +229,7 @@
       "location": "Baku",
       "latitude": 40.3699,
       "longitude": 49.8433,
-      "round": 17,
+      "round": 15,
       "slug": "azerbaijan-grand-prix",
       "localeKey": "azerbaijan-grand-prix",
       "sessions": {
@@ -279,7 +245,7 @@
       "location": "Singapore",
       "latitude": 1.2857,
       "longitude": 103.8575,
-      "round": 18,
+      "round": 16,
       "slug": "singapore-grand-prix",
       "localeKey": "singapore-grand-prix",
       "sessions": {
@@ -295,7 +261,7 @@
       "location": "Austin",
       "latitude": 30.1328,
       "longitude": -97.6411,
-      "round": 19,
+      "round": 17,
       "slug": "us-grand-prix",
       "localeKey": "us-grand-prix",
       "sessions": {
@@ -311,7 +277,7 @@
       "location": "Mexico City",
       "latitude": 19.4028,
       "longitude": -99.0986,
-      "round": 20,
+      "round": 18,
       "slug": "mexican-grand-prix",
       "localeKey": "mexico-grand-prix",
       "sessions": {
@@ -327,7 +293,7 @@
       "location": "Sao Paulo",
       "latitude": -23.7014,
       "longitude": -46.6969,
-      "round": 21,
+      "round": 19,
       "slug": "brazilian-grand-prix",
       "localeKey": "brazilian-grand-prix",
       "sessions": {
@@ -343,7 +309,7 @@
       "location": "Las Vegas",
       "latitude": 36.166747,
       "longitude": -115.148708,
-      "round": 22,
+      "round": 20,
       "slug": "las-vegas-grand-prix",
       "localeKey": "las-vegas-grand-prix",
       "sessions": {
@@ -359,7 +325,7 @@
       "location": "Doha",
       "latitude": 25.490292,
       "longitude": 51.45303,
-      "round": 23,
+      "round": 21,
       "slug": "qatar-grand-prix",
       "localeKey": "qatar-grand-prix",
       "sessions": {
@@ -375,7 +341,7 @@
       "location": "Yas Marina",
       "latitude": 24.4821,
       "longitude": 54.3482,
-      "round": 24,
+      "round": 22,
       "slug": "abu-dhabi-grand-prix",
       "localeKey": "abu-dhabi-grand-prix",
       "sessions": {
