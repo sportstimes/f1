@@ -93,10 +93,11 @@ const OptionsBar: FunctionComponent = () => {
 	
 	timezoneNames
 		.reduce((memo, tz) => {
+			const now = dayjs().tz(tz);
 			memo.push({
 				name: tz,
-				offset: allTimezones[tz].utcOffset,
-				offsetString: allTimezones[tz].utcOffsetStr
+				offset: now.utcOffset(),
+				offsetString: now.format('Z')
 			});
 
 			return memo;
@@ -109,7 +110,7 @@ const OptionsBar: FunctionComponent = () => {
 			if(displayName == "Europe/Kiev"){
 				displayName = "Europe/Kyiv";
 			}
-			
+
 			timezoneItems.push(
 				<option value={tz.name} key={tz.name}>
 					(GMT{tz.offsetString}) {displayName}
