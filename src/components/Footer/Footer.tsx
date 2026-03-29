@@ -184,9 +184,9 @@ const Footer = () => {
             </p>
 
             <p className="text-base text-gray-400 text-xsm px-2 md:px-0">
-              <Link href={`years`}>Years</Link>
+              <Link href={`/years`}>Years</Link>
               {' • '}
-              <Link href={`timezones`}>Timezones</Link>
+              <Link href={`/timezones`}>Timezones</Link>
 
               {config.trmnlPlugin && (
                 <>
