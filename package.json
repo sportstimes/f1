@@ -41,7 +41,7 @@
     "localforage": "^1.10.0",
     "next": "^16.0.7",
     "next-intl": "^4.5.8",
-    "next-plausible": "^3.11.3",
+    "next-plausible": "^4.0.0",
     "next-seo": "^7.0.1",
     "nextjs": "0.0.3",
     "postmark": "^4.0.5",
@@ -57,14 +57,13 @@
     "@tailwindcss/typography": "^0.5.0",
     "@types/react": "^19.0.1",
     "autoprefixer": "^10.4.15",
-    "eslint": "^9.17.0",
+    "eslint": "^10.2.0",
     "eslint-config-next": "^16.0.7",
     "eslint-config-prettier": "^10.0.1",
-    "next-translate-plugin": "^2.6.1",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
     "tailwindcss": "^4.0.0",
-    "typescript": "^5.0.4",
+    "typescript": "^6.0.2",
     "webpack": "^5.90.3"
   }
 }

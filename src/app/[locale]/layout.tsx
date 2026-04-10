@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import './globals.css';
 import { Metadata } from 'next';
-import PlausibleProvider from 'next-plausible';
+import PlausibleWrapper from 'components/PlausibleWrapper/PlausibleWrapper';
 import Script from 'next/script';
 import { UserContextProvider } from 'components/UserContext';
 import { League_Spartan } from 'next/font/google';
@@ -154,11 +154,12 @@ export default async function RootLayout({ children, params }) {
   const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR || '2026';
   const siteKey = process.env.NEXT_PUBLIC_SITE_KEY;
 
+  const config = require(`../../../_db/${siteKey}/config.json`);
   const siteName = t(`${siteKey}.title`);
   const siteDescription = t(`${siteKey}.seo.description`, { year: currentYear });
 
   return (
-    <PlausibleProvider>
+    <PlausibleWrapper>
       <UserContextProvider>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <html lang={locale} className={leagueSpartan.className}>
@@ -168,9 +169,6 @@ export default async function RootLayout({ children, params }) {
                 currentYear={currentYear}
                 siteName={siteName}
                 siteDescription={siteDescription}
-              />
-              <PlausibleProvider
-                domain={process.env.NEXT_PUBLIC_PLAUSIBLE_KEY}
               />
               <script
                 strategy="lazyOnload"
@@ -208,6 +206,6 @@ export default async function RootLayout({ children, params }) {
           </html>
         </NextIntlClientProvider>
       </UserContextProvider>
-    </PlausibleProvider>
+    </PlausibleWrapper>
   );
 }

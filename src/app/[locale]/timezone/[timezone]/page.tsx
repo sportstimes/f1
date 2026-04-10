@@ -109,6 +109,7 @@ export default async function Timezone({ children, params }) {
 
   return (
     <Layout showCTABar={true} year={currentYear} timezone={tz}>
+      <h3 className="text-xl mb-4">{displayTimezone}</h3>
       {data.races && (
         <Races year={currentYear} races={data.races} timezone={tz} />
       )}

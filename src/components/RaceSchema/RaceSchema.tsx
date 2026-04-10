@@ -36,7 +36,6 @@ export default function RaceSchema({race}: Props) {
 		let eventDescription = `${name} - ${t(key)}`;
 					
 		rows.push({
-			"@context": "http://schema.org/",
 			"@type": "Event",
 			"name": eventName,
 			"description": eventDescription,
@@ -55,11 +54,16 @@ export default function RaceSchema({race}: Props) {
 		});
 	});
 
+	const schema = {
+		"@context": "http://schema.org/",
+		"@graph": rows
+	};
+
 	return (
 		<>
 		  <script
 			type="application/ld+json"
-			dangerouslySetInnerHTML={{ __html: JSON.stringify(rows) }}
+			dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
 		  />
 		</>
 	);
