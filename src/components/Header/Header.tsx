@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../Logo/Logo";
-import {useTranslations} from 'next-intl';
-// import i18nConfig from "../../i18n.js";
+import {useTranslations, useLocale} from 'next-intl';
 import Link from "next/link";
 import usePlausible from "next-plausible";
 import Image from 'next/image';
@@ -10,6 +9,8 @@ import SupportButton from "../SupportButton/SupportButton";
 
 const Header = ({ year, showCTABar }) => {
 	const t = useTranslations('All');
+	const locale = useLocale();
+	const localePath = locale === 'en' ? '' : `/${locale}`;
 	const title = t(`${process.env.NEXT_PUBLIC_SITE_KEY}.title`);
 	const subtitle = t(`${process.env.NEXT_PUBLIC_SITE_KEY}.subtitle`);
 
@@ -25,13 +26,13 @@ const Header = ({ year, showCTABar }) => {
 
 				<div className="flex md:justify-between">
 					<div className="flex flex-col md:flex-row justify-center items-center md:justify-between w-full md:w-auto py-4 md:py-0 md:mb-4">
-						<Link href="/" className="" style={{width: "60px"}} title={title}>
+						<Link href={`${localePath}/`} className="" style={{width: "60px"}} title={title}>
 							<Logo style={{width: "60px"}}  />
 						</Link>
 
 						<div className="text-center md:text-left uppercase mt-4 md:mt-0 md:ml-4">
 							<h1 className="mb-1 text-lg tracking-wider">
-								<Link href="/" title={title} className="text-white hover:text-white font-bold text-xl"
+								<Link href={`${localePath}/`} title={title} className="text-white hover:text-white font-bold text-xl"
 									>
 									{title}&nbsp;
 									{year && (
@@ -40,7 +41,7 @@ const Header = ({ year, showCTABar }) => {
 								</Link>
 							</h1>
 							<h2 className="text-sm font-normal tracking-wider">
-								<Link href="/" title={title} className="text-light-green hover:text-light-green">
+								<Link href={`${localePath}/`} title={title} className="text-light-green hover:text-light-green">
 									{subtitle}
 								</Link>
 							</h2>
