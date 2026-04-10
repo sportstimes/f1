@@ -9,7 +9,7 @@ import NotificationIcon from '../Icons/NotificationIcon';
 import CoffeeIcon from '../Icons/CoffeeIcon';
 import MenuIcon from '../Icons/MenuIcon';
 import CloseIcon from '../Icons/CloseIcon';
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 import SiteSelector from '../SiteSelector/SiteSelector';
 import YearSelector from '../YearSelector/YearSelector';
@@ -23,7 +23,6 @@ export const MobileMenuButton = () => {
   const [isHydrated, setIsHydrated] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const t = useTranslations('All');
-  const locale = useLocale();
 
   useEffect(() => {
     let installed = false;
@@ -66,7 +65,6 @@ export const MobileMenuButton = () => {
       {!isInstalled && (
         <Link
           href="/generate"
-          locale={locale as any}
           className="hover:bg-light-green hover:text-white flex items-center h-14 py-3 pl-14 relative border-b border-white/10"
           onClick={() => setMenuOpen(false)}
         >
@@ -77,7 +75,6 @@ export const MobileMenuButton = () => {
       {!isInstalled && config.supportsEmailReminders > 0 && (
         <Link
           href="/subscribe"
-          locale={locale as any}
           className="hover:bg-light-green hover:text-white flex items-center h-14 py-3 pl-14 relative border-b border-white/10"
           onClick={() => setMenuOpen(false)}
         >
@@ -88,7 +85,6 @@ export const MobileMenuButton = () => {
       {config.supportsWebPush > 0 && supportsWebPush && (
         <Link
           href="/notifications"
-          locale={locale as any}
           className="hover:bg-light-green hover:text-white flex items-center h-14 py-3 pl-14 relative border-b border-white/10"
           onClick={() => setMenuOpen(false)}
         >
@@ -166,7 +162,6 @@ const CTABar = () => {
   const [isInstalled, setIsInstalled] = useState(false);
   const [isHydrated, setIsHydrated] = useState(false);
   const t = useTranslations('All');
-  const locale = useLocale();
 
   useEffect(() => {
     let installed = false;
@@ -212,8 +207,7 @@ const CTABar = () => {
         <div className="h-12 grow">
           <Link
             href="/generate"
-            locale={locale as any}
-            className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative"
+              className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative"
           >
             {t('options.calendar')}
             <CalendarIcon className="absolute left-3 self-center" />
@@ -225,8 +219,7 @@ const CTABar = () => {
         <div className="h-12 grow">
           <Link
             href="/subscribe"
-            locale={locale as any}
-            className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative"
+              className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative"
           >
             {t('options.email')}
             <EmailIcon className="absolute left-3 self-center" />
@@ -238,8 +231,7 @@ const CTABar = () => {
         <div className="h-12">
           <Link
             href="/notifications"
-            locale={locale as any}
-            className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative"
+              className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative"
             title={t('options.notifications')}
           >
             <NotificationIcon className="absolute left-3.5 self-center" />
@@ -251,8 +243,7 @@ const CTABar = () => {
         <div className="h-12 grow">
           <Link
             href="/notifications"
-            locale={locale as any}
-            className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative"
+              className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative"
           >
             <NotificationIcon className="absolute left-3.5 self-center" />
             {t('options.notifications')}

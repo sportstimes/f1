@@ -12,7 +12,7 @@ export default async function Unsubscribe({ params }: Props) {
   setRequestLocale(locale);
 
   const { headers } = await import('next/headers');
-  const headersList = headers();
+  const headersList = await headers();
   const host = headersList.get('host');
   const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http';
   const baseUrl = `${protocol}://${host}`;

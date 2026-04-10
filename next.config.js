@@ -5,6 +5,7 @@ const withPWA = require('@ducanh2912/next-pwa').default({
   importScripts: ['firebase-messaging-sw.js'],
 });
 const withNextIntl = require('next-intl/plugin')('./src/i18n.ts');
+const { withPlausibleProxy } = require('next-plausible');
 
 const {
   PHASE_DEVELOPMENT_SERVER,
@@ -21,7 +22,9 @@ module.exports = (phase) => {
   // Move _public/:site_key to public
   require('./build/public-assets');
 
-  return withNextIntl(
+  return withPlausibleProxy({
+    src: `https://plausible.io/js/${process.env.NEXT_PUBLIC_PLAUSIBLE_KEY}.js`,
+  })(withNextIntl(
     withPWA({
       typescript: {
         ignoreBuildErrors: true,
@@ -71,5 +74,5 @@ module.exports = (phase) => {
         return rules;
       },
     }),
-  );
+  ));
 };
