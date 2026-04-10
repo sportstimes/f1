@@ -51,12 +51,12 @@
         "fp2": "2026-03-28T15:10:00Z",
         "qualifying1": "2026-03-28T15:50:00Z",
         "qualifying2": "2026-03-28T16:15:00Z",
-        "sprint": "2026-03-28T20:00:00Z",
+        "sprint": "2026-03-28T20:10:00Z",
         "warmup": "2026-03-29T15:40:00Z",
         "race": "2026-03-29T20:00:00Z"
       },
-      "latitude": "30.1327176",
-      "longitude": "-97.6404876",
+      "latitude": "30.1327391",
+      "longitude": "-97.6404102",
       "slug": "United States",
       "localeKey": "United States"
     },
