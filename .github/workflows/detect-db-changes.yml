@@ -1,84 +1,91 @@
 name: Detect DB Changes
+
 on:
   push:
     branches: [main]
     paths:
-      - '_db/**/2025.json'
+      - '_db/**/2026.json'
+
 jobs:
   detect-changes:
     runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.determine-sites.outputs.sites }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # This fetches the complete history
+          fetch-depth: 0
 
-      - name: Determine changed site
-        id: determine-site
+      - name: Determine changed sites
+        id: determine-sites
         run: |
-          # Get the list of changed files in this push
-          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep '_db/.*2025.json' || echo "")
+          # Try event before/after first, fall back to HEAD~1 (handles first push, force-push, etc.)
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} 2>/dev/null \
+            | grep '_db/.*2025\.json' || true)
 
-          # If the above doesn't work (common for first runs), try a different approach
           if [ -z "$CHANGED_FILES" ]; then
-            echo "Using alternative method to find changed files"
-            CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '_db/.*2025.json' || echo "")
+            echo "Falling back to HEAD~1..HEAD diff"
+            CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD \
+              | grep '_db/.*2026\.json' || true)
           fi
 
-          echo "Changed files: $CHANGED_FILES"
+          echo "Changed files:"
+          echo "$CHANGED_FILES"
 
-          # Extract site name from path patterns
-          if echo "$CHANGED_FILES" | grep -q '_db/f1/'; then
-            echo "site=f1" >> $GITHUB_OUTPUT
-          elif echo "$CHANGED_FILES" | grep -q '_db/f2/'; then
-            echo "site=f2" >> $GITHUB_OUTPUT
-          elif echo "$CHANGED_FILES" | grep -q '_db/f3/'; then
-            echo "site=f3" >> $GITHUB_OUTPUT
-          elif echo "$CHANGED_FILES" | grep -q '_db/fe/'; then
-            echo "site=fe" >> $GITHUB_OUTPUT
-          elif echo "$CHANGED_FILES" | grep -q '_db/indycar/'; then
-            echo "site=indycar" >> $GITHUB_OUTPUT
-          elif echo "$CHANGED_FILES" | grep -q '_db/motogp/'; then
-            echo "site=motogp" >> $GITHUB_OUTPUT
-          elif echo "$CHANGED_FILES" | grep -q '_db/f1-academy/'; then
-            echo "site=f1-academy" >> $GITHUB_OUTPUT
+          # Collect every matching site (not just the first)
+          SITES=()
+          for pattern in f1 f2 f3 fe indycar motogp f1-academy; do
+            if echo "$CHANGED_FILES" | grep -q "_db/${pattern}/"; then
+              SITES+=("$pattern")
+            fi
+          done
+
+          if [ ${#SITES[@]} -eq 0 ]; then
+            echo "No matching sites found in changed files"
+            echo "sites=[]" >> $GITHUB_OUTPUT
           else
-            echo "No matching site found in changed files"
-            exit 1
+            # Emit a JSON array so the matrix job can consume it
+            JSON=$(printf '%s\n' "${SITES[@]}" | jq -R . | jq -sc .)
+            echo "sites=$JSON" >> $GITHUB_OUTPUT
+            echo "Detected sites: $JSON"
           fi
 
-      - name: Trigger ICS Deployment Workflow
+  trigger-workflows:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.sites != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        site: ${{ fromJson(needs.detect-changes.outputs.sites) }}
+      fail-fast: false   # one site failing won't block the others
+    steps:
+      - name: Trigger ICS deployment for ${{ matrix.site }}
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.PAT_TOKEN }}
           script: |
-            console.log("Triggering ICS deployment workflow for site: ${{ steps.determine-site.outputs.site }}");
+            console.log("Triggering ics.yml for site: ${{ matrix.site }}");
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'ics.yml',
               ref: 'main',
-              inputs: {
-                site: '${{ steps.determine-site.outputs.site }}'
-              }
-            })
+              inputs: { site: '${{ matrix.site }}' }
+            });
 
-      - name: Wait for Queue Generation to Complete
-        run: |
-          # Wait a few seconds to ensure the first workflow has time to start
-          sleep 15
+      - name: Brief pause before queue workflow
+        run: sleep 15
 
-      - name: Trigger Queue Generation Workflow
+      - name: Trigger queue generation for ${{ matrix.site }}
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.PAT_TOKEN }}
           script: |
-            console.log("Triggering workflow for site: ${{ steps.determine-site.outputs.site }}");
+            console.log("Triggering queues.yml for site: ${{ matrix.site }}");
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'queues.yml',
               ref: 'main',
-              inputs: {
-                site: '${{ steps.determine-site.outputs.site }}'
-              }
-            })
+              inputs: { site: '${{ matrix.site }}' }
+            });
