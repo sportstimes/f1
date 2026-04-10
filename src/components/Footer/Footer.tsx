@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import LanguageSelector from '../../components/LanguageSelector/LanguageSelector';
 import SiteSelector from '../../components/SiteSelector/SiteSelector';
 import YearSelector from '../../components/YearSelector/YearSelector';
@@ -13,6 +13,8 @@ const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.
 
 const Footer = () => {
   const t = useTranslations('All');
+  const locale = useLocale();
+  const localePath = locale === 'en' ? '' : `/${locale}`;
 
   const [showHomeScreenPrompt, setShowHomeScreenPrompt] = useState(false);
 
@@ -184,9 +186,9 @@ const Footer = () => {
             </p>
 
             <p className="text-base text-gray-400 text-xsm px-2 md:px-0">
-              <Link href={`/years`}>Years</Link>
+              <Link href={`${localePath}/years`}>Years</Link>
               {' • '}
-              <Link href={`/timezones`}>Timezones</Link>
+              <Link href={`${localePath}/timezones`}>Timezones</Link>
 
               {config.trmnlPlugin && (
                 <>
