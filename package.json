@@ -60,7 +60,7 @@
     "eslint": "^10.2.0",
     "eslint-config-next": "^16.0.7",
     "eslint-config-prettier": "^10.0.1",
-    "postcss": "^8.4.28",
+    "postcss": "^8.5.10",
     "prettier": "^3.0.2",
     "tailwindcss": "^4.0.0",
     "typescript": "^6.0.2",
