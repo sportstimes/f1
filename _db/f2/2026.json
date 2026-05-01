@@ -16,11 +16,41 @@
       }
     },
     {
+      "name": "USA",
+      "location": "Miami",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 2,
+      "slug": "miami",
+      "localeKey": "miami",
+      "sessions": {
+        "practice": "2026-05-01T13:30:00Z",
+        "qualifying": "2026-05-01T18:30:00Z",
+        "sprint": "2026-05-02T14:00:00Z",
+        "feature": "2026-05-03T16:30:00Z"
+      }
+    },
+    {
+      "name": "Canada",
+      "location": "Montréal",
+      "latitude": 0,
+      "longitude": 0,
+      "round": 3,
+      "slug": "montreal",
+      "localeKey": "montreal",
+      "sessions": {
+        "practice": "2026-05-22T13:05:00Z",
+        "qualifying": "2026-05-22T17:00:00Z",
+        "sprint": "2026-05-23T17:10:00Z",
+        "feature": "2026-05-24T15:05:00Z"
+      }
+    },
+    {
       "name": "Monaco",
       "location": "Monte Carlo",
       "latitude": 43.7338,
       "longitude": 7.4215,
-      "round": 2,
+      "round": 4,
       "slug": "monaco",
       "localeKey": "monaco",
       "sessions": {
@@ -35,7 +65,7 @@
       "location": "Barcelona",
       "latitude": 41.5638,
       "longitude": 2.2585,
-      "round": 3,
+      "round": 5,
       "slug": "spanish",
       "localeKey": "spanish",
       "sessions": {
@@ -50,7 +80,7 @@
       "location": "Spielberg",
       "latitude": 47.2225,
       "longitude": 14.7607,
-      "round": 4,
+      "round": 6,
       "slug": "austrian",
       "localeKey": "austrian",
       "sessions": {
@@ -65,7 +95,7 @@
       "location": "Silverstone",
       "latitude": 52.0706,
       "longitude": -1.0174,
-      "round": 5,
+      "round": 7,
       "slug": "british",
       "localeKey": "british",
       "sessions": {
@@ -80,7 +110,7 @@
       "location": "Spa-Francorchamps",
       "latitude": 50.444,
       "longitude": 5.9687,
-      "round": 6,
+      "round": 8,
       "slug": "belgian",
       "localeKey": "belgian",
       "sessions": {
@@ -95,7 +125,7 @@
       "location": "Budapest",
       "latitude": 47.583,
       "longitude": 19.2526,
-      "round": 7,
+      "round": 9,
       "slug": "hungarian",
       "localeKey": "hungarian",
       "sessions": {
@@ -110,7 +140,7 @@
       "location": "Monza",
       "latitude": 45.6169,
       "longitude": 9.2825,
-      "round": 8,
+      "round": 10,
       "slug": "italian",
       "localeKey": "italian",
       "sessions": {
@@ -125,7 +155,7 @@
       "location": "Madrid",
       "latitude": 40.4168,
       "longitude": -3.7038,
-      "round": 9,
+      "round": 11,
       "slug": "spanish-grand-prix",
       "localeKey": "spanish-grand-prix",
       "sessions": {
@@ -140,7 +170,7 @@
       "location": "Baku",
       "latitude": 40.3699,
       "longitude": 49.8433,
-      "round": 10,
+      "round": 12,
       "slug": "azerbaijan",
       "localeKey": "azerbaijan",
       "sessions": {
@@ -155,7 +185,7 @@
       "location": "Doha",
       "latitude": 25.490292,
       "longitude": 51.45303,
-      "round": 11,
+      "round": 13,
       "slug": "qatar",
       "localeKey": "qatar",
       "sessions": {
@@ -170,7 +200,7 @@
       "location": "Yas Marina",
       "latitude": 24.4821,
       "longitude": 54.3482,
-      "round": 12,
+      "round": 14,
       "slug": "abu-dhabi",
       "localeKey": "abu-dhabi",
       "sessions": {
