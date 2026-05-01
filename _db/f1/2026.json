@@ -57,7 +57,7 @@
       "slug": "miami-grand-prix",
       "localeKey": "miami-grand-prix",
       "sessions": {
-        "fp1": "2026-05-01T16:30:00Z",
+        "fp1": "2026-05-01T16:00:00Z",
         "sprintQualifying": "2026-05-01T20:30:00Z",
         "sprint": "2026-05-02T16:00:00Z",
         "qualifying": "2026-05-02T20:00:00Z",
