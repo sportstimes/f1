@@ -3,7 +3,7 @@
 import dayjs from 'dayjs';
 import dayjstimezone from 'dayjs/plugin/timezone';
 import dayjsutc from 'dayjs/plugin/utc';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useMessages } from 'next-intl';
 import { usePlausible } from 'next-plausible';
 import React, { useEffect, useState } from 'react';
 import { useUserContext } from '../../components/UserContext';
@@ -33,6 +33,9 @@ const Race = ({
   isNextRace,
 }: RaceRow) => {
   const t = useTranslations('All');
+  const messages = useMessages() as any;
+  const raceMessages = messages?.All?.races;
+  const scheduleMessages = messages?.All?.schedule;
   const plausible = usePlausible();
 
   let { timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces } =
@@ -58,8 +61,7 @@ const Race = ({
 
   // Translate race title or fall back to name
   const raceTitle =
-    item.localeKey &&
-    t(`races.${item.localeKey}`) != `All.races.${item.localeKey}`
+    item.localeKey && raceMessages?.[item.localeKey]
       ? t(`races.${item.localeKey}`)
       : item.name;
 
@@ -183,10 +185,9 @@ const Race = ({
       keys.forEach(function (sessionKey, index) {
         // Translate session title or fallback to session key
 
-        const sessionTitle =
-          t(`schedule.${sessionKey}`) != `All.schedule.${sessionKey}`
-            ? t(`schedule.${sessionKey}`)
-            : sessionKey.replace(/./, (x) => x.toUpperCase());
+        const sessionTitle = scheduleMessages?.[sessionKey]
+          ? t(`schedule.${sessionKey}`)
+          : sessionKey.replace(/./, (x) => x.toUpperCase());
 
         const sessionLength = config.sessionLengths[sessionKey] || 120;
         const hasOccured = dayjs(props.item.sessions[sessionKey])

@@ -20,7 +20,6 @@ const config = require(`../../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.
 export const MobileMenuButton = () => {
   const [supportsWebPush, setSupportsWebPush] = useState(false);
   const [isInstalled, setIsInstalled] = useState(false);
-  const [isHydrated, setIsHydrated] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const t = useTranslations('All');
   const locale = useLocale();
@@ -39,8 +38,6 @@ export const MobileMenuButton = () => {
       setSupportsWebPush(true);
       setIsInstalled(installed);
     }
-
-    setIsHydrated(true);
   }, []);
 
   // Prevent body scroll when menu is open
@@ -54,13 +51,6 @@ export const MobileMenuButton = () => {
       document.body.style.overflow = '';
     };
   }, [menuOpen]);
-
-  // Show skeleton while hydrating
-  if (!isHydrated) {
-    return (
-      <div className="bg-mid-green rounded-md shadow h-12 w-12 animate-pulse"></div>
-    );
-  }
 
   const menuItems = (
     <>
@@ -162,7 +152,6 @@ export const MobileMenuButton = () => {
 const CTABar = () => {
   const [supportsWebPush, setSupportsWebPush] = useState(false);
   const [isInstalled, setIsInstalled] = useState(false);
-  const [isHydrated, setIsHydrated] = useState(false);
   const t = useTranslations('All');
   const locale = useLocale();
   const localePath = locale === 'en' ? '' : `/${locale}`;
@@ -180,30 +169,7 @@ const CTABar = () => {
       setSupportsWebPush(true);
       setIsInstalled(installed);
     }
-
-    setIsHydrated(true);
   }, []);
-
-  // Show skeleton while hydrating to prevent CLS
-  if (!isHydrated) {
-    return (
-      <div className="hidden md:flex pt-4 gap-3 gap-y-2">
-        <div className="h-12 grow">
-          <div className="bg-mid-green rounded-md shadow h-12 animate-pulse"></div>
-        </div>
-        {config.supportsEmailReminders > 0 && (
-          <div className="h-12 grow">
-            <div className="bg-mid-green rounded-md shadow h-12 animate-pulse"></div>
-          </div>
-        )}
-        {config.supportsWebPush > 0 && (
-          <div className="h-12">
-            <div className="bg-mid-green rounded-md shadow h-12 w-12 animate-pulse"></div>
-          </div>
-        )}
-      </div>
-    );
-  }
 
   return (
     <div className="hidden md:flex pt-4 gap-3 gap-y-2">
