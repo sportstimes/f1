@@ -6,17 +6,7 @@ import i18nConfig from '../../i18n.js';
 import Router from 'next/router';
 import Link from 'next/link';
 import SiteSelector from '../../components/SiteSelector/SiteSelector';
-import dynamic from 'next/dynamic';
-
-// Placeholder with fixed dimensions to prevent CLS
-const LanguageSelectorSkeleton = () => (
-  <div className="w-[120px] h-[30px] bg-gray-200 rounded-md animate-pulse"></div>
-);
-
-const LanguageSelector = dynamic(
-  () => import('../../components/LanguageSelector/LanguageSelector'),
-  { ssr: false, loading: () => <LanguageSelectorSkeleton /> },
-);
+import LanguageSelector from '../../components/LanguageSelector/LanguageSelector';
 
 function TopBar() {
   return (

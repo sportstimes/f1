@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale, useMessages, useTranslations } from 'next-intl';
 import { FunctionComponent } from 'react';
 import { useUserContext } from '../../components/UserContext';
 
@@ -34,15 +34,16 @@ const RaceTR: FunctionComponent<RaceRowTR> = ({
 }: Props) => {
   const t = useTranslations('All');
   const locale = useLocale();
+  const messages = useMessages() as any;
 
   if (locale != 'en') {
     dayjs.locale(locale);
   }
 
-  var eventName = event;
-  if (t(eventLocaleKey)) {
-    eventName = t(eventLocaleKey);
-  }
+  // eventLocaleKey is `races.<slug>`; resolve via messages to avoid IntlError on missing keys
+  const [namespace, key] = eventLocaleKey.split('.');
+  const hasEventTranslation = messages?.All?.[namespace]?.[key] != null;
+  const eventName = hasEventTranslation ? t(eventLocaleKey) : event;
 
   let { timezone, timeFormat } = useUserContext();
 
