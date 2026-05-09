@@ -33,6 +33,19 @@ export function useUserContext() {
     return useContext(UserContext);
 }
 
+// Older browsers (e.g. Firefox 115 ESR) ship an ICU snapshot that doesn't know
+// IANA zones added in later tzdb releases — e.g. America/Coyhaique (2024).
+// Using one of those zones with Intl.DateTimeFormat throws RangeError and
+// crashes the React tree. Probe the zone here so we can fall back gracefully.
+function isTimezoneSupportedByBrowser(tz: string): boolean {
+    try {
+        new Intl.DateTimeFormat(undefined, { timeZone: tz });
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 type Props = {
     children: ReactNode;
 };
@@ -49,13 +62,25 @@ export function UserContextProvider({ children }: Props) {
         dayjs.extend(dayjstimezone);
 
         // Fetch the stored timezone, or guess it via dayjs and save it.
+        const fallbackTimezone = "Europe/London";
+        const normalize = (tz: string) => tz === "Europe/Kyiv" ? "Europe/Kiev" : tz;
+        const resolve = (tz: string) => {
+            const normalized = normalize(tz);
+            return isTimezoneSupportedByBrowser(normalized) ? normalized : fallbackTimezone;
+        };
+
         const storedTimezone = localStorage.getItem("timezone");
         if (storedTimezone) {
-            updateStateTimezone(storedTimezone === "Europe/Kyiv" ? "Europe/Kiev" : storedTimezone);
+            const resolved = resolve(storedTimezone);
+            updateStateTimezone(resolved);
+            if (resolved !== storedTimezone) {
+                localStorage.setItem("timezone", resolved);
+            }
         } else {
             const guessedTimezone = dayjs.tz.guess();
-            updateStateTimezone(guessedTimezone === "Europe/Kyiv" ? "Europe/Kiev" : guessedTimezone);
-            localStorage.setItem("timezone", guessedTimezone);
+            const resolved = resolve(guessedTimezone);
+            updateStateTimezone(resolved);
+            localStorage.setItem("timezone", resolved);
         }
 
         // Fetch the stored time format (12hr/24hr)
@@ -93,7 +118,11 @@ export function UserContextProvider({ children }: Props) {
         if(timezone == "Europe/Kyiv"){
             timezone = "Europe/Kiev";
         }
-        
+
+        if (!isTimezoneSupportedByBrowser(timezone)) {
+            timezone = "Europe/London";
+        }
+
         updateStateTimezone(timezone);
         localStorage.setItem("timezone", timezone);
     };
