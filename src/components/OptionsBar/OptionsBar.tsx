@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useContext, useEffect, FunctionComponent, useState } from "react";
-import { useUserContext } from "../../components/UserContext";
+import { useUserContext, isTimezoneSupportedByBrowser } from "../../components/UserContext";
 import Link from "next/link";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
@@ -89,7 +89,10 @@ const OptionsBar: FunctionComponent = () => {
 		.filter((name) => !scrubbedPrefixes.includes(name.split("/")[0]))
 		.filter(
 			(name) => !scrubbedSuffixes.includes(name.split("/").slice(-1)[0])
-		);
+		)
+		// Drop zones the browser's ICU doesn't recognize — calling dayjs.tz on
+		// them throws RangeError and crashes the picker render.
+		.filter((name) => isTimezoneSupportedByBrowser(name));
 	
 	timezoneNames
 		.reduce((memo, tz) => {
