@@ -37,7 +37,7 @@ export function useUserContext() {
 // IANA zones added in later tzdb releases — e.g. America/Coyhaique (2024).
 // Using one of those zones with Intl.DateTimeFormat throws RangeError and
 // crashes the React tree. Probe the zone here so we can fall back gracefully.
-function isTimezoneSupportedByBrowser(tz: string): boolean {
+export function isTimezoneSupportedByBrowser(tz: string): boolean {
     try {
         new Intl.DateTimeFormat(undefined, { timeZone: tz });
         return true;
