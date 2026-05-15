@@ -85,8 +85,7 @@
       "sessions": {
         "practice1": "2026-05-08T13:00:00Z",
         "practice2": "2026-05-08T17:00:00Z",
-        "qualifying": "2026-05-08T20:30:00Z",
-        "warmup": "2026-05-09T15:30:00Z",
+        "qualifying": "2026-05-09T14:30:00Z",
         "race": "2026-05-09T20:30:00Z"
       },
       "tbc": false,
@@ -100,8 +99,6 @@
       "name": "110th Running of the Indianapolis 500",
       "sessions": {
         "practice1": "2026-05-12T16:00:00Z",
-        "RookieOrientation": "2026-05-12T18:00:00Z",
-        "practice2": "2026-05-12T20:00:00Z",
         "practice3": "2026-05-13T16:00:00Z",
         "practice4": "2026-05-14T16:00:00Z",
         "practice5": "2026-05-15T16:00:00Z",
@@ -110,7 +107,7 @@
         "practice7": "2026-05-17T17:00:00Z",
         "practice8": "2026-05-18T17:00:00Z",
         "practice9": "2026-05-22T15:00:00Z",
-        "race": "2026-05-24T14:00:00Z"
+        "race": "2026-05-24T16:30:00Z"
       },
       "tbc": false,
       "round": 7,
@@ -124,7 +121,7 @@
       "sessions": {
         "practice1": "2026-05-29T19:00:00Z",
         "practice2": "2026-05-30T13:00:00Z",
-        "qualifying": "2026-05-30T16:00:00Z",
+        "qualifying": "2026-05-30T17:00:00Z",
         "warmup": "2026-05-31T13:30:00Z",
         "race": "2026-05-31T16:30:00Z"
       },
@@ -139,7 +136,7 @@
       "name": "Bommarito Automotive Group 500",
       "sessions": {
         "practice1": "2026-06-06T15:30:00Z",
-        "qualifying": "2026-06-06T23:00:00Z",
+        "qualifying": "2026-06-06T20:30:00Z",
         "practice2": "2026-06-07T00:00:00Z",
         "FinalPractice": "2026-06-07T01:00:00Z",
         "race": "2026-06-08T01:00:00Z"
@@ -156,7 +153,7 @@
       "sessions": {
         "practice1": "2026-06-19T20:00:00Z",
         "practice2": "2026-06-20T15:00:00Z",
-        "qualifying": "2026-06-20T18:30:00Z",
+        "qualifying": "2026-06-20T18:00:00Z",
         "warmup": "2026-06-21T15:00:00Z",
         "race": "2026-06-21T18:00:00Z"
       },
@@ -194,15 +191,15 @@
       "latitude": 0
     },
     {
-      "name": "BITNILE.com Grand Prix of Portland",
+      "name": "OnlyBulls Grand Prix of Portland",
       "sessions": {
         "qualifying": "2026-08-08T18:30:00Z",
         "race": "2026-08-09T20:00:00Z"
       },
       "tbc": false,
       "round": 13,
-      "slug": "bitnilecom-grand-prix-of-portland",
-      "localeKey": "bitnilecom-grand-prix-of-portland",
+      "slug": "onlybulls-grand-prix-of-portland",
+      "localeKey": "onlybulls-grand-prix-of-portland",
       "longitude": 0,
       "latitude": 0
     },
