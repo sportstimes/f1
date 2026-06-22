@@ -84,10 +84,10 @@
       "slug": "austrian",
       "localeKey": "austrian",
       "sessions": {
-        "practice": "2026-06-26T09:55:00Z",
+        "practice": "2026-06-26T09:05:00Z",
         "qualifying": "2026-06-26T13:55:00Z",
-        "sprint": "2026-06-27T08:35:00Z",
-        "feature": "2026-06-28T08:40:00Z"
+        "sprint": "2026-06-27T12:15:00Z",
+        "feature": "2026-06-28T08:10:00Z"
       }
     },
     {
@@ -99,10 +99,10 @@
       "slug": "british",
       "localeKey": "british",
       "sessions": {
-        "practice": "2026-07-03T10:55:00Z",
-        "qualifying": "2026-07-03T14:55:00Z",
-        "sprint": "2026-07-04T09:35:00Z",
-        "feature": "2026-07-05T09:40:00Z"
+        "practice": "2026-07-03T09:00:00Z",
+        "qualifying": "2026-07-03T13:55:00Z",
+        "sprint": "2026-07-04T12:45:00Z",
+        "feature": "2026-07-05T10:15:00Z"
       }
     },
     {
