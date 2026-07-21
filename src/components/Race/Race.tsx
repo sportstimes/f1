@@ -4,7 +4,6 @@ import dayjs from 'dayjs';
 import dayjstimezone from 'dayjs/plugin/timezone';
 import dayjsutc from 'dayjs/plugin/utc';
 import { useTranslations, useMessages } from 'next-intl';
-import { usePlausible } from 'next-plausible';
 import React, { useEffect, useState } from 'react';
 import { useUserContext } from '../../components/UserContext';
 import RaceModel from '../../models/RaceModel';
@@ -36,7 +35,6 @@ const Race = ({
   const messages = useMessages() as any;
   const raceMessages = messages?.All?.races;
   const scheduleMessages = messages?.All?.schedule;
-  const plausible = usePlausible();
 
   let { timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces } =
     useUserContext();
@@ -50,12 +48,6 @@ const Race = ({
   }, []);
 
   const handleRowClick = (event: React.MouseEvent<HTMLTableRowElement>) => {
-    plausible(!collapsed ? 'Closed Event' : 'Opened Event', {
-      props: {
-        event: item.slug,
-      },
-    });
-
     setCollapsed(!collapsed);
   };
 
