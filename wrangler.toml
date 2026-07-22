@@ -1,15 +1,15 @@
 name = "calendar-worker"
+main = "workers-site/index.js"
 workers_dev = true
-site = {bucket = "./static",entry-point = "workers-site"}
-compatibility_date = "2024-01-01"
+site = {bucket = "./static"}
+compatibility_date = "2026-07-01"
+
+[cache]
+enabled = true
 
 [env.production]
 name = "calendar-worker-production"
 route = "files.motorsportcalendars.com/*"
-
-[env.extremee]
-name = "files-extremee"
-route = "files-extremee.motorsportcalendars.com/*"
 
 [env.f1]
 name = "files-f1"
@@ -34,10 +34,6 @@ route = "files-indycar.motorsportcalendars.com/*"
 [env.motogp]
 name = "files-motogp"
 route = "files-motogp.motorsportcalendars.com/*"
-
-[env.wseries]
-name = "files-wseries"
-route = "files-wseries.motorsportcalendars.com/*"
 
 [env.f1-academy]
 name = "files-f1-academy"

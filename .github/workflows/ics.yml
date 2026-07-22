@@ -76,3 +76,12 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CLOUDFLARE_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+
+      - name: Purge Workers Cache
+        run: |
+          response=$(curl -s -X POST "https://files-${SITE}.motorsportcalendars.com/__purge" \
+            -H "Authorization: Bearer ${PURGE_TOKEN}")
+          echo "$response"
+          echo "$response" | jq -e '.success == true' > /dev/null
+        env:
+          PURGE_TOKEN: ${{ secrets.PURGE_TOKEN }}
