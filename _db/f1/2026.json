@@ -241,13 +241,13 @@
       }
     },
     {
-      "name": "Malaysian",
+      "name": "Bahrain Grand Prix (Malaysia)",
       "location": "Sepang",
       "latitude": 2.760278,
       "longitude": 101.738056,
       "round": 16,
-      "slug": "malaysian-grand-prix",
-      "localeKey": "malaysian-grand-prix",
+      "slug": "bahrain-malaysia-grand-prix",
+      "localeKey": "bahrain-malaysia-grand-prix",
       "tbc": true,
       "sessions": {
         "fp1": "2026-10-02T02:00:00Z",
