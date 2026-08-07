@@ -166,7 +166,10 @@
     {
       "name": "Honda Indy 200 at Mid-Ohio",
       "sessions": {
+        "practice1": "2026-07-03T19:00:00Z",
+        "practice2": "2026-07-04T14:00:00Z",
         "qualifying": "2026-07-04T18:30:00Z",
+        "warmup": "2026-07-05T13:00:00Z",
         "race": "2026-07-05T16:30:00Z"
       },
       "tbc": false,
@@ -179,8 +182,11 @@
     {
       "name": "Borchetta Bourbon Music City Grand Prix",
       "sessions": {
-        "qualifying": "2026-07-18T18:00:00Z",
-        "race": "2026-07-19T18:00:00Z"
+        "practice1": "2026-07-18T14:00:00Z",
+        "qualifying": "2026-07-18T19:00:00Z",
+        "practice2": "2026-07-18T22:00:00Z",
+        "FinalPractice": "2026-07-18T23:00:00Z",
+        "race": "2026-07-20T19:00:00Z"
       },
       "tbc": false,
       "round": 12,
@@ -192,7 +198,10 @@
     {
       "name": "OnlyBulls Grand Prix of Portland",
       "sessions": {
-        "qualifying": "2026-08-08T18:30:00Z",
+        "practice1": "2026-08-07T21:30:00Z",
+        "practice2": "2026-08-08T17:00:00Z",
+        "qualifying": "2026-08-08T23:00:00Z",
+        "warmup": "2026-08-09T17:00:00Z",
         "race": "2026-08-09T20:00:00Z"
       },
       "tbc": false,
@@ -205,7 +214,10 @@
     {
       "name": "Ontario Honda Dealers Indy at Markham",
       "sessions": {
-        "qualifying": "2026-08-15T16:00:00Z",
+        "practice1": "2026-08-14T19:00:00Z",
+        "practice2": "2026-08-15T14:00:00Z",
+        "qualifying": "2026-08-15T18:25:00Z",
+        "warmup": "2026-08-16T12:30:00Z",
         "race": "2026-08-16T16:00:00Z"
       },
       "tbc": false,
@@ -218,9 +230,13 @@
     {
       "name": "Freedom 250 Grand Prix of Washington, D.C.",
       "sessions": {
-        "race": "2026-08-23T18:00:00Z"
+        "practice1": "2026-08-22T13:00:00Z",
+        "practice2": "2026-08-22T17:00:00Z",
+        "qualifying": "2026-08-22T21:00:00Z",
+        "warmup": "2026-08-23T13:00:00Z",
+        "race": "2026-08-23T17:00:00Z"
       },
-      "tbc": true,
+      "tbc": false,
       "round": 15,
       "slug": "freedom-250-grand-prix-of-washington-dc",
       "localeKey": "freedom-250-grand-prix-of-washington-dc",
@@ -230,7 +246,8 @@
     {
       "name": "Snap-on Makers and Fixers 250",
       "sessions": {
-        "qualifying": "2026-08-29T18:15:00Z",
+        "practice1": "2026-08-28T22:00:00Z",
+        "qualifying": "2026-08-29T15:00:00Z",
         "race": "2026-08-29T18:30:00Z"
       },
       "tbc": false,
@@ -243,7 +260,7 @@
     {
       "name": "Snap-on Milwaukee Mile 250",
       "sessions": {
-        "qualifying": "2026-08-30T15:15:00Z",
+        "qualifying": "2026-08-29T15:00:00Z",
         "race": "2026-08-30T17:00:00Z"
       },
       "tbc": false,
@@ -254,15 +271,18 @@
       "latitude": 0
     },
     {
-      "name": "WeatherTech Raceway Laguna Seca",
+      "name": "INDYCAR Grand Prix of Monterey",
       "sessions": {
-        "qualifying": "2026-09-05T18:30:00Z",
+        "practice1": "2026-09-04T21:00:00Z",
+        "practice2": "2026-09-05T17:00:00Z",
+        "qualifying": "2026-09-05T20:30:00Z",
+        "practice3": "2026-09-06T00:00:00Z",
         "race": "2026-09-06T18:30:00Z"
       },
       "tbc": false,
       "round": 18,
-      "slug": "weathertech-raceway-laguna-seca",
-      "localeKey": "weathertech-raceway-laguna-seca",
+      "slug": "indycar-grand-prix-of-monterey",
+      "localeKey": "indycar-grand-prix-of-monterey",
       "longitude": 0,
       "latitude": 0
     }
