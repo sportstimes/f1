@@ -1,0 +1,274 @@
+{
+  "races": [
+    {
+      "name": "Sonoma Raceway",
+      "location": "United States of America",
+      "sessions": {
+        "race": "2023-03-30T12:00:00Z"
+      },
+      "series": "GT World Challenge America",
+      "dates": "2023-03-30/2023-04-02"
+    },
+    {
+      "name": "Mount Panorama, Bathurst",
+      "location": "Australia",
+      "sessions": {
+        "race": "2023-04-07T12:00:00Z"
+      },
+      "series": "GT World Challenge Australia",
+      "dates": "2023-04-07/2023-04-09"
+    },
+    {
+      "name": "Monza",
+      "location": "Italy",
+      "sessions": {
+        "race": "2023-04-20T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Endurance Cup",
+      "dates": "2023-04-20/2023-04-23"
+    },
+    {
+      "name": "NOLA Motorsports Park",
+      "location": "United States of America",
+      "sessions": {
+        "race": "2023-04-28T12:00:00Z"
+      },
+      "series": "GT World Challenge America",
+      "dates": "2023-04-28/2023-04-30"
+    },
+    {
+      "name": "Carco.com.au Raceway",
+      "location": "Australia",
+      "sessions": {
+        "race": "2023-04-28T12:00:00Z"
+      },
+      "series": "GT World Challenge Australia",
+      "dates": "2023-04-28/2023-04-30"
+    },
+    {
+      "name": "Chang International Circuit",
+      "location": "Thailand",
+      "sessions": {
+        "race": "2023-05-11T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Asia",
+      "dates": "2023-05-11/2023-05-14"
+    },
+    {
+      "name": "Phillip Island Grand Prix Circuit",
+      "location": "Australia",
+      "sessions": {
+        "race": "2023-05-12T12:00:00Z"
+      },
+      "series": "GT World Challenge Australia",
+      "dates": "2023-05-12/2023-05-14"
+    },
+    {
+      "name": "Brands Hatch",
+      "location": "Great Britain",
+      "sessions": {
+        "race": "2023-05-13T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Sprint Cup",
+      "dates": "2023-05-13/2023-05-14"
+    },
+    {
+      "name": "Circuit of the Americas",
+      "location": "United States of America",
+      "sessions": {
+        "race": "2023-05-19T12:00:00Z"
+      },
+      "series": "GT World Challenge America",
+      "dates": "2023-05-19/2023-05-21"
+    },
+    {
+      "name": "Circuit Paul Ricard",
+      "location": "France",
+      "sessions": {
+        "race": "2023-06-01T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Endurance Cup",
+      "dates": "2023-06-01/2023-06-04"
+    },
+    {
+      "name": "Fuji International Speedway",
+      "location": "Japan",
+      "sessions": {
+        "race": "2023-06-15T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Asia",
+      "dates": "2023-06-15/2023-06-18"
+    },
+    {
+      "name": "VIRginia International Raceway",
+      "location": "United States of America",
+      "sessions": {
+        "race": "2023-06-16T12:00:00Z"
+      },
+      "series": "GT World Challenge America",
+      "dates": "2023-06-16/2023-06-18"
+    },
+    {
+      "name": "CrowdStrike 24 Hours of Spa",
+      "location": "Belgium",
+      "sessions": {
+        "race": "2023-06-27T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Endurance Cup",
+      "dates": "2023-06-27/2023-07-02"
+    },
+    {
+      "name": "Misano",
+      "location": "Italy",
+      "sessions": {
+        "race": "2023-07-13T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Sprint Cup",
+      "dates": "2023-07-13/2023-07-16"
+    },
+    {
+      "name": "Suzuka International Circuit",
+      "location": "Japan",
+      "sessions": {
+        "race": "2023-07-14T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Asia",
+      "dates": "2023-07-14/2023-07-16"
+    },
+    {
+      "name": "Motegi",
+      "location": "Japan",
+      "sessions": {
+        "race": "2023-07-21T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Asia",
+      "dates": "2023-07-21/2023-07-23"
+    },
+    {
+      "name": "Sydney Motorsport Park",
+      "location": "Australia",
+      "sessions": {
+        "race": "2023-07-28T12:00:00Z"
+      },
+      "series": "GT World Challenge Australia",
+      "dates": "2023-07-28/2023-07-30"
+    },
+    {
+      "name": "Nürburgring",
+      "location": "Germany",
+      "sessions": {
+        "race": "2023-07-28T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Endurance Cup",
+      "dates": "2023-07-28/2023-07-30"
+    },
+    {
+      "name": "Queensland Raceway",
+      "location": "Australia",
+      "sessions": {
+        "race": "2023-08-11T12:00:00Z"
+      },
+      "series": "GT World Challenge Australia",
+      "dates": "2023-08-11/2023-08-13"
+    },
+    {
+      "name": "Okayama International Circuit",
+      "location": "Japan",
+      "sessions": {
+        "race": "2023-08-17T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Asia",
+      "dates": "2023-08-17/2023-08-20"
+    },
+    {
+      "name": "Road America",
+      "location": "United States of America",
+      "sessions": {
+        "race": "2023-08-18T12:00:00Z"
+      },
+      "series": "GT World Challenge America",
+      "dates": "2023-08-18/2023-08-20"
+    },
+    {
+      "name": "Hockenheim",
+      "location": "Germany",
+      "sessions": {
+        "race": "2023-08-31T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Sprint Cup",
+      "dates": "2023-08-31/2023-09-03"
+    },
+    {
+      "name": "Circuit Ricardo Tormo Valencia",
+      "location": "Spain",
+      "sessions": {
+        "race": "2023-09-14T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Sprint Cup",
+      "dates": "2023-09-14/2023-09-17"
+    },
+    {
+      "name": "Sepang International Circuit",
+      "location": "Malaysia",
+      "sessions": {
+        "race": "2023-09-21T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Asia",
+      "dates": "2023-09-21/2023-09-24"
+    },
+    {
+      "name": "Sebring International Raceway",
+      "location": "United States of America",
+      "sessions": {
+        "race": "2023-09-22T12:00:00Z"
+      },
+      "series": "GT World Challenge America",
+      "dates": "2023-09-22/2023-09-24"
+    },
+    {
+      "name": "Barcelona",
+      "location": "Spain",
+      "sessions": {
+        "race": "2023-09-29T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Endurance Cup",
+      "dates": "2023-09-29/2023-10-01"
+    },
+    {
+      "name": "Indianapolis Motor Speedway",
+      "location": "United States of America",
+      "sessions": {
+        "race": "2023-10-05T12:00:00Z"
+      },
+      "series": "GT World Challenge America",
+      "dates": "2023-10-05/2023-10-08"
+    },
+    {
+      "name": "AWARDS Banquet",
+      "location": "United States of America",
+      "sessions": {
+        "race": "2023-10-08T12:00:00Z"
+      },
+      "series": "GT World Challenge America",
+      "dates": "2023-10-08"
+    },
+    {
+      "name": "Zandvoort",
+      "location": "Netherlands",
+      "sessions": {
+        "race": "2023-10-12T12:00:00Z"
+      },
+      "series": "Fanatec GT World Challenge Powered by AWS Sprint Cup",
+      "dates": "2023-10-12/2023-10-15"
+    },
+    {
+      "name": "Adelaide Parklands Circuit",
+      "location": "Australia",
+      "sessions": {
+        "race": "2023-11-23T12:00:00Z"
+      },
+      "series": "GT World Challenge Australia",
+      "dates": "2023-11-23/2023-11-26"
+    }
+  ]
+}

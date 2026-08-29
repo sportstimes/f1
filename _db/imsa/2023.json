@@ -1,0 +1,136 @@
+{
+  "races": [
+    {
+      "name": "Roar Before the Rolex 24",
+      "location": "Daytona International Speedway",
+      "sessions": {
+        "race": "2023-01-20T12:00:00Z"
+      },
+      "duration": "N/A",
+      "length": "3.56 miles",
+      "corners": 12,
+      "dates": "2023-01-20/2023-01-22"
+    },
+    {
+      "name": "Rolex 24 At Daytona",
+      "location": "Daytona International Speedway",
+      "sessions": {
+        "race": "2023-01-26T14:00:00Z"
+      },
+      "duration": "24 Hours",
+      "length": "3.56 miles",
+      "corners": 12,
+      "dates": "2023-01-26/2023-01-29"
+    },
+    {
+      "name": "Mobil 1 Twelve Hours of Sebring",
+      "location": "Sebring International Raceway",
+      "sessions": {
+        "race": "2023-03-15T12:00:00Z"
+      },
+      "duration": "12 Hours",
+      "length": "3.74 miles",
+      "corners": 17,
+      "dates": "2023-03-15/2023-03-18"
+    },
+    {
+      "name": "Acura Grand Prix of Long Beach",
+      "location": "Long Beach Street Circuit",
+      "sessions": {
+        "race": "2023-04-14T12:00:00Z"
+      },
+      "duration": "100 Minutes",
+      "length": "1.968 miles",
+      "corners": 11,
+      "dates": "2023-04-14/2023-04-16"
+    },
+    {
+      "name": "Motul Course de Monterey Powered by Hyundai N",
+      "location": "WeatherTech Raceway Laguna Seca",
+      "sessions": {
+        "race": "2023-05-12T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "2.238 miles",
+      "corners": 11,
+      "dates": "2023-05-12/2023-05-14"
+    },
+    {
+      "name": "Sahlen's Six Hours of The Glen",
+      "location": "Watkins Glen International",
+      "sessions": {
+        "race": "2023-06-22T12:00:00Z"
+      },
+      "duration": "6 Hours",
+      "length": "3.4 miles",
+      "corners": 11,
+      "dates": "2023-06-22/2023-06-25"
+    },
+    {
+      "name": "Chevrolet Grand Prix",
+      "location": "Canadian Tire Motorsport Park",
+      "sessions": {
+        "race": "2023-07-07T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "2.459 miles",
+      "corners": 10,
+      "dates": "2023-07-07/2023-07-09"
+    },
+    {
+      "name": "FCP Euro Northeast Grand Prix Presented by Liqui Moly",
+      "location": "Lime Rock Park",
+      "sessions": {
+        "race": "2023-07-21T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "1.50 miles",
+      "corners": 7,
+      "dates": "2023-07-21/2023-07-22"
+    },
+    {
+      "name": "IMSA SportsCar Weekend",
+      "location": "Road America",
+      "sessions": {
+        "race": "2023-08-03T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "4.0 miles",
+      "corners": 14,
+      "dates": "2023-08-03/2023-08-06"
+    },
+    {
+      "name": "Michelin GT Challenge at VIR",
+      "location": "VIRginia International Raceway",
+      "sessions": {
+        "race": "2023-08-25T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "3.27 miles",
+      "corners": 18,
+      "dates": "2023-08-25/2023-08-27"
+    },
+    {
+      "name": "Tirerack.com Battle on the Bricks",
+      "location": "Indianapolis Motor Speedway",
+      "sessions": {
+        "race": "2023-09-15T12:00:00Z"
+      },
+      "duration": "2 Hours 40 Minutes",
+      "length": "2.439 miles",
+      "corners": 14,
+      "dates": "2023-09-15/2023-09-17"
+    },
+    {
+      "name": "Motul Petit Le Mans",
+      "location": "Michelin Raceway Road Atlanta",
+      "sessions": {
+        "race": "2023-10-11T12:00:00Z"
+      },
+      "duration": "10 Hours",
+      "length": "2.54 miles",
+      "corners": 12,
+      "dates": "2023-10-11/2023-10-14"
+    }
+  ]
+}
