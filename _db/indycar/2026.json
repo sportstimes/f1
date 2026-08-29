@@ -214,9 +214,9 @@
     {
       "name": "Ontario Honda Dealers Indy at Markham",
       "sessions": {
-        "practice1": "2026-08-14T19:00:00Z",
-        "practice2": "2026-08-15T14:00:00Z",
-        "qualifying": "2026-08-15T18:25:00Z",
+        "practice1": "2026-08-15T14:00:00Z",
+        "practice2": "2026-08-15T18:30:00Z",
+        "qualifying": "2026-08-15T23:00:00Z",
         "warmup": "2026-08-16T12:30:00Z",
         "race": "2026-08-16T16:00:00Z"
       },
@@ -228,7 +228,7 @@
       "latitude": 0
     },
     {
-      "name": "Freedom 250 Grand Prix of Washington, D.C.",
+      "name": "Freedom 250 Grand Prix of Washington DC",
       "sessions": {
         "practice1": "2026-08-22T13:00:00Z",
         "practice2": "2026-08-22T17:00:00Z",
@@ -261,6 +261,7 @@
       "name": "Snap-on Milwaukee Mile 250",
       "sessions": {
         "qualifying": "2026-08-29T15:00:00Z",
+        "warmup": "2026-08-30T14:15:00Z",
         "race": "2026-08-30T17:00:00Z"
       },
       "tbc": false,
