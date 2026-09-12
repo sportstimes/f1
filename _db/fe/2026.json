@@ -199,7 +199,7 @@
       "slug": "tokyo-eprix",
       "localeKey": "tokyo-eprix",
       "sessions": {
-        "practice1": "2026-07-24T10:00:00Z",
+        "practice1": "2026-07-24T10:15:00Z",
         "practice2": "2026-07-25T04:30:00Z",
         "qualifying": "2026-07-25T06:40:00Z",
         "race": "2026-07-25T11:05:00Z"
@@ -214,7 +214,6 @@
       "slug": "tokyo-eprix",
       "localeKey": "tokyo-eprix",
       "sessions": {
-        "practice3": "2026-07-26T04:30:00Z",
         "qualifying": "2026-07-26T06:40:00Z",
         "race": "2026-07-26T11:05:00Z"
       }
