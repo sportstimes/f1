@@ -4,7 +4,9 @@ export class Sessions {
   fp3: Date
   sprint: Date
   qualifying: Date
-  gp: Date
+  qualifying2: Date
+  feature: Date
+  feature1: Date
   practice1: Date
   practice2: Date
   race: Date

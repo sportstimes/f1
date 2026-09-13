@@ -4,19 +4,23 @@
   "calendarCDN": "files-f3.motorsportcalendars.com",
   "calendarOutputYear": 2026,
   "availableYears": [2021, 2022, 2023, 2024, 2025, 2026],
-  "sessions": ["practice", "qualifying", "sprint", "feature"],
+  "sessions": ["practice", "qualifying", "qualifying2", "sprint", "feature1", "feature"],
   "featuredSessions": ["feature"],
-  "collapsedSessions": ["practice", "qualifying", "sprint*", "feature"],
+  "collapsedSessions": ["practice", "qualifying", "qualifying2", "sprint*", "feature1", "feature"],
   "sessionMap": {
     "practice": "p",
     "qualifying": "q",
+    "qualifying2": "q2",
     "sprint": "sprint",
+    "feature1": "feature1",
     "feature": "feature"
   },
   "sessionLengths": {
     "practice": 45,
     "qualifying": 30,
+    "qualifying2": 20,
     "sprint": 40,
+    "feature1": 45,
     "feature": 45
   },
   "supportsEmailReminders": false,
