@@ -144,10 +144,10 @@
       "slug": "italian",
       "localeKey": "italian",
       "sessions": {
-        "practice": "2026-09-04T09:55:00Z",
-        "qualifying": "2026-09-04T13:55:00Z",
-        "sprint": "2026-09-05T08:35:00Z",
-        "feature": "2026-09-06T08:40:00Z"
+        "practice": "2026-09-04T08:00:00Z",
+        "qualifying": "2026-09-04T12:55:00Z",
+        "sprint": "2026-09-05T12:15:00Z",
+        "feature": "2026-09-06T07:45:00Z"
       }
     },
     {
@@ -159,10 +159,10 @@
       "slug": "spanish-grand-prix",
       "localeKey": "spanish-grand-prix",
       "sessions": {
-        "practice": "2026-09-11T09:55:00Z",
-        "qualifying": "2026-09-11T13:55:00Z",
-        "sprint": "2026-09-12T08:35:00Z",
-        "feature": "2026-09-13T08:40:00Z"
+        "practice": "2026-09-11T09:05:00Z",
+        "qualifying": "2026-09-11T13:00:00Z",
+        "sprint": "2026-09-12T12:15:00Z",
+        "feature": "2026-09-13T09:25:00Z"
       }
     },
     {
