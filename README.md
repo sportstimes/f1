@@ -27,6 +27,19 @@ npm run dev
 
 If there is a language you'd like to see F1 Calendar localized to but we haven't got around to it yet, and you have some spare time, head on over to our new localization project [here](https://poeditor.com/join/project?hash=JrDs3Vfc92).
 
+## Contribution Notes (this fork)
+
+Work in this fork is tracked in [`docs/`](docs/), including a
+[CHANGELOG](docs/CHANGELOG.md) and a
+[contribution report](docs/CONTRIBUTION_REPORT.md) that documents the
+triage of all currently open upstream issues.
+
+Verification screenshots from a local run (F3 surface):
+
+| Generate page (new sessions) | Home (F3 Calendar 2026) |
+|---|---|
+| ![f3 generate](docs/screenshots/f3-generate-en.png) | ![f3 home](docs/screenshots/f3-home-en.png) |
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people who have also contributed. ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
