@@ -1,0 +1,88 @@
+{
+  "races": [
+    {
+      "name": "1000 Miles of Sebring",
+      "location": "Sebring International Raceway",
+      "latitude": 27.455,
+      "longitude": -81.348,
+      "round": 1,
+      "slug": "sebring-1000-miles",
+      "localeKey": "sebring-1000-miles",
+      "sessions": {
+        "race": "2023-03-17T12:00:00Z"
+      }
+    },
+    {
+      "name": "6 Hours of Spa-Francorchamps",
+      "location": "Circuit de Spa-Francorchamps",
+      "latitude": 50.4372,
+      "longitude": 5.9714,
+      "round": 2,
+      "slug": "spa-6-hours",
+      "localeKey": "spa-6-hours",
+      "sessions": {
+        "race": "2023-05-06T12:00:00Z"
+      }
+    },
+    {
+      "name": "24 Hours of Le Mans",
+      "location": "Circuit de la Sarthe",
+      "latitude": 47.956,
+      "longitude": 0.2077,
+      "round": 3,
+      "slug": "le-mans-24-hours",
+      "localeKey": "le-mans-24-hours",
+      "sessions": {
+        "race": "2023-06-10T14:00:00Z"
+      }
+    },
+    {
+      "name": "6 Hours of Monza",
+      "location": "Autodromo Nazionale Monza",
+      "latitude": 45.6194,
+      "longitude": 9.2811,
+      "round": 4,
+      "slug": "monza-6-hours",
+      "localeKey": "monza-6-hours",
+      "sessions": {
+        "race": "2023-07-09T12:00:00Z"
+      }
+    },
+    {
+      "name": "6 Hours of Fuji",
+      "location": "Fuji Speedway",
+      "latitude": 35.3717,
+      "longitude": 138.9275,
+      "round": 5,
+      "slug": "fuji-6-hours",
+      "localeKey": "fuji-6-hours",
+      "sessions": {
+        "race": "2023-09-10T11:00:00Z"
+      }
+    },
+    {
+      "name": "8 Hours of Bahrain",
+      "location": "Bahrain International Circuit",
+      "latitude": 26.0325,
+      "longitude": 50.5106,
+      "round": 6,
+      "slug": "bahrain-8-hours",
+      "localeKey": "bahrain-8-hours",
+      "sessions": {
+        "race": "2023-11-04T14:00:00Z"
+      }
+    },
+    {
+      "name": "8 Hours of Portimao",
+      "location": "Autódromo Internacional do Algarve",
+      "latitude": 37.227,
+      "longitude": -8.6267,
+      "round": 7,
+      "slug": "portimao-8-hours",
+      "localeKey": "portimao-8-hours",
+      "sessions": {
+        "race": "2023-10-01T12:00:00Z"
+      }
+    }
+  ]
+}
