@@ -174,10 +174,10 @@
       "slug": "azerbaijan",
       "localeKey": "azerbaijan",
       "sessions": {
-        "practice": "2026-09-24T07:55:00Z",
-        "qualifying": "2026-09-24T11:55:00Z",
-        "sprint": "2026-09-25T06:35:00Z",
-        "feature": "2026-09-26T06:40:00Z"
+        "practice": "2026-09-24T06:00:00Z",
+        "sprint": "2026-09-25T04:15:00Z",
+        "qualifying": "2026-09-24T10:00:00Z",
+        "feature": "2026-09-26T07:00:00Z"
       }
     },
     {
@@ -189,10 +189,10 @@
       "slug": "qatar",
       "localeKey": "qatar",
       "sessions": {
-        "practice": "2026-11-27T08:55:00Z",
-        "qualifying": "2026-11-27T12:55:00Z",
-        "sprint": "2026-11-28T07:35:00Z",
-        "feature": "2026-11-29T07:40:00Z"
+        "practice": "2026-11-27T09:00:00Z",
+        "qualifying": "2026-11-27T13:00:00Z",
+        "sprint": "2026-11-28T10:00:00Z",
+        "feature": "2026-11-29T09:00:00Z"
       }
     },
     {
