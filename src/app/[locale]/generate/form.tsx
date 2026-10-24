@@ -169,7 +169,7 @@ export default function Form() {
             )}
 
             <a
-              href={`https://www.google.com/calendar/render?cid=${form.webcalURL}`}
+              href={`https://www.google.com/calendar/render?cid=${form.googleURL}`}
               className="btn"
               onClick={() =>
                 plausible('Downloaded Calendar', {
