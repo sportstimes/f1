@@ -3,7 +3,7 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import usePlausible from 'next-plausible';
-import Image from 'next/image';
+import CoffeeIcon from '../Icons/CoffeeIcon';
 
 const SupportButton = () => {
   const t = useTranslations('All');
@@ -22,13 +22,7 @@ const SupportButton = () => {
         // })
       }}
     >
-      <Image
-        src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-        width="15"
-        height="15"
-        className="mr-2"
-        alt="buymeacoffee"
-      />
+      <CoffeeIcon className="mr-2" />
 
       {t('footer.coffee')}
     </a>
