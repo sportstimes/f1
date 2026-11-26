@@ -189,9 +189,9 @@
       "slug": "qatar",
       "localeKey": "qatar",
       "sessions": {
-        "practice": "2026-11-27T09:00:00Z",
-        "qualifying": "2026-11-27T13:00:00Z",
-        "sprint": "2026-11-28T10:00:00Z",
+        "practice": "2026-11-27T08:00:00Z",
+        "qualifying": "2026-11-27T12:00:00Z",
+        "sprint": "2026-11-28T13:15:00Z",
         "feature": "2026-11-29T09:00:00Z"
       }
     },
@@ -204,10 +204,10 @@
       "slug": "abu-dhabi",
       "localeKey": "abu-dhabi",
       "sessions": {
-        "practice": "2026-12-04T07:55:00Z",
-        "qualifying": "2026-12-04T11:55:00Z",
-        "sprint": "2026-12-05T06:35:00Z",
-        "feature": "2026-12-06T06:40:00Z"
+        "practice": "2026-12-04T07:05:00Z",
+        "qualifying": "2026-12-04T11:00:00Z",
+        "sprint": "2026-12-05T12:15:59Z",
+        "feature": "2026-12-06T09:15:00Z"
       }
     }
   ]
